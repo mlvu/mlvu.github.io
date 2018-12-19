@@ -19,11 +19,11 @@ Feel free to open a github issue if you're working through the material and you 
 _Lecture links are for the current run of the course (2019). Links for 2018 may cover slightly different subjects._
 <table>
   <tr>
-    <th/>
+   <th/>
     <th>lecture</th>
     <th>homerwork</th>
     <th>worksheets</th>
-    <th>2018<th/>
+    <th>2018</th>
   </tr>
   <tr>
     <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
