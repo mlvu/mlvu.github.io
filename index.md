@@ -21,51 +21,52 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   <tr>
    <th/>
     <th>lecture</th>
+    <th></th>
     <th>homerwork</th>
     <th>worksheets</th>
     <th>2018</th>
   </tr>
   <tr>
-    <td rowspan="2"> week 1</trd><td><strong>Introduction</strong> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+   <td rowspan="2"> week 1</td><th>Introduction</th><td>slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> <strong>Linear methods 1</strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th> Linear methods 1</th><td> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 2</trd><td><strong>Method 1</strong> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 2</trd><th>Method 1</th><td>slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> <strong>Method 2</strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th> Method 2</th><td>slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 3</trd><td> <strong>Probability 1</strong>slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 3</trd><th> Probability 1</th><td>slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> <strong>Linear Methods 2</strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th>Linear Methods 2</th><td>slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 4</trd><td> <strong></strong> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 4</trd><th>Deep Learning 1</th><td> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> <strong></strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th>Probability 2</th><td>slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 5</trd><td><strong></strong> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 5</trd><th>Deep Learning 2</th><td> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td><strong></strong> slides, v1, v2 </trd><td>plain, answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th>Tree Model and Ensembles</th><td>slides, v1, v2 </trd><td>plain, answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 6</trd><td><strong></strong> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 6</td><th>Sequences</th><td> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> <strong></strong> slides, v1, v2 </trd><td>plain, answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th>Matrix models</th><td> slides, v1, v2 </trd><td>plain, answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 7</trd><td><strong>Reinforcement Learning</strong>, v1, v2 </td> <td>plain, answers</td> <td></td> <td>slides, video</td>
+    <td rowspan="2"> week 7</trd><th>Reinforcement Learning</th><td>, v1, v2 </td> <td>plain, answers</td> <td></td> <td>slides, video</td>
   </tr>
   <tr>
-    <td><strong>Review slides</strong>, v1, v2 </trd><td>plain, answers</td> <td></td> <td>slides, video</td>
+ <th>Review slides</th>, v1, v2 </trd><td>plain, answers</td> <td></td> <td>slides, video</td>
   </tr>
     <tr>
     <td> week 8</trd><td></td> <td colspan="3">Exams. See below for practice exams.</td>
