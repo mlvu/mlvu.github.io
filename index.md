@@ -20,31 +20,37 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
 <table>
   <tr>
    <th/>
-    <th>lecture</th>
     <th></th>
-    <th>homerwork</th>
+    <th>lecture</th>
+    <th>homework</th>
     <th>worksheets</th>
     <th>2018</th>
   </tr>
+ 
   <tr>
-   <td rowspan="2"> week 1</td><th>Introduction</th><td>slides, v1, v2 </td> <td rowspan="2">plain, answers</td> <td>Numpy</td> <td>slides, video</td>
-  </tr>
-  <tr>
-    <th> Linear methods 1</th><td> slides, v1, v2 </trd> <td>SKLearn</td> <td></td>
-  </tr>
-    <tr>
-    <td rowspan="2"> week 2</trd><th>Method 1</th><td>slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+   <td rowspan="2"> week 1</td><th>Introduction</th><td>slides, v1, v2 </td> <td rowspan="2">plain, answers</td> <tdrowspan="2">Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <th> Method 2</th><td>slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th> Linear methods 1</th><td> slides, v1, v2 </td><td>slides, video</td>
   </tr>
-    <tr>
-    <td rowspan="2"> week 3</trd><th> Probability 1</th><td>slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
+ 
+  <tr>
+    <td rowspan="2"> week 2</trd><th>Method 1</th><td>slides, v1, v2 </td> <td rowspan="2">plain, answers</td> <td rowspan="2">SK Learn</td> <td>slides, video</td>
   </tr>
   <tr>
-    <th>Linear Methods 2</th><td>slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <th> Method 2</th><td>slides, v1, v2 </trd> <td>slides, video</td>
   </tr>
-    <tr>
+  
+ 
+  <tr>
+    <td rowspan="2"> week 3</trd><th> Probability 1</th><td>slides, v1, v2 </td> <td rowspan="2">plain, answers</td> <td rowspan="2">Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <th>Linear Methods 2</th><td>slides, v1, v2 </trd> <td>slides, video</td>
+ </tr>  
+ 
+  
+  <tr>
     <td rowspan="2"> week 4</trd><th>Deep Learning 1</th><td> slides, v1, v2 </td> <td>plain, answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
