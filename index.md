@@ -60,7 +60,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th> Probability 1</th>
     <td>slides, v1, v2 </td>
     <td rowspan="2">plain, answers</td>
-    <td rowspan="2">Numpy</td>
+    <td rowspan="2">Keras</td>
     <td>slides, video</td>
   </tr>
   <tr>
@@ -75,7 +75,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>Deep Learning 1</th>
     <td> slides, v1, v2 </td> 
     <td rowspan="2">plain, answers</td> 
-    <td rowspan="2">Keras</td> 
+    <td rowspan="2">Pytorch</td> 
     <td>slides, video</td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>Deep Learning 2</th>
     <td>slides, v1, v2 </td> 
     <td rowspan="2">plain, answers</td> 
-    <td rowspan="2">Pytorch</td> 
+    <td rowspan="2"></td> 
     <td>slides, video</td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   </tr>
   <tr>
     <th>Matrix models</th>
-    <td> slides, v1, v2 </td>
+    <td>slides, v1, v2 </td>
     <td>slides, video</td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>Reinforcement Learning</th>
     <td>slides, v1, v2 </td> 
     <td rowspan="2">plain, answers</td> 
-    <td></td>
+    <td rowspan="2"></td>
     <td>slides, video</td>
   </tr>
   <tr>
@@ -123,7 +123,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <td>slides, video</td>
   </tr>
   <tr>
-    <td> week 8</trd><td colspan="5">Exams. See below for practice exams.</td>
+    <td> week 8</trd><td colspan="5">Exam. See below for practice exams.</td>
   </tr>
 </table>
 
@@ -134,24 +134,31 @@ Each week comes with a small amount of reading material. Most resources are publ
 <table>
 <tr>
   <td>Week 1</td>
+  <td></td>
 </tr>
 <tr>
   <td>Week 2</td>
+  <td></td>
 </tr>
 <tr>
   <td>Week 3</td>  
+ <td></td>
 </tr>
 <tr>
   <td>Week 4</td>  
+ <td></td>
 </tr>
 <tr>
   <td>Week 5</td>
+  <td></td>
 </tr>
 <tr>
   <td>Week 6</td>
+  <td></td>
 </tr>
 <tr>
   <td>Week 7</td>
+  <td></td>
 </tr>
 </table>
 
