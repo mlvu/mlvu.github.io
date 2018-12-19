@@ -28,17 +28,30 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   </tr>
  
   <tr>
-   <td rowspan="2"> week 1</td><th>Introduction</th><td>slides, v1, v2 </td> <td rowspan="2">plain, answers</td> <tdrowspan="2">Numpy</td> <td>slides, video</td>
+   <td rowspan="2">week 1</td> <th>Introduction</th>
+   <td>slides, v1, v2 </td> 
+   <td rowspan="2">plain, answers</td> 
+   <td rowspan="2">Numpy</td> 
+   <td>slides, video</td>
   </tr>
   <tr>
-    <th> Linear methods 1</th><td> slides, v1, v2 </td><td>slides, video</td>
+    <th> Linear methods 1</th>
+    <td> slides, v1, v2 </td>
+    <td>slides, video</td>
   </tr>
  
   <tr>
-    <td rowspan="2"> week 2</trd><th>Method 1</th><td>slides, v1, v2 </td> <td rowspan="2">plain, answers</td> <td rowspan="2">SK Learn</td> <td>slides, video</td>
+    <td rowspan="2"> week 2</trd>
+    <th>Method 1</th>
+    <td>slides, v1, v2 </td>
+    <td rowspan="2">plain, answers</td>
+    <td rowspan="2">Sk-learn</td>
+    <td>slides, video</td>
   </tr>
   <tr>
-    <th> Method 2</th><td>slides, v1, v2 </trd> <td>slides, video</td>
+    <th> Method 2</th>
+    <td>slides, v1, v2 </td> 
+    <td>slides, video</td>
   </tr>
   
  
