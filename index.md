@@ -129,7 +129,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
 
 ## Required reading
 
-Each week comes with a small amount of reading material. Most resources are publically available free of charge. 
+Each week comes with a small amount of reading material. Most resources are publically available free of charge. If you are a VU student, check Canvas for PDFs of the copyrighted works.
 
 <table>
 <tr>
@@ -138,7 +138,7 @@ Each week comes with a small amount of reading material. Most resources are publ
 </tr>
 <tr>
   <td>Week 2</td>
-  <td>Peter Flach, Machine Learning. Sections 2.</td>
+  <td>Machine Learning, Peter Flach. Sections 2.</td>
 </tr>
 <tr>
   <td>Week 3</td>  
@@ -154,11 +154,11 @@ Each week comes with a small amount of reading material. Most resources are publ
 </tr>
 <tr>
   <td>Week 6</td>
-  <td>Understanding LSTM Networks, Chris Olah. http://colah.github.io/posts/2015-08-Understanding-LSTMs</td>
+ <td><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs">Understanding LSTM Networks</a>, Chris Olah. </td>
 </tr>
 <tr>
   <td>Week 7</td>
-  <td></td>
+ <td><a href="http://karpathy.github.io/2016/05/31/rl/">Reinforcement Learning: Pong from pixels.</a>Andrej Karpathy</td>
 </tr>
 </table>
 
