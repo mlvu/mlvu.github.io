@@ -138,7 +138,7 @@ Each week comes with a small amount of reading material. Most resources are publ
 </tr>
 <tr>
   <td>Week 2</td>
-  <td></td>
+  <td>Peter Flach, Machine Learning. Sections 2.</td>
 </tr>
 <tr>
   <td>Week 3</td>  
@@ -154,7 +154,7 @@ Each week comes with a small amount of reading material. Most resources are publ
 </tr>
 <tr>
   <td>Week 6</td>
-  <td></td>
+  <td>Understanding LSTM Networks, Chris Olah. http://colah.github.io/posts/2015-08-Understanding-LSTMs</td>
 </tr>
 <tr>
   <td>Week 7</td>
