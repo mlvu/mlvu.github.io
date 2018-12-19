@@ -138,7 +138,7 @@ Each week comes with a small amount of reading material. Most resources are publ
 </tr>
 <tr>
   <td>Week 2</td>
-  <td>Machine Learning, Peter Flach. Sections 2.</td>
+  <td>Machine Learning, Peter Flach. Section 2.2</td>
 </tr>
 <tr>
   <td>Week 3</td>  
