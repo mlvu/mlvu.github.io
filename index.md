@@ -31,8 +31,85 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   <tr>
     <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
+    <tr>
+    <td rowspan="2"> week 1</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+  </tr>
+  <tr>
+    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+  </tr>
 
 </table>
 
+## Required reading
 
+Each week comes with a small amount of reading material. Most resources are publically available free of charge. 
 
+<table>
+<tr>
+  <td>Week 1</td>
+</tr>
+<tr>
+  <td>Week 2</td>
+</tr>
+<tr>
+  <td>Week 3</td>  
+</tr>
+<tr>
+  <td>Week 4</td>  
+</tr>
+<tr>
+  <td>Week 5</td>
+</tr>
+<tr>
+  <td>Week 6</td>
+</tr>
+<tr>
+  <td>Week 7</td>
+</tr>
+</table>
+
+## Recommended reading
+
+## Practice exams
