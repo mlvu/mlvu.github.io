@@ -11,10 +11,12 @@ This page is designed to offer an overview of the material outside the regular r
 
 We provide the following materials:
   * **Lecture slides and videos.** We aim to annotate all slides, but this isn't always possible. If annotations are missing, pleae consult the video.
-  * 
+  * **Worksheets** These are very brief Jupyter notebooks to help you get the software installed and to show the basics. They introduce the libraries Numpy, Matplotlib, Pandas, Sklearn and Keras. They are not full tutorials but they should just get you to the point where you can start experimenting. Each should take about 30 to 60 minutes to complete.
+  * **Homework** The homework consists of small pen-and-paper exercises to help you test that you've really understood the more technical points of the lectures. Answers are provided.
   
-
-_Lecture links are for the current run of the course (2019). Links for 2018 may cover slightly different subjects.
+Feel free to open a github issue if you're working through the material and you spot a mistake, run into a problem or have any other kind of question. We also answer questions on youtube.
+  
+_Lecture links are for the current run of the course (2019). Links for 2018 may cover slightly different subjects._
 <table>
   <tr>
     <th/>
