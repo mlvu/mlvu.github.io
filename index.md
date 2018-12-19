@@ -26,46 +26,46 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>2018</th>
   </tr>
   <tr>
-    <td rowspan="2"> week 1</trd><td>**Introduction** slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 1</trd><td><strong>Introduction</strong> slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> **Linear methods 1** slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <td> <strong>Linear methods 1</strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 2</trd><td>**Method 1**, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 2</trd><td><strong>Method 1</strong>, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> **Method 2** slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <td> <strong>Method 2</strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 3</trd><td> slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 3</trd><td> <strong>Probability 1</strong>slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <td> <strong>Linear Methods 2</strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 4</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 4</trd><td> <strong></strong> slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <td> <strong></strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 5</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 5</trd><td><strong></strong> slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <td><strong></strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 6</trd><td>Introduction slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
+    <td rowspan="2"> week 6</trd><td><strong></strong> slides, v1, v2 </td> <td>plain, with answers</td> <td>Numpy</td> <td>slides, video</td>
   </tr>
   <tr>
-    <td> Linear methods slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
+    <td> <strong></strong> slides, v1, v2 </trd><td>plain, with answers</td> <td>SKLearn</td> <td>slides, video</td>
   </tr>
     <tr>
-    <td rowspan="2"> week 7</trd><td>Reinforcement Learning, v1, v2 </td> <td>plain, with answers</td> <td></td> <td>slides, video</td>
+    <td rowspan="2"> week 7</trd><td><strong>Reinforcement Learning</strong>, v1, v2 </td> <td>plain, with answers</td> <td></td> <td>slides, video</td>
   </tr>
   <tr>
-    <td>Review slides, v1, v2 </trd><td>plain, with answers</td> <td></td> <td>slides, video</td>
+    <td><strong>Review slides</strong>, v1, v2 </trd><td>plain, with answers</td> <td></td> <td>slides, video</td>
   </tr>
     <tr>
     <td> week 8</trd><td></td> <td colspan="3">Exams. See below for practice exams.</td>
