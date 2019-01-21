@@ -129,7 +129,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
 
 ## Required reading
 
-Each week comes with a small amount of reading material. Most resources are publically available free of charge. If you are a VU student, check Canvas for PDFs of the copyrighted works.
+Each week comes with a small amount of reading material. Most resources are publicly available free of charge. If you are a VU student, check Canvas for PDFs of the copyrighted works.
 
 <table>
 <tr>
