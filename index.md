@@ -118,7 +118,7 @@ Feel free to open a github issue if you're working through the material and you 
     <td>slides, video</td>
   </tr>
   <tr>
-    <td> week 8</trd><td colspan="5">Exam. See below for practice exams.</td>
+    <td> week 8</td><td colspan="5">Exam. See below for practice exams.</td>
   </tr>
 </table>
 
