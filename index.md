@@ -43,7 +43,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   </tr>
  
   <tr>
-    <td rowspan="2"> week 2</trd>
+    <td rowspan="2"> week 2</td>
     <th>Method 1</th>
     <td>slides, v1, v2 </td>
     <td rowspan="2">plain, answers</td>
@@ -59,7 +59,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   
  
   <tr>
-    <td rowspan="2"> week 3</trd>
+    <td rowspan="2"> week 3</td>
     <th> Probability 1</th>
     <td>slides, v1, v2 </td>
     <td rowspan="2">plain, answers</td>
@@ -68,13 +68,13 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   </tr>
   <tr>
     <th>Linear Methods 2</th>
-    <td>slides, v1, v2 </trd> 
+    <td>slides, v1, v2 </td> 
     <td>slides, video</td>
  </tr>  
  
   
   <tr>
-    <td rowspan="2"> week 4</trd>
+    <td rowspan="2"> week 4</td>
     <th>Deep Learning 1</th>
     <td> slides, v1, v2 </td> 
     <td rowspan="2">plain, answers</td> 
@@ -83,7 +83,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
   </tr>
   <tr>
     <th>Probability 2</th>
-    <td>slides, v1, v2 </trd>
+    <td>slides, v1, v2 </td>
     <td>slides, video</td>
   </tr>
     <tr>
