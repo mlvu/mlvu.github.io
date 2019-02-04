@@ -15,8 +15,7 @@ We provide the following materials:
   * **Homework** The homework consists of small pen-and-paper exercises to help you test that you've really understood the more technical points of the lectures. Answers are provided.
   
 Feel free to open a github issue if you're working through the material and you spot a mistake, run into a problem or have any other kind of question. We also try to answer questions on youtube.
-  
-_Lecture links are for the current run of the course (2019). Links for 2018 may cover slightly different subjects._
+ 
 <table>
   <tr>
    <th/>
@@ -26,22 +25,18 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>worksheets</th>
     <th>2018</th>
   </tr>
- 
   <tr>
    <td rowspan="2">week 1</td> <th>Introduction</th>
-   <td>slides, v1, v2 </td> 
+   <td>slides, video </td> 
    <td rowspan="2">plain, answers</td> 
    <td rowspan="2">numpy</td> 
    <td>slides, video</td>
   </tr>
-  
   <tr>
     <th> Linear methods 1</th>
     <td> slides, v1, v2 </td>
     <td>slides, video</td>
- 
   </tr>
- 
   <tr>
     <td rowspan="2"> week 2</td>
     <th>Method 1</th>
@@ -50,14 +45,11 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <td rowspan="2">sklearn</td>
     <td>slides, video</td>
   </tr>
- 
   <tr>
     <th> Method 2</th>
     <td>slides, v1, v2 </td> 
     <td>slides, video</td>
   </tr>
-  
- 
   <tr>
     <td rowspan="2"> week 3</td>
     <th> Probability 1</th>
