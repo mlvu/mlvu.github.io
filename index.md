@@ -31,7 +31,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
    <td rowspan="2">week 1</td> <th>Introduction</th>
    <td>slides, v1, v2 </td> 
    <td rowspan="2">plain, answers</td> 
-   <td rowspan="2">Numpy</td> 
+   <td rowspan="2">numpy</td> 
    <td>slides, video</td>
   </tr>
   
@@ -47,7 +47,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>Method 1</th>
     <td>slides, v1, v2 </td>
     <td rowspan="2">plain, answers</td>
-    <td rowspan="2">Sk-learn</td>
+    <td rowspan="2">sklearn</td>
     <td>slides, video</td>
   </tr>
  
@@ -63,7 +63,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th> Probability 1</th>
     <td>slides, v1, v2 </td>
     <td rowspan="2">plain, answers</td>
-    <td rowspan="2">Keras</td>
+    <td rowspan="2">pandas</td>
     <td>slides, video</td>
   </tr>
   <tr>
@@ -78,7 +78,7 @@ _Lecture links are for the current run of the course (2019). Links for 2018 may 
     <th>Deep Learning 1</th>
     <td> slides, v1, v2 </td> 
     <td rowspan="2">plain, answers</td> 
-    <td rowspan="2">Pytorch</td> 
+    <td rowspan="2">keras</td> 
     <td>slides, video</td>
   </tr>
   <tr>
