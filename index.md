@@ -5,7 +5,7 @@ title: Machine Learning @ VU
 
 # Machine Learning @ VU
 
-_This is a work in progress. We'll update this information as the 2019 course progresses._
+_This is a work in progress. We'll update this information as the 2019 course progresses. If you are a registered student, please use the Canvas page._
 
 This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam: slides, lecture videos, homework, worksheets, etc. 
 
