@@ -12,8 +12,8 @@ This page contains all public information about the course _Machine Learning_ at
  
 <table>
   <tr>
-   </th>
-    </th>
+   <th></th>
+    <th></th>
     <th>lecture</th>
     <th>homework</th>
     <th>worksheets</th>
