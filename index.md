@@ -7,13 +7,9 @@ title: Machine Learning @ VU
 
 _This is a work in progress. We'll update this information as the 2019 course progresses. If you are a registered student, please use the Canvas page._
 
-This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam: slides, lecture videos, homework, worksheets, etc. 
-
-This page is designed to offer an overview of the material outside the regular running time. If you're a registered student, please consult the Canvas page for administrative matters, like deadlines, groups etc.
-
-We provide the following materials:
-  * **Lecture slides and videos.** We aim to annotate all slides, but this isn't always possible. If annotations are missing, please consult the video.
-  * **Worksheets** These are very brief Jupyter notebooks to help you get the software installed and to show the basics. They introduce the libraries Numpy, Matplotlib, Pandas, Sklearn and Keras. They are not full tutorials but they should just get you to the point where you can start experimenting. Each should take about 30 to 60 minutes to complete.
+This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam. We provide the following materials:
+  * **Lecture slides and videos.**
+  * **Worksheets** These are very brief Jupyter notebooks to help you get the software installed and to show the basics. They introduce the libraries Numpy, Matplotlib, Pandas, Sklearn and Keras.
   * **Homework** The homework consists of small pen-and-paper exercises to help you test that you've really understood the more technical points of the lectures. Answers are provided.
   
 Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're working through the material and you spot a mistake, run into a problem or have any other kind of question. We also try to answer questions on youtube.
@@ -29,23 +25,23 @@ Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues
   </tr>
   <tr>
    <td rowspan="2">week 1</td> <th>Introduction</th>
-   <td>slides, video </td> 
-   <td rowspan="2">plain, answers</td> 
-   <td rowspan="2">numpy</td> 
-   <td>slides, video</td>
+   <td><a href="./lectures/11.Introduction.annotated.pdf">slides</a>, <a href="https://youtu.be/-pve3oIvxa8">video</a> </td> 
+   <td rowspan="2"><a href="#">plain</a>, <a href="#">answers</a></td> 
+   <td rowspan="2"><a href="https://github.com/mlvu/worksheets">numpy</a></td> 
+   <td><a href="https://youtu.be/547GyRCr8TM">video</a></td>
   </tr>
   <tr>
     <th> Linear methods 1</th>
-    <td> slides, v1, v2 </td>
-    <td>slides, video</td>
+    <td> slides, video </td>
+    <td>video</td>
   </tr>
   <tr>
     <td rowspan="2"> week 2</td>
     <th>Method 1</th>
-    <td>slides, v1, v2 </td>
+    <td>slides, video</td>
     <td rowspan="2">plain, answers</td>
     <td rowspan="2">sklearn</td>
-    <td>slides, video</td>
+    <td>slides</td>
   </tr>
   <tr>
     <th> Method 2</th>
