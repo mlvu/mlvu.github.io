@@ -2,9 +2,6 @@
 layout: default
 title: Machine Learning @ VU
 ---
-
-# Machine Learning @ VU
-
 _This is a work in progress. We'll update this information as the 2019 course progresses. If you are a registered student, please use the Canvas page._
 
 This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam. We provide the following materials:
@@ -12,7 +9,6 @@ This page contains all public information about the course _Machine Learning_ at
   * **Worksheets** These are very brief Jupyter notebooks to help you get the software installed and to show the basics. They introduce the libraries Numpy, Matplotlib, Pandas, Sklearn and Keras.
   * **Homework** The homework consists of small pen-and-paper exercises to help you test that you've really understood the more technical points of the lectures. Answers are provided.
   
-Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're working through the material and you spot a mistake, run into a problem or have any other kind of question. We also try to answer questions on youtube.
  
 <table>
   <tr>
@@ -39,26 +35,26 @@ Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues
     <td rowspan="2"> week 2</td>
     <th>Methodology 1</th>
     <td><a href="./lectures/21.Methodology1.annotated.pdf">slides</a>, <a href="https://youtu.be/wbUE6X_B8B4">video</a></td>
-    <td rowspan="2"><a href="">plain</a>, <a href="">answers</a></td>
-    <td rowspan="2"><a href="">sklearn</a></td>
+    <td rowspan="2"><a href="./homework/week2.noanswers.pdf">plain</a>, <a href="./homework/week2.answers.pdf">answers</a></td>
+    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
     <td><a href="https://youtu.be/okxskT6ben4">video</a></td>
   </tr>
   <tr>
     <th> Methodology 2</th>
-    <td>slides, v1, v2 </td> 
-    <td>slides, video</td>
+    <td><a href="./lectures/22.Methodology2.annotated.pdf">slides</a>, <a href="https://youtu.be/csk2HSWS5r8">video</a></td> 
+    <td><a href="https://youtu.be/csk2HSWS5r8">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 3</td>
     <th> Probability 1</th>
-    <td>slides, v1, v2 </td>
+    <td>slides, video </td>
     <td rowspan="2">plain, answers</td>
     <td rowspan="2">pandas</td>
-    <td>slides, video</td>
+    <td>video</td>
   </tr>
   <tr>
     <th>Linear Methods 2</th>
-    <td>slides, v1, v2 </td> 
+    <td>slides, video</td> 
     <td>slides, video</td>
  </tr>  
  
@@ -119,6 +115,8 @@ Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues
     <td> week 8</td><td colspan="5">Exam. See below for practice exams.</td>
   </tr>
 </table>
+
+Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're working through the material and you spot a mistake, run into a problem or have any other kind of question. We also try to answer questions on youtube.
 
 ## Required reading
 

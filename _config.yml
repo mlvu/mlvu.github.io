@@ -2,3 +2,5 @@ theme: jekyll-theme-slate
 
 title:            MLVU
 description:      Machine Learning at VU University Amsterdam
+
+google_analytics: UA-33416628-3
