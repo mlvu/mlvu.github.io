@@ -26,25 +26,25 @@ Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues
   <tr>
    <td rowspan="2">week 1</td> <th>Introduction</th>
    <td><a href="./lectures/11.Introduction.annotated.pdf">slides</a>, <a href="https://youtu.be/-pve3oIvxa8">video</a> </td> 
-   <td rowspan="2"><a href="#">plain</a>, <a href="#">answers</a></td> 
-   <td rowspan="2"><a href="https://github.com/mlvu/worksheets">numpy</a></td> 
+   <td rowspan="2"><a href="./homework/week1.noanswers.pdf">plain</a>, <a href="./homework/week1.answers.pdf">answers</a></td> 
+   <td rowspan="2"><a href="https://docs.google.com/document/d/1-LXG5Lb76xQy70W2ZdannnYMEXRLt0CsoiaK0gTkmfY/edit">getting set up</a>, <a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%201%2C%20Numpy%20and%20Matplotlib.ipynb">numpy</a></td> 
    <td><a href="https://youtu.be/547GyRCr8TM">video</a></td>
   </tr>
   <tr>
-    <th> Linear methods 1</th>
-    <td> slides, video </td>
-    <td>video</td>
+    <th> Linear models 1</th>
+    <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/3K4pNmQbGx8">video</a> </td>
+    <td><a href="https://youtu.be/sSykYt7H8oE">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 2</td>
-    <th>Method 1</th>
-    <td>slides, video</td>
-    <td rowspan="2">plain, answers</td>
-    <td rowspan="2">sklearn</td>
-    <td>slides</td>
+    <th>Methodology 1</th>
+    <td><a href="./lectures/21.Methodology1.annotated.pdf">slides</a>, <a href="https://youtu.be/wbUE6X_B8B4">video</a></td>
+    <td rowspan="2"><a href="">plain</a>, <a href="">answers</a></td>
+    <td rowspan="2"><a href="">sklearn</a></td>
+    <td><a href="https://youtu.be/okxskT6ben4">video</a></td>
   </tr>
   <tr>
-    <th> Method 2</th>
+    <th> Methodology 2</th>
     <td>slides, v1, v2 </td> 
     <td>slides, video</td>
   </tr>
