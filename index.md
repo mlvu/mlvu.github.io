@@ -47,25 +47,25 @@ This page contains all public information about the course _Machine Learning_ at
   <tr>
     <td rowspan="2"> week 3</td>
     <th> Probability 1</th>
-    <td>slides, video </td>
-    <td rowspan="2">plain, answers</td>
-    <td rowspan="2">pandas</td>
+    <td> <a href="">slides</a>, <a href="">video</a> </td>
+    <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
+    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
     <td>video</td>
   </tr>
   <tr>
     <th>Linear Methods 2</th>
-    <td>slides, video</td> 
-    <td>slides, video</td>
+    <td><a href="./lectures/32.LinearModels2.annotated.pdf">slides</a>, <a href="https://youtu.be/g2lziWxf_9Q">video</a></td> 
+    <td><a href="https://youtu.be/F6gFYAwXmAs">video</a> <small>Contains more in-depth explanation of SVMs.</small></td>
  </tr>  
  
   
   <tr>
     <td rowspan="2"> week 4</td>
     <th>Deep Learning 1</th>
-    <td> slides, v1, v2 </td> 
-    <td rowspan="2">plain, answers</td> 
-    <td rowspan="2">keras</td> 
-    <td>slides, video</td>
+    <td> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a>, <a href="https://youtu.be/VZwrbIBNzzA">video</a></td> 
+    <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
+    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Deep%20Learning.ipynb">keras</a></td> 
+    <td><a href="https://youtu.be/jOrYBnEPpYU">video</a></td>
   </tr>
   <tr>
     <th>Probability 2</th>
