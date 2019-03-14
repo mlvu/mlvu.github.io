@@ -69,47 +69,47 @@ This page contains all public information about the course _Machine Learning_ at
   </tr>
   <tr>
     <th>Probability 2</th>
-    <td>slides, v1, v2 </td>
-    <td>slides, video</td>
+    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, video </td>
+    <td>video</td>
   </tr>
     <tr>
     <td rowspan="2"> week 5</td>
     <th>Deep Learning 2</th>
-    <td>slides, v1, v2 </td> 
+    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, video </td> 
     <td rowspan="2">plain, answers</td> 
     <td rowspan="2"></td> 
-    <td>slides, video</td>
+    <td>video</td>
   </tr>
   <tr>
     <th>Tree Model and Ensembles</th>
-    <td>slides, v1, v2 </td> 
-    <td>slides, video</td>
+    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, video </td> 
+    <td>video</td>
   </tr>
   <tr>
     <td rowspan="2"> week 6</td>
     <th>Sequences</th>
-    <td> slides, v1, v2 </td> 
+    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, video </td> 
     <td rowspan="2">plain, answers</td> 
     <td rowspan="2"></td> 
-    <td>slides, video</td>
+    <td>video</td>
   </tr>
   <tr>
     <th>Matrix models</th>
-    <td>slides, v1, v2 </td>
+    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, video </td>
     <td>slides, video</td>
   </tr>
   <tr>
     <td rowspan="2"> week 7</td>
     <th>Reinforcement Learning</th>
-    <td>slides, v1, v2 </td> 
+    <td><a href="./lectures/">slides</a>, video </td> 
     <td rowspan="2">plain, answers</td> 
     <td rowspan="2"></td>
-    <td>slides, video</td>
+    <td>video</td>
   </tr>
   <tr>
     <th>Review</th>
-    <td>slides, v1, v2 </td>    
-    <td>slides, video</td>
+    <td><a href="#">slides</a>, video </td>    
+    <td>video</td>
   </tr>
   <tr>
     <td> week 8</td><td colspan="5">Exam. See below for practice exams.</td>
