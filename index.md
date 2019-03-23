@@ -115,50 +115,58 @@ This page contains all public information about the course _Machine Learning_ at
   </tr>
 </table>
 
-Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're working through the material and you spot a mistake, run into a problem or have any other kind of question. We also try to answer questions on youtube.
+Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're 
+working through the material and you spot a mistake, run into a problem or have any other
+ kind of question. We also try to answer questions on youtube.
 
 ## Required reading
 
-Each week comes with a small amount of reading material. Most resources are publicly available free of charge. If you are a VU student, check Canvas for PDFs of the copyrighted works.
+Each week comes with a small amount of reading material. Most resources are publicly 
+available free of charge. If you are a VU student, check Canvas for PDFs of the 
+copyrighted works.
 
 <table>
 <tr>
   <td>Week 1</td>
-  <td></td>
+  <td>Deep Learning, Goodfellow et al. <a href="https://www.deeplearningbook.org/contents/ml.html">Section 5.1</a></td>
 </tr>
 <tr>
   <td>Week 2</td>
-  <td>Machine Learning, Peter Flach. Section 2.2</td>
+  <td>
+  Machine Learning, Peter Flach. Section 2.2<br/>
+  <a href="http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/">Everything you did and didn't know about PCA</a>, Alex Williams
+  </td>
 </tr>
 <tr>
   <td>Week 3</td>  
- <td></td>
+ <td>Neural Networks and Deep Learning, <a href="http://neuralnetworksanddeeplearning.com/chap6.html">Chapter 6</a></td>
 </tr>
 <tr>
   <td>Week 4</td>  
- <td></td>
+ <td><a href="https://datajobs.com/data-science-repo/Expectation-Maximization-Primer-[Do-and-Batzoglou].pdf">What is the expectation maximization algorithm?</a> Do et al.</td>
 </tr>
 <tr>
   <td>Week 5</td>
-  <td></td>
+  <td><a href="https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf">Intuitively Understanding Variational Autoencoders</a>, Irhum Shafkat</td>
 </tr>
 <tr>
   <td>Week 6</td>
- <td><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs">Understanding LSTM Networks</a>, Chris Olah. </td>
+ <td><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs">Understanding LSTM Networks</a>, Chris Olah </td>
 </tr>
 <tr>
   <td>Week 7</td>
- <td><a href="http://karpathy.github.io/2016/05/31/rl/">Reinforcement Learning: Pong from pixels.</a>Andrej Karpathy</td>
+ <td><a href="http://karpathy.github.io/2016/05/31/rl/">Reinforcement Learning: Pong from pixels</a>, Andrej Karpathy</td>
 </tr>
 </table>
 
 ## Recommended reading
 
-If a subject is not immediately clear from the lectures or the required reading, the fastest way to get to grips with is is usually to find another explanation. Here are some good resources that may help you to understand tricky subjects, or to provide more context to the things we've talked about.
+If a subject is not immediately clear from the lectures or the required reading, the fastest
+ way to get to grips with is is usually to find another explanation. Here are some good 
+ resources that may help you to understand tricky subjects, or to provide more context to 
+ the things we've talked about.
 
 ### Week 1
-* Pedro domingos. AI article
-* Pedro Domingos. The Master Algorithm.
 ### Week 2
 ### Week 3
 ### Week 4
