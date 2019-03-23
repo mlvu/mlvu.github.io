@@ -49,7 +49,7 @@ If you are a registered student, please refer to the Canvas page instead.
     <td> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/f2HIW37Ohho">video</a> </td>
     <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
-    <td>video</td>
+    <td><a href="https://youtu.be/DM1APCpqF8g">video</a></td>
   </tr>
   <tr>
     <th>Linear Models 2</th>
