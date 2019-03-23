@@ -101,14 +101,14 @@ This page contains all public information about the course _Machine Learning_ at
   <tr>
     <td rowspan="2"> week 7</td>
     <th>Reinforcement Learning</th>
-    <td><a href="./lectures/">slides</a>, video </td> 
+    <td><a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a>, <a href="https://youtu.be/2ruGrJb8Glk">video</a> </td> 
     <td rowspan="2">plain, answers</td> 
     <td rowspan="2"></td>
     <td>video</td>
   </tr>
   <tr>
     <th>Review</th>
-    <td><a href="#">slides</a>, video </td>    
+    <td><a href="./lectures/72.Review.annotated.pdf">slides</a>, <a href="https://youtu.be/xMNc8T_W0Ks">video</a> </td>    
     <td>video</td>
   </tr>
   <tr>
