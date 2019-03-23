@@ -29,7 +29,7 @@ This page contains all public information about the course _Machine Learning_ at
   <tr>
     <th> Linear models 1</th>
     <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/3K4pNmQbGx8">video</a> </td>
-    <td><a href="https://youtu.be/sSykYt7H8oE">video</a></td>
+    <td> <a href="https://youtu.be/sSykYt7H8oE">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 2</td>
@@ -46,8 +46,8 @@ This page contains all public information about the course _Machine Learning_ at
   </tr>
   <tr>
     <td rowspan="2"> week 3</td>
-    <th> Probability 1</th>
-    <td> <a href="">slides</a>, <a href="">video</a> </td>
+    <th> Probabilistic Models 1</th>
+    <td> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/f2HIW37Ohho">video</a> </td>
     <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
     <td>video</td>
@@ -58,7 +58,6 @@ This page contains all public information about the course _Machine Learning_ at
     <td><a href="https://youtu.be/F6gFYAwXmAs">video</a> <small>Contains more in-depth explanation of SVMs.</small></td>
  </tr>  
  
-  
   <tr>
     <td rowspan="2"> week 4</td>
     <th>Deep Learning 1</th>
@@ -68,30 +67,30 @@ This page contains all public information about the course _Machine Learning_ at
     <td><a href="https://youtu.be/jOrYBnEPpYU">video</a></td>
   </tr>
   <tr>
-    <th>Probability 2</th>
-    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, video </td>
-    <td>video</td>
+    <th>Probabilistic Models 2</th>
+    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, <a href="https://youtu.be/f2HIW37Ohho">video</a> </td>
+    <td><a href="https://youtu.be/-7UJqvjNIjk">video</a></td>
   </tr>
     <tr>
     <td rowspan="2"> week 5</td>
     <th>Deep Learning 2</th>
-    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, video </td> 
-    <td rowspan="2">plain, answers</td> 
+    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, <a href="https://youtu.be/6N4zIx0ATME">video</a> </td> 
+    <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
-    <td>video</td>
+    <td><a href="https://youtu.be/APuP9SkESGA">video</a></td>
   </tr>
   <tr>
     <th>Tree Model and Ensembles</th>
-    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, video </td> 
-    <td>video</td>
+    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, <a href="https://youtu.be/m-at5l3F_ig">video</a> </td> 
+    <td><a href="https://youtu.be/PGITM1E2CLk">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 6</td>
-    <th>Sequences</th>
-    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, video </td> 
-    <td rowspan="2">plain, answers</td> 
+    <th>Models for Sequential Data</th>
+    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, <a href="https://youtu.be/h6j9wgHGnOk">video</a> </td> 
+    <td rowspan="2"><a href="./homework/week6.noanswers.pdf">plain</a>, <a href="./homework/week6.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
-    <td>video</td>
+    <td><a href="https://youtu.be/HNOHLvD6_gs">video</a></td>
   </tr>
   <tr>
     <th>Matrix models</th>
@@ -102,14 +101,14 @@ This page contains all public information about the course _Machine Learning_ at
     <td rowspan="2"> week 7</td>
     <th>Reinforcement Learning</th>
     <td><a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a>, <a href="https://youtu.be/2ruGrJb8Glk">video</a> </td> 
-    <td rowspan="2">plain, answers</td> 
+    <td rowspan="2"></td> 
     <td rowspan="2"></td>
-    <td>video</td>
+    <td><a href="">video</a></td>
   </tr>
   <tr>
     <th>Review</th>
     <td><a href="./lectures/72.Review.annotated.pdf">slides</a>, <a href="https://youtu.be/xMNc8T_W0Ks">video</a> </td>    
-    <td>video</td>
+    <td><a href="https://youtu.be/sMd9ReLSSYU">video</a></td>
   </tr>
   <tr>
     <td> week 8</td><td colspan="5">Exam. See below for practice exams.</td>
@@ -172,5 +171,5 @@ If a subject is not immediately clear from the lectures or the required reading,
 
 Each exam consists of 40 multiple choice questions.
 
-* Final exam 2018, answers
-* Resit 2018, answers
+* <a href="./exams/exam2018.noanswers.pdf">Final exam 2018</a>, <a href="./exams/exam2018.answers.pdf">answers</a>
+* <a href="./exams/resit2018.noanswers.pdf">Resit 2018</a>, <a href="./exams/resit2018.answers.pdf">answers</a>
