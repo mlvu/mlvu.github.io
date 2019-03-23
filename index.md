@@ -146,7 +146,7 @@ copyrighted works.
 </tr>
 <tr>
   <td>Week 5</td>
-  <td><a href="https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf">Intuitively Understanding Variational Autoencoders</a>, Irhum Shafkat<br\>
+  <td><a href="https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf">Intuitively Understanding Variational Autoencoders</a>, Irhum Shafkat<br/>
   Machine Learning, Tom Mitchell. Chapter 3.
   </td>
 </tr>
