@@ -2,13 +2,12 @@
 layout: default
 title: Machine Learning @ VU
 ---
-_This is a work in progress. We'll update this information as the 2019 course progresses. If you are a registered student, please use the Canvas page._
 
 This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam. We provide the following materials:
   * **Lecture slides and videos.**
   * **Worksheets** These are very brief Jupyter notebooks to help you get the software installed and to show the basics. They introduce the libraries Numpy, Matplotlib, Pandas, Sklearn and Keras.
   * **Homework** The homework consists of small pen-and-paper exercises to help you test that you've really understood the more technical points of the lectures. Answers are provided.
-  
+If you are a registered student, please refer to the Canvas page instead.
  
 <table>
   <tr>
