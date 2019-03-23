@@ -94,8 +94,8 @@ This page contains all public information about the course _Machine Learning_ at
   </tr>
   <tr>
     <th>Matrix models</th>
-    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, video </td>
-    <td>slides, video</td>
+    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, <a href="https://youtu.be/L2mJ4o7F434">video</a> </td>
+    <td><a href="https://youtu.be/RByePOW2b1c">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 7</td>
