@@ -52,7 +52,7 @@ If you are a registered student, please refer to the Canvas page instead.
     <td>video</td>
   </tr>
   <tr>
-    <th>Linear Methods 2</th>
+    <th>Linear Models 2</th>
     <td><a href="./lectures/32.LinearModels2.annotated.pdf">slides</a>, <a href="https://youtu.be/g2lziWxf_9Q">video</a></td> 
     <td><a href="https://youtu.be/F6gFYAwXmAs">video</a> <small>Contains more in-depth explanation of SVMs.</small></td>
  </tr>  
