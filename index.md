@@ -160,22 +160,6 @@ copyrighted works.
 </tr>
 </table>
 
-## Recommended reading
-
-If a subject is not immediately clear from the lectures or the required reading, the fastest
- way to get to grips with is is usually to find another explanation. Here are some good 
- resources that may help you to understand tricky subjects, or to provide more context to 
- the things we've talked about.
-
-### Week 1
-### Week 2
-### Week 3
-### Week 4
-
-### Week 5
-### Week 6
-### Week 7
-
 ## Practice exams
 
 Each exam consists of 40 multiple choice questions.
