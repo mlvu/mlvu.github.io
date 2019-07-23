@@ -185,7 +185,7 @@ Some parts of the material are taken from other sources. The source should alway
 
 ### Keynote files
 
-The original keynote files for the lectures (of the 2019 version) [can be found here](https://github.com/mlvu/mlvu.github.io/tree/master/lectures-keynotes), and may be used under the terms of the license above. These can be converted to ppt, but the formulas may not survive the conversion process. 
+The original keynote files for the lectures (of the 2019 version) [can be found here](https://github.com/mlvu/mlvu.github.io/tree/master/lectures-keynote), and may be used under the terms of the license above. These can be converted to ppt, but the formulas may not survive the conversion process. 
 
 The formulas were typeset using a fantastic tool called [LaTeXiT](https://www.chachatelier.fr/latexit/). Copy pasting a formula from Keynote to LaTeXiT should reveal the original LaTeX. You'll need to use [this preample]() for the typesetting to work.
 
