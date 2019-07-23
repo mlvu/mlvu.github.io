@@ -8,6 +8,8 @@ This page contains all public information about the course _Machine Learning_ at
   * **Worksheets** These are very brief Jupyter notebooks to help you get the software installed and to show the basics. They introduce the libraries Numpy, Matplotlib, Pandas, Sklearn and Keras.
   * **Homework** The homework consists of small pen-and-paper exercises to help you test that you've really understood the more technical points of the lectures. Answers are provided.
 If you are a registered student, please refer to the Canvas page instead.
+
+Reuse is allowed under a creative commons license, [details below]().
  
 <table>
   <tr>
@@ -166,3 +168,27 @@ Each exam consists of 40 multiple choice questions.
 
 * <a href="./exams/exam2018.noanswers.pdf">Final exam 2018</a>, <a href="./exams/exam2018.answers.pdf">answers</a>
 * <a href="./exams/resit2018.noanswers.pdf">Resit 2018</a>, <a href="./exams/resit2018.answers.pdf">answers</a>
+
+## Keynote files and re-use license
+
+All material that is original to this course may be used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. That means you are free to use the material, and adapt it, so long as appropriate credit is given. You may redistribute only under the same license.
+
+**How to credit:** 
+* For individual slides, please add a link to mlvu.gihub.io, on the slide, or in the published slide annotations. 
+* If you are using a slide deck for a lecture as is, please indicate the source of the slides as mlvu.github.io clearly at the start of the lecture. Leaving the existing URL in place on the opening slide suffices.
+* If you use many of the slides, a single attribution can be made once at the start of the slide deck. 
+Crediting me by name (Peter Bloem) is appreciated, but not strictly necessary.
+
+If you would like to use the material, but do not want to attribute in this way for some reason, please get in touch. I'm sure we can work something out.
+
+Some parts of the material are taken from other sources. The source should always be credited on the slide itself (let me know if this isn't the case). Please adapt and redistribute these only under the original licenses.
+
+### Keynote files
+
+The original keynote files for the lectures (of the 2019 version) [can be found here](https://github.com/mlvu/mlvu.github.io/tree/master/lectures-keynotes), and may be used under the terms of the license above. These can be converted to ppt, but the formulas may not survive the conversion process. 
+
+The formulas were typeset using a fantastic tool called [LaTeXiT](https://www.chachatelier.fr/latexit/). Copy pasting a formula from Keynote to LaTeXiT should reveal the original LaTeX. You'll need to use [this preample]() for the typesetting to work.
+
+
+
+
