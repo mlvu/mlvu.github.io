@@ -18,97 +18,112 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <th>lecture</th>
     <th>homework</th>
     <th>worksheets</th>
+    <th>2019</th>
     <th>2018</th>
   </tr>
   <tr>
    <td rowspan="2">week 1</td> <th>Introduction</th>
-   <td><a href="./lectures/11.Introduction.annotated.pdf">slides</a>, <a href="https://youtu.be/-pve3oIvxa8">video</a> </td> 
+   <td><a href="./lectures/11.Introduction.annotated.pdf">slides</a>, <a href="https://youtu.be/excCZSTJEPs">video</a> </td> 
    <td rowspan="2"><a href="./homework/week1.noanswers.pdf">plain</a>, <a href="./homework/week1.answers.pdf">answers</a></td> 
    <td rowspan="2"><a href="https://docs.google.com/document/d/1-LXG5Lb76xQy70W2ZdannnYMEXRLt0CsoiaK0gTkmfY/edit">getting set up</a>, <a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%201%2C%20Numpy%20and%20Matplotlib.ipynb">numpy</a></td> 
+   <td><a href="https://youtu.be/-pve3oIvxa8">video</a></td>
    <td><a href="https://youtu.be/547GyRCr8TM">video</a></td>
   </tr>
   <tr>
     <th> Linear models 1</th>
     <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/3K4pNmQbGx8">video</a> </td>
+	<td></td>
     <td> <a href="https://youtu.be/sSykYt7H8oE">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 2</td>
     <th>Methodology 1</th>
-    <td><a href="./lectures/21.Methodology1.annotated.pdf">slides</a>, <a href="https://youtu.be/wbUE6X_B8B4">video</a></td>
+    <td><a href="./lectures/21.Methodology1.annotated.pdf">slides</a>, video</td>
     <td rowspan="2"><a href="./homework/week2.noanswers.pdf">plain</a>, <a href="./homework/week2.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
+    <td><a href="https://youtu.be/wbUE6X_B8B4">video</a></td>
     <td><a href="https://youtu.be/okxskT6ben4">video</a></td>
   </tr>
   <tr>
     <th> Methodology 2</th>
-    <td><a href="./lectures/22.Methodology2.annotated.pdf">slides</a>, <a href="https://youtu.be/csk2HSWS5r8">video</a></td> 
+    <td><a href="./lectures/22.Methodology2.annotated.pdf">slides</a>, video </td> 
+	<td><a href="https://youtu.be/csk2HSWS5r8">video</a></td>    
     <td><a href="https://youtu.be/csk2HSWS5r8">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 3</td>
     <th> Probabilistic Models 1</th>
-    <td> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/f2HIW37Ohho">video</a> </td>
+    <td> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>, video </td>
     <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
+	<td><a href="https://youtu.be/f2HIW37Ohho">video</a></td>    
     <td><a href="https://youtu.be/DM1APCpqF8g">video</a></td>
   </tr>
   <tr>
     <th>Linear Models 2</th>
-    <td><a href="./lectures/32.LinearModels2.annotated.pdf">slides</a>, <a href="https://youtu.be/g2lziWxf_9Q">video</a></td> 
+    <td><a href="./lectures/32.LinearModels2.annotated.pdf">slides</a>, video</td>
+	<td><a href="https://youtu.be/g2lziWxf_9Q">video</a></td> 
     <td><a href="https://youtu.be/F6gFYAwXmAs">video</a> <small>Contains more in-depth explanation of SVMs.</small></td>
  </tr>  
  
   <tr>
     <td rowspan="2"> week 4</td>
     <th>Deep Learning 1</th>
-    <td> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a>, <a href="https://youtu.be/VZwrbIBNzzA">video</a></td> 
+    <td> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a>, video</td> 
     <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Deep%20Learning.ipynb">keras</a></td> 
+	<td><a href="https://youtu.be/VZwrbIBNzzA">video</a></td>    
     <td><a href="https://youtu.be/jOrYBnEPpYU">video</a></td>
   </tr>
   <tr>
     <th>Probabilistic Models 2</th>
-    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, <a href="https://youtu.be/f2HIW37Ohho">video</a> </td>
+    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, video </td>
+	<td><a href="https://youtu.be/f2HIW37Ohho">video</a></td>    
     <td><a href="https://youtu.be/-7UJqvjNIjk">video</a></td>
   </tr>
     <tr>
     <td rowspan="2"> week 5</td>
     <th>Deep Learning 2</th>
-    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, <a href="https://youtu.be/6N4zIx0ATME">video</a> </td> 
+    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, video </td> 
     <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
+	<td><a href="https://youtu.be/6N4zIx0ATME">video</a></td>    
     <td><a href="https://youtu.be/APuP9SkESGA">video</a></td>
   </tr>
   <tr>
     <th>Tree Model and Ensembles</th>
-    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, <a href="https://youtu.be/m-at5l3F_ig">video</a> </td> 
+    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, video </td> 
+	<td><a href="https://youtu.be/m-at5l3F_ig">video</a></td>    
     <td><a href="https://youtu.be/PGITM1E2CLk">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 6</td>
     <th>Models for Sequential Data</th>
-    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, <a href="https://youtu.be/h6j9wgHGnOk">video</a> </td> 
+    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, video </td> 
     <td rowspan="2"><a href="./homework/week6.noanswers.pdf">plain</a>, <a href="./homework/week6.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
+	<td> <a href="https://youtu.be/h6j9wgHGnOk">video</a></td>    
     <td><a href="https://youtu.be/HNOHLvD6_gs">video</a></td>
   </tr>
   <tr>
     <th>Matrix models</th>
-    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, <a href="https://youtu.be/L2mJ4o7F434">video</a> </td>
+    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, video </td>
+    <td><a href="https://youtu.be/L2mJ4o7F434">video</a></td>
     <td><a href="https://youtu.be/RByePOW2b1c">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 7</td>
     <th>Reinforcement Learning</th>
-    <td><a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a>, <a href="https://youtu.be/2ruGrJb8Glk">video</a> </td> 
+    <td><a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a>, video </td> 
     <td rowspan="2"></td> 
     <td rowspan="2"></td>
+	<td><a href="https://youtu.be/2ruGrJb8Glk">video</a></td>    
     <td><a href="">video</a></td>
   </tr>
   <tr>
     <th>Review</th>
-    <td><a href="./lectures/72.Review.annotated.pdf">slides</a>, <a href="https://youtu.be/xMNc8T_W0Ks">video</a> </td>    
+    <td><a href="./lectures/72.Review.annotated.pdf">slides</a>, video </td>    
+	<td><a href="https://youtu.be/xMNc8T_W0Ks">video</a></td>
     <td><a href="https://youtu.be/sMd9ReLSSYU">video</a></td>
   </tr>
   <tr>
