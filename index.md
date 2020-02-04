@@ -31,8 +31,8 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <th> Linear models 1</th>
-    <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/3K4pNmQbGx8">video</a> </td>
-	<td></td>
+    <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, video </td>
+	<td> <a href="https://youtu.be/3K4pNmQbGx8">video</a></td>
     <td> <a href="https://youtu.be/sSykYt7H8oE">video</a></td>
   </tr>
   <tr>
