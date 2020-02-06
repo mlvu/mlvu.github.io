@@ -30,8 +30,8 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
    <td><a href="https://youtu.be/547GyRCr8TM">video</a></td>
   </tr>
   <tr>
-    <th> Linear models 1</th>
-    <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, video </td>
+    <th> Linear Models and Search</th>
+    <td> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/1lqaD0AsMfY">video</a> </td>
 	<td> <a href="https://youtu.be/3K4pNmQbGx8">video</a></td>
     <td> <a href="https://youtu.be/sSykYt7H8oE">video</a></td>
   </tr>
