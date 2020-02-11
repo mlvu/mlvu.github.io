@@ -38,7 +38,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   <tr>
     <td rowspan="2"> week 2</td>
     <th>Methodology 1</th>
-    <td><a href="./lectures/21.Methodology1.annotated.pdf">slides</a>, video</td>
+    <td><a href="./lectures/21.Methodology1.annotated.pdf">slides</a>, <a href="https://youtu.be/GaoNNaRjauU">video</a></td>
     <td rowspan="2"><a href="./homework/week2.noanswers.pdf">plain</a>, <a href="./homework/week2.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
     <td><a href="https://youtu.be/wbUE6X_B8B4">video</a></td>
