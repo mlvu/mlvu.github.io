@@ -47,7 +47,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   <tr>
     <th> Methodology 2</th>
     <td><a href="./lectures/22.Methodology2.annotated.pdf">slides</a>, video </td> 
-	<td><a href="https://youtu.be/csk2HSWS5r8">video</a></td>    
+	<td><a href="https://youtu.be/H4c4qpHdGq8">video</a></td>    
     <td><a href="https://youtu.be/csk2HSWS5r8">video</a></td>
   </tr>
   <tr>
