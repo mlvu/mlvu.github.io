@@ -53,7 +53,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   <tr>
     <td rowspan="2"> week 3</td>
     <th> Probabilistic Models 1</th>
-    <td> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>, video </td>
+    <td> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>, <a href="https://youtu.be/k0_56JyYaOM">video</a> </td>
     <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
 	<td><a href="https://youtu.be/f2HIW37Ohho">video</a></td>    
