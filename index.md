@@ -61,7 +61,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <th>Linear Models 2</th>
-    <td><a href="./lectures/32.LinearModels2.annotated.pdf">slides</a>, video</td>
+    <td><a href="./lectures/32.LinearModels2.annotated.pdf">slides</a>, <a href=" https://youtu.be/1NVgspM98W0">video</a></td>
 	<td><a href="https://youtu.be/g2lziWxf_9Q">video</a></td> 
     <td><a href="https://youtu.be/F6gFYAwXmAs">video</a> <small>Contains more in-depth explanation of SVMs.</small></td>
  </tr>  
