@@ -77,7 +77,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <th>Probabilistic Models 2</th>
-    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, video </td>
+    <td><a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a>, <a href="https://youtu.be/ZIX7PZgz4qs">video</a> </td>
 	<td><a href="https://youtu.be/f2HIW37Ohho">video</a></td>    
     <td><a href="https://youtu.be/-7UJqvjNIjk">video</a></td>
   </tr>
