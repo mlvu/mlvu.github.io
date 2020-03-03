@@ -84,7 +84,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <tr>
     <td rowspan="2"> week 5</td>
     <th>Deep Learning 2</th>
-    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, video </td> 
+    <td><a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a>, <a href="https://youtu.be/0zTkHTk_-6s">video</a> </td> 
     <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
 	<td><a href="https://youtu.be/6N4zIx0ATME">video</a></td>    
