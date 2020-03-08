@@ -71,7 +71,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <th>Deep Learning 1</th>
     <td> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a>, <a href="https://youtu.be/DidHjsp_OV0">video</a></td> 
     <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
-    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Deep%20Learning.ipynb">keras</a></td> 
+    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Keras.ipynb">keras</a></td> 
 	<td><a href="https://youtu.be/VZwrbIBNzzA">video</a></td>    
     <td><a href="https://youtu.be/jOrYBnEPpYU">video</a></td>
   </tr>
