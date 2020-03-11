@@ -92,14 +92,14 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <th>Tree Model and Ensembles</th>
-    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, video </td> 
+    <td><a href="./lectures/52.Trees.annotated.pdf">slides</a>, <a href="https://youtu.be/3pkOMubnwA8">video</a> </td> 
 	<td><a href="https://youtu.be/m-at5l3F_ig">video</a></td>    
     <td><a href="https://youtu.be/PGITM1E2CLk">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 6</td>
     <th>Models for Sequential Data</th>
-    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, video </td> 
+    <td><a href="./lectures/61.SequentialModels.annotated.pdf">slides</a>, <a href="https://youtu.be/T2txIYwRPDo">video</a> </td> 
     <td rowspan="2"><a href="./homework/week6.noanswers.pdf">plain</a>, <a href="./homework/week6.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
 	<td> <a href="https://youtu.be/h6j9wgHGnOk">video</a></td>    
