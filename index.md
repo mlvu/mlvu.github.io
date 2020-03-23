@@ -107,14 +107,14 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <th>Matrix models</th>
-    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, video </td>
+    <td><a href="./lectures/62.Matrices.annotated.pdf">slides</a>, <a href="https://youtu.be/T2txIYwRPDo">video</a> </td>
     <td><a href="https://youtu.be/L2mJ4o7F434">video</a></td>
     <td><a href="https://youtu.be/RByePOW2b1c">video</a></td>
   </tr>
   <tr>
     <td rowspan="2"> week 7</td>
     <th>Reinforcement Learning</th>
-    <td><a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a>, video </td> 
+    <td><a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a> </td> 
     <td rowspan="2"></td> 
     <td rowspan="2"></td>
 	<td><a href="https://youtu.be/2ruGrJb8Glk">video</a></td>    
@@ -122,14 +122,16 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <th>Review</th>
-    <td><a href="./lectures/72.Review.annotated.pdf">slides</a>, video </td>    
+    <td><a href="./lectures/72.Review.annotated.pdf">slides</a> </td>    
 	<td><a href="https://youtu.be/xMNc8T_W0Ks">video</a></td>
     <td><a href="https://youtu.be/sMd9ReLSSYU">video</a></td>
   </tr>
   <tr>
-    <td> week 8</td><td colspan="5">Exam. See below for practice exams.</td>
+    <td> week 8</td><td colspan="6">Exam. See below for practice exams.</td>
   </tr>
 </table>
+
+<small>The last two lectures of 2020 were canceled due to the COVID-19 outbreak</small>
 
 Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're 
 working through the material and you spot a mistake, run into a problem or have any other
