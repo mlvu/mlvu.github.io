@@ -191,7 +191,7 @@ Each exam consists of 40 multiple choice questions.
 All material that is original to this course may be used under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. That means you are free to use the material, and adapt it, so long as appropriate credit is given. You may redistribute only under the same license.
 
 **How to credit:** 
-* For individual slides, please add a link to mlvu.gihub.io, on the slide, or in the published slide annotations. 
+* For individual slides, please add a link to mlvu.github.io, on the slide, or in the published slide annotations. 
 * If you are using a slide deck for a lecture as is, please indicate the source of the slides as mlvu.github.io clearly at the start of the lecture. Leaving the existing URL in place on the opening slide suffices.
 * If you use many of the slides, a single attribution can be made once at the start of the slide deck. 
 Crediting me by name ([Peter Bloem](http://peterbloem.nl/)) is appreciated, but not strictly necessary.
