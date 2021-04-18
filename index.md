@@ -140,7 +140,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgvCGzTPoRXPEYUWvFl8Cj71">playlist</a> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a></td> 
     <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Keras.ipynb">keras</a></td> 
-	<td>><a href="https://youtu.be/DidHjsp_OV0">2020</a><a href="https://youtu.be/VZwrbIBNzzA">2019</a> <a href="https://youtu.be/jOrYBnEPpYU">2018</a></td>
+	<td><a href="https://youtu.be/DidHjsp_OV0">2020</a> <a href="https://youtu.be/VZwrbIBNzzA">2019</a> <a href="https://youtu.be/jOrYBnEPpYU">2018</a></td>
   </tr>
   <tr>
     <td><h3>8. Density estimation</h3>
@@ -212,7 +212,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 	</ul>    
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv8gcTly0uC7gXiHjPR_c1_">playlist</a> <a href="./lectures/62.Matrices.annotated.pdf">slides</a></td>
-    <td> <a href="https://youtu.be/TwCYexIpqUU">202</a><a href="https://youtu.be/L2mJ4o7F434">2019</a> <a href="https://youtu.be/RByePOW2b1c">2018</a></td>
+    <td> <a href="https://youtu.be/TwCYexIpqUU">2020</a> <a href="https://youtu.be/L2mJ4o7F434">2019</a> <a href="https://youtu.be/RByePOW2b1c">2018</a></td>
   </tr>
   <tr>
     <td rowspan="2"> w7</td>
