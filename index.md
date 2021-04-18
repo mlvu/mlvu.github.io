@@ -140,7 +140,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgvCGzTPoRXPEYUWvFl8Cj71">playlist</a> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a></td> 
     <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Keras.ipynb">keras</a></td> 
-	<td><a href="https://youtu.be/VZwrbIBNzzA">video</a> <a href="https://youtu.be/jOrYBnEPpYU">video</a></td>
+	<td>><a href="https://youtu.be/DidHjsp_OV0">2020</a><a href="https://youtu.be/VZwrbIBNzzA">2019</a> <a href="https://youtu.be/jOrYBnEPpYU">2018</a></td>
   </tr>
   <tr>
     <td><h3>8. Density estimation</h3>
@@ -155,7 +155,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt9mF2CMt3NI1SZQQ_NYe28">playlist</a> <a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a> </td>
-	<td><a href="https://youtu.be/f2HIW37Ohho">video</a> <a href="https://youtu.be/-7UJqvjNIjk">video</a></td>
+	<td><a href="https://youtu.be/ZIX7PZgz4qs">2020</a> <a href="https://youtu.be/f2HIW37Ohho">2019</a> <a href="https://youtu.be/-7UJqvjNIjk">2018</a></td>
   </tr>
     <tr>
     <td rowspan="2"> w5</td>
@@ -172,7 +172,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQguK56djSLj2C4LHNfLVZGjg">playlist</a> <a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a> </td> 
     <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td> 
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%205%2C%20Pytorch.ipynb">pytorch</a></td> 
-	<td><a href="https://youtu.be/6N4zIx0ATME">video</a> <a href="https://youtu.be/APuP9SkESGA">video</a></td>
+	<td><a href="https://youtu.be/0zTkHTk_-6s">2020</a> <a href="https://youtu.be/6N4zIx0ATME">2019</a> <a href="https://youtu.be/APuP9SkESGA">2018</a></td>
   </tr>
   <tr>
     <td><h3>10. Tree Model and Ensembles</h3>
@@ -185,7 +185,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv5bPKEn7F1AEMyojCgTibW">playlist</a> <a href="./lectures/52.Trees.annotated.pdf">slides</a> </td> 
-	<td><a href="https://youtu.be/m-at5l3F_ig">video</a> <a href="https://youtu.be/PGITM1E2CLk">video</a></td>
+	<td><a href="https://youtu.be/3pkOMubnwA8">2020</a> <a href="https://youtu.be/m-at5l3F_ig">2019</a> <a href="https://youtu.be/PGITM1E2CLk">2018</a></td>
   </tr>
   <tr>
     <td rowspan="2"> w6</td>
@@ -199,7 +199,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgtsKcp3029eKm6mzwxNbzxV">playlist</a> <a href="./lectures/61.SequentialModels.annotated.pdf">slides</a> </td> 
     <td rowspan="2"><a href="./homework/week6.noanswers.pdf">plain</a> <a href="./homework/week6.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
-	<td> <a href="https://youtu.be/h6j9wgHGnOk">video</a> <a href="https://youtu.be/HNOHLvD6_gs">video</a></td>
+	<td><a href="https://youtu.be/T2txIYwRPDo">2020</a>  <a href="https://youtu.be/h6j9wgHGnOk">2019</a> <a href="https://youtu.be/HNOHLvD6_gs">2018</a></td>
   </tr>
   <tr>
     <td><h3>12. Embedding models models</h3>
@@ -212,7 +212,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 	</ul>    
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv8gcTly0uC7gXiHjPR_c1_">playlist</a> <a href="./lectures/62.Matrices.annotated.pdf">slides</a></td>
-    <td><a href="https://youtu.be/L2mJ4o7F434">video</a> <a href="https://youtu.be/RByePOW2b1c">video</a></td>
+    <td> <a href="https://youtu.be/TwCYexIpqUU">202</a><a href="https://youtu.be/L2mJ4o7F434">2019</a> <a href="https://youtu.be/RByePOW2b1c">2018</a></td>
   </tr>
   <tr>
     <td rowspan="2"> w7</td>
@@ -228,12 +228,12 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsfoBHwl0df2o5RXeKAcYPd">playlist</a> <a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a> </td> 
     <td rowspan="2"></td> 
     <td rowspan="2"></td>
-	<td><a href="https://youtu.be/2ruGrJb8Glk">video</a> <a href="">video</a></td>
+	<td> <a href="https://youtu.be/2ruGrJb8Glk">2019</a> <a href="https://youtu.be/RByePOW2b1c">2018</a></td>
   </tr>
   <tr>
     <td><h3>14. Review <h3></td>
     <td><a href="https://youtu.be/xMNc8T_W0Ks">video</a> <a href="./lectures/72.Review.annotated.pdf">slides</a> </td>    
-	<td><a href="https://youtu.be/xMNc8T_W0Ks">video</a> <a href="https://youtu.be/sMd9ReLSSYU">video</a></td>
+	<td><a href="https://youtu.be/xMNc8T_W0Ks">2019</a> <a href="https://youtu.be/sMd9ReLSSYU">2018</a></td>
   </tr>
   <tr>
     <td> w8</td><td colspan="6">Exam. See below for practice exams.</td>
