@@ -202,7 +202,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 	<td><a href="https://youtu.be/T2txIYwRPDo">2020</a>  <a href="https://youtu.be/h6j9wgHGnOk">2019</a> <a href="https://youtu.be/HNOHLvD6_gs">2018</a></td>
   </tr>
   <tr>
-    <td><h3>12. Embedding models models</h3>
+    <td><h3>12. Embedding models</h3>
     <ul class="videos">
     	 <li><a href="https://youtu.be/q_s2DLcV284">12.1 Recommender systems</a></li>
 		 <li><a href="https://youtu.be/q_s2DLcV284">12.2 Improving recommender systems</a></li>
