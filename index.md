@@ -79,7 +79,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt6iSJnt8ABPhMNiU2hmZiK">playlist</a> <a href="./lectures/21.Methodology1.annotated.pdf">slides</a></td>
     <td rowspan="2"><a href="./homework/week2.noanswers.pdf">plain</a>, <a href="./homework/week2.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
-    <td><a href="https://youtu.be/Aad5UDrdHPg">2020</a> <a href="https://youtu.be/wbUE6X_B8B4">2019</a> <a href="https://youtu.be/okxskT6ben4">2018</a></td>
+    <td><a href="https://youtu.be/GaoNNaRjauU">2020</a> <a href="https://youtu.be/wbUE6X_B8B4">2019</a> <a href="https://youtu.be/okxskT6ben4">2018</a></td>
   </tr>
   <tr>
     <td><h3>4. Data pre-processing</h3>
@@ -202,7 +202,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 	<td><a href="https://youtu.be/T2txIYwRPDo">2020</a>  <a href="https://youtu.be/h6j9wgHGnOk">2019</a> <a href="https://youtu.be/HNOHLvD6_gs">2018</a></td>
   </tr>
   <tr>
-    <td><h3>12. Embedding models models</h3>
+    <td><h3>12. Embedding models</h3>
     <ul class="videos">
     	 <li><a href="https://youtu.be/q_s2DLcV284">12.1 Recommender systems</a></li>
 		 <li><a href="https://youtu.be/q_s2DLcV284">12.2 Improving recommender systems</a></li>
