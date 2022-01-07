@@ -1,6 +1,6 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-/* VU dark blue: #0089CF */
+/* MLVU blue: #0365C0 */
 
 html {
 	font-family:sans-serif;
@@ -414,7 +414,7 @@ body {
 }
 
 a {
-	color: #0089CF;
+	color: #0365C0;
 	text-decoration:none
 }
 a:hover {
@@ -458,31 +458,33 @@ a:hover {
   padding:0.75rem;
   font-size:0.9rem
  }
+
  .btn+.btn {
   margin-top:1rem;
   margin-left:0
  }
 }
+
 .page-header {
- color:#fff;
- text-align:center;
- background-image: linear-gradient(0deg, #0089CF, #2DB2F4);
+     color:#fff;
+     text-align:center;
+     background-image: linear-gradient(0deg, #0365C0, #0365C0C7);
 }
 
 @media screen and (min-width: 64em) {
- .page-header {
-  padding:5rem 6rem
- }
+    .page-header {
+        padding: 2rem 6rem 1rem;
+    }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
- .page-header {
-  padding:3rem 4rem
- }
+    .page-header {
+        padding: 2rem 4rem 1rem;
+    }
 }
 @media screen and (max-width: 42em) {
- .page-header {
-  padding:2rem 1rem
- }
+     .page-header {
+        padding: 2rem 1rem
+     }
 }
 .project-name {
  margin-top:0;
@@ -530,22 +532,22 @@ a:hover {
  margin-top:0
 }
 @media screen and (min-width: 64em) {
- .main-content {
-  max-width:64rem;
-  padding:2rem 6rem;
-  margin:0 auto;
-  font-size:1.1rem
- }
+    .main-content {
+        max-width: 64rem;
+        padding: 0rem 6rem 2rem;
+        margin: 0 auto;
+        font-size: 1.1rem
+    }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
- .main-content {
-  padding:2rem 4rem;
-  font-size:1.1rem
- }
+    .main-content {
+          padding: 0 4rem 0;
+          font-size: 1.1rem
+    }
 }
 @media screen and (max-width: 42em) {
  .main-content {
-  padding:2rem 1rem;
+  padding:0rem 1rem 2rem;
   font-size:1rem
  }
 }
@@ -560,7 +562,7 @@ a:hover {
 .main-content h6 {
  	margin-top: 2rem;
 	margin-bottom: 1rem;
-	color: #0089CF;
+	color: #0365C0;
 }
 
 .main-content p {
@@ -763,3 +765,155 @@ table.overview th {
 .lecture {
 	width: 40%;
 }
+
+#body.slides main {
+    width: 100%;
+    max-width: 1600px;
+}
+
+article.slides {
+}
+
+.slides section {
+    position: relative;
+    scroll-margin-top: 4em;
+
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+    border-top: solid 1px #ddd;
+    padding-top: 1em;
+
+    align-items: flex-start;
+}
+
+.slides section:target {
+    border-top: solid 1px #0365C0;
+}
+
+.slides section iframe {
+    width: 50%;
+    aspect-ratio: 16/9;
+    flex-grow: 0;
+
+    box-shadow: 0px 3px 6px #eee;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.slides section img {
+    width: 50%;
+    flex-grow: 0;
+
+    box-shadow: 0px 3px 6px #eee;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 800px){
+    .slides section img {
+        width: 100%;
+    }
+
+    .slides nav.menu {
+        font-size: 0.5em;
+    }
+}
+
+.slides section figcaption {
+    flex: 1 1 16em;
+    max-width: 42em;
+
+    font-size: 0.8em;
+}
+
+.slides section.video {
+    padding: 1em;
+}
+
+.slides section.video iframe {
+    margin: 0 auto;
+}
+
+.slides section .slide-link {
+    position: absolute;
+    top: -0.65em;
+    left: 1em;
+
+    width: 1.7em;
+    height: 1em;
+    line-height: 0.4em;
+
+    text-indent: -10000em;
+    color: #ddd;
+    background: white;
+
+    text-align: center;
+}
+
+.slides section:target .slide-link {
+    color: #0365C0;
+}
+
+.slides section .slide-link::after {
+    display: block;
+    content: "#";
+    text-indent: 0em;
+    position: relative;
+}
+
+.slides section.anim img {
+    cursor: pointer;
+}
+
+.slides section.anim::before {
+    content: "▶";
+
+    position: absolute;
+
+    top: 1.3em;
+    left: 1em;
+
+    pointer-events: none;
+    text-shadow: 1px 1px 1px #eee;
+}
+
+.slides section:hover.anim::before {
+    color: #C82506;
+}
+
+p.list-item {
+    padding-left: 1em;
+}
+
+p.list-item::before {
+    content: '·';
+    color: #0365C0;
+    padding-right: 1em;
+}
+
+.slides nav.menu {
+    position: sticky;
+    top: 0;
+
+    background: white;
+    z-index: 10;
+}
+
+.slides nav.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0;
+
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.slides nav.menu ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0 0.5em 0 0;
+}
+

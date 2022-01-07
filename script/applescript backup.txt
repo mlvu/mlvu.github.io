@@ -1,0 +1,49 @@
+on run args
+	tell application "Keynote"
+
+		set doc to (open POSIX file (item 1 of args as text))
+
+		tell application "Finder"
+			if not (exists folder "mlvu-export" in desktop) then
+				make new folder at desktop with properties {name:"mlvu-export"}
+			end if
+			set dstFolder to (folder "mlvu-export" in desktop) as text
+		end tell
+
+		# This will be used to extract the presenter notes with styling
+		export doc as Keynote 09 to file (dstFolder & name of doc & ".k09.key")
+
+		# This will be used to extract the slides with the correct page numbering
+		export doc as PDF to file (dstFolder & name of doc & ".pdf") with properties {all stages:true}
+
+		# These will have the incorrect page numbers, but they will tell us how many stages each individual slide has
+		# (yes, this is a hassle)
+		repeat with slidenum from 1 to count slides in doc
+			if item slidenum of slides in doc is not skipped then
+
+				tell doc
+
+					set status_ to skipped of every slide
+
+					set skipped of every slide to true
+					set skipped of slide slidenum to false
+				end tell
+
+				# zero padding trick
+				set slideid to text -4 thru -1 of ("0000" & slidenum)
+
+				export doc as PDF to file (dstFolder & name of doc & "-stage-" & slideid & ".pdf") with properties {all stages:true}
+
+				tell doc
+					repeat with i from 1 to count status_
+						set skipped of slide i to item i of status_
+					end repeat
+
+				end tell
+
+			end if
+
+		end repeat
+
+	end tell
+end run

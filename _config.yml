@@ -1,6 +1,11 @@
 theme: jekyll-theme-cayman
 
 title:            MLVU
-description:      Machine Learning at VU University Amsterdam
+description:      Machine Learning at Vrije Universiteit Amsterdam
 
-google_analytics: UA-33416628-3
+defaults:
+  -
+    scope:
+        path: ""
+    values:
+        article: true
