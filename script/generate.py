@@ -57,11 +57,13 @@ def generate(
     """
 
     # clear the working directory
-    shutil.rmtree(workdir)
+    if os.path.exists(workdir):
+        shutil.rmtree(workdir)
     os.makedirs(workdir)
 
     # clear the destination direction
-    shutil.rmtree(dst)
+    if os.path.exists(dst):
+        shutil.rmtree(dst)
     os.makedirs(dst)
 
     docId = os.path.basename(source)
@@ -161,7 +163,12 @@ def generate(
 
     bold = set()
     italic = set()
-    colored = set()
+
+    orange = set()
+    blue   = set()
+    green  = set()
+    red    = set()
+
     videos = []
 
     styles = root.xpath('.//sf:characterstyle', namespaces=root.nsmap)
@@ -176,8 +183,14 @@ def generate(
         if '<sf:italic>' in strnote:
             italic.add(id)
 
-        if 'sfa:r="0.7730250358581543" sfa:g="0.11607148498296738" sfa:b="0.018163906410336494"' in strnote:
-            colored.add(id)
+        if 'sfa:r="0.041535880416631699" sfa:g="0.30631634593009949" sfa:b="0.70056915283203125"' in strnote:
+            blue.add(id)
+        if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote:
+            orange.add(id)
+        if 'sfa:r="0.061777830123901367" sfa:g="0.47138708829879761" sfa:b="0.12690891325473785"' in strnote:
+            green.add(id)
+        if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote:
+            red.add(id)
 
     # Check the paragraph styles for list items
 
@@ -219,6 +232,18 @@ def generate(
 
             node.tag = node.tag.replace(sf_namespace, '')
 
+            # check for color
+            if '{http://developer.apple.com/namespaces/sf}style' in node.attrib:
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in blue:
+                    classes.append('blue')
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in orange:
+                    classes.append('orange')
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in green:
+                    classes.append('green')
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in red:
+                    classes.append('red')
+
+            # replace node tag with html equivalent
             if node.tag == 'link':
                 node.tag = 'a'
                 attribs['href'] = node.attrib['href']
@@ -229,11 +254,8 @@ def generate(
                     node.tag = 'strong'
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in italic:
                     node.tag = 'em'
-                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in colored:
-                    classes.append('colored')
 
             elif node.tag == 'p':
-
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in li:
                     classes.append('list-item')
                 else:
@@ -244,7 +266,6 @@ def generate(
 
         for child in node.getchildren():
             replace_node(child)
-
 
         node.attrib.clear()
         node.nsmap.clear() # -- this does fuck all

@@ -2,6 +2,21 @@
 layout: default
 title: Machine Learning @ VU
 ---
+{::nomarkdown}
+<nav class="lectures">
+
+<div class="l1"><a href="/lecture01">
+ <h3><span>L1</span> Introduction to ML</h3>
+</a>
+</div>
+
+<div class="l2"><a href="/lecture02">
+ <h3><span>L2</span> Linear models and Search</h3>
+</a>
+</div>
+
+</nav>
+{:/nomarkdown}
 
 This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam. We provide the following materials:
   * **Lecture slides and videos.**
@@ -10,6 +25,8 @@ This page contains all public information about the course _Machine Learning_ at
 If you are a registered student, please refer to the Canvas page instead. All material authored by [Peter Bloem](http://peterbloem.nl/) unless noted otherwise.
 
 Reuse is allowed under a creative commons license, [details below](#keynote-files-and-re-use-license).
+
+## All content
 
 {::nomarkdown}
 <table class="overview">

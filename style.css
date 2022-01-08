@@ -12,6 +12,21 @@ body {
 	margin:0
 }
 
+.blue {
+    color: #0365c0;
+}
+
+.orange {
+    color: #de6a10;
+}
+
+.green {
+    color: #00882b;
+}
+
+.red {
+    color: #c82506;
+}
 
 article,
 aside,
@@ -433,7 +448,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    text-shadow: 1px 1px 0 #aaa;
+    text-shadow: 1px 1px 2px #ddd;
 }
 
 .btn {
@@ -893,6 +908,16 @@ article.slides {
     position: relative;
 }
 
+.slides section .hint {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+
+    color: #ddd;
+    font-size: 0.8em;
+}
+
 .slides section.anim img {
     cursor: pointer;
 }
@@ -902,8 +927,10 @@ article.slides {
 
     position: absolute;
 
+
     top: 1.3em;
-    left: 1em;
+    left: calc(50% - 2em);
+
 
     pointer-events: none;
     text-shadow: 1px 1px 1px #eee;
@@ -973,4 +1000,67 @@ p.list-item::before {
     font-size: 0.8em;
     baseline: 0.1em;
     font-weight: bold;
+}
+
+nav.lectures {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav.lectures div {
+    width: 12em;
+    height: 12em;
+    margin: 0 1em 1em 1em;
+
+    position: relative;
+}
+
+nav.lectures div a {
+    display: block;
+    height: 100%
+}
+
+nav.lectures div a h3 {
+    margin: 1em;
+    text-shadow: 1px 1px white;
+}
+
+nav.lectures div a h3 span {
+    opacity: 0.5;
+}
+
+nav.lectures div::before {
+
+
+    content: "";
+    position: absolute;
+    filter: grayscale(0.8);
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+nav.lectures div:hover::before {
+    filter: grayscale(0.0);
+}
+
+
+
+
+nav.lectures div.l1::before {
+    background-image: url('/lecture01/11.Introduction.0.key-stage-0003.svg');
+    background-position: 0 -1.8em;
+    background-size: 210%;
+}
+
+nav.lectures div.l2::before {
+    background-image: url('/lecture02/12.Linear1.key-stage-0025.svg');
+    background-position: -5em -3.5em;
+    background-size: 300%;
 }
