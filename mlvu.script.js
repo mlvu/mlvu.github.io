@@ -1,5 +1,6 @@
 $(document).ready(function()
 {
+    // $('.slides nav.menu li a').eq(1).addClass('active');
 
     // - animated slides
     $('.slides .anim img').click(function() {
@@ -16,25 +17,65 @@ $(document).ready(function()
         target.attr('src', frames[idx]);
     });
 
-    $(window).on("scroll", function() {
+});
 
-        var currentPos = $(window).scrollTop();
+$(window).on('load', function()
+{
 
-        $('nav li a').each(function()
+    // work out the positions of all targets in the menu
+    let previous = null;
+    let first = true;
+    $('.slides nav.menu li a').each(function()
+    {
+        current = $(this)
+        target = current.attr('href')
+
+        if (target.startsWith('#'))
         {
-            var sectionLink = $(this);
-            // capture the height of the navbar
-            var navHeight = $('#nav-wrapper').outerHeight() + 1;
-            var section = $(sectionLink.attr('href'));
+            if (first)
+            {
+                first = false;
+                current.data('from', 0);
+            } else
+            {
+                let top = $(target).position().top;
+                console.log(top);
+
+                current.data('from', top);
+                previous.data('to', top);
+            }
+            previous = current;
+        }
+    });
+
+    previous.data('to', Number.POSITIVE_INFINITY);
+
+    $(window).on("scroll", function()
+    {
+
+        let offset = $('header').height() + $('.slides nav.menu').height();
+        let current = $(window).scrollTop() + offset;
+
+        $('.slides nav.menu li a').each(function()
+        {
+
+            let a = $(this);
+            console.log(a.attr('href'), a.data('from'), a.data('to'), current);
+
+            let from = a.data('from');
+            let to = a.data('to');
 
             // subtract the navbar height from the top of the section
-            if(section.position().top - navHeight  <= currentPos && sectionLink.offset().top + section.height()> currentPos) {
-              $('.nav li').removeClass('active');
-              sectionLink.parent().addClass('active');
-            } else {
-              sectionLink.parent().removeClass('active');
+            if(from < current && current < to)
+            {
+                a.parent().addClass('active');
+            } else
+            {
+                a.parent().removeClass('active');
             }
         });
     });
+
+    $(window).scroll();
 
 });

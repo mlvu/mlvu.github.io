@@ -43,27 +43,35 @@ audio:not([controls]) {
 template {
  display:none
 }
+
 a {
- background-color:transparent
+    background-color:transparent
 }
+
 a:active,
 a:hover {
- outline:0
+    outline:0
 }
+
+
 abbr[title] {
- border-bottom:1px dotted
+    border-bottom: 1px dotted;
 }
+
 b,
 strong {
- font-weight:bold
+    font-weight:bold
 }
+
 dfn {
- font-style:italic
+    font-style:italic
 }
+
 h1 {
- font-size:2em;
- margin:0.67em 0
+    margin: 0.67em 0;
+    text-transform: uppercase;
 }
+
 mark {
 	background:#ff0;
 	color:#000
@@ -81,42 +89,47 @@ sub,sup {
 }
 
 sup {
- top:-0.5em
+    top:-0.5em
 }
+
 sub {
- bottom:-0.25em
+    bottom:-0.25em
 }
 img {
- border:0
+    border:0
 }
 svg:not(:root) {
- overflow:hidden
+    overflow:hidden
 }
+
 figure {
- margin:1em 40px
+    margin:1em 40px
 }
 hr {
- box-sizing:content-box;
- height:0
+    box-sizing:content-box;
+    height:0
 }
+
 pre {
- overflow:auto
+    overflow:auto
 }
+
 code,
 kbd,
 pre,
 samp {
- font-family:monospace, monospace;
- font-size:1em
+    font-family:monospace, monospace;
+    font-size:1em
 }
+
 button,
 input,
 optgroup,
 select,
 textarea {
- color:inherit;
- font:inherit;
- margin:0
+    color:inherit;
+    font:inherit;
+    margin:0
 }
 button {
  overflow:visible
@@ -417,9 +430,12 @@ a {
 	color: #0365C0;
 	text-decoration:none
 }
+
 a:hover {
- text-decoration:underline
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #aaa;
 }
+
 .btn {
  display:inline-block;
  margin-bottom:1rem;
@@ -487,28 +503,30 @@ a:hover {
      }
 }
 .project-name {
- margin-top:0;
- margin-bottom:0.1rem
+    font-size: 1.8rem
+    margin-top:0;
+    margin-bottom:0.1rem;
+    text-transform: uppercase;
 }
 @media screen and (min-width: 64em) {
- .project-name {
-  font-size:3.25rem
- }
+    .project-name {
+        font-size: 1.8rem
+    }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
- .project-name {
-  font-size:2.25rem
- }
+    .project-name {
+        font-size: 1.8rem
+    }
 }
 @media screen and (max-width: 42em) {
- .project-name {
-  font-size:1.75rem
- }
+    .project-name {
+        font-size: 1.8rem
+    }
 }
 .project-tagline {
- margin-bottom:2rem;
- font-weight:normal;
- opacity:0.7
+    margin-bottom: 2rem;
+    font-weight: normal;
+    margin-top: 1em;
 }
 @media screen and (min-width: 64em) {
  .project-tagline {
@@ -525,35 +543,38 @@ a:hover {
   font-size:1rem
  }
 }
+
 .main-content {
- word-wrap:break-word
+    word-wrap:break-word
 }
+
 .main-content :first-child {
  margin-top:0
 }
 @media screen and (min-width: 64em) {
     .main-content {
         max-width: 64rem;
-        padding: 0rem 6rem 2rem;
+        padding: 3rem 6rem 2rem;
         margin: 0 auto;
         font-size: 1.1rem
     }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .main-content {
-          padding: 0 4rem 0;
-          font-size: 1.1rem
+        padding: 3 4rem 0;
+        font-size: 1.1rem
     }
 }
 @media screen and (max-width: 42em) {
- .main-content {
-  padding:0rem 1rem 2rem;
-  font-size:1rem
- }
+    .main-content {
+        padding: 3rem 1rem 2rem;
+        font-size: 1rem
+    }
 }
 .main-content img {
- max-width:100%
+    max-width:100%
 }
+
 .main-content h1,
 .main-content h2,
 .main-content h3,
@@ -684,35 +705,36 @@ a:hover {
  border:0
 }
 .site-footer {
- padding-top:2rem;
- margin-top:2rem;
- border-top:solid 1px #eff0f1
+    padding-top:2rem;
+    margin-top:2rem;
+    border-top:solid 1px #eff0f1
 }
+
 @media screen and (min-width: 64em) {
- .site-footer {
-  font-size:1rem
- }
+    .site-footer {
+        font-size:1rem
+    }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
- .site-footer {
-  font-size:1rem
- }
+    .site-footer {
+        font-size:1rem
+    }
 }
 @media screen and (max-width: 42em) {
- .site-footer {
-  font-size:0.9rem
- }
+    .site-footer {
+        font-size:0.9rem
+    }
 }
 .site-footer-owner {
- display:block;
- font-weight:bold
+    display:block;
+    font-weight:bold
 }
 .site-footer-credits {
- color:#819198
+    color:#819198
 }
 
 .main-content td {
-	line-height: 22px;
+    line-height: 22px;
 }
 
 .main-content h3 {
@@ -768,7 +790,15 @@ table.overview th {
 
 #body.slides main {
     width: 100%;
-    max-width: 1600px;
+    max-width: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+#body.slides article {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 2em;
 }
 
 article.slides {
@@ -899,6 +929,8 @@ p.list-item::before {
 
     background: white;
     z-index: 10;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
 }
 
 .slides nav.menu ul {
@@ -907,13 +939,38 @@ p.list-item::before {
     padding: 0.5em;
     margin: 0;
 
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.slides nav.menu ul li {
+.slides nav.menu  li {
     list-style: none;
     padding: 0;
     margin: 0 0.5em 0 0;
 }
 
+.slides nav.menu li.active {
+    font-weight: bold;
+}
+
+.slides nav.menu li.home a {
+    display: inline-block;
+    text-indent: -10000em;
+    position: relative;
+    width: 2em;
+    height: 1em;
+}
+
+.slides nav.menu li.home a::before {
+    text-indent: 0;
+    content: '☚';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slides nav.menu li.pdf {
+    font-size: 0.8em;
+    baseline: 0.1em;
+    font-weight: bold;
+}

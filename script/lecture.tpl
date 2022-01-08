@@ -5,25 +5,26 @@ slides: true
 <nav class="menu">
     <ul>
         <li class="home"><a href="/">Home</a></li>
+        <li class="name">${title}</li>
         % for (id, stitle) in menu:
-            <li><a href="#slide-${f'{id:03}'}">${stitle}</a></li>
+            <li><a href="#video-${f'{id-1:03}'}">${stitle}</a></li>
         % endfor
         <li class="pdf"><a href="${pdf_link}">PDF</a></li>
     </ul>
 </nav>
 
-
 <article class="slides">
 % for i, slide in enumerate(content):
     % if slide['video'] is not None and not slide['video'].startswith('inline:'):
-       <section class="video" id="video-${i}">
+       <section class="video" id="video-${f'{i:03}'}">
            <a class="slide-link" href="${base_url}#video-${i}">link here</a>
            <iframe
-                src="${slide['video']}"
+                src="${slide['video']}?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
            </iframe>
+
        </section>
     % endif
 
@@ -31,7 +32,7 @@ slides: true
        <section id="slide-${f'{i+1:03}'}">
             <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}">link here</a>
             <iframe
-                src="${slide['video'][7:]}"
+                src="${slide['video'][7:]}?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>

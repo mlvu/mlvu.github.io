@@ -5,25 +5,26 @@ slides: true
 <nav class="menu">
     <ul>
         <li class="home"><a href="/">Home</a></li>
-            <li><a href="#slide-001">What is machine learning?</a></li>
-            <li><a href="#slide-022">Classification</a></li>
-            <li><a href="#slide-050">Other abstract tasks</a></li>
-            <li><a href="#slide-070">Social impact 1</a></li>
-            <li><a href="#slide-097">Generalization</a></li>
+        <li class="name">Lecture 1: Introduction</li>
+            <li><a href="#video-000">What is machine learning?</a></li>
+            <li><a href="#video-021">Classification</a></li>
+            <li><a href="#video-049">Other abstract tasks</a></li>
+            <li><a href="#video-069">Social impact 1</a></li>
+            <li><a href="#video-096">Generalization</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/11.Introduction.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
 
-
 <article class="slides">
-       <section class="video" id="video-0">
+       <section class="video" id="video-000">
            <a class="slide-link" href="mlvu.github.io/lecture01#video-0">link here</a>
            <iframe
-                src="https://youtu.be/G5vMe_A5OTo"
+                src="https://www.youtube.com/embed/G5vMe_A5OTo?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
            </iframe>
+
        </section>
 
        <section id="slide-001">
@@ -160,7 +161,7 @@ slides: true
        <section id="slide-014">
             <a class="slide-link" href="mlvu.github.io/lecture01#slide-014">link here</a>
             <iframe
-                src="https://www.youtube.com/watch?v=7BtLqqJVP9w"
+                src="https://www.youtube.com/embed/7BtLqqJVP9w?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -241,14 +242,15 @@ slides: true
             </figcaption>
        </section>
 
-       <section class="video" id="video-21">
+       <section class="video" id="video-021">
            <a class="slide-link" href="mlvu.github.io/lecture01#video-21">link here</a>
            <iframe
-                src="https://youtu.be/NPqYy-OuNEA"
+                src="https://www.youtube.com/embed/NPqYy-OuNEA?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
            </iframe>
+
        </section>
 
        <section id="slide-022">
@@ -536,14 +538,15 @@ slides: true
             </figcaption>
        </section>
 
-       <section class="video" id="video-49">
+       <section class="video" id="video-049">
            <a class="slide-link" href="mlvu.github.io/lecture01#video-49">link here</a>
            <iframe
-                src="https://youtu.be/pJIrdzhsWRM"
+                src="https://www.youtube.com/embed/pJIrdzhsWRM?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
            </iframe>
+
        </section>
 
        <section id="slide-050">
@@ -750,14 +753,15 @@ slides: true
             </figcaption>
        </section>
 
-       <section class="video" id="video-69">
+       <section class="video" id="video-069">
            <a class="slide-link" href="mlvu.github.io/lecture01#video-69">link here</a>
            <iframe
-                src="https://youtu.be/uWmbIQHtjhk"
+                src="https://www.youtube.com/embed/uWmbIQHtjhk?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
            </iframe>
+
        </section>
 
        <section id="slide-070">
@@ -1034,14 +1038,15 @@ slides: true
             </figcaption>
        </section>
 
-       <section class="video" id="video-96">
+       <section class="video" id="video-096">
            <a class="slide-link" href="mlvu.github.io/lecture01#video-96">link here</a>
            <iframe
-                src="https://youtu.be/24fPK3CM-8E"
+                src="https://www.youtube.com/embed/24fPK3CM-8E?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
            </iframe>
+
        </section>
 
        <section id="slide-097">
