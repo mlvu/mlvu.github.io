@@ -163,6 +163,8 @@ def generate(
 
     bold = set()
     italic = set()
+    sup = set()
+    sub = set()
 
     orange = set()
     blue   = set()
@@ -183,6 +185,12 @@ def generate(
         if '<sf:italic>' in strnote:
             italic.add(id)
 
+        if 'sf:superscript' in strnote:
+            sup.add(id)
+
+        if 'sf:subscript' in strnote:
+            sub.add(id)
+
         if 'sfa:r="0.041535880416631699" sfa:g="0.30631634593009949" sfa:b="0.70056915283203125"' in strnote:
             blue.add(id)
         if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote:
@@ -198,10 +206,11 @@ def generate(
     listyles = set()
     styles = root.xpath('.//sf:liststyle', namespaces=root.nsmap)
     for note in styles:
+
         id = note.attrib['{http://developer.apple.com/namespaces/sfa}ID']
         strnote = str(etree.tostring(note))
 
-        if 'sf:labelCharacterStyle1' in strnote:
+        if ('sf:labelCharacterStyle1' in strnote) or ('sf:type="bullet"' in strnote):
             listyles.add(id)
 
     # -- Find all paragraphstyles that reference these list styles
@@ -211,10 +220,10 @@ def generate(
     for note in styles:
 
         id = note.attrib['{http://developer.apple.com/namespaces/sfa}ID']
-        strnote = str(etree.tostring(note))
+        strnote = str(etree.tostring(note, encoding='unicode'))
 
         for listyle in listyles:
-            if listyle in strnote:
+            if f'"{listyle}"' in strnote:
                 li.add(id)
 
     # get all the presenter note xml elements
@@ -254,6 +263,10 @@ def generate(
                     node.tag = 'strong'
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in italic:
                     node.tag = 'em'
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in sup:
+                    node.tag = 'sup'
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in sub:
+                    node.tag = 'sub'
 
             elif node.tag == 'p':
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in li:

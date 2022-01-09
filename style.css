@@ -719,6 +719,7 @@ a:hover {
  background-color:#eff0f1;
  border:0
 }
+
 .site-footer {
     padding-top:2rem;
     margin-top:2rem;
@@ -813,7 +814,7 @@ table.overview th {
 #body.slides article {
     max-width: 80rem;
     margin: 0 auto;
-    padding-top: 2em;
+    padding: 2em;
 }
 
 article.slides {
@@ -856,13 +857,39 @@ article.slides {
     margin-right: 1em;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     .slides section img {
         width: 100%;
     }
 
     .slides nav.menu {
-        font-size: 0.5em;
+        font-size: 1em;
+    }
+
+    #body.slides nav.menu ul {
+        justify-content: left;
+    }
+
+    #body.slides nav.menu li {
+        position: absolute;
+        top: 0.5em;
+        left: 1em;
+    }
+
+    #body.slides nav.menu li + li {
+        position: static;
+        margin: 0 0.5em 0 0;
+    }
+
+
+    #body.slides nav.menu li+li::before {
+        content: '|';
+        padding-right: 0.5em;
+    }
+
+    #body.slides section.anim::before {
+        top: 2em;
+        left: calc(100% - 4em);
     }
 }
 
@@ -928,12 +955,18 @@ article.slides {
     position: absolute;
 
 
-    top: 1.3em;
-    left: calc(50% - 2em);
-
+    top: 2em;
+    left: calc(50% - 3em);
 
     pointer-events: none;
-    text-shadow: 1px 1px 1px #eee;
+    width: 2em;
+    height: 2em;
+
+    text-align: center;
+    line-height: 2em;
+
+    background-color: #dddd;
+    border-radius: 50%;
 }
 
 .slides section:hover.anim::before {
@@ -953,6 +986,8 @@ p.list-item::before {
 .slides nav.menu {
     position: sticky;
     top: 0;
+
+    padding-left: 2em;
 
     background: white;
     z-index: 10;
@@ -974,9 +1009,11 @@ p.list-item::before {
     list-style: none;
     padding: 0;
     margin: 0 0.5em 0 0;
+
+    font-size: 0.8em;
 }
 
-.slides nav.menu li.active {
+.slides nav.menu li.active a {
     font-weight: bold;
 }
 
@@ -1029,7 +1066,7 @@ nav.lectures div a {
 
 nav.lectures div a h3 {
     margin: 1em;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px #277BC900;
 }
 
 nav.lectures div a h3 span {
