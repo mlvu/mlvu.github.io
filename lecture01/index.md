@@ -17,7 +17,7 @@ slides: true
 
 <article class="slides">
        <section class="video" id="video-000">
-           <a class="slide-link" href="mlvu.github.io/lecture01#video-0">link here</a>
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-0">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/G5vMe_A5OTo?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -28,7 +28,7 @@ slides: true
        </section>
 
        <section id="slide-001">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-001">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-001">link here</a>
             <img src="11.Introduction.0.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
@@ -38,7 +38,7 @@ slides: true
 
 
        <section id="slide-002">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-002">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-002">link here</a>
             <img src="11.Introduction.0.key-stage-0002.png" class="slide-image" />
 
             <figcaption>
@@ -48,7 +48,7 @@ slides: true
 
 
        <section id="slide-003">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-003">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-003">link here</a>
             <img src="11.Introduction.0.key-stage-0003.svg" class="slide-image" />
 
             <figcaption>
@@ -58,7 +58,7 @@ slides: true
 
 
        <section id="slide-004">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-004">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-004">link here</a>
             <img src="11.Introduction.0.key-stage-0004.svg" class="slide-image" />
 
             <figcaption>
@@ -68,7 +68,7 @@ slides: true
 
 
        <section id="slide-005">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-005">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-005">link here</a>
             <img src="11.Introduction.0.key-stage-0005.svg" class="slide-image" />
 
             <figcaption>
@@ -78,7 +78,7 @@ slides: true
 
 
        <section id="slide-006">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-006">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-006">link here</a>
             <img src="11.Introduction.0.key-stage-0006.svg" class="slide-image" />
 
             <figcaption>
@@ -88,7 +88,7 @@ slides: true
 
 
        <section id="slide-007">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-007">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-007">link here</a>
             <img src="11.Introduction.0.key-stage-0007.svg" class="slide-image" />
 
             <figcaption>
@@ -98,7 +98,7 @@ slides: true
 
 
        <section id="slide-008">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-008">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-008">link here</a>
             <img src="11.Introduction.0.key-stage-0008.svg" class="slide-image" />
 
             <figcaption>
@@ -108,7 +108,7 @@ slides: true
 
 
        <section id="slide-009">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-009">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-009">link here</a>
             <img src="11.Introduction.0.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
@@ -118,7 +118,7 @@ slides: true
 
 
        <section id="slide-010">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-010">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-010">link here</a>
             <img src="11.Introduction.0.key-stage-0010.svg" class="slide-image" />
 
             <figcaption>
@@ -128,18 +128,21 @@ slides: true
 
 
        <section id="slide-010" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-011">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-011">link here</a>
             <img src="11.Introduction.0.key-stage-0011anim0.svg" data-images="11.Introduction.0.key-stage-0011anim0.svg,11.Introduction.0.key-stage-0011anim1.svg,11.Introduction.0.key-stage-0011anim2.svg" class="slide-image" />
 
             <figcaption>
             <p    >Now, the main problem with machine learning is that <strong>we want solutions that are applicable across domains</strong>. You don’t want to dedicate your entire life to crafting a perfect self-learning computer chess program, and then find out that your ideas have no use for anything else. We want to solve the problem of machine learning <strong>in general</strong>: instead of studying each problem in isolation, we want solutions that can be applied to many problems.<br></p><p    >To make this possible, machine learning is often built on <strong>abstract tasks</strong> like <em>classification</em>, <em>regression</em> or <em>clustering</em>. If you have a practical problem, like chess playing, you find a way to abstract the problem of playing chess (or part of it) to the generic task of, say, classification, and then you pick one of many existing classification <em>methods</em>.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-012">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-012">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-012">link here</a>
             <img src="11.Introduction.0.key-stage-0012.svg" class="slide-image" />
 
             <figcaption>
@@ -149,7 +152,7 @@ slides: true
 
 
        <section id="slide-013">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-013">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-013">link here</a>
             <img src="11.Introduction.0.key-stage-0013.svg" class="slide-image" />
 
             <figcaption>
@@ -159,7 +162,7 @@ slides: true
 
 
        <section id="slide-014">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-014">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-014">link here</a>
             <iframe
                 src="https://www.youtube.com/embed/7BtLqqJVP9w?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -174,7 +177,7 @@ slides: true
 
 
        <section id="slide-015">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-015">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-015">link here</a>
             <img src="11.Introduction.0.key-stage-0015.svg" class="slide-image" />
 
             <figcaption>
@@ -184,7 +187,7 @@ slides: true
 
 
        <section id="slide-016">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-016">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-016">link here</a>
             <img src="11.Introduction.0.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
@@ -194,7 +197,7 @@ slides: true
 
 
        <section id="slide-017">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-017">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-017">link here</a>
             <img src="11.Introduction.0.key-stage-0017.svg" class="slide-image" />
 
             <figcaption>
@@ -204,7 +207,7 @@ slides: true
 
 
        <section id="slide-018">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-018">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-018">link here</a>
             <img src="11.Introduction.0.key-stage-0018.svg" class="slide-image" />
 
             <figcaption>
@@ -214,7 +217,7 @@ slides: true
 
 
        <section id="slide-019">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-019">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-019">link here</a>
             <img src="11.Introduction.0.key-stage-0019.svg" class="slide-image" />
 
             <figcaption>
@@ -224,7 +227,7 @@ slides: true
 
 
        <section id="slide-020">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-020">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-020">link here</a>
             <img src="11.Introduction.0.key-stage-0020.svg" class="slide-image" />
 
             <figcaption>
@@ -234,7 +237,7 @@ slides: true
 
 
        <section id="slide-021">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-021">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-021">link here</a>
             <img src="11.Introduction.0.key-stage-0021.svg" class="slide-image" />
 
             <figcaption>
@@ -243,7 +246,7 @@ slides: true
        </section>
 
        <section class="video" id="video-021">
-           <a class="slide-link" href="mlvu.github.io/lecture01#video-21">link here</a>
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-21">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/NPqYy-OuNEA?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -254,7 +257,7 @@ slides: true
        </section>
 
        <section id="slide-022">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-022">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-022">link here</a>
             <img src="11.Introduction.0.key-stage-0022.svg" class="slide-image" />
 
             <figcaption>
@@ -264,7 +267,7 @@ slides: true
 
 
        <section id="slide-023">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-023">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-023">link here</a>
             <img src="11.Introduction.0.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
@@ -274,7 +277,7 @@ slides: true
 
 
        <section id="slide-024">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-024">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-024">link here</a>
             <img src="11.Introduction.0.key-stage-0024.svg" class="slide-image" />
 
             <figcaption>
@@ -284,18 +287,21 @@ slides: true
 
 
        <section id="slide-024" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-025">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-025">link here</a>
             <img src="11.Introduction.0.key-stage-0025anim0.svg" data-images="11.Introduction.0.key-stage-0025anim0.svg,11.Introduction.0.key-stage-0025anim1.svg,11.Introduction.0.key-stage-0025anim2.svg,11.Introduction.0.key-stage-0025anim3.svg,11.Introduction.0.key-stage-0025anim4.svg,11.Introduction.0.key-stage-0025anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is the basic framework of classification. The data that we provide our system with consists of examples, called <strong>instances</strong>, of the things we are trying to learn something about. In this example, our instances are e-mails.<br></p><p    >We must then make a series of measurements about each instance. In the case of e-mails, we may measure how often a specific word occurs. The things we measure are called the<strong> features</strong> of the instance. We can measure numeric features (like age or speed), but they can also be categoric (like gender or color).<br></p><p    >Finally we have the <strong>target value</strong>: the thing we are trying to learn. In classification, this is always a categoric value, or a <em>class</em>: one of a handful of possible values. In this case, is the e-mail <span>spam</span> (an unwanted advertising e-mail), or<span> ham</span> (a genuine e-mail).<br></p><p    >This dataset is then fed to a learning algorithm. This can be anything, but it has to produce a classifier. A classifier is a small “machine” that (attempts) to solve the learning problem. That is, it takes a new instance, one that wasn’t in the original dataset, and for which we don’t know the target value, and it makes a guess at the target value. <br></p><p    >Note that the model in this example predicts "spam" for the instance, even though it has seen the same instance in its data with the label "ham". This is perfectly possible: the job of the model is not to memorize the data but to learn from it. Often the model needs to discard specific details it has seen in order to do its job well.<br></p><p    ><br></p><p    ><br></p><p    ></p>
+            <p    >This is the basic framework of classification. The data that we provide our system with consists of examples, called <strong>instances</strong>, of the things we are trying to learn something about. In this example, our instances are e-mails.<br></p><p    >We must then make a series of measurements about each instance. In the case of e-mails, we may measure how often a specific word occurs. The things we measure are called the<strong> features</strong> of the instance. We can measure numeric features (like age or speed), but they can also be categoric (like gender or color).<br></p><p    >Finally we have the <strong>target value</strong>: the thing we are trying to learn. In classification, this is always a categoric value, or a <em>class</em>: one of a handful of possible values. In this case, is the e-mail <span class="orange red">spam</span> (an unwanted advertising e-mail), or<span class="green"> ham</span> (a genuine e-mail).<br></p><p    >This dataset is then fed to a learning algorithm. This can be anything, but it has to produce a classifier. A classifier is a small “machine” that (attempts) to solve the learning problem. That is, it takes a new instance, one that wasn’t in the original dataset, and for which we don’t know the target value, and it makes a guess at the target value. <br></p><p    >Note that the model in this example predicts "spam" for the instance, even though it has seen the same instance in its data with the label "ham". This is perfectly possible: the job of the model is not to memorize the data but to learn from it. Often the model needs to discard specific details it has seen in order to do its job well.<br></p><p    ><br></p><p    ><br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-026">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-026">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-026">link here</a>
             <img src="11.Introduction.0.key-stage-0026.png" class="slide-image" />
 
             <figcaption>
@@ -305,7 +311,7 @@ slides: true
 
 
        <section id="slide-027">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-027">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-027">link here</a>
             <img src="11.Introduction.0.key-stage-0027.png" class="slide-image" />
 
             <figcaption>
@@ -315,18 +321,21 @@ slides: true
 
 
        <section id="slide-027" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-028">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-028">link here</a>
             <img src="11.Introduction.0.key-stage-0028anim0.svg" data-images="11.Introduction.0.key-stage-0028anim0.svg,11.Introduction.0.key-stage-0028anim1.svg,11.Introduction.0.key-stage-0028anim2.svg,11.Introduction.0.key-stage-0028anim3.svg" class="slide-image" />
 
             <figcaption>
             <p    >A simple way of attacking this problem is to make each pixel a feature. Here’s what that looks like. For each instance, we translate each pixel to a value between 0 (black) and 1 (white). This gives us instance with 784 features each, labeled with a digit from 0 to 9. We feed these to the learning algorithm, which produces a classifier. We then get a new example, and ask the classifier what it thinks. Once we have a classifier that does well, we can use it in a larger system, for recognising digits.<br></p><p    >The current  best performing classifier for this task has a <a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#4d4e495354"><strong>probability of 0.21% </strong></a>of getting an unseen example wrong.<br></p><p    >Note that we haven’t fully solved the problem of character recognition. We still need to cut a sequence of digits into individual digits, feed those digits to the classifier and process the results. This all the work we have to to to translate our<strong> real problem </strong>to the <strong>abstract problem</strong> of classification. Machine learning has solved part of the problem for us, but there is usually still a lot of engineering left to do.<br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-029">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-029">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-029">link here</a>
             <img src="11.Introduction.0.key-stage-0029.svg" class="slide-image" />
 
             <figcaption>
@@ -336,7 +345,7 @@ slides: true
 
 
        <section id="slide-030">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-030">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-030">link here</a>
             <img src="11.Introduction.0.key-stage-0030.svg" class="slide-image" />
 
             <figcaption>
@@ -346,7 +355,7 @@ slides: true
 
 
        <section id="slide-031">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-031">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-031">link here</a>
             <img src="11.Introduction.0.key-stage-0031.svg" class="slide-image" />
 
             <figcaption>
@@ -356,7 +365,7 @@ slides: true
 
 
        <section id="slide-032">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-032">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-032">link here</a>
             <img src="11.Introduction.0.key-stage-0032.svg" class="slide-image" />
 
             <figcaption>
@@ -366,7 +375,7 @@ slides: true
 
 
        <section id="slide-033">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-033">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-033">link here</a>
             <img src="11.Introduction.0.key-stage-0033.svg" class="slide-image" />
 
             <figcaption>
@@ -376,7 +385,7 @@ slides: true
 
 
        <section id="slide-034">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-034">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-034">link here</a>
             <img src="11.Introduction.0.key-stage-0034.png" class="slide-image" />
 
             <figcaption>
@@ -386,18 +395,21 @@ slides: true
 
 
        <section id="slide-034" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-035">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-035">link here</a>
             <img src="11.Introduction.0.key-stage-0035anim0.svg" data-images="11.Introduction.0.key-stage-0035anim0.svg,11.Introduction.0.key-stage-0035anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Instead of portrait pictures, we'll look at physical measurements. <br></p><p    >Here’s a dataset that we’ll use as a running example. Its <strong>instances</strong> are US soldiers, the two<strong> features</strong> are the height (or ‘stature’) and the distance between the shoulder blades (‘interscye’). The class is their biological sex, restricted to male or female. Are these two features enough to predict whether somebody’s sex is <strong>male</strong> or <strong>female</strong>?<br></p><p    >This is, of course, an extremely crude example. Biological sex cannot be perfectly predicted from just two measurements, and isn’t perfectly captured in these two classes. It’s important to understand that most machine learning algorithms are like this: crude approximations. We’ll talk more about this problem in the fourth video.<br></p><p    >data source: ANSUR II<br></p><p    >image source: MEASURER’S HANDBOOK: US ARMY AND MARINE CORPS ANTHROPOMETRIC SURVEYS, 2010-2011 <br></p><p    ></p>
+            <p    >Instead of portrait pictures, we'll look at physical measurements. <br></p><p    >Here’s a dataset that we’ll use as a running example. Its <strong>instances</strong> are US soldiers, the two<strong> features</strong> are the height (or ‘stature’) and the distance between the shoulder blades (‘interscye’). The class is their biological sex, restricted to male or female. Are these two features enough to predict whether somebody’s sex is <strong>male</strong> or <strong class="orange red">female</strong>?<br></p><p    >This is, of course, an extremely crude example. Biological sex cannot be perfectly predicted from just two measurements, and isn’t perfectly captured in these two classes. It’s important to understand that most machine learning algorithms are like this: crude approximations. We’ll talk more about this problem in the fourth video.<br></p><p    >data source: ANSUR II<br></p><p    >image source: MEASURER’S HANDBOOK: US ARMY AND MARINE CORPS ANTHROPOMETRIC SURVEYS, 2010-2011 <br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-036">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-036">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-036">link here</a>
             <img src="11.Introduction.0.key-stage-0036.svg" class="slide-image" />
 
             <figcaption>
@@ -407,18 +419,21 @@ slides: true
 
 
        <section id="slide-036" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-037">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-037">link here</a>
             <img src="11.Introduction.0.key-stage-0037anim0.svg" data-images="11.Introduction.0.key-stage-0037anim0.svg,11.Introduction.0.key-stage-0037anim1.svg,11.Introduction.0.key-stage-0037anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a simple idea for a classifier: <em>draw a line</em>. We just draw a line, and call everything above the line <strong>male</strong>, and below it<span class="colored"> </span><strong>female</strong>. <br></p><p    >As you can see,  a many examples end up misclassified, but  the majority is on the correct side of the line. Our classifier would already do much  better than one that would simply guess at random or call everything <strong>female</strong>.<br></p><p    >If we see a new person, all we need to do is measure them, and see whether they end up above or below the line.<br></p><p    ></p>
+            <p    >Here is a simple idea for a classifier: <em>draw a line</em>. We just draw a line, and call everything above the line <strong class="blue">male</strong>, and below it<span> </span><strong class="orange red">female</strong>. <br></p><p    >As you can see,  a many examples end up misclassified, but  the majority is on the correct side of the line. Our classifier would already do much  better than one that would simply guess at random or call everything <strong class="orange red">female</strong>.<br></p><p    >If we see a new person, all we need to do is measure them, and see whether they end up above or below the line.<br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-038">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-038">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-038">link here</a>
             <img src="11.Introduction.0.key-stage-0038.svg" class="slide-image" />
 
             <figcaption>
@@ -428,18 +443,21 @@ slides: true
 
 
        <section id="slide-038" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-039">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-039">link here</a>
             <img src="11.Introduction.0.key-stage-0039anim0.svg" data-images="11.Introduction.0.key-stage-0039anim0.svg,11.Introduction.0.key-stage-0039anim1.svg,11.Introduction.0.key-stage-0039anim2.svg" class="slide-image" />
 
             <figcaption>
             <p    >Which line should we choose? Some lines separate the classes pretty well, and some not at all.<br></p><p    >We can visualise this problem in the feature space. In the feature space (or instance space), each instance is a point, and our current classifier is a line. <br></p><p    >Since a line is defined by two parameters (the slope <strong>s</strong> and the intercept <strong>b</strong>), we can visualise the<em> </em><strong>model space</strong> as a plane.For each value of s and b, we get a point in the model space, and a line in the feature space. Our job is to search the model space for a model that separates the data well.<br></p><p    >To search the model space, we define a<strong> loss function</strong> which tells us how well a particular model does for our data.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-040">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-040">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-040">link here</a>
             <img src="11.Introduction.0.key-stage-0040.svg" class="slide-image" />
 
             <figcaption>
@@ -449,7 +467,7 @@ slides: true
 
 
        <section id="slide-041">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-041">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-041">link here</a>
             <img src="11.Introduction.0.key-stage-0041.svg" class="slide-image" />
 
             <figcaption>
@@ -459,18 +477,21 @@ slides: true
 
 
        <section id="slide-041" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-042">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-042">link here</a>
             <img src="11.Introduction.0.key-stage-0042anim0.svg" data-images="11.Introduction.0.key-stage-0042anim0.svg,11.Introduction.0.key-stage-0042anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >Here is a radically different approach: <strong>a decision tree</strong>. This classifier consists of a tree, which studies one feature in isolation at every node. In this case, it moves left if the feature is lower than some threshold value, and right if the feature is higher.<br></p><p    >The model space of all possible decision trees is a lot more difficult to visualize. Often, decision trees are “grown” by adding nodes from the root until a particular criterion is reached. We’ll discuss how to train decision trees in detail in week 5 (the algorithm is simple, but it requires a little probability theory).<br></p><p    >The shape that he classifier draws in feature space to segment the two classes is called the<strong> decision boundary</strong>.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-043">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-043">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-043">link here</a>
             <img src="11.Introduction.0.key-stage-0043.svg" class="slide-image" />
 
             <figcaption>
@@ -480,17 +501,17 @@ slides: true
 
 
        <section id="slide-044">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-044">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-044">link here</a>
             <img src="11.Introduction.0.key-stage-0044.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Finally, here is an example of a l<em>azy </em>classifier. k-Nearest neighbours. It doesn’t do any learning. It just<em> remembers</em> the data. <br></p><p    >For a new point (indicated by the question mark), it just looks at the <em>k</em> points that are closest (k=7 in this picture), and assigns the class that is most frequent in that set (<span>blue</span> in this case).<br></p><p    >k is what we call a <strong>hyperparameter</strong>: you have to choose it yourself before you use the algorithm. We’ll discuss how to choose hyperparameters in lecture 4.</p><p    ></p>
+            <p    >Finally, here is an example of a l<em>azy </em>classifier. k-Nearest neighbours. It doesn’t do any learning. It just<em> remembers</em> the data. <br></p><p    >For a new point (indicated by the question mark), it just looks at the <em>k</em> points that are closest (k=7 in this picture), and assigns the class that is most frequent in that set (<span class="blue">blue</span> in this case).<br></p><p    >k is what we call a <strong>hyperparameter</strong>: you have to choose it yourself before you use the algorithm. We’ll discuss how to choose hyperparameters in lecture 4.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-045">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-045">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-045">link here</a>
             <img src="11.Introduction.0.key-stage-0045.svg" class="slide-image" />
 
             <figcaption>
@@ -500,7 +521,7 @@ slides: true
 
 
        <section id="slide-046">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-046">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-046">link here</a>
             <img src="11.Introduction.0.key-stage-0046.svg" class="slide-image" />
 
             <figcaption>
@@ -510,7 +531,7 @@ slides: true
 
 
        <section id="slide-047">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-047">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-047">link here</a>
             <img src="11.Introduction.0.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
@@ -520,7 +541,7 @@ slides: true
 
 
        <section id="slide-048">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-048">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-048">link here</a>
             <img src="11.Introduction.0.key-stage-0048.svg" class="slide-image" />
 
             <figcaption>
@@ -530,7 +551,7 @@ slides: true
 
 
        <section id="slide-049">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-049">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-049">link here</a>
             <img src="11.Introduction.0.key-stage-0049.svg" class="slide-image" />
 
             <figcaption>
@@ -539,7 +560,7 @@ slides: true
        </section>
 
        <section class="video" id="video-049">
-           <a class="slide-link" href="mlvu.github.io/lecture01#video-49">link here</a>
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-49">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/pJIrdzhsWRM?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -550,7 +571,7 @@ slides: true
        </section>
 
        <section id="slide-050">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-050">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-050">link here</a>
             <img src="11.Introduction.0.key-stage-0050.svg" class="slide-image" />
 
             <figcaption>
@@ -560,7 +581,7 @@ slides: true
 
 
        <section id="slide-051">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-051">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-051">link here</a>
             <img src="11.Introduction.0.key-stage-0051.svg" class="slide-image" />
 
             <figcaption>
@@ -570,18 +591,21 @@ slides: true
 
 
        <section id="slide-051" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-052">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-052">link here</a>
             <img src="11.Introduction.0.key-stage-0052anim0.svg" data-images="11.Introduction.0.key-stage-0052anim0.svg,11.Introduction.0.key-stage-0052anim1.svg,11.Introduction.0.key-stage-0052anim2.svg,11.Introduction.0.key-stage-0052anim3.svg,11.Introduction.0.key-stage-0052anim4.svg,11.Introduction.0.key-stage-0052anim5.svg,11.Introduction.0.key-stage-0052anim6.svg,11.Introduction.0.key-stage-0052anim7.svg" class="slide-image" />
 
             <figcaption>
             <p    >Regression works exactly the same as classification, except we’re predicting a number instead of a class. That is, the model we’re trying to learn is a function from the feature space to ℝ.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-053">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-053">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-053">link here</a>
             <img src="11.Introduction.0.key-stage-0053.png" class="slide-image" />
 
             <figcaption>
@@ -591,29 +615,35 @@ slides: true
 
 
        <section id="slide-053" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-054">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-054">link here</a>
             <img src="11.Introduction.0.key-stage-0054anim0.svg" data-images="11.Introduction.0.key-stage-0054anim0.svg,11.Introduction.0.key-stage-0054anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what our data looks like. Note that though it looks the same as in the classification example, this time we’re plotting both the <span>targets</span> and the<span> feature space</span> in the same figure.<br></p><p    >We can use a <strong>linear model</strong> again. But note how differently we’re using the model. Previously, we wanted to segment the feature space into two classes. Now we’re trying to model the relation between the feature(s) and the target. The model has the same shape, but we’re using it very differently.<br></p><p    >The line I’ve drawn here isn’t very good. It predicts much too high a value. To determine how good a model is, we must again choose a <strong>loss function</strong>.</p><p    ></p>
+            <p    >Here’s what our data looks like. Note that though it looks the same as in the classification example, this time we’re plotting both the <span>targets</span> and the<span> feature space</span> in the same figure.<br></p><p    >We can use a <strong class="blue">linear model</strong> again. But note how differently we’re using the model. Previously, we wanted to segment the feature space into two classes. Now we’re trying to model the relation between the feature(s) and the target. The model has the same shape, but we’re using it very differently.<br></p><p    >The line I’ve drawn here isn’t very good. It predicts much too high a value. To determine how good a model is, we must again choose a <strong>loss function</strong>.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-054" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-055">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-055">link here</a>
             <img src="11.Introduction.0.key-stage-0055anim0.svg" data-images="11.Introduction.0.key-stage-0055anim0.svg,11.Introduction.0.key-stage-0055anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The <strong>loss function</strong> maps a model to a number that expresses how well it fits the data (the smaller the loss, the better). Offline machine learning boils down to finding a model with a low loss for your data.<br></p><p    >Here is common loss function for regression. <strong>p</strong> stands for the parameters that define the line. We simply take the difference between the model prediction and the target value from the data. This is called a<strong> residual</strong>. We square, and then sum all residuals.<br></p><p    >Sometimes we also divide by the size of the data (n). Occasionally, we multiply by 1/2 for technical reasons. This changes the actual value, but not <em>which</em> model produces the lowest loss, which is the question we want to answer.<br></p><p    ><br></p><p    >image source: <a href="http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html"><strong>http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html</strong></a></p><p    ><a href="http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html"><strong></strong></a></p>
+            <p    >The <strong>loss function</strong> maps a model to a number that expresses how well it fits the data (the smaller the loss, the better). Offline machine learning boils down to finding a model with a low loss for your data.<br></p><p    >Here is common loss function for regression. <strong class="orange red">p</strong> stands for the parameters that define the line. We simply take the difference between the model prediction and the target value from the data. This is called a<strong> residual</strong>. We square, and then sum all residuals.<br></p><p    >Sometimes we also divide by the size of the data (n). Occasionally, we multiply by 1/2 for technical reasons. This changes the actual value, but not <em>which</em> model produces the lowest loss, which is the question we want to answer.<br></p><p    ><br></p><p    >image source: <a href="http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html"><strong>http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html</strong></a></p><p    ><a href="http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html"><strong></strong></a></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-056">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-056">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-056">link here</a>
             <img src="11.Introduction.0.key-stage-0056.svg" class="slide-image" />
 
             <figcaption>
@@ -623,7 +653,7 @@ slides: true
 
 
        <section id="slide-057">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-057">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-057">link here</a>
             <img src="11.Introduction.0.key-stage-0057.svg" class="slide-image" />
 
             <figcaption>
@@ -633,7 +663,7 @@ slides: true
 
 
        <section id="slide-058">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-058">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-058">link here</a>
             <img src="11.Introduction.0.key-stage-0058.svg" class="slide-image" />
 
             <figcaption>
@@ -643,7 +673,7 @@ slides: true
 
 
        <section id="slide-059">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-059">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-059">link here</a>
             <img src="11.Introduction.0.key-stage-0059.svg" class="slide-image" />
 
             <figcaption>
@@ -653,18 +683,21 @@ slides: true
 
 
        <section id="slide-059" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-060">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-060">link here</a>
             <img src="11.Introduction.0.key-stage-0060anim0.svg" data-images="11.Introduction.0.key-stage-0060anim0.svg,11.Introduction.0.key-stage-0060anim1.svg,11.Introduction.0.key-stage-0060anim2.svg,11.Introduction.0.key-stage-0060anim3.svg,11.Introduction.0.key-stage-0060anim4.svg" class="slide-image" />
 
             <figcaption>
             <p    >In the case of clustering, we ask the learner to split the instances into a number of clusters. The number of clusters is usually given beforehand by the user.<br></p><p    >This looks a lot like classification, but note that there are no example classes provided by the data.<br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-061">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-061">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-061">link here</a>
             <img src="11.Introduction.0.key-stage-0061.svg" class="slide-image" />
 
             <figcaption>
@@ -674,18 +707,21 @@ slides: true
 
 
        <section id="slide-061" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-062">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-062">link here</a>
             <img src="11.Introduction.0.key-stage-0062anim0.svg" data-images="11.Introduction.0.key-stage-0062anim0.svg,11.Introduction.0.key-stage-0062anim1.svg,11.Introduction.0.key-stage-0062anim2.svg,11.Introduction.0.key-stage-0062anim3.svg,11.Introduction.0.key-stage-0062anim4.svg,11.Introduction.0.key-stage-0062anim5.svg" class="slide-image" />
 
             <figcaption>
             <p    >In density estimation, we want to learn how<em> likely </em>new data is. Is a 2 m tall 16 year old more or less likely than a 1.5 m tall 80 year old? We predict a number for each instance, and that number expresses how likely the model thinks the given instance is.<br></p><p    >The number that the model produces should be a <em>probability </em>if the feature spaces is discrete. That means that the sum of all answers over the whole feature space should be 1. <br></p><p    >If the feature space is continuous (numeric features), the answer should be a probability <em>density</em> (and all answers should<em> integrate </em>to 1).</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-063">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-063">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-063">link here</a>
             <img src="11.Introduction.0.key-stage-0063.svg" class="slide-image" />
 
             <figcaption>
@@ -695,7 +731,7 @@ slides: true
 
 
        <section id="slide-064">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-064">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-064">link here</a>
             <img src="11.Introduction.0.key-stage-0064.png" class="slide-image" />
 
             <figcaption>
@@ -705,7 +741,7 @@ slides: true
 
 
        <section id="slide-065">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-065">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-065">link here</a>
             <img src="11.Introduction.0.key-stage-0065.svg" class="slide-image" />
 
             <figcaption>
@@ -715,7 +751,7 @@ slides: true
 
 
        <section id="slide-066">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-066">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-066">link here</a>
             <img src="11.Introduction.0.key-stage-0066.svg" class="slide-image" />
 
             <figcaption>
@@ -725,7 +761,7 @@ slides: true
 
 
        <section id="slide-067">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-067">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-067">link here</a>
             <img src="11.Introduction.0.key-stage-0067.svg" class="slide-image" />
 
             <figcaption>
@@ -735,7 +771,7 @@ slides: true
 
 
        <section id="slide-068">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-068">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-068">link here</a>
             <img src="11.Introduction.0.key-stage-0068.svg" class="slide-image" />
 
             <figcaption>
@@ -745,7 +781,7 @@ slides: true
 
 
        <section id="slide-069">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-069">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-069">link here</a>
             <img src="11.Introduction.0.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
@@ -754,7 +790,7 @@ slides: true
        </section>
 
        <section class="video" id="video-069">
-           <a class="slide-link" href="mlvu.github.io/lecture01#video-69">link here</a>
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-69">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/uWmbIQHtjhk?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -765,7 +801,7 @@ slides: true
        </section>
 
        <section id="slide-070">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-070">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-070">link here</a>
             <img src="11.Introduction.0.key-stage-0070.svg" class="slide-image" />
 
             <figcaption>
@@ -775,7 +811,7 @@ slides: true
 
 
        <section id="slide-071">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-071">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-071">link here</a>
             <img src="11.Introduction.0.key-stage-0071.png" class="slide-image" />
 
             <figcaption>
@@ -785,7 +821,7 @@ slides: true
 
 
        <section id="slide-072">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-072">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-072">link here</a>
             <img src="11.Introduction.0.key-stage-0072.png" class="slide-image" />
 
             <figcaption>
@@ -795,7 +831,7 @@ slides: true
 
 
        <section id="slide-073">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-073">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-073">link here</a>
             <img src="11.Introduction.0.key-stage-0073.svg" class="slide-image" />
 
             <figcaption>
@@ -805,7 +841,7 @@ slides: true
 
 
        <section id="slide-074">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-074">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-074">link here</a>
             <img src="11.Introduction.0.key-stage-0074.svg" class="slide-image" />
 
             <figcaption>
@@ -815,7 +851,7 @@ slides: true
 
 
        <section id="slide-075">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-075">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-075">link here</a>
             <img src="11.Introduction.0.key-stage-0075.svg" class="slide-image" />
 
             <figcaption>
@@ -825,7 +861,7 @@ slides: true
 
 
        <section id="slide-076">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-076">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-076">link here</a>
             <img src="11.Introduction.0.key-stage-0076.png" class="slide-image" />
 
             <figcaption>
@@ -835,7 +871,7 @@ slides: true
 
 
        <section id="slide-077">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-077">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-077">link here</a>
             <img src="11.Introduction.0.key-stage-0077.png" class="slide-image" />
 
             <figcaption>
@@ -845,18 +881,21 @@ slides: true
 
 
        <section id="slide-077" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-078">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-078">link here</a>
             <img src="11.Introduction.0.key-stage-0078anim0.png" data-images="11.Introduction.0.key-stage-0078anim0.png,11.Introduction.0.key-stage-0078anim1.png" class="slide-image" />
 
             <figcaption>
             <p    >In other cases, the harmful effects are not explicitly intended by the makers of the technology. In this article, the organization ProPublica broke the news that a system used nation-wide in America to aid parole decisions was considerably more likely to deny black people parole than white people, even when all other factors were accounted for.<br></p><p    >This was not an explicit design choice of the makers of the system (a company called NorthPointe). In fact, they explicitly excluded race as a feature. However, even if we exclude sensitive attributes as features, we can still <em>infer</em> race from other features. This means that if we include a feature like the person's postcode, which is strongly correlated with race, the system can still make the classification it would have made if race had been available.<br></p><p    >The question of where this disparity comes from is an important one. We’ll look at this in more detail in the third social impact video.<br></p><p    >source: <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"><strong>https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</strong></a></p><p    ><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"><strong></strong></a></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-079">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-079">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-079">link here</a>
             <img src="11.Introduction.0.key-stage-0079.png" class="slide-image" />
 
             <figcaption>
@@ -866,7 +905,7 @@ slides: true
 
 
        <section id="slide-080">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-080">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-080">link here</a>
             <img src="11.Introduction.0.key-stage-0080.svg" class="slide-image" />
 
             <figcaption>
@@ -876,7 +915,7 @@ slides: true
 
 
        <section id="slide-081">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-081">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-081">link here</a>
             <img src="11.Introduction.0.key-stage-0081.svg" class="slide-image" />
 
             <figcaption>
@@ -886,29 +925,35 @@ slides: true
 
 
        <section id="slide-081" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-082">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-082">link here</a>
             <img src="11.Introduction.0.key-stage-0083anim0.svg" data-images="11.Introduction.0.key-stage-0083anim0.svg,11.Introduction.0.key-stage-0083anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >Finally, how you choose to<strong> use the predictions</strong> of your model can amplify bias, even if the predictions themselves are in some sense correct.<br></p><p    >Shown here is Google’s machine translation system. A sentence which is gender-neutral in English, like “My friend is a doctor” cannot be translated in a gender-neutral way into Spanish. In the earlier versions of Google Translate, a gender was chosen (implicitly), mostly dictated by the statistics of the dataset. Thus, since the dataset contained more examples of male than female doctors, the system ends up picking the translation with the male suffix.<br></p><p    >You may argue that these statistics are in a sense reflective of biases that exist in society, so that it is indeed more likely that this sentence should be translated for a male. <br></p><p    >However, that doesn’t mean that we’re <em>certain</em> that the user wants the sentence translated in this way. We might build a model that predicts that this sentence should be translated with a male gender with 70% probability. Let’s assume for the sake of argument that that probability is entirely correct.<br></p><p    >That <em>prediction</em> may be entirely correct, but that doesn’t tell us anything about what the correct <em>action</em> is. If we always pick the gender with the highest probability, we’re actually <em>amplifying </em>the bias in the data: there may be 70% male doctors in the dataset, but there will be 100% male doctors in translations produced by the system.<br></p><p    >The solution (in this case) was not to reduce the uncertainty by guessing more accurately, but to detect it, <em>and communicate it to the user</em>. In this case, by showing the two possible translations. The lesson here is that even if your predictions are sound, designing the correct<strong> action</strong> is still a difficult challenge. A challenge that often has more to do with human-computer interaction, than with machine learning.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-082" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-083">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-083">link here</a>
             <img src="11.Introduction.0.key-stage-0085anim0.svg" data-images="11.Introduction.0.key-stage-0085anim0.svg,11.Introduction.0.key-stage-0085anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >It’s also important to note that the target variable may not always be saying what you think it’s saying. <br></p><p    >This is a common problem with <strong>self-reporting</strong>. If you ask respondents for some value you’re interested in, rather than testing it directly, you often end up with inaccurate results. Either because people are lying to you, or because they simply don’t have an accurate idea of what you’re interested in. <br></p><p    >Imagine a survey where measures like the one shown in the slide aren’t taken, and we trust the students at face value when we ask about their drug use. If we then train a classifier to predict drug use from a set of features like extroversion, social background, or education level, we may think we’ve found a link between drug use and these features, when actually what we’ve found is a predictor for how willing people are to lie on a questionnaire. <br></p><p    >Just because a column in your data is labeled "drug use" doesn't mean you should blindly take it to represent drug use in the subjects.<br></p><p    >source: <a href="https://www.laphamsquarterly.org/intoxication/miscellany/have-you-ever-used-derbisol"><strong>https://www.laphamsquarterly.org/intoxication/miscellany/have-you-ever-used-derbisol</strong></a></p><p    ><a href="https://www.laphamsquarterly.org/intoxication/miscellany/have-you-ever-used-derbisol"><strong></strong></a></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-084">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-084">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-084">link here</a>
             <img src="11.Introduction.0.key-stage-0086.svg" class="slide-image" />
 
             <figcaption>
@@ -918,7 +963,7 @@ slides: true
 
 
        <section id="slide-085">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-085">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-085">link here</a>
             <img src="11.Introduction.0.key-stage-0087.svg" class="slide-image" />
 
             <figcaption>
@@ -928,7 +973,7 @@ slides: true
 
 
        <section id="slide-086">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-086">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-086">link here</a>
             <img src="11.Introduction.0.key-stage-0088.svg" class="slide-image" />
 
             <figcaption>
@@ -938,7 +983,7 @@ slides: true
 
 
        <section id="slide-087">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-087">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-087">link here</a>
             <img src="11.Introduction.0.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
@@ -948,7 +993,7 @@ slides: true
 
 
        <section id="slide-088">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-088">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-088">link here</a>
             <img src="11.Introduction.0.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
@@ -958,18 +1003,21 @@ slides: true
 
 
        <section id="slide-088" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-089">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-089">link here</a>
             <img src="11.Introduction.0.key-stage-0091anim0.svg" data-images="11.Introduction.0.key-stage-0091anim0.svg,11.Introduction.0.key-stage-0091anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-090">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-090">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-090">link here</a>
             <img src="11.Introduction.0.key-stage-0092.png" class="slide-image" />
 
             <figcaption>
@@ -979,7 +1027,7 @@ slides: true
 
 
        <section id="slide-091">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-091">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-091">link here</a>
             <img src="11.Introduction.0.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
@@ -989,18 +1037,21 @@ slides: true
 
 
        <section id="slide-091" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-092">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-092">link here</a>
             <img src="11.Introduction.0.key-stage-0094anim0.svg" data-images="11.Introduction.0.key-stage-0094anim0.svg,11.Introduction.0.key-stage-0094anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >The next question we should ask, is whether predicting sex or gender, or a difference between the two, can cause harm, whether by intention or not.<br></p><p    >Behaving in a way that doesn't  conform to gender norms is illegal in 13 countries (as of 2020). These are usually considered minor offences, so at face value, the risk of intentional harm is less than it was for, for instance sexuality classification. However these issues are often conflated with homosexuality. That is, while cross-dressing itself only carries a minor penalty, it may be unfairly taken to imply homosexuality, which carries very severe penalties, including death. <br></p><p    >This means that the potential harm in predicting sex and gender may be similar to the harm in predicting sexuality.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-093">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-093">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-093">link here</a>
             <img src="11.Introduction.0.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
@@ -1010,7 +1061,7 @@ slides: true
 
 
        <section id="slide-094">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-094">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-094">link here</a>
             <img src="11.Introduction.0.key-stage-0096.svg" class="slide-image" />
 
             <figcaption>
@@ -1020,7 +1071,7 @@ slides: true
 
 
        <section id="slide-095">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-095">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-095">link here</a>
             <img src="11.Introduction.0.key-stage-0097.svg" class="slide-image" />
 
             <figcaption>
@@ -1030,7 +1081,7 @@ slides: true
 
 
        <section id="slide-096">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-096">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-096">link here</a>
             <img src="11.Introduction.0.key-stage-0098.png" class="slide-image" />
 
             <figcaption>
@@ -1039,7 +1090,7 @@ slides: true
        </section>
 
        <section class="video" id="video-096">
-           <a class="slide-link" href="mlvu.github.io/lecture01#video-96">link here</a>
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-96">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/24fPK3CM-8E?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -1050,7 +1101,7 @@ slides: true
        </section>
 
        <section id="slide-097">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-097">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-097">link here</a>
             <img src="11.Introduction.0.key-stage-0099.svg" class="slide-image" />
 
             <figcaption>
@@ -1060,7 +1111,7 @@ slides: true
 
 
        <section id="slide-098">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-098">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-098">link here</a>
             <img src="11.Introduction.0.key-stage-0100.svg" class="slide-image" />
 
             <figcaption>
@@ -1070,7 +1121,7 @@ slides: true
 
 
        <section id="slide-099">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-099">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-099">link here</a>
             <img src="11.Introduction.0.key-stage-0101.svg" class="slide-image" />
 
             <figcaption>
@@ -1080,7 +1131,7 @@ slides: true
 
 
        <section id="slide-100">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-100">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-100">link here</a>
             <img src="11.Introduction.0.key-stage-0102.svg" class="slide-image" />
 
             <figcaption>
@@ -1090,17 +1141,17 @@ slides: true
 
 
        <section id="slide-101">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-101">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-101">link here</a>
             <img src="11.Introduction.0.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The simplest way to check this is to<strong> withhold data</strong>. You keep some data hidden from the model, and then check how well a particular model does on this part of the data. The data you show your model is called<span> </span><strong>training data</strong>, the data you withhold is called <strong>test data</strong>.<br></p><p    ></p>
+            <p    >The simplest way to check this is to<strong> withhold data</strong>. You keep some data hidden from the model, and then check how well a particular model does on this part of the data. The data you show your model is called<span class="green"> </span><strong class="green">training data</strong>, the data you withhold is called <strong>test data</strong>.<br></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-102">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-102">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-102">link here</a>
             <img src="11.Introduction.0.key-stage-0104.svg" class="slide-image" />
 
             <figcaption>
@@ -1110,7 +1161,7 @@ slides: true
 
 
        <section id="slide-103">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-103">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-103">link here</a>
             <img src="11.Introduction.0.key-stage-0105.svg" class="slide-image" />
 
             <figcaption>
@@ -1120,7 +1171,7 @@ slides: true
 
 
        <section id="slide-104">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-104">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-104">link here</a>
             <img src="11.Introduction.0.key-stage-0106.svg" class="slide-image" />
 
             <figcaption>
@@ -1130,18 +1181,21 @@ slides: true
 
 
        <section id="slide-104" class="anim">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-105">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-105">link here</a>
             <img src="11.Introduction.0.key-stage-0107anim0.svg" data-images="11.Introduction.0.key-stage-0107anim0.svg,11.Introduction.0.key-stage-0107anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >For deductive reasoning, we know the rules, and we understand them perfectly. For inductive reasoning the rules are not so clear. For instance, whenever I visit a funeral, I’m never the person being buried. Therefore, the more funerals I visit, the more certain I should be that next time it won’t be my funeral. Clearly this is not the case (usually the opposite is true).<br></p><p    >So, if inductive reasoning doesn’t follow as a special case of deductive reasoning, and inductive reasoning applies sometimes and it doesn’t at other times… how do we do it? Why is the funeral example obviously wrong, and the sun example obviously right? If inductive reasoning cannot be reduced to deductive reasoning, do we have any hope of reducing it to a computer program?<br></p><p    >In many ways, the problem of induction is still unsolved. We can teach computers to learn pretty well these days, but we still don’t fully understand what all the rules are. </p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
 
        <section id="slide-106">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-106">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-106">link here</a>
             <img src="11.Introduction.0.key-stage-0108.svg" class="slide-image" />
 
             <figcaption>
@@ -1151,7 +1205,7 @@ slides: true
 
 
        <section id="slide-107">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-107">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-107">link here</a>
             <img src="11.Introduction.0.key-stage-0109.svg" class="slide-image" />
 
             <figcaption>
@@ -1161,7 +1215,7 @@ slides: true
 
 
        <section id="slide-108">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-108">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-108">link here</a>
             <img src="11.Introduction.0.key-stage-0110.svg" class="slide-image" />
 
             <figcaption>
@@ -1171,7 +1225,7 @@ slides: true
 
 
        <section id="slide-109">
-            <a class="slide-link" href="mlvu.github.io/lecture01#slide-109">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-109">link here</a>
             <img src="11.Introduction.0.key-stage-0111.svg" class="slide-image" />
 
             <figcaption>

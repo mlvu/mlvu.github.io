@@ -175,7 +175,7 @@
 <g clip-path="url(#clip1)" clip-rule="nonzero">
 <use xlink:href="#image6" mask="url(#mask0)" transform="matrix(1.069288,0,0,1.069288,-30.45719,158.3068)"/>
 </g>
-<path style="fill:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(87.059021%,41.567993%,6.274414%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0.00238649 -0.0000441942 L 91.926266 -0.0000441942 " transform="matrix(-0.707107,-0.707107,0.707107,-0.707107,266.115,355.029)"/>
+<path style="fill:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(87.059021%,41.567993%,6.274414%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0.0024572 -0.000114905 L 91.926336 -0.000114905 " transform="matrix(-0.707107,-0.707107,0.707107,-0.707107,266.1151,355.029)"/>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(87.059021%,41.567993%,6.274414%);fill-opacity:1;" d="M 214.972656 281.824219 L 181.882812 270.792969 L 192.910156 303.886719 Z M 214.972656 281.824219 "/>
 </g>
 </svg>
