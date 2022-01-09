@@ -6,12 +6,17 @@ title: Machine Learning @ VU
 <nav class="lectures">
 
 <div class="l1"><a href="/lecture01">
- <h3><span>L1</span> Introduction to ML</h3>
+ <h3 class="red"><span>1.</span> Introduction to ML</h3>
 </a>
 </div>
 
 <div class="l2"><a href="/lecture02">
- <h3><span>L2</span> Linear models and Search</h3>
+ <h3 class="orange"><span>2.</span> Linear models and Search</h3>
+</a>
+</div>
+
+<div class="l3"><a href="/lecture03">
+ <h3 class="green"><span>3.</span> Evaluation</h3>
 </a>
 </div>
 
