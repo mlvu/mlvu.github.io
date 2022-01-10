@@ -20,6 +20,11 @@ title: Machine Learning @ VU
 </a>
 </div>
 
+<div class="l4"><a href="/lecture04">
+ <h3 class="green"><span>4.</span> Data pre-processing</h3>
+</a>
+</div>
+
 </nav>
 {:/nomarkdown}
 

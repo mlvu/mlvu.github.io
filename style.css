@@ -1115,7 +1115,13 @@ nav.lectures div.l2::before {
 }
 
 nav.lectures div.l3::before {
-    background-image: url('/lecture03/21.Methodology1.key-stage-0119.svg');
-    background-position: -5em -4.5em;
+    background-image: url('/lecture03/21.Methodology1.key-stage-0085.svg');
+    background-position: -10em -1.4em;
+    background-size: 300%;
+}
+
+nav.lectures div.l4::before {
+    background-image: url('/lecture04/21.Methodology1.key-stage-0085.svg');
+    background-position: -10em -1.4em;
     background-size: 300%;
 }
