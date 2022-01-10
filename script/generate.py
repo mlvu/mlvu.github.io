@@ -153,7 +153,11 @@ def generate(
 
     # keynote file is a giant compressed xml file - uncompress it
     print('Extracting presenter notes')
-    subprocess.check_call(['unzip', '-o', workdir + S + docId + '.k09.key', '-d', tempdir])
+    try:
+        subprocess.check_call(['unzip', '-o', workdir + S + docId + '.k09.key', '-d', tempdir])
+    except subprocess.CalledProcessError as ex:
+        print('Error in unzipping. Tyring to continue.')
+        print(ex)
 
     xml = etree.parse(tempdir + '/index.apxl')
     root = xml.getroot()
