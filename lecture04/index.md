@@ -9,7 +9,7 @@ slides: true
             <li><a href="#video-000">Missing values and outliers</a></li>
             <li><a href="#video-030">Class imbalance and feature design</a></li>
             <li><a href="#video-052">Class imbalance and feature design</a></li>
-            <li><a href="#video-073">Class imbalance and feature design</a></li>
+            <li><a href="#video-074">Class imbalance and feature design</a></li>
         <li class="pdf"><a href="http://localhost:5555/lectures/22.Methodology2.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
@@ -703,7 +703,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0061anim0.svg" data-images="22.Methodology2.key-stage-0061anim0.svg,22.Methodology2.key-stage-0061anim1.png,22.Methodology2.key-stage-0061anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In essence we want to transform the data top right to something that looks like the data bottom left. Or, the same question asked differently, can we express the data in another <strong>coordinate system</strong>, to that in the new coordinate system, the features are not correlated and the variance in the direction of each axis is 1?<br></p><p    >In order to show how to do this we need to revise some bits of linear algebra. Specifically, we need to look at <strong>linear bases</strong> (the plural of basis).</p><p    ></p>
+            <p    >In essence we want to transform the data top right to something that looks like the data bottom left. Or, the same question asked differently, can we express the data in another <strong>coordinate system</strong>, to that in the new coordinate system, the features are not correlated and the variance in the direction of each axis is 1?<br></p><p    >In order to show how to do this we need to revise some bits of linear algebra. Specifically, we need to look at <strong>linear bases</strong> (the plural of basis).<br></p><p    >We'll go through a bit quickly, because we assume that you've already covered basis transformations in linear algebra. If not, or if your memory of them is hazy, you should take some time to review them.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -717,7 +717,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0062anim0.svg" data-images="22.Methodology2.key-stage-0062anim0.svg,22.Methodology2.key-stage-0062anim1.svg,22.Methodology2.key-stage-0062anim2.svg,22.Methodology2.key-stage-0062anim3.svg,22.Methodology2.key-stage-0062anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s a quick reminder of how summing vectors works. We stick the tail of <span>b</span> onto the head of <span>a</span> and draw a line from the tail of <span>a</span> to the head of <span>b</span>.</p><p    ></p>
+            <p    >First, a quick reminder of how summing vectors works. We stick the tail of vector <strong>b</strong> onto the head of vector <strong>a</strong> and draw a line from the tail of <strong>a</strong> to the head of <strong>b</strong>. The point where we end up is the tip of the vector <strong class="orange red">a</strong> + <strong class="green">b</strong>.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -731,7 +731,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0063.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can see our basic Cartesian coordinate system as made up entirely of the two vectors (1 0) and (0 1). To describe a point in the place, we just sum a number of copies of these vectors.<br></p><p    >Every point in the plane is just a linear combination of these two. A coordinate like (3, 2) means: “sum three copies of<span class="orange red"> b</span><sup class="orange red">1</sup> and add them to two copies of <span class="green">b</span><sup class="green">2</sup>.” We call these <strong>basis vectors</strong>: vectors that allow us to describe all points in a space in terms of a multiple of each of the basis vectors. The set of points that can be described in this way is the space <strong>spanned</strong> by the basis vectors.</p><p    ></p>
+            <p    >We can see our basic Cartesian coordinate system as made up entirely of the two vectors (1 0) and (0 1). To describe a point in the place, we just sum a number of copies of these vectors.<br></p><p    >Every point in the plane is just a linear combination of these two. A coordinate like (3, 2) means: “sum three copies of<span class="orange red"> </span><strong class="orange red">a</strong> and add them to two copies of <strong class="green">b</strong>.” We call these <strong>basis vectors</strong>: vectors that allow us to describe all points in a space in terms of a multiple of each of the basis vectors. The set of points that can be described in this way is the space <strong>spanned</strong> by the basis vectors.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -741,7 +741,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we choose different<strong> basis vectors</strong>, we get a different coordinate system to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span>one vector</span>, plus a number of copies of <span>the other</span>.</p><p    ></p>
+            <p    >If we choose <em>different</em><strong> basis vectors</strong>, we get a different coordinate system to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span>one vector</span>, plus a number of copies of <span>the other</span>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -751,7 +751,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0065anim0.svg" data-images="22.Methodology2.key-stage-0065anim0.svg,22.Methodology2.key-stage-0065anim1.svg,22.Methodology2.key-stage-0065anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we know the coordinates <strong>x</strong><sup>b</sup> in our non-standard coordinate system, it’s easy to find the standard coordinates <strong class="blue">x</strong><sup class="blue">s</sup>. We just multiply the first coordinate of x<sup>b</sup> with the first basis vector, the second coordinate with the second basis vector and sum the result.</p><p    ></p>
+            <p    >If we know the coordinates <strong>x</strong><sup>b</sup> in our non-standard coordinate system, it’s easy to find the coordinates <strong class="blue">x</strong><sup class="blue">s</sup> in the standard basis. We just multiply the first coordinate of x<sup>b</sup> with the first basis vector, the second coordinate with the second basis vector and sum the result.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -765,7 +765,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0066anim0.svg" data-images="22.Methodology2.key-stage-0066anim0.svg,22.Methodology2.key-stage-0066anim1.svg,22.Methodology2.key-stage-0066anim2.svg,22.Methodology2.key-stage-0066anim3.svg,22.Methodology2.key-stage-0066anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The basis vectors are usually expressed as the columns of a matrix <strong>B</strong>. That way, transforming a coordinate <strong>x</strong> in basis B to the standard coordinates can be done simply by matrix multiplying <strong>B</strong> by <strong>x</strong>. It also tells us that to go the other way, to transform a standard coordinate to the basis, you multiply by the <em>inverse</em> of <strong>B</strong>.<br></p><p    >Since inverting a matrix is an expensive and numerically unstable business, it’s good to focus (if possible) on <strong>orthonormal bases</strong>. That is, bases for which the basis vectors are <strong>orthogonal</strong> (the angle between any two bases is 90 degrees) and <strong>normal</strong> (all vectors have length 1). In that case the matrix transpose (which is simple to compute without loss of precision) is equal to the matrix inverse, so we can switch back and forth between bases quickly, without losing information.<br></p><p    >Here [a,b] represents the matrix created by concatenating the vectors a and b.</p><p    ></p>
+            <p    >The basis vectors are usually expressed as the columns of a matrix <strong>B</strong>. That way, transforming a coordinate <strong>x</strong> in basis B to the standard coordinates can be done simply by matrix multiplying <strong>B</strong> by <strong>x</strong>. It also tells us that to go the other way, to transform a standard coordinate to the basis, you multiply by the <em>inverse</em> of <strong>B</strong>.<br></p><p    >Since inverting a matrix is an expensive and numerically unstable business, it’s good to focus (if possible) on <strong>orthonormal bases</strong>. That is, bases for which the basis vectors are <strong>orthogonal</strong> (the angle between any two of them is 90 degrees) and <strong>normal</strong> (all vectors have length 1). In that case the matrix transpose (which is simple to compute without loss of precision) is equal to the matrix inverse, so we can switch back and forth between bases quickly, without losing information.<br></p><p    >Here [<strong>a</strong>,<strong>b</strong>] represents the matrix created by concatenating the vectors <strong>a</strong> and <strong>b</strong>.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -779,7 +779,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0067.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can now re-phrase what we’re aiming to do: we want to find a set of new <em>basis vectors</em> so that we can express the data in a coordinate system where the features are not correlated, and the variance is 1 in every direction.<br></p><p    >Note that the latter means we can’t have an orthonormal basis (the basis vectors can’t be one). There are some tricks to deal with this, but we’ll not mention them here.</p><p    ></p>
+            <p    >We can now re-phrase what we’re aiming to do: we want to find a set of new <em>basis vectors</em> so that we can express the data in a coordinate system where the features are not correlated, and the variance is 1 in every direction.<br></p><p    >Note that the latter means we can’t have an orthonormal basis (the basis vectors can’t be one). <br></p><p    >We can fix this by first computing an orthonormal basis, and then scaling independently along each axis, but we won't go into that here. For now, we'll just allow for non-orthonormal bases.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -789,7 +789,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0068.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To figure out how to find this basis, we will follow the same principle as we did with standardisation: we will assume that the data was generated by a standard multivariate normal distribution (MVN), followed by a translation and a change of basis (with the change of basis causing some features to become correlated). We will attempt to reverse the process by:<br></p><p     class="list-item"> fit a (nonstandard) MVN to the data<br></p><p     class="list-item">figure out the transformation that transforms the standard MVN to this MVN<br></p><p     class="list-item">apply the inverse of this transformation.<br></p><p    >A multivariate normal distribution is a generalisation of a one-dimensional normal distribution.<span> </span><span>Its mean is a single point</span>, <span>and its variance is determined by a symmetric matrix called a covariance matrix</span>.<span> </span>The values on the diagonal indicate how much variance there is along each dimension. The off-diagonal elements indicate how much co-variance there is between dimensions.<br></p><p    ></p>
+            <p    >To figure out how to find this basis, we will follow the same principle as we did with standardisation: we will assume that the data was generated by a standard multivariate normal distribution (MVN), followed by a translation and a change of basis (with the change of basis causing some features to become correlated). We will attempt to reverse the process by:<br></p><p     class="list-item">fitting a (nonstandard) MVN to the data<br></p><p     class="list-item">figuring out the transformation that transforms the standard MVN to this MVN<br></p><p     class="list-item">applying the inverse of this transformation to the observed data<br></p><p    >A multivariate normal distribution is a generalisation of a one-dimensional normal distribution.<span> </span><span>Its mean is a single point</span>, <span>and its variance is determined by a symmetric matrix called a </span><strong>covariance matrix</strong>.<span> </span>The values on the diagonal indicate how much variance there is along each dimension. The off-diagonal elements indicate how much co-variance there is between dimensions.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -809,7 +809,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0070.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The estimators for the <strong>sample mean</strong><span> </span>and <strong class="blue">sample covariance</strong> look like this. Computing these values lets you fit an MVN to your data.</p><p    ></p>
+            <p    >The estimators for the <strong>sample mean</strong><span> </span><strong>m</strong><span> </span>and <strong class="blue">sample covariance S</strong> look like this. Computing these values lets you fit an MVN to your data.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -819,7 +819,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0072.svg" class="slide-image" />
 
             <figcaption>
-            <p    >As before, we will imagine starting with a standard MVN, and then transforming our data linearly.<br></p><p    >We can<em> sample </em>from an n-dimensional <strong>Standard MVN</strong> (with mean at the origin and the identity matrix I as a covariance matrix) by simply filling a length n vector with values sampled from a one-dimensional standard normal distribution.<br></p><p    >If we then transform x by multiplying it by some matrix A and adding some vector t, the result is the same as sampling from an MVN with mean<strong> </strong><strong>t</strong><strong> </strong>and covariance <strong class="blue">AA</strong><sup class="blue">T</sup><sup>.<br></sup></p><p    >Any MVN can be described in this way as a transformation of the standard normal distribution.</p><p    ></p>
+            <p    >As before, we will imagine that our data originall came from a standard MVN, and was then transformed to the data we observed by multiplying each point by some matrix A (changing the basis) and then adding some vector t (moving the mean away from the origin).<br></p><p    >We can<em> sample</em> a point<em> </em><strong>x</strong><em> </em>from an n-dimensional standard MVN by simply filling a with values sampled from a one-dimensional standard normal distribution.<br></p><p    >If we then transform <strong>x</strong> by multiplying it by some matrix <strong>A</strong> and adding some vector <strong>t</strong>, the result is the same as sampling from an MVN with mean<strong> </strong><strong>t</strong><strong> </strong>and covariance <strong class="blue">AA</strong><sup class="blue">T</sup><sup>.<br></sup></p><p    >Any MVN can be described in this way as a transformation of the standard normal distribution.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -843,12 +843,22 @@ slides: true
             <img src="22.Methodology2.key-stage-0074.png" class="slide-image" />
 
             <figcaption>
-            <p    >Of course, we want to do this the other way around: we start with our data, we figure out what A and t are, and then we apply the inverse of the linear operation.<br></p><p    >In slide 69, we saw that the covariance after our transformation was <strong>AA</strong><sup>T</sup>, so if we  estimate the covariance <strong>S</strong> and find some matrix <strong>A</strong> such that <strong>AA</strong><sup>T</sup> = <strong>S</strong>, we can then use that A for the inverse transformation. Finding this <strong>A</strong> can be done in many ways. The most stable one is the Singular Value Decomposition, which leads to a method known as PCA whitening, discussed in the next video.<br></p><p    >Since the multiplication by <strong>A</strong> doesn’t change the mean, we know that the translation vector <strong>t</strong> is equal to the mean <strong>m</strong>.<br></p><p    >Once we know <strong>A</strong> and <strong>t</strong>, we can reverse the transformation as shown here. <br></p><p    >Compare this to the standardisation operation: there, we subtract the mean, and multiply by the inverse of the standard deviation. Here we do the same, but in multiple dimensions (note that the standard deviation is the square root of the variance, just like the A matrix squared is the <em>co</em>variance).</p><p    ></p>
+            <p    >Now, we need to invert this. Given some data, we fit an MVN, find out which A and t match that MVN, and then invert the transformation from the standard MVN to the onserved data.<br></p><p    >In slide 69, we saw that the covariance after our transformation was <strong>AA</strong><sup>T</sup>, so if we  estimate the covariance <strong>S</strong> and find some matrix <strong>A</strong> such that <strong>AA</strong><sup>T</sup> = <strong>S</strong>, we can then use that <strong>A</strong> for the inverse transformation. Finding this <strong>A</strong> can be done in many ways. The most stable and popular one is the Singular Value Decomposition, which leads to a method known as PCA whitening, discussed in the next video.<br></p><p    >Since the multiplication by <strong>A</strong> doesn’t change the mean, we know that the translation vector <strong>t</strong> is equal to the mean <strong>m</strong>.<br></p><p    >Once we know <strong>A</strong> and <strong>t</strong>, we can reverse the transformation as shown here. <br></p><p    >Compare this to the standardisation operation: there, we subtract the mean, and multiply by the inverse of the standard deviation. Here we do the same, but in multiple dimensions <br></p><p    >Note that the standard deviation is the square root of the variance, just like the <strong>A</strong> matrix squared is the covariance.</p><p    ></p>
             </figcaption>
        </section>
 
-       <section class="video" id="video-073">
-           <a class="slide-link" href="https://mlvu.github.io/lecture04#video-73">link here</a>
+
+       <section id="slide-074">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-074">link here</a>
+            <img src="22.Methodology2.key-stage-0075.svg" class="slide-image" />
+
+            <figcaption>
+            <p    ></p>
+            </figcaption>
+       </section>
+
+       <section class="video" id="video-074">
+           <a class="slide-link" href="https://mlvu.github.io/lecture04#video-74">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/JC5rb5FmTjk?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -858,22 +868,12 @@ slides: true
 
        </section>
 
-       <section id="slide-074">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-074">link here</a>
-            <img src="22.Methodology2.key-stage-0075.svg" class="slide-image" />
-
-            <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
-            </figcaption>
-       </section>
-
-
        <section id="slide-075">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-075">link here</a>
             <img src="22.Methodology2.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Some datasets have more features than a given model can handle. In that case, there are two things we can do: we can try to find a subset of the features that is most informative, and operate on those. This has the benefit that the features retain their meaning and are still interpretable. This is called <strong>feature selection</strong>.<br></p><p    >The alternative is to take information from all <em>all</em> features and to map them to a new (smaller) set of derived features, which retain as much of the original information as possible. This is called <strong>dimensionality reduction</strong>. In this case, the new features don’t always have an obvious meaning, but they may still work well for machine learning purposes.<br></p><p    >In this video we will just look at one dimensionality reduction method: Principal Component Analysis (PCA).</p><p    ></p>
+            <p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -883,45 +883,37 @@ slides: true
             <img src="22.Methodology2.key-stage-0077.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Dimensionality reduction is the opposite of the feature expansion trick we saw earlier. It describes methods that reduce the number of features in our data (the dimension) by deriving new features from the old ones, hopefully in such a way that we capture all the essential information. There are several reasons you might want to reduce the dimensionality of your data:<br></p><p     class="list-item">Efficiency. Many machine learning methods can only handle so many features. If you have a very high dimensional dataset, you may be forced to do some dimensionality reduction in order to be able to run your chosen model.<br></p><p     class="list-item">Reduce <span>variance</span> of the model performance (make the bias/variance tradeoff). Feature expansion boosts the power of your model, likely giving it higher variance and lower bias. Dimensionality reduction does the opposite: it reduces the power of your model likely giving you higher bias and lower variance.<br></p><p     class="list-item">Visualization. If you’re lucky (or if you have a very strong dim. reduction method), reducing down to just 2 or 3 dimensions preserves the important information in your data. If so, you can do a scatterplot, and use the power of your visual cortex to analyse your data (i.e. you can look at it).</p><p     class="list-item"></p>
+            <p    >Some datasets have more features than a given model can handle. Or, maybe the model can handle it, but it's overfitting on all the noise that so many features introduce.<br></p><p    >In that case, there are two things we can do: we can try to find a subset of the features that is most informative, and operate on those. This has the benefit that the features retain their meaning and are still interpretable. This is called <strong>feature selection</strong>.<br></p><p    >The alternative is to take information from all <em>all</em> features and to map them to a new (smaller) set of derived features, which retain as much of the original information as possible. This is called <strong>dimensionality reduction</strong>. In this case, the new features don’t always have an obvious meaning, but they may still work well for machine learning purposes.<br></p><p    >In this video we will just look at one dimensionality reduction method: Principal Component Analysis (PCA). We won't discuss feature selection, but if you're interested, a good place to start is the methods that come with sklearn: <a href="https://scikit-learn.org/stable/modules/feature_selection.html"><strong class="blue">https://scikit-learn.org/stable/modules/feature_selection.html</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-076" class="anim">
+       <section id="slide-077">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-077">link here</a>
-            <img src="22.Methodology2.key-stage-0078anim0.svg" data-images="22.Methodology2.key-stage-0078anim0.svg,22.Methodology2.key-stage-0078anim1.svg,22.Methodology2.key-stage-0078anim2.svg,22.Methodology2.key-stage-0078anim3.svg,22.Methodology2.key-stage-0078anim4.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0078.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To simplify our explanation, we’ll start by reducing our data to just one dimension: for each instance, we’ll try to come up with a single number z, that hopefully represents is pretty well.<br></p><p    >The way we’ll do this is by optimizing the <strong>reconstruction error</strong>. We’ll come up with some function that reconstructs our data from the reduced points {z}. The closer this reconstruction is to the original point, the better.<br></p><p    >We’ll add the constraint that both the function that reduces the data and the function that reconstructs the data should be <strong>linear</strong>. We’ll also assume that the data is <strong>mean-centered</strong>, so that we won’t need to apply any translations: the mean of the original data, the reduced data, and the reconstructed data is zero or the zero vector.<br></p><p    >Under these constriants, the reduction function consist of taking the dot product of our vector with some parameter vector <strong>c’</strong>, and the reconstruction function consists of multiplying our reduced representation with some other parameter vector <strong>c</strong>.<br></p><p    ></p>
+            <p    >Dimensionality reduction is the opposite of the feature expansion trick we saw earlier. It describes methods that reduce the number of features in our data (the dimension) by deriving new features from the old ones, hopefully in such a way that we capture all the essential information. There are several reasons you might want to reduce the dimensionality of your data:<br></p><p     class="list-item"><strong>Efficiency.</strong> Some machine learning methods can only handle so many features. If you have a very high dimensional dataset, you may be forced to do some dimensionality reduction in order to be able to run your chosen model.<br></p><p     class="list-item"><strong>Reduce </strong><strong>variance</strong> of the model performance (make the bias/variance tradeoff). Feature expansion boosts the power of your model, likely giving it higher variance and lower bias. Dimensionality reduction does the opposite: it reduces the power of your model likely giving you higher bias and lower variance.<br></p><p     class="list-item"><strong>Visualization.</strong> If you’re lucky (or if you have a very strong dimensionality reduction method), reducing down to just 2 or 3 dimensions preserves the important information in your data. If so, you can do a scatterplot, and use the power of your visual cortex to analyse your data (i.e. you can look at it).</p><p     class="list-item"></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-077" class="anim">
+       <section id="slide-078">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-078">link here</a>
-            <img src="22.Methodology2.key-stage-0080anim0.svg" data-images="22.Methodology2.key-stage-0080anim0.svg,22.Methodology2.key-stage-0080anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here we have a diagram for a single instance. Since each reconstruction is a multiple of <strong>c</strong>, the line that the reconstructions lie on, is the line that the vector <strong>c</strong> points along.<br></p><p    >We’ll work out what our functions should be in the following order. First, we will assume that we have the reconstruction function, and ask what the best reduction function is to use, in terms of that reconstruction function. Then we will work out an optimization objective for both of them together.<br></p><p    >So, let’s assume that we have areconstruction function. That is, we have <strong>c </strong>already. What value should we then choose for z to give us the best reconstruction?<br></p><p    >The closest we can get <strong class="blue">x’</strong> to <strong class="blue">x</strong> is to put <strong class="blue">x’</strong> where the line between <strong class="blue">x</strong> and <strong class="blue">x’</strong> makes a right angle with the line of <strong>c</strong>. This is the <strong>projection</strong> of <strong class="blue">x</strong> onto <strong>c</strong>, and if you know your linear algebra, you’ll know the length of z<strong>c</strong> in this picture is related to the dot product of <strong class="blue">x</strong> and <strong>c</strong>. Why?</p><p    ></p>
+            <p    >In this video we will restrict ourselves to <strong>linear reductions</strong>. To create one of the derived features z<sup>1</sup>, the only thin we are allowed to do is to pick one number for each feature, multiply them together and sum the result. These values we multiply by the original features should be the same for all instances.<br></p><p    >If we arrange these multipliers in a vector <strong>c'</strong>, then we can simply say that the reduced feature is the dot product of the original features <strong>x</strong> and the parameter vector <strong>c'</strong>. If we want more than one reduced feature, we can add additional parameter vectors. However, to keep things simple, we start with just one.<br></p><p    >The question is, how do we choose the elements of <strong>c'</strong>?</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-078" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-079">link here</a>
-            <img src="22.Methodology2.key-stage-0081anim0.svg" data-images="22.Methodology2.key-stage-0081anim0.svg,22.Methodology2.key-stage-0081anim1.svg,22.Methodology2.key-stage-0081anim2.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0080anim0.svg" data-images="22.Methodology2.key-stage-0080anim0.svg,22.Methodology2.key-stage-0080anim1.svg,22.Methodology2.key-stage-0080anim2.svg,22.Methodology2.key-stage-0080anim3.svg,22.Methodology2.key-stage-0080anim4.svg,22.Methodology2.key-stage-0080anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For our purposes, the length of  <strong>c </strong>doesn’t matter (if we make <strong>c</strong> longer or shorter it still defines the same line), so we’ll assume that  has length 1 (that is, it is a <strong>unit vector</strong>).<br></p><p    >From basic trigonometry, we know that the length of the black line is ||<strong class="blue">x</strong>|| cos α. Because ||<strong>c</strong>|| = 1, we can multiply by that without changing the value, which means that the length of the black line is equal to the dot product between <strong class="blue">x</strong> and <strong>c</strong>.<br></p><p    >See <a href="http://peterbloem.nl/blog/pca"><strong class="blue">peterbloem.nl/blog/pca</strong></a> for a more intuitive proof.</p><p    ></p>
+            <p    >Since we're focusing on a single feature for now, we'll drop the subscript and call this feature "z". This is a single scalar value representing our instance <strong>x</strong>.<br></p><p    >The way we’ll find the parameters <strong>c'</strong> for our reconstruction is by optimizing the <strong>reconstruction error</strong>. We’ll come up with some function that reconstructs our data from the reduced points {z}. The closer this reconstruction is to the original point, the better.<br></p><p    >We’ll add the constraint that <em>both</em> the function that reduces the data and the function that reconstructs the data should be <strong>linear</strong>. This means that our reconstruction is just some second vector c, which we also get to choose, multiplied by the reduced feature z. We’ll also assume that the data is <strong>mean-centered</strong>, so that we won’t need to apply any translations: the mean of the original data, the reduced data, and the reconstructed data is zero or the zero vector.<br></p><p    >To recap, under these constraints, the reduction function consist of taking the dot product of our vector with some parameter vector <strong>c’</strong>, and the reconstruction function consists of multiplying our reduced representation with some other parameter vector <strong>c</strong>.<br></p><p    >We will try to choose our parameters <strong>c'</strong> and <strong>c</strong> in such a way that <strong class="blue">x</strong> is as close as possible to <strong class="blue">x'</strong>. Before we figure out how to do this, we can simplify our problem. We can show that for the optimal solution, the vectors <strong>c'</strong> and <strong>c</strong> must be the same. We''l show that first.<br></p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -935,7 +927,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0082anim0.svg" data-images="22.Methodology2.key-stage-0082anim0.svg,22.Methodology2.key-stage-0082anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >What this tells us, is that the projection of <strong>x</strong> onto <strong>c</strong> is found by taking their dot product. Since <strong>c</strong> has length one, this is the value that we want to multiply <strong>c</strong> by to get to <strong>x’</strong>.<br></p><p    >In other words, given <strong>c</strong>, we now know how to find our reduced data z. The vectors in the reduction function and the reconstruction function are the same.<br></p><p    ></p>
+            <p    >Here is the reconstruction of x from z isolated in a diagram. Take a moment to study this picture. Note that we have fixed a line by our choice of <strong>c</strong>, and our reconstruction, because it can only be a multiple of <strong>c</strong>, must be somewhere on the line. <br></p><p    >We’ll work out what our functions should be in the following order. First, we will assume that we have the reconstruction function, and ask what the best reduction function is to use, in terms of that reconstruction function. Then we will work out an optimization objective for both of them together.<br></p><p    >Imagine that <strong>c </strong>is fixed. This could be at the optimal value, or some terrible value, but somebody has chosen <strong>c</strong> for us and we're not allowed to change it. Which value should we choose for z to put <strong class="blue">x'</strong> as close to <strong class="blue">x</strong> as possible?<br></p><p    >The closest we can get <strong class="blue">x’</strong> to <strong class="blue">x</strong> is to put <strong class="blue">x’</strong> where the line between <strong class="blue">x</strong> and <strong class="blue">x’</strong> makes a right angle with the line of <strong>c</strong>. This is the <strong>orthogonal projection</strong> of <strong class="blue">x</strong> onto <strong>c</strong>, and if you know your linear algebra, you’ll know the length of z<strong>c</strong> in this picture is related to the dot product of <strong class="blue">x</strong> and <strong>c</strong>. Why?</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -944,24 +936,32 @@ slides: true
 
 
 
-       <section id="slide-081">
+       <section id="slide-080" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-081">link here</a>
-            <img src="22.Methodology2.key-stage-0083.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0083anim0.svg" data-images="22.Methodology2.key-stage-0083anim0.svg,22.Methodology2.key-stage-0083anim1.svg,22.Methodology2.key-stage-0083anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s how we’ve simplified our picture. The reduction and and reconstruction now have the same parameters <strong>c</strong>.</p><p    ></p>
+            <p    >For our purposes, the length of  <strong>c </strong>doesn’t matter (if we make <strong>c</strong> longer or shorter it still defines the same line), so we’ll assume that it has length 1 (that is, it is a <strong>unit vector</strong>).<br></p><p    >From basic trigonometry, we know that the length of the black line is ||<strong class="blue">x</strong>|| cos α. Because ||<strong>c</strong>|| = 1, we can multiply by that without changing the value, which means that the length of the black line is equal to the dot product between <strong class="blue">x</strong> and <strong>c </strong>(remember the geometric definition of the dot product)<span>.</span><br></p><p    >If this seems a bit magical, see <a href="http://peterbloem.nl/blog/pca"><strong class="blue">peterbloem.nl/blog/pca</strong></a> for a more intuitive proof. It all boils down to the pythagorean theorem in the end.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-082">
+
+       <section id="slide-081" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-082">link here</a>
-            <img src="22.Methodology2.key-stage-0084.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0084anim0.svg" data-images="22.Methodology2.key-stage-0084anim0.svg,22.Methodology2.key-stage-0084anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The next question is how to find this <strong>c</strong> for some given data. Before we move on, let’s pick an arbitrary<span> </span><strong>c</strong> and see what we get when we project down onto that vector.<br></p><p    ></p>
+            <p    >What this tells us, is that the projection of <strong>x</strong> onto <strong>c</strong> is found by taking their dot product. Since <strong>c</strong> has length one, this is the value that we want to multiply <strong>c</strong> by to get to <strong>x’</strong>.<br></p><p    >In other words, given <strong>c</strong>, we now know how to find our reduced data z, we take the dot product of the original features <strong class="blue">x</strong> with our reconstruction vector <strong>c</strong>.<br></p><p    >Taking the dot product of <strong>x</strong> with a parameter vector happens to be our reduction function. This means that we can set the vector in the reduction function equal to the vector in the reconstruction function: <strong>c'</strong> = <strong>c</strong>.<br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-083">
@@ -969,17 +969,37 @@ slides: true
             <img src="22.Methodology2.key-stage-0085.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here it is. The red points are our reconstructions. For each point, the new feature z is the distance from the origin to the red point. The grey lines indicate how far the reconstruction is from the original data.<br></p><p    >Clearly, this is not a very good choice for <strong>c</strong>. The grey lines could be much shorter. This is how we’ll optimize for c. We’ll sum up the squares of the grey lines and minimize those.<br></p><p    >We can think of optimizing <strong>c</strong> as making the grey lines rubber bands, that pull on the line representing <strong>c</strong> (which pivots around the origin). <br></p><p    >This is a lot like linear regression, but the task is slightly different (note that there is not target attribute here).<br></p><p    ></p>
+            <p    >Here’s how this has simplified our picture. The reduction and and reconstruction now have the same parameters <strong>c</strong>. Note that this required an additional assumption: that <strong>c</strong> is a unit vector.<br></p><p    >So here's the model: we pick some unit vector <strong>c</strong>, project our data onto it to represent it as a single scalar z, and then, to reconstruct the data, multiply <strong>c</strong> by z. As you can see, the reconstructed data necessarily lie on a line. All we are looking to do is to get these reconstructions as close to the original points as possible. If we manage that, it's reasonable to assume that we retained some information from the original features in the single reduced feature z.<br></p><p    >The only remaining question is, which <strong>c</strong> should we choose to minimize the reconstruction error?<br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-083" class="anim">
+       <section id="slide-084">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-084">link here</a>
-            <img src="22.Methodology2.key-stage-0086anim0.svg" data-images="22.Methodology2.key-stage-0086anim0.svg,22.Methodology2.key-stage-0086anim1.svg,22.Methodology2.key-stage-0086anim2.svg,22.Methodology2.key-stage-0086anim3.svg,22.Methodology2.key-stage-0086anim4.svg,22.Methodology2.key-stage-0086anim5.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0086.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To find <strong>c</strong>, we will simply state our goals as an optimization objective. We want to find the <strong>c</strong> for which the squared distance between the data and the reconstructed data is minimized. We first fill in the definition of the reconstruction, and then the definition of the optimal z.<br></p><p    >In the definition of the Euclidean distance, the square root cancels our against the square in ouroptimization, so that we are left with a sum of the squares over every dimension i in every reconstricted instance <strong>x’</strong>.<br></p><p    >This leaves us with a simple objective to which we can apply any search algorithm, like gradient descent. One thing we must remember: we assumed that <strong>c</strong> is a unit vector. <br></p><p    >This means we have an optimization problem with <em>a constraint</em>. This is a technical subject, that we’ll see more of in lecture 6. For now, we can solve this problem by applying gradient descent and normalizing the vector <strong>c</strong> after every gradient update. This is called the projection method for constrained optimization. It doesn’t always work, but it does here.</p><p    ></p>
+            <p    >Here's some randomly generated data. Remember, we assumed that the data would be mean centered. Let's first pick a random direction <strong>c</strong>. And see what we get.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-085">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-085">link here</a>
+            <img src="22.Methodology2.key-stage-0087.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Here it is. The red points are our reconstructions. For each point, the new feature z is the distance from the origin to the red point. The grey lines indicate how far the reconstruction is from the original data. Note that these grey lines are orthogonal to the line described by <strong>c</strong>, because we are reducing our data by orthogonally projecting it onto <strong>c</strong>.<br></p><p    >Clearly, this is not a very good choice for <strong>c</strong>. The grey lines could be much shorter. This is how we’ll optimize for c. <strong>We’ll sum up the squares of the grey lines and minimize those.<br></strong></p><p    >We can think of optimizing <strong>c</strong> as making the grey lines rubber bands, that pull on the line representing <strong>c</strong> (which pivots around the origin). <br></p><p    >This is a lot like linear regression, but the task is slightly different. Note that there is no target attribute here, and the "residuals" are not parallel to one of the axes. <br></p><p    >Doing regression with the residuals drawn like this is sometimes called <span>orthogonal regression</span>.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-085" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-086">link here</a>
+            <img src="22.Methodology2.key-stage-0088anim0.svg" data-images="22.Methodology2.key-stage-0088anim0.svg,22.Methodology2.key-stage-0088anim1.svg,22.Methodology2.key-stage-0088anim2.svg,22.Methodology2.key-stage-0088anim3.svg,22.Methodology2.key-stage-0088anim4.svg,22.Methodology2.key-stage-0088anim5.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >To find <strong>c</strong>, we will simply state our goal as an optimization objective. We want to find the <strong>c</strong> for which the squared distance between the data and the reconstructed data is minimized. We first fill in the definition of the reconstruction, and then the definition of the optimal z.<br></p><p    >In the definition of the Euclidean distance, the square root cancels our against the square in our optimization, so that we are left with a sum of the squares over every dimension i in every reconstructed instance <strong>x’</strong>.<br></p><p    >This leaves us with a simple objective to which we can apply any search algorithm, like gradient descent. One thing we must remember: we required that <strong>c</strong> is a unit vector. <br></p><p    >This means we have an optimization problem with <em>a constraint</em>. This is a technical subject, that we’ll see more of in lecture 6. For now, we can solve this problem by applying gradient descent and normalizing the vector <strong>c</strong> to scale it back to a unit vector after every gradient update. This is called the projection method for constrained optimization. It doesn’t always work, but it does here.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -988,32 +1008,12 @@ slides: true
 
 
 
-       <section id="slide-085">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-085">link here</a>
-            <img src="22.Methodology2.key-stage-0087.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >We run gradient descent and this is the solution that we find.  It looks pretty good. It’s hard to imagine any other line c leading to shorter grey lines.<br></p><p    >We call <strong>c</strong> the<strong> first principal component</strong> of the data.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-086">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-086">link here</a>
-            <img src="22.Methodology2.key-stage-0088.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >If we want to reduce the dimensionality to more than one dimension, we repeat the process. Keeping the first principal component fixed, the second principal component is the one orthogonal to the first that minimizes the reconstruction loss given two reduced dimensions.<br></p><p    >Each next principal component is the direction orthogonal to the previous ones, that minimizes the loss, when the data is reconstructed using all of them.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
        <section id="slide-087">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-087">link here</a>
             <img src="22.Methodology2.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If you’ve heard about PCA before, you may be surprised by this definition using reconstruction loss. Usually, the principal components are defined as the directions in which the<em> variance</em> of the projected data is maximized. <br></p><p    >The first principal component is the line along which the variance of the data is maximal when project onto the line. The second principal component is the line orthogonal to the first for which the variance is maximal, and so on.<br></p><p    >It turns out, these two definitions are equivalent.</p><p    ></p>
+            <p    >We run gradient descent and this is the solution that we find.  It looks pretty good. It’s hard to imagine any other line c leading to shorter grey lines.<br></p><p    >Note that the data is much more spread out along this line than it was for our earlier choice of <strong>c</strong>.<br></p><p    >We call this <strong>c</strong> the<strong> first principal component</strong> of the data.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1023,7 +1023,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Let’s look at the one dimensional reduction again.<br></p><p    >The variance of a one-dimensional dataset is defined as the average of the squares of all the distances to the data-mean. In our case, both the data and the reduction are mean-centered, so the variance is just the sum of all the squares of the z’s; our reduced representations. In this picture, the length of the orange vector.<br></p><p    >Thus, maximising the variance, means choosing c so that the (squared) length of the orange vector is maximized<br></p><p    >This arrangement into a right-angled triangle means that the<span class="blue"> magnitude of the original data</span> (<span class="blue">p</span>, the squared distance to the mean) is related to the <span>variance of the projected data</span> (<span>q</span>) and the reconstruction error (r, in black)<span class="blue"> </span>by the Pythagorean theorem. <br></p><p    >Since <span class="blue">p</span>, the magnitude of the original data, is a constant,  <span>q</span><sup>2</sup> + r<sup>2</sup> is constant,  and minimizing the squared reconsturction error r<sup>2 </sup>is equivalent to maximising the variance of the projected data <span>q</span><sup>2</sup>.<br></p><p    >In this setting we often talk about how much variance the reduced data <em>retains</em>, seeing the variance as a kind of “information content” in a representation of the data. A perfect reconstruction has the same total variance as the data.</p><p    ></p>
+            <p    >If we want to reduce the dimensionality to more than one dimension, we repeat the process. Keeping the first principal component fixed, the second principal component is the one orthogonal to the first that minimizes the reconstruction loss. This gives us two directions, orthogonal to one another, to project onto. Our reduced dataset has two features.<br></p><p    >Each next principal component is the direction orthogonal to all the previous ones, that minimizes the loss, when the data is reconstructed <em>using all of them</em>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1033,7 +1033,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0091.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To apply PCA, we need to choose the number of dimensions to reduce to. We can just treat this as a hyperparameter and test different values. <br></p><p    >But if we plot the variance or the reconstruction loss against the number of components, we often see a natural <em>inflection</em> point. In this case, we can retain the majority of the variance in the data by keeping only the first three principal components. The higher components add a little variance each, but not much.<br></p><p    >What happens if we keep going until the new data has the same number of features as the original?</p><p    ></p>
+            <p    >If you’ve heard about PCA before, you may be surprised by this definition using reconstruction loss. Usually, the principal components are defined as the directions in which the<em> variance</em> of the projected data is maximized. The best <strong>c</strong> is the line along which the orthogonal projections are the most spread out.<br></p><p    >The first principal component is the line along which the variance of the data is maximal when projected onto the line. The second principal component is the line orthogonal to the first for which the variance is maximal, and so on.<br></p><p    >It turns out, these two definitions are equivalent.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1043,7 +1043,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0092.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we do that, we get perfect reconstructions, but our z’s are still different from the original coordinates. We end up expressing the dat in another <strong>basis</strong>. It turns out, that this actually gives us a <strong>whitening</strong> of the data: in the new basis, the data is uncorrelated, with variance 1 along each axis.</p><p    ></p>
+            <p    >Let’s look at the one dimensional reduction again to show why.<br></p><p    >The variance of a one-dimensional dataset is defined as the average of the squares of all the distances to the data-mean. In our case, both the data and the reduction are mean-centered, so the variance is just the sum of all the squares of the z’s; our reduced representations. In this picture, the length of the orange vector.<br></p><p    >Thus, maximising the variance, means choosing c so that the (squared) length of the orange vector is maximized<br></p><p    >This arrangement into a right-angled triangle means that the<span class="blue"> magnitude of the original data</span> (<span class="blue">p</span>, the squared distance to the mean) is related to the <span>variance of the projected data</span> (<span>q</span>) and the reconstruction error (r, in black)<span class="blue"> </span>by the Pythagorean theorem. <br></p><p    >Since <span class="blue">p</span>, the magnitude of the original data, is a constant,  <span>q</span><sup>2</sup> + r<sup>2</sup> is constant,  and minimizing the squared reconsturction error r<sup>2 </sup>is equivalent to maximising the variance of the projected data <span>q</span><sup>2</sup>.<br></p><p    >In the variance maximization view of PCA, we often talk about how much variance the reduced data <em>retains</em>, seeing the variance as a kind of “information content” in a representation of the data. A perfect reconstruction has the same total variance as the data.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1053,7 +1053,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This way of whitening is called <strong>PCA whitening</strong>. We apply PCA with the same number of target dimensions as data dimensions. This gives us an orthonormal basis in which the data is uncorrelated. If we then measure the standard deviation along each component and multiply the basis vectors by that, we get a basis in which the data is whitened.<br></p><p    >Note that while σ and<strong> c</strong> together is not an orthonormal basis, <strong>c</strong> by itself is. Thus, we can still easily transform back and forth between the whitened basis and the original data coordinates.</p><p    ></p>
+            <p    >To apply PCA, we need to choose the number of dimensions to reduce to. We can just treat this as a hyperparameter and test different values. <br></p><p    >But if we plot the variance or the reconstruction loss against the number of components, we often see a natural <em>inflection</em> point. In this case, we can retain the majority of the variance in the data by keeping only the first three principal components. The higher components still add a little variance each, but not much.<br></p><p    >What happens if we keep going until the new data has the same number of features as the original?<br></p><p    >source: <a href="http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/"><strong class="blue">http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/</strong></a></p><p    ><a href="http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
 
@@ -1063,7 +1063,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0094.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If you’ve heard about PCA before, you may be wondering why I haven’t discussed eigenvector, or singular value decompositions. These topics are only necessary if you want to know the deeper workings of PCA, and if you want to compute it efficiently.<br></p><p    >Computing PCA by gradient descent, one component at a time is illustrative, but in practice, there are far more efficient and precise ways to do it. </p><p    ></p>
+            <p    >If we do that, we get perfect reconstructions, but our z’s are still different from the original coordinates. We end up expressing the data in another <strong>basis</strong>. It turns out, that this actually gives us a <strong>whitening</strong> of the data: in the new basis, the data is uncorrelated, with variance 1 along each axis.<br></p><p    >The different principal components <strong>c</strong> are unit vectors, which are by definition all mutually orthogonal. This means that the vectors <span>c</span> form an orthonormal basis. If we multiply each with the standard deviation of the data projected onto <strong>c</strong>, we end up with a whitening basis.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1073,7 +1073,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >This way of whitening is called <strong>PCA whitening</strong>. We apply PCA with the same number of target dimensions as data dimensions. This gives us an orthonormal basis in which the data is uncorrelated. If we then measure the standard deviation along each component and multiply the basis vectors by that, we get a basis in which the data is whitened.<br></p><p    >While σ and<strong> c</strong> together is not an orthonormal basis, <strong>c</strong> by itself is. Thus, we can still easily transform back and forth between the whitened basis and the original data coordinates.<br></p><p    >Note also that this implies that if we used PCA for dimensionality reduction, the data will also be whitened (if we standardize it afterwards). The first n principal components are always the same, no matter how many more we decide to compute. Thus, the PCA reduction just gives us the k most important dimensions of the PCA whitened data.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1083,7 +1083,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0096.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This may seem like a lot of math for something so simple as reducing the dimensionality of a dataset. <br></p><p    >But it turns out that these principal components are actually extremely versatile, and can give us a lot of insight into our data.</p><p    ></p>
+            <p    >If you’ve heard about PCA before, you may be wondering why I haven’t discussed eigenvector, or singular value decompositions. These topics are only necessary if you want to know the deeper workings of PCA, and if you want to compute it efficiently.<br></p><p    >Computing PCA by gradient descent, one component at a time is illustrative, but in practice, there are far more efficient and precise ways to do it. <br></p><p    >To understand PCA better, and to see the relation to eigenvectors, see <a href="http://peterbloem.nl/blog/pca-2"><strong class="blue">peterbloem.nl/blog/pca-2</strong></a>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1093,7 +1093,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0097.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We’ll start with an example of how PCA is often used in research. Imagine you’re a palaeontologist, and you find a shoulder bone, belonging to some great ape.<br></p><p    >If you are a trained anatomist specialising in primates, you can easily tell for a single shoulder bone whether it’s an early hominin fossil, which is a very rare find, or a chimpanzee fossil which isn’t rare. But how do you then substantiate this? “It’s true because I can see that it is” is not very scientific.<br></p><p    >image source: <a href="https://science.sciencemag.org/content/338/6106/514.full"><strong class="blue">https://science.sciencemag.org/content/338/6106/514.full</strong></a></p><p    ><a href="https://science.sciencemag.org/content/338/6106/514.full"><strong class="blue"></strong></a></p>
+            <p    ></p>
             </figcaption>
        </section>
 
@@ -1103,17 +1103,37 @@ slides: true
             <img src="22.Methodology2.key-stage-0098.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s one common approach. Take a large collection of the same specific bone (the <em>scapula,</em> or shoulder blade, in this case) from different apes and humans, and take a bunch of measurements (features) of each. Do a PCA, and plot the first two principal components. As you can see, the different species form very clear clusters, even in just two dimensions. <br></p><p    >When we find a new fossil, we can see where it ends up in this space, and we can then show that what we’ve found is clearly closer to human than to chimp just by measuring it, and projecting it into this space.<br></p><p    >Note also, that this data gives us some clues about how humans might have developed. The proto-humans Australopithecus Afarensis and Australopithecis Sediba, are both on a straight line between the cluster of Bonobo’s, Chimps and Gorillas and the point where modern humans. These are indeed the great apes considered to be most like the ones from which we developed.<br></p><p    ><br></p><p    >source: Fossil hominin shoulders support an African ape-like last common ancestor of humans and chimpanzees. Nathan M. Young, Terence D. Capellini, Neil T. Roach and Zeresenay Alemseged <a href="http://www.pnas.org/content/112/38/11829"><strong class="blue">http://www.pnas.org/content/112/38/11829</strong></a><br></p><p    ></p>
+            <p    >This may seem like a lot of math and complexity for something so simple as reducing the dimensionality of a dataset. <br></p><p    >But it turns out that these principal components are actually extremely versatile, and can give us a lot of insight into our data.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-096" class="anim">
+       <section id="slide-097">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-097">link here</a>
-            <img src="22.Methodology2.key-stage-0099anim0.png" data-images="22.Methodology2.key-stage-0099anim0.png,22.Methodology2.key-stage-0099anim1.png" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0099.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is another example of what PCA can tell us about a high-dimensional dataset.<br></p><p    >In this research, the authors took a database of 1387 Europeans and extracted features from their DNA. They used about half a million sites on the DNA sequence where DNA varies among humans (i.e. 1387 instances: people, and 500k features: DNA markers). They also recorded where their subjects (or their immediate ancestors) were from.<br></p><p    >Only the DNA data was fed to the PCA algorithm, with the person’s origin only used afterward to color the points.<br></p><p    >It turns out that the two principal components of this data largely express how far north the person lives, and how far east the person lives, which means that if you plot the data in the first two principle components, you get a fuzzy picture of Europe. <br></p><p    >In short, the large scale geography of Europe can be extracted from our DNA. If I sent a large sample of European DNA to some aliens on the other side of the galaxy who’d never seen our planet, they could use it to get a rough idea of our geography.</p><p    ></p>
+            <p    >We’ll start with an example of how PCA is often used in research. Imagine you’re a palaeontologist, and you find a shoulder bone, belonging to some great ape.<br></p><p    >If you are a trained anatomist specialising in primates, you can easily tell for a single shoulder bone whether it’s an early hominin fossil, which is a very rare find, or a chimpanzee fossil which isn’t rare. But how do you then substantiate this? “It’s true because I can see that it is” is not very scientific.<br></p><p    >image source: <a href="https://science.sciencemag.org/content/338/6106/514.full"><strong class="blue">https://science.sciencemag.org/content/338/6106/514.full</strong></a></p><p    ><a href="https://science.sciencemag.org/content/338/6106/514.full"><strong class="blue"></strong></a></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-098">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-098">link here</a>
+            <img src="22.Methodology2.key-stage-0100.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Here’s one common approach. Take a large collection of the same specific bone (the <em>scapula,</em> or shoulder blade, in this case) from different apes and humans, and take a bunch of measurements (features) of each. Do a PCA, and plot the first two principal components. As you can see, the different species form very clear clusters, even in just two dimensions. <br></p><p    >When we find a new fossil, we can see where it ends up in this space, and we can then show that what we’ve found is clearly closer to human than to chimp just by measuring it, and projecting it into this space.<br></p><p    >Note also, that this data gives us some clues about how humans might have developed. The proto-humans <em>Australopithecus Afarensis </em>and <em>Australopithecis Sediba</em>, are both on a straight line between the cluster of Bonobos, Chimps and Gorillas on one side and modern humans on the other. These are indeed the great apes considered to be most like the ones from which we developed.<br></p><p    >source: Fossil hominin shoulders support an African ape-like last common ancestor of humans and chimpanzees. Nathan M. Young, Terence D. Capellini, Neil T. Roach and Zeresenay Alemseged <a href="http://www.pnas.org/content/112/38/11829"><strong class="blue">http://www.pnas.org/content/112/38/11829</strong></a><br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-098" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-099">link here</a>
+            <img src="22.Methodology2.key-stage-0101anim0.png" data-images="22.Methodology2.key-stage-0101anim0.png,22.Methodology2.key-stage-0101anim1.png" class="slide-image" />
+
+            <figcaption>
+            <p    >Here is another example of what PCA can tell us about a high-dimensional dataset.<br></p><p    >In this research, the authors took a database of 1387 Europeans and extracted features from their DNA. They used about half a million sites on the DNA sequence where DNA varies among humans (i.e. 1387 instances: people, and 500k features: DNA markers). They also recorded where their subjects (or their immediate ancestors) were from.<br></p><p    >Only the DNA data was fed to the PCA algorithm, with the person’s origin only used afterward to color the points.<br></p><p    >It turns out that the two principal components of this data largely express how far north the person lives, and how far east the person lives. This means that if you plot the data in the first two principal components, <strong>you get a fuzzy picture of Europe</strong>. <br></p><p    >In short, the large scale geography of Europe can be extracted from our DNA. If I sent a large sample of European DNA to some aliens on the other side of the galaxy who’d never seen our planet, they could use it to get a rough idea of our geography.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -1122,32 +1142,12 @@ slides: true
 
 
 
-       <section id="slide-098">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-098">link here</a>
-            <img src="22.Methodology2.key-stage-0100.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Finally, possibly the most magical illustration of PCA: <strong>eigenfaces</strong>. <br></p><p    >Here we have a dataset (which you can easily get from sklearn) containing 400 images, in 64x64 grayscale, of a number of people. The lighting is nicely uniform and the facial features are always in approximately the same place.<br></p><p    >We take each pixel as a feature, giving us 400 instances each represented by a 4096-dimensional feature vector.<br></p><p    >The prefix eigen- comes from the eigendecomposition often used to derive the PCA analysis. It’s out of scope for us, but you can read more about this here: <a href="http://peterbloem.nl/blog/pca-2"><strong class="blue">peterbloem.nl/blog/pca-2</strong></a>.<br></p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-099">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-099">link here</a>
-            <img src="22.Methodology2.key-stage-0101.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Here is the sample mean of our data, re-arranged back into an image.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
        <section id="slide-100">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-100">link here</a>
             <img src="22.Methodology2.key-stage-0102.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Once we have the principal components, each 4096-dimensional vector, we can take their values, assign them a color, like red for negative values, blue for positive values, and re-arrange them back into images. Remember, every dimension represents a pixel.<br></p><p    >These are the first 30 principal components displayed this way (top left is the first, to the right of that is the second and so on).</p><p    ></p>
+            <p    >Finally, possibly the most magical illustration of PCA: <strong>eigenfaces</strong>. <br></p><p    >Here we have a dataset (which you can easily get from sklearn) containing 400 images, in 64x64 grayscale, of a number of people. The lighting is nicely uniform and the facial features are always in approximately the same place.<br></p><p    >We take each pixel as a feature, giving us 400 instances each represented by a 4096-dimensional feature vector. Note that this essentially flattens the image into one long vector, ignoring the grid structure of the pixels.<br></p><p    >The prefix eigen- comes from the eigendecomposition often used to derive the PCA analysis. It’s out of scope for us, but you should hopefully remember eigenvectors from you linear algebra. It turns out the eigenvectors of the covariance matrix <a href="http://peterbloem.nl/blog/pca-2"><strong class="blue">are the principal components</strong></a>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1157,23 +1157,19 @@ slides: true
             <img src="22.Methodology2.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is one way to interpret the principal components. They are the basis vectors that are most natural for our data. Remember, PCA is also a whitening operation. <br></p><p    >The first principal component is the direction that captures most of the variance of our data. Or, projecting our data down to the first principal component gives us the lowest reconstruction error. <br></p><p    >We can visualize this space, by starting at the data mean, and adding a small bit of the nth principal component.<br></p><p    ></p>
+            <p    >Here is the sample mean of our data, re-arranged back into an image.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-101" class="anim">
+       <section id="slide-102">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-102">link here</a>
-            <img src="22.Methodology2.key-stage-0104anim0.svg" data-images="22.Methodology2.key-stage-0104anim0.svg,22.Methodology2.key-stage-0104anim1.svg,22.Methodology2.key-stage-0104anim2.svg,22.Methodology2.key-stage-0104anim3.svg,22.Methodology2.key-stage-0104anim4.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0104.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Starting from the mean face (in the middle column), we take little steps along the direction of one of our principal components (or in the opposite direction). We see that moving along the first principal component roughly corresponds to ageing the face. Moving along the fourth seems to make the face more feminine.</p><p    ></p>
+            <p    >Once we have the principal components, each a 4096-dimensional vector, we can take their values, assign them a color, like red for negative values, blue for positive values, and re-arrange them back into images. Remember, every dimension represents a pixel.<br></p><p    >These are the first 30 principal components displayed this way (top left is the first, to the right of that is the second and so on).</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-103">
@@ -1181,7 +1177,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0105.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >Here is one way to interpret the principal components: the basis vectors that are most natural for our data. Remember, PCA is also a whitening operation. <br></p><p    >The first principal component is the direction that captures most of the variance of our data. Or, projecting our data down to the first principal component gives us the lowest reconstruction error. <br></p><p    >We can visualize this space, by starting at the data mean, and adding a small bit of the nth principal component.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1191,7 +1187,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0106anim0.svg" data-images="22.Methodology2.key-stage-0106anim0.svg,22.Methodology2.key-stage-0106anim1.svg,22.Methodology2.key-stage-0106anim2.svg,22.Methodology2.key-stage-0106anim3.svg,22.Methodology2.key-stage-0106anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Because the reconstruction is a linear projection (details in the reading materials) we can also add the principal components to instances in our data directly.<br></p><p    >The middle column represents the starting point. To the right we add the k-th principal component, to the left we subtract it. Note, in particular the effect of the fifth principal component: subtracting it opens the mouth, and adding it seems to push the lips closer together.</p><p    ></p>
+            <p    >Starting from the mean face (in the middle column), we take little steps along the direction of one of our principal components (or in the opposite direction). These are the first five.<br></p><p    >We see that moving along the first principal component roughly corresponds to ageing the face. Moving along the fourth seems to make the face more feminine.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -1200,12 +1196,22 @@ slides: true
 
 
 
-       <section id="slide-104" class="anim">
+       <section id="slide-105">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-105">link here</a>
-            <img src="22.Methodology2.key-stage-0107anim0.png" data-images="22.Methodology2.key-stage-0107anim0.png,22.Methodology2.key-stage-0107anim1.png,22.Methodology2.key-stage-0107anim2.png,22.Methodology2.key-stage-0107anim3.png,22.Methodology2.key-stage-0107anim4.png" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0107.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To reconstruct a point, we start with the mean, and add a bit of the first principal component, then of the second principal component and so on.<br></p><p    >If we think of our principal components as a new<strong> basis</strong> for our data, then we are just looking up our point by first moving some distance along the first axis, then along the second axis and so on. Just like we would look up a point given its coordinates in the standard basis.<br></p><p    ><br></p><p    ></p>
+            <p    >Instead of starting at the mean face, we can also start at some other point, like one of our instances, and add or subtract small bits of the principal components.<br></p><p    >The reason that we can add the principal components directly to the data like this is that the reduction and reconstruction are linear operations. If we use nonlinear versions of PCA, this trick won't work anymore. Details in the reading materials.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-105" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-106">link here</a>
+            <img src="22.Methodology2.key-stage-0108anim0.svg" data-images="22.Methodology2.key-stage-0108anim0.svg,22.Methodology2.key-stage-0108anim1.svg,22.Methodology2.key-stage-0108anim2.svg,22.Methodology2.key-stage-0108anim3.svg,22.Methodology2.key-stage-0108anim4.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >The middle column represents the starting point. To the right we add the k-th principal component, to the left we subtract it. Note, in particular the effect of the fifth principal component: subtracting it opens the mouth, and adding it seems to push the lips closer together.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -1214,24 +1220,18 @@ slides: true
 
 
 
-       <section id="slide-106">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-106">link here</a>
-            <img src="22.Methodology2.key-stage-0108.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Here’s what that looks like. top left is the mean. To the right is the reconstruction from just the first principal component. Next is what we get is we add the second principal component to that and so on.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-107">
+       <section id="slide-106" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-107">link here</a>
-            <img src="22.Methodology2.key-stage-0109.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0109anim0.png" data-images="22.Methodology2.key-stage-0109anim0.png,22.Methodology2.key-stage-0109anim1.png,22.Methodology2.key-stage-0109anim2.png,22.Methodology2.key-stage-0109anim3.png,22.Methodology2.key-stage-0109anim4.png" class="slide-image" />
 
             <figcaption>
-            <p    >After 60 principal components, the image starts to look pretty recognizable. We’ve reduced our data from 4096 dimensions to just 60 dimensions, and still retained enough information to tell people apart.</p><p    ></p>
+            <p    >To reconstruct a point, we start with the mean, and add a bit of the first principal component, then of the second principal component and so on.<br></p><p    >If we think of our principal components as a new<strong> basis</strong> for our data, then we are just looking up our point by first moving some distance along the first axis, then along the second axis and so on. Just like we would look up a point given its coordinates in the standard basis. <br></p><p    ><br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-108">
@@ -1239,7 +1239,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0110.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >Here’s what that looks like. top left is the mean. To the right is the reconstruction from just the first principal component. Next is what we get is we add the second principal component to that and so on.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1249,7 +1249,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0111.svg" class="slide-image" />
 
             <figcaption>
-            <p    >One final thought to consider:the bias/variance view can cast a new light on the topics we've seen today. Imagine if you have a dataset and you train a linear model on it. We've seen that a linear model can be perfectly optimized by analytical means, so this should be a very efficient approach.<br></p><p    >We've also seen that you can expand its features to make the model more expressive. For instance, this allows a linear model to take the shape of a parabola in the original feature space. We are increasing the model expressivity by doing this. This means that the bias will shrink, because the model will fit the data better, but also that we risk an increase in variance, because the model may begin to overfit.<br></p><p    >The key insight here is that dimensionality reduction, like that provided by PCA, is the opposite of this. If we start with a lot of features already (like all the pixels in an image), then even a simple linear model may already overfit, and put us in the high variance regime. PCA allows us to reduce the features to a mixture that retains only the crucial information: we take information from all features, but we throw away the noise that the model would othewirse overfit on. This pushes us away from the high variance regime, and, if we go too far, towards the high bias regime.</p><p    ></p>
+            <p    >After 60 principal components out of a possible 4096, the image starts to look pretty recognizable. We’ve reduced our data from 4096 dimensions to just 60 dimensions, and still retained enough information to tell people apart.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1257,6 +1257,26 @@ slides: true
        <section id="slide-110">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-110">link here</a>
             <img src="22.Methodology2.key-stage-0112.svg" class="slide-image" />
+
+            <figcaption>
+            <p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-111">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-111">link here</a>
+            <img src="22.Methodology2.key-stage-0113.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >One final thought to consider:the bias/variance view can cast a new light on the topics we've seen today. Imagine if you have a dataset and you train a linear model on it. We've seen that a linear model can be perfectly optimized by analytical means, so this should be a very efficient approach.<br></p><p    >We've also seen that you can expand its features to make the model more expressive. For instance, this allows a linear model to take the shape of a parabola in the original feature space. We are increasing the model expressivity by doing this. This means that the bias will shrink, because the model will fit the data better, but also that we risk an increase in variance, because the model may begin to overfit.<br></p><p    >The key insight here is that dimensionality reduction, like that provided by PCA, is the opposite of this. If we start with a lot of features already (like all the pixels in an image), then even a simple linear model may already overfit, and put us in the high variance regime. PCA allows us to reduce the features to a mixture that retains only the crucial information: we take information from all features, but we throw away the noise that the model would otherwise overfit on. This pushes us away from the high variance regime, and, if we go too far, towards the high bias regime.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-112">
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-112">link here</a>
+            <img src="22.Methodology2.key-stage-0114.svg" class="slide-image" />
 
             <figcaption>
             <p    >In short, don't think of all the learning coming from the modelling and searching part. A skilled machine learning practitioner can get a lot of mileage out of a plain linear model, and a large amount of clever data preparation. <br></p><p    >And the first thing they will do, is to <strong>look at their data</strong>.</p><p    ></p>

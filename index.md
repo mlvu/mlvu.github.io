@@ -11,7 +11,7 @@ title: Machine Learning @ VU
 </div>
 
 <div class="l2"><a href="/lecture02">
- <h3 class="orange"><span>2.</span> Linear Models and Search</h3>
+ <h3 class="orange"><span>2.</span> Linear models and search</h3>
 </a>
 </div>
 
@@ -21,7 +21,12 @@ title: Machine Learning @ VU
 </div>
 
 <div class="l4"><a href="/lecture04">
- <h3 class="green"><span>4.</span> Data pre-processing</h3>
+ <h3 class="green"><span>4.</span>Data pre-processing</h3>
+</a>
+</div>
+
+<div class="l5"><a href="/lecture05">
+ <h3 class="blue"><span>4.</span>Probabilistic models</h3>
 </a>
 </div>
 
