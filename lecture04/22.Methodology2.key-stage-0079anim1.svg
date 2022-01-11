@@ -110,9 +110,6 @@
 <symbol overflow="visible" id="glyph3-3">
 <path style="stroke:none;" d="M 1.75 -34.25 L 2.90625 -20.703125 L 7.34375 -20.703125 L 8.5 -34.25 Z M 1.75 -34.25 "/>
 </symbol>
-<symbol overflow="visible" id="glyph3-4">
-<path style="stroke:none;" d=""/>
-</symbol>
 <symbol overflow="visible" id="glyph4-0">
 <path style="stroke:none;" d="M 0 0 L 25 0 L 25 -35 L 0 -35 Z M 12.5 -19.75 L 4 -32.5 L 21 -32.5 Z M 14 -17.5 L 22.5 -30.25 L 22.5 -4.75 Z M 4 -2.5 L 12.5 -15.25 L 21 -2.5 Z M 2.5 -30.25 L 11 -17.5 L 2.5 -4.75 Z M 2.5 -30.25 "/>
 </symbol>
@@ -187,21 +184,6 @@
 </symbol>
 <symbol overflow="visible" id="glyph5-2">
 <path style="stroke:none;" d=""/>
-</symbol>
-<symbol overflow="visible" id="glyph6-0">
-<path style="stroke:none;" d="M 0 0 L 17.671875 0 L 17.671875 -24.734375 L 0 -24.734375 Z M 8.828125 -13.953125 L 2.828125 -22.96875 L 14.84375 -22.96875 Z M 9.890625 -12.359375 L 15.890625 -21.375 L 15.890625 -3.359375 Z M 2.828125 -1.765625 L 8.828125 -10.78125 L 14.84375 -1.765625 Z M 1.765625 -21.375 L 7.765625 -12.359375 L 1.765625 -3.359375 Z M 1.765625 -21.375 "/>
-</symbol>
-<symbol overflow="visible" id="glyph6-1">
-<path style="stroke:none;" d="M 7.203125 0 L 10.3125 0 L 10.3125 -21.203125 L 17.59375 -21.203125 L 17.59375 -23.8125 L -0.03125 -23.8125 L -0.03125 -21.203125 L 7.203125 -21.203125 Z M 7.203125 0 "/>
-</symbol>
-<symbol overflow="visible" id="glyph7-0">
-<path style="stroke:none;" d="M 0 0 L 26.5 0 L 26.5 -37.09375 L 0 -37.09375 Z M 13.25 -20.9375 L 4.234375 -34.453125 L 22.265625 -34.453125 Z M 14.84375 -18.546875 L 23.84375 -32.0625 L 23.84375 -5.03125 Z M 4.234375 -2.65625 L 13.25 -16.171875 L 22.265625 -2.65625 Z M 2.65625 -32.0625 L 11.65625 -18.546875 L 2.65625 -5.03125 Z M 2.65625 -32.0625 "/>
-</symbol>
-<symbol overflow="visible" id="glyph7-1">
-<path style="stroke:none;" d="M 21.734375 -6.578125 C 20.515625 -6.09375 19.03125 -5.78125 17.125 -5.78125 C 13.203125 -5.78125 10.015625 -8.265625 10.015625 -13.03125 C 9.96875 -17.28125 12.71875 -20.296875 16.953125 -20.296875 C 19.078125 -20.296875 20.515625 -19.921875 21.46875 -19.5 L 22.734375 -25.5 C 21.046875 -26.125 18.703125 -26.5 16.59375 -26.5 C 6.9375 -26.5 1.75 -20.296875 1.75 -12.71875 C 1.75 -4.5625 7.109375 0.53125 15.46875 0.53125 C 18.546875 0.53125 21.25 0 22.6875 -0.640625 Z M 21.734375 -6.578125 "/>
-</symbol>
-<symbol overflow="visible" id="glyph7-2">
-<path style="stroke:none;" d="M 1.859375 -36.3125 L 3.078125 -21.9375 L 7.796875 -21.9375 L 9.015625 -36.3125 Z M 1.859375 -36.3125 "/>
 </symbol>
 </g>
 <clipPath id="clip1">
@@ -329,7 +311,7 @@
 <g clip-path="url(#clip3)" clip-rule="nonzero">
 <path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-dasharray:1,2;stroke-miterlimit:4;" d="M 1.875 97.472656 L 162.378906 97.472656 " transform="matrix(1,0,0,1,1489,420)"/>
 </g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+<g style="fill:rgb(1.176453%,39.607239%,75.294495%);fill-opacity:1;">
   <use xlink:href="#glyph3-1" x="128.1239" y="474.9253"/>
 </g>
 <g style="fill:rgb(87.059021%,41.567993%,6.274414%);fill-opacity:1;">
@@ -429,27 +411,6 @@
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph4-12" x="1435.2237" y="843.5304"/>
-</g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph4-1" x="794.0046" y="976.7159"/>
-</g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph5-1" x="815.4046" y="980.882575"/>
-  <use xlink:href="#glyph5-2" x="832.504598" y="980.882575"/>
-</g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph4-11" x="839.57127" y="976.7159"/>
-</g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph3-4" x="869.37127" y="976.7159"/>
-  <use xlink:href="#glyph3-1" x="879.47127" y="976.7159"/>
-</g>
-<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph6-1" x="905.4213" y="964.80857"/>
-</g>
-<g style="fill:rgb(87.059021%,41.567993%,6.274414%);fill-opacity:1;">
-  <use xlink:href="#glyph7-1" x="922.9819" y="976.7159"/>
-  <use xlink:href="#glyph7-2" x="947.2029" y="976.7159"/>
 </g>
 </g>
 </svg>
