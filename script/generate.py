@@ -190,7 +190,10 @@ def generate(
             italic.add(id)
 
         if 'sf:superscript' in strnote:
-            sup.add(id)
+            if 'sf:number sfa:number="2" sfa:type="i"' in strnote:
+                sub.add(id) # weird behavior
+            else:
+                sup.add(id)
 
         if 'sf:subscript' in strnote:
             sub.add(id)

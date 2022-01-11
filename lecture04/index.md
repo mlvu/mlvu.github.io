@@ -505,7 +505,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0045anim0.png" data-images="22.Methodology2.key-stage-0045anim0.png,22.Methodology2.key-stage-0045anim1.png" class="slide-image" />
 
             <figcaption>
-            <p    >One more example. In this dataset points are colored red if the distance to the origin is less than 0.7. Again, this problem is not at all linearly separable. <br></p><p    >Using Pythagoras, however, we can express how the classes are decided: if x<sup>1</sup><sup>2</sup> + x<sup>2</sup><sup>2</sup> &lt; 0.7<sup>2 </sup>then we classify as<span class="orange red"> red</span>, otherwise as <span class="blue">blue</span>. This is a linear decision boundary for the features x<sup>1</sup><sup>2</sup> and x<sup>2</sup><sup>2</sup>. </p><p    ></p>
+            <p    >One more example. In this dataset points are colored red if the distance to the origin is less than 0.7. Again, this problem is not at all linearly separable. <br></p><p    >Using Pythagoras, however, we can express how the classes are decided: if x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> &lt; 0.7<sup>2 </sup>then we classify as<span class="orange red"> red</span>, otherwise as <span class="blue">blue</span>. This is a linear decision boundary for the features x<sub>1</sub><sup>2</sup> and x<sub>2</sub><sup>2</sup>. </p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -647,7 +647,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0057anim0.svg" data-images="22.Methodology2.key-stage-0057anim0.svg,22.Methodology2.key-stage-0057anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Normalisation scales the data linearly so that the smallest point becomes 0 and the largest becomes 1. Note that because x<sup>min</sup> is negative (in this example), we are actually moving all data to the right, and then rescaling it.<br></p><p    >We do this independently for each feature.</p><p    ></p>
+            <p    >Normalisation scales the data linearly so that the smallest point becomes 0 and the largest becomes 1. Note that because x<sub>min</sub> is negative (in this example), we are actually moving all data to the right, and then rescaling it.<br></p><p    >We do this independently for each feature.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -751,7 +751,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0065anim0.svg" data-images="22.Methodology2.key-stage-0065anim0.svg,22.Methodology2.key-stage-0065anim1.svg,22.Methodology2.key-stage-0065anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we know the coordinates <strong>x</strong><sup>b</sup> in our non-standard coordinate system, it’s easy to find the coordinates <strong class="blue">x</strong><sup class="blue">s</sup> in the standard basis. We just multiply the first coordinate of x<sup>b</sup> with the first basis vector, the second coordinate with the second basis vector and sum the result.</p><p    ></p>
+            <p    >If we know the coordinates <strong>x</strong><sub>b</sub> in our non-standard coordinate system, it’s easy to find the coordinates <strong class="blue">x</strong><sub class="blue">s</sub> in the standard basis. We just multiply the first coordinate of x<sub>b</sub> with the first basis vector, the second coordinate with the second basis vector and sum the result.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -819,7 +819,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0072.svg" class="slide-image" />
 
             <figcaption>
-            <p    >As before, we will imagine that our data originall came from a standard MVN, and was then transformed to the data we observed by multiplying each point by some matrix A (changing the basis) and then adding some vector t (moving the mean away from the origin).<br></p><p    >We can<em> sample</em> a point<em> </em><strong>x</strong><em> </em>from an n-dimensional standard MVN by simply filling a with values sampled from a one-dimensional standard normal distribution.<br></p><p    >If we then transform <strong>x</strong> by multiplying it by some matrix <strong>A</strong> and adding some vector <strong>t</strong>, the result is the same as sampling from an MVN with mean<strong> </strong><strong class="orange">t</strong><strong> </strong>and covariance <strong class="blue">AA</strong><sup class="blue">T</sup><sup>.<br></sup></p><p    >Any MVN can be described in this way as a transformation of the standard normal distribution.</p><p    ></p>
+            <p    >As before, we will imagine that our data originall came from a standard MVN, and was then transformed to the data we observed by multiplying each point by some matrix A (changing the basis) and then adding some vector t (moving the mean away from the origin).<br></p><p    >We can<em> sample</em> a point<em> </em><strong>x</strong><em> </em>from an n-dimensional standard MVN by simply filling a with values sampled from a one-dimensional standard normal distribution.<br></p><p    >If we then transform <strong>x</strong> by multiplying it by some matrix <strong>A</strong> and adding some vector <strong>t</strong>, the result is the same as sampling from an MVN with mean<strong> </strong><strong class="orange">t</strong><strong> </strong>and covariance <strong class="blue">AA</strong><sup class="blue">T</sup><sub>.<br></sub></p><p    >Any MVN can be described in this way as a transformation of the standard normal distribution.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -903,7 +903,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0079anim0.svg" data-images="22.Methodology2.key-stage-0079anim0.svg,22.Methodology2.key-stage-0079anim1.svg,22.Methodology2.key-stage-0079anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we will restrict ourselves to <strong>linear reductions</strong>. To create one of the derived features z<sup>1</sup>, test z<sup>1</sup>, the only thing we are allowed to do is to pick one number for each feature, multiply them together and sum the result. These values we multiply by the original features should be the same for all instances.<br></p><p    >If we arrange these multipliers in a vector <strong class="orange">c'</strong>, then we can simply say that the reduced feature is the dot product of the original features <strong class="blue">x</strong> and the parameter vector <strong class="orange">c'</strong>. If we want more than one reduced feature, we can add additional parameter vectors. However, to keep things simple, we start with just one.<br></p><p    >The question is, how do we choose the elements of <strong class="orange">c'</strong>?</p><p    ></p>
+            <p    >In this video we will restrict ourselves to <strong>linear reductions</strong>. To create one of the derived features z<sub>1</sub>, the only thing we are allowed to do is to pick one number for each feature, multiply them together and sum the result. These values we multiply by the original features should be the same for all instances.<br></p><p    >If we arrange these multipliers in a vector <strong class="orange">c'</strong>, then we can simply say that the reduced feature is the dot product of the original features <strong class="blue">x</strong> and the parameter vector <strong class="orange">c'</strong>. If we want more than one reduced feature, we can add additional parameter vectors. However, to keep things simple, we start with just one.<br></p><p    >The question is, how do we choose the elements of <strong class="orange">c'</strong>?</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
