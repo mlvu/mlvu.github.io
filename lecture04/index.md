@@ -8,8 +8,8 @@ slides: true
         <li class="name">Lecture 4: Data Pre-processing</li>
             <li><a href="#video-000">Missing values and outliers</a></li>
             <li><a href="#video-030">Class imbalance and feature design</a></li>
-            <li><a href="#video-052">Class imbalance and feature design</a></li>
-            <li><a href="#video-074">Class imbalance and feature design</a></li>
+            <li><a href="#video-052">Normalization</a></li>
+            <li><a href="#video-074">Principal Component Analysis</a></li>
         <li class="pdf"><a href="http://localhost:5555/lectures/22.Methodology2.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
@@ -27,7 +27,7 @@ slides: true
        </section>
 
        <section id="slide-001">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-001">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-001" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
@@ -37,7 +37,7 @@ slides: true
 
 
        <section id="slide-002">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-002">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-002" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0002.svg" class="slide-image" />
 
             <figcaption>
@@ -47,7 +47,7 @@ slides: true
 
 
        <section id="slide-003">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-003">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-003" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0003.svg" class="slide-image" />
 
             <figcaption>
@@ -57,7 +57,7 @@ slides: true
 
 
        <section id="slide-004">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-004">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-004" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0004.svg" class="slide-image" />
 
             <figcaption>
@@ -67,7 +67,7 @@ slides: true
 
 
        <section id="slide-005">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-005">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-005" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0005.svg" class="slide-image" />
 
             <figcaption>
@@ -77,7 +77,7 @@ slides: true
 
 
        <section id="slide-006">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-006">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-006" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0006.svg" class="slide-image" />
 
             <figcaption>
@@ -87,7 +87,7 @@ slides: true
 
 
        <section id="slide-006" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-007">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-007" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0007anim0.svg" data-images="22.Methodology2.key-stage-0007anim0.svg,22.Methodology2.key-stage-0007anim1.png" class="slide-image" />
 
             <figcaption>
@@ -101,7 +101,7 @@ slides: true
 
 
        <section id="slide-008">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-008">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-008" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0008.svg" class="slide-image" />
 
             <figcaption>
@@ -111,7 +111,7 @@ slides: true
 
 
        <section id="slide-009">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-009">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-009" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
@@ -121,7 +121,7 @@ slides: true
 
 
        <section id="slide-010">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-010">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-010" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0010.svg" class="slide-image" />
 
             <figcaption>
@@ -131,7 +131,7 @@ slides: true
 
 
        <section id="slide-011">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-011">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-011" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0011.svg" class="slide-image" />
 
             <figcaption>
@@ -141,7 +141,7 @@ slides: true
 
 
        <section id="slide-012">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-012">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-012" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0012.svg" class="slide-image" />
 
             <figcaption>
@@ -151,7 +151,7 @@ slides: true
 
 
        <section id="slide-013">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-013">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-013" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0013.svg" class="slide-image" />
 
             <figcaption>
@@ -161,7 +161,7 @@ slides: true
 
 
        <section id="slide-014">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-014">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-014" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0014.svg" class="slide-image" />
 
             <figcaption>
@@ -171,7 +171,7 @@ slides: true
 
 
        <section id="slide-015">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-015">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-015" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0015.svg" class="slide-image" />
 
             <figcaption>
@@ -181,7 +181,7 @@ slides: true
 
 
        <section id="slide-016">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-016">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-016" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
@@ -191,7 +191,7 @@ slides: true
 
 
        <section id="slide-017">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-017">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-017" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0017.png" class="slide-image" />
 
             <figcaption>
@@ -201,7 +201,7 @@ slides: true
 
 
        <section id="slide-018">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-018">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-018" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0018.svg" class="slide-image" />
 
             <figcaption>
@@ -211,7 +211,7 @@ slides: true
 
 
        <section id="slide-019">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-019">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-019" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0019.svg" class="slide-image" />
 
             <figcaption>
@@ -221,7 +221,7 @@ slides: true
 
 
        <section id="slide-019" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-020">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-020" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0020anim0.svg" data-images="22.Methodology2.key-stage-0020anim0.svg,22.Methodology2.key-stage-0020anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -235,7 +235,7 @@ slides: true
 
 
        <section id="slide-020" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-021">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-021" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0021anim0.svg" data-images="22.Methodology2.key-stage-0021anim0.svg,22.Methodology2.key-stage-0021anim1.svg,22.Methodology2.key-stage-0021anim2.svg,22.Methodology2.key-stage-0021anim3.svg,22.Methodology2.key-stage-0021anim4.svg,22.Methodology2.key-stage-0021anim5.svg" class="slide-image" />
 
             <figcaption>
@@ -249,7 +249,7 @@ slides: true
 
 
        <section id="slide-022">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-022">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-022" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0022.svg" class="slide-image" />
 
             <figcaption>
@@ -259,7 +259,7 @@ slides: true
 
 
        <section id="slide-023">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-023">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-023" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
@@ -269,7 +269,7 @@ slides: true
 
 
        <section id="slide-023" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-024">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-024" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0024anim0.svg" data-images="22.Methodology2.key-stage-0024anim0.svg,22.Methodology2.key-stage-0024anim1.svg,22.Methodology2.key-stage-0024anim2.svg,22.Methodology2.key-stage-0024anim3.svg,22.Methodology2.key-stage-0024anim4.svg,22.Methodology2.key-stage-0024anim5.svg,22.Methodology2.key-stage-0024anim6.svg" class="slide-image" />
 
             <figcaption>
@@ -283,7 +283,7 @@ slides: true
 
 
        <section id="slide-025">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-025">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-025" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0025.svg" class="slide-image" />
 
             <figcaption>
@@ -293,7 +293,7 @@ slides: true
 
 
        <section id="slide-026">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-026">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-026" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0026.svg" class="slide-image" />
 
             <figcaption>
@@ -303,7 +303,7 @@ slides: true
 
 
        <section id="slide-027">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-027">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-027" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0027.svg" class="slide-image" />
 
             <figcaption>
@@ -313,7 +313,7 @@ slides: true
 
 
        <section id="slide-027" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-028">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-028" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0028anim0.svg" data-images="22.Methodology2.key-stage-0028anim0.svg,22.Methodology2.key-stage-0028anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -327,7 +327,7 @@ slides: true
 
 
        <section id="slide-029">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-029">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-029" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0029.png" class="slide-image" />
 
             <figcaption>
@@ -337,7 +337,7 @@ slides: true
 
 
        <section id="slide-030">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-030">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-030" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0030.svg" class="slide-image" />
 
             <figcaption>
@@ -357,7 +357,7 @@ slides: true
        </section>
 
        <section id="slide-031">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-031">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-031" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0031.svg" class="slide-image" />
 
             <figcaption>
@@ -367,7 +367,7 @@ slides: true
 
 
        <section id="slide-032">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-032">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-032" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0032.svg" class="slide-image" />
 
             <figcaption>
@@ -377,7 +377,7 @@ slides: true
 
 
        <section id="slide-033">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-033">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-033" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0033.svg" class="slide-image" />
 
             <figcaption>
@@ -387,7 +387,7 @@ slides: true
 
 
        <section id="slide-034">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-034">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-034" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0034.svg" class="slide-image" />
 
             <figcaption>
@@ -397,7 +397,7 @@ slides: true
 
 
        <section id="slide-035">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-035">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-035" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0035.svg" class="slide-image" />
 
             <figcaption>
@@ -407,7 +407,7 @@ slides: true
 
 
        <section id="slide-036">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-036">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-036" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0036.svg" class="slide-image" />
 
             <figcaption>
@@ -417,7 +417,7 @@ slides: true
 
 
        <section id="slide-037">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-037">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-037" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0037.svg" class="slide-image" />
 
             <figcaption>
@@ -427,7 +427,7 @@ slides: true
 
 
        <section id="slide-038">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-038">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-038" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0038.svg" class="slide-image" />
 
             <figcaption>
@@ -437,7 +437,7 @@ slides: true
 
 
        <section id="slide-039">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-039">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-039" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0039.svg" class="slide-image" />
 
             <figcaption>
@@ -447,7 +447,7 @@ slides: true
 
 
        <section id="slide-040">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-040">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-040" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0040.svg" class="slide-image" />
 
             <figcaption>
@@ -457,7 +457,7 @@ slides: true
 
 
        <section id="slide-040" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-041">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-041" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0041anim0.svg" data-images="22.Methodology2.key-stage-0041anim0.svg,22.Methodology2.key-stage-0041anim1.svg,22.Methodology2.key-stage-0041anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -471,7 +471,7 @@ slides: true
 
 
        <section id="slide-042">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-042">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-042" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0042.png" class="slide-image" />
 
             <figcaption>
@@ -481,7 +481,7 @@ slides: true
 
 
        <section id="slide-043">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-043">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-043" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0043.svg" class="slide-image" />
 
             <figcaption>
@@ -491,7 +491,7 @@ slides: true
 
 
        <section id="slide-044">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-044">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-044" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0044.png" class="slide-image" />
 
             <figcaption>
@@ -501,7 +501,7 @@ slides: true
 
 
        <section id="slide-044" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-045">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-045" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0045anim0.png" data-images="22.Methodology2.key-stage-0045anim0.png,22.Methodology2.key-stage-0045anim1.png" class="slide-image" />
 
             <figcaption>
@@ -515,7 +515,7 @@ slides: true
 
 
        <section id="slide-046">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-046">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-046" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0046.png" class="slide-image" />
 
             <figcaption>
@@ -525,7 +525,7 @@ slides: true
 
 
        <section id="slide-047">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-047">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-047" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
@@ -535,7 +535,7 @@ slides: true
 
 
        <section id="slide-048">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-048">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-048" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0048.svg" class="slide-image" />
 
             <figcaption>
@@ -545,7 +545,7 @@ slides: true
 
 
        <section id="slide-049">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-049">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-049" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0049.svg" class="slide-image" />
 
             <figcaption>
@@ -555,7 +555,7 @@ slides: true
 
 
        <section id="slide-050">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-050">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-050" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0050.svg" class="slide-image" />
 
             <figcaption>
@@ -565,7 +565,7 @@ slides: true
 
 
        <section id="slide-050" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-051">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-051" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0051anim0.svg" data-images="22.Methodology2.key-stage-0051anim0.svg,22.Methodology2.key-stage-0051anim1.svg,22.Methodology2.key-stage-0051anim2.svg,22.Methodology2.key-stage-0051anim3.svg" class="slide-image" />
 
             <figcaption>
@@ -579,7 +579,7 @@ slides: true
 
 
        <section id="slide-052">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-052">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-052" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0052.svg" class="slide-image" />
 
             <figcaption>
@@ -599,7 +599,7 @@ slides: true
        </section>
 
        <section id="slide-053">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-053">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-053" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0053.svg" class="slide-image" />
 
             <figcaption>
@@ -609,7 +609,7 @@ slides: true
 
 
        <section id="slide-054">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-054">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-054" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0054.svg" class="slide-image" />
 
             <figcaption>
@@ -619,7 +619,7 @@ slides: true
 
 
        <section id="slide-054" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-055">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-055" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0055anim0.svg" data-images="22.Methodology2.key-stage-0055anim0.svg,22.Methodology2.key-stage-0055anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -633,7 +633,7 @@ slides: true
 
 
        <section id="slide-056">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-056">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-056" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0056.svg" class="slide-image" />
 
             <figcaption>
@@ -643,7 +643,7 @@ slides: true
 
 
        <section id="slide-056" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-057">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-057" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0057anim0.svg" data-images="22.Methodology2.key-stage-0057anim0.svg,22.Methodology2.key-stage-0057anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -657,7 +657,7 @@ slides: true
 
 
        <section id="slide-057" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-058">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-058" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0058anim0.svg" data-images="22.Methodology2.key-stage-0058anim0.svg,22.Methodology2.key-stage-0058anim1.svg,22.Methodology2.key-stage-0058anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -671,7 +671,7 @@ slides: true
 
 
        <section id="slide-058" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-059">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-059" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0059anim0.svg" data-images="22.Methodology2.key-stage-0059anim0.svg,22.Methodology2.key-stage-0059anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -685,7 +685,7 @@ slides: true
 
 
        <section id="slide-059" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-060">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-060" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0060anim0.svg" data-images="22.Methodology2.key-stage-0060anim0.svg,22.Methodology2.key-stage-0060anim1.svg,22.Methodology2.key-stage-0060anim2.svg,22.Methodology2.key-stage-0060anim3.png,22.Methodology2.key-stage-0060anim4.png,22.Methodology2.key-stage-0060anim5.png" class="slide-image" />
 
             <figcaption>
@@ -699,7 +699,7 @@ slides: true
 
 
        <section id="slide-060" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-061">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-061" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0061anim0.svg" data-images="22.Methodology2.key-stage-0061anim0.svg,22.Methodology2.key-stage-0061anim1.png,22.Methodology2.key-stage-0061anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -713,7 +713,7 @@ slides: true
 
 
        <section id="slide-061" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-062">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-062" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0062anim0.svg" data-images="22.Methodology2.key-stage-0062anim0.svg,22.Methodology2.key-stage-0062anim1.svg,22.Methodology2.key-stage-0062anim2.svg,22.Methodology2.key-stage-0062anim3.svg,22.Methodology2.key-stage-0062anim4.svg" class="slide-image" />
 
             <figcaption>
@@ -727,7 +727,7 @@ slides: true
 
 
        <section id="slide-063">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-063">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-063" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0063.svg" class="slide-image" />
 
             <figcaption>
@@ -737,7 +737,7 @@ slides: true
 
 
        <section id="slide-064">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-064">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-064" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
@@ -747,7 +747,7 @@ slides: true
 
 
        <section id="slide-064" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-065">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-065" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0065anim0.svg" data-images="22.Methodology2.key-stage-0065anim0.svg,22.Methodology2.key-stage-0065anim1.svg,22.Methodology2.key-stage-0065anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -761,7 +761,7 @@ slides: true
 
 
        <section id="slide-065" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-066">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-066" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0066anim0.svg" data-images="22.Methodology2.key-stage-0066anim0.svg,22.Methodology2.key-stage-0066anim1.svg,22.Methodology2.key-stage-0066anim2.svg,22.Methodology2.key-stage-0066anim3.svg,22.Methodology2.key-stage-0066anim4.svg" class="slide-image" />
 
             <figcaption>
@@ -775,7 +775,7 @@ slides: true
 
 
        <section id="slide-067">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-067">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-067" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0067.svg" class="slide-image" />
 
             <figcaption>
@@ -785,7 +785,7 @@ slides: true
 
 
        <section id="slide-068">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-068">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-068" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0068.svg" class="slide-image" />
 
             <figcaption>
@@ -795,7 +795,7 @@ slides: true
 
 
        <section id="slide-069">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-069">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-069" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
@@ -805,7 +805,7 @@ slides: true
 
 
        <section id="slide-070">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-070">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-070" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0070.svg" class="slide-image" />
 
             <figcaption>
@@ -815,7 +815,7 @@ slides: true
 
 
        <section id="slide-071">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-071">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-071" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0072.svg" class="slide-image" />
 
             <figcaption>
@@ -825,7 +825,7 @@ slides: true
 
 
        <section id="slide-071" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-072">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-072" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0073anim0.png" data-images="22.Methodology2.key-stage-0073anim0.png,22.Methodology2.key-stage-0073anim1.png,22.Methodology2.key-stage-0073anim2.png" class="slide-image" />
 
             <figcaption>
@@ -839,7 +839,7 @@ slides: true
 
 
        <section id="slide-073">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-073">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-073" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0074.png" class="slide-image" />
 
             <figcaption>
@@ -849,7 +849,7 @@ slides: true
 
 
        <section id="slide-074">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-074">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-074" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0075.svg" class="slide-image" />
 
             <figcaption>
@@ -869,7 +869,7 @@ slides: true
        </section>
 
        <section id="slide-075">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-075">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-075" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
@@ -879,7 +879,7 @@ slides: true
 
 
        <section id="slide-076">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-076">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-076" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0077.svg" class="slide-image" />
 
             <figcaption>
@@ -889,7 +889,7 @@ slides: true
 
 
        <section id="slide-077">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-077">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-077" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0078.svg" class="slide-image" />
 
             <figcaption>
@@ -899,7 +899,7 @@ slides: true
 
 
        <section id="slide-078">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-078">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-078" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
@@ -909,7 +909,7 @@ slides: true
 
 
        <section id="slide-078" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-079">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-079" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0080anim0.svg" data-images="22.Methodology2.key-stage-0080anim0.svg,22.Methodology2.key-stage-0080anim1.svg,22.Methodology2.key-stage-0080anim2.svg,22.Methodology2.key-stage-0080anim3.svg,22.Methodology2.key-stage-0080anim4.svg,22.Methodology2.key-stage-0080anim5.svg" class="slide-image" />
 
             <figcaption>
@@ -923,7 +923,7 @@ slides: true
 
 
        <section id="slide-079" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-080">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-080" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0082anim0.svg" data-images="22.Methodology2.key-stage-0082anim0.svg,22.Methodology2.key-stage-0082anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -937,7 +937,7 @@ slides: true
 
 
        <section id="slide-080" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-081">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-081" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0083anim0.svg" data-images="22.Methodology2.key-stage-0083anim0.svg,22.Methodology2.key-stage-0083anim1.svg,22.Methodology2.key-stage-0083anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -951,7 +951,7 @@ slides: true
 
 
        <section id="slide-081" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-082">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-082" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0084anim0.svg" data-images="22.Methodology2.key-stage-0084anim0.svg,22.Methodology2.key-stage-0084anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -965,7 +965,7 @@ slides: true
 
 
        <section id="slide-083">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-083">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-083" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0085.svg" class="slide-image" />
 
             <figcaption>
@@ -975,7 +975,7 @@ slides: true
 
 
        <section id="slide-084">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-084">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-084" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0086.svg" class="slide-image" />
 
             <figcaption>
@@ -985,7 +985,7 @@ slides: true
 
 
        <section id="slide-085">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-085">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-085" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0087.svg" class="slide-image" />
 
             <figcaption>
@@ -995,7 +995,7 @@ slides: true
 
 
        <section id="slide-085" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-086">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-086" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0088anim0.svg" data-images="22.Methodology2.key-stage-0088anim0.svg,22.Methodology2.key-stage-0088anim1.svg,22.Methodology2.key-stage-0088anim2.svg,22.Methodology2.key-stage-0088anim3.svg,22.Methodology2.key-stage-0088anim4.svg,22.Methodology2.key-stage-0088anim5.svg" class="slide-image" />
 
             <figcaption>
@@ -1009,7 +1009,7 @@ slides: true
 
 
        <section id="slide-087">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-087">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-087" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
@@ -1019,7 +1019,7 @@ slides: true
 
 
        <section id="slide-088">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-088">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-088" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
@@ -1029,7 +1029,7 @@ slides: true
 
 
        <section id="slide-089">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-089">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-089" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0091.svg" class="slide-image" />
 
             <figcaption>
@@ -1039,7 +1039,7 @@ slides: true
 
 
        <section id="slide-090">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-090">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-090" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0092.svg" class="slide-image" />
 
             <figcaption>
@@ -1049,7 +1049,7 @@ slides: true
 
 
        <section id="slide-091">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-091">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-091" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
@@ -1059,7 +1059,7 @@ slides: true
 
 
        <section id="slide-092">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-092">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-092" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0094.svg" class="slide-image" />
 
             <figcaption>
@@ -1069,7 +1069,7 @@ slides: true
 
 
        <section id="slide-093">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-093">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-093" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
@@ -1079,7 +1079,7 @@ slides: true
 
 
        <section id="slide-094">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-094">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-094" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0096.svg" class="slide-image" />
 
             <figcaption>
@@ -1089,7 +1089,7 @@ slides: true
 
 
        <section id="slide-095">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-095">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-095" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0097.svg" class="slide-image" />
 
             <figcaption>
@@ -1099,7 +1099,7 @@ slides: true
 
 
        <section id="slide-096">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-096">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-096" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0098.svg" class="slide-image" />
 
             <figcaption>
@@ -1109,7 +1109,7 @@ slides: true
 
 
        <section id="slide-097">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-097">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-097" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0099.svg" class="slide-image" />
 
             <figcaption>
@@ -1119,7 +1119,7 @@ slides: true
 
 
        <section id="slide-098">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-098">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-098" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0100.svg" class="slide-image" />
 
             <figcaption>
@@ -1129,7 +1129,7 @@ slides: true
 
 
        <section id="slide-098" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-099">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-099" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0101anim0.png" data-images="22.Methodology2.key-stage-0101anim0.png,22.Methodology2.key-stage-0101anim1.png" class="slide-image" />
 
             <figcaption>
@@ -1143,7 +1143,7 @@ slides: true
 
 
        <section id="slide-100">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-100">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-100" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0102.svg" class="slide-image" />
 
             <figcaption>
@@ -1153,7 +1153,7 @@ slides: true
 
 
        <section id="slide-101">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-101">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-101" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
@@ -1163,7 +1163,7 @@ slides: true
 
 
        <section id="slide-102">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-102">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-102" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0104.svg" class="slide-image" />
 
             <figcaption>
@@ -1173,7 +1173,7 @@ slides: true
 
 
        <section id="slide-103">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-103">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-103" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0105.svg" class="slide-image" />
 
             <figcaption>
@@ -1183,7 +1183,7 @@ slides: true
 
 
        <section id="slide-103" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-104">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-104" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0106anim0.svg" data-images="22.Methodology2.key-stage-0106anim0.svg,22.Methodology2.key-stage-0106anim1.svg,22.Methodology2.key-stage-0106anim2.svg,22.Methodology2.key-stage-0106anim3.svg,22.Methodology2.key-stage-0106anim4.svg" class="slide-image" />
 
             <figcaption>
@@ -1197,7 +1197,7 @@ slides: true
 
 
        <section id="slide-105">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-105">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-105" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0107.svg" class="slide-image" />
 
             <figcaption>
@@ -1207,7 +1207,7 @@ slides: true
 
 
        <section id="slide-105" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-106">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-106" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0108anim0.svg" data-images="22.Methodology2.key-stage-0108anim0.svg,22.Methodology2.key-stage-0108anim1.svg,22.Methodology2.key-stage-0108anim2.svg,22.Methodology2.key-stage-0108anim3.svg,22.Methodology2.key-stage-0108anim4.svg" class="slide-image" />
 
             <figcaption>
@@ -1221,7 +1221,7 @@ slides: true
 
 
        <section id="slide-106" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-107">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-107" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0109anim0.png" data-images="22.Methodology2.key-stage-0109anim0.png,22.Methodology2.key-stage-0109anim1.png,22.Methodology2.key-stage-0109anim2.png,22.Methodology2.key-stage-0109anim3.png,22.Methodology2.key-stage-0109anim4.png" class="slide-image" />
 
             <figcaption>
@@ -1235,7 +1235,7 @@ slides: true
 
 
        <section id="slide-108">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-108">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-108" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0110.svg" class="slide-image" />
 
             <figcaption>
@@ -1245,7 +1245,7 @@ slides: true
 
 
        <section id="slide-109">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-109">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-109" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0111.svg" class="slide-image" />
 
             <figcaption>
@@ -1255,7 +1255,7 @@ slides: true
 
 
        <section id="slide-110">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-110">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-110" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0112.svg" class="slide-image" />
 
             <figcaption>
@@ -1265,7 +1265,7 @@ slides: true
 
 
        <section id="slide-111">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-111">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-111" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0113.svg" class="slide-image" />
 
             <figcaption>
@@ -1275,7 +1275,7 @@ slides: true
 
 
        <section id="slide-112">
-            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-112">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-112" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0114.svg" class="slide-image" />
 
             <figcaption>

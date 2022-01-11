@@ -30,7 +30,7 @@ slides: true
 
     % if slide['video'] is not None and slide['video'].startswith('inline:'):
        <section id="slide-${f'{i+1:03}'}">
-            <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}">link here</a>
+            <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <iframe
                 src="${slide['video'][7:]}?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -44,7 +44,7 @@ slides: true
        </section>
     % elif len(slide['image']) == 1:
        <section id="slide-${f'{i+1:03}'}">
-            <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}">link here</a>
+            <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <img src="${slide['image'][0]}" class="slide-image" />
 
             <figcaption>
@@ -53,7 +53,7 @@ slides: true
        </section>
     % else:
        <section id="slide-${f'{i:03}'}" class="anim">
-            <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}">link here</a>
+            <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <img src="${slide['image'][0]}" data-images="${','.join(slide['image'])}" class="slide-image" />
 
             <figcaption>

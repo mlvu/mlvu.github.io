@@ -889,6 +889,10 @@ article.slides {
         top: 2em;
         left: calc(100% - 4em);
     }
+
+    #body .slides section iframe {
+        width: 100%;
+    }
 }
 
 .slides section figcaption {
