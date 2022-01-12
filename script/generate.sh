@@ -28,12 +28,12 @@
 #  --base-url "https://mlvu.github.io/lecture04" \
 #  --pdf-link "http://localhost:5555/lectures/22.Methodology2.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 5: Probabilistic models" \
-#  --dst ../lecture05 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/2021/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
-#  --base-url "https://mlvu.github.io/lecture05" \
-#  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
+python generate.py \
+  --title "Lecture 5: Probabilistic models" \
+  --dst ../lecture05 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/2021/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
+  --base-url "https://mlvu.github.io/lecture05" \
+  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/
