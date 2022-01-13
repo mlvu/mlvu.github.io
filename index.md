@@ -31,6 +31,11 @@ title: Machine Learning @ VU
 </a>
 </div>
 
+<div class="l6"><a href="/lecture06">
+ <h3 class="green"><span>6.</span>Beyond linear models</h3>
+</a>
+</div>
+
 
 </nav>
 {:/nomarkdown}
