@@ -35,12 +35,12 @@
 #  --base-url "https://mlvu.github.io/lecture05" \
 #  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 6: Beyond linear models" \
-  --dst ../lecture06 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/2021/Lectures/32 Linear Models 2/32.Linear.key" \
-  --base-url "https://mlvu.github.io/lecture06" \
-  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 6: Beyond linear models" \
+#  --dst ../lecture06 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/2021/Lectures/32 Linear Models 2/32.Linear.key" \
+#  --base-url "https://mlvu.github.io/lecture06" \
+#  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/

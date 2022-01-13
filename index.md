@@ -32,7 +32,7 @@ title: Machine Learning @ VU
 </div>
 
 <div class="l6"><a href="/lecture06">
- <h3 class="green"><span>6.</span>Beyond linear models</h3>
+ <h3 class="orange"><span>6.</span>Beyond linear models</h3>
 </a>
 </div>
 
