@@ -1,17 +1,16 @@
 ---
-title: "Lecture 5: Probabilistic models"
+title: "Lecture 5: Data Pre-processing"
 slides: true
 ---
 <nav class="menu">
     <ul>
         <li class="home"><a href="/">Home</a></li>
-        <li class="name">Lecture 5: Probabilistic models</li>
-            <li><a href="#video-000">What is probability?</a></li>
-            <li><a href="#video-036">Learning with probability</a></li>
-            <li><a href="#video-054">(Naive) Bayes classifiers</a></li>
-            <li><a href="#video-074">Logistic regression</a></li>
-            <li><a href="#video-101">Information theory</a></li>
-        <li class="pdf"><a href="https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf">PDF</a></li>
+        <li class="name">Lecture 5: Data Pre-processing</li>
+            <li><a href="#video-000">Missing values and outliers</a></li>
+            <li><a href="#video-030">Class imbalance and feature design</a></li>
+            <li><a href="#video-052">Normalization</a></li>
+            <li><a href="#video-074">Principal Component Analysis</a></li>
+        <li class="pdf"><a href="https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
 
@@ -19,7 +18,7 @@ slides: true
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/9rWoBVnVuLQ?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/H7Ew_u4z40g?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -29,90 +28,70 @@ slides: true
 
        <section id="slide-001">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-001" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0001.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Probability is an important tool in Machine Learning. We expect that you have been taught probability theory already, but since it’s a subtle concept, with complicated foundations, we’ll go over the basics again in this first video.<br></p><p    >If you have never done <em>any</em> probability before, please consult the homework exercises and the recommended reading to brush up first.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><lnbr></lnbr><br></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-002">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-002" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0002.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0002.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To start, let’s look at the way we use probability <em>informally</em>.<br></p><p    >Let’s say you are a concerned parent, you read this headline and you are shocked by it. You turn to your partner, and you say “that means that the probability that our son is gambling online is 12.5%”. Your partner disagrees, you have a good handle on your son’s behaviour and his spending. Unless he has a credit card you don’t know about, and the probability of that is much lower.<br></p><p    >Well, then the probability that Josh, his closest friend, gambles online must be 12.5%. If one in eight teenage boys is gambling, they must be hiding <em>somewhere</em>. Your partner disagrees again: probability doesn’t enter in to it. Josh is either gambling or he isn’t.<br></p><p    >Clearly, we need to look at what we mean when we say that a probability of something is such-and-so. There are two commonly accepted ways of looking at it: objective and subjective probability. We’ll start with <strong>objective probability</strong>. <br></p><p    >image source: <a href="https://www.theguardian.com/society/2016/sep/20/one-in-eight-european-teenage-boys-gamble-online-says-survey"><strong class="blue">https://www.theguardian.com/society/2016/sep/20/one-in-eight-european-teenage-boys-gamble-online-says-survey</strong></a></p><p    ><a href="https://www.theguardian.com/society/2016/sep/20/one-in-eight-european-teenage-boys-gamble-online-says-survey"><strong class="blue"></strong></a></p>
+            <p    >To motivate this lecture, let’s look at a famous historical case of operations research. In the second World War, the allies executed many bombing runs, and often, their planes came back looking like this.<br></p><p    >To investigate where they should reinforce their planes, investigators made a tally of the most common points on the plane they were seeing damage.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-003">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-003" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0003.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0003.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In <strong>objective probability</strong>, “the probability that X is the case” represents an<em> objective truth</em>: whatever a probability is, it must be the same for everybody. You and I may disagree over a probability, but only because one of us is wrong. There is one true probability. An example is the probability that a coin-toss will land heads. If nothing unusual is going on, everybody should agree that the outcome is uncertain and that the probability will be 50%. We can't have a situation  where one person thinks it's 10% and the other thinks it's 90%<em> and they're both right</em>.<br></p><p    >The most common form of objective probability is<strong> frequentism</strong>. Under the frequentist definition, probability is a property of a (hypothetical) repeated experiment.  For instance, take the statement “the probability of rolling 6 with a fair die, is one in six.” <br></p><p    >The experiment is rolling a die. The outcome we are discussing is the roll resulting in a 6. If we were to repeat the experiment a large number of times, N, then the proportion of times we observe the discussed outcome is close to 1 in 6. More precisely, as N grows, the proportion <em>converges</em> to 1 in 6.<br></p><p    >Under a frequentist interpretation, saying “the probability is one in six", is equivalent to saying “if I roll the die repeatedly, the relative frequency of sixes will converge to 1 in 6 as the number of rolls grows.”<br></p><p    ><br></p><p    ></p>
+            <p    >The initial instinct was to reinforce those places that registered the most hits.<br></p><p    >However, it was soon pointed out (by a man called Abraham Wald) that this ignores a crucial aspect of the <em>source</em> of the data. They weren’t tallying where planes were most likely to be hit, they were tallying where planes were most likely to be hit <em>and come back</em>.<br></p><p    >The places where they weren’t seeing <em>any</em> hits were exactly the places that should be reinforced, since the planes that were hit there didn’t make it back.<br></p><p    >This specific effect is called <a href="https://en.wikipedia.org/wiki/Survivorship_bias"><strong class="blue">survivorship bias</strong></a>, and it’s worth keeping in mind, but the more general lesson for today, is that you should <strong>not take your data at face value</strong>. <br></p><p    >Don’t just load your data into an ML model and check the predictive performance: consider what you’re ultimately trying to achieve, and consider how the source of your data will affect that goal.<br></p><p    >By McGeddon - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=53081927"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=53081927</strong></a></p><p    ><a href="https://commons.wikimedia.org/w/index.php?curid=53081927"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
 
 
        <section id="slide-004">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-004" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0004.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0004.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Under objective probability the statement “the probability that Josh is gambling is 12.5%” is indeed nonsense. There is no experiment we can imagine where Josh “turns out" to be a gambler one in 8 times. He either gambles or he doesn’t.<br></p><p    >What we <em>can</em> say is that the probability that a teenage boy drawn randomly from the European population gambles online is 12.5%. This is an experiment we can repeat, and at every repetition, we choose a different boy, so we get a different outcome.</p><p    ></p>
+            <p    >Imagine that I gave you four datasets, each with two features x and y. For all datasets all of the following statistics give the same value: the mean and variance of x, the mean and variance of y, the correlation between x and y, the parameters of the linear regression line that best fits, and the r<sup>2</sup> of the correlation.<br></p><p    >You would conclude, that the datasets must be pretty similar, right?</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-005">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-005" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0005.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0005.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The alternative to objectivism is <strong>subjectivism</strong>. It states that probability expresses our uncertainty. If X is a boolean variable, one that is true or not true, and we are uncertain whether X is true, we can assign a probability to X being true. A probability of 0.5 means we are entirely ambivalent, a probability of 0.75 means we think X is pretty likely, and a probability of 1 means we’re entirely sure that X is true. <br></p><p    >In this case, different people can have different probabilities for the same thing being true. You and I may "assign" different probabilities to something being true and both be right. If you have information I don’t have, your probability may be closer to certainty than mine.<br></p><p    ><strong>Bayesianism</strong> is the main form of subjective probability. It builds on Bayes’ rule, which we will discuss later, to tell us how we should use observations to <em>update</em> our beliefs.</p><p    ></p>
+            <p    >One important aspect of not taking the data at face value is to <em>look</em> at it. <br></p><p    >These are the four datasets from the previous slide. They are a common example, called Anscombe’s quartet. Only when we look at the datasets, do we see how different they are. <br></p><p    >More importantly, only when we look at the data, do we see the patterns that define them. These are the patterns we want to get at if we want to understand the data. And none of them are revealed by the descriptive statistics of the previous slide.<br></p><p    >source: By Schutz: Avenue - Anscombe.svg, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=9838454"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=9838454</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-006">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-006" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0006.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0006.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Under subjectivism, we <em>can</em> say “the probability that our son is gambling is 12.5%” We don’t know precisely what he gets up to, so even though there is a definite objective answer, <em>we</em> are uncertain. If we know only this headline, we may well pick 12.5% as our belief that our son is gambling. Of course, as noted before we have a lot more knowledge about <em>our </em>son than about other teenage boys. We know he goes to bed on time, we know where gets his money,  and we know he probably doesn’t have a secret credit card. So even though the probability for a random teenage boy would be 12.5%, the probability for our son is actually much lower, because we have extra information.<br></p><p    >This is the fundamental difference between the two views: under frequentism, probability is defined as an objective property of the world. The probability of X is the same for all people regardless of what we know or don’t know. Under Bayesianism, probability is an expression of a subjective property: it can change from one person to the next, and if we learn new information, it can change from one moment to the next. If we find out that our son <em>does </em>have a secret credit card, the probability that he is gambler, suddenly jumps up dramatically, even though nothing about him has changed, only our knowledge about him.<br></p><p    >Note that Bayesianism, in a sense encompasses frequentism. If we define probability as the outcome of a repeated experiment, then before we do the experiment we are uncertain about its outcome. If we understand the experiment perfectly, then the Bayesian probability we assign to the outcomes will coincide with the frequentist probabilities of the outcomes.</p><p    ></p>
+            <p    >Here is a more modern variant: the datasaurus dozen.<br></p><p    >Recommended reading: <a href="https://www.autodeskresearch.com/publications/samestats"><strong class="blue">https://www.autodeskresearch.com/publications/samestats</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-007">
+       <section id="slide-006" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-007" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0007.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0007anim0.svg" data-images="22.Methodology2.key-stage-0007anim0.svg,22.Methodology2.key-stage-0007anim1.png" class="slide-image" />
 
             <figcaption>
-            <p    >So, at heart subjectivism and objectivism are disambiguations. The word probability is ambiguous, and these allow you to make precise what you mean.<br></p><p    >Note that you don’t have to commit to one view or another. At heart subjective and objective probability are just ways to be more precise about what the word probability actually means. You can use the subjective definition one day and the objective definition the next (especially in informal settings).<br></p><p    >However, once you start doing statistics, the two definitions lead to fundamentally different approaches (which we’ll see in more detail later). And in the statistical community there are definitely two camps: the frequentists and the Bayesians, and arguments between the two can get very heated.<br></p><p    >Since machine learning is often seen as another form of statistics, you may ask whether it is usually seen as using subjective or objective probability. I can’t give you a commonly accepted answer, I think opinions differ.<br></p><p    >My view (which is definitely not shared by everyone) is that Machine Learning, while being statistical in nature, is not fundamentally probabilistic. The fundamental principles of machine learning can be defined and explained without recourse to probability theory (and indeed, we have done so for most of the start of the course). The fundamental goal of (offline) machine learning is to minimise test set loss given only a training set, and some hint as to the relation between the two datasets. This definition does not require probability.<br></p><p    >Of course, even if machine learning is not fundamentally probabilistic, probability has proven to be a very powerful tool (much like linear algebra and calculus), in helping us solve this problem. The consequence, is that we can borrow whatever methods are most helpful to us at the time. We’ll use the frequentist methods when we need them, and the Bayesian methods when they prove most helpful. We’ll even happily mix the two in a single model.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-008">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-008" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0008.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >All that was about the<em> interpretation</em> of probabilities. This is what the field of <strong>statistics</strong> is about. We have frequentist statistics and Bayesian statistics.<br></p><p    >The<em> mathematical </em>definition of probability, studied in the field of <strong>probability theory</strong>, which is very different from statistics,<strong> </strong>is entirely distinct from the question of how probability applies to the real world. Both frequentists and Bayesians use the same mathematical framework to express probability as a number between 0 and 1. The only difference between them is in what this number is taken to represent.<br></p><p    >We’ll go through the basic ingredients of probability theory quickly. This is a complex field, and a complete basis is too technical for this course. We'll handwave some of the details, and you can hopefully get by with a little bit of intuition.<br></p><p    >If you plan to make machine learning your main expertise, should probably  resolve to return to the fundamentals of probability theory at some point and learn how everything is properly defined.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-008" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-009" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0009anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0009anim0.svg,31.ProbabilisticModels1.key-stage-0009anim1.png" class="slide-image" />
-
-            <figcaption>
-            <p    >First the <strong>sample space</strong>. These are the single outcomes or truths that we wish to model. If we flip a coin, our sample space is the set of the two outcomes <em>heads</em> and <em>tails</em>.<br></p><p    >We can have discrete sample spaces or continuous ones. In a continuous space, you can imagine that in between any two values there is always another value (like when we measure someone's height very precisely). In a discrete sample space this isn't usually the case.*<br></p><p    >A discrete sample space can also be infinite: consider flipping a coin and counting how many flips it takes to see tails. In this case any number of flips is possible, so the sample space is the  natural numbers (although any number larger than 20 will get an astronomically small probability).<br></p><p    >* <span>As we said before, this is not a proper </span>definition<span> of a continuous space, and there are some odd exceptions, but it should be enough to tell the most common continuous and discrete spaces apart. The proper definition is a bit too technical at this point.</span></p><p    ><span></span></p>
+            <p    >In machine learning and data science, our datasets are rarely two-dimensional, so we don’t have the luxury of simply doing a scatter plot. Looking at our data, in a way that provides insight almost always requires a lot of ingenuity and creativity. <br></p><p    >For high-dimensional, multivariate data, of the kind we’ve been dealing with so far, a good place to start is to produce a <strong>scatter plot matrix</strong>. This is simply a large grid of every scatter plot you can produce between any two features in your data. Often, only the plots below or above the diagonal are shown. The scatterplot matrix gives you a good idea of how the features relate to each other.<br></p><p    >If you have a target value (a class or a regression target), it’s a good idea to include it among the features for the scatter plot matrix. That way, you can see what relation each feature has with the target in isolation from the other features.<br></p><p    >On the right, we see the data as a 3D point cloud (in blue), together with the three projections to 2d (in yellow red and gree) that the scatterplot matrix gives us.<br></p><p    >source: RIDC NeuroMat, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0"><strong class="blue">https://creativecommons.org/licenses/by-sa/4.0</strong></a>, via Wikimedia Commons<br></p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -121,134 +100,146 @@ slides: true
 
 
 
-       <section id="slide-010">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-010" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0010.svg" class="slide-image" />
+       <section id="slide-008">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-008" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0008.svg" class="slide-image" />
 
             <figcaption>
-            <p    >From the sample space, we construct the <strong>event space</strong>. Events are those things that can have probabilities. These include the elements of the sample space, like the probability of rolling a six with a die, but they also include sets of multiple elements of the sample space, like the event of "rolling  a one or a six" and the event of "rolling an even number". Even the empty set and the set of all six numbers are events. As we will see, these will get probabilities 0 and 1 respectively.<br></p><p    >The events containing only one element of the sample space, like "rolling a 1", are called <strong>atomic events</strong>.<br></p><p    >How the event space is constructed is a technical business. For our purposes, we can simply say that if the sample space is discrete then the event space is the powerset of the sample space: the set of all possible subsets we can make.<br></p><p    >For continuous sample spaces, not every subset can be an event. We need to make sure that our event space is a thing called a “sigma algebra.” We won’t need to worry about this in this course. We can simply trust that if we don't try to assign probability to any particularly unusual subsets of the sample space, everything will work: these will be in the sigma algebra, so they will be events, and we can assign a probability to them.</p><p    ></p>
+            <p    >In the rest of this video, we’ll look at ways you can clean up your data, to make it useable for a classification or a regression task.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-009">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-009" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0009.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >We’ll start with missing data. Quite often, your data will look like this. <br></p><p    >You will need to do something about those gaps, before any machine learning algorithm will accept this data.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-010">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-010" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0010.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >What approach you should take is different, depending on whether values from the feature columns are missing, or values from the target column are missing.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-011">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-011" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0011.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0011.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Random variables have a confusing and convoluted definition, so we’ll just give you the intuitive interpretation. <br></p><p    ><strong>Random variables</strong> help us to describe events. We can think of a random variable D as something that takes the values in the sample space, so that we can use it to describe events: instead of describing an event like "rolling a number larger than three" in natural language, we can describe it symbolically using the random variable D as "<span class="blue">D</span> &gt; 3". This usually makes our notation more concise and precise. <br></p><p    >We usually use capital, non-bold letters for random variables, and lowercase letters for traditional variables. A statement like "<span class="blue">D</span>=d" refers to the event that the random variable takes the value that the normal variable d currently represents.<br></p><p    >Once we have a way to describe the events we are interested in, we can assign a probability to each event. We do this  with a <strong>probability function p. </strong>This function must satisfy several constraints, but we’ll take those as read for now, and just say that it takes an event, and maps it to a value between 0 and 1 (inclusive).<br></p><p    >In probabilistic machine learning, it’s common to model features, target labels, and sometimes even model parameters as random variables. If we are referring to a dataset of multiple instances, we model each as a separate random variable with the same distribution. We'll see some examples later in this lecture.<br></p><p    ></p>
+            <p    >If you have missing values in one of your features, the simplest way to get rid of them is to just remove the feature(s) for which there are values missing. If you’re lucky, the feature is not important anyway.<br></p><p    >You can also remove the instances with missing data. Here you have to be careful. If the data was not corrupted uniformly, removing rows with missing values will change your data distribution.<br></p><p    >For example, you might have data gathered by volunteers in the street using some electronic equipment. If the volunteer in Amsterdam had problems with their hardware, then their data will contain missing values, and the collected data will not be representative of Amsterdam.<br></p><p    >Another way you might get non-uniformly distributed missing data is if your data comes from a questionnaire , where people sometimes refuse to answer certain questions. For instance, if only rich people refuse to answer questions about their taxes, removing these instances will remove a lot of rich people from your data and give you a different distribution.<br></p><p    ><strong>How can you tell if data is missing uniformly?</strong> There’s no surefire way, but usually you can get a good idea by plotting a histogram of how much data is missing against some other feature. For instance if the number of instance with missing features against income is very different from the regular histogram over income, you can assume that your data was not corrupted uniformly. <br></p><p    >Of course it also helps if you can work out why your data has missing values. Again, don't take the data at face value, look into where it came from, and what the details of that process can tell you.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-012">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-012" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0012.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0012.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Interpreting what a statement including a probability function means depends on whether all variables are “filled in.” <br></p><p    >In the first line, X=0 refers to a single, well-defined event, so p(X=0) refers to a single value between 0 and 1. In the second line we have a classical variable <span class="blue">x</span>, so the statement “X=<span class="blue">x</span>” can refer to different events, depending on what <span class="blue">x</span> is. In other words, here “p(X=<span class="blue">x</span>)” is a function of <span class="blue">x</span>. For example, if <span class="blue">x</span> can take one of two values, -1 or 1, then the function p(X=x) has a range of only two values as shown here. <br></p><p    >Note that this is is not the <em>complete </em>probability function p, since that also assigns probabilities to events like "X=-1 or X=1" and the empty event. <br></p><p    >However, if X=-1 and X=1 are the only two members of the sample space, you can work out the complete probability function from the definition given here.<br></p><p    ></p>
+            <p    >Let’s zoom out a little before we move on. Whenever you have questions about how to approach something like this, it’s best to think about the <strong>real-world setting </strong>where you might apply your trained model. We often call this “production”, a term used in software development for the system that will be running the final deployed version of the software. Some machine learning models literally end up in a production environment, but we might also use machine learning models to perform business analytics, clinical decision support or in a scientific experiment. Wherever your model is meant to end up after you’ve finished your experimentation, that’s what we’ll call <strong>production</strong>.<br></p><p    >And production is what you’re trying to simulate, when you train your model and test it on a test set. So the choices you make, should make your experiment as close of a <em>simulation</em> of your production setting as you can manage. <br></p><p    >For example, in the case of missing values, the big question is: <strong>can you expect missing data in production?</strong> Or, will your production data be clean, and are the test data just noisy because the production environment isn’t ready yet?<br></p><p    >Examples of production systems that should expect missing data are situations where data comes from a web form with optional values or situations where data is merged from different sources (like online forms and phone surveys). <br></p><p    >You may even find yourself in a situation where the test data has no missing values (since it was carefully gathered) but the production system <em>will</em> have missing values (because there, the data will come from a web form). In that case, you may want to introduce missing values artificially in your test data, to simulate the production setting and study the effect of missing data.<br></p><p    >So remember, whenever you’re stuck on how to process your data: think what the production setting is that you’re trying to simulate, and make your choices based on that.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-013">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-013" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0013.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0013.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Since we usually know which outcomes belong to which random variables, p(X) and p(<span class="blue">x</span>) can both be used as shorthand for p(X=<span class="blue">x</span>).<br></p><p    >If we have a Boolean random variable, which takes values true or false, people often use a different shorthand, where p(X) represents the probability that X is true and p(¬X) represents the probability that it is false. <br></p><p    >All these conflicting shorthands may be a little confusing at times, but there is usually enough information in the context to figure out what the author means (and writing everything out in unambiguous notation usually leads to an unreadable mess).</p><p    ></p>
+            <p    ><br></p><p    >If you expect to see missing in production, then your model needs to be able to consume missing values, and you should keep them in the test set. For categorical features, the easiest way to do this is to add a category for missing values. For numerical features, we’ll see some options in the next slide.<br></p><p    >If your production setting won’t have missing values, then that’s the setting you want to simulate. If at all possible, you should get a test set without missing values, even if the training set has them. You can then freely test what method of dealing with the missing training values gives the best performance on the test set.<br></p><p    >If you cannot get a test set without missing values, one thing you can do is to report performance on both the data that has the instances with missing values removed and the data that has the missing values filled in by some mechanism. Neither are ideal simulations of the production setting, but the combination of both numbers hopefully gives you some idea.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-013" class="anim">
+       <section id="slide-014">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-014" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0014anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0014anim0.svg,31.ProbabilisticModels1.key-stage-0014anim1.svg,31.ProbabilisticModels1.key-stage-0014anim2.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0014.svg" class="slide-image" />
 
             <figcaption>
-            <p    >On both discrete and continuous sample spaces, <strong>the events we describe have probability</strong>. Where they differ, in an important way, is in whether a meaningful probability is assigned to the elements of the sample space. Here is how such probabilities are usually visualized: discrete on the left, continuous on the right. In both cases, we are look at the sample space.<br></p><p    >On the left, we are seeing the probabilities assigned to each element of the sample space. Using this, we can easily work out the probabilities of every event as well (just add up all the probabilities of all the atomic events in the event).<br></p><p    >However, when we look at a graph like the one on the right, describing a normal distribution, it’s important to realize that <strong>this function does not express a probability</strong>. If I ask you, under this distribution, which has the higher probability, 0 or 1, the answer is that <em>they both have probability 0</em>. This should make intuitive sense: What is the probability of meeting somebody who is exactly 2m tall? Surely, if you measure more and more precisely, the probability of getting <em>exactly</em> 2m goes further and further down.<br></p><p    >In short, when it comes to probability distributions on continuous spaces, the atomic events normally all have probability 0. The things that have nonzero probability are <em>ranges</em> of values. The probability of somebody being between 2.0m and 2.1m tall is more than 0, no matter how precisely you measure them. <br></p><p    >So what does this curve express? Not probability but probability <em>density</em>. The probabilities can be retrieved by integration. For instance, the probability of getting a sample between 0 and 1 from this distribution is equal to the area highlighted in the slide. The total area between -∞ and ∞ is exactly 1.<br></p><p    >These integrals can usually not be worked out analytically so we use numeric approximations. In the old days, you'd look these up in tables, but nowadays, we usually let the computer do it for us on the fly.<br></p><p    ></p>
+            <p    >At some point, either in the<span> training data </span>or the<span> test data</span>, we will probably need to fill in the missing values. This is called <strong>imputation</strong>.<br></p><p    >A simple way to do this in categorical data is to use the <strong>mode</strong>, the most common category. For numerical data, the <strong>mean</strong> or <strong>median</strong> are simple options. We’ll look at when you should use which later in this video.<br></p><p    >A more involved, but more powerful way, is to<strong> predict the missing value</strong> from the other features. You just turn the feature column in to a target column and train a classifier for categoric features, and  a regression model for numeric features.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-015">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-015" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0015.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0015.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Now that we have the basic language of probability theory in place, we can look at some of the most important concepts. We will quickly review these five.<br></p><p    >Note that even though we have multiple random variables, we still have a <em>single</em> sample space and event space, and the random variables <span class="blue">X</span> and <span class="blue">Y</span> will help us describe the events that we’re interested in. Think of the <em>single</em> sample space for rolling <em>two</em> dice. You could use <span class="blue">X</span> for the result of the first die, and <span class="blue">Y</span> for the result of the second to describe events in this situation.</p><p    ></p>
+            <p    >If your target label has missing values, the story is a little different. In the <span class="green">training set</span> you are free to do whatever you think is best. You can remove instances, or impute the missing labels. If you have a lot of missing labels, this essentially becomes a semi-supervised learning setting as we saw in the first lecture.<br></p><p    >On <span class="blue">the test</span> set however, you shouldn’t impute or ignore the missing values, since that changes the task, and most likely makes it easier, which will give you false confidence in the performance of your model. Instead, you should <strong>report the uncertainty</strong> created by the missing values.<br></p><p    >In classification, this is easy: you compute the accuracy under the assumption that your classifier gets all missing values correct and under the assumption that it gets all missing values wrong: this gives you a <span>best case</span><span class="blue"> </span>and a <span>worst case</span> scenario, respectively. Your true accuracy on the test set is somewhere in between.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-016">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-016" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0016.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We will use the following running example: we sample a random person from the Dutch population and we check<span class="green"> their age</span> and <span class="orange red">the health of their teeth</span> (binning the results into three categories for each variable).<br></p><p    >We want to ask questions like:<br></p><p     class="list-item">what is the probability of seeing an old person?<br></p><p     class="list-item">what is the probability that a young person has fake teeth?<br></p><p     class="list-item">does a person’s age influence the health of their teeth, or is there no relation?<br></p><p    >The sample space is the set of the nine different pairs of values we can observe, and the event space is the powerset of that. The random variables <span>Age</span> and <span>Teeth</span> will help us describe these events.</p><p    ></p>
+            <p    >Another problem that we need to worry about, is <strong>outliers</strong>. Values in our data that take on unusual and unexpected values.<br></p><p    >Outliers come in different shapes and sizes. The most important question is whether your outliers are natural or unnatural.<br></p><p    >Here, the six dots to the right are so oddly, mechanically aligned that we are probably looking at some measurement error. Perhaps someone is using the value -1 for missing data. <br></p><p    >We can remove these, or interpret them as missing data, and use the approaches just discussed.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-017">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-017" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0017.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0017.png" class="slide-image" />
 
             <figcaption>
-            <p    >The joint distribution is the most important distribution. It tells us the probability of each <strong>atomic event</strong>: each event that contains a single element in our sample space. <br></p><p    >Since we have two random variables in our example, which together capture the whole sample space, we can specify the joint distribution in a small table. The probabilities of all these events sum to one.<br></p><p    >Note that p(<span class="green">Age = old</span> &amp; <span class="orange red">Teeth = healthy</span>) refers to a single value (1/18), because we have specified the event. p(<span class="green">Age</span>, <span class="orange red">Teeth</span>) does not refer to a single value, because the variables are not instantiated, it represents <em>a function of two variables, </em>i.e. the whole table.</p><p    ></p>
+            <p    >In other cases, however, the “outlier” is very much part of the distribution. This is what we call a <strong>natural outlier</strong>. Bill Gates may have a million times the net worth of anybody you are likely to meet in the street, but that doesn’t mean he isn’t part of the distribution of income. <br></p><p    >If we fit a normal distribution to this data, the outlier would ruin our fit, but that’s because the data <em>isn’t normally distributed</em>. What we should do is recognize that fact, and adapt our model, for instance by removing assumptions of normally distributed data.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-017" class="anim">
+       <section id="slide-018">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-018" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0018anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0018anim0.svg,31.ProbabilisticModels1.key-stage-0018anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0018.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we want to focus on just one random variable, all we need to do is sum over the rows or columns. <br></p><p    >For instance, the probability that <span class="green">Age=old</span>, regardless of the value of <span class="orange red">Teeth</span>, is the probability of the event {(<span class="green">o</span>,<span class="orange red">h</span>), (<span class="green">o</span>,<span class="orange red">u</span>), (<span class="green">o</span>,<span class="orange red">f</span>)}. Because we can write these sums in the <em>margins</em> of our joint probability table, this process of “getting rid” of a variable is also called <strong>maginalizing out</strong> (as in “we marginalize out the variable <span class="orange red">Teeth</span>”). The resulting distribution over the remaining variable(s) is called a <strong>marginal distribution</strong>.<br></p><p    ></p>
+            <p    >Here’s a metaphor for natural and unnatural outliers. If our instances are image of faces, the image on the left, that of comedian Marty Feldman,  is an extreme of our data distribution. It looks unusual, but it‘s crucial in fitting a model to this dataset. The image on the right is clearly corrupted data. It tells us nothing about what human faces might look like, and we’re better off removing it from the data.<br></p><p    >However, remember the real-world use-case: if we can expect corrupted data in production as well, then we should either train the model to deal with it, or make the clean-up automatic, so we can perform it in production as well. This would require us to have some way to detect automatically, whether something is an outlier. If the outliers are rare, and we have a lot of data, it may be easier just to leave them in and hope the model can learn to work around them, even if they are unnatural outliers.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-018" class="anim">
+       <section id="slide-019">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-019" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0019anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0019anim0.svg,31.ProbabilisticModels1.key-stage-0019anim1.svg,31.ProbabilisticModels1.key-stage-0019anim2.svg,31.ProbabilisticModels1.key-stage-0019anim3.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0019.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is what marginalizing looks like in symbols: we sum the joint probabilities for all values of one of the random variables, keeping the value of the other fixed.<br></p><p    >Remember that p(X) and P(x) are both shorthand for p(X=x).</p><p    ></p>
+            <p    >If you have very extreme values that are not mistakes (like Bill Gates earlier), your data is probably not normally distributed. If you use a model which assumes normally distributed data, it will be very sensitive to these kinds of “outliers”. It may be a good idea to remove this assumption from your model (or replace it by an assumption of a heavy-tailed distribution).<br></p><p    >Note that you have to know your model really well to know if there are assumptions of normality. For instance anything that uses <em>squared errors</em> essentially has an assumption of normality.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-019" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-020" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0020anim0.svg" data-images="22.Methodology2.key-stage-0020anim0.svg,22.Methodology2.key-stage-0020anim1.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >To illustrate: let’s learn which <em>single value</em> best represents our data. We choose a value <span class="blue">m</span>, compute the distance to all our data points (the residuals) and try to minimise their squares.<br></p><p    >We can use such a single value for imputation to replace missing values or outliers, but this is also a kind of simplified picture of linear regression: if we had a regression problem with no features, the best we could do is output a single values for all instances. Which value should we pick to minimize the squared errors?<br></p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
             </span>
        </section>
 
-
-
-       <section id="slide-020">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-020" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0020.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >If we know that somebody is <span class="green">young</span>, we know that the probability of them having <span>false teeth</span> must be much lower. This is called<strong> conditional probability</strong>, our knowledge of one random variable, given that some other variable takes some specific value. This is expressed with a vertical bar, with the known part, the <strong>conditional</strong> on the right.<br></p><p    >The conditional probability p(X=x|Y=y) is computed taking the joint probability of (x, y) and normalising by the sum of the probabilities in the row or column corresponding to the part that’s given in the conditional.<br></p><p    >Imagine we’re throwing darts at this table, and the probability of hitting a certain cell is the joint probability indicated in the cell. The conditional probability p(<span class="orange red">T=f</span>|<span class="green">A=y</span>) is the probability that the dart hits the (<span class="green">y</span>, <span class="orange red">f</span>) cell, given that it’s hit the <span class="green">y</span> row.<br></p><p    >Note that  a statement about conditional probability tells us nothing about <strong>causality</strong>. In our example age causes bad teeth, but het can express both the probability that somebody has bad teeth given that they are old (in the causal direction), and the probability that somebody is old given that they have bad teeth (in the opposite direction).</p><p    ></p>
-            </figcaption>
-       </section>
 
 
        <section id="slide-020" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-021" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0021anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0021anim0.svg,31.ProbabilisticModels1.key-stage-0021anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0021anim0.svg" data-images="22.Methodology2.key-stage-0021anim0.svg,22.Methodology2.key-stage-0021anim1.svg,22.Methodology2.key-stage-0021anim2.svg,22.Methodology2.key-stage-0021anim3.svg,22.Methodology2.key-stage-0021anim4.svg,22.Methodology2.key-stage-0021anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is what conditional probability looks like in abstract, symbolic terms. Note that the denominator is just the marginal probability</p><p    ></p>
+            <p    >We take the derivative of the objective function and set it equal to zero. No gradient descent required here, we’ll just solve the problem analytically.<br></p><p    >What we find is that the optimum is <strong>the mean</strong>. The assumption of squared errors leads directly to the use of the mean as a<em> representative example</em> of a set of points.<br></p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -259,165 +250,105 @@ slides: true
 
        <section id="slide-022">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-022" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0022.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0022.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we re-arrange the factors in the definition of the conditional probabilty, we get this equation, showing a kind of <em>decomposition</em> of the joint probability. This comes up <strong>a lot</strong>, so make a note of it.<br></p><p    >For a specific example, the probability of seeing an<span class="green"> old person</span> with <span class="orange red">false teeth</span>, is the probability that an old would have false teeth, times the probability of seeing a old person at all. The probability that an old person has false teeth may be very high, but if the probability of seeing an old person is very small, there's still a very small probability of seeing an old person with false teeth.<br></p><p    >Note that the same decomposition works with the reverse conditional, the probability that someone with <span class="orange red">false teeth</span> would be <span class="green">old</span>. Try it.<br></p><p    ></p>
+            <p    >We can now see why the the assumption of squared errors is so disastrous in the case of the income distribution.<br></p><p    >If Bill Gates makes a million times as much as the next person in the dataset, he is not pulling on the mean a million times as much, he’s pulling 10<sup>12</sup> times as much.<br></p><p    >Hence the joke: A billionaire walks into a homeless shelter and says “What a bunch of freeloaders, the average wealth in this place is more than a million dollars!”</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-023">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-023" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0023.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is what these concepts look like with <em>continuous </em>random variables (a bivariate normal distribution in this case). The joint probability distribution is represented by the point cloud in the middle. These are the values of X and Y that are likely.<br></p><p    ><strong>Marginalizing </strong>out either variable results in a univariate normal (the red and blue distributions), the projection of the multivariate distribution onto the X and Y axes.<br></p><p    >The<strong> conditional distribution </strong>corresponds to a vertical or horizontal <em>slice </em>through the joint distribution (and also results in a univariate normal).<br></p><p    >image source: By IkamusumeFan - Own work, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=30432580"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=30432580</strong></a><br></p><p    ></p>
+            <p    >To get rid of the normality assumption, or rather, replace it by another assumption, we can use the<strong> mean absolute error </strong>instead. We take the residuals, but we sum their <em>absolute value</em> instead of their <em>squared value</em>. Which is the most representative value that minimises<em> that</em> error?</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-024">
+       <section id="slide-023" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-024" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0024.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0024anim0.svg" data-images="22.Methodology2.key-stage-0024anim0.svg,22.Methodology2.key-stage-0024anim1.svg,22.Methodology2.key-stage-0024anim2.svg,22.Methodology2.key-stage-0024anim3.svg,22.Methodology2.key-stage-0024anim4.svg,22.Methodology2.key-stage-0024anim5.svg,22.Methodology2.key-stage-0024anim6.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If two variables <span class="blue">X</span> and <span class="orange">Y</span> are <strong>independent</strong>, then knowing <span class="orange">Y</span> will not change what we know about <span class="blue">X</span>. More formally, the conditional distribution p(<span class="blue">X</span>|<span class="orange">Y</span>) is the same as the distribution P(<span class="blue">X</span>): knowing the value of <span class="orange">Y</span> doesn't affect our knowledge of the value of <span class="blue">X</span>. <br></p><p    >If we fill in the definition of conditional probability and re-arrange the factors, we see that this implies that the joint probability of <span class="blue">X</span> and <span class="orange">Y</span> is just the product of the marginal probabilities p(<span class="blue">X</span>) and p(<span class="orange">Y</span>). Have a look at the joint probability of the <span class="green">age</span>/<span class="orange red">teeth</span> example. Are these independent random variables? What would it mean for the example if they were?<br></p><p    ><strong>Conditional independence </strong>means that the two variables<em> can</em> be<em> </em>dependent, but their dependence is entirely explained by a third variable Z. If we condition on Z, the variables become dependent.</p><p    ></p>
+            <p    >To work this out, we need to know the derivative of the absolute function. This function is the identity if the argument is positive (so its derivative is 1) and the negative identity if the argument is negative </p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-025">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-025" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0025.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0025.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Conditional independence comes up a lot, and it can be tricky to wrap your head around at first, so here’s an example.<br></p><p    >Imagine two people who work in different areas of a very big city. In principle, they work so far apart that whether or not they arrive home in time for dinner is completely independent. Knowing whether or not Alice is late for dinner tells you nothing about whether Bob is home in time for dinner. No aspect of their lives (weather, traffic) intersect in a meaningful way, except one. <br></p><p    >Very rarely, a large monster attacks the city. In that case, all traffic shuts down and everybody is late for dinner. That means that if we know that Bob is late for dinner, there is a slight chance that it’s because of the monster, which should slightly raise the possibility that Alice is late for dinner. However, once we know whether or not the monster has attacked, knowing that Bob is late provides no additional information.<br></p><p    ></p>
+            <p    >We’ve worked out that the value <span>m</span> that minimizes this error is the one for which the signs of the residuals sum to zero. This happens if the sum contains as many “-1”s as “+1”s, that is, if we have as many instances to the left of <span>m</span> as we have to the right. In other words, <strong>the median minimizes the mean absolute error</strong>.<br></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-026">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-026" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0026.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0026.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is another visualization, taken from Wikipedia. This one is more abstract, but sometimes, sitting down with an abstract example and trying to work through it can help a lot to train your brain to get used to complex concepts. <em>If you're in a hurry, you can skip this one.</em><br></p><p    >Imagine throwing a dart at the square on the right. We look at the probability of hitting a yellow, red or blue square (the purple ones are both red and blue). Describe these events by boolean random variables <span class="orange">Y</span>, <span class="orange red">R</span> and <span class="blue">B</span>.<br></p><p    >We have p(<span class="orange red">R</span>) = 16<span>/49</span> and p(<span class="blue">B</span>) = 18<span>/49</span>.  These probabilities are <strong>not independent</strong>. We can work this out by counting all the squares for the event (<span class="orange red">R</span>, <span class="blue">B</span>) (<span class="orange red">R</span>, <span class="blue">¬B</span>), (<span class="orange red">¬R</span>, <span class="blue">B</span>) and (<span class="orange red">¬R</span>, <span class="blue">¬B</span>) and seeing if they are the product of the marginal probabilities, but we can also tell directly by looking at the picture: if we know that we've hit a blue square, there is a certain probability that that blue square is purple (i.e. also a red square). If we know that we haven't hit a blue square, there is also a certain probability that that square is red. The proportion of red inside the blue region looks different to the proportion of reds inside the non-blue region, so knowing whether we are in a blue square tells us something about how likely we are to be in a red square.<br></p><p    >Now, let's condition on <span class="orange">Y</span>. Somebody tells us the dart landed in a yellow square. Now that we know this, does knowing whether the square is blue still tell us anything about whether the square is also red? <strong>Note that within the yellow block, the proportion of red within the blues is the same as the proportion of reds within the non-blues. </strong>Once we're inside the yellow block, it doesn't matter anymore whether the block is blue. The probability of red is the same either way. Conditional on the knowledge that <span class="orange">Y=true</span>, the probabilities of red and blue are independent.<br></p><p    >What about when we hear that the dart has landed outside the yellow block? It's harder to see, but the proportions are 4/12 for the blue blocks and 8/25 for the nonblue. Thus the probabilities of blue and red are<strong> not conditionally independent given that </strong><strong class="orange">Y=false</strong>.<br></p><p    >By AzaToth at English Wikipedia, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=3206668"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=3206668</strong></a></p><p    ><a href="https://commons.wikimedia.org/w/index.php?curid=3206668"><strong class="blue"></strong></a></p>
+            <p    >If we use the median, Bill Gates still has a strong pull on the our representative value <span class="blue">m</span>, but it's proportional to his distance to <span class="blue">m</span>, not to the square of the distance. </p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-027">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-027" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0027.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0027.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Now that we have a decent understanding of conditional probability, let's look at Bayes' rule, probably the most important application of conditional probabilities.<br></p><p    >Bayes' rule is a solution to the inversion problem. What usually happens is that we have some idea of the mechanics of the world, and we observe some outcome, that could have happened through these mechanics in different ways. We didn't observe how it happened: that's the part that is hidden, and the part that we'd like to reason about. It's usually easy to reason about the probabilities of the outcomes given the observables (because we know the mechanics of the world) but we'd like to reverse this.<br></p><p    >For example imagine that you call a restaurant to book a table, and nobody picks up. This is unusual, and you wonder if it means the restaurant has burned down. You can easily reason <strong>forward</strong>, from the cause to the effect. If the restaurant has burned down, you would be sure that nobody would pick up the phone. If it hasn't, you would be quite sure that somebody would pick up the phone, but not certain. This is how you would reason if you <em>observed</em> whether or not the restaurant burned down and had to guess whether or not the phone would be answer. You are reasoning in the causal direction, so you use your understanding of the mechanics of the world to arrive at an intuitive conclusion.<br></p><p    >The problem is that we usually want to do <strong>backward</strong> reasoning. We observe the <em>outcome</em> of some event and we don't observe the <em>cause</em>. What we want to figure out is how to assign probabilities to the different causes. In this case, given that we observe nobody answering the phone, what is the probability that the restaurant has burned down?<br></p><p    >In short, we need a way to “turn around” the conditional probability. If we know p(<span class="blue">X</span>|<span class="orange">Y</span>), how do we work out p(<span class="orange">Y</span>|<span class="blue">X</span>)?</p><p    ></p>
+            <p    >This mistake, of using the mean when a normal distribution is not an appropriate assumption, is sadly very common.<br></p><p    >For example, you might hear someone say something like “there’s no poverty in the US, it’s the third richest country in the world by average personal wealth”.<br></p><p    >Wikipedia allows us to fact-check this quickly and it is indeed true. But remember that Bill Gates and Jeff Bezos live in the US, and as we saw, such people have a pretty strong pull on the mean. Luckily, Wikipedia also allows us to sort the same list by <em>median</em> wealth.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-028">
+       <section id="slide-027" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-028" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0028.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0028anim0.svg" data-images="22.Methodology2.key-stage-0028anim0.svg,22.Methodology2.key-stage-0028anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To do this, we need some additional probabilities. This makes sense if you think about our example. If the restaurant has burned down, we are sure that the phone won't be answered, but if we observe that the phone wasn't answered, we can't be sure that the restaurant has burned down. We need to take into account the fact that it's very rare for a restaurant to burn down, even though it would definitely lead to this observation. We also need to take into account the probability that something else has caused the restaurant to burn down. <br></p><p    >If the cause and effect are labeled <span class="orange">Y</span> and <span class="blue">X</span>, then the marginal probabilities p(<span class="orange">Y</span>) and p(<span class="blue">X</span>) capture all this information. <br></p><p    >This equation is the way Bayes' rule is usually written. You can prove that this is true very simply by starting with the definition of conditional probability and using the equation in slide 22 to rewrite the numerator.</p><p    ></p>
+            <p    >If we do that, we see that the US suddenly drops to 22nd place. This drop indicates how big the income inequality is.<br></p><p    >The Netherlands drops from 12th to 34, incidentally. So there’s plenty of income inequality over here as well.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-029">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-029" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0029.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0029.png" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >Here’s an example of this fallacy in the wild. In 2019, there was a discussion in the US about unionisation in the games industry. Here, one of the heads of Take-Two suggests that because the <em>average</em> yearly salary has six figures, unions are unlikely.<br></p><p    >Whether rich people can benefit from unions is a question for a different series of lectures, but the fact that the average wages are high, most likely just means that there is a small number of very rich people in the industry. We’d need to know the <em>median</em> to be sure.<br></p><p    >source: <a href="https://twitter.com/GIBiz/status/1140900959322804224?s=20"><strong class="blue">https://twitter.com/GIBiz/status/1140900959322804224?s=20</strong></a></p><p    ><a href="https://twitter.com/GIBiz/status/1140900959322804224?s=20"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
 
 
        <section id="slide-030">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-030" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0030.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0030.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To build an intuitive understanding of why this formula works, let's return to the example of the monster attack. We'll focus on Alice only, and forget about Bob. <br></p><p    >Let’s say that we observe that Alice is late for dinner (and we observe nothing else). Does this tell us anything about whether a monster has attacked the city? It doesn’t tell us much; it’s extremely rare that a monster attacks the city so it’s almost certain that Alice is late for other reasons. Still, if Alice were on time, we’d know that a monster couldn’t. have attacked the city, since that would certainly make her late. So we may not know much, but we know something.<br></p><p    >In this case it’s easy for us to work out the probability that Alice is late given the monster attack. This is because the conditional is the cause of the observable. The opposite is usually what we are interested in, since we have the observable and want to reason about its cause. This is where Bayes’ rule comes in.<br></p><p    >Say that we know the probability that we observe Alice being late, given that a monster attack happened, p(<span>a</span> | <span>m</span>), is somewhere near 1. Bayes’ rule tells us how to use this to calculate the opposite conditional p(<span>m</span> | <span>a</span>). This is<em> not</em> near 1, because we multiply it by the marginal probability of a monster attack p(<span>m</span>), which is really low. We then divide by the probability of Alice being late in general p(<span>a</span>): the more likely Alice is to be late due to other causes, the lower the probability that it is caused by a monster attack.<br></p><p    ><br></p><p    ></p>
+            <p    >If you want to adapt your model to deal with natural outliers, beware of hidden assumptions of normality. <br></p><p    >Consider modelling your noise with a heavy-tailed distribution instead, in other words, one which makes outliers more likely. Using the median instead of the mean is one way to do this. <br></p><p    >If you are doing regression and your target label is non-normally distributed then you can use the sum of absolute errors as a loss function instead of the sum of squared errors. This will also implicitly assume a more heavy-tailed distribution than the normal, but even more heavy tailed distributions are available. We'll look a little bit more at modeling data with different distributions in later lectures.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
-
-       <section id="slide-031">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-031" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0031.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >If there are three possible reasons for Alice to be late: traffic, <span>monster</span> or snowfall. Then we can see the denominator as a sum marginalizing out the cause for Alice’s lateness. The proportion of this sum  given by the middle term is the probability that Alice’s lateness is caused by a monster attack.<br></p><p    >Consider the situation where both traffic and snowfall are far more likely than a monster attack, so p(t) and p(s) are much higher than p(<span>m</span>), but neither traffic nor snowfall ever cause Alice to be late, perhaps  because she cycles home from work, and has a bike with good snow tires. In that case both the first and last term in the sum become zero, and despite the fact that monster attacks are really rare, we can still conclude that a monster has attacked if we notice that Alice is late for dinner.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-031" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-032" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0032anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0032anim0.svg,31.ProbabilisticModels1.key-stage-0032anim1.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >To finish up, we'll look at some of the most common probability distributions we'll see throughout the course. Most of these you should know already, but we'll summarize them here briefly for the sake of completeness.<br></p><p    >The simplest is probably the Bernoulli distribution. It's any a distribution with two outcomes. You can think of it as modelling the outcome of a coin flip with a (possibly) bent coin, but the outcome could also be true/false, guilty/innocent or positive/negative.<br></p><p    >Every distribution like this, with its probabilties set to some pair of values summing to 1 is <em>a</em> Bernoulli distribution. To specify which Bernoulli distribution we are talking about we specify one of the probabilities by a number. The other probability is then also defined, since they must sum to one. <br></p><p    >The numbers we use to specify which specific distribution we are talking about in a family like the Bernoulli distributions, are called the <strong>parameters</strong>, and often indicated by the greek letter theta, θ.You can think of θ as a set of vector of numbers. In the case of the Bernoulli distribution theta is just a single number. </p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-033">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-033" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0033.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >If we have more than two outcomes, but still a finite number, we can assign each a separate probability so that they sum to one. For instance, if we want to model the outcome of rolling a loaded die, it might look like this. This is called a <strong>categorical distribution</strong>. Other examples are modeling which team will win the next world cup, which child in a classroom will score the highest on a test, or what the hair color of a random person from Ireland is. <br></p><p    >To specify a categorical distribution with n outcomes we strictly need only n-1 probabilities. We can work out the n-th probability from the knowledge that all probabilities sum to one. However, this is usually more trouble than it's worth, and instead we tend to represent categorical distributions by the slightly redundant complete set of n probabilities.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-034">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-034" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0034.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The <strong>normal distribution</strong> or<strong> Gaussian</strong> is probably the most common distribution on a continuous sample space. It is defined by this complex looking function. Don't worry about the formula too much now, we'll dig into that later. For now just remember that the curve it describes is the probability <em>density</em>.<br></p><p    >Its parameters are the <span class="orange">mean μ</span>, which tells us where the peak is, and the <span class="blue">variance σ</span><sup class="blue">2</sup> or <span class="blue">standard deviation σ</span>, which tells us how widely spread out the normal distribution is. <br></p><p    >The<em> standard</em><strong> normal distribution</strong> is the specific distribution with mean 0 and variance/standard deviation 1.<br></p><p    >The normal distribution is particularly useful for anything that has a <em>definite scale</em>. Consider, for instance height: people have all kinds of different heights, but if we get far enough away from the average, the probability gets so low it may as well be zero. We can say with near certainty that there are no 4 meter tall people and no 10cm tall people. If there were a hundred times as many people, that would still be true.<br></p><p    >An example of an attribute that doesn't have such a definite scale is income. In a small population there may be millionaires but no billionaires, but if we zoom out to the population of a small country, we will see billionaires appear. In a large country will we see people with fortunes in the order of 10 billion dollars and in the whole world we will see fortunes of 100 billion dollars. In short, the largest grows exponentially with the population size. <br></p><p    >In such cases, as we've seen, the normal distribution is not a good choice. We won't discuss them in this course, but so called fat-tailed distributions like the log-normal, Zipf or power law distributions may be more suitable.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-035">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-035" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0035.png" class="slide-image" />
-
-            <figcaption>
-            <p    >If our sample space consists of multiple numbers, for instance when we have a dataset with multiple features, we can draw this as an n-dimensional Euclidean space, like the plane shown here. A distribution over such a space can be defined by a probability density function over it, which, in the 2D case looks like a surface over the plane.<br></p><p    >The <strong>multivariate normal distribution</strong><em> </em>is an extension of the normal distribution to multiple dimensions. It takes the shape of a kind of bell over our sample space. For higher dimensions it's harder to visualize, just think of an ellipsoidal region in space taking most of the probability mass, with the probability density decaying quickly in all directions.<br></p><p    >Again, don't worry too much about the complicated formula for the probability density. We'll see where that comes from and what all the parts mean later.<br></p><p    >Its parameters are<span class="orange"> the mean </span><strong class="orange">μ</strong>, a vector which provides the center, and the <span class="blue">covariance matrix </span><strong class="blue">Σ</strong>, which tells us how much the probability decays in each direction. <br></p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-035" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-036" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0036anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0036anim0.svg,31.ProbabilisticModels1.key-stage-0036anim1.png,31.ProbabilisticModels1.key-stage-0036anim2.png,31.ProbabilisticModels1.key-stage-0036anim3.png" class="slide-image" />
-
-            <figcaption>
-            <p    >Here is an illustration of the way the covariance matrix affects the data we get from a multivariate normal distribution. The mean is at (0, 0) in all four examples. <br></p><p    >If the covariance is<span class="green"> the identity matrix</span>, we get the standard normal distribution. This is called a spherical distribution, because the variance along all axes is the same, and there is no correlation between axes, giving the data roughly spherical shape. <br></p><p    >More precisely the lines of equal probability density are circles in 2D and spherical surfaces in higher dimensions.<br></p><p    >If we <span class="blue">change the values on the diagonal</span>, we stretch this sphere into an ellipse, but only along the axes. There is still no correlation: knowing the value along one axis tells us nothing about the value along the others. <br></p><p    >If <span class="orange red">we change the off-diagonal values to positive values</span> we get <strong>correlation</strong>. In this case having a high value along one axis makes it more likely that the value along the other axis is also high. Note that the coviarance matrix needs to be symmetric, so the value on one side of the diagonal must be the same as the value on the other side.<br></p><p    >If <span class="orange">the off-diagonal value is negative</span>, we get <strong>anti-correlation</strong>. A high positive value on one axis most likely corresponds to a high negative value along the other axis.<br></p><p    >If we have more than 2 dimensions, say n, then there are (n^2 - n)/2 possible pairs of axes between which we can define a correlation. This corresponds exactly to the number of values above the diagonal in an n x n matrix.</p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-       <section class="video" id="video-036">
-           <a class="slide-link" href="https://mlvu.github.io/lecture05#video-36">link here</a>
+       <section class="video" id="video-030">
+           <a class="slide-link" href="https://mlvu.github.io/lecture05#video-30">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/IubHHpzM32Y?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/KiJ1f5Lyh5s?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -425,172 +356,220 @@ slides: true
 
        </section>
 
+       <section id="slide-031">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-031" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0031.svg" class="slide-image" />
+
+            <figcaption>
+            <p    ><lnbr></lnbr><br></p><p    ><br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-032">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-032" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0032.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >In the last lecture, we saw that class imbalance can be a big problem. We know what we can do to help our analysis of imbalanced problems, but how do we actually improve training?</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-033">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-033" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0033.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >We will assume that the class imbalance will happen in production as well as in your experiments. That means your <span class="blue">test set </span>needs to have the class imbalance in it, to be a fair simulation of the production setting. You can fiddle around with the training data all you like, but the <span class="blue">test</span> data (and by extension the <span class="orange">validation</span> data) needs to represent the natural class distribution.<br></p><p    >As a result, you'll need to focus on getting a large test set even more than normal: your problem is essentially that of detecting instances of the minority class. If you only have 25 of them in your test set, you won't get a very good idea of how good your classifier can detect them, even if you have 10000 majority class instances. <br></p><p    >This is usually a painful step, since withholding a lot of test data leaves you with very little training data. However, since you  are allowed to manipulate the training data however you like, you should prioritize the test data. There may be clever tricks to get more mileage out of the imbalanced training data, but without a proper test data, you won't be able to tell if these tricks work.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-034">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-034" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0034.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >The most common approach is to <strong>oversample </strong>your minority class by sampling with replacements. The advantage is that this leads to more data. The disadvantage is that you end up with duplicates in you dataset. This may increase the likelihood of overfitting, depending on what algorithm you are using.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-035">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-035" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0035.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >You can also <strong>undersample</strong> your majority class. This doesn’t lead to duplicates, but it does mean you’re throwing away data.<br></p><p    >If you have use an algorithm that makes multiple passes over the dataset (like gradient descent) it can help to resample the dataset fresh for every pass.<br></p><p    >Whether you oversample or undersample, you should be aware that you are changing the class distribution in the data. If you increase the proportion of one class, the classifier will be more likely to classify things by the minority class. This will be a tradeoff: you want to oversample to the point where the classifier begins to pick up on the features that indicate the minority class, but not so much that the classifier begins seeing the minority class when the features do not indicate it. <br></p><p    >The simplest way to achieve this is to treat the amount of resampling as a hyperparameter, and to optimize for precision/recall or ROC curves.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-036">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-036" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0036.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >A more sophisticated approach is to oversample the minority class with <strong>new data</strong> derived from the existing data.<br></p><p    >SMOTE is a good example: it finds small clusters of points in the minority class, and generates their mean as a new minority class point. This way, the new point is not a duplicate of any existing point, but it is still in a region that contains a lot of points in the minority class, to keep it realistic.<br></p><p    >We don’t have time to go into this deeply. If you run into this problem in your project, click the link for detailed explanation.<br></p><p    >more information: <a href="https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets"><strong class="blue">https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets</strong></a></p><p    ><a href="https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets"><strong class="blue"></strong></a></p>
+            </figcaption>
+       </section>
+
+
        <section id="slide-037">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-037" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0037.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0037.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we'll start to connect probability theory with machine learning. We will first focus on <em>model selection</em>. We will not yet worry about abstract tasks like classification or regression, we will simply look a the case where we see some data, and we use probability theory to select a <em>model</em> for that data. In the next video, we will see how this translates to the abstract tasks we already know.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    >Next, let's look at what we should to with the features in our dataset.<br></p><p    >Even if your data comes in a table, that doesn’t necessary mean that every column can be used as a feature right away (or that this would be a good approach). We'll need to look at the data provided and come up with a good way to translate it to a form in which the machine learning model is likely to learn from it. This depends both on what the data gives you, and on how your chosen model works. <br></p><p    >Translating your raw data into features is more an art than a science, and the ultimate test is the <span class="blue">test set</span> performance. We'll look at a few simple examples, to give you an idea of the general way of thinking you should adopt.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-037" class="anim">
+       <section id="slide-038">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-038" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0038anim0.png" data-images="31.ProbabilisticModels1.key-stage-0038anim0.png,31.ProbabilisticModels1.key-stage-0038anim1.png" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0038.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is an analogy for the way probability is usually applied in statistics and machine learning. We assume some “machine” (which could be any process, the universe, or an actual machine) has <em>generated</em> our data, by a process that is partly deterministic and partly random. The configuration of this machine is determined by its <strong>parameters </strong>(theta). Theta could be a single number, several numbers or even a complicated data structure.<br></p><p    >We know how the machine works, so if we know theta, we know the probability of each dataset. The problem is that we only observe the data.<br></p><p    >In practice, the "machine" takes the form of a probability distribution, and the configuration of the machine is determined by its parameters θ.</p><p    ></p>
+            <p    >Some algorithms (like linear models or kNN) work only on numeric features. Some work only on categorical features, and some can accept a mix of both (like decision trees). <br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-039">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-039" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0039.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0039.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In <strong>frequentist learning</strong>, we are given some data and our job is to guess the true model (out of a model class) that generated some data. In other words, pick the right parameters θ so that the probability distribution fits the data well.<br></p><p    >In the frequentist view of the world, the true model is not subject to probability. Which model generated the data doesn’t change if we repeat the experiment, so we shouldn’t apply probability to it. We just try to guess which one it is. We won;t be exactly right, but we can hopefully get close. This is typical of frequentist approaches: we build algorithms that gives us a <strong>point estimate</strong> for our model parameters. That is , they return <em>one </em>point in our model space. One guess for θ.<br></p><p    >One of the most common criterion is that we should guess the model for which the probability of seeing the data that we saw is highest. This is called the<em> </em><strong>maximum likelihood principle</strong>. Under the maximum likelihood principle, picking a model becomes an optimization problem.<br></p><p    ></p>
+            <p    >This particular age column is integer valued, while numeric features are usually real-valued. In this case, we can just interpret the age as a real-valued number, and most algorithms won’t be affected.<br></p><p    >If our algorithm only accepts categoric features, we’ll have to group the data into bins. For instance, you can turn the data into a two-category feature with the categories “below the median” and “above the median”.<br></p><p    >We’ll lose information this way, which is unavoidable, but if you have a classifier that only consumes categorical features which works really well on the rest of your features it may be worth it.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-040">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-040" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0040.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0040.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To explain both maximum likelihood fitting, let’s look at a simple example. We have two coins, a bent one and a straight one. Flipping these coins gives us different probabilities of heads and tails. <br></p><p    >We ask a friend to pick a random coin once without showing us, and to flip it twelve times. The resulting sequence has more heads than tails, but not such a disparity that you would never expect it from a fair coin. If we had to guess which coin our friend had picked, which should we guess?<br></p><p    >image source: <a href="https://www.magictricks.com/bent.html"><strong class="blue">https://www.magictricks.com/bent.html</strong></a><br></p><p    ></p>
+            <p    >We can represent phone numbers as integers too, so you might think a direct translation to numeric values is fine. But here it makes no sense at all. Translating a phone number  to a real value would impose an <em>ordering </em>on the phone numbers that would be totally meaningless. My phone number may represent a higher number than yours, but that has no bearing on any possible target value.<br></p><p    >What<em> is </em>potentially useful information, is the area code. This tells us where a person lives, which gives an indication of their age, their political leanings, their income, etc. Wether or not the phone number is for a mobile or a landline may also be useful. But these are <strong>categorical features</strong>.<br></p><p    >Often in such cases, a single column in your raw data can yield several features for your machine learning model. For instance the phone number can give us area codes, but we can also derive from that whether the person lives in a big city or in the country side, whether the person has a cell phone or a landline, which province the person lives in, whether the person has a phone or not, etc. We could even extract a rough latitude/longitude in the form of two numeric features.<br></p><p    >Some of these require a little work and creativity, but they can be extremely informative features. Especially compared to the raw phone number interpreted as an integer.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-041">
+       <section id="slide-040" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-041" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0041.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0041anim0.svg" data-images="22.Methodology2.key-stage-0041anim0.svg,22.Methodology2.key-stage-0041anim1.svg,22.Methodology2.key-stage-0041anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is a simple version of a <strong>model selection</strong> problem. Our model class consists of two models (the two coins) and our data consists of 12 instances (the results of the coin flips).<br></p><p    >In more technical terms, the coins are Bernoulli distributions with parameter 1/2 and  and 4/5 respetively. We could also look at the model space of all Bernoulli distributions, but to simplify matters we are looking at just these two.<br></p><p    >Under the frequentist view, we cannot assign probability to which coin produced this specific data, we can only provide a best guess which coin we consider most likely.</p><p    ></p>
+            <p    >So what if our model only accepts numerical features? This is very common: most modern machine learning algorithms are purely numeric. How do we feed it categorical data? Here are two approaches. <br></p><p    ><strong>Integer coding</strong> gives us the same problem we had earlier. We are imposing a false ordering on unordered data. <br></p><p    ><strong>One-hot coding </strong>(also called one-of-N coding)<strong> </strong>avoids this issue, by turning <em>one </em>categorical feature into<em> several </em>numeric features. Per genre we can say whether it applies to the instance or not.<br></p><p    >In general, the one-hot coding approach is preferable. For almost all models, adding extra features does not substantially affect the runtime, and separating the different classes like this allows most models to use the information much more effectively.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-042">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-042" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0042.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0042.png" class="slide-image" />
 
             <figcaption>
-            <p    >The maximum likelihood principle tells us to pick the coin for which the likelihood is the greatest. There are other principles (called <em>estimators</em>), but the maximum likelihood is usually the first thing to try. We simply compute, for both coins, the probability of the data that we saw given the coin. The coin that gives us the highest value is the coin we choose.</p><p    ></p>
+            <p    >Once we’ve turned all our features into data that our model can handle, we can still manipulate the data further, to improve performance.<br></p><p    >How to get the useful information from your data into your classifier depends entirely on what your classifier can handle. The linear classifier is a good example. It’s quite limited in what kinds of relations it can represent. Essentially, each feature can only influence the classification boundary in a simple way. It can push it up or down, but it can’t let its influence depend on the values of the other features. Here is a (slightly contrived) example of when that might be necessary.<br></p><p    >Imagine classifying spam emails on two features: to what extent the email mentions drugs, and to what extent the email is sent to a pharmaceutical company. We'll consider the simplified case where every email that mentions drugs is spam, and every email that does not mention drugs is ham, unless the email is sent to a pharmaceutical company, in which case the roles are reversed. <br></p><p    >With these two features, and this logic, we get the decision boundary shown here. This problem, called the <strong>XOR problem </strong>after the Boolean relation which produces the same picture, is completely impossible for a linear classifier to solve.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-043">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-043" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0043.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0043.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Since the coin flips are independent, the probability over the whole sequence is just the product over the probabilities of the individual flips. There’s not much in it, but the likelihood for the <em>bent </em>coin is slightly higher, so that’s the preferred model under the maximum likelihood criterion.</p><p    ></p>
+            <p    >We can switch to a more powerful model, but we can also add power to the linear classifier by <strong>adding extra features derived from the existing features</strong>. <br></p><p    >Here, we’ve added the cross-product of d and p (one value multplied by the other). Note the XOR relationship of the signs: two negatives or two positives both make positive, a negative and a positive make a negative. <br></p><p    >If we feed this three-feature dataset to a linear classifier, it can easily solve the problem. All it needs to do is to look at the sign of the third feature, and ignore the rest. We still have a simple linear classifier, which can easily and efficiently be optimally solved, but now it can learn non-linear relations in the original 2D feature space.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-044">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-044" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0044.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0044.png" class="slide-image" />
 
             <figcaption>
-            <p    >When we do this kind of computation, we often take the logarithm of the likelihood, instead of the plain likelihood. The logarithm is a monotonic function (it gets bigger if the input gets bigger) so the likelihood and the log-likelihood have their maxima in the same place, but the log-likelihood is often easier to manipulate symbolically (see the first homework exercise). It can also provide a smoother loss landscape for methods like gradient descent.<br></p><p    >The log-likelihood of a probability distribution is a lot like the loss functions we’ve already encountered many times.<br></p><p    >In fact, if we want to fit a probability distribution with a gradient based method, we usually take the <em>negative</em> log-likelihood, so that we can do gradient <em>descent</em> to find the optimum. <br></p><p    >We could also use gradient ascent on the log-likelihood, but it's nice to keep the convention that you always minimize functions, and as we will see at the end of the lecture, the negative logarithm of a probability actually has a very natural interpretation.</p><p    ></p>
+            <p    >Here's what the result looks like for our data.<br></p><p    >This is a  linear classier that operates in a 3D space. But since the third dimension is derived from the other two, we can colour our original 2D space with the classifications. Projected down to 2D like this, the classifier solves  our XOR problem perfectly.<br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-045">
+       <section id="slide-044" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-045" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0045.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0045anim0.png" data-images="22.Methodology2.key-stage-0045anim0.png,22.Methodology2.key-stage-0045anim1.png" class="slide-image" />
 
             <figcaption>
-            <p    >As a second example of maximum likelihood, let's look at the univariate (i.e. 1D) normal distribution. This is defined by a complicated probability density function, which we don't fully understand yet. What we want to show here is how much of this complexity disappear just by taking the logarithm.<br></p><p    >The probability density of our whole data, given some mean and standard deviation, is simply the product of all individual probability densities. This follows from the assumption that instance data is independently drawn from the same distribution.  <br></p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-045" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-046" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0046anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0046anim0.svg,31.ProbabilisticModels1.key-stage-0046anim1.svg,31.ProbabilisticModels1.key-stage-0046anim2.svg,31.ProbabilisticModels1.key-stage-0046anim3.svg,31.ProbabilisticModels1.key-stage-0046anim4.svg,31.ProbabilisticModels1.key-stage-0046anim5.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >We assume that X is a list of single numbers. We want to find the parameters that maximize the log probability density of this data given the parameters. The probability density of the whole dataset is simply the product of the individual probability densities, if we assume that the data was independently drawn from the same distribution.<br></p><p    >Since there's a factor factor raised to the power of e inside this function, we'll use the natural logarithm (base e). With a bit of luck, these will cancel out.<br></p><p    >We can turn this product into a sum by moving the logarithm inside. <em>This is explained in detail in the first homework.</em><br></p><p    >We fill in the definition of the actual probability density function we’re using (line 3). This function is the product of two factors (the division and the exponent). Both of these become terms if we work them out of the logarithm. In the second term the exponent cancels against the logarithm. Already the function we are maximizing looks a lot simpler.<br></p><p    ></p>
+            <p    >One more example. In this dataset points are colored red if the distance to the origin is less than 0.7. Again, this problem is not at all linearly separable. <br></p><p    >Using Pythagoras, however, we can express how the classes are decided: if x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> &lt; 0.7<sup>2 </sup>then we classify as<span class="orange red"> red</span>, otherwise as <span class="blue">blue</span>. This is a linear decision boundary for the features x<sub>1</sub><sup>2</sup> and x<sub>2</sub><sup>2</sup>. </p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
             </span>
        </section>
 
+
+
+       <section id="slide-046">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-046" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0046.png" class="slide-image" />
+
+            <figcaption>
+            <p    >So, if we add those features to the data, creating a 4D dataset, a linear decision boundary in that space solves our problem perfectly.</p><p    ></p>
+            </figcaption>
+       </section>
 
 
        <section id="slide-047">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-047" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0047.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is enough to show that with the log likelihood we have another “landscape” on top of our model space. If we didn’t want to work out the rest analytically, we could just find the optimum by gradient descent or even random search.</p><p    ></p>
+            <p    >You can try this yourself at <a href="http://playground.tensorflow.org/#activation=linear&amp;regularization=L1&amp;batchSize=10&amp;dataset=xor&amp;regDataset=reg-plane&amp;learningRate=0.03&amp;regularizationRate=0.01&amp;noise=20&amp;networkShape=&amp;seed=0.64177&amp;showTestData=false&amp;discretize=true&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false&amp;numHiddenLayers_hide=true&amp;percTrainData_hide=true&amp;regularizationRate_hide=true&amp;learningRate_hide=false&amp;playButton_hide=false&amp;discretize_hide=false&amp;resetButton_hide=false&amp;regularization_hide=true&amp;dataset_hide=false&amp;batchSize_hide=true&amp;noise_hide=true&amp;problem_hide=false&amp;activation_hide=true&amp;stepButton_hide=false&amp;showTestData_hide=true"><strong class="blue">playground.tensorflow.org</strong></a>. The column labeled features contains some extra features derived from the original two by various functions (including the cross product).<br></p><p    >Note that both the XOR and Circle dataset are present.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-047" class="anim">
+       <section id="slide-048">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-048" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0048anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0048anim0.svg,31.ProbabilisticModels1.key-stage-0048anim1.svg,31.ProbabilisticModels1.key-stage-0048anim2.svg,31.ProbabilisticModels1.key-stage-0048anim3.svg,31.ProbabilisticModels1.key-stage-0048anim4.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0048.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we look at each parameter individually, we can reduce the problem even more.<br></p><p    >We can remove the first term, since it doesn't contain the mean. The factor 1/(2σ<sup>2</sup>) can be moved outside the sum and then removed (since a positive mulitplicative factor won't affect where the maximum is).<br></p><p    >Maximizing a function is the same as minimizing the negative of that function, so we can remove the minus and turn the argmax into an argmin.<br></p><p    >This shows that the maximum likelihood solution for the mean is just the value that minimizes the sum of the squared distances between the mean and the values in the dataset. This is how assuming a normal distribution leads to a least squares loss. If you work this out analytically, as we'll do in the next lecture, you'll see that the minimum for this is the (arithmetic) of the data, as you'd normally compute it. <br></p><p    >This connection between the normal distribution, the least squares loss and the artihmetic mean is a deep one. Don't worry if you don't quite get it yet, we'll come back to this a few more times. For instance we'll see that historically, the order was the other way around, Gauss started with the arithmetic mean which was a tried and tested approach, worked out that it implied the least squares principle, and then built the normal distribution on top of that. But that's for later. For now, just make sure that you understand the basic principle of maximizing the likelihood.</p><p    ></p>
+            <p    >We can do the same thing with regression. Here, we have a very non-linear relation.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-048" class="anim">
+       <section id="slide-049">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-049" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0049anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0049anim0.svg,31.ProbabilisticModels1.key-stage-0049anim1.svg,31.ProbabilisticModels1.key-stage-0049anim2.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0049.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We'll finish up with a quick look at <strong>Bayesian learning</strong>. Here, we are free to talk about the probability of the true model parameters taking a particular value. We don’t know the true parameters, but the data gives us some idea, so we express that uncertainty a probability distribution <em>over the model space</em>.<br></p><p    >That is, we'd like to know the distribution p(<span class="blue">θ</span>|D): a distribution over all available models, given the data that we've observed. As usual, the distribution with the reverse conditional p(D|<span class="blue">θ</span>) is much easier to work out. So the first thing we do is apply Bayes' rule to relate the two conditionals to one another.<br></p><p    >The distribution we want to work out is called the <strong>posterior distribution</strong>. Posterior means "after", as in: this is our belief about the true model <em>after</em> we've seen the data.<br></p><p    >The three parts of the right-hand side have these names. The <strong>prior distribution</strong> is a name you’ll hear often. Prior means before, as in: this is our belief about the true model <em>before</em> we've seen the data. For instance if we do spam classification in a Bayesian way, we might have a prior belief about the probability of getting a spam email, which we then <strong>update</strong> by looking at the content of the email (the data). Our beliefs about the parameters after seeing the data, is expressed by the posterior distribution. <br></p><p    >Note that Bayesian learning does, in principle, not require us to search or optimize anything. If we can work out the function on the right hand side of this equation, we get the posterior distribution and that gives us everything we need. If we need a good model, we can pick the one to which p(<span class="blue">θ</span>|X) assigns the highest probability, or we can sample a model and get a good fit with high probability. We can also study other properties of the distribution: for instance the variance of this distribution is a good indication of how uncertain we still are about the parameters of the model. <br></p><p    >In some cases, like for normal distributions, we can work all of this out analytically. For more complicated models, it’s usually impossible to work out the posterior analytically, and we have to make do with a function that approximates it, or with a number of individual  <em>samples </em>from the posterior. At that point, working out the posterior usually starts to look a lot like the searching we have to do in frequentist method and general machine learning.</p><p    ></p>
+            <p    >A <span class="green">purely linear classifier</span> does a terrible job.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-049" class="anim">
+       <section id="slide-050">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-050" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0050anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0050anim0.svg,31.ProbabilisticModels1.key-stage-0050anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0050.svg" class="slide-image" />
 
             <figcaption>
-            <p    >That may all sound a little abstract, so let's return to our coin example and see what a Bayesian approach would look like there.<br></p><p    >We first need to establish a prior. What is the probability of each coin in our model space? We said that we’d asked a friend to pick a coin at random. If we assume that he follows our instructions, then we believe each coin is equally likely so both get 0.5 probability. If we had two fair coins and one bent one, we could set the prior to 1/3 for bent and 2/3 for fair. Or if we expected our friend to have a preference for the bent coin, we might set our prior differently.<br></p><p    >This is an important thing to understand about choosing a prior: it allows us to encode our assumptions about the problem. As we will see again and again, encoding your assumptions is the most important part of designing machine learning models.</p><p    ></p>
+            <p    >We<em> can</em> fit a <span>parabola</span> through the data much more closely. We can see this as a more powerful model (a parabola instead of a linear model), but we can also see this as a 2D linear regression problem, where the second feature (x<sup>2</sup>) is derived from the first. <br></p><p    >This is relevant because linear models are extremely simple to fit. By adding derived features we can have our cake and eat it too. A <em>simple</em> model that we can fit quickly and accurately, and a<em> powerful</em> model that can fit many nonlinear aspects of the data.<br></p><p    >If we don’t have any intuition for which extra features might be worth adding, <strong>we can just add all cross products</strong> of all features with each other and with themselves (like x<sup>2</sup>). Other functions like the sine or the logarithm may also help a lot.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-050" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-051" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0051anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0051anim0.svg,31.ProbabilisticModels1.key-stage-0051anim1.svg,31.ProbabilisticModels1.key-stage-0051anim2.svg,31.ProbabilisticModels1.key-stage-0051anim3.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0051anim0.svg" data-images="22.Methodology2.key-stage-0051anim0.svg,22.Methodology2.key-stage-0051anim1.svg,22.Methodology2.key-stage-0051anim2.svg,22.Methodology2.key-stage-0051anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >After the prior, we need to work out the model evidence p(D). This is the probability of the data with the model marginalized out. Independent of the model, how likely are we to see this data at all? We work this out by making the marginalization explicit, and replacing the joint probabilities by their conditionals.</p><p    ></p>
+            <p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -601,41 +580,17 @@ slides: true
 
        <section id="slide-052">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-052" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0052.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0052.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Remember, the long form of Bayes' rule, with the denominator a long sum over all the causes, and the numerator one of the terms in this sum. That view applies here as well: we see the available models (bent and straight) as the two possible causes for our data. The marginal probability of seeing this data is the probability of picking straight and seeing it plus picking bent and seeing it. The proportion of the straight term in this sum is the probability of seeing straight given the data.</p><p    ></p>
+            <p    ></p>
             </figcaption>
        </section>
 
-
-       <section id="slide-052" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-053" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0053anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0053anim0.svg,31.ProbabilisticModels1.key-stage-0053anim1.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >If we choose a  uniform prior (each model gets the same probability), then the priors cancel out and we are just left with a function of the conditional data probabilities that we've worked out already for the frequentist example.</p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-054">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-054" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0054.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Filling these in gives us posterior probabilities for the <span class="orange red">straight</span> and the <span class="green">bent</span> coins.<br></p><p    >Note the difference with the maximum likelihood case. Both approaches prefer the <span class="green">bent</span> model as an explanation for the data.<br></p><p    >However, in the maximum likelihood case, even though the differences between the two likelihoods were small, we only provided<em> one </em>guess for the true model. In the Bayesian approach we get a <em>distribution</em> on the model space. It tells us not just that <span class="green">bent</span> is the more likely model, but also that<em> both models</em> are still quite likely. In this sense, getting a posterior distribution is a much more valuable result than getting a point estimate for your model.<br></p><p    >The downside of Bayesian analysis is that as the models get more complex, it gets more and more difficult to accurately approximate the posterior, and trying to do so is what has led to some of the most complicated material in machine learning. Working out the posterior for the mean of a normal distribution is already a bit too technical for this course, but it's a good exercise to try and imagine what it would involve.</p><p    ></p>
-            </figcaption>
-       </section>
-
-       <section class="video" id="video-054">
-           <a class="slide-link" href="https://mlvu.github.io/lecture05#video-54">link here</a>
+       <section class="video" id="video-052">
+           <a class="slide-link" href="https://mlvu.github.io/lecture05#video-52">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/fK6dQYkeVqA?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/Q0F13NPcoaU?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -643,32 +598,56 @@ slides: true
 
        </section>
 
-       <section id="slide-055">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-055" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0055.svg" class="slide-image" />
+       <section id="slide-053">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-053" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0053.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we’ll try to connect this probability business to the abstract tasks of machine learning. <br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><lnbr></lnbr><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-056">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-056" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0056.svg" class="slide-image" />
+       <section id="slide-054">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-054" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0054.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We will focus on building <strong>probabilistic classifiers</strong>. These are classifiers that return not just a class for a given instance x (or a ranking) but a <em>probability over all classes</em>.<br></p><p    >This can be very useful. We can use the probabilities to extract a ranking (and plot an ROC curve) or we can use the probabilities to assess how certain the classifier is about its judgement. <br></p><p    >Note that a probabilistic classifier is also immediately a ranking classifier (if we rank by how likely the positive class is) and a regular classifier (if we pick the class with the highest probability).</p><p    ></p>
+            <p    >For some models, it’s important to make sure that all numeric features have broadly the same minimum and maximum. In other words, that they are <em>normalized</em>. <br></p><p    >To see why, let’s revisit the k nearest neighbors (kNN) classifier from the first lecture.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-054" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-055" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0055anim0.svg" data-images="22.Methodology2.key-stage-0055anim0.svg,22.Methodology2.key-stage-0055anim1.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Imagine we are using a 1-NN classifier (i.e. it only looks at the nearest example, and copies its class).<br></p><p    >In this plot, it looks like the blue and the red dot are the same distance away.<br></p><p    >But note the range of values for the two features: years and pupil dilation. Because years are measured in bigger units than than pupils, the blue dot will always be much closer. But this distinction is not meaningful: we cannot compare durations to distances. The only thing that really matters is how close the point is to our target comapred to the other points in the data. The absolute distance in the natural units doesn't matter.<br></p><p    >What we want to look at is how much spread there is<em> in the data</em>, and use that as our distance. We do that by <strong>normalizing</strong> our data before feeding it to the model.</p><p    ></p>
+            </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
+       </section>
+
+
+
+       <section id="slide-056">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-056" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0056.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >We’ll discuss three approaches to solving this problem. <strong>Normalization</strong>, which reshapes all values to lie within the range [0, 1], <strong>standardization</strong>, which reshapes the data so that its mean and variance are those of a standard normal distribution (0 and 1 respectively) and <strong>whitening</strong>, which looks at features <em>together</em>, to make sure that as a whole their statistics are those of a multivariate standard normal distribution.<br></p><p    >These terms are often used interchangeably. We’ll stick to these definitions for this course, but in other contexts you should check that they mean what you think they mean.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-056" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-057" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0057anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0057anim0.svg,31.ProbabilisticModels1.key-stage-0057anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0057anim0.svg" data-images="22.Methodology2.key-stage-0057anim0.svg,22.Methodology2.key-stage-0057anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >There are two approaches to casting the classification problem in probabilistic terms. <br></p><p    >A <strong>generative classifier</strong> focuses on learning a distribution on the feature space given the class p(X|<span>Y</span>). This distribution is then combined with Bayes’ rule to get the probability over the classes, conditioned on the data.<br></p><p    >A<strong> discriminative classifier</strong> learns the function p(<span class="blue">Y</span>|X) directly with X as input and class probabilities as output. It functions as a kind of regression, mapping x to a vector of class probabilities.<br></p><p    > We’ll look at some simple generative classifiers in this video, and then we'll describe a discriminative classifier in the next video.<br></p><p    ><br></p><p    ></p>
+            <p    >Normalisation scales the data linearly so that the smallest point becomes 0 and the largest becomes 1. Note that because x<sub>min</sub> is negative (in this example), we are actually moving all data to the right, and then rescaling it.<br></p><p    >We do this independently for each feature.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -677,32 +656,40 @@ slides: true
 
 
 
-       <section id="slide-058">
+       <section id="slide-057" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-058" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0058.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0058anim0.svg" data-images="22.Methodology2.key-stage-0058anim0.svg,22.Methodology2.key-stage-0058anim1.svg,22.Methodology2.key-stage-0058anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here are three approaches, arranged from impractical but entirely correct to highly practical, but based on largely incorrect assumptions.<br></p><p    >We won’t discuss the Bayes optimal classifier in this course, but it’s worth knowing that it exists, and that it means something different than a (naive) Bayes classifier.</p><p    ></p>
+            <p    >Another option is standardization. We rescale the data so that the<span class="orange"> mean</span> becomes zero, and the <span class="blue">standard deviation</span> becomes 1. In essence, we are transforming our data so that it looks like it was sampled from a standard normal distribution (or as much as we can with a one dimensional linear transformation).<br></p><p    ><br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-059">
+
+       <section id="slide-058" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-059" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0059.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0059anim0.svg" data-images="22.Methodology2.key-stage-0059anim0.svg,22.Methodology2.key-stage-0059anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For the Bayes classifier, we start with the probability we’re interested in p(<span class="blue">Y</span>|X): the probability of the class given the data. We then rewrite this using Bayes’ rule. From the final form, we see that if we compute the probability functions p(X|<span class="blue">Y</span>), the data given the class and p(Y), the prior probability of the class, we can compute the probabilites we;re interested in: the class probabilities given the data.<br></p><p    >So the task becomes to learn functions for those two probabilties. The most important part will be P(X|<span class="blue">Y</span>). We can model this by separating the data by class and fitting a probability distribution to each subset individually.</p><p    ></p>
+            <p    >The standardization operation is pretty simple, and maybe you can see where it comes from intuitively (it's pretty similar to the normalization operation), but even so, it's good to derive it carefully. This will prepare us for whitening, where we will can to do the same thing across multiple features.<br></p><p    >For a rigorous derivation, we can think of the data as being "generated" from a standard normal distribution, followed by multiplication by <span class="blue">sigma</span>, and and adding <span class="orange">mu</span>. The result is the distribution of the data that we observed.  You can think of all normally distributed data being generated this way: sampled from a standard normal distribution, and scaled and translated to fit some non-standard distribution. <br></p><p    >If we then compute the mean and the standard deviation of the data, the formula in the slide is essentially <strong>inverting the transformation</strong>. We reverse the order, and replace addition by subtraction and multiplication by division. This takes the distribution that we observed and recovers <strong> </strong>the “original” data as sampled from the standard normal distribution.<br></p><p    >We will build on this perspective several times throughout the course.<br></p><p    >Of course, in practice our data may not be normally distributed at all (standard or otherwise), so we should be a bit careful with these kinds of operations that assume a normal distribution. Still, if the data is roughly equally distributed over a finite range, without any extreme outliers, standardization will work fine for most models. And, if it really fails, then normalization will probably fail too, and you'll need to think about trying more exotic approaches, or even designing your own. <br></p><p    >Remember, the proof is in the pudding: if the validation error is low, you probably did alright.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-059" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-060" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0060anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0060anim0.svg,31.ProbabilisticModels1.key-stage-0060anim1.svg,31.ProbabilisticModels1.key-stage-0060anim2.svg,31.ProbabilisticModels1.key-stage-0060anim3.svg,31.ProbabilisticModels1.key-stage-0060anim4.svg,31.ProbabilisticModels1.key-stage-0060anim5.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0060anim0.svg" data-images="22.Methodology2.key-stage-0060anim0.svg,22.Methodology2.key-stage-0060anim1.svg,22.Methodology2.key-stage-0060anim2.svg,22.Methodology2.key-stage-0060anim3.png,22.Methodology2.key-stage-0060anim4.png,22.Methodology2.key-stage-0060anim5.png" class="slide-image" />
 
             <figcaption>
-            <p    >Here is the algorithm for a simple Bayes classifier. We choose a model class for P(X|Y), for instance multivariate normal distributions. <br></p><p    >We then separate the points by classes and fit a separate MVN to each of these subsets of the data. We use the maximum likelihood estimates to fit the MVNs to the instances. <br></p><p    >Note that this make the Bayes classifier a bit of a Bayesian/frequentist chimera: we are using Bayes' rule to reverse the conditional, but we are using point esitmates to fit our distributions.<br></p><p    >The <strong>class prior</strong> p(<span class="blue">Y</span>) is a simple categorical distribution over the classes. We can estimate this from the data, or use some kind of prior knowledge that we have about the domain.<br></p><p    >Strictly speaking, we are mixing probabilities and probability densities, but in this example that doesn't cause any problems. The resulting probability on the classes is a categorical distribution.<br></p><p    >When we compute the class probabilities, we can compute the term p(x | class)p(class) once for each term, and then re-use them in the computation of each class probability. If we are only interested in the most probable class or in the ranking, we can omit the computation of the denominator.</p><p    ></p>
+            <p    >Here’s what standardization looks like if we apply it to data with two features. If the data is <em>uncorrelated</em>, we are reducing it to a nice spherical distribution, centered on the origin, with the same variance in each direction. Exactly what data from a <strong>multivariate standard normal distribution</strong> looks like.<br></p><p    >If, however, our data is <span class="orange red">correlated</span>, that is; knowing the value of one feature helps us predict the value of the other, we get a different result. This is because we standardize each feature <em>independently</em>, and the features are not independent. Is there a way to achieve the same effect with the correlated data? Can we transform the features somehow so that it looks like they came from a distribution like the one top right? This is what <strong>whitening</strong> can do for us.<br></p><p    >Note that this is not usually necessary in practice. Normalizing or standardizing each feature independently is usually fine, <span>especially if your model is powerful enough to learn correlations</span>. <span>However, whitening, normalizing across features, can sometimes give you a little boost. It will also help us understand the PCA method, which we will discuss in the next video.</span></p><p    ><span></span></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -711,130 +698,138 @@ slides: true
 
 
 
-       <section id="slide-061">
+       <section id="slide-060" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-061" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0061.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0061anim0.svg" data-images="22.Methodology2.key-stage-0061anim0.svg,22.Methodology2.key-stage-0061anim1.png,22.Methodology2.key-stage-0061anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is an example of what that looks like with 2 features. On the left we have two classes, blue and black. We fit a 2D normal distribution to each, represented by the blue and black ellipses. Then, for a new point, we see which assigns the new point the highest probability density, or compute the full probabilities.<br></p><p    >The red line provides the decision boundary: the points where the two probability densities are exactly equal.<br></p><p    ><br></p><p    ></p>
+            <p    >In essence we want to transform the data top right to something that looks like the data bottom left. Or, the same question asked differently, can we express the data in another <strong>coordinate system</strong>, to that in the new coordinate system, the features are not correlated and the variance in the direction of each axis is 1?<br></p><p    >In order to show how to do this we need to revise some bits of linear algebra. Specifically, we need to look at <strong>linear bases</strong> (the plural of basis).<br></p><p    >We'll go through a bit quickly, because we assume that you've already covered basis transformations in linear algebra. If not, or if your memory of them is hazy, you should take some time to review them.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-062">
+
+       <section id="slide-061" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-062" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0062.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0062anim0.svg" data-images="22.Methodology2.key-stage-0062anim0.svg,22.Methodology2.key-stage-0062anim1.svg,22.Methodology2.key-stage-0062anim2.svg,22.Methodology2.key-stage-0062anim3.svg,22.Methodology2.key-stage-0062anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This works well for small numbers of features, but if we have many features, modelling the dependence between each pair of features gets very expensive. <br></p><p    >A crude, but very effective solution is <strong>Naive Bayes</strong>. This just assumes that all features are independent, conditional on the class (whatever the class).<br></p><p    >Note that <em>we do not assume that the features are independent</em>: it’s perfectly possible for one feature to be dependent on another feature, but they are <em>conditionally</em> independent. Informally, the dependency between the features is “caused” by the class and nothing else. Just like Alice and Bob in the first video: their lateness had only one possible shared cause, the monster, and once we’d isolated that, their lateness was independent.<br></p><p    >Since naive Bayes is often used with categorical features, we'll start with an example that uses these.</p><p    ></p>
+            <p    >First, a quick reminder of how summing vectors works. We stick the tail of vector <strong>b</strong> onto the head of vector <strong>a</strong> and draw a line from the tail of <strong>a</strong> to the head of <strong>b</strong>. The point where we end up is the tip of the vector <strong class="orange red">a</strong> + <strong class="green">b</strong>.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-063">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-063" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0063.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0063.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is an example dataset, with binary features. Each feature indicates whether a particular word occurs in that instance.<br></p><p    >We are bulding a generative classifier, so we should start by estimating the probability of the data given the class. The Naive Bayes assumption says that we can do this for each feature independently and just multiply the probabilities. <br></p><p    >We will estimate p(“pill”|<span class="orange red">spam</span>) as the relative frequency with which the “pill” feature was<span class="blue"> true</span> for <span class="orange red">spam</span> emails, and similar for the other feature.</p><p    ></p>
+            <p    >We can see our basic Cartesian coordinate system as made up entirely of the two vectors (1 0) and (0 1). To describe a point in the place, we just sum a number of copies of these vectors.<br></p><p    >Every point in the plane is just a linear combination of these two. A coordinate like (3, 2) means: “sum three copies of<span class="orange red"> </span><strong class="orange red">a</strong> and add them to two copies of <strong class="green">b</strong>.” We call these <strong>basis vectors</strong>: vectors that allow us to describe all points in a space in terms of a multiple of each of the basis vectors. The set of points that can be described in this way is the space <strong>spanned</strong> by the basis vectors.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-064">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-064" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0064.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here's what those estimates look like.<br></p><p    >Strictly speaking, we are modelling X<sub>1</sub> as a Bernoulli distribution whose parameter we estimate as 2/6. This estimation, using the relative frequency of outcome x as the probability of x, is the maximum likelihood estimate for the Bernoulli distribution. If that sounds too complicated, it hopefully also makes intuitive sense to estimate the probabilities this way.</p><p    ></p>
+            <p    >If we choose <em>different</em><strong> basis vectors</strong>, we get a different coordinate system to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span>one vector</span>, plus a number of copies of <span class="orange">the other</span>.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-065">
+       <section id="slide-064" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-065" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0065.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0065anim0.svg" data-images="22.Methodology2.key-stage-0065anim0.svg,22.Methodology2.key-stage-0065anim1.svg,22.Methodology2.key-stage-0065anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We do the same for the <span class="orange red">spam</span> class and for the other feature.</p><p    ></p>
+            <p    >If we know the coordinates <strong>x</strong><sub>b</sub> in our non-standard coordinate system, it’s easy to find the coordinates <strong class="blue">x</strong><sub class="blue">s</sub> in the standard basis. We just multiply the first coordinate of x<sub>b</sub> with the first basis vector, the second coordinate with the second basis vector and sum the result.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-066">
+
+       <section id="slide-065" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-066" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0066.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0066anim0.svg" data-images="22.Methodology2.key-stage-0066anim0.svg,22.Methodology2.key-stage-0066anim1.svg,22.Methodology2.key-stage-0066anim2.svg,22.Methodology2.key-stage-0066anim3.svg,22.Methodology2.key-stage-0066anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is the naive Bayes assumption formulaically. We simply factor p(X1,…Xn) into n separate, independent probabilities. That means we can take our estimates for the probability of each feature, and multiply them together to get the probability of the whole instance.</p><p    ></p>
+            <p    >The basis vectors are usually expressed as the columns of a matrix <strong>B</strong>. That way, transforming a coordinate <strong>x</strong> in basis B to the standard coordinates can be done simply by matrix multiplying <strong>B</strong> by <strong>x</strong>. It also tells us that to go the other way, to transform a standard coordinate to the basis, you multiply by the <em>inverse</em> of <strong>B</strong>.<br></p><p    >Since inverting a matrix is an expensive and numerically unstable business, it’s good to focus (if possible) on <strong>orthonormal bases</strong>. That is, bases for which the basis vectors are <strong>orthogonal</strong> (the angle between any two of them is 90 degrees) and <strong>normal</strong> (all vectors have length 1). In that case the matrix transpose (which is simple to compute without loss of precision) is equal to the matrix inverse, so we can switch back and forth between bases quickly, without losing information.<br></p><p    >Here [<strong>a</strong>,<strong>b</strong>] represents the matrix created by concatenating the vectors <strong>a</strong> and <strong>b</strong>.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-066" class="anim">
+
+       <section id="slide-067">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-067" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0067anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0067anim0.svg,31.ProbabilisticModels1.key-stage-0067anim1.svg,31.ProbabilisticModels1.key-stage-0067anim2.svg,31.ProbabilisticModels1.key-stage-0067anim3.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0067.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This gives us a probability for the whole instance space. Now, let's imagine a new email comes in, one which contains the words <em>pill</em> and <em>meeting</em>. What class do we think it is? <br></p><p    >The probability of it being ham is proportional to the probability of seeing a ham email with these characteristics times the probability of seeing a ham email at all. The first factor breaks up by the naive Bayes assumption, and we can simply fill in our three probability estimates. We do the same thing for spam and report wich class gets the high probability <br></p><p    >Note that we are only computing the numerator of Bayes' rule. This is enough to work out which class gets the higher probability.</p><p    ></p>
+            <p    >We can now re-phrase what we’re aiming to do: we want to find a set of new <em>basis vectors</em> so that we can express the data in a coordinate system where the features are not correlated, and the variance is 1 in every direction.<br></p><p    >Note that the latter means we can’t have an orthonormal basis (the basis vectors can’t be one). <br></p><p    >We can fix this by first computing an orthonormal basis, and then scaling independently along each axis, but we won't go into that here. For now, we'll just allow for non-orthonormal bases.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-067" class="anim">
+       <section id="slide-068">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-068" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0068anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0068anim0.svg,31.ProbabilisticModels1.key-stage-0068anim1.svg,31.ProbabilisticModels1.key-stage-0068anim2.svg,31.ProbabilisticModels1.key-stage-0068anim3.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0068.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we work out the probability of spam in the same way, we see that the Naive Bayes classifier assigns the class ham the most probability. If we want proper class probabilities all we have to do is normalize these values (that is, divide by (5/33) + (3/55)).</p><p    ></p>
+            <p    >To figure out how to find this basis, we will follow the same principle as we did with standardisation: we will assume that the data was generated by a standard multivariate normal distribution (MVN), followed by a translation and a change of basis (with the change of basis causing some features to become correlated). We will attempt to reverse the process by:<br></p><p     class="list-item">fitting a (nonstandard) MVN to the data<br></p><p     class="list-item">figuring out the transformation that transforms the standard MVN to this MVN<br></p><p     class="list-item">applying the inverse of this transformation to the observed data<br></p><p    >A multivariate normal distribution is a generalisation of a one-dimensional normal distribution.<span> </span><span>Its mean is a single point</span>, <span>and its variance is determined by a symmetric matrix called a </span><strong>covariance matrix</strong>.<span> </span>The values on the diagonal indicate how much variance there is along each dimension. The off-diagonal elements indicate how much co-variance there is between dimensions.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-069">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-069" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0069.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
-            <p    >While Naive Bayes can work surprisingly well (given how strong and incorrect the assumption is), with these estimators, we do run into a problem if for some feature a particular value does not occur. In that case, we estimate the probability as 0.</p><p    ></p>
+            <p    >The <em>standard</em> MVN has its mean at the origin and the identity matrix as its covariance matrix (i.e. its features are uncorrelated, and the variance is 1 along every dimension).</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-070">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-070" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0070.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0070.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Since the whole estimate of our probability is just a long product, if one of the factors becomes zero, <strong>the whole things collapses</strong>. Even if all the other features gave this class a very high probability, that information is lost.<br></p><p    ></p>
+            <p    >The estimators for the <strong class="orange">sample mean</strong><span class="orange"> </span><strong class="orange">m</strong><span class="orange"> </span>and <strong class="blue">sample covariance S</strong> look like this. Computing these values lets you fit an MVN to your data.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-071">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-071" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0071.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0072.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To remedy this, we need to apply <strong>smoothing</strong>. The simplest waY to do that is to add pseudo-observations. For each possible value, we add one instance where all the features have that value. This may seem like we're ruining our data with fake examples, but if we have a large dataset the impact should be minimal (and we'll see a way to minimize the impact even further later).<br></p><p    >(We should do the same for the class <span class="green">ham</span>).</p><p    ></p>
+            <p    >As before, we will imagine that our data originall came from a standard MVN, and was then transformed to the data we observed by multiplying each point by some matrix A (changing the basis) and then adding some vector t (moving the mean away from the origin).<br></p><p    >We can<em> sample</em> a point<em> </em><strong>x</strong><em> </em>from an n-dimensional standard MVN by simply filling a with values sampled from a one-dimensional standard normal distribution.<br></p><p    >If we then transform <strong>x</strong> by multiplying it by some matrix <strong>A</strong> and adding some vector <strong>t</strong>, the result is the same as sampling from an MVN with mean<strong> </strong><strong class="orange">t</strong><strong> </strong>and covariance <strong class="blue">AA</strong><sup class="blue">T</sup><sub>.<br></sub></p><p    >Any MVN can be described in this way as a transformation of the standard normal distribution.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-071" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-072" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0072anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0072anim0.svg,31.ProbabilisticModels1.key-stage-0072anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0073anim0.png" data-images="22.Methodology2.key-stage-0073anim0.png,22.Methodology2.key-stage-0073anim1.png,22.Methodology2.key-stage-0073anim2.png" class="slide-image" />
 
             <figcaption>
-            <p    >This changes our estimates as shown here. In practice, we don’t actually need to add the pseudo-observations, we just change our estimator.<br></p><p    >Here, v is the number of different values X<sub>1</sub> can take.<br></p><p    >If we are worried about the impact of the pseudo-observations we can reduce the weight they have among the observations. For all other observations the weight is 1 in all relative frequencies. By replacing 1 for the pseudo-observations with λ, and setting this to a low value like 0.01, we get the estimator shown. This makes the impact of the pseudo observations very small, but it still ensures that we will never see a zero.<br></p><p    >If you do a Bayesian analysis, you can derive exactly this estimator by setting a particular prior. In fact, many common priors can be framed as pseudo-obervations. We won't dig into this in the course, but it is very neat.</p><p    ></p>
+            <p    >Here’s what that looks like. For our data. We imagine some data sampled from a standard MVN. We multiply by some some matrix <strong>A</strong> to squish and rotate it. And then we apply a translation vector <strong>t</strong> to translate it to the right point in space.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -845,17 +840,17 @@ slides: true
 
        <section id="slide-073">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-073" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0073.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0074.png" class="slide-image" />
 
             <figcaption>
-            <p    >Naive Bayes is commonly associated with categorical features (to which Bernoulli or Categorical distributions are fitted), but it can also be used with numerical features. If we use normal distributions, then the independence assumption means that we fit a univariate normal distribution to each feature independently. The distribution over the whole space for each class then becomes a multivariate normal whose covariance matrix is diagonal (all off-diagonal elements are zero). Visually, this means that the distribution looks like an ellipsoid that is stretched along the axes. <br></p><p    >The kind of ellipse shown on the bottom, which is stretched in an abitrary direction <em>is</em> a multivariate normal, but not one where the features are independent. So this kind of fit would only be allowed in a non-naive Bayes classifier. Note that this requires full covariance matrix to specify, so that the number of model parameters grows quadratically with the number of features, while the number of parameters for the Naive Bayes classifier only grows linearly.<br></p><p    >source: <a href="http://learning.cis.upenn.edu/cis520_fall2009/index.php?n=Lectures.NaiveBayes"><strong class="blue">http://learning.cis.upenn.edu/cis520_fall2009/index.php?n=Lectures.NaiveBayes</strong></a></p><p    ><a href="http://learning.cis.upenn.edu/cis520_fall2009/index.php?n=Lectures.NaiveBayes"><strong class="blue"></strong></a></p>
+            <p    >Now, we need to invert this. Given some data, we fit an MVN, find out which A and t match that MVN, and then invert the transformation from the standard MVN to the onserved data.<br></p><p    >In slide 69, we saw that the covariance after our transformation was <strong>AA</strong><sup>T</sup>, so if we  estimate the covariance <strong>S</strong> and find some matrix <strong>A</strong> such that <strong>AA</strong><sup>T</sup> = <strong>S</strong>, we can then use that <strong>A</strong> for the inverse transformation. Finding this <strong>A</strong> can be done in many ways. The most stable and popular one is the Singular Value Decomposition, which leads to a method known as PCA whitening, discussed in the next video.<br></p><p    >Since the multiplication by <strong>A</strong> doesn’t change the mean, we know that the translation vector <strong>t</strong> is equal to the mean <strong>m</strong>.<br></p><p    >Once we know <strong>A</strong> and <strong>t</strong>, we can reverse the transformation as shown here. <br></p><p    >Compare this to the standardisation operation: there, we subtract the mean, and multiply by the inverse of the standard deviation. Here we do the same, but in multiple dimensions <br></p><p    >Note that the standard deviation is the square root of the variance, just like the <strong>A</strong> matrix squared is the covariance.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-074">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-074" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0074.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0075.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
@@ -865,7 +860,7 @@ slides: true
        <section class="video" id="video-074">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-74">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/EYhxR22Ta88?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/JC5rb5FmTjk?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -875,60 +870,68 @@ slides: true
 
        <section id="slide-075">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-075" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0075.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr><br></p><p    ></p>
+            <p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-076">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-076" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0076.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0077.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we’ll look at an example of a discriminative classifier: <strong>logistic regression</strong>. This is a classifier that learns to map the features directly to class probabilities, without using Bayes’ rule to reverse the conditional probability. <br></p><p    >The name logistic <span>regression</span> is very confusing, but in the modern view it is a classifier, not a regression model.</p><p    ></p>
+            <p    >Some datasets have more features than a given model can handle. Or, maybe the model can handle it, but it's overfitting on all the noise that so many features introduce.<br></p><p    >In that case, there are two things we can do: we can try to find a subset of the features that is most informative, and operate on those. This has the benefit that the features retain their meaning and are still interpretable. This is called <strong>feature selection</strong>.<br></p><p    >The alternative is to take information from all <em>all</em> features and to map them to a new (smaller) set of derived features, which retain as much of the original information as possible. This is called <strong>dimensionality reduction</strong>. In this case, the new features don’t always have an obvious meaning, but they may still work well for machine learning purposes.<br></p><p    >In this video we will just look at one dimensionality reduction method: Principal Component Analysis (PCA). We won't discuss feature selection, but if you're interested, a good place to start is the methods that come with sklearn: <a href="https://scikit-learn.org/stable/modules/feature_selection.html"><strong class="blue">https://scikit-learn.org/stable/modules/feature_selection.html</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-077">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-077" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0077.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0078.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Remember that we were still on the lookout for good loss functions for the classification problem. We’ll use the language of probability to define one for us.</p><p    ></p>
+            <p    >Dimensionality reduction is the opposite of the feature expansion trick we saw earlier. It describes methods that reduce the number of features in our data (the dimension) by deriving new features from the old ones, hopefully in such a way that we capture all the essential information. There are several reasons you might want to reduce the dimensionality of your data:<br></p><p     class="list-item"><strong>Efficiency.</strong> Some machine learning methods can only handle so many features. If you have a very high dimensional dataset, you may be forced to do some dimensionality reduction in order to be able to run your chosen model.<br></p><p     class="list-item"><strong>Reduce </strong><strong class="orange">variance</strong> of the model performance (make the bias/variance tradeoff). Feature expansion boosts the power of your model, likely giving it higher variance and lower bias. Dimensionality reduction does the opposite: it reduces the power of your model likely giving you higher bias and lower variance.<br></p><p     class="list-item"><strong>Visualization.</strong> If you’re lucky (or if you have a very strong dimensionality reduction method), reducing down to just 2 or 3 dimensions preserves the important information in your data. If so, you can do a scatterplot, and use the power of your visual cortex to analyse your data (i.e. you can look at it).</p><p     class="list-item"></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-078">
+       <section id="slide-077" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-078" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0078.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0079anim0.svg" data-images="22.Methodology2.key-stage-0079anim0.svg,22.Methodology2.key-stage-0079anim1.svg,22.Methodology2.key-stage-0079anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This was our last attempt: the least squares loss.<br></p><p    >Our thinking was: the hyperplane classifier checks if <strong class="orange">w</strong><sup>T</sup><strong>x </strong>+ <span class="blue">b</span> is positive or negative, to decide whether to assign classes <span class="blue">blue</span> (discs) or <span class="orange red">red </span>(diamonds), respectively. Why not just give blue and red some arbitrary positive and negative values (-1 and +1), and treat it as a regression problem?</p><p    ></p>
+            <p    >In this video we will restrict ourselves to <strong>linear reductions</strong>. To create one of the derived features z<sub>1</sub>, the only thing we are allowed to do is to pick one number for each feature, multiply them together and sum the result. These values we multiply by the original features should be the same for all instances.<br></p><p    >If we arrange these multipliers in a vector <strong class="orange">c'</strong>, then we can simply say that the reduced feature is the dot product of the original features <strong class="blue">x</strong> and the parameter vector <strong class="orange">c'</strong>. If we want more than one reduced feature, we can add additional parameter vectors. However, to keep things simple, we start with just one.<br></p><p    >The question is, how do we choose the elements of <strong class="orange">c'</strong>?</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-079">
+
+       <section id="slide-078" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-079" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0079.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0080anim0.svg" data-images="22.Methodology2.key-stage-0080anim0.svg,22.Methodology2.key-stage-0080anim1.svg,22.Methodology2.key-stage-0080anim2.svg,22.Methodology2.key-stage-0080anim3.svg,22.Methodology2.key-stage-0080anim4.svg,22.Methodology2.key-stage-0080anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is another option: instead of assigning the two classes arbitrary values, we assign them <em>probabilities</em>: specifically, <em>the probability of being positive.</em> This is 1 for all <span class="blue">blue</span> points and 0 for all <span class="orange red">red</span> points. In other words, we move the<span class="orange red"> red</span> points from -1 to 0.<br></p><p    >If we fit a line through this, it doesn’t look substantially different to the previous slide, because our function <strong class="orange">w</strong><sup>T</sup><strong>x </strong>+ <span class="blue">b</span> still ranges from negative infinity to positive infinity. It doesn’t produce correct probabilities in the range [0, 1], except over a very narrow range.<br></p><p    >What we need, is a way to squeeze the whole infinite range of the linear function into the range [0, 1], so that the model only ever produces valid probabilities.</p><p    ></p>
+            <p    >Since we're focusing on a single feature for now, we'll drop the subscript and call this feature "z". This is a single scalar value representing our instance <strong class="blue">x</strong>.<br></p><p    >The way we’ll find the parameters <strong class="orange">c'</strong> for our reduction is by optimizing the <strong>reconstruction error</strong>. We’ll come up with some function that reconstructs our data from the reduced point z. The closer this reconstruction is to the original point, the better. It should make some intiuitive sense that the better we can reconstruct <strong class="blue">x</strong> from z, the more information from <strong class="blue">x</strong> has been retained in z.<br></p><p    >We’ll add the constraint that <em>both</em> the function that reduces the data and the function that reconstructs the data should be <strong>linear</strong>. This means that our reconstruction is just some second vector c, which we also get to choose, multiplied by the reduced feature z. We’ll also assume that the data is <strong>mean-centered</strong>, so that we won’t need to apply any translations: the mean of the original data, the reduced data, and the reconstructed data is zero or the zero vector.<br></p><p    >To recap, under these constraints, the reduction function consist of taking the dot product of our vector with some parameter vector <strong>c’</strong>, and the reconstruction function consists of multiplying our reduced representation with some other parameter vector <strong>c</strong>.<br></p><p    >We will try to choose our parameters <strong class="orange">c'</strong> and <strong class="orange">c</strong> in such a way that <strong class="blue">x</strong> is as close as possible to <strong class="blue">x'</strong>. Before we figure out how to do this, we can simplify our problem. We can show that for the optimal solution, the vectors <strong class="orange">c'</strong> and <strong class="orange">c</strong> must be the same. We'll show that first.<br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-079" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-080" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0080anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0080anim0.svg,31.ProbabilisticModels1.key-stage-0080anim1.svg,31.ProbabilisticModels1.key-stage-0080anim2.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0082anim0.svg" data-images="22.Methodology2.key-stage-0082anim0.svg,22.Methodology2.key-stage-0082anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For this purpose, we will use the <strong>logistic sigmoid</strong>. Note that its domain is the entire real number line, and its range is [0,1].<br></p><p    >An interesting property of the logistic sigmoid is the symmetry given in the second line. Basically the remainder between sigma(t) and 1, is itself a sigmoid running in the other direction. In other words: flipping the sigmoid horizontally, 1 - σ(t), gives us the same function as flipping the sigmoid vertically,  σ(-t). We’ll make frequent use of this later.<br></p><p    ><br></p><p    >source: By Qef (talk) - Created from scratch with gnuplot, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4310325"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=4310325</strong></a><br></p><p    ></p>
+            <p    >Here is the reconstruction of x from z isolated in a diagram. Take a moment to study this picture. Note that we have fixed a line by our choice of <strong class="orange">c</strong>, and our reconstruction, because it can only be a multiple of <strong class="orange">c</strong>, must be somewhere on the line. <br></p><p    >We’ll work out what our functions should be in the following order. First, we will assume that we have the reconstruction function, and ask what the best reduction function is to use, in terms of that reconstruction function. Then we will work out an optimization objective for both of them together.<br></p><p    >Imagine that <strong class="orange">c </strong>is fixed. This could be at the optimal value, or some terrible value, but somebody has chosen <strong class="orange">c</strong> for us and we're not allowed to change it. Which value should we choose for z to put <strong class="blue">x'</strong> as close to <strong class="blue">x</strong> as possible?<br></p><p    >The closest we can get <strong class="blue">x’</strong> to <strong class="blue">x</strong> is to put <strong class="blue">x’</strong> where the line between <strong class="blue">x</strong> and <strong class="blue">x’</strong> makes a right angle with the line of <strong class="orange">c</strong>. This is the <strong>orthogonal projection</strong> of <strong class="blue">x</strong> onto <strong class="orange">c</strong>, and if you know your linear algebra, you’ll know the length of z<strong class="orange">c</strong> in this picture is related to the dot product of <strong class="blue">x</strong> and <strong class="orange">c</strong>. Why?</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -937,42 +940,70 @@ slides: true
 
 
 
-       <section id="slide-081">
+       <section id="slide-080" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-081" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0081.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0083anim0.svg" data-images="22.Methodology2.key-stage-0083anim0.svg,22.Methodology2.key-stage-0083anim1.svg,22.Methodology2.key-stage-0083anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >With this, we can build our new classifier: we compute the linear function as before, but we apply the logistic sigmoid to its output , squeezing it into the interval [0, 1]. This means that we can interpret the output as the probability of the positive class. <br></p><p    >This may be a very accurate probability, or a very inaccurate one, depending on how we choose <strong class="orange">w</strong> and <span class="blue">b</span>, but it’s always a value between 0 and 1. Hopefully, if we choose the parameters w and b well, we'll get a probability distribution that assigns high probability to the<span class="blue"> blue</span> points and low probability to the<span class="orange red"> red </span>points.<br></p><p    >Now all we need is a<strong> loss function</strong> that tells us which probabilities match the data.</p><p    ></p>
+            <p    >For our purposes, the length of  <strong class="orange">c </strong>doesn’t matter (if we make <strong class="orange">c</strong> longer or shorter it still defines the same line), so we’ll assume that it has length 1 (that is, it is a <strong>unit vector</strong>).<br></p><p    >From basic trigonometry, we know that the length of the black line is ||<strong class="blue">x</strong>|| cos α. Because ||<strong class="orange">c</strong>|| = 1, we can multiply by that without changing the value, which means that the length of the black line is equal to the dot product between <strong class="blue">x</strong> and <strong class="orange">c </strong>(remember the geometric definition of the dot product)<span class="orange">.</span><br></p><p    >If this seems a bit magical, see <a href="http://peterbloem.nl/blog/pca"><strong class="blue">peterbloem.nl/blog/pca</strong></a> for a more intuitive proof. It all boils down to the pythagorean theorem in the end.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
 
 
-       <section id="slide-082">
+
+       <section id="slide-081" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-082" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0082.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0084anim0.svg" data-images="22.Methodology2.key-stage-0084anim0.svg,22.Methodology2.key-stage-0084anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For this we'll introduce the <strong>log(arithmic) loss</strong>. This is also know as the (binary) cross-entropy loss, for reasons we'll explain in the next video.<br></p><p    >At heart, this is just the maximum likelihood principle at work. We have some data, the class labels, and a model with some parameters, <strong class="orange">w</strong> and <span class="blue">b</span>. We are looking for the parameters that maximize the probability of the data.</p><p    ></p>
+            <p    >What this tells us, is that the projection of <strong>x</strong> onto <strong>c</strong> is found by taking their dot product. Since <strong>c</strong> has length one, this is the value that we want to multiply <strong>c</strong> by to get to <strong>x’</strong>.<br></p><p    >In other words, given <strong>c</strong>, we now know how to find our reduced data z, we take the dot product of the original features <strong class="blue">x</strong> with our reconstruction vector <strong class="orange">c</strong>.<br></p><p    >Taking the dot product of <strong>x</strong> with a parameter vector happens to be our reduction function. This means that we can set the vector in the reduction function equal to the vector in the reconstruction function: <strong class="orange">c'</strong> = <strong class="orange">c</strong>.<br></p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-083">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-083" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0083.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0085.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We assume that the instances in our data are independent, so that the probability of all class labels is just the probabilities of the individual class labels multiplied together. Since we have a discriminative classifier, we are not modeling the features. We take them as given and directly maximize the probility of the labels given the features.</p><p    ></p>
+            <p    >Here’s how this has simplified our picture. The reduction and and reconstruction now have the same parameters <strong class="orange">c</strong>. Note that this required an additional assumption: that <strong class="orange">c</strong> is a unit vector.<br></p><p    >So here's the model: we pick some unit vector <strong class="orange">c</strong>, project our data onto it to represent it as a single scalar z, and then, to reconstruct the data, multiply <strong class="orange">c</strong> by z. As you can see, the reconstructed data necessarily lie on a line. All we are looking to do is to get these reconstructions as close to the original points as possible. If we manage that, it's reasonable to assume that we retained some information from the original features in the single reduced feature z.<br></p><p    >The only remaining question is, which <strong class="orange">c</strong> should we choose to minimize the reconstruction error?<br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-083" class="anim">
+       <section id="slide-084">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-084" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0084anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0084anim0.svg,31.ProbabilisticModels1.key-stage-0084anim1.svg,31.ProbabilisticModels1.key-stage-0084anim2.svg,31.ProbabilisticModels1.key-stage-0084anim3.svg,31.ProbabilisticModels1.key-stage-0084anim4.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0086.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Since, as we've seen, the logarithm of the probability of often better behaved, we will maximize the log-probability of the class labels given the features. Since we like to minimize—we are looking for a<em> loss function</em> so lower should be better—we stick a minus in front of the log probability and change the argmax to an argmin.<br></p><p    >Then, the multiplication can be moved out of the logarithm, turning it into a sum. <br></p><p    >Finally, we separate the data into the positive and negative classes. Our loss function says that for the positive poitns we want to maximize the log probability the classifier assigned to the point being positive and for the negative classes we want to maximize the probability that the classifier assigns to the point being negative. Hopefully, this sounds intuitive so far.</p><p    ></p>
+            <p    >Here's some randomly generated data. Remember, we assumed that the data would be mean centered. Let's first pick a random direction <strong class="orange">c</strong>. And see what we get.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-085">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-085" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0087.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Here it is. The red points are our reconstructions. For each point, the new feature z is the distance from the origin to the red point. The grey lines indicate how far the reconstruction is from the original data. Note that these grey lines are orthogonal to the line described by <strong class="orange">c</strong>, because we are reducing our data by orthogonally projecting it onto <strong class="orange">c</strong>.<br></p><p    >Clearly, this is not a very good choice for <strong class="orange">c</strong>. The grey lines could be much shorter. This is how we’ll optimize for c. <strong>We’ll sum up the squares of the grey lines and minimize those.<br></strong></p><p    >We can think of optimizing <strong class="orange">c</strong> as making the grey lines rubber bands, that pull on the line representing <strong class="orange">c</strong> (which pivots around the origin). <br></p><p    >This is a lot like linear regression, but the task is slightly different. Note that there is no target attribute here, and the "residuals" are not parallel to one of the axes. <br></p><p    >Doing regression with the residuals drawn like this is sometimes called <span>orthogonal regression</span>.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-085" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-086" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0088anim0.svg" data-images="22.Methodology2.key-stage-0088anim0.svg,22.Methodology2.key-stage-0088anim1.svg,22.Methodology2.key-stage-0088anim2.svg,22.Methodology2.key-stage-0088anim3.svg,22.Methodology2.key-stage-0088anim4.svg,22.Methodology2.key-stage-0088anim5.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >To find <strong>c</strong>, we will simply state our goal as an optimization objective. We want to find the <strong>c</strong> for which the squared distance between the data and the reconstructed data is minimized. We first fill in the definition of the reconstruction, and then the definition of the optimal z.<br></p><p    >In the definition of the Euclidean distance, the square root cancels our against the square in our optimization, so that we are left with a sum of the squares over every dimension i in every reconstructed instance <strong>x’</strong>.<br></p><p    >This leaves us with a simple objective to which we can apply any search algorithm, like gradient descent. One thing we must remember: we required that <strong>c</strong> is a unit vector. <br></p><p    >This means we have an optimization problem with <em>a constraint</em>. This is a technical subject, that we’ll see more of in lecture 6. For now, we can solve this problem by applying gradient descent and normalizing the vector <strong class="orange">c</strong> to scale it back to a unit vector after every gradient update. This is called the projection method for constrained optimization. It doesn’t always work, but it does here.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -981,140 +1012,132 @@ slides: true
 
 
 
-       <section id="slide-085">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-085" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0085.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Before we move on, let's try to visualize what we have so far.<br></p><p    >In the least-squares case, the loss function could be thought of in terms of the <em>residuals</em> between the prediction and the true values. They pull on the line like rubber bands.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-086">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-086" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0086.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >For the logarithmic loss on the logistic classifier, we can imagine the residuals as the lines drawn here. The logarithmic loss tries to maximize the sum of their logarithm (or minimizetheir negative logarithm).<br></p><p    >You can think of them as little rods pushing up (for the blue rods) and down (for the red rods) on the sigmoid function to push it towards the relevant instances.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
        <section id="slide-087">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-087" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0087.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Remember that in the least squares loss we squared the residuals before summing them, to punish outliers. Taking the logarithm has a similar effect. For those instances where the probability is near the value it should be, we are taking the negative logarithm of a value very close to zero. That means that there points, which are far away from the decision boundary, contribute very little to the loss.<br></p><p    >The next question is how do we minimize this loss? We'll use gradient descent, which means that we need to work out the derivatives with respect to the parameters. <br></p><p    ></p>
+            <p    >We run gradient descent and this is the solution that we find.  It looks pretty good. It’s hard to imagine any other line c leading to shorter grey lines.<br></p><p    >Note that the data is much more spread out along this line than it was for our earlier choice of <strong class="orange">c</strong>.<br></p><p    >We call this <strong>c</strong> the<strong> first principal component</strong> of the data.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-088">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-088" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0088.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The next couple of slides show a complicated derivation. You should do your best to go through this step by step. There are a couple more of these coming up in the course, so if you don't take the time to get used to them, you'll struggle later on. If you do take the time, I promise it gets easier with a little practice.<br></p><p    >You don't, however, have to understand this <em>right away</em>. If you struggle to follow along,<em> just look at the start and end points</em>. Try to figure out what the derivation is trying to show and why this is important. Then, move on to the rest of the lecture and come back for the details later. <br></p><p    >If you haven't done the second homework exercise yet, it may be better to do that first, and then come back to this part of the video. After that exercise, you should have a more practical understanding of what we're trying to do here.</p><p    ></p>
+            <p    >If we want to reduce the dimensionality to more than one dimension, we repeat the process. Keeping the first principal component fixed, the second principal component is the one orthogonal to the first that minimizes the reconstruction loss. This gives us two directions, orthogonal to one another, to project onto. Our reduced dataset has two features.<br></p><p    >Each next principal component is the direction orthogonal to all the previous ones, that minimizes the loss, when the data is reconstructed <em>using all of them</em>.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-088" class="anim">
+       <section id="slide-089">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-089" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0089anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0089anim0.svg,31.ProbabilisticModels1.key-stage-0089anim1.svg,31.ProbabilisticModels1.key-stage-0089anim2.svg,31.ProbabilisticModels1.key-stage-0089anim3.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0091.svg" class="slide-image" />
 
             <figcaption>
-            <p    >What we need is the derivative of the loss with respect to every parameter of the model. We'll work it out for the weights <span class="orange">w</span><sub class="orange">i</sub> and take the bias <span class="blue">b</span> as read. <br></p><p    >We’ll show you the basics of working out the gradient for logistic regression. The first step is to break the loss apart in separate terms for the positive and negative points. We'll look at the positive term in detail (the negative term can be derived in a similar way).</p><p    ></p>
+            <p    >If you’ve heard about PCA before, you may be surprised by this definition using reconstruction loss. Usually, the principal components are defined as the directions in which the<em> variance</em> of the projected data is maximized. The best <strong class="orange">c</strong> is the line along which the orthogonal projections are the most spread out.<br></p><p    >The first principal component is the line along which the variance of the data is maximal when projected onto the line. The second principal component is the line orthogonal to the first for which the variance is maximal, and so on.<br></p><p    >It turns out, these two definitions are equivalent.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-089" class="anim">
+       <section id="slide-090">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-090" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0090anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0090anim0.svg,31.ProbabilisticModels1.key-stage-0090anim1.svg,31.ProbabilisticModels1.key-stage-0090anim2.svg,31.ProbabilisticModels1.key-stage-0090anim3.svg,31.ProbabilisticModels1.key-stage-0090anim4.svg,31.ProbabilisticModels1.key-stage-0090anim5.svg,31.ProbabilisticModels1.key-stage-0090anim6.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0092.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is just one positive term: the derivative of the positive log-probability assigned to one of the positive points x, with respect to the weight <span class="orange">w</span><sub class="orange">i</sub>.<br></p><p    >In the second line we fill in the definition of the sigmoid, and move the division outside the logarithm (turn it into a minus).<br></p><p    >Then, we use the chain rule to move 1+exp(...) out of the logarithm.<br></p><p    >For the fourth line, note that.<span>d</span> log<sub>b</sub>(x)/ <span>d</span>x = (1 /(ln b)) (1/x). On the right, the "1 + " disappears, because it's a constant term.<br></p><p    >Next, we use the chain rule again to move out of the exp. Remember that the derivative of the exponential is itself.<br></p><p    >Finally, the derivative of the linear function with respect to <span class="orange">w</span><sub class="orange">i</sub> is just "-x<sub>i</sub>". The rest we can sweep into one complicated-looking factor. It just so happens that this factor is the alternative expression for the sigmoid we saw in slide 80. R<br></p><p    >Rewriting this we see that this factor is actually 1 minus the output of our classifier. Since our classifier outputs the probability of positive, this is the probability of negative, according to our classifier.<br></p><p    ><br></p><p    >NB: If we use the binary logarithm, we get a constant multiplier (1/ln2) in the fourth line. We can ignore this, because it doesn’t change the direction of the gradient, only the magnitude. When we apply gradient descent we scale the gradient by a constant multiplier anyway, so we can ignore it.<br></p><p    >If we use the natural logarithm, this multiplier disappears (but then we lose an interpretation of the log loss that we will discuss in the next part).</p><p    ></p>
+            <p    >Let’s look at the one dimensional reduction again to show why.<br></p><p    >The variance of a one-dimensional dataset is defined as the average of the squares of all the distances to the data-mean. In our case, both the data and the reduction are mean-centered, so the variance is just the sum of all the squares of the z’s; our reduced representations. In this picture, the length of the orange vector.<br></p><p    >Thus, maximising the variance, means choosing c so that the (squared) length of the orange vector is maximized<br></p><p    >This arrangement into a right-angled triangle means that the<span class="blue"> magnitude of the original data</span> (<span class="blue">p</span>, the squared distance to the mean) is related to the <span class="orange">variance of the projected data</span> (<span class="orange">q</span>) and the reconstruction error (r, in black)<span class="blue"> </span>by the Pythagorean theorem. <br></p><p    >Since <span class="blue">p</span>, the magnitude of the original data, is a constant,  <span class="orange">q</span><sup>2</sup> + r<sup>2</sup> is constant,  and minimizing the squared reconsturction error r<sup>2 </sup>is equivalent to maximising the variance of the projected data <span class="orange">q</span><sup>2</sup>.<br></p><p    >In the variance maximization view of PCA, we often talk about how much variance the reduced data <em>retains</em>, seeing the variance as a kind of “information content” in a representation of the data. A perfect reconstruction has the same total variance as the data.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-091">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-091" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0091.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Note that despite the intimidating formulas in the middle, the result is actually very simple. This is one of the pleasing properties of the logistic sigmoid, it tends to cancel itself out when the derivative is taken.<br></p><p    >In short for this particular instance, and weight i, the derivative is the i-th feature times the probability, according to the current parameters that this instance is negative.<br></p><p    >Consider what this means in a gradient descent setting: this value here is what we want to subtract from the current value of <span class="orange">w</span><sub class="orange">i</sub> to better fit the classifier to this particular point x.  Imagine that the classifier does badly at the moment: to this<span class="blue"> positive</span> point it assigns a large probability for the <span class="orange red">negative</span> class, so q<sub>x</sub>(<span class="orange red">N</span>) is large. <br></p><p    >If x<sub>i</sub> is a large positive value, then gradient descent subtracts a large negative number, - q<sub>x</sub>(<span class="orange red">N</span>)x<sub>i</sub>, from <span class="orange">w</span><sub class="orange">i</sub>. This makes it bigger, increasing the sum the sum <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> and reducing the probability σ(<strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span>) that the classifier assigns to the positive class. If xi is a large negative number, we go in the opposite diraction.<br></p><p    >If, however, the classifier already does well, assigning this positive point a large <span class="blue">positive</span> probability, then q<sub>x</sub>(<span class="orange red">N</span>) is very close to 0, and the gradient descent for this particular point is tempered.</p><p    ></p>
+            <p    >To apply PCA, we need to choose the number of dimensions to reduce to. We can just treat this as a hyperparameter and test different values. <br></p><p    >But if we plot the variance or the reconstruction loss against the number of components, we often see a natural <em>inflection</em> point. In this case, we can retain the majority of the variance in the data by keeping only the first three principal components. The higher components still add a little variance each, but not much.<br></p><p    >What happens if we keep going until the new data has the same number of features as the original?<br></p><p    >source: <a href="http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/"><strong class="blue">http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/</strong></a></p><p    ><a href="http://alexhwilliams.info/itsneuronalblog/2016/03/27/pca/"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
 
 
        <section id="slide-092">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-092" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0092.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0094.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we work out the derivative for the other term, we get a predictable result: the same form, but with q<sub>x</sub>(<span class="blue">P</span>) instead of q<sub>x</sub>(<span class="orange red">N</span>) and a minus instead of a plus.<br></p><p    >So there we have it: the gradient for a linear classifier, fed through a sigmoid function, producing a logarithmic loss.</p><p    ></p>
+            <p    >If we do that, we get perfect reconstructions, but our z’s are still different from the original coordinates. We end up expressing the data in another <strong>basis</strong>. It turns out, that this actually gives us a <strong>whitening</strong> of the data: in the new basis, the data is uncorrelated, with variance 1 along each axis.<br></p><p    >The different principal components <strong class="orange">c</strong> are unit vectors, which are by definition all mutually orthogonal. This means that the vectors <span class="orange">c</span> form an orthonormal basis. If we multiply each with the standard deviation of the data projected onto <strong class="orange">c</strong>, we end up with a whitening basis.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-093">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-093" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0093.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><em>Regression</em> is a bit of misnomer, since we’re building a classifier. I suppose the confusing terminology comes from the fact that we’re fitting a (curved) line through the probability values in the data. Just one of the many confusing names in the field of machine learning, I'm afraid.<br></p><p    >Anyway, not that we have a gradient, we can apply gradient descent. Let's see the model in action.</p><p    ></p>
+            <p    >This way of whitening is called <strong>PCA whitening</strong>. We apply PCA with the same number of target dimensions as data dimensions. This gives us an orthonormal basis in which the data is uncorrelated. If we then measure the standard deviation along each component and multiply the basis vectors by that, we get a basis in which the data is whitened.<br></p><p    >While σ and<strong class="orange"> c</strong> together is not an orthonormal basis, <strong>c</strong> by itself is. Thus, we can still easily transform back and forth between the whitened basis and the original data coordinates.<br></p><p    >Note also that this implies that if we used PCA for dimensionality reduction, the data will also be whitened (if we standardize it afterwards). The first n principal components are always the same, no matter how many more we decide to compute. Thus, the PCA reduction just gives us the k most important dimensions of the PCA whitened data.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-094">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-094" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0094.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0096.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a 2D dataset that shows a common failure case for the least squares classifier. The points at the top are so far away from the ideal decision boundary that they will have huge residuals under the least squares model. There are no red points on the opposite side to balance them out.</p><p    ></p>
+            <p    >If you’ve heard about PCA before, you may be wondering why I haven’t discussed eigenvector, or singular value decompositions. These topics are only necessary if you want to know the deeper workings of PCA, and if you want to compute it efficiently.<br></p><p    >Computing PCA by gradient descent, one component at a time is illustrative, but in practice, there are far more efficient and precise ways to do it. <br></p><p    >To understand PCA better, and to see the relation to eigenvectors, see <a href="http://peterbloem.nl/blog/pca-2"><strong class="blue">peterbloem.nl/blog/pca-2</strong></a>.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-095">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-095" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0095.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0097.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is what the least-square regression converges to. Clearly, this is not a satisfying solution for such an easily separable dataset. The blue points at the top are so far from the decision boundary.<br></p><p    >In the linear models 1 lecture, we fixed one of the parameters to 1, so that we could plot the loss surface. This time, we’re optimizing all three parameters.<br></p><p    ></p>
+            <p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-096">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-096" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0096.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0098.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a 1D view of a similar situation. The green bar is the decision boundary that we want, but any line that the cross the horizontal axis there has really big residuals for the far away points. These pull on the line with a quadratic strength, so the decision boundary will always be pulled toward them</p><p    ></p>
+            <p    >This may seem like a lot of math and complexity for something so simple as reducing the dimensionality of a dataset. <br></p><p    >But it turns out that these principal components are actually extremely versatile, and can give us a lot of insight into our data.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-096" class="anim">
+       <section id="slide-097">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-097" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0097anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0097anim0.svg,31.ProbabilisticModels1.key-stage-0097anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0099.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The logistic model doesn’t have this problem.If the model fits well around the ideal decision boundary, it doesn’t have to worry at all about points that are far away (if they’re on the right side of the boundary),</p><p    ></p>
+            <p    >We’ll start with an example of how PCA is often used in research. Imagine you’re a palaeontologist, and you find a shoulder bone, belonging to some great ape.<br></p><p    >If you are a trained anatomist specialising in primates, you can easily tell for a single shoulder bone whether it’s an early hominin fossil, which is a very rare find, or a chimpanzee fossil which isn’t rare. But how do you then substantiate this? “It’s true because I can see that it is” is not very scientific.<br></p><p    >image source: <a href="https://science.sciencemag.org/content/338/6106/514.full"><strong class="blue">https://science.sciencemag.org/content/338/6106/514.full</strong></a></p><p    ><a href="https://science.sciencemag.org/content/338/6106/514.full"><strong class="blue"></strong></a></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-098">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-098" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0100.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Here’s one common approach. Take a large collection of the same specific bone (the <em>scapula,</em> or shoulder blade, in this case) from different apes and humans, and take a bunch of measurements (features) of each. Do a PCA, and plot the first two principal components. As you can see, the different species form very clear clusters, even in just two dimensions. <br></p><p    >When we find a new fossil, we can see where it ends up in this space, and we can then show that what we’ve found is clearly closer to human than to chimp just by measuring it, and projecting it into this space.<br></p><p    >Note also, that this data gives us some clues about how humans might have developed. The proto-humans <em>Australopithecus Afarensis </em>and <em>Australopithecis Sediba</em>, are both on a straight line between the cluster of Bonobos, Chimps and Gorillas on one side and modern humans on the other. These are indeed the great apes considered to be most like the ones from which we developed.<br></p><p    >source: Fossil hominin shoulders support an African ape-like last common ancestor of humans and chimpanzees. Nathan M. Young, Terence D. Capellini, Neil T. Roach and Zeresenay Alemseged <a href="http://www.pnas.org/content/112/38/11829"><strong class="blue">http://www.pnas.org/content/112/38/11829</strong></a><br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-098" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-099" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0101anim0.png" data-images="22.Methodology2.key-stage-0101anim0.png,22.Methodology2.key-stage-0101anim1.png" class="slide-image" />
+
+            <figcaption>
+            <p    >Here is another example of what PCA can tell us about a high-dimensional dataset.<br></p><p    >In this research, the authors took a database of 1387 Europeans and extracted features from their DNA. They used about half a million sites on the DNA sequence where DNA varies among humans (i.e. 1387 instances: people, and 500k features: DNA markers). They also recorded where their subjects (or their immediate ancestors) were from.<br></p><p    >Only the DNA data was fed to the PCA algorithm, with the person’s origin only used afterward to color the points.<br></p><p    >It turns out that the two principal components of this data largely express how far north the person lives, and how far east the person lives. This means that if you plot the data in the first two principal components, <strong>you get a fuzzy picture of Europe</strong>. <br></p><p    >In short, the large scale geography of Europe can be extracted from our DNA. If I sent a large sample of European DNA to some aliens on the other side of the galaxy who’d never seen our planet, they could use it to get a rough idea of our geography.</p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -1123,112 +1146,90 @@ slides: true
 
 
 
-       <section id="slide-098">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-098" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0098.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >And here is the logistic regression classifier. </p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-099">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-099" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0099.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >And here is the probability function (blue is high probability of <span class="blue">positive</span>, red is high probability of <span class="orange red">negative</span>).</p><p    ></p>
-            </figcaption>
-       </section>
-
-
        <section id="slide-100">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-100" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0100.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0102.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Note that for such well-separable classes, there are many suitable classifier, and logistic regression has no reason to prefer one over the other (all points are assigned the correct probability very close to 1). We’ll see a solution to this problem next lecture, when we meet our final loss function: the SVM loss.</p><p    ></p>
+            <p    >Finally, possibly the most magical illustration of PCA: <strong>eigenfaces</strong>. <br></p><p    >Here we have a dataset (which you can easily get from sklearn) containing 400 images, in 64x64 grayscale, of a number of people. The lighting is nicely uniform and the facial features are always in approximately the same place.<br></p><p    >We take each pixel as a feature, giving us 400 instances each represented by a 4096-dimensional feature vector. Note that this essentially flattens the image into one long vector, ignoring the grid structure of the pixels.<br></p><p    >The prefix eigen- comes from the eigendecomposition often used to derive the PCA analysis. It’s out of scope for us, but you should hopefully remember eigenvectors from you linear algebra. It turns out the eigenvectors of the covariance matrix <a href="http://peterbloem.nl/blog/pca-2"><strong class="blue">are the principal components</strong></a>.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-101">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-101" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0101.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >Here is the sample mean of our data, re-arranged back into an image.</p><p    ></p>
             </figcaption>
        </section>
 
-       <section class="video" id="video-101">
-           <a class="slide-link" href="https://mlvu.github.io/lecture05#video-101">link here</a>
-           <iframe
-                src="https://www.youtube.com/embed/mSneVjDvzNQ?modestbranding=1&showinfo=0&rel=0"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
-
-       </section>
 
        <section id="slide-102">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-102" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0102.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0104.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The last video was all about defining a probability p(x) and then taking the negative logarithm of that probability. We justified this by saying that the logarithm of the likelihood is easier to work with, and that as a convention we tend to minimize rather than maximize in machine learning  so we took the negative of the log likelihood. All very pragmatic.<br></p><p    >But actually, there is a very concrete meaning to the negative log likelihood of a probability, that can really help to deepen our understanding of what we are doing when we use probabilities in machine learning. To understand this, we need to dig briefly into the topic of information theory. This will not just help us understand probability from a new perspective, it will also provide us with the concept of <strong>entropy</strong>, which is an important toll we will use at different points in the course.<br></p><p    ><lnbr></lnbr><br></p><p    ></p>
+            <p    >Once we have the principal components, each a 4096-dimensional vector, we can take their values, assign them a color, like red for negative values, blue for positive values, and re-arrange them back into images. Remember, every dimension represents a pixel.<br></p><p    >These are the first 30 principal components displayed this way (top left is the first, to the right of that is the second and so on).</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-103">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-103" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0103.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0105.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Imagine you’re on holiday, and you’ve brought your travel monopoly. Unfortunately, the dice have gone missing. You do however, have a coin with you. Can you use the coin flip to simulate the throw of a six sided  die?</p><p    ></p>
+            <p    >Here is one way to interpret the principal components: the basis vectors that are most natural for our data. Remember, PCA is also a whitening operation. <br></p><p    >The first principal component is the direction that captures most of the variance of our data. Or, projecting our data down to the first principal component gives us the lowest reconstruction error. <br></p><p    >We can visualize this space, by starting at the data mean, and adding a small bit of the nth principal component.<br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-104">
+       <section id="slide-103" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-104" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0104.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0106anim0.svg" data-images="22.Methodology2.key-stage-0106anim0.svg,22.Methodology2.key-stage-0106anim1.svg,22.Methodology2.key-stage-0106anim2.svg,22.Methodology2.key-stage-0106anim3.svg,22.Methodology2.key-stage-0106anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For a four sided die, the solution is easy. We flip the coin twice, and assign a number to each possible outcome.<br></p><p    >source: <a href="http://www.midlamminiatures.co.uk/blackpolydice/D4Black.html"><strong class="blue">http://www.midlamminiatures.co.uk/blackpolydice/D4Black.html</strong></a></p><p    ><a href="http://www.midlamminiatures.co.uk/blackpolydice/D4Black.html"><strong class="blue"></strong></a></p>
+            <p    >Starting from the mean face (in the middle column), we take little steps along the direction of one of our principal components (or in the opposite direction). These are the first five.<br></p><p    >We see that moving along the first principal component roughly corresponds to ageing the face. Moving along the fourth seems to make the face more feminine.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-105">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-105" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0105.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0107.svg" class="slide-image" />
 
             <figcaption>
-            <p    >A six sided die is more tricky. We’ll show the solution for three “sides” (you can just add another coin flip to decide whether it’ll be 1,2,3 or 4,5,6.)<br></p><p    >The trick is to assign the fourth outcome to a “reset”. If you throw two heads in a row, you just start again. Theoretically you could be coin flipping forever, but the probability of resetting more than five times is already less than one in one-thousand.<br></p><p    >For now let’s stick with trees where each outcome is represented by only one leaf (and accept that the six-sides die cannot be perfectly modelled with a coin). What distributions can we model with a coin in this way, if we require each outcome to be represented by one leaf in the tree?</p><p    ></p>
+            <p    >Instead of starting at the mean face, we can also start at some other point, like one of our instances, and add or subtract small bits of the principal components.<br></p><p    >The reason that we can add the principal components directly to the data like this is that the reduction and reconstruction are linear operations. If we use nonlinear versions of PCA, this trick won't work anymore. Details in the reading materials.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-106">
+       <section id="slide-105" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-106" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0106.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0108anim0.svg" data-images="22.Methodology2.key-stage-0108anim0.svg,22.Methodology2.key-stage-0108anim1.svg,22.Methodology2.key-stage-0108anim2.svg,22.Methodology2.key-stage-0108anim3.svg,22.Methodology2.key-stage-0108anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here are two examples: an exponentially decaying distribution, and a (roughly) polynomially decaying one.</p><p    ></p>
+            <p    >The middle column represents the starting point. To the right we add the k-th principal component, to the left we subtract it. Note, in particular the effect of the fifth principal component: subtracting it opens the mouth, and adding it seems to push the lips closer together.</p><p    ></p>
             </figcaption>
+
+            <span class="hint">click image for animation
+            </span>
        </section>
+
 
 
        <section id="slide-106" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-107" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0107anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0107anim0.svg,31.ProbabilisticModels1.key-stage-0107anim1.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0109anim0.png" data-images="22.Methodology2.key-stage-0109anim0.png,22.Methodology2.key-stage-0109anim1.png,22.Methodology2.key-stage-0109anim2.png,22.Methodology2.key-stage-0109anim3.png,22.Methodology2.key-stage-0109anim4.png" class="slide-image" />
 
             <figcaption>
-            <p    >These kinds of trees are called prefix-free trees, because they assign a <em>prefix free code</em> to the set of outcomes (we just replace heads and tails with zeros and ones). The benefit is that if we want to encode a sequence of these outcomes, we can just stick the code one after another and we won’t need any delimiters. A decoder will know exactly where each codeword ends and the next begins.</p><p    ></p>
+            <p    >To reconstruct a point, we start with the mean, and add a bit of the first principal component, then of the second principal component and so on.<br></p><p    >If we think of our principal components as a new<strong> basis</strong> for our data, then we are just looking up our point by first moving some distance along the first axis, then along the second axis and so on. Just like we would look up a point given its coordinates in the standard basis. <br></p><p    ><br></p><p    ></p>
             </figcaption>
 
             <span class="hint">click image for animation
@@ -1237,170 +1238,52 @@ slides: true
 
 
 
-       <section id="slide-107" class="anim">
+       <section id="slide-108">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-108" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0108anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0108anim0.svg,31.ProbabilisticModels1.key-stage-0108anim1.svg,31.ProbabilisticModels1.key-stage-0108anim2.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0110.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Every prefix tree defines a probability distribution and a code. What about the other way around? Can we find a tree for any given probability distribution? <br></p><p    >We already saw that some distributions (like a six-sided die) cannot be represented exactly. But how close can we get?</p><p    ></p>
+            <p    >Here’s what that looks like. top left is the mean. To the right is the reconstruction from just the first principal component. Next is what we get is we add the second principal component to that and so on.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-109">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-109" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0109.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0111.svg" class="slide-image" />
 
             <figcaption>
-            <p    >It turns out we can model any distribution in such a way that the biggest difference in codelength is no larger than a bit.<br></p><p    >If we handwave this difference, we can equate codes with probability distributions: every code gives us a distribution and every distribution gives us a code. The higher the probability of an outcome, the shorter its codelength.</p><p    ></p>
+            <p    >After 60 principal components out of a possible 4096, the image starts to look pretty recognizable. We’ve reduced our data from 4096 dimensions to just 60 dimensions, and still retained enough information to tell people apart.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-109" class="anim">
+       <section id="slide-110">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-110" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0110anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0110anim0.svg,31.ProbabilisticModels1.key-stage-0110anim1.svg,31.ProbabilisticModels1.key-stage-0110anim2.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The entropy of a distribution is the expected codelength of an element sampled from that distribution.</p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-110" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-111" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0111anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0111anim0.svg,31.ProbabilisticModels1.key-stage-0111anim1.svg,31.ProbabilisticModels1.key-stage-0111anim2.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The more uniform our distribution is (the more unsure we are) the higher the entropy.<br></p><p    >In the middle, we know something about our distribution, for instance that <span>a</span> is very likely, so we can make the codeword for <span>a</span> a little shorter, reducing the expected codelength (the entropy). On the left, we have no such options, so the entropy is maximal (equal to log<sub>2</sub> N).<br></p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-111" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-112" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0112anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0112anim0.svg,31.ProbabilisticModels1.key-stage-0112anim1.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >What if we don’t use the code that corresponds to the source of our data <span class="orange red">p</span> to encode our data, but some other code based on distribution <span class="blue">q</span>. What is our expected codelength then? This is called the<em> cross entropy</em>.<br></p><p    > <br></p><p    >The cross entropy is minimal when <span class="orange red">p</span>=<span class="blue">q</span> (and equal to the entropy). We can conclude two things:<br></p><p     class="list-item">The code corresponding to<span class="orange red"> p</span> provides the best expected codelength.<br></p><p     class="list-item">The cross entropy is a good way to <strong>quantify the distance between two distributions</strong> (because it’s minimal when the two are the same).</p><p     class="list-item"></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-113">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-113" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0113.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The cross entropy is a nice measure, but it’s not zero when <span class="orange red">p</span> and <span class="blue">q</span> are equal. Instead, it’s equal to the entropy of <span class="orange red">p</span>.<br></p><p    >To get a measure that is zero when the two are equal, we can just subtract the the entropy of <span class="orange red">p</span>. This is called the Kulback-Leibler (KL) divergence. The KL divergence is zero when our model is perfect.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-113" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-114" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0114anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0114anim0.svg,31.ProbabilisticModels1.key-stage-0114anim1.svg,31.ProbabilisticModels1.key-stage-0114anim2.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >This way, we can prove that cross entropy loss is the same as log loss. And indeed this loss function is often called cross entropy loss.<br></p><p    >This is not just a curiosity tying information theory to machine learning, it has practical consequences. It tells us what we should do in the case where the dataset actually provides class probabilities instead of class labels. In that case, we should minimize the cross entropy betwene the predicted distribution and the one given in the data.</p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-115">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-115" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0115.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Just a little head up: entropy is an important subject. It may feel a little abstract now, and it's fine if you don't quite get it, but we will see it in use a number of times throughout the course. <br></p><p    >We will practice it in the homework exercises, so you'll get another chance to get comfortable with it.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-116">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-116" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0116.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >This leads us to the <strong>minimum description length principle</strong>, which informally states that <em>compression</em> and <em>learning</em> are strongly related.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-117">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-117" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0117.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The best way to think of MDL model selection is in a sender and receiver framework. The sender is going to see some data, and is going to send it to the receiver. Before observing the data, the sender and receiver are allowed to come up with any scheme they like. But afterwards, the data must be sent using the scheme, and in a way that is perfectly decodable by the receiver without further communication.<br></p><p    >We usually assume that there is some language to describe a model that the sender chooses. The sender describes the model and then the data given the model.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-117" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-118" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0118anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0118anim0.svg,31.ProbabilisticModels1.key-stage-0118anim1.svg,31.ProbabilisticModels1.key-stage-0118anim2.svg,31.ProbabilisticModels1.key-stage-0118anim3.svg,31.ProbabilisticModels1.key-stage-0118anim4.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >We won’t go into the technical details of MDL, but here we see a broad illustration of how MDL can balance over- and underfitting in a regression problem. <br></p><p    >In a regression (or classification) problem, we can take the instances and their features as fixed: both the sender and receiver have access to them. The data that we want to send over the wire is the target labels; in this case the numbers. How you encode a continuous value is a technical matter that requires some assumptions. For now we can just discretize range of outptus, and assume that we are using a code that means that <strong>bigger number cost more bits</strong>. The same goes for the parameters of the model: these are also continuous values, but we’ll discretize them somehow. Here we only need to assume that using more parameters in your model takes more bits.<br></p><p    >Once we’ve chosen a model we can reconstruct the data by sending the <span class="blue">model parameters</span> and the <span class="green">residual values</span>. On the left, we see that if we pick a linear model we have many large residuals to transmit. On the other hand, our model is described by only two parameters, so we can transmit that part very cheaply. If we make our model a parabola, we require three numbers to transmit it, so that part of  our message gets bigger, but because the model fits so much better, the residuals are much smaller, and the overal length of our message gets much smaller.<br></p><p    >If we make our model a 15-th order polynomial, we get a slightly tighter fit, but not by much, and the price we pay in storing the 16 numbers required to describe our model means that our message length is bigger than for the parabola. So overall we prefer the model in  the middle, according to the minimum description length principle. </p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-118" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-119" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0119anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0119anim0.svg,31.ProbabilisticModels1.key-stage-0119anim1.svg,31.ProbabilisticModels1.key-stage-0119anim2.svg,31.ProbabilisticModels1.key-stage-0119anim3.svg,31.ProbabilisticModels1.key-stage-0119anim4.svg,31.ProbabilisticModels1.key-stage-0119anim5.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >There are many correspondences between using MDL and using Bayes. In fact they are often perspectives on the same thing. For instance, if we choose the model that maximizes the posterior probability, we can rewrite, by introducing a logarithm to show that we are also choosing the model that minimizes the codelength</p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-120">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-120" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0120.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >When we talked about the problem of induction and the no free lunch theorem, we noted that <em>some assumption</em> about the source of our data was necessary to make learning possible at all. Some aspects of our problem we need to assume before we start learning.<br></p><p    >You can think of MDL as encoding a simplicity assumption. We prefer simple solutions over complex ones, and we define a simple solution as one that compresses the data well. The assumption we make about the universe, is that it generated compressible data for us.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-121">
-            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-121" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0121.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0112.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-111">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-111" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0113.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >One final thought to consider:the bias/variance view can cast a new light on the topics we've seen today. Imagine if you have a dataset and you train a linear model on it. We've seen that a linear model can be perfectly optimized by analytical means, so this should be a very efficient approach.<br></p><p    >We've also seen that you can expand its features to make the model more expressive. For instance, this allows a linear model to take the shape of a parabola in the original feature space. We are increasing the model expressivity by doing this. This means that the bias will shrink, because the model will fit the data better, but also that we risk an increase in variance, because the model may begin to overfit.<br></p><p    >The key insight here is that dimensionality reduction, like that provided by PCA, is the opposite of this. If we start with a lot of features already (like all the pixels in an image), then even a simple linear model may already overfit, and put us in the high variance regime. PCA allows us to reduce the features to a mixture that retains only the crucial information: we take information from all features, but we throw away the noise that the model would otherwise overfit on. This pushes us away from the high variance regime, and, if we go too far, towards the high bias regime.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-112">
+            <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-112" title="Link to this slide.">link here</a>
+            <img src="22.Methodology2.key-stage-0114.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >In short, don't think of all the learning coming from the modelling and searching part. A skilled machine learning practitioner can get a lot of mileage out of a plain linear model, and a large amount of clever data preparation. <br></p><p    >And the first thing they will do, is to <strong>look at their data</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
