@@ -208,6 +208,18 @@ def generate(
         if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote:
             red.add(id)
 
+    # check paragraph styles for italics
+    # -- these are taked to be asides
+    itpar = set()
+    styles = root.xpath('.//sf:paragraphstyle', namespaces=root.nsmap)
+    for note in styles:
+
+        id = note.attrib['{http://developer.apple.com/namespaces/sfa}ID']
+        strnote = str(etree.tostring(note, encoding='unicode'))
+
+        if '<sf:italic><sf:number sfa:number="1" sfa:type="i"/>' in strnote:
+                itpar.add(id)
+
     # Check the paragraph styles for list items
 
     # -- Find all list styles that actually represent lists
@@ -279,6 +291,8 @@ def generate(
             elif node.tag == 'p':
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in li:
                     classes.append('list-item')
+                elif node.attrib['{http://developer.apple.com/namespaces/sf}style'] in itpar:
+                    node.tag = 'aside'
                 else:
                     pass
             else:

@@ -92,7 +92,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0007.svg" class="slide-image" />
 
             <figcaption>
-            <p    >So, at heart subjectivism and objectivism are disambiguations. The word probability is ambiguous, and these allow you to make precise what you mean.<br></p><p    >Note that you don’t have to commit to one view or another. At heart subjective and objective probability are just ways to be more precise about what the word probability actually means. You can use the subjective definition one day and the objective definition the next (especially in informal settings).<br></p><p    >However, once you start doing statistics, the two definitions lead to fundamentally different approaches (which we’ll see in more detail later). And in the statistical community there are definitely two camps: the frequentists and the Bayesians, and arguments between the two can get very heated.<br></p><p    >Since machine learning is often seen as another form of statistics, you may ask whether it is usually seen as using subjective or objective probability. I can’t give you a commonly accepted answer, I think opinions differ.<br></p><p    >My view (which is definitely not shared by everyone) is that Machine Learning, while being statistical in nature, is not fundamentally probabilistic. The fundamental principles of machine learning can be defined and explained without recourse to probability theory (and indeed, we have done so for most of the start of the course). The fundamental goal of (offline) machine learning is to minimise test set loss given only a training set, and some hint as to the relation between the two datasets. This definition does not require probability.<br></p><p    >Of course, even if machine learning is not fundamentally probabilistic, probability has proven to be a very powerful tool (much like linear algebra and calculus), in helping us solve this problem. The consequence, is that we can borrow whatever methods are most helpful to us at the time. We’ll use the frequentist methods when we need them, and the Bayesian methods when they prove most helpful. We’ll even happily mix the two in a single model.</p><p    ></p>
+            <p    >So, at heart subjectivism and objectivism are disambiguations. The word probability is ambiguous, and these allow you to make precise what you mean.<br></p><p    >Note that you don’t have to commit to one view or another. At heart subjective and objective probability are just ways to be more precise about what the word probability actually means. You can use the subjective definition one day and the objective definition the next (especially in informal settings).<br></p><p    >However, once you start doing statistics, the two definitions lead to fundamentally different approaches (which we’ll see in more detail later). And in the statistical community there are definitely two camps: the frequentists and the Bayesians, and arguments between the two can get very heated.<br></p><p    >Since machine learning is often seen as another form of statistics, you may ask whether it is usually seen as using subjective or objective probability. I can’t give you a commonly accepted answer, I think opinions differ.<br></p><aside    >My view (which is definitely not shared by everyone) is that Machine Learning, while being statistical in nature, is not fundamentally probabilistic. The fundamental principles of machine learning can be defined and explained without recourse to probability theory (and indeed, we have done so for most of the start of the course). The fundamental goal of (offline) machine learning is to minimise test set loss given only a training set, and some hint as to the relation between the two datasets. This definition does not require probability.<br></aside><aside    >Of course, even if machine learning is not fundamentally probabilistic, probability has proven to be a very powerful tool (much like linear algebra and calculus), in helping us solve this problem. The consequence, is that we can borrow whatever methods are most helpful to us at the time. We’ll use the frequentist methods when we need them, and the Bayesian methods when they prove most helpful. We’ll even happily mix the two in a single model.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -102,7 +102,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0008.svg" class="slide-image" />
 
             <figcaption>
-            <p    >All that was about the<em> interpretation</em> of probabilities. This is what the field of <strong>statistics</strong> is about. We have frequentist statistics and Bayesian statistics.<br></p><p    >The<em> mathematical </em>definition of probability, studied in the field of <strong>probability theory</strong>, which is very different from statistics,<strong> </strong>is entirely distinct from the question of how probability applies to the real world. Both frequentists and Bayesians use the same mathematical framework to express probability as a number between 0 and 1. The only difference between them is in what this number is taken to represent.<br></p><p    >We’ll go through the basic ingredients of probability theory quickly. This is a complex field, and a complete basis is too technical for this course. We'll handwave some of the details, and you can hopefully get by with a little bit of intuition.<br></p><p    >If you plan to make machine learning your main expertise, should probably  resolve to return to the fundamentals of probability theory at some point and learn how everything is properly defined.</p><p    ></p>
+            <p    >All that was about the<em> interpretation</em> of probabilities. This is what the field of <strong>statistics</strong> is about. We have frequentist statistics and Bayesian statistics.<br></p><p    >The<em> mathematical </em>definition of probability, studied in the field of <strong>probability theory</strong>, which is very different from statistics,<strong> </strong>is entirely distinct from the question of how probability applies to the real world. Both frequentists and Bayesians use the same mathematical framework to express probability as a number between 0 and 1. The only difference between them is in what this number is taken to represent.<br></p><p    >We’ll go through the basic ingredients of probability theory quickly. This is a complex field, and a complete basis is too technical for this course. We'll handwave some of the details, and you can hopefully get by with a little bit of intuition.<br></p><aside    >If you plan to make machine learning your main expertise, should probably  resolve to return to the fundamentals of probability theory at some point and learn how everything is properly defined.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -112,11 +112,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0009anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0009anim0.svg,31.ProbabilisticModels1.key-stage-0009anim1.png" class="slide-image" />
 
             <figcaption>
-            <p    >First the <strong>sample space</strong>. These are the single outcomes or truths that we wish to model. If we flip a coin, our sample space is the set of the two outcomes <em>heads</em> and <em>tails</em>.<br></p><p    >We can have discrete sample spaces or continuous ones. In a continuous space, you can imagine that in between any two values there is always another value (like when we measure someone's height very precisely). In a discrete sample space this isn't usually the case.*<br></p><p    >A discrete sample space can also be infinite: consider flipping a coin and counting how many flips it takes to see tails. In this case any number of flips is possible, so the sample space is the  natural numbers (although any number larger than 20 will get an astronomically small probability).<br></p><p    >* <span>As we said before, this is not a proper </span>definition<span> of a continuous space, and there are some odd exceptions, but it should be enough to tell the most common continuous and discrete spaces apart. The proper definition is a bit too technical at this point.</span></p><p    ><span></span></p>
+            <p    >First the <strong>sample space</strong>. These are the single outcomes or truths that we wish to model. If we flip a coin, our sample space is the set of the two outcomes <em>heads</em> and <em>tails</em>.<br></p><p    >We can have discrete sample spaces or continuous ones. In a continuous space, you can imagine that in between any two values there is always another value (like when we measure someone's height very precisely). In a discrete sample space this isn't usually the case.*<br></p><p    >A discrete sample space can also be infinite: consider flipping a coin and counting how many flips it takes to see tails. In this case any number of flips is possible, so the sample space is the  natural numbers (although any number larger than 20 will get an astronomically small probability).<br></p><aside    >* <span>As we said before, this is not a proper </span>definition<span> of a continuous space, and there are some odd exceptions, but it should be enough to tell the most common continuous and discrete spaces apart. The proper definition is a bit too technical at this point.</span></aside><aside    ><span></span></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -146,7 +144,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0012.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Interpreting what a statement including a probability function means depends on whether all variables are “filled in.” <br></p><p    >In the first line, X=0 refers to a single, well-defined event, so p(X=0) refers to a single value between 0 and 1. In the second line we have a classical variable <span class="blue">x</span>, so the statement “X=<span class="blue">x</span>” can refer to different events, depending on what <span class="blue">x</span> is. In other words, here “p(X=<span class="blue">x</span>)” is a function of <span class="blue">x</span>. For example, if <span class="blue">x</span> can take one of two values, -1 or 1, then the function p(X=x) has a range of only two values as shown here. <br></p><p    >Note that this is is not the <em>complete </em>probability function p, since that also assigns probabilities to events like "X=-1 or X=1" and the empty event. <br></p><p    >However, if X=-1 and X=1 are the only two members of the sample space, you can work out the complete probability function from the definition given here.<br></p><p    ></p>
+            <p    >Interpreting what a statement including a probability function means depends on whether all variables are “filled in.” <br></p><p    >In the first line, X=0 refers to a single, well-defined event, so p(X=0) refers to a single value between 0 and 1. In the second line we have a classical variable <span class="blue">x</span>, so the statement “X=<span class="blue">x</span>” can refer to different events, depending on what <span class="blue">x</span> is. In other words, here “p(X=<span class="blue">x</span>)” is a function of <span class="blue">x</span>. For example, if <span class="blue">x</span> can take one of two values, -1 or 1, then the function p(X=x) has a range of only two values as shown here. <br></p><p    >Note that this is is not the <em>complete </em>probability function p, since that also assigns probabilities to events like "X=-1 or X=1" and the empty event. <br></p><aside    >However, if X=-1 and X=1 are the only two members of the sample space, you can work out the complete probability function from the definition given here.<br></aside><p    ></p>
             </figcaption>
        </section>
 
@@ -166,11 +164,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0014anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0014anim0.svg,31.ProbabilisticModels1.key-stage-0014anim1.svg,31.ProbabilisticModels1.key-stage-0014anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >On both discrete and continuous sample spaces, <strong>the events we describe have probability</strong>. Where they differ, in an important way, is in whether a meaningful probability is assigned to the elements of the sample space. Here is how such probabilities are usually visualized: discrete on the left, continuous on the right. In both cases, we are look at the sample space.<br></p><p    >On the left, we are seeing the probabilities assigned to each element of the sample space. Using this, we can easily work out the probabilities of every event as well (just add up all the probabilities of all the atomic events in the event).<br></p><p    >However, when we look at a graph like the one on the right, describing a normal distribution, it’s important to realize that <strong>this function does not express a probability</strong>. If I ask you, under this distribution, which has the higher probability, 0 or 1, the answer is that <em>they both have probability 0</em>. This should make intuitive sense: What is the probability of meeting somebody who is exactly 2m tall? Surely, if you measure more and more precisely, the probability of getting <em>exactly</em> 2m goes further and further down.<br></p><p    >In short, when it comes to probability distributions on continuous spaces, the atomic events normally all have probability 0. The things that have nonzero probability are <em>ranges</em> of values. The probability of somebody being between 2.0m and 2.1m tall is more than 0, no matter how precisely you measure them. <br></p><p    >So what does this curve express? Not probability but probability <em>density</em>. The probabilities can be retrieved by integration. For instance, the probability of getting a sample between 0 and 1 from this distribution is equal to the area highlighted in the slide. The total area between -∞ and ∞ is exactly 1.<br></p><p    >These integrals can usually not be worked out analytically so we use numeric approximations. In the old days, you'd look these up in tables, but nowadays, we usually let the computer do it for us on the fly.<br></p><p    ></p>
+            <p    >On both discrete and continuous sample spaces, <strong>the events we describe have probability</strong>. Where they differ, in an important way, is in whether a meaningful probability is assigned to the elements of the sample space. Here is how such probabilities are usually visualized: discrete on the left, continuous on the right. In both cases, we are look at the sample space.<br></p><p    >On the left, we are seeing the probabilities assigned to each element of the sample space. Using this, we can easily work out the probabilities of every event as well (just add up all the probabilities of all the atomic events in the event).<br></p><p    >However, when we look at a graph like the one on the right, describing a normal distribution, it’s important to realize that <strong>this function does not express a probability</strong>. If I ask you, under this distribution, which has the higher probability, 0 or 1, the answer is that <em>they both have probability 0</em>. This should make intuitive sense: What is the probability of meeting somebody who is exactly 2m tall? Surely, if you measure more and more precisely, the probability of getting <em>exactly</em> 2m goes further and further down.<br></p><p    >In short, when it comes to probability distributions on continuous spaces, the atomic events normally all have probability 0. The things that have nonzero probability are <em>ranges</em> of values. The probability of somebody being between 2.0m and 2.1m tall is more than 0, no matter how precisely you measure them. <br></p><p    >So what does this curve express? Not probability but probability <em>density</em>. The probabilities can be retrieved by integration. For instance, the probability of getting a sample between 0 and 1 from this distribution is equal to the area highlighted in the slide. The total area between -∞ and ∞ is exactly 1.<br></p><aside    >These integrals can usually not be worked out analytically so we use numeric approximations. In the old days, you'd look these up in tables, but nowadays, we usually let the computer do it for us on the fly.<br></aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -212,9 +208,7 @@ slides: true
             <figcaption>
             <p    >If we want to focus on just one random variable, all we need to do is sum over the rows or columns. <br></p><p    >For instance, the probability that <span class="green">Age=old</span>, regardless of the value of <span class="orange red">Teeth</span>, is the probability of the event {(<span class="green">o</span>,<span class="orange red">h</span>), (<span class="green">o</span>,<span class="orange red">u</span>), (<span class="green">o</span>,<span class="orange red">f</span>)}. Because we can write these sums in the <em>margins</em> of our joint probability table, this process of “getting rid” of a variable is also called <strong>maginalizing out</strong> (as in “we marginalize out the variable <span class="orange red">Teeth</span>”). The resulting distribution over the remaining variable(s) is called a <strong>marginal distribution</strong>.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -226,9 +220,7 @@ slides: true
             <figcaption>
             <p    >This is what marginalizing looks like in symbols: we sum the joint probabilities for all values of one of the random variables, keeping the value of the other fixed.<br></p><p    >Remember that p(X) and P(x) are both shorthand for p(X=x).</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -250,9 +242,7 @@ slides: true
             <figcaption>
             <p    >Here is what conditional probability looks like in abstract, symbolic terms. Note that the denominator is just the marginal probability</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -364,9 +354,7 @@ slides: true
             <figcaption>
             <p    >To finish up, we'll look at some of the most common probability distributions we'll see throughout the course. Most of these you should know already, but we'll summarize them here briefly for the sake of completeness.<br></p><p    >The simplest is probably the Bernoulli distribution. It's any a distribution with two outcomes. You can think of it as modelling the outcome of a coin flip with a (possibly) bent coin, but the outcome could also be true/false, guilty/innocent or positive/negative.<br></p><p    >Every distribution like this, with its probabilties set to some pair of values summing to 1 is <em>a</em> Bernoulli distribution. To specify which Bernoulli distribution we are talking about we specify one of the probabilities by a number. The other probability is then also defined, since they must sum to one. <br></p><p    >The numbers we use to specify which specific distribution we are talking about in a family like the Bernoulli distributions, are called the <strong>parameters</strong>, and often indicated by the greek letter theta, θ.You can think of θ as a set of vector of numbers. In the case of the Bernoulli distribution theta is just a single number. </p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -406,11 +394,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0036anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0036anim0.svg,31.ProbabilisticModels1.key-stage-0036anim1.png,31.ProbabilisticModels1.key-stage-0036anim2.png,31.ProbabilisticModels1.key-stage-0036anim3.png" class="slide-image" />
 
             <figcaption>
-            <p    >Here is an illustration of the way the covariance matrix affects the data we get from a multivariate normal distribution. The mean is at (0, 0) in all four examples. <br></p><p    >If the covariance is<span class="green"> the identity matrix</span>, we get the standard normal distribution. This is called a spherical distribution, because the variance along all axes is the same, and there is no correlation between axes, giving the data roughly spherical shape. <br></p><p    >More precisely the lines of equal probability density are circles in 2D and spherical surfaces in higher dimensions.<br></p><p    >If we <span class="blue">change the values on the diagonal</span>, we stretch this sphere into an ellipse, but only along the axes. There is still no correlation: knowing the value along one axis tells us nothing about the value along the others. <br></p><p    >If <span class="orange red">we change the off-diagonal values to positive values</span> we get <strong>correlation</strong>. In this case having a high value along one axis makes it more likely that the value along the other axis is also high. Note that the coviarance matrix needs to be symmetric, so the value on one side of the diagonal must be the same as the value on the other side.<br></p><p    >If <span class="orange">the off-diagonal value is negative</span>, we get <strong>anti-correlation</strong>. A high positive value on one axis most likely corresponds to a high negative value along the other axis.<br></p><p    >If we have more than 2 dimensions, say n, then there are (n^2 - n)/2 possible pairs of axes between which we can define a correlation. This corresponds exactly to the number of values above the diagonal in an n x n matrix.</p><p    ></p>
+            <p    >Here is an illustration of the way the covariance matrix affects the data we get from a multivariate normal distribution. The mean is at (0, 0) in all four examples. <br></p><p    >If the covariance is<span class="green"> the identity matrix</span>, we get the standard normal distribution. This is called a spherical distribution, because the variance along all axes is the same, and there is no correlation between axes, giving the data roughly spherical shape. <br></p><aside    >More precisely the lines of equal probability density are circles in 2D and spherical surfaces in higher dimensions.<br></aside><p    >If we <span class="blue">change the values on the diagonal</span>, we stretch this sphere into an ellipse, but only along the axes. There is still no correlation: knowing the value along one axis tells us nothing about the value along the others. <br></p><p    >If <span class="orange red">we change the off-diagonal values to positive values</span> we get <strong>correlation</strong>. In this case having a high value along one axis makes it more likely that the value along the other axis is also high. Note that the coviarance matrix needs to be symmetric, so the value on one side of the diagonal must be the same as the value on the other side.<br></p><p    >If <span class="orange">the off-diagonal value is negative</span>, we get <strong>anti-correlation</strong>. A high positive value on one axis most likely corresponds to a high negative value along the other axis.<br></p><p    >If we have more than 2 dimensions, say n, then there are (n^2 - n)/2 possible pairs of axes between which we can define a correlation. This corresponds exactly to the number of values above the diagonal in an n x n matrix.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -442,9 +428,7 @@ slides: true
             <figcaption>
             <p    >Here is an analogy for the way probability is usually applied in statistics and machine learning. We assume some “machine” (which could be any process, the universe, or an actual machine) has <em>generated</em> our data, by a process that is partly deterministic and partly random. The configuration of this machine is determined by its <strong>parameters </strong>(theta). Theta could be a single number, several numbers or even a complicated data structure.<br></p><p    >We know how the machine works, so if we know theta, we know the probability of each dataset. The problem is that we only observe the data.<br></p><p    >In practice, the "machine" takes the form of a probability distribution, and the configuration of the machine is determined by its parameters θ.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -504,7 +488,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0044.svg" class="slide-image" />
 
             <figcaption>
-            <p    >When we do this kind of computation, we often take the logarithm of the likelihood, instead of the plain likelihood. The logarithm is a monotonic function (it gets bigger if the input gets bigger) so the likelihood and the log-likelihood have their maxima in the same place, but the log-likelihood is often easier to manipulate symbolically (see the first homework exercise). It can also provide a smoother loss landscape for methods like gradient descent.<br></p><p    >The log-likelihood of a probability distribution is a lot like the loss functions we’ve already encountered many times.<br></p><p    >In fact, if we want to fit a probability distribution with a gradient based method, we usually take the <em>negative</em> log-likelihood, so that we can do gradient <em>descent</em> to find the optimum. <br></p><p    >We could also use gradient ascent on the log-likelihood, but it's nice to keep the convention that you always minimize functions, and as we will see at the end of the lecture, the negative logarithm of a probability actually has a very natural interpretation.</p><p    ></p>
+            <p    >When we do this kind of computation, we often take the logarithm of the likelihood, instead of the plain likelihood. The logarithm is a monotonic function (it gets bigger if the input gets bigger) so the likelihood and the log-likelihood have their maxima in the same place, but the log-likelihood is often easier to manipulate symbolically (see the first homework exercise). It can also provide a smoother loss landscape for methods like gradient descent.<br></p><p    >The log-likelihood of a probability distribution is a lot like the loss functions we’ve already encountered many times.<br></p><p    >In fact, if we want to fit a probability distribution with a gradient based method, we usually take the <em>negative</em> log-likelihood, so that we can do gradient <em>descent</em> to find the optimum. <br></p><aside    >We could also use gradient ascent on the log-likelihood, but it's nice to keep the convention that you always minimize functions, and as we will see at the end of the lecture, the negative logarithm of a probability actually has a very natural interpretation.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -526,9 +510,7 @@ slides: true
             <figcaption>
             <p    >We assume that X is a list of single numbers. We want to find the parameters that maximize the log probability density of this data given the parameters. The probability density of the whole dataset is simply the product of the individual probability densities, if we assume that the data was independently drawn from the same distribution.<br></p><p    >Since there's a factor factor raised to the power of e inside this function, we'll use the natural logarithm (base e). With a bit of luck, these will cancel out.<br></p><p    >We can turn this product into a sum by moving the logarithm inside. <em>This is explained in detail in the first homework.</em><br></p><p    >We fill in the definition of the actual probability density function we’re using (line 3). This function is the product of two factors (the division and the exponent). Both of these become terms if we work them out of the logarithm. In the second term the exponent cancels against the logarithm. Already the function we are maximizing looks a lot simpler.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -548,11 +530,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0048anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0048anim0.svg,31.ProbabilisticModels1.key-stage-0048anim1.svg,31.ProbabilisticModels1.key-stage-0048anim2.svg,31.ProbabilisticModels1.key-stage-0048anim3.svg,31.ProbabilisticModels1.key-stage-0048anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we look at each parameter individually, we can reduce the problem even more.<br></p><p    >We can remove the first term, since it doesn't contain the mean. The factor 1/(2σ<sup>2</sup>) can be moved outside the sum and then removed (since a positive mulitplicative factor won't affect where the maximum is).<br></p><p    >Maximizing a function is the same as minimizing the negative of that function, so we can remove the minus and turn the argmax into an argmin.<br></p><p    >This shows that the maximum likelihood solution for the mean is just the value that minimizes the sum of the squared distances between the mean and the values in the dataset. This is how assuming a normal distribution leads to a least squares loss. If you work this out analytically, as we'll do in the next lecture, you'll see that the minimum for this is the (arithmetic) of the data, as you'd normally compute it. <br></p><p    >This connection between the normal distribution, the least squares loss and the artihmetic mean is a deep one. Don't worry if you don't quite get it yet, we'll come back to this a few more times. For instance we'll see that historically, the order was the other way around, Gauss started with the arithmetic mean which was a tried and tested approach, worked out that it implied the least squares principle, and then built the normal distribution on top of that. But that's for later. For now, just make sure that you understand the basic principle of maximizing the likelihood.</p><p    ></p>
+            <p    >If we look at each parameter individually, we can reduce the problem even more.<br></p><p    >We can remove the first term, since it doesn't contain the mean. The factor 1/(2σ<sup>2</sup>) can be moved outside the sum and then removed (since a positive mulitplicative factor won't affect where the maximum is).<br></p><p    >Maximizing a function is the same as minimizing the negative of that function, so we can remove the minus and turn the argmax into an argmin.<br></p><p    >This shows that the maximum likelihood solution for the mean is just the value that minimizes the sum of the squared distances between the mean and the values in the dataset. This is how assuming a normal distribution leads to a least squares loss. If you work this out analytically, as we'll do in the next lecture, you'll see that the minimum for this is the (arithmetic) of the data, as you'd normally compute it. <br></p><aside    >This connection between the normal distribution, the least squares loss and the artihmetic mean is a deep one. Don't worry if you don't quite get it yet, we'll come back to this a few more times. For instance we'll see that historically, the order was the other way around, Gauss started with the arithmetic mean which was a tried and tested approach, worked out that it implied the least squares principle, and then built the normal distribution on top of that. But that's for later. For now, just make sure that you understand the basic principle of maximizing the likelihood.</aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -564,9 +544,7 @@ slides: true
             <figcaption>
             <p    >We'll finish up with a quick look at <strong>Bayesian learning</strong>. Here, we are free to talk about the probability of the true model parameters taking a particular value. We don’t know the true parameters, but the data gives us some idea, so we express that uncertainty a probability distribution <em>over the model space</em>.<br></p><p    >That is, we'd like to know the distribution p(<span class="blue">θ</span>|D): a distribution over all available models, given the data that we've observed. As usual, the distribution with the reverse conditional p(D|<span class="blue">θ</span>) is much easier to work out. So the first thing we do is apply Bayes' rule to relate the two conditionals to one another.<br></p><p    >The distribution we want to work out is called the <strong>posterior distribution</strong>. Posterior means "after", as in: this is our belief about the true model <em>after</em> we've seen the data.<br></p><p    >The three parts of the right-hand side have these names. The <strong>prior distribution</strong> is a name you’ll hear often. Prior means before, as in: this is our belief about the true model <em>before</em> we've seen the data. For instance if we do spam classification in a Bayesian way, we might have a prior belief about the probability of getting a spam email, which we then <strong>update</strong> by looking at the content of the email (the data). Our beliefs about the parameters after seeing the data, is expressed by the posterior distribution. <br></p><p    >Note that Bayesian learning does, in principle, not require us to search or optimize anything. If we can work out the function on the right hand side of this equation, we get the posterior distribution and that gives us everything we need. If we need a good model, we can pick the one to which p(<span class="blue">θ</span>|X) assigns the highest probability, or we can sample a model and get a good fit with high probability. We can also study other properties of the distribution: for instance the variance of this distribution is a good indication of how uncertain we still are about the parameters of the model. <br></p><p    >In some cases, like for normal distributions, we can work all of this out analytically. For more complicated models, it’s usually impossible to work out the posterior analytically, and we have to make do with a function that approximates it, or with a number of individual  <em>samples </em>from the posterior. At that point, working out the posterior usually starts to look a lot like the searching we have to do in frequentist method and general machine learning.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -578,9 +556,7 @@ slides: true
             <figcaption>
             <p    >That may all sound a little abstract, so let's return to our coin example and see what a Bayesian approach would look like there.<br></p><p    >We first need to establish a prior. What is the probability of each coin in our model space? We said that we’d asked a friend to pick a coin at random. If we assume that he follows our instructions, then we believe each coin is equally likely so both get 0.5 probability. If we had two fair coins and one bent one, we could set the prior to 1/3 for bent and 2/3 for fair. Or if we expected our friend to have a preference for the bent coin, we might set our prior differently.<br></p><p    >This is an important thing to understand about choosing a prior: it allows us to encode our assumptions about the problem. As we will see again and again, encoding your assumptions is the most important part of designing machine learning models.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -592,9 +568,7 @@ slides: true
             <figcaption>
             <p    >After the prior, we need to work out the model evidence p(D). This is the probability of the data with the model marginalized out. Independent of the model, how likely are we to see this data at all? We work this out by making the marginalization explicit, and replacing the joint probabilities by their conditionals.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -616,9 +590,7 @@ slides: true
             <figcaption>
             <p    >If we choose a  uniform prior (each model gets the same probability), then the priors cancel out and we are just left with a function of the conditional data probabilities that we've worked out already for the frequentist example.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -670,9 +642,7 @@ slides: true
             <figcaption>
             <p    >There are two approaches to casting the classification problem in probabilistic terms. <br></p><p    >A <strong>generative classifier</strong> focuses on learning a distribution on the feature space given the class p(X|<span>Y</span>). This distribution is then combined with Bayes’ rule to get the probability over the classes, conditioned on the data.<br></p><p    >A<strong> discriminative classifier</strong> learns the function p(<span class="blue">Y</span>|X) directly with X as input and class probabilities as output. It functions as a kind of regression, mapping x to a vector of class probabilities.<br></p><p    > We’ll look at some simple generative classifiers in this video, and then we'll describe a discriminative classifier in the next video.<br></p><p    ><br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -699,14 +669,12 @@ slides: true
 
        <section id="slide-059" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-060" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0060anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0060anim0.svg,31.ProbabilisticModels1.key-stage-0060anim1.svg,31.ProbabilisticModels1.key-stage-0060anim2.svg,31.ProbabilisticModels1.key-stage-0060anim3.svg,31.ProbabilisticModels1.key-stage-0060anim4.svg,31.ProbabilisticModels1.key-stage-0060anim5.svg" class="slide-image" />
+            <img src="31.ProbabilisticModels1.key-stage-0060anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0060anim0.svg,31.ProbabilisticModels1.key-stage-0060anim1.svg,31.ProbabilisticModels1.key-stage-0060anim2.svg,31.ProbabilisticModels1.key-stage-0060anim3.svg,31.ProbabilisticModels1.key-stage-0060anim4.svg,31.ProbabilisticModels1.key-stage-0060anim5.svg,31.ProbabilisticModels1.key-stage-0060anim6.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is the algorithm for a simple Bayes classifier. We choose a model class for P(X|Y), for instance multivariate normal distributions. <br></p><p    >We then separate the points by classes and fit a separate MVN to each of these subsets of the data. We use the maximum likelihood estimates to fit the MVNs to the instances. <br></p><p    >Note that this make the Bayes classifier a bit of a Bayesian/frequentist chimera: we are using Bayes' rule to reverse the conditional, but we are using point esitmates to fit our distributions.<br></p><p    >The <strong>class prior</strong> p(<span class="blue">Y</span>) is a simple categorical distribution over the classes. We can estimate this from the data, or use some kind of prior knowledge that we have about the domain.<br></p><p    >Strictly speaking, we are mixing probabilities and probability densities, but in this example that doesn't cause any problems. The resulting probability on the classes is a categorical distribution.<br></p><p    >When we compute the class probabilities, we can compute the term p(x | class)p(class) once for each term, and then re-use them in the computation of each class probability. If we are only interested in the most probable class or in the ranking, we can omit the computation of the denominator.</p><p    ></p>
+            <p    >Here is the algorithm for a simple Bayes classifier. We choose a model class for P(X|Y), for instance multivariate normal distributions. <br></p><p    >We then separate the points by classes and fit a separate MVN to each of these subsets of the data. We use the maximum likelihood estimates to fit the MVNs to the instances. <br></p><aside    >Note that this make the Bayes classifier a bit of a Bayesian/frequentist chimera: we are using Bayes' rule to reverse the conditional, but we are using point esitmates to fit our distributions.<br></aside><p    >The <strong>class prior</strong> p(<span class="blue">Y</span>) is a simple categorical distribution over the classes. We can estimate this from the data, or use some kind of prior knowledge that we have about the domain.<br></p><p    >Strictly speaking, we are mixing probabilities and probability densities, but in this example that doesn't cause any problems. The resulting probability on the classes is a categorical distribution.<br></p><aside    >When we compute the class probabilities, we can compute the term p(x | class)p(class) once for each term, and then re-use them in the computation of each class probability. If we are only interested in the most probable class or in the ranking, we can omit the computation of the denominator.</aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -746,7 +714,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here's what those estimates look like.<br></p><p    >Strictly speaking, we are modelling X<sub>1</sub> as a Bernoulli distribution whose parameter we estimate as 2/6. This estimation, using the relative frequency of outcome x as the probability of x, is the maximum likelihood estimate for the Bernoulli distribution. If that sounds too complicated, it hopefully also makes intuitive sense to estimate the probabilities this way.</p><p    ></p>
+            <p    >Here's what those estimates look like.<br></p><aside    >Strictly speaking, we are modelling X<sub>1</sub> as a Bernoulli distribution whose parameter we estimate as 2/6. This estimation, using the relative frequency of outcome x as the probability of x, is the maximum likelihood estimate for the Bernoulli distribution. If that sounds too complicated, it hopefully also makes intuitive sense to estimate the probabilities this way.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -776,11 +744,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0067anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0067anim0.svg,31.ProbabilisticModels1.key-stage-0067anim1.svg,31.ProbabilisticModels1.key-stage-0067anim2.svg,31.ProbabilisticModels1.key-stage-0067anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This gives us a probability for the whole instance space. Now, let's imagine a new email comes in, one which contains the words <em>pill</em> and <em>meeting</em>. What class do we think it is? <br></p><p    >The probability of it being ham is proportional to the probability of seeing a ham email with these characteristics times the probability of seeing a ham email at all. The first factor breaks up by the naive Bayes assumption, and we can simply fill in our three probability estimates. We do the same thing for spam and report wich class gets the high probability <br></p><p    >Note that we are only computing the numerator of Bayes' rule. This is enough to work out which class gets the higher probability.</p><p    ></p>
+            <p    >This gives us a probability for the whole instance space. Now, let's imagine a new email comes in, one which contains the words <em>pill</em> and <em>meeting</em>. What class do we think it is? <br></p><p    >The probability of it being ham is proportional to the probability of seeing a ham email with these characteristics times the probability of seeing a ham email at all. The first factor breaks up by the naive Bayes assumption, and we can simply fill in our three probability estimates. We do the same thing for spam and report wich class gets the high probability <br></p><aside    >Note that we are only computing the numerator of Bayes' rule. This is enough to work out which class gets the higher probability.</aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -792,9 +758,7 @@ slides: true
             <figcaption>
             <p    >If we work out the probability of spam in the same way, we see that the Naive Bayes classifier assigns the class ham the most probability. If we want proper class probabilities all we have to do is normalize these values (that is, divide by (5/33) + (3/55)).</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -834,11 +798,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0072anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0072anim0.svg,31.ProbabilisticModels1.key-stage-0072anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This changes our estimates as shown here. In practice, we don’t actually need to add the pseudo-observations, we just change our estimator.<br></p><p    >Here, v is the number of different values X<sub>1</sub> can take.<br></p><p    >If we are worried about the impact of the pseudo-observations we can reduce the weight they have among the observations. For all other observations the weight is 1 in all relative frequencies. By replacing 1 for the pseudo-observations with λ, and setting this to a low value like 0.01, we get the estimator shown. This makes the impact of the pseudo observations very small, but it still ensures that we will never see a zero.<br></p><p    >If you do a Bayesian analysis, you can derive exactly this estimator by setting a particular prior. In fact, many common priors can be framed as pseudo-obervations. We won't dig into this in the course, but it is very neat.</p><p    ></p>
+            <p    >This changes our estimates as shown here. In practice, we don’t actually need to add the pseudo-observations, we just change our estimator.<br></p><p    >Here, v is the number of different values X<sub>1</sub> can take.<br></p><p    >If we are worried about the impact of the pseudo-observations we can reduce the weight they have among the observations. For all other observations the weight is 1 in all relative frequencies. By replacing 1 for the pseudo-observations with λ, and setting this to a low value like 0.01, we get the estimator shown. This makes the impact of the pseudo observations very small, but it still ensures that we will never see a zero.<br></p><aside    >If you do a Bayesian analysis, you can derive exactly this estimator by setting a particular prior. In fact, many common priors can be framed as pseudo-obervations. We won't dig into this in the course, but it is very neat.</aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -888,7 +850,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we’ll look at an example of a discriminative classifier: <strong>logistic regression</strong>. This is a classifier that learns to map the features directly to class probabilities, without using Bayes’ rule to reverse the conditional probability. <br></p><p    >This is basically a small extension of the linear classifier we've already seen. You can also think of it as a linear classifier with a specific loss function.<br></p><p    >The name logistic <span>regression</span> is very confusing, but in the modern view it is a classifier, not a regression model.</p><p    ></p>
+            <p    >In this video we’ll look at an example of a discriminative classifier: <strong>logistic regression</strong>. This is a classifier that learns to map the features directly to class probabilities, without using Bayes’ rule to reverse the conditional probability. <br></p><p    >This is basically a small extension of the linear classifier we've already seen. You can also think of it as a linear classifier with a specific loss function.<br></p><aside    >The name logistic <span>regression</span> is very confusing, but in the modern view it is a classifier, not a regression model.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -928,11 +890,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0080anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0080anim0.svg,31.ProbabilisticModels1.key-stage-0080anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For this purpose, we will use the <strong>logistic sigmoid</strong> function shown here. A sigmoid function is a function that makes an s-shape like this: its domain is the entire real number line, its range is between two finite values, 0 and 1 in this case, and it increases monotonically. Informally, it squeezes the whole real number line into a finite interval in a smooth way. The<em> logistic</em> sigmoid shown here is just one of many sigmoid functions.<br></p><p    >The second definition, in grey, is equal to the first. You can show this easily by multiplying both the numerator and the denominator by e<sup class="orange red">t</sup> in the first definition.<br></p><p    >source: By Qef (talk) - Created from scratch with gnuplot, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4310325"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=4310325</strong></a><br></p><p    ></p>
+            <p    >For this purpose, we will use the <strong>logistic sigmoid</strong> function shown here. A sigmoid function is a function that makes an s-shape like this: its domain is the entire real number line, its range is between two finite values, 0 and 1 in this case, and it increases monotonically. Informally, it squeezes the whole real number line into a finite interval in a smooth way. The<em> logistic</em> sigmoid shown here is just one of many sigmoid functions.<br></p><aside    >The second definition, in grey, is equal to the first. You can show this easily by multiplying both the numerator and the denominator by e<sup class="orange red">t</sup> in the first definition.<br></aside><p    >source: By Qef (talk) - Created from scratch with gnuplot, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4310325"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=4310325</strong></a><br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -942,11 +902,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0081anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0081anim0.svg,31.ProbabilisticModels1.key-stage-0081anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We'll see a lot more of the logistic sigmoid as the course progresses, so make sure to remember it. The reason we like to use this specific sigmoid in machine learning settings is that it has a few nice properties that make analysis easier.<br></p><p    >The first is its <strong>symmetry</strong>: if you flip it upside down, or left to right, you get the same function, which is the sigmoid running in the opposite direction σ(-t). Basically the remainder between σ(t) and 1, is itself a sigmoid. We'll use this property later in this video.<br></p><p    >The second property is that the<strong> derivative</strong> of the sigmoid has a particularly simple form: it's equal to the sigmoid itself times one of these flipped sigmoids.<br></p><p    >Both of these properties are easy enough to work out from the definition on the previous slide. We'll save you this to keep the lecture simple, but it's a good exercise if have the time to try.<br></p><p    ></p>
+            <p    >We'll see a lot more of the logistic sigmoid as the course progresses, so make sure to remember it. The reason we like to use this specific sigmoid in machine learning settings is that it has a few nice properties that make analysis easier.<br></p><p    >The first is its <strong>symmetry</strong>: if you flip it upside down, or left to right, you get the same function, which is the sigmoid running in the opposite direction σ(-t). Basically the remainder between σ(t) and 1, is itself a sigmoid. We'll use this property later in this video.<br></p><p    >The second property is that the<strong> derivative</strong> of the sigmoid has a particularly simple form: it's equal to the sigmoid itself times one of these flipped sigmoids.<br></p><aside    >Both of these properties are easy enough to work out from the definition on the previous slide. We'll save you this to keep the lecture simple, but it's a good exercise if have the time to try.<br></aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -988,9 +946,7 @@ slides: true
             <figcaption>
             <p    >Since, as we've seen, the logarithm of the probability of often better behaved, we will maximize the log-probability of the class labels given the features. Since we like to minimize—we are looking for a<em> loss function</em> so lower should be better—we stick a minus in front of the log probability and change the argmax to an argmin.<br></p><p    >Then, the multiplication can be moved out of the logarithm, turning it into a sum. <br></p><p    >Finally, we separate the data into the positive and negative classes. Our loss function says that for the positive poitns we want to maximize the log probability the classifier assigned to the point being positive and for the negative classes we want to maximize the probability that the classifier assigns to the point being negative. Hopefully, this sounds intuitive so far.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1030,7 +986,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The next couple of slides show a (somewhat) complicated derivation. You should do your best to go through this step by step. There are a couple more of these coming up in the course, so if you don't take the time to get used to them, you'll struggle later on. If you do take the time, I promise it gets easier with a little practice.<br></p><p    >You don't, however, have to understand this <em>right away</em>. If you struggle to follow along,<em> just look at the start and end points</em>. Try to figure out what the derivation is trying to show and why this is important. Then, move on to the rest of the lecture and come back for the details later. <br></p><p    >If you haven't done the second homework exercise yet, it may be better to do that first, and then come back to this part of the video. After that exercise, you should have a more practical understanding of what we're trying to do here.</p><p    ></p>
+            <p    >The next couple of slides show a (somewhat) complicated derivation. You should do your best to go through this step by step. There are a couple more of these coming up in the course, so if you don't take the time to get used to them, you'll struggle later on. If you do take the time, I promise it gets easier with a little practice.<br></p><p    >You don't, however, have to understand this <em>right away</em>. If you struggle to follow along,<em> just look at the start and end points</em>. Try to figure out what the derivation is trying to show and why this is important. Then, move on to the rest of the lecture and come back for the details later. <br></p><aside    >If you haven't done the second homework exercise yet, it may be better to do that first, and then come back to this part of the video. After that exercise, you should have a more practical understanding of what we're trying to do here.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1042,9 +998,7 @@ slides: true
             <figcaption>
             <p    >What we need is the derivative of the loss with respect to every parameter of the model. We'll work it out for the weights <span class="orange">w</span><sub class="orange">i</sub> and take the bias <span class="blue">b</span> as read. <br></p><p    >We’ll show you the basics of working out the gradient for logistic regression. The first step is to break the loss apart in separate terms for the positive and negative points. We'll look at the positive term in detail (the negative term can be derived in a similar way).</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1056,25 +1010,19 @@ slides: true
             <figcaption>
             <p    >To simplify the derivation, we first take the output of the linear part of our model (before it goes into the sigmoid) and call it y. Not that the derivative of y with respect <span class="orange">w</span><sub class="orange">i</sub> is just xi, because the dot product is a simple sum of element-wise multiplications, so the only term that wi appears in is <span class="orange">w</span><sub class="orange">i </sub>x<sub>i</sub>.<br></p><p    >With this, we can work out the partial derivative with respect to <span class="orange">w</span><sub class="orange">i</sub> in a relatively clean and simple manner. We start (line 1) by filling in q<sub>x</sub>(<span class="blue">P</span>), the probability according to our current classfier that the point x is in the <span class="blue">positive</span> class (which it is). This is just the output <span class="orange red">y</span> of the linear function, passed through the logistic sigmoid σ.<br></p><p    >Next (line 2), we apply the chain rule twice. First to move out of the logarithm, and then to move out of the sigmoid. <br></p><p    >For each of these three factors, we can work out the derivative (line3). The derivative of log(x) is 1/x. That is, assuming we are using the natural logarithm. If we want to use a different logarithm (like base-2), then we get a constant multiplier, which we can ignore if we are using gradient descent (because we are scaling the gradient by η anyway). The derivative of the sigmoid wrt to <span class="orange red">y</span> is the sigmoid times the flipped sigmoid, and the derivative of <span class="orange red">y</span> wrt to <span class="orange">w</span><sub class="orange">i</sub> we have already worked out.<br></p><p    >The factor σ(<span class="orange red">y</span>) appears above and below the division line, so these cancel out (line 4), leaving us with just the flipped sigmoid times x<sub>i</sub>. We note that the flipped sigmoid is one minus the probability of the positive class (according to our classifier). since there are only two classes, this equals the probability of the negative class q<sub>x</sub>(<span class="orange red">N</span>). We fill this in, which provides our answer.<br></p><p    ><br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-091" class="anim">
+       <section id="slide-092">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-092" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0092anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0092anim0.svg,31.ProbabilisticModels1.key-stage-0092anim1.svg" class="slide-image" />
+            <img src="31.ProbabilisticModels1.key-stage-0092.svg" class="slide-image" />
 
             <figcaption>
             <p    >Note that despite the complicated business in the middle, the result is actually very simple. This is one of the pleasing properties of the logistic sigmoid, it tends to cancel itself out when the derivative is taken.<br></p><p    >In short, for this particular instance, and weight i, the derivative is the i-th feature times the probability (according to the current parameters) that this instance is negative.<br></p><p    >Consider what this means in a gradient descent setting: this value here is what we want to subtract from the current value of <span class="orange">w</span><sub class="orange">i</sub> to better fit the classifier to this particular point x.  Imagine that the classifier does badly at the moment: to this<span class="blue"> positive</span> point it assigns a large probability for the <span class="orange red">negative</span> class, so q<sub>x</sub>(<span class="orange red">N</span>) is large. <br></p><p    >If x<sub>i</sub> is a large positive value, then gradient descent subtracts a large negative number, - q<sub>x</sub>(<span class="orange red">N</span>)x<sub>i</sub>, from <span class="orange">w</span><sub class="orange">i</sub>. This makes it bigger, increasing the sum the sum <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> and reducing the probability σ(<strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span>) that the classifier assigns to the positive class. If x<sub>i</sub> is a large <em>negative</em> number, we go in the opposite direction.<br></p><p    >If, however, the classifier already does well, assigning this positive point a large <span class="blue">positive</span> probability, then q<sub>x</sub>(<span class="orange red">N</span>) is very close to 0, and this particular instance has very little influence on the gradient descent step (unless the magnitude of x<sub>i</sub> is so big that x<sub>i</sub>q<sub>x</sub>(<span class="orange red">N</span>) is still a substantial value).</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-093">
@@ -1082,7 +1030,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we work out the derivative for the other term, we get a predictable result: the same form, but with q<sub>x</sub>(<span class="blue">P</span>) instead of q<sub>x</sub>(<span class="orange red">N</span>) and a minus instead of a plus.<br></p><p    >So there we have it: the gradient for a linear classifier, fed through a sigmoid function, producing a logarithmic loss.<br></p><p    >For the bias <span class="blue">b</span>, we get the same result, but without the x<sub>i</sub> factors. The derivation is the same, except that in the second line of the derivation the third factor is 1 instead of x<sub>i</sub>.</p><p    ></p>
+            <p    >If we work out the derivative for the other term, we get a predictable result: the same form, but with q<sub>x</sub>(<span class="blue">P</span>) instead of q<sub>x</sub>(<span class="orange red">N</span>) and a minus instead of a plus.<br></p><p    >So there we have it: the gradient for a linear classifier, fed through a sigmoid function, producing a logarithmic loss.<br></p><aside    >For the bias <span class="blue">b</span>, we get the same result, but without the x<sub>i</sub> factors. The derivation is the same, except that in the second line of the derivation the third factor is 1 instead of x<sub>i</sub>.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1134,9 +1082,7 @@ slides: true
             <figcaption>
             <p    >The logistic model doesn’t have this problem.If the model fits well around the ideal decision boundary, it doesn’t have to worry at all about points that are far away (if they’re on the right side of the boundary). The log loss for these points is very close to -log(1), so very close to 0.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1166,7 +1112,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Note that for such well-separable classes, there are many suitable decision boundaries, and logistic regression has little reason to prefer one over the other (all points are assigned the correct probability very close to 1). We’ll see a solution to this problem next lecture, when we meet our final loss function: the SVM loss.<br></p><p    >If we want to stick with logistic regression we can solve this problem to some extent by widening the "region of uncertainty" as much as possible, without sacrificing too much of the log loss. One way to achieving this is by adding L2 regularization, which we will learn about in a later lecture.</p><p    ></p>
+            <p    >Note that for such well-separable classes, there are many suitable decision boundaries, and logistic regression has little reason to prefer one over the other (all points are assigned the correct probability very close to 1). We’ll see a solution to this problem next lecture, when we meet our final loss function: the SVM loss.<br></p><aside    >If we want to stick with logistic regression we can solve this problem to some extent by widening the "region of uncertainty" as much as possible, without sacrificing too much of the log loss. One way to achieve this is by adding L2 regularization, which we will learn about in a later lecture.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1258,9 +1204,7 @@ slides: true
             <figcaption>
             <p    >These kinds of trees are called<strong> prefix-free trees</strong>, and the resulting codes <strong>prefix -ree codes</strong>. The name comes from the fact that no codeword will be the prefix of any other code word. That is, the first k bits of one code will never be a codeword by themselves.<br></p><p    >The nice thing about prefix free codes is that if we want to encode a sequence of these outcomes, we can just stick the codes one after another and we won’t need any delimiters. A decoder that has access to the tree will know exactly where each codeword ends and the next begins.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1270,11 +1214,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0112anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0112anim0.svg,31.ProbabilisticModels1.key-stage-0112anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Another nice property is that there is a direct relation between the length of the code we assign an outcome, and its probability: <strong>the more coinflips we require to get to a particular outcome, the lower the probability that we will get there, and the longer the code. </strong>In this tree here, if we generate outcomes by flipping coins randomly, the probability of getting a is the probability of flipping heads twice in a row: 1/4. The probability of getting b is the probability of flippinf head, tails, head: 1/8. <br></p><p    >This is expressed in the code lengths of a and b. b has a longer codelength and is therefore less likely.<br></p><p    >If the probabilities from this tree match the probabilities with which we expect to see the outcomes, then this is a very nice property for a code to have: when frequent outcomes have short codes, we end up with shorter messages overall.<br></p><p    >This was realized as early as the invention of Morse code. Samuel Morse explicitly assigned short codewords to letters like e and t, because he knew that they would occur frequently, so that the telegraph messages would be shorter.<br></p><p    >Information theory didn't exist yet, so his codelengths were a little ad-hoc. He also didn't know about prefix-free codes, so Morse code does have a delimited code.<strong><br></strong></p><p    ><strong><br></strong></p><p    ><strong></strong></p>
+            <p    >Another nice property is that there is a direct relation between the length of the code we assign an outcome, and its probability: <strong>the more coinflips we require to get to a particular outcome, the lower the probability that we will get there, and the longer the code. </strong>In this tree here, if we generate outcomes by flipping coins randomly, the probability of getting a is the probability of flipping heads twice in a row: 1/4. The probability of getting b is the probability of flippinf head, tails, head: 1/8. <br></p><p    >This is expressed in the code lengths of a and b. b has a longer codelength and is therefore less likely.<br></p><p    >If the probabilities from this tree match the probabilities with which we expect to see the outcomes, then this is a very nice property for a code to have: when frequent outcomes have short codes, we end up with shorter messages overall.<br></p><p    >This was realized as early as the invention of Morse code. Samuel Morse explicitly assigned short codewords to letters like e and t, because he knew that they would occur frequently, so that the telegraph messages would be shorter.<br></p><aside    >Information theory didn't exist yet, so his codelengths were a little ad-hoc. He also didn't know about prefix-free codes, so Morse code does have a delimited code.<strong><br></strong></aside><p    ><strong><br></strong></p><p    ><strong></strong></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1284,11 +1226,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0113anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0113anim0.svg,31.ProbabilisticModels1.key-stage-0113anim1.svg,31.ProbabilisticModels1.key-stage-0113anim2.svg,31.ProbabilisticModels1.key-stage-0113anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Let's make all this a little more precise. Let's start with an arbitrary tree, and assume that we sample from it by flipping a coin to decide our path from the root to the leaves. What probability distribution does this define? This is very simple: each coinflip multiplies the probability by 1/2, so if the length of the code for outcome <span class="green">b</span> is 3, then the outcome <span class="green">b</span> has probability (1/2)<sup>3</sup> = 1/8.<br></p><p    >In general the probability for an outcome x with a code of length L(x) is p(x) = 2<sup>-L(x)</sup>.<br></p><p    >With this equation in place, we can reverse the question. If we are given a probability distribution p(x), and we are assured that there is some prefix tree corresponding to it, what can we say about the codelengths that this probability tree describes? Rewriting the equation we have to isolate L(x), we get L(x) = -log<sub>2</sub>p(x)<br></p><p    >There it is! The negative logarithm of a probability. If we have a probability distribution that can be expressed by a prefix-free tree, the negative logarithm of its probabilities has a very concrete meaning: <strong>it's the codelengths of the outcomes under the corresponding codes</strong>.<br></p><p    >The base 2 of the logarithm is a consequence of using bits to encode our data. If we used trits (0, 1, 2) we'd get a base-3 logarithm and if we used digits, we'd get a base-10 logarithm. You can even go the other way around and start with the natural logarithm, which will give you a unit for amount of information called "nats". These are a little more abstract; I can't imagine what a codeword written in nats looks like, but it still works to quantify the amount of information in the outcome of a sample from a probability distribution.<br></p><p    ></p>
+            <p    >Let's make all this a little more precise. Let's start with an arbitrary tree, and assume that we sample from it by flipping a coin to decide our path from the root to the leaves. What probability distribution does this define? This is very simple: each coinflip multiplies the probability by 1/2, so if the length of the code for outcome <span class="green">b</span> is 3, then the outcome <span class="green">b</span> has probability (1/2)<sup>3</sup> = 1/8.<br></p><p    >In general the probability for an outcome x with a code of length L(x) is p(x) = 2<sup>-L(x)</sup>.<br></p><p    >With this equation in place, we can reverse the question. If we are given a probability distribution p(x), and we are assured that there is some prefix tree corresponding to it, what can we say about the codelengths that this probability tree describes? Rewriting the equation we have to isolate L(x), we get L(x) = -log<sub>2</sub>p(x)<br></p><p    >There it is! The negative logarithm of a probability. If we have a probability distribution that can be expressed by a prefix-free tree, the negative logarithm of its probabilities has a very concrete meaning: <strong>it's the codelengths of the outcomes under the corresponding codes</strong>.<br></p><aside    >The base 2 of the logarithm is a consequence of using bits to encode our data. If we used trits (0, 1, 2) we'd get a base-3 logarithm and if we used digits, we'd get a base-10 logarithm. You can even go the other way around and start with the natural logarithm, which will give you a unit for amount of information called "nats". These are a little more abstract; I can't imagine what a codeword written in nats looks like, but it still works to quantify the amount of information in the outcome of a sample from a probability distribution.<br></aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1310,9 +1250,7 @@ slides: true
             <figcaption>
             <p    >We already noted that this is a nice property for a code to have, because it reduces the amount of bits we can expect to use. How much does it reduce it? If we know the things we are going to encode come from distribution x, then can we say something about whether using the corresponding code is in some sense the optimal choice?<br></p><p    >The simplest way to answer this question is to compute the expected number of bits we will have to use per outcome. This is simply the codelength of each outcome, multiplied by its probability, summed over all outcomes. This quantity is called the <strong>entropy</strong>. <br></p><p    >The entropy of a distribution is the expected codelength of an element sampled from that distribution.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1324,9 +1262,7 @@ slides: true
             <figcaption>
             <p    >The entropy of a distribution is a very commonly used function, because it expresses in a single number how much uncertainty we have over the outcome. Or in other words, how uniformly spread out the probability mass is among the outcomes.<br></p><p    >The more uniform our distribution is, we less we know about what will happen, and the higher the entropy. <br></p><p    >On the left we see<span class="orange red"> a perfectly uniform distribution</span>. Each outcome has equal probability 1/4, so each outcome gets a 2-bit codewords, and the expected codelength is 2.<br></p><p    >In <span class="blue">the middle</span>, we know something more about our distribution, for instance that <span>a</span> is very likely, so we can make the codeword for "a" a little shorter, reducing the expected codelength to 1.75 bits. <br></p><p    >On the right, we see the extreme case of<span class="green"> perfect knowledge</span>. We are certain that outcome "a" will happen every time. We can label the root of our tree with "a". This is like having a single "empty" codeword. More practically if I had to sample an outcome from this distribution and send you a message saying what had happened, the best option would be no message at all: we both know the distribution, so I don't need to tell you what happened.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1336,11 +1272,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0117anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0117anim0.svg,31.ProbabilisticModels1.key-stage-0117anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >What if we don’t use the code that corresponds to the source of our data <span class="orange red">p</span> to encode our data, but some other code based on distribution <span class="blue">q</span>. What is our expected codelength then? This is called the<em> </em><strong>cross entropy</strong>.<br></p><p    >It can be shown that the cross entropy is minimal when <span class="orange red">p</span>=<span class="blue">q</span>. That is, when the cross entropy corresponds to the entropy.<br></p><p    >We can conclude two things:<br></p><p     class="list-item">The code corresponding to<span class="orange red"> p</span> provides the best expected codelength out of all possible prefix-free codes.<br></p><p     class="list-item">The cross entropy is a good way to <strong>quantify the distance between two distributions</strong> (because it’s minimal when the two are the same).<br></p><p    >The proof that the cross entropy is always bigger than the entropy. If you're up for a challenge, wait until we've discussed Lagrange mulitpliers, and then apply them to the problem of minimizing the cross entropy for vector <strong class="blue">q</strong>, subject to the constraints that the elements of <strong class="blue">q</strong> are positive and sum to 1.</p><p    ></p>
+            <p    >What if we don’t use the code that corresponds to the source of our data <span class="orange red">p</span> to encode our data, but some other code based on distribution <span class="blue">q</span>. What is our expected codelength then? This is called the<em> </em><strong>cross entropy</strong>.<br></p><p    >It can be shown that the cross entropy is minimal when <span class="orange red">p</span>=<span class="blue">q</span>. That is, when the cross entropy corresponds to the entropy.<br></p><p    >We can conclude two things:<br></p><p     class="list-item">The code corresponding to<span class="orange red"> p</span> provides the best expected codelength out of all possible prefix-free codes.<br></p><p     class="list-item">The cross entropy is a good way to <strong>quantify the distance between two distributions</strong> (because it’s minimal when the two are the same).<br></p><aside    >The proof that the cross entropy is always bigger than the entropy. If you're up for a challenge, wait until we've discussed Lagrange mulitpliers, and then apply them to the problem of minimizing the cross entropy for vector <strong class="blue">q</strong>, subject to the constraints that the elements of <strong class="blue">q</strong> are positive and sum to 1.</aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1370,11 +1304,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0120anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0120anim0.svg,31.ProbabilisticModels1.key-stage-0120anim1.svg,31.ProbabilisticModels1.key-stage-0120anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Now that we have our interpretation of -log(x) as a codelength, let's see what it says about the places where we've used it. <br></p><p    >On such place was the log loss. One interpretation we now have is that if we minmize -q<sub>x</sub>(<span class="blue">P</span>) in logistic regression, we are minimizing the amount of bits we would need to transmit to say that x is of the postive class, if we assume that both the sender and receiver have access to the classifier and x, but not to the class label (more about this in a bit).<br></p><p    >Another interpretation comes from the fact that we characterized the cross entropy loss as the distance between two probability distributions. What if we see the labels in the dataset as one probability distribution p (with all probabilities 0 or 1), and the classifier as another distribution q? What happens if we explicitly try to minimize the cross entropy between p and q by changing the parameters of q?<br></p><p    >As you can see, with a little rewriting, we recover the logarithmic loss we already derived. For this reason log-loss is also known as cross-entropy loss. This is not just a mathematical curiosity. There may be cases, where the data provides class probabilities rather than explicit class labels. In such cases, the cross entropy view tells us exactly what to do, but the log-loss perspective becomes useless.<br></p><p    >We can also do this with the KL divergence instead of the cross-entropy. In that case, we get a constant term - log p(x), which is independent of the parameters of q. This usually doesn't affect the gradient, but in some cases it does.</p><p    ></p>
+            <p    >Now that we have our interpretation of -log(x) as a codelength, let's see what it says about the places where we've used it. <br></p><p    >On such place was the log loss. One interpretation we now have is that if we minmize -q<sub>x</sub>(<span class="blue">P</span>) in logistic regression, we are minimizing the amount of bits we would need to transmit to say that x is of the postive class, if we assume that both the sender and receiver have access to the classifier and x, but not to the class label (more about this in a bit).<br></p><p    >Another interpretation comes from the fact that we characterized the cross entropy loss as the distance between two probability distributions. What if we see the labels in the dataset as one probability distribution p (with all probabilities 0 or 1), and the classifier as another distribution q? What happens if we explicitly try to minimize the cross entropy between p and q by changing the parameters of q?<br></p><p    >As you can see, with a little rewriting, we recover the logarithmic loss we already derived. For this reason log-loss is also known as cross-entropy loss. This is not just a mathematical curiosity. There may be cases, where the data provides class probabilities rather than explicit class labels. In such cases, the cross entropy view tells us exactly what to do, but the log-loss perspective becomes useless.<br></p><aside    >We can also do this with the KL divergence instead of the cross-entropy. In that case, we get a constant term - log p(x), which is independent of the parameters of q. This usually doesn't affect the gradient, but in some cases it does.</aside><aside    ></aside>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1416,9 +1348,7 @@ slides: true
             <figcaption>
             <p    >This principle is often used to solve the problem of over and under fitting. Without going into the technical details, here is the basic principle of two-part coding applied to a regression problem. <br></p><p    >In a regression (or classification) problems, we take the instances and their features as fixed: both the sender and receiver have access to them. The data that we want to send over the wire is the <em>target labels</em>; in this case the regression targets. How you encode a continuous value is a technical matter that requires some assumptions. For now we can just discretize the range of outputs, and assume that we are using a code that means that <strong>bigger numbers cost more bits</strong>. The same goes for the parameters of the model: these are also continuous values, but we’ll discretize them somehow. Here we only need to assume that using <strong>more parameters in your model takes more bits</strong>.<br></p><p    >Once we’ve chosen a model we can reconstruct the data by sending the <span class="blue">model parameters</span> and the <span class="green">residual values</span>. We see that if we pick a linear model we have many large residuals to transmit. On the other hand, our model is described by only two parameters, so we can transmit that part very cheaply. If we make our model a parabola, we require three numbers to transmit it, so that part of  our message gets bigger, but because the model fits so much better, the residuals are much smaller, and the overal length of our message gets much smaller.<br></p><p    >If we make our model a 15-th order polynomial, we get a slightly tighter fit, but not by much, and the price we pay in storing the 16 numbers required to describe our model means that our message length is bigger than for the parabola. So overall we prefer the model in  the middle, according to the minimum description length principle. </p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -1428,11 +1358,9 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0125anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0125anim0.svg,31.ProbabilisticModels1.key-stage-0125anim1.svg,31.ProbabilisticModels1.key-stage-0125anim2.svg,31.ProbabilisticModels1.key-stage-0125anim3.svg,31.ProbabilisticModels1.key-stage-0125anim4.svg,31.ProbabilisticModels1.key-stage-0125anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >There are many correspondences between using MDL and using Bayesian methods. In fact they are often perspectives on the same thing.<br></p><p    >Here is one example. Let's say we are picking a single model <span class="orange red">M</span> that maximizes the posterior probability  of the data (this requires us to maximize only the numerator of Bayes rule, since the denominator is constant).<br></p><p    >A full Bayesian analysis would compute the entire posterior distribution, but sometimes we are only interested in its maximum.<br></p><p    >As we've seen before, we can stick a logarithm in front of any probability without changing the maximum, and we can add a minus to change the maximum into a minimum.<br></p><p    >Then, using the basic properties of the logarithm, we find that we are minimizing the sum of two code-lengths: the cost of describing the model, and the cost of describing the data once the model is know. This is exactly what we do in two-part coding.</p><p    ></p>
+            <p    >There are many correspondences between using MDL and using Bayesian methods. In fact they are often perspectives on the same thing.<br></p><p    >Here is one example. Let's say we are picking a single model <span class="orange red">M</span> that maximizes the posterior probability  of the data (this requires us to maximize only the numerator of Bayes rule, since the denominator is constant).<br></p><aside    >A full Bayesian analysis would compute the entire posterior distribution, but sometimes we are only interested in its maximum.<br></aside><p    >As we've seen before, we can stick a logarithm in front of any probability without changing the maximum, and we can add a minus to change the maximum into a minimum.<br></p><p    >Then, using the basic properties of the logarithm, we find that we are minimizing the sum of two code-lengths: the cost of describing the model, and the cost of describing the data once the model is know. This is exactly what we do in two-part coding.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 

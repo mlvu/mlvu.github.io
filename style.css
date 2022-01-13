@@ -110,6 +110,12 @@ sup {
 sub {
     bottom:-0.25em
 }
+
+aside {
+    padding-left: 1em;
+    font-style: italic;
+}
+
 img {
     border:0
 }
@@ -937,6 +943,10 @@ article.slides {
     position: relative;
 }
 
+.slides section figcaption {
+    margin-bottom: 2em;
+}
+
 .slides section .hint {
     display: block;
     position: absolute;
@@ -1007,7 +1017,7 @@ p.list-item::before {
     justify-content: space-around;
 }
 
-.slides nav.menu  li {
+.slides nav.menu li {
     list-style: none;
     padding: 0;
     margin: 0 0.5em 0 0;
@@ -1125,13 +1135,14 @@ nav.lectures div.l3::before {
 }
 
 nav.lectures div.l4::before {
-    background-image: url('/lecture04/22.Methodology2.key-stage-0017.png');
+    background-image: url('/lecture04/31.ProbabilisticModels1.key-stage-0027.svg');
+    background-position: -24em -12.5em;
+    background-size: 370%;
+}
+
+nav.lectures div.l5::before {
+    background-image: url('/lecture05/22.Methodology2.key-stage-0017.png');
     background-position: -22em -2.5em;
     background-size: 300%;
 }
 
-nav.lectures div.l5::before {
-    background-image: url('/lecture05/31.ProbabilisticModels1.key-stage-0027.svg');
-    background-position: -24em -12.5em;
-    background-size: 370%;
-}

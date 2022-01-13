@@ -59,9 +59,7 @@ slides: true
             <figcaption>
             ${slide['annotation']}
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
     % endif
