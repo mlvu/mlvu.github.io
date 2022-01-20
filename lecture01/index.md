@@ -9,8 +9,8 @@ slides: true
             <li><a href="#video-000">What is machine learning?</a></li>
             <li><a href="#video-021">Classification</a></li>
             <li><a href="#video-049">Other abstract tasks</a></li>
-            <li><a href="#video-069">Social impact 1</a></li>
-            <li><a href="#video-096">Generalization</a></li>
+            <li><a href="#video-075">Social impact 1</a></li>
+            <li><a href="#video-102">Generalization</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/11.Introduction.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
@@ -28,7 +28,7 @@ slides: true
        </section>
 
        <section id="slide-001">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-001">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-001" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
@@ -38,7 +38,7 @@ slides: true
 
 
        <section id="slide-002">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-002">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-002" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0002.png" class="slide-image" />
 
             <figcaption>
@@ -48,7 +48,7 @@ slides: true
 
 
        <section id="slide-003">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-003">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-003" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0003.svg" class="slide-image" />
 
             <figcaption>
@@ -58,7 +58,7 @@ slides: true
 
 
        <section id="slide-004">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-004">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-004" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0004.svg" class="slide-image" />
 
             <figcaption>
@@ -68,7 +68,7 @@ slides: true
 
 
        <section id="slide-005">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-005">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-005" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0005.svg" class="slide-image" />
 
             <figcaption>
@@ -78,7 +78,7 @@ slides: true
 
 
        <section id="slide-006">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-006">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-006" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0006.svg" class="slide-image" />
 
             <figcaption>
@@ -88,7 +88,7 @@ slides: true
 
 
        <section id="slide-007">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-007">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-007" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0007.svg" class="slide-image" />
 
             <figcaption>
@@ -98,7 +98,7 @@ slides: true
 
 
        <section id="slide-008">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-008">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-008" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0008.svg" class="slide-image" />
 
             <figcaption>
@@ -108,7 +108,7 @@ slides: true
 
 
        <section id="slide-009">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-009">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-009" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
@@ -118,7 +118,7 @@ slides: true
 
 
        <section id="slide-010">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-010">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-010" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0010.svg" class="slide-image" />
 
             <figcaption>
@@ -128,21 +128,19 @@ slides: true
 
 
        <section id="slide-010" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-011">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-011" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0011anim0.svg" data-images="11.Introduction.0.key-stage-0011anim0.svg,11.Introduction.0.key-stage-0011anim1.svg,11.Introduction.0.key-stage-0011anim2.svg" class="slide-image" />
 
             <figcaption>
             <p    >Now, the main problem with machine learning is that <strong>we want solutions that are applicable across domains</strong>. You don’t want to dedicate your entire life to crafting a perfect self-learning computer chess program, and then find out that your ideas have no use for anything else. We want to solve the problem of machine learning <strong>in general</strong>: instead of studying each problem in isolation, we want solutions that can be applied to many problems.<br></p><p    >To make this possible, machine learning is often built on <strong>abstract tasks</strong> like <em>classification</em>, <em>regression</em> or <em>clustering</em>. If you have a practical problem, like chess playing, you find a way to abstract the problem of playing chess (or part of it) to the generic task of, say, classification, and then you pick one of many existing classification <em>methods</em>.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-012">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-012">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-012" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0012.svg" class="slide-image" />
 
             <figcaption>
@@ -152,7 +150,7 @@ slides: true
 
 
        <section id="slide-013">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-013">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-013" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0013.svg" class="slide-image" />
 
             <figcaption>
@@ -162,7 +160,7 @@ slides: true
 
 
        <section id="slide-014">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-014">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-014" title="Link to this slide.">link here</a>
             <iframe
                 src="https://www.youtube.com/embed/7BtLqqJVP9w?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -177,7 +175,7 @@ slides: true
 
 
        <section id="slide-015">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-015">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-015" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0015.svg" class="slide-image" />
 
             <figcaption>
@@ -187,7 +185,7 @@ slides: true
 
 
        <section id="slide-016">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-016">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-016" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
@@ -197,7 +195,7 @@ slides: true
 
 
        <section id="slide-017">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-017">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-017" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0017.svg" class="slide-image" />
 
             <figcaption>
@@ -207,7 +205,7 @@ slides: true
 
 
        <section id="slide-018">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-018">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-018" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0018.svg" class="slide-image" />
 
             <figcaption>
@@ -217,7 +215,7 @@ slides: true
 
 
        <section id="slide-019">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-019">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-019" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0019.svg" class="slide-image" />
 
             <figcaption>
@@ -227,7 +225,7 @@ slides: true
 
 
        <section id="slide-020">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-020">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-020" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0020.svg" class="slide-image" />
 
             <figcaption>
@@ -237,7 +235,7 @@ slides: true
 
 
        <section id="slide-021">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-021">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-021" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0021.svg" class="slide-image" />
 
             <figcaption>
@@ -257,7 +255,7 @@ slides: true
        </section>
 
        <section id="slide-022">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-022">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-022" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0022.svg" class="slide-image" />
 
             <figcaption>
@@ -267,7 +265,7 @@ slides: true
 
 
        <section id="slide-023">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-023">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-023" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
@@ -277,7 +275,7 @@ slides: true
 
 
        <section id="slide-024">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-024">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-024" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0024.svg" class="slide-image" />
 
             <figcaption>
@@ -287,21 +285,19 @@ slides: true
 
 
        <section id="slide-024" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-025">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-025" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0025anim0.svg" data-images="11.Introduction.0.key-stage-0025anim0.svg,11.Introduction.0.key-stage-0025anim1.svg,11.Introduction.0.key-stage-0025anim2.svg,11.Introduction.0.key-stage-0025anim3.svg,11.Introduction.0.key-stage-0025anim4.svg,11.Introduction.0.key-stage-0025anim5.svg" class="slide-image" />
 
             <figcaption>
             <p    >This is the basic framework of classification. The data that we provide our system with consists of examples, called <strong>instances</strong>, of the things we are trying to learn something about. In this example, our instances are e-mails.<br></p><p    >We must then make a series of measurements about each instance. In the case of e-mails, we may measure how often a specific word occurs. The things we measure are called the<strong> features</strong> of the instance. We can measure numeric features (like age or speed), but they can also be categoric (like gender or color).<br></p><p    >Finally we have the <strong>target value</strong>: the thing we are trying to learn. In classification, this is always a categoric value, or a <em>class</em>: one of a handful of possible values. In this case, is the e-mail <span class="orange red">spam</span> (an unwanted advertising e-mail), or<span class="green"> ham</span> (a genuine e-mail).<br></p><p    >This dataset is then fed to a learning algorithm. This can be anything, but it has to produce a classifier. A classifier is a small “machine” that (attempts) to solve the learning problem. That is, it takes a new instance, one that wasn’t in the original dataset, and for which we don’t know the target value, and it makes a guess at the target value. <br></p><p    >Note that the model in this example predicts "spam" for the instance, even though it has seen the same instance in its data with the label "ham". This is perfectly possible: the job of the model is not to memorize the data but to learn from it. Often the model needs to discard specific details it has seen in order to do its job well.<br></p><p    ><br></p><p    ><br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-026">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-026">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-026" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0026.png" class="slide-image" />
 
             <figcaption>
@@ -311,7 +307,7 @@ slides: true
 
 
        <section id="slide-027">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-027">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-027" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0027.png" class="slide-image" />
 
             <figcaption>
@@ -321,21 +317,19 @@ slides: true
 
 
        <section id="slide-027" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-028">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-028" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0028anim0.svg" data-images="11.Introduction.0.key-stage-0028anim0.svg,11.Introduction.0.key-stage-0028anim1.svg,11.Introduction.0.key-stage-0028anim2.svg,11.Introduction.0.key-stage-0028anim3.svg" class="slide-image" />
 
             <figcaption>
             <p    >A simple way of attacking this problem is to make each pixel a feature. Here’s what that looks like. For each instance, we translate each pixel to a value between 0 (black) and 1 (white). This gives us instance with 784 features each, labeled with a digit from 0 to 9. We feed these to the learning algorithm, which produces a classifier. We then get a new example, and ask the classifier what it thinks. Once we have a classifier that does well, we can use it in a larger system, for recognising digits.<br></p><p    >The current  best performing classifier for this task has a <a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#4d4e495354"><strong>probability of 0.21% </strong></a>of getting an unseen example wrong.<br></p><p    >Note that we haven’t fully solved the problem of character recognition. We still need to cut a sequence of digits into individual digits, feed those digits to the classifier and process the results. This all the work we have to to to translate our<strong> real problem </strong>to the <strong>abstract problem</strong> of classification. Machine learning has solved part of the problem for us, but there is usually still a lot of engineering left to do.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-029">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-029">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-029" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0029.svg" class="slide-image" />
 
             <figcaption>
@@ -345,7 +339,7 @@ slides: true
 
 
        <section id="slide-030">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-030">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-030" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0030.svg" class="slide-image" />
 
             <figcaption>
@@ -355,7 +349,7 @@ slides: true
 
 
        <section id="slide-031">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-031">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-031" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0031.svg" class="slide-image" />
 
             <figcaption>
@@ -365,7 +359,7 @@ slides: true
 
 
        <section id="slide-032">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-032">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-032" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0032.svg" class="slide-image" />
 
             <figcaption>
@@ -375,7 +369,7 @@ slides: true
 
 
        <section id="slide-033">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-033">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-033" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0033.svg" class="slide-image" />
 
             <figcaption>
@@ -385,56 +379,40 @@ slides: true
 
 
        <section id="slide-034">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-034">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-034" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0034.png" class="slide-image" />
 
             <figcaption>
-            <p    >To explain this simply, we'll revisit the perceptron problem from the previous video. Can we guess, with some accuracy what a person's sex or gender is?<br></p><p    >This may seem like a harmless example, but it turns out that this is actually a sensitive problem. We'll discuss why in the fourth video of this lecture. For now, we'll just look at how existing algorithms might tackle this problem. Then, we'll discuss what the impact is of actually using such algorithms.</p><p    ></p>
+            <p    >Here’s a dataset that we’ll use as a running example. Its <strong>instances</strong> are penguins, the two<strong> features</strong> are the flipper length (in dm) and the body mass (in kg). The class is their biological sex, restricted to <span class="blue">male</span> or <span class="orange red">female</span>. Are these two features enough to guess a penguin's sex?<br></p><p    >The dataset comes with some penguins for which the sex was not determined (missing values).<br></p><p    >data source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a>, <a href="https://github.com/mcnakhaee/palmerpenguins"><strong>https://github.com/mcnakhaee/palmerpenguins</strong></a> (python package)<br></p><p    >image source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-034" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-035">link here</a>
-            <img src="11.Introduction.0.key-stage-0035anim0.svg" data-images="11.Introduction.0.key-stage-0035anim0.svg,11.Introduction.0.key-stage-0035anim1.svg" class="slide-image" />
+       <section id="slide-035">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-035" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0035.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Instead of portrait pictures, we'll look at physical measurements. <br></p><p    >Here’s a dataset that we’ll use as a running example. Its <strong>instances</strong> are US soldiers, the two<strong> features</strong> are the height (or ‘stature’) and the distance between the shoulder blades (‘interscye’). The class is their biological sex, restricted to male or female. Are these two features enough to predict whether somebody’s sex is <strong>male</strong> or <strong class="orange red">female</strong>?<br></p><p    >This is, of course, an extremely crude example. Biological sex cannot be perfectly predicted from just two measurements, and isn’t perfectly captured in these two classes. It’s important to understand that most machine learning algorithms are like this: crude approximations. We’ll talk more about this problem in the fourth video.<br></p><p    >data source: ANSUR II<br></p><p    >image source: MEASURER’S HANDBOOK: US ARMY AND MARINE CORPS ANTHROPOMETRIC SURVEYS, 2010-2011 <br></p><p    ></p>
+            <p    >Since we have only two features, we can easily plot our dataset.<br></p><p    >We call this space, where every feature is an axis and every instance is a point, the <strong>feature space</strong>. If we had 3 features, it would be a 3D space. For higher numbers of features, we may have difficulty visualizing the feature space, but that shouldn’t stop the classifier: any classification method we come up with should, in principle, work on an arbitrary number of features.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
 
 
-
-       <section id="slide-036">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-036">link here</a>
-            <img src="11.Introduction.0.key-stage-0036.svg" class="slide-image" />
+       <section id="slide-035" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-036" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0036anim0.svg" data-images="11.Introduction.0.key-stage-0036anim0.svg,11.Introduction.0.key-stage-0036anim1.svg,11.Introduction.0.key-stage-0036anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Since we have only two features, we can easily plot our dataset.<br></p><p    >We call this space, where every feature is an axis and every instance is a point, the <strong>feature space</strong>. If we had 3 features, it would be a 3D space. For higher numbers of features, we may have difficulty visualizing the feature space, but that shouldn’t stop the classifier: any classification method we come up with should, in principle, work on an arbitrary number of features.<br></p><p    >Note that in this case, our features are far to crude to make perfect predictions: there are lots of places where the two classes simply overlap. This is important to realize: with these features, no matter how powerful our classifier, the best we will get is a very crude guess. That's important with attributes like sex or gender, since it may not be a good idea to guess at somebody's sex or gender. </p><p    ></p>
+            <p    >Here is a simple idea for a classifier: <em>draw a line</em>. We just draw a line, and call everything above the line <strong class="blue">male</strong>, and below it<span> </span><strong class="orange red">female</strong>. <br></p><p    >As you can see,  a many examples end up misclassified, but some points are the correct side of the line. Our classifier might just do a little better than one that would simply guess at random or call everything <strong class="orange red">female</strong>.<br></p><p    >If we see a new penguin, all we need to do is measure them, and see whether they end up above or below the line.<br></p><p    ></p>
             </figcaption>
-       </section>
-
-
-       <section id="slide-036" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-037">link here</a>
-            <img src="11.Introduction.0.key-stage-0037anim0.svg" data-images="11.Introduction.0.key-stage-0037anim0.svg,11.Introduction.0.key-stage-0037anim1.svg,11.Introduction.0.key-stage-0037anim2.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Here is a simple idea for a classifier: <em>draw a line</em>. We just draw a line, and call everything above the line <strong class="blue">male</strong>, and below it<span> </span><strong class="orange red">female</strong>. <br></p><p    >As you can see,  a many examples end up misclassified, but  the majority is on the correct side of the line. Our classifier would already do much  better than one that would simply guess at random or call everything <strong class="orange red">female</strong>.<br></p><p    >If we see a new person, all we need to do is measure them, and see whether they end up above or below the line.<br></p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-038">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-038">link here</a>
-            <img src="11.Introduction.0.key-stage-0038.svg" class="slide-image" />
+       <section id="slide-037">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-037" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0037.svg" class="slide-image" />
 
             <figcaption>
             <p    >An important thing to note is that “drawing a line” is a technique that only works in two dimensions (i.e. if we have two features). Our methods need to work, at least in principle, for whatever number of features we decide to use. The more generic version of the idea to “draw a line” is to cut the feature space in two using a line-like shape.<br></p><p    >In 1D, the equivalent structure is a point. Anything above the point we guess is male, anything below it, female.<br></p><p    >In 3D, we can cut the feature space in two with a plane.<br></p><p    >In four or more dimensions, the shape that cuts the space in two is called a <strong>hyperplane</strong>. we can no longer draw it intuitively, but luckily the mathematics are very simple. We’ll see how to define this in the next lecture.</p><p    ></p>
@@ -442,23 +420,21 @@ slides: true
        </section>
 
 
-       <section id="slide-038" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-039">link here</a>
-            <img src="11.Introduction.0.key-stage-0039anim0.svg" data-images="11.Introduction.0.key-stage-0039anim0.svg,11.Introduction.0.key-stage-0039anim1.svg,11.Introduction.0.key-stage-0039anim2.svg" class="slide-image" />
+       <section id="slide-037" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-038" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0038anim0.svg" data-images="11.Introduction.0.key-stage-0038anim0.svg,11.Introduction.0.key-stage-0038anim1.svg,11.Introduction.0.key-stage-0038anim2.svg" class="slide-image" />
 
             <figcaption>
             <p    >Which line should we choose? Some lines separate the classes pretty well, and some not at all.<br></p><p    >We can visualise this problem in the feature space. In the feature space (or instance space), each instance is a point, and our current classifier is a line. <br></p><p    >Since a line is defined by two parameters (the slope <strong>s</strong> and the intercept <strong>b</strong>), we can visualise the<em> </em><strong>model space</strong> as a plane.For each value of s and b, we get a point in the model space, and a line in the feature space. Our job is to search the model space for a model that separates the data well.<br></p><p    >To search the model space, we define a<strong> loss function</strong> which tells us how well a particular model does for our data.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-040">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-040">link here</a>
-            <img src="11.Introduction.0.key-stage-0040.svg" class="slide-image" />
+       <section id="slide-039">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-039" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0039.svg" class="slide-image" />
 
             <figcaption>
             <p    >To capture which model we prefer, we define a<strong> loss function</strong>. The lower the loss, the better the model.<br></p><p    >Note that the loss function has the <strong>model</strong> as input and the <strong>data</strong> as a constant (as opposed to the model itself, which is a function of the data).<br></p><p    >The best loss function to use for classification is a complex question. We’ll come back to that later. For now we can just use the number examples that the model classifies incorrectly. The lower this is, the better.</p><p    ></p>
@@ -466,32 +442,40 @@ slides: true
        </section>
 
 
+       <section id="slide-040">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-040" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0040.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Once we have a loss function, we can colour our model space with the<em> loss of each model </em>(for our current data). The brighter, the better. <br></p><p    >All we need to do now is find the brightest point, which corresponds to the best model. More on that next lecture. <br></p><aside    >In this case we can simply see which the brightest point is, but remember that the model space is usually high-dimensional.</aside><aside    ></aside>
+            </figcaption>
+       </section>
+
+
        <section id="slide-041">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-041">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-041" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0041.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Once we have a loss function, we can colour our model space with the<em> loss of each model </em>(for our current data). The brighter, the better. <br></p><p    >All we need to do now is find the brightest point, which corresponds to the best model. More on that next lecture. In this case we can simply <em>see</em> which the brightest point is, but remember that the model space is usually high-dimensional.</p><p    ></p>
+            <p    >The problem with this data is that it just isn't possible to separate the two classes very well with a single line. This is because we are actually looking at three different species of penguins. If we could separate them, them the data would be linearly separable. If, however, the species information isn't available, we'll need to look at non-linear classifiers.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-041" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-042">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-042" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0042anim0.svg" data-images="11.Introduction.0.key-stage-0042anim0.svg,11.Introduction.0.key-stage-0042anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a radically different approach: <strong>a decision tree</strong>. This classifier consists of a tree, which studies one feature in isolation at every node. In this case, it moves left if the feature is lower than some threshold value, and right if the feature is higher.<br></p><p    >The model space of all possible decision trees is a lot more difficult to visualize. Often, decision trees are “grown” by adding nodes from the root until a particular criterion is reached. We’ll discuss how to train decision trees in detail in week 5 (the algorithm is simple, but it requires a little probability theory).<br></p><p    >The shape that he classifier draws in feature space to segment the two classes is called the<strong> decision boundary</strong>.</p><p    ></p>
+            <p    >Here is one such approach: <strong>a decision tree</strong>. This classifier consists of a tree, which studies one feature in isolation at every node. In this case, it moves left if the feature is lower than some threshold value, and right if the feature is higher.<br></p><p    >We won't go into the training algorithm in detail. Often, decision trees are “grown” by adding nodes from the root until a particular criterion is reached. We’ll discuss how to train decision trees in detail in week 5. The algorithm is pretty simple, but all we want to show you here is that there are other ways to "carve up" your feature space, beyond drawing a line.<br></p><p    >Note that the model space for decision trees is a little more abstract than that for linear classifiers. We can just pick n numbers to represent a model, we have to think about the space of all possible trees, labeled with inequalities on the features. In such cases, it may be better to forget about the model space, and to come up with a training algorithm using a different perspective.<br></p><p    >The shape that he classifier draws in feature space to segment the two classes is called the<strong> decision boundary</strong>.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-043">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-043">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-043" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0043.svg" class="slide-image" />
 
             <figcaption>
@@ -501,47 +485,47 @@ slides: true
 
 
        <section id="slide-044">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-044">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-044" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0044.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Finally, here is an example of a l<em>azy </em>classifier. k-Nearest neighbours. It doesn’t do any learning. It just<em> remembers</em> the data. <br></p><p    >For a new point (indicated by the question mark), it just looks at the <em>k</em> points that are closest (k=7 in this picture), and assigns the class that is most frequent in that set (<span class="blue">blue</span> in this case).<br></p><p    >k is what we call a <strong>hyperparameter</strong>: you have to choose it yourself before you use the algorithm. We’ll discuss how to choose hyperparameters in lecture 4.</p><p    ></p>
+            <p    >Finally, here is an example of a l<em>azy </em>classifier.<strong> k-Nearest neighbours.</strong> It doesn’t do any learning. It just<em> remembers</em> the data. <br></p><p    >For a new point (indicated by the question mark), it just looks at the <em>k</em> points that are closest (k=7 in this picture), and assigns the class that is most frequent in that set (<span class="blue">male</span> in this case).<br></p><p    >k is what we call a <strong>hyperparameter</strong>: you have to choose it yourself before you use the algorithm. We’ll discuss how to choose hyperparameters in lecture 4.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-045">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-045">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-045" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0045.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what the decision boundary looks like for k=7. The point from the previous slide is indicated in white.</p><p    ></p>
+            <p    >Here’s what the decision boundary looks like for k=7. The point from the previous slide is indicated in white.<br></p><aside    >Note that the distance in the vertical direction counts a little stronger, since the units are bigger. This means that the points may not be the colors you'd expect based on the visual distance in this image. To fix this, we should normalize the data, which we will learn about in lecture 5.</aside><aside    ></aside>
             </figcaption>
        </section>
 
 
        <section id="slide-046">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-046">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-046" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0046.svg" class="slide-image" />
 
             <figcaption>
-            <p    >A few  variations are possible on this basic scheme. Firstly, the features are usually numerical or categorical. Some models can handle only numerical, in which case, any categorical features have to be translated to numerical ones (we’ll see how to do that in lecture 4).<br></p><p    ><strong>Binary classification</strong> (a task with two classes) is probably the simplest and most well-studied task. If you have <em>more</em> than two classes, some classifiers (like kNN) can deal with that without a problem. For others (like linear classification), you’ll need to find clever way to turn a binary classifier into a multiclass classifier.<br></p><p    ><strong>Multilabel classification</strong> is a much more complex task. We won’t go into it in this course, but it’s an active subject of research.<br></p><p    >Instead of a single verdict, it can often be helpful if a classifier assigns a<strong> score</strong> to each class. If we want a single class, we pick the one with the highest score, but we can also check what the second most likely class is, and how sure the classifier is of its verdict. This is often important if the consequences of of a wrong classification are very serious (i.e. deciding whether to operate on someone, or whether to investigate someone for criminal activity).</p><p    ></p>
+            <p    >A few  variations are possible on this basic scheme. In these examples we've only seen numeric features, that is features whose value is a number, but it's also possible to have categoric features: features whose value is one of a small umber of categories. For instance, the species feature in the penguin dataset has one of three possible values.<br></p><p    >Some models can handle only numeric features, in which case, any categorical features have to be translated to numerical ones (we’ll see how to do that in lecture 4).<br></p><p    ><strong>Binary classification</strong> (a task with two classes) is probably the simplest and most well-studied task. If you have <em>more</em> than two classes, some classifiers (like kNN) can deal with that without a problem. For others (like linear classification), you’ll need to find clever way to turn a binary classifier into a multiclass classifier.<br></p><p    ><strong>Multilabel classification</strong> is a much more complex task. We won’t go into it in this course, but it’s an active subject of research.<br></p><p    >Instead of a single verdict, it can often be helpful if a classifier assigns a<strong> score</strong> to each class. If we want a single class, we pick the one with the highest score, but we can also check what the second most likely class is, and how sure the classifier is of its verdict. This is often important if the consequences of of a wrong classification are very serious (i.e. deciding whether to operate on someone, or whether to investigate someone for criminal activity).</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-047">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-047">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-047" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To summarize: this is the basic recipe for doing machine learning. It doesn’t always fit the problem, and we’ll look at those cases too. Sometimes your problem doesn’t fit very well (reinforcement learning, recommendation), sometime deviating slightly can help performance (sequence learning) and sometimes, taking a radically different approach can turn everything on its head (deep learning).<br></p><p    >Nevertheless, if you want to keep things simple, and use existing solutions, <strong>the basic recipe</strong> is a good starting point,</p><p    ></p>
+            <p    >To summarize: this is the <strong>basic recipe</strong> for doing machine learning. We take a problem, we translate the problem, or part of the problem, to an abstract task, like classification. We choose our instances and our features. We choose a model class, and then we search the model space for a model that solves our problem well.<br></p><p    >The basic recipe doesn’t always fit every situation, and we’ll look at those cases too. But this is always a good place to start, especially when you're new to machine learning.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-048">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-048">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-048" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0048.svg" class="slide-image" />
 
             <figcaption>
@@ -551,11 +535,11 @@ slides: true
 
 
        <section id="slide-049">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-049">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-049" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0049.svg" class="slide-image" />
 
             <figcaption>
-            <p    >That’s all we’ll say about classification in this lecture. In the next video, we look at regression, and some other abstract tasks.<br></p><p    >image source: <a href="https://twitter.com/archillinks/status/1022889384494940160"><strong>https://twitter.com/archillinks/status/1022889384494940160</strong></a></p><p    ><a href="https://twitter.com/archillinks/status/1022889384494940160"><strong></strong></a></p>
+            <p    >That’s all we’ll say about classification in this lecture. In the next video, we'll look at regression, and some other abstract tasks.<br></p><p    >image source: <a href="https://twitter.com/archillinks/status/1022889384494940160"><strong>https://twitter.com/archillinks/status/1022889384494940160</strong></a></p><p    ><a href="https://twitter.com/archillinks/status/1022889384494940160"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -571,7 +555,7 @@ slides: true
        </section>
 
        <section id="slide-050">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-050">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-050" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0050.svg" class="slide-image" />
 
             <figcaption>
@@ -581,69 +565,63 @@ slides: true
 
 
        <section id="slide-051">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-051">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-051" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0051.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We’ve looked at classification, as our first example of an abstract task. In this video. We’ll see some others. First up: regression.</p><p    ></p>
+            <p    >We’ve looked at classification, as our first example of an abstract task. In this video. We’ll see some others. First up: <strong>regression</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-051" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-052">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-052" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0052anim0.svg" data-images="11.Introduction.0.key-stage-0052anim0.svg,11.Introduction.0.key-stage-0052anim1.svg,11.Introduction.0.key-stage-0052anim2.svg,11.Introduction.0.key-stage-0052anim3.svg,11.Introduction.0.key-stage-0052anim4.svg,11.Introduction.0.key-stage-0052anim5.svg,11.Introduction.0.key-stage-0052anim6.svg,11.Introduction.0.key-stage-0052anim7.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Regression works exactly the same as classification, except we’re predicting a number instead of a class. That is, the model we’re trying to learn is a function from the feature space to ℝ.</p><p    ></p>
+            <p    >Regression works exactly the same as classification, except we’re predicting a <em>number </em>instead of a class. That is, the model we’re trying to learn is a function from the feature space to ℝ.<br></p><p    >To make things a little more precise, let's introduce some notation for the different parts of the task. We represent the features of a particular instance i by the vector <strong>x</strong><sub>i</sub>. The corresponding true label (which is given in our data) we call y<sub>i</sub>. The model we represent by a function f, and its prediction for instance i we represent as f(<strong>x</strong><sub>i</sub>). This. means that, broadly, our task is to get f(<strong>x</strong><sub>i</sub>) as close as we can to y<sub>i</sub>.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-053">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-053">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-053" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0053.png" class="slide-image" />
 
             <figcaption>
-            <p    >Staying in the same domain, here is another dataset. Note that we have<em> only one feature</em><strong> </strong>this time. The other numerical column is the <strong>target</strong> data. For general regression we should be able to handle datasets with arbitrary numbers of features.<br></p><p    ><br></p><p    >data source: ANSUR II<lnbr></lnbr>image source: MEASURER’S HANDBOOK: US ARMY AND MARINE CORPS ANTHROPOMETRIC SURVEYS, 2010-2011 <br></p><p    ></p>
+            <p    >To illustrate some basic approaches to this problem, we will use the same dataset as before, but this time we will make the flipper length the sole feature, and we will try to predict the body mass. In general, penguins with large flippers should be tall, so we'd expect them to have higher body mass. So a reasonable guess should be possible.<br></p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-053" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-054">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-054" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0054anim0.svg" data-images="11.Introduction.0.key-stage-0054anim0.svg,11.Introduction.0.key-stage-0054anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >Here’s what our data looks like. Note that though it looks the same as in the classification example, this time we’re plotting both the <span>targets</span> and the<span> feature space</span> in the same figure.<br></p><p    >We can use a <strong class="blue">linear model</strong> again. But note how differently we’re using the model. Previously, we wanted to segment the feature space into two classes. Now we’re trying to model the relation between the feature(s) and the target. The model has the same shape, but we’re using it very differently.<br></p><p    >The line I’ve drawn here isn’t very good. It predicts much too high a value. To determine how good a model is, we must again choose a <strong>loss function</strong>.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-054" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-055">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-055" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0055anim0.svg" data-images="11.Introduction.0.key-stage-0055anim0.svg,11.Introduction.0.key-stage-0055anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >The <strong>loss function</strong> maps a model to a number that expresses how well it fits the data (the smaller the loss, the better). Offline machine learning boils down to finding a model with a low loss for your data.<br></p><p    >Here is common loss function for regression. <strong class="orange red">p</strong> stands for the parameters that define the line. We simply take the difference between the model prediction and the target value from the data. This is called a<strong> residual</strong>. We square, and then sum all residuals.<br></p><p    >Sometimes we also divide by the size of the data (n). Occasionally, we multiply by 1/2 for technical reasons. This changes the actual value, but not <em>which</em> model produces the lowest loss, which is the question we want to answer.<br></p><p    ><br></p><p    >image source: <a href="http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html"><strong>http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html</strong></a></p><p    ><a href="http://cs.wellesley.edu/~cs199/lectures/35-correlation-regression.html"><strong></strong></a></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-056">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-056">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-056" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0056.svg" class="slide-image" />
 
             <figcaption>
@@ -653,27 +631,27 @@ slides: true
 
 
        <section id="slide-057">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-057">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-057" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0057.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can also use the<strong> decision tree</strong> principle to perform regression, giving us a <strong>regression tree</strong>. <br></p><p    >We simply segment the feature space into blocks, using a tree as before, and instead of assigning each a<em> class</em>, we assign each a <em>number</em>. This model covers the data very well, for most points in our data it predicts exactly the right value. Does this make it a really good model?</p><p    ></p>
+            <p    >We can also use the<strong> decision tree</strong> principle to perform regression, giving us a <strong>regression tree</strong>. <br></p><p    >We simply segment the feature space into blocks, using a tree as before, and instead of assigning each a<em> class</em>, we assign each a <em>number</em>. This model covers the data very better than the linear regression does, for many points, it predicts exactly the right value. Does this make it a really good model? We'll look at this question in the last video in this lecture.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-058">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-058">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-058" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0058.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For the sake of completeness, here is what kNN <em>regression</em> looks like. Its prediction is the average of the k nearest points in the data (k=7 here).</p><p    ></p>
+            <p    >For the sake of completeness, here is what kNN <em>regression</em> looks like. Its prediction for any given point is the average of the k nearest points in the data (k=7 here).<br></p><p    >This hopefully gives you some idea of the different ways there are to build a regression model. In the next lecture we'll look in detail at how linear regression is done, and in later lectures, we'll start looking at different nonlinear methods in detail.</p><p    ></p>
             </figcaption>
        </section>
 
 
        <section id="slide-059">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-059">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-059" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0059.svg" class="slide-image" />
 
             <figcaption>
@@ -683,46 +661,104 @@ slides: true
 
 
        <section id="slide-059" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-060">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-060" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0060anim0.svg" data-images="11.Introduction.0.key-stage-0060anim0.svg,11.Introduction.0.key-stage-0060anim1.svg,11.Introduction.0.key-stage-0060anim2.svg,11.Introduction.0.key-stage-0060anim3.svg,11.Introduction.0.key-stage-0060anim4.svg" class="slide-image" />
 
             <figcaption>
             <p    >In the case of clustering, we ask the learner to split the instances into a number of clusters. The number of clusters is usually given beforehand by the user.<br></p><p    >This looks a lot like classification, but note that there are no example classes provided by the data.<br></p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
        <section id="slide-061">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-061">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-061" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0061.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is one example of a simple clustering algorithm.<br></p><p    >This algorithm is called<strong> k-means </strong>(not to be confused with kNN). In the example we will separate the dataset shown in (a) into three clusters. <br></p><p    >We start (b), by choosing three random points in the feature space (the <span>red</span>, <span>green</span> and<span> blue</span> points), called the “means”. We then colour every point in the colour of the nearest mean. <br></p><p    >The second step is to remove the original means, and recompute them as the actual means of the sets of red, green and blue points. We then iterate these two steps, alternately recomputing the means and recovering the points, until the algorithm converges to a stable state. </p><p    ></p>
+            <p    >Here's an example from the penguin dataset. If we plot the bill length and bill depth, we see that the three species separate pretty clearly in this feature space. If we remove the information that there are separate clusters, can we recover it from these two features alone? Note that this is not classification, because we are not giving our learner labels. We're not telling it the species of any instance in our dataset. It has to figure out a clustering purely from the natural separation of the data.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-061" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-062">link here</a>
-            <img src="11.Introduction.0.key-stage-0062anim0.svg" data-images="11.Introduction.0.key-stage-0062anim0.svg,11.Introduction.0.key-stage-0062anim1.svg,11.Introduction.0.key-stage-0062anim2.svg,11.Introduction.0.key-stage-0062anim3.svg,11.Introduction.0.key-stage-0062anim4.svg,11.Introduction.0.key-stage-0062anim5.svg" class="slide-image" />
+       <section id="slide-062">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-062" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0062.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In density estimation, we want to learn how<em> likely </em>new data is. Is a 2 m tall 16 year old more or less likely than a 1.5 m tall 80 year old? We predict a number for each instance, and that number expresses how likely the model thinks the given instance is.<br></p><p    >The number that the model produces should be a <em>probability </em>if the feature spaces is discrete. That means that the sum of all answers over the whole feature space should be 1. <br></p><p    >If the feature space is continuous (numeric features), the answer should be a probability <em>density</em> (and all answers should<em> integrate </em>to 1).</p><p    ></p>
+            <p    >Here is one quick example of a simple clustering algorithm, just to give you an impression of how something like this might work.<br></p><p    >This algorithm is called<strong> k-means </strong>(not to be confused with kNN). In the example we will separate the dataset shown in into three clusters. <br></p><p    >We start by choosing three random points in the feature space (the <span class="orange red">red</span>, <span class="green">green</span> and<span> </span><span class="blue">blue</span> points), called the “means”. Each of these represents one of our clusters.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
        </section>
-
 
 
        <section id="slide-063">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-063">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-063" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0063.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >We then assign each point the cluster corresponding to the mean it is closest to. <br></p><p    ><br></p><p    >Since the means were randomly chosen, this does not correspond to a very meaningful clustering of the data yet.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-064">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-064" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0064.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Next, we re-compute the means. Each new mean is the mean of all the points that now belong to its cluster. That is, the new red mean is the mean of all the red points.<br></p><aside    >Taking the mean of a series of points work just the same as taking the mean of single numbers, you sum up all the coordinates and then divide by the number of terms in the sum.</aside><aside    ></aside>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-065">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-065" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0065.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Then, we repeat the procedure, we re-assign the point to the mean they are now closest to. Highlighted here are the points that have changed from one cluster to another. For instance the highlighted red points we mostly blue before, because the were closest to the blue mean, but now that we've recomputed the means and the blue mean has moved over to the left, they are closer to the red mean.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-065" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-066" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0066anim0.svg" data-images="11.Introduction.0.key-stage-0066anim0.svg,11.Introduction.0.key-stage-0066anim1.svg,11.Introduction.0.key-stage-0066anim2.svg,11.Introduction.0.key-stage-0066anim3.svg,11.Introduction.0.key-stage-0066anim4.svg,11.Introduction.0.key-stage-0066anim5.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >We keep iterating this process, re-assigning the clusters and re-computing the means, until the means stop moving from one iteration to the next. </p><p    ></p>
+            </figcaption>
+            <span class="hint">click image for animation</span>
+       </section>
+
+
+
+       <section id="slide-067">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-067" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0067.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Here's the clustering we end up with. We won't know what the clusters <em>mean</em> of course, without investigating further, but in this case they correspond pretty closely to the species of the penguin (although there are some exceptions).<br></p><p    >It may seem a little magical to you that this algorithm works at all. We won't try to give you any intuition here; just take this as an example of how clustering might work in practice. However, in a later lecture we will see the EM algorithm for Gaussian mixture models, which is very similar to k-means and we will look at why (and when) that algorithm works in detail.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-067" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-068" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0068anim0.svg" data-images="11.Introduction.0.key-stage-0068anim0.svg,11.Introduction.0.key-stage-0068anim1.svg,11.Introduction.0.key-stage-0068anim2.svg,11.Introduction.0.key-stage-0068anim3.svg,11.Introduction.0.key-stage-0068anim4.svg,11.Introduction.0.key-stage-0068anim5.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >In <strong>density estimation</strong>, we want to learn how<em> likely </em>new data is. Is a 2 m tall 16 year old more or less likely than a 1.5 m tall 80 year old? We predict a number for each instance, and that number expresses how likely the model thinks the given instance is.<br></p><p    >The number that the model produces should be a <em>probability </em>if the feature spaces is discrete. That means that the sum of all answers over the whole feature space should be 1. <br></p><p    >If the feature space is continuous (numeric features), the answer should be a probability <em>density</em> (and all answers should<em> integrate </em>to 1).</p><p    ></p>
+            </figcaption>
+            <span class="hint">click image for animation</span>
+       </section>
+
+
+
+       <section id="slide-069">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-069" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
             <p    >That may sound abstract, but density estimation is probably the machine learning task that most people have already done before. <br></p><p    >Density estimation is the task of modelling the <em>probability distribution</em> behind your data. Most of you will have fit a distribution to a dataset at some point.<br></p><p    >Here is an example: the final grades from 2017. If you know a bit of statistics, you can probably see sort of a normal distribution in this. Once you’ve fitted a normal distribution, you can give a density estimate for any grade.<br></p><p    >Except that in this case, there are three peaks. these could be explained by noise, but we could also fit a mixture of three normal distributions to this data, to explain the peaks. This is a much more difficult task, to which we will return in a few weeks. For now, the lesson is that for simple models like a normal distribution density estimation is so easy it’s not usually seen as machine learning, but as the models get more complex, the task gets more complex also.</p><p    ></p>
@@ -730,9 +766,9 @@ slides: true
        </section>
 
 
-       <section id="slide-064">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-064">link here</a>
-            <img src="11.Introduction.0.key-stage-0064.png" class="slide-image" />
+       <section id="slide-070">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-070" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0070.png" class="slide-image" />
 
             <figcaption>
             <p    >With complex data, it’s often easier to <em>sample</em> from a probability distribution that it is to get a probability (density) estimate. Building a model from which you can sample new examples is called<strong> generative modelling</strong>. <br></p><p    >These people <em>don’t exist</em>. These pictures were <em>sampled</em> from a model trained on a large dataset of images of faces. Note that this is not a 3d model, or a generator that started with a basic face and filled in the details: all the model saw was a large collection of pictures. This is a typical example of the power of <strong>deep learning</strong>, which we will discuss in the third week.<br></p><p    >image source: <a href="https://arxiv.org/abs/1812.04948"><strong>https://arxiv.org/abs/1812.04948</strong></a> see also: <a href="http://thispersondoesnotexist.com"><strong>thispersondoesnotexist.com</strong></a></p><p    ><a href="http://thispersondoesnotexist.com"><strong></strong></a></p>
@@ -740,39 +776,29 @@ slides: true
        </section>
 
 
-       <section id="slide-065">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-065">link here</a>
-            <img src="11.Introduction.0.key-stage-0065.svg" class="slide-image" />
+       <section id="slide-071">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-071" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0071.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In many cases, unlabeled data is very cheaply available, while labeled data is expensive to acquire. In such cases, semi-supervised learning can be useful: this involves learning from a small labeled set and a large amount of unlabeled data.<br></p><p    >A simple example is self-training: we train a classifier on the unlabeled data and use it to complete the dataset. Then we train on the full data and repeat the process. From this example, it’s slightly mysterious why this should help. For now, we’ll just say that the classifier trained on the whole data can better understand the basic structure of the instances, and then attach the label based on that deeper understanding of the structure. If that doesn’t feel like a satisfying explanation, you’ll have to wait until later in the course, when we can talk about this in greater depth.<br></p><p    ></p>
+            <p    >In many cases, unlabeled data is very cheaply available, while labeled data is expensive to acquire. In such cases, <strong>semi-supervised learning</strong> can be useful: this involves learning from a small labeled set and a large amount of unlabeled data.<br></p><p    >A very simple example is<strong> self-training</strong>: we train a classifier on the labeled data and use it to "complete" the dataset. Then, we train on the full data and repeat the process. From this example, it’s (again) slightly mysterious why the unlabeled data should provide any benefit. For now, we’ll just say that the classifier trained on the whole data can better understand the basic structure of the instances, and then attach the label based on that deeper understanding of the structure. If that doesn’t feel like a satisfying explanation, you’ll have to wait until later in the course, when we can talk about this in greater depth.<br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-066">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-066">link here</a>
-            <img src="11.Introduction.0.key-stage-0066.svg" class="slide-image" />
+       <section id="slide-072">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-072" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0072.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Recently people have been referring to a family of methods as <strong>self-supervised learning</strong>. It refers, generally, to ways in which a large dataset can be used to train a model in such a way that no or little annotation is required. <br></p><p    >One example is in the domain of natural language, to feed a model that can read and produce sequences, a sentence with on or more words masked out. This is not in itself a useful task, but it is a task that can be performed on unlabeled data. And, a model that can learn to do this well, has likely learned a lot about the structure of sentences, which means it can then be used to build on for other, more useful tasks (possibly with a small amount of labeled data thrown in).<br></p><p    >Semi-supervised learning and self-supervised learning have a lot in common, and it’s not quite clear where one begins and the other ends. In general, self-supervised learning refers to deep learning models, and to clever training schemes using unlabeled data. We’ll see some more examples when we start talking about deep learning.</p><p    ></p>
+            <p    >Recently people have been referring to a family of methods as <strong>self-supervised learning</strong>. It refers, generally, to different ways in which a large unlabeled dataset can be used to train a model in such a way that no or little annotation is required. <br></p><p    >One example is in the domain of natural language, to feed a model that can read and produce sequences, a sentence with on or more words masked out. This is not in itself a useful task, but it is a task that can be performed on unlabeled data. And, a model that can learn to do this well, has likely learned a lot about the structure of sentences, which means it can then be used to build on for other, more useful tasks (possibly with a small amount of labeled data thrown in).<br></p><p    >Semi-supervised learning and self-supervised learning have a lot in common, and it’s not quite clear where one begins and the other ends. In general, self-supervised learning refers to deep learning models, and to clever training schemes using unlabeled data. We’ll see some more examples when we start talking about deep learning.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-067">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-067">link here</a>
-            <img src="11.Introduction.0.key-stage-0067.svg" class="slide-image" />
-
-            <figcaption>
-            <p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-068">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-068">link here</a>
-            <img src="11.Introduction.0.key-stage-0068.svg" class="slide-image" />
+       <section id="slide-073">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-073" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0073.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
@@ -780,17 +806,27 @@ slides: true
        </section>
 
 
-       <section id="slide-069">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-069">link here</a>
-            <img src="11.Introduction.0.key-stage-0069.svg" class="slide-image" />
+       <section id="slide-074">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-074" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0074.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
             </figcaption>
        </section>
 
-       <section class="video" id="video-069">
-           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-69">link here</a>
+
+       <section id="slide-075">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-075" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0075.svg" class="slide-image" />
+
+            <figcaption>
+            <p    ></p>
+            </figcaption>
+       </section>
+
+       <section class="video" id="video-075">
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-75">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/uWmbIQHtjhk?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -800,9 +836,9 @@ slides: true
 
        </section>
 
-       <section id="slide-070">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-070">link here</a>
-            <img src="11.Introduction.0.key-stage-0070.svg" class="slide-image" />
+       <section id="slide-076">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-076" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
             <p    >Throughout the course, we’ll occasionally stop and look at the impact that this kind of technology has on society. This is rapidly becoming more important as machine learning is being rolled out at national and international scales.<br></p><p    >Sometimes we’ll do this as part of the regular lectures, and sometimes, we’ll create a separate video to focus on some important aspects. In this video we’ll look at some of the questions it’s important to ask of machine learning systems and machine learning research.<br></p><p    >A quick disclaimer: the question of social impact is difficult to divorce entirely from one’s personal values. I am a secular, left-wing progressive when it comes to most issues, which will no doubt come through in these videos. I have done my best to present the discussion rather than the conclusions, and to present mostly facts that are difficult to dismiss if you believe in basic academic investigation. You are entirely free to form your own opinion, of course, and the exam will only test your knowledge of the material presented here.<br></p><p    ><lnbr></lnbr></p><p    ></p>
@@ -810,9 +846,9 @@ slides: true
        </section>
 
 
-       <section id="slide-071">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-071">link here</a>
-            <img src="11.Introduction.0.key-stage-0071.png" class="slide-image" />
+       <section id="slide-077">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-077" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0077.png" class="slide-image" />
 
             <figcaption>
             <p    >In the first video, we saw one of the earliest examples of machine learning: a perceptron being used to classify the sex or gender of a person by their photograph. We’ve used this example to illustrate how classifiers work, and we may return to it occasionally.<br></p><p    >This may seem like a harmless example, and indeed for a long time the exercise was pretty academic. Machine learning simply didn’t work very well yet, and this problem gave us a nice balanced set of classes, and a difficult computer vision task that we knew could in principle be solved with good accuracy (because we can do it). <br></p><p    >In short, it was a good benchmark with which to study our models. Since these models didn't perform well enough to be used anyway, the social impact was a non-issue.</p><p    ></p>
@@ -820,9 +856,9 @@ slides: true
        </section>
 
 
-       <section id="slide-072">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-072">link here</a>
-            <img src="11.Introduction.0.key-stage-0072.png" class="slide-image" />
+       <section id="slide-078">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-078" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0078.png" class="slide-image" />
 
             <figcaption>
             <p    >However, now that we have actually “solved” the task (that is, we have machine learning systems can do it as well as humans can), we need to look at what the impact is when we actually start using such systems in the real world. Sex or gender detection may seem harmless at first sight. After all, it’s something we all do subconsciously hundreds of times every day. But actually, building automated systems for it is highly controversial. So controversial in fact, that Google has disabled the option in its Cloud vision API.<br></p><p    >This is a lucrative product for Google, and a reasonable guess of a subject’s gender is likely to be a commonly requested feature. If Google removes such a feature from their product, they must have a compelling reason.<br></p><p    >In this video, we will look at this example in detail, and consider the different reasons that people offer why we shouldn’t build such systems, even though we can.<br></p><p    ></p>
@@ -830,9 +866,9 @@ slides: true
        </section>
 
 
-       <section id="slide-073">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-073">link here</a>
-            <img src="11.Introduction.0.key-stage-0073.svg" class="slide-image" />
+       <section id="slide-079">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-079" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
             <p    >First, let’s see what Google offered as an explanation for removing the feature. Their argument centers on the impossibility of inferring gender from physical attributes.<br></p><p    >But is this the whole story? We cannot perfectly infer a traffic sign or a digit from an image, but but we can make a pretty good guess. In fact these days, guessing a person’s sex or gender can be done with pretty high accuracy compared to most machine learning tasks. <br></p><p    >So the fact that it can’t be done perfectly surely can’t be the whole story: that is true for almost all machine learning applications, and for any label returned by the Cloud vision API. What makes gender special? Why should sex or gender only be used if it can be perfectly inferred? Or should it perhaps not even be used then?<br></p><p    >To get to the real reason that such classification tasks are controversial, we need to look more carefully at the problem. <br></p><p    >quote source: <a href="https://venturebeat.com/2020/02/20/google-cloud-ai-removes-gender-labels-from-cloud-vision-api-to-avoid-bias/"><strong>https://venturebeat.com/2020/02/20/google-cloud-ai-removes-gender-labels-from-cloud-vision-api-to-avoid-bias/</strong></a></p><p    ><a href="https://venturebeat.com/2020/02/20/google-cloud-ai-removes-gender-labels-from-cloud-vision-api-to-avoid-bias/"><strong></strong></a></p>
@@ -840,9 +876,9 @@ slides: true
        </section>
 
 
-       <section id="slide-074">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-074">link here</a>
-            <img src="11.Introduction.0.key-stage-0074.svg" class="slide-image" />
+       <section id="slide-080">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-080" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0080.svg" class="slide-image" />
 
             <figcaption>
             <p    >The first part of the problem is that gender and sex are examples of what we’ll call <strong>sensitive attributes</strong>: features or targets associated with instances in the data, that require careful consideration. These are some examples of sensitive attributes, but many more exist.</p><p    ></p>
@@ -850,9 +886,9 @@ slides: true
        </section>
 
 
-       <section id="slide-075">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-075">link here</a>
-            <img src="11.Introduction.0.key-stage-0075.svg" class="slide-image" />
+       <section id="slide-081">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-081" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0081.svg" class="slide-image" />
 
             <figcaption>
             <p    >To decide whether or not an attribute is (potentially) sensitive, and if so, how it should be treated, we can ask ourselves several questions. In this video, we’ll focus on the following three.</p><p    ></p>
@@ -860,9 +896,9 @@ slides: true
        </section>
 
 
-       <section id="slide-076">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-076">link here</a>
-            <img src="11.Introduction.0.key-stage-0076.png" class="slide-image" />
+       <section id="slide-082">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-082" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0082.png" class="slide-image" />
 
             <figcaption>
             <p    >The first, and perhaps most obvious question to ask yourself, is <em>can my model be used by people who are explicitly seeking to do harm</em>. For instance, the Chinese government is on a large scale, subjecting people of Uighur ethnicity to heightened surveillance, and incarceration under conditions that violate human rights. <br></p><p    >The Chinese government, of course, doesn’t characterize this as causing harm, making their case on arguments of national security.<br></p><p    >sources: <a href="https://www.nytimes.com/2019/04/14/technology/china-surveillance-artificial-intelligence-racial-profiling.html"><strong>https://www.nytimes.com/2019/04/14/technology/china-surveillance-artificial-intelligence-racial-profiling.html</strong></a>, <a href="https://www.theguardian.com/world/2021/jan/12/uighur-xinjiang-re-education-camp-china-gulbahar-haitiwaji"><strong>https://www.theguardian.com/world/2021/jan/12/uighur-xinjiang-re-education-camp-china-gulbahar-haitiwaji</strong></a><br></p><p    ><br></p><p    ></p>
@@ -870,9 +906,9 @@ slides: true
        </section>
 
 
-       <section id="slide-077">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-077">link here</a>
-            <img src="11.Introduction.0.key-stage-0077.png" class="slide-image" />
+       <section id="slide-083">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-083" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0083.png" class="slide-image" />
 
             <figcaption>
             <p    >One part of this program is classifying people's ethnicity, based on images of their faces (sometimes explicitly images captured by face recognition cameras). It’s quite common to see research emerging from Chinese institutions focusing on the problem of ethnicity classification, with Uighur ethnicity explicitly used as a class.<br></p><p    >Even if we want to leave the question of what constitutes a harmful effect aside, we can say that the effect of this technology, which most people and organizations in the west consider harmful, is intended and explicit. <br></p><p    >That is, everybody can agree that this technology will make it easier to track people of a given ethnicity. The techology functions <em>as intended</em>. The discussion is over whether that intention is good or bad.</p><p    ></p>
@@ -880,23 +916,21 @@ slides: true
        </section>
 
 
-       <section id="slide-077" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-078">link here</a>
-            <img src="11.Introduction.0.key-stage-0078anim0.png" data-images="11.Introduction.0.key-stage-0078anim0.png,11.Introduction.0.key-stage-0078anim1.png" class="slide-image" />
+       <section id="slide-083" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-084" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0084anim0.png" data-images="11.Introduction.0.key-stage-0084anim0.png,11.Introduction.0.key-stage-0084anim1.png" class="slide-image" />
 
             <figcaption>
             <p    >In other cases, the harmful effects are not explicitly intended by the makers of the technology. In this article, the organization ProPublica broke the news that a system used nation-wide in America to aid parole decisions was considerably more likely to deny black people parole than white people, even when all other factors were accounted for.<br></p><p    >This was not an explicit design choice of the makers of the system (a company called NorthPointe). In fact, they explicitly excluded race as a feature. However, even if we exclude sensitive attributes as features, we can still <em>infer</em> race from other features. This means that if we include a feature like the person's postcode, which is strongly correlated with race, the system can still make the classification it would have made if race had been available.<br></p><p    >The question of where this disparity comes from is an important one. We’ll look at this in more detail in the third social impact video.<br></p><p    >source: <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"><strong>https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</strong></a></p><p    ><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"><strong></strong></a></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-079">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-079">link here</a>
-            <img src="11.Introduction.0.key-stage-0079.png" class="slide-image" />
+       <section id="slide-085">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-085" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0085.png" class="slide-image" />
 
             <figcaption>
             <p    >One important source of bias is the distribution of the training data. Where we get our data has a tremendous impact on what the model learns. Since machine learning often requires large amounts of data, we usually can’t afford to control the gathering of data very carefully: unlike studies in life sciences, medicine and so on, we rarely make sure that all variables are carefully controlled. <br></p><p    >The result are systems that have unexpected biases. This is a picture of Joy Buolamwini. As a PhD student, she worked on existing face recognition systems. She found that if she tested them on her own face, they would not recognize her, and she needed to wear a light-colored mask to be recognized at all.<br></p><p    >One aspect of this problem is <strong>training data bias</strong>. If we gather data carelessly from the internet, we end up inheriting whatever biases our source has. If white people are disproportionally represented, then we end up training a system that works less well on non-white people.<br></p><p    >image source: <a href="https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html"><strong>https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html</strong></a></p><p    ><a href="https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html"><strong></strong></a></p>
@@ -904,9 +938,9 @@ slides: true
        </section>
 
 
-       <section id="slide-080">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-080">link here</a>
-            <img src="11.Introduction.0.key-stage-0080.svg" class="slide-image" />
+       <section id="slide-086">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-086" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0086.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
@@ -914,9 +948,9 @@ slides: true
        </section>
 
 
-       <section id="slide-081">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-081">link here</a>
-            <img src="11.Introduction.0.key-stage-0081.svg" class="slide-image" />
+       <section id="slide-087">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-087" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0087.svg" class="slide-image" />
 
             <figcaption>
             <p    >The problem is compounded by the way technologies build on one another. On the left is one example: the Shirley card. Such images (named after one of the models on the first one) were used by lab technicians to develop color photographs. This image was used as a reference to calibrate photo printers in small labs. This shows that white skin was, for a long time the main target in developing photographic technology. <br></p><p    >Eventually, other test cards were developed, but not before color film and development had been focused on white skin for decades. Since digital photography was largely developed to mimic film, it’s quite possible that some of these biases are still present in modern day technology. Certainly most photographers will tell you that capturing black skin well is a skill in itself [1].<br></p><p    >A more recent example is the PULSE system [2]. This is a rather ingenious method for generating reasonable  high-resolution versions of low resolution photographs. Interestingly, the method doesn’t require any training data of its own: it relies on an existing generator network (which we’ll explain in lecture 9). Unfortunately, the generator network they used (known as StyleGAN) turned out to be biased (most likely a result of the data it used). The result was that people found that images of non-white people were upsampled to white people. <br></p><p    >[1] <a href="https://www.anothermag.com/art-photography/12799/antwaun-sargent-joshua-kissi-in-conversation-just-pictures-exhibition-st-louis"><strong>https://www.anothermag.com/art-photography/12799/antwaun-sargent-joshua-kissi-in-conversation-just-pictures-exhibition-st-louis</strong></a><lnbr></lnbr>[2] <a href="https://github.com/adamian98/pulse"><strong>https://github.com/adamian98/pulse</strong></a></p><p    ><a href="https://github.com/adamian98/pulse"><strong></strong></a></p>
@@ -924,37 +958,33 @@ slides: true
        </section>
 
 
-       <section id="slide-081" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-082">link here</a>
-            <img src="11.Introduction.0.key-stage-0083anim0.svg" data-images="11.Introduction.0.key-stage-0083anim0.svg,11.Introduction.0.key-stage-0083anim1.svg" class="slide-image" />
+       <section id="slide-087" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-088" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0089anim0.svg" data-images="11.Introduction.0.key-stage-0089anim0.svg,11.Introduction.0.key-stage-0089anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >Finally, how you choose to<strong> use the predictions</strong> of your model can amplify bias, even if the predictions themselves are in some sense correct.<br></p><p    >Shown here is Google’s machine translation system. A sentence which is gender-neutral in English, like “My friend is a doctor” cannot be translated in a gender-neutral way into Spanish. In the earlier versions of Google Translate, a gender was chosen (implicitly), mostly dictated by the statistics of the dataset. Thus, since the dataset contained more examples of male than female doctors, the system ends up picking the translation with the male suffix.<br></p><p    >You may argue that these statistics are in a sense reflective of biases that exist in society, so that it is indeed more likely that this sentence should be translated for a male. <br></p><p    >However, that doesn’t mean that we’re <em>certain</em> that the user wants the sentence translated in this way. We might build a model that predicts that this sentence should be translated with a male gender with 70% probability. Let’s assume for the sake of argument that that probability is entirely correct.<br></p><p    >That <em>prediction</em> may be entirely correct, but that doesn’t tell us anything about what the correct <em>action</em> is. If we always pick the gender with the highest probability, we’re actually <em>amplifying </em>the bias in the data: there may be 70% male doctors in the dataset, but there will be 100% male doctors in translations produced by the system.<br></p><p    >The solution (in this case) was not to reduce the uncertainty by guessing more accurately, but to detect it, <em>and communicate it to the user</em>. In this case, by showing the two possible translations. The lesson here is that even if your predictions are sound, designing the correct<strong> action</strong> is still a difficult challenge. A challenge that often has more to do with human-computer interaction, than with machine learning.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-082" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-083">link here</a>
-            <img src="11.Introduction.0.key-stage-0085anim0.svg" data-images="11.Introduction.0.key-stage-0085anim0.svg,11.Introduction.0.key-stage-0085anim1.svg" class="slide-image" />
+       <section id="slide-088" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-089" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0091anim0.svg" data-images="11.Introduction.0.key-stage-0091anim0.svg,11.Introduction.0.key-stage-0091anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >It’s also important to note that the target variable may not always be saying what you think it’s saying. <br></p><p    >This is a common problem with <strong>self-reporting</strong>. If you ask respondents for some value you’re interested in, rather than testing it directly, you often end up with inaccurate results. Either because people are lying to you, or because they simply don’t have an accurate idea of what you’re interested in. <br></p><p    >Imagine a survey where measures like the one shown in the slide aren’t taken, and we trust the students at face value when we ask about their drug use. If we then train a classifier to predict drug use from a set of features like extroversion, social background, or education level, we may think we’ve found a link between drug use and these features, when actually what we’ve found is a predictor for how willing people are to lie on a questionnaire. <br></p><p    >Just because a column in your data is labeled "drug use" doesn't mean you should blindly take it to represent drug use in the subjects.<br></p><p    >source: <a href="https://www.laphamsquarterly.org/intoxication/miscellany/have-you-ever-used-derbisol"><strong>https://www.laphamsquarterly.org/intoxication/miscellany/have-you-ever-used-derbisol</strong></a></p><p    ><a href="https://www.laphamsquarterly.org/intoxication/miscellany/have-you-ever-used-derbisol"><strong></strong></a></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-084">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-084">link here</a>
-            <img src="11.Introduction.0.key-stage-0086.svg" class="slide-image" />
+       <section id="slide-090">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-090" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0092.svg" class="slide-image" />
 
             <figcaption>
             <p    >Another question is what <em>features </em>you are looking at for your predictions. One very effective method for predicting the weather is simply to look at the weather today and to make that the prediction for tomorrow. This is surprisingly effective, and you need a very sophisticated model to do any better.<br></p><p    >Nevertheless, for many use cases, this is an entirely unsuitable prediction. In short <strong>accuracy isn’t all that matters</strong>. A ship’s captain, for instance, will be interested in the probability of a storm. For this particular, rare event the persistence model works terribly even if it works well on average. The captain will be much more interested in a model that looks at relevant features to warn them of even a small probability of a storm than a model that simply predicts sunshine tomorrow if there was sunshine today. <br></p><p    >Part of the issue is that the captain is looking for predictions from <em>informative</em> features like mounting or falling air pressure. These features have a more direct causal relation to the prediction. The relation between today's weather and tomorrow's is much more correlational: today's weather doesn't cause tomorrow's weather, they are merely similar because they are caused by the same phenomena.<br></p><p    >source: <a href="http://www.randalolson.com/2014/06/21/we-can-only-forecast-the-weather-a-few-days-into-the-future/"><strong>http://www.randalolson.com/2014/06/21/we-can-only-forecast-the-weather-a-few-days-into-the-future/</strong></a></p><p    ><a href="http://www.randalolson.com/2014/06/21/we-can-only-forecast-the-weather-a-few-days-into-the-future/"><strong></strong></a></p>
@@ -962,9 +992,9 @@ slides: true
        </section>
 
 
-       <section id="slide-085">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-085">link here</a>
-            <img src="11.Introduction.0.key-stage-0087.svg" class="slide-image" />
+       <section id="slide-091">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-091" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
             <p    >Finally, it’s important to ask whether predicting a particular attribute can be offensive or hurtful. Regardless of whether you're guessing accurately, does the very act of guessing cause harm?<br></p><p    >This is a more nebulous question than the others. Whether or not something causes offense is highly subjective. Causing offense is not illegal, and indeed it has often been instrumental in improving society. Many people feel that being offended is too often used as a shorthand to shut down meaningful conversation. Perhaps it’s better to consider the questions of whether your predictions are <em>hurtful</em>.<br></p><p    >Either way, when you build a product that behaves intelligently, it’s worth thinking about whether you want its automated behavior to be offensive. Especially if you’re rolling that behavior out to hundreds of thousands of users.<br></p><p    >As a simple example, imagine if we spoke at a party and I guessed your sexuality, and told you I was doing so based on the shape of your nose. You might be offended (regardless of whether my guess was right or wrong). Even if, for the sake of argument, there is a broad correlation between nose shape and sexuality that I could use in my defense, it would probably still feel to you like I was taking a deep and complex aspect of your identity, and reducing it to a simple thing, to be guessed at.<br></p><p    >It’s not easy to pin down quite exactly where the offense comes from. My best guess is that it’s not so much the method of guessing that I chose to employ, but<em> the fact that I felt it necessary to do so at all</em>. I could have asked and been certain, or I could simply have left it. Since the attribute is a sensitive one, it deserves a sensitive course of action. In short there’s a difference between being able to make a crude guess, and choosing to do so.<br></p><p    >In designing computer systems, a good rule of thumb is that if a behavior is not acceptable in a social context for people, then users will get upset if a computer system does it. Consider a website that asks you to give your email before is shows you its homepage. That’s like a person who asks you intimate questions before even introducing themselves. Computers should follow social norms, which includes not guessing at sensitive attributes. <br></p><p    >Again, everybody is free to behave offensively, but the consequences are theirs. If you don’t treat people’s sensitive attributes with respect, don’t be surprised if they get upset.</p><p    ></p>
@@ -972,9 +1002,9 @@ slides: true
        </section>
 
 
-       <section id="slide-086">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-086">link here</a>
-            <img src="11.Introduction.0.key-stage-0088.svg" class="slide-image" />
+       <section id="slide-092">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-092" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0094.svg" class="slide-image" />
 
             <figcaption>
             <p    >If you agree that these attributes are sensitive, you may ask whether we should include them in our data at all?<br></p><p    >This all depends on context. In some cases, we may want to study whether racial or gender bias exists. In such cases, we need the data to be carefully annotated with the sensitive attributes. <br></p><p    >Removing sensitive attributes doesn’t mean that we cannot discriminate on them. Many features are correlated with the sensitive attributes, so that algorithms can still infer the sensitive attribute, and then produce a biased result based on that. In such cases, it may be preferable to include the sensitive feature explicitly and with the user’s consent so that we have more control over how it is used, or so that we can at least explain the system's behavior better.<br></p><p    >Finally, there are often valid use cases where we <em>can</em> use sensitive attributes in a responsible way. For instance, medical results are highly dependent on sex and race (and sometimes even sexuality). In conditions that are difficult to diagnose, like Parkinson’s, these may be crucial factors to consider.</p><p    ></p>
@@ -982,9 +1012,9 @@ slides: true
        </section>
 
 
-       <section id="slide-087">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-087">link here</a>
-            <img src="11.Introduction.0.key-stage-0089.svg" class="slide-image" />
+       <section id="slide-093">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-093" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
             <p    >So, if we cannot just decree that they should never be used as <em>features</em>, can we perhaps agree that they should never be used as <em>targets</em>? <br></p><p    >Unfortunately, this is also not an easy call. Many algorithms work without explicit targets. Often, these learn representations that can be used to predict <em>all </em>information in the data including the sensitive attributes. <br></p><p    >Also, building a system that explicitly does what we consider harmful, may be an effective way to warn people of which dangers exist.</p><p    ></p>
@@ -992,9 +1022,9 @@ slides: true
        </section>
 
 
-       <section id="slide-088">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-088">link here</a>
-            <img src="11.Introduction.0.key-stage-0090.svg" class="slide-image" />
+       <section id="slide-094">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-094" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0096.svg" class="slide-image" />
 
             <figcaption>
             <p    >In the next video we’ll look at a classifier that was built to predict a person’s sexuality from profile pictures on a dating site. The authors’ stated intent was exactly this: to warn people that they may be exposing sensitive information purely by putting their image online.<br></p><p    >In eight countries in the world, homosexual acts carry the death penalty. If facial features <em>are</em> correlated to some extent with sexual orientation, and law enforcement in these countries is incentivised to find as many non-heterosexual people as possible, then it’s important for gay people people to know that just by putting a photograph online, they may be exposing themselves to a higher degree of scrutiny.</p><p    ></p>
@@ -1002,23 +1032,21 @@ slides: true
        </section>
 
 
-       <section id="slide-088" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-089">link here</a>
-            <img src="11.Introduction.0.key-stage-0091anim0.svg" data-images="11.Introduction.0.key-stage-0091anim0.svg,11.Introduction.0.key-stage-0091anim1.svg" class="slide-image" />
+       <section id="slide-094" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-095" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0097anim0.svg" data-images="11.Introduction.0.key-stage-0097anim0.svg,11.Introduction.0.key-stage-0097anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-090">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-090">link here</a>
-            <img src="11.Introduction.0.key-stage-0092.png" class="slide-image" />
+       <section id="slide-096">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-096" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0098.png" class="slide-image" />
 
             <figcaption>
             <p    >So, let’s return to our gender classifier, and ask some of these questions. Is sex or gender a sensitive attribute and if so, what should we do about gender classification?</p><p    ></p>
@@ -1026,9 +1054,9 @@ slides: true
        </section>
 
 
-       <section id="slide-091">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-091">link here</a>
-            <img src="11.Introduction.0.key-stage-0093.svg" class="slide-image" />
+       <section id="slide-097">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-097" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0099.svg" class="slide-image" />
 
             <figcaption>
             <p    >In discussing these matters, it is helpful to make a distinction between the type of body a person is born with, and their psychological gender identity. The first is usually referred to as <strong>sex</strong>, and the second as <strong>gender</strong>. These are not perfect distinctions, and it’s often not clear whether we are talking about sex differences or gender differences. But they serve to illustrate the basic problem.<br></p><p    >People whose sex and gender do not match, transgender people, can suffer considerable mental health problems when living according to their original sex rather than their gender, leading to extremely high rates of attempted suicide (40% vs a 4.6% national average)[1]. It is well-accepted in the psychological community that living with gender dysphoria, as this this sex-gender mismatch is known, is extremely distressing and that in adults, the best course of action is to conform to the gender rather than the sex.<br></p><p    >There is of course heated discussion at the moment about what the impact should be on various aspects of society. For our purposes, it is not necessary to endorse any specific claims. We have a large number of students, with no doubt a variety of views on the matter. You'll have to make up your own mind. However, what <em>is</em> undeniably true is that transgender people exist, and that they suffer considerable psychological distress, especially when forced to live according to their sex rather than their gender. This is is scientific fact, and it implies that sex and gender should both be considered sensitive attributes.<br></p><p    >NB: Sometimes the phrase transgender is used to cover both people whose sex and gender differ and people who do not identify as either male or female. For our current purposes, it is helpful to keep these categories distinct.<br></p><p    >[1] The report of the 2015 U.S. Transgender survey, NCTE 2015, <a href="https://transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf"><strong>https://transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf</strong></a><br></p><p    ></p>
@@ -1036,23 +1064,21 @@ slides: true
        </section>
 
 
-       <section id="slide-091" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-092">link here</a>
-            <img src="11.Introduction.0.key-stage-0094anim0.svg" data-images="11.Introduction.0.key-stage-0094anim0.svg,11.Introduction.0.key-stage-0094anim1.svg" class="slide-image" />
+       <section id="slide-097" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-098" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0100anim0.svg" data-images="11.Introduction.0.key-stage-0100anim0.svg,11.Introduction.0.key-stage-0100anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >The next question we should ask, is whether predicting sex or gender, or a difference between the two, can cause harm, whether by intention or not.<br></p><p    >Behaving in a way that doesn't  conform to gender norms is illegal in 13 countries (as of 2020). These are usually considered minor offences, so at face value, the risk of intentional harm is less than it was for, for instance sexuality classification. However these issues are often conflated with homosexuality. That is, while cross-dressing itself only carries a minor penalty, it may be unfairly taken to imply homosexuality, which carries very severe penalties, including death. <br></p><p    >This means that the potential harm in predicting sex and gender may be similar to the harm in predicting sexuality.</p><p    ></p>
             </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
+            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-093">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-093">link here</a>
-            <img src="11.Introduction.0.key-stage-0095.svg" class="slide-image" />
+       <section id="slide-099">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-099" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0101.svg" class="slide-image" />
 
             <figcaption>
             <p    >On the other hand, could predicting sex or gender be used to counter harm? <br></p><p    >In many medical applications, sex plays an important part. This doesn't automatically make it acceptable to guess a person's sex; remember, we can always <em>ask</em>. However, in some specific settings, there may be no certain way to ascertain sex due to privacy problems, and a guess may still be helpful. Still, if an attribute is sufficiently sensitive to be protected by privacy law, we should think twice about guessing it. <br></p><p    >In other cases, we may be aware of a harmful underrepresentation in our data. For instance, many early face detection datasets used computer vision researchers themselves as models, who were of course, overwhelmingly male. In such cases, the best course of action, is of course to get better data, but if that is not feasible, it may be possible to <em>resample</em> the data, to at least alleviate the problem of data bias, if we can't solve it fully. At the very least, an effective "sex or gender" predictor should be able to tell us whether our dataset has an imbalance.</p><p    ></p>
@@ -1060,9 +1086,9 @@ slides: true
        </section>
 
 
-       <section id="slide-094">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-094">link here</a>
-            <img src="11.Introduction.0.key-stage-0096.svg" class="slide-image" />
+       <section id="slide-100">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-100" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0102.svg" class="slide-image" />
 
             <figcaption>
             <p    >If you’ve never had any experience of gender dysphoria, it can be difficult to understand how intense the experience can be and how much it can hurt if somebody treats your gender lightly. The best we can do as system builders is to consider the evidence (remember the attempted suicide rates) and to listen to our users.<br></p><p    >Where we cannot escape simply asking users for their gender when that is apt, or doing without, and where we have a good reason to predict it, we should consider carefully which features we use: do they predict gender or sex? One may be correlated with the other (because a large majority of people are cis-gendered), but carelessly using your predictions may be seen as implying causal links that aren’t there.</p><p    ></p>
@@ -1070,9 +1096,9 @@ slides: true
        </section>
 
 
-       <section id="slide-095">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-095">link here</a>
-            <img src="11.Introduction.0.key-stage-0097.svg" class="slide-image" />
+       <section id="slide-101">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-101" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
             <p    >The problem is not solved, and it may never be. It’s a social problem more than a computer science one. The important thing to remember, is that we as builders of systems that are deployed at scale, have a responsibility to consider the impact of the decisions we make. In particular we should always keep in mind how <em>shallow</em> machine learning is in its thinking (even if we use <em>deep</em> learning).<br></p><p    >Classification is a particularly strong example. We like classification as an abstract task, because it’s a setting in which our models are easy to evaluate and to train. But that should not blind us to the fact that, usually, constraining a phenomenon like gender or sexuality to a small set of categories blinds us to the complexities of the thing we are actually trying to predict.<br></p><p    >Imagine a classifier that predicts the genre of a movie as either romance, action or comedy. In a research setting, this is a very nice, simple way to test our models, and to see what they can do. But if we move to a domain where we are actually interested in saying something about movies, this categorization is woefully inadequate. It’s fine when we’re investigating our models, but it’s terrible to actually use in production settings (i.e. when we want to take actions rather than make predictions). Here the problem isn't crucial: nobody will get hurt when a movie's genre is poorly represented. But when it comes to sensitive attributes, we have a responsibility to acknowledge that the categorizations used in classification are very shallow abstractions of the real world. And we should acknowledge this long before our models make it out of the laboratory.</p><p    ></p>
@@ -1080,17 +1106,17 @@ slides: true
        </section>
 
 
-       <section id="slide-096">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-096">link here</a>
-            <img src="11.Introduction.0.key-stage-0098.png" class="slide-image" />
+       <section id="slide-102">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-102" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0104.png" class="slide-image" />
 
             <figcaption>
             <p    >So, this hopefully explains to some extent why Google made the choice that it did. <br></p><p    >This is a difficult subject to explain precisely; however you look at it, it boils down to treating people with respect. What consists of respectful treatment, and how much of that people should be able to demand, is highly subjective. There are plenty of competitors to the Cloud Vision API that offer gender classification, so Google is likely sacrificing some customers who are looking for the feature, and gaining others who value their stance.<br></p><p    >If nothing else, this issue shows how far machine learning has come: our classifiers are no longer stumped by a judge’s wig or a Beatle hairdo, and they are certainly no longer confined to the laboratory. They are out there, making predictions on an international scale, so if we are the ones pushing them to production, we are the ones responsible for the consequences.</p><p    ></p>
             </figcaption>
        </section>
 
-       <section class="video" id="video-096">
-           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-96">link here</a>
+       <section class="video" id="video-102">
+           <a class="slide-link" href="https://mlvu.github.io/lecture01#video-102">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/24fPK3CM-8E?modestbranding=1&showinfo=0&rel=0"
                 title="YouTube video player"
@@ -1100,49 +1126,49 @@ slides: true
 
        </section>
 
-       <section id="slide-097">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-097">link here</a>
-            <img src="11.Introduction.0.key-stage-0099.svg" class="slide-image" />
+       <section id="slide-103">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-103" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0105.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this last video, we’ll look a little deeper into the problem that is at the heart of machine learning. You may think the aim of fitting a machine learning model is to fit the training data as precisely as possible, but you would be mistaken. The aim is to find a model that <strong>generalizes</strong>.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    >In this last video, we’ll look a little deeper into the problem that is at the heart of machine learning. You may think the aim of machine learning model is to find a model that fits the training data as precisely as possible. You would be mistaken. The aim is to find a model that <strong>generalizes</strong>.<br></p><p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-098">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-098">link here</a>
-            <img src="11.Introduction.0.key-stage-0100.svg" class="slide-image" />
+       <section id="slide-104">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-104" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0106.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To explain, consider our tree-based solutions to the classification and regression problems. Both cover most of the data perfectly. Every red and blue dot is perfectly classified and the regression line hits almost every dot in the dataset. Imagine you see a new person, and you are given their height. Would it make sense to use the model on the right to predict the length of their legs?</p><p    ></p>
+            <p    >To explain, consider our tree-based solutions to the classification and regression problems. Both cover most of the data pretty well. Almost every red and blue dot is perfectly classified and the regression line hits alot of the data points exactly. Both models make much closer fits than their linear counterparts. <br></p><p    >Look at the regression model on the right. Imagine you see a new penguin, and you are given their flipper length. Would it make sense to use this model to predict their body mass?</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-099">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-099">link here</a>
-            <img src="11.Introduction.0.key-stage-0101.svg" class="slide-image" />
+       <section id="slide-105">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-105" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0107.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Let’s look at this spike: the model seems to be convinced that people who are 183cm tall have proportionally much longer legs than people who are 182 or 184 cm tall. This isn’t true of course, it just happens to be the case that in this area there was only one person in the data and they had long legs. The model is fitting details of the dataset that are <em>random noise</em>.<br></p><p    >When a model overfits, we sometimes say that it is <strong>memorizing</strong> the data, when it should be <strong>generalizing</strong>.</p><p    ></p>
+            <p    >Let’s look at this spike: the model seems to be convinced that penguins with a flipper length of exactly 219 mm have a much higher body mass than those with flipper lengths of 218 mm or 220 mm. This isn’t true, of course. There's nothing special about having flippers of exactly 219 mm long. It just happens to be the case that in this area, there was only one penguin in the data and they had a slightly higher body mass. The model is fitting details of the dataset that are <em>random noise</em>. We call this <strong>overfitting</strong>.<br></p><p    >When a model overfits, we sometimes say that it is <strong>memorizing</strong> the data, when it should be <strong>generalizing</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-100">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-100">link here</a>
-            <img src="11.Introduction.0.key-stage-0102.svg" class="slide-image" />
+       <section id="slide-106">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-106" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0108.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is the most important rule in machine learning. Out of the three regression models we showed, the regression tree had the lowest loss on the training data, <strong>but it’s actually the worst model </strong>(for this particular dataset, it may be great for others).<br></p><p    >It means nothing how many of the <em>training </em>instances the model gets right. What we actually want is a model that does well on <strong>new data;</strong> data that it hasn’t been trained on.</p><p    ></p>
+            <p    >This is the most important rule in machine learning. Out of the three regression models we showed, the regression tree had the lowest loss on the training data, <strong>but it’s actually the worst model </strong>(for this particular dataset, it may be great for others). This means that if we look at how well the model does on the training data to pick the one we prefer, we'd end up with the worst one. <br></p><p    >It means nothing how many of the <em>training </em>instances the model gets right. What we actually want is a model that does well on <strong>new data;</strong> data that it hasn’t been trained on.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-101">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-101">link here</a>
-            <img src="11.Introduction.0.key-stage-0103.svg" class="slide-image" />
+       <section id="slide-107">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-107" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0109.svg" class="slide-image" />
 
             <figcaption>
             <p    >The simplest way to check this is to<strong> withhold data</strong>. You keep some data hidden from the model, and then check how well a particular model does on this part of the data. The data you show your model is called<span class="green"> </span><strong class="green">training data</strong>, the data you withhold is called <strong>test data</strong>.<br></p><p    ></p>
@@ -1150,73 +1176,71 @@ slides: true
        </section>
 
 
-       <section id="slide-102">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-102">link here</a>
-            <img src="11.Introduction.0.key-stage-0104.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Now we see that the regression tree is a terrible model. The training data may show a spike at 183, but the test data will just follow the linear pattern.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-103">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-103">link here</a>
-            <img src="11.Introduction.0.key-stage-0105.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The task is not to fit the training data as well as possible. It is to fit the <strong>pattern</strong> in the training data and discard the <strong>noise</strong>.<br></p><p    >What is noise and what is pattern? There is no theoretical justification.<br></p><p    >We can only try things and see if they work. Fundamentally, machine learning is an empirical science.  Which is not to say that we don’t use theory to build our models, and to help us guess what might work. But ultimately, the proof that something works is empirical, not theoretical.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-104">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-104">link here</a>
-            <img src="11.Introduction.0.key-stage-0106.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >The problem of how we learn (and how we can make machines that learn) is an instance of the <em>problem of induction</em>. It was first posed as a problem by 18th century philosopher David Hume (pictured).<br></p><p    ><em>Inductive reasoning</em> is essentially a philosophical name for learning. We observe something happening a number of times, so we<em> infer </em>that it’ll probably happen again the next time. We’re not absolutely certain, and it doesn’t follow logically, but we’re sure enough to use that knowledge to our advantage.<br></p><p    >This is very different from the <em>deductive reasoning </em>which philosophers had studied since antiquity. Deduction is rule-following. It’s what computers do best. In order to make computers do something like inductive reasoning, and in order to fully understand how <em>we</em> do it, we need to reduce it to rules. But Hume argued that inductive reason can not be proved to work by deductive methods.<br></p><p    ><br></p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-104" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-105">link here</a>
-            <img src="11.Introduction.0.key-stage-0107anim0.svg" data-images="11.Introduction.0.key-stage-0107anim0.svg,11.Introduction.0.key-stage-0107anim1.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >For deductive reasoning, we know the rules, and we understand them perfectly. For inductive reasoning the rules are not so clear. For instance, whenever I visit a funeral, I’m never the person being buried. Therefore, the more funerals I visit, the more certain I should be that next time it won’t be my funeral. Clearly this is not the case (usually the opposite is true).<br></p><p    >So, if inductive reasoning doesn’t follow as a special case of deductive reasoning, and inductive reasoning applies sometimes and it doesn’t at other times… how do we do it? Why is the funeral example obviously wrong, and the sun example obviously right? If inductive reasoning cannot be reduced to deductive reasoning, do we have any hope of reducing it to a computer program?<br></p><p    >In many ways, the problem of induction is still unsolved. We can teach computers to learn pretty well these days, but we still don’t fully understand what all the rules are. </p><p    ></p>
-            </figcaption>
-
-            <span class="hint">click image for animation
-            </span>
-       </section>
-
-
-
-       <section id="slide-106">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-106">link here</a>
-            <img src="11.Introduction.0.key-stage-0108.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >Machine learning is a bit like finish-the-sequence puzzles, that are often part of IQ tests. <br></p><p    >Some people get frustrated by puzzles like these, because the rules are not spelled out. We are supposed to infer the rules of this particular sequence and then apply those rules to find the missing element. Likewise, in machine learning, we are supposed to infer the pattern from the training set and apply it to the test set.<br></p><p    >Obviously, the correct solution is the one that fits the test set as well, but we have to decide before we see the test set.<br></p><p    >In this case, there are two ways to solve the puzzle. Reading from top to bottom each column contains a pattern that is rotated by three slices each step. Reading from left to right, the two slices in the pattern are pushed one slice further apart each step. In this case, both patterns lead to the same solution. But what if they didn’t? Which solution are we supposed to prefer? What if we come up with a highly convoluted reason for preferring some other slice, why would that obviously be wrong?<br></p><p    >The truth is, that while we have some heuristics for which solutions we tend to prefer, there is no general theory of learning that is always obviously correct. Ultimately, the solution to puzzles like these are appeals to <em>intuition</em>, and so is the solution to a machine learning problem. This is what makes machine learning so difficult, and what makes it so interesting.<br></p><p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-107">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-107">link here</a>
-            <img src="11.Introduction.0.key-stage-0109.svg" class="slide-image" />
-
-            <figcaption>
-            <p    >That isn’t to say we don’t have a general idea of what makes one solution better than another. There are always exceptions, but in general, preferring simple solutions over complex ones seems to lead to good learning performance. That doesn’t solve everything: we still have to make precise what simplicity <em>means</em> exactly, and we don’t know, if the simple and complex solutions aren’t equally good, how much simplicity we should sacrifice for a better solution.<br></p><p    >In later lectures we’ll look at some ways in which this intuition is made more precise in practice.</p><p    ></p>
-            </figcaption>
-       </section>
-
-
        <section id="slide-108">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-108">link here</a>
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-108" title="Link to this slide.">link here</a>
             <img src="11.Introduction.0.key-stage-0110.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Now we see that the regression tree is a terrible model. The training data may show a spike in body mass at a flipper length of 219mm, but the test data will just follow the linear pattern.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-109">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-109" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0111.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >The task is not to fit the training data as well as possible. It is to fit the <strong>pattern</strong> in the training data and discard the <strong>noise</strong>.<br></p><p    >What is noise and what is pattern? It's difficult to give a conclusive and concrete answer that we can apply just by looking at the data.<br></p><p    >We can only try things and see if they work. Fundamentally, machine learning is an<em> empirical </em>science, not a theoretical one. This is not to say that we don’t use theory to build our models, and to help us guess what might work. But ultimately, the proof that something works is empirical, not theoretical: we try it and see. </p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-110">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-110" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0112.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >The problem of how we learn (and how we can make machines that learn) is an instance of the <strong>problem of induction</strong>. It was first posed as a problem by 18th century philosopher David Hume (pictured).<br></p><p    ><strong>Inductive reasoning</strong> is essentially a philosophical name for learning. We observe something happening a number of times, so we<em> infer </em>that it’ll probably happen again the next time. We’re not absolutely certain, and it doesn’t follow logically, but we’re sure enough to use that knowledge to our advantage.<br></p><p    >This is very different from the<strong> deductive reasoning </strong>which philosophers had studied since antiquity.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-110" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-111" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0113anim0.svg" data-images="11.Introduction.0.key-stage-0113anim0.svg,11.Introduction.0.key-stage-0113anim1.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >For deductive reasoning, we know the rules, and we understand them perfectly. For inductive reasoning the rules are not so clear. For instance, whenever I visit a funeral, I’m never the person being buried. Therefore, the more funerals I visit, the more certain I should be that next time it won’t be my funeral. Clearly this is not the case (usually the opposite is true).<br></p><p    >Deduction is rule-following. It’s what computers do best. In order to make computers do something like inductive reasoning, and in order to fully understand how <em>we</em> do it, we need to reduce it to rules. But Hume argued that inductive reason can not be proved to work by deductive methods.<br></p><p    >So, if inductive reasoning doesn’t follow as a special case of deductive reasoning, and inductive reasoning applies sometimes and it doesn’t at other times… how do <em>we</em> do it? Why is the funeral example obviously wrong, and the sun example obviously right? If inductive reasoning cannot be reduced to deductive reasoning, do we have any hope of reducing it to a computer program?<br></p><p    >In many ways, the problem of induction is still unsolved. We can teach computers to learn pretty well these days, but we still don’t fully understand what all the rules are. </p><p    ></p>
+            </figcaption>
+            <span class="hint">click image for animation</span>
+       </section>
+
+
+
+       <section id="slide-112">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-112" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0114.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Induction and machine learning are a bit like finish-the-sequence puzzles, that are often part of IQ tests. <br></p><p    >Some people get frustrated by puzzles like these, because the rules are not spelled out. We are supposed to infer the rules of this particular sequence and then apply those rules to find the missing element. Likewise, in machine learning, we are supposed to infer the pattern from the training set and apply it to the test set.<br></p><p    >Obviously, the correct solution is the one that fits the test set as well, but <strong>we have to decide before we see the test set</strong>.<br></p><p    >In this case, there are two ways to solve the puzzle. Reading from top to bottom each column contains a pattern that is rotated by three slices each step. Reading from left to right, the two slices in the pattern are pushed one slice further apart each step. In this case, both patterns lead to the same solution. But what if they didn’t? Which solution are we supposed to prefer? What if we come up with a highly convoluted reason for preferring some other answer, why would that obviously be wrong?<br></p><p    >The truth is, that while we have some general principles for which solutions we tend to prefer, there is no general theory of learning that is always obviously correct. Ultimately, the solution to puzzles like these are appeals to <em>intuition</em>, and so is the solution to a machine learning problem. This is what makes machine learning so difficult, and what makes it so interesting.<br></p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-113">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-113" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0115.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >That isn’t to say we don’t have a general idea of what makes one solution better than another. There are always exceptions, but in general, preferring simple solutions over complex ones seems to lead to good learning performance. Intuitively, this certainly seems to apply to the penguin regression problem: the linear fit is the simpler one, and all the extra complexity of the regression tree is just noise. <br></p><p    >This doesn’t solve everything: we still have to make precise how we define the simplicity of a given model exactly, and we don’t know, if the simple and complex solutions aren’t equally good, how much simplicity we should sacrifice for a better solution.<br></p><p    >In later lectures we’ll look at some ways in which this intuition is made more precise, so we can answer some of these questions.</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+       <section id="slide-114">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-114" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0116.svg" class="slide-image" />
 
             <figcaption>
             <p    ></p>
@@ -1224,12 +1248,12 @@ slides: true
        </section>
 
 
-       <section id="slide-109">
-            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-109">link here</a>
-            <img src="11.Introduction.0.key-stage-0111.svg" class="slide-image" />
+       <section id="slide-115">
+            <a class="slide-link" href="https://mlvu.github.io/lecture01#slide-115" title="Link to this slide.">link here</a>
+            <img src="11.Introduction.0.key-stage-0117.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If you have any questions, please ask them on the Canvas discussion board if at all possible. If it’s a personal question, or if you need to ask me personally for some other reason, please don’t hesitate to email.</p><p    ></p>
+            <p    ></p>
             </figcaption>
        </section>
 
