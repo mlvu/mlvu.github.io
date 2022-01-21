@@ -129,7 +129,7 @@
 </defs>
 <g id="surface1">
 <rect x="0" y="0" width="1920" height="1080" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
-<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M -0.00088125 0.00041875 L 1482.1124 0.00041875 " transform="matrix(1,0,0,1,197.8876,577.0113)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0.00148375 0.00041875 L 1971.571796 0.00041875 " transform="matrix(1,0,0,1,-25.78664,577.0113)"/>
 <g style="fill:rgb(52.549744%,6.274414%,0.392151%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="1886.414" y="1060.41239"/>
   <use xlink:href="#glyph0-1" x="1895.654" y="1060.41239"/>
