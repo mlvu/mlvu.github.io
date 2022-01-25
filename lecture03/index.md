@@ -55,7 +55,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0003.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We’ll focus mostly on binary classification today (two-class classification). In this case, we can think of the classifier as a detector for one of the classes (like spam, or a disease). We tend to call this class positive. As in “testing positive for a disease.”<br></p><p    >In classification, the main metric of performance is the proportion of misclassified examples (which we’ve already seen). This is called the <strong>error</strong>. The proportion of correctly classified examples is called the <strong>accuracy</strong>.<br></p><p    ></p>
+            <p    >We’ll focus mostly on <strong>binary classification </strong>today (two-class classification). In this case, we can think of the classifier as a detector for one of the classes (like spam, or a disease). We tend to call this class positive. As in “testing positive for a disease.”<br></p><p    >In classification, the main metric of performance is the proportion of misclassified examples (which we’ve already seen). This is called the <strong>error</strong>. The proportion of correctly classified examples is called the <strong>accuracy</strong>.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -789,7 +789,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0074anim0.svg" data-images="21.Methodology1.key-stage-0074anim0.svg,21.Methodology1.key-stage-0074anim1.svg,21.Methodology1.key-stage-0074anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is s a <strong>confusion matrix</strong> (also known as a contingency table). It doesn’t give you a single number, so it’s more difficult to compare two classifiers by their confusion matrices, but it’s a good way to get insight into what your classifier is actually doing. <br></p><p    >Note that we are getting the two types of mistakes (false positives and false negatives) along the second diagonal. If we have cost imbalance, the balance between these two values gives us a quick insight into how well the classifier is aligned with our estimate for the misclassification costs.<br></p><p    >You can plot the confusion matrix for either the <span class="green">training</span>, <span>validation</span> or <span>test</span> data. All three can be informative.<br></p><p    >The margins of the table give us four totals: the actual number of each class present in the data, and the number of each class predicted by the classifier.<br></p><p    ></p>
+            <p    >This is a <strong>confusion matrix</strong> (also known as a contingency table). It's simply a table with the actual classes on the rows, and the predicted classes on the columns, and a tally in each cell of how often each actual class is given a particular prediction. On the diagonal we tally all the correct classifications and off the diagonal we tally all the possible mistakes. <br></p><p    >A confusion matrix doesn’t give you a single number, so it’s more difficult to compare two classifiers by their confusion matrices, but it’s a good way to get insight into what your classifier is actually doing. <br></p><p    >Note that for a binary classification problem, we are getting the two types of mistakes (false positives and false negatives) along the second diagonal. If we have cost imbalance, the balance between these two values gives us a quick insight into how well the classifier is aligned with our estimate for the misclassification costs.<br></p><p    >You can plot the confusion matrix for either the <span class="green">training</span>, <span>validation</span> or <span>test</span> data. All three can be informative.<br></p><p    >The margins of the table give us four totals: the actual number of each class present in the data, and the number of each class predicted by the classifier.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -1349,7 +1349,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0125.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >In the 90s two researchers, named Wolpert and MacReady published a proof of an important theorem. The details are technical, but it basically stated that if we look at optimization algorithms (of which machine learning algorithms are a specific instance), by averaging their performance over all possible tasks, they all perform exactly the same.  That is, if we want to know which algorithm is the best independent of the task, we canot tel them apart by their performance.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1359,7 +1359,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0126.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Note that, intuitively, method D would be an absolutely insane method to choose a model.<br></p><p    ></p>
+            <p    >Let's look at some examples of what this means in practice. For instance, gradient descent is a pretty intuitive algorithm, and we've seen already that there are many tasks for which it works well. Let's imagine the polar opposite algorithm: gradient ascent. We are still looking for the lowest point on the loss surface, but instead of descending, we <em>climb</em>. Intuitively, this is a ridiculous algorithm,<br></p><p    >However, according to the no free lunch theorem, both gradient descent and gradient ascent should work equally well when their performance is averaged over all problems. This means that for every task on which gradient descent works well, and gradient ascent works terribly, we should be able to find a task where the roles are reversed. <br></p><p    >The slide shows the kind of landscape that might result in this situation. On the left we have a typical loss landscape, with a lowest point that gradient descent should easily find. On the right we have the opposite. A reverse loss landscape that you need to climb to get near the lowest point. Gradient descent would go nowhere near the optimimum. Gradient ascent, with just the right hyperparameters, will climb all the way to the top, and in its last step fall into the crevice and get stuck on the plateau at the bottom.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1369,7 +1369,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0127.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is another example. We know that gradient descent works well: to find the lowest point on a loss surface, you just follow the curve of the loss surface downward. However, for every loss surface and which gradient descent works, we can create a loss surface (like the one on the right) for which gradient ascent fails miserably, and actually, the <em>opposite strategy</em> works better: for almost all of the search, you have to climb to find the lowest point.</p><p    ></p>
+            <p    >Here is another example, that should show you what a strange result the no free lunch theorem is. The common practice of dataset splitting and choosing a model by its test set performance is also an algorithm. We do it manually, but we could also program it into a computer. Let's say we want to choose between two methods A and B. We can follow the normal approach: split the data, apply both and choose whichever performs best. Call this method <span class="orange">C</span>.<br></p><p    >We can also do a ridiculous, counter-intuitive thing and choose the method that performs <em>worst</em>. Call this method <span class="blue">D</span>.<br></p><p    >The no free lunch theorem says that method <span class="blue">D</span> should outperform method <span class="orange">C</span> just as often as the other way around. <br></p><p    >The kind of datasets where this happens are the ones where the test set happens to behave very differently from the training set. Since we usually make the split randomly, these would be very unusual or unlikely datasets, and we feel justified in using method <span class="orange">C</span>. Still, this only works because we are able to make certain <em>assumptions</em> about our data.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1379,7 +1379,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0128.svg" class="slide-image" />
 
             <figcaption>
-            <p    >I a way, we’re back to the problem of induction. For any given situation where a learning method works, there’s a situation where it doesn’t. Induction (aka. learning from experience) works in practice, but there are exceptions, and we can't tell just by looking at the data when it will and won't work.<br></p><p    >Note that if there were some algorithm that could tell us which sitation we were in, we could just use this algorithm to select our learning method, and beat the NFL theorem.<br></p><p    >In short, we need to make some <strong>assumptions</strong> about the nature whatever it was that created our data. Without such assumptions, learning doesn't work.</p><p    ></p>
+            <p    >In a way, we’re back to the problem of induction. For any given situation where a learning method works, there’s a situation where it doesn’t. Induction (aka. learning from experience) works in practice, but there are exceptions, and we can't tell just by looking at the data when it will and won't work.<br></p><p    >Note that if there were some algorithm that could tell us which situation we were in, we could just use this algorithm to select our learning method, and beat the NFL theorem.<br></p><p    >In short, we need to make some <strong>assumptions</strong> about the nature of whatever it was that created our data. Without such assumptions, learning doesn't work.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1389,7 +1389,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0129.svg" class="slide-image" />
 
             <figcaption>
-            <p    >One “out” to the NFL Theorem, is that there is a “universal distribution” governing all processes that create data.<br></p><p    >The NFL Theorem implicitly assumes that all datasets are equally likely. Since this is not the case, there is some other, non-uniform distribution that tells us which datasets are more likely than others, averaged over all possible settings.<br></p><p    >Using such a universal data distribution, we could work out a universally best learning algorithm. </p><p    ></p>
+            <p    >This is an increasingly important phrase in machine learning. The inductive bias of a method or model are those assumptions about the domain that are, explicitly or implicitly, hardcoded into the model.<br></p><p    >For instance, in a linear regression model, the assumption is that all instances lie on a line (or the higher-dimensional equivalent). If this assumption isn't violated too much, the model is a good fit for the data. If the assumption is violated very badly,  we need to look for ways to change the inductive bias, for instance by picking a different model, or by enriching the linear model with extra features, like we will do in the next lecture.<br></p><p    >We can summarize the business of machine learning and data science as follows. The business of the machine learning researcher is create a variety of models with helpful inductive biases. The business of the data scientist is to figure out which of the available inductive biases is helpful for any given problem.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1399,7 +1399,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0130.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We don't have too many practical ideas about the properties of such a universal distribution, but one thing that crops up a lot is that simple data is necessarily more likely than complex data.<br></p><p    >This suggests that in learning we should have a <strong>simplicity bias</strong>. If there are two models that both fit the data, one very simple (like a linear model) and one very complex (like a very big decision tree), then it's more likely that the simple model generated the data.<br></p><p    >Such simplicity biases can be implemented in many different ways, and we'll see some concrete examples as the course progresses.</p><p    ></p>
+            <p    >One “out” to the NFL Theorem, is that there is a “universal distribution” governing all processes that create data.<br></p><p    >The NFL Theorem implicitly assumes that all datasets are equally likely. Since this is not the case, there is some other, non-uniform distribution that tells us which datasets are more likely than others, averaged over all possible settings.<br></p><p    >Using such a universal data distribution, we could (in theory) work out a universally best learning algorithm. </p><p    ></p>
             </figcaption>
        </section>
 
@@ -1409,7 +1409,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0131.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Whether or not the NFL theorem means anything for us in practice, it has also given rise to a general <strong>principle</strong>, commonly followed in machine learning practice. The principle is that we should choose our method to deal with the task at hand, and not look for a universally best method.<br></p><p    >Note that this is distinct from the NFL theorem, because everybody still uses data splitting universally to evaluate <em>which of these many methods</em> is the best. And by the NFL theorem, model selection by data splitting is also not a universal algorithm. So the NFL theorem and the NFL principle are really two very different things.</p><p    ></p>
+            <p    >We don't have too many practical ideas about the properties of such a universal distribution, but one thing that crops up a lot is that<strong> simple data</strong> is necessarily more likely than complex data.<br></p><p    >This suggests that in learning we should have a <strong>simplicity bias</strong>. If there are two models that both fit the data, one very simple, like a linear model, and one very complex, like a very big decision tree, then it's more likely that the simple model generated the data.<br></p><p    >Such simplicity biases can be implemented in many different ways, and we'll see some concrete examples as the course progresses.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1419,7 +1419,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0132.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is an increasingly important phrase in machine learning. The inductive bias of a method or model are those assumptions about the domain that are, explicitly or implicitly, hardcoded into the model. <br></p><p    >For instance, in a linear regression model, the assumption is that all instances lie on a line (or the higher-dimensional equivalent). If this assumption isn't violated too much, the model is a good fit for the data. If the assumption is violated very badly,  we need to look for ways to change the inductive bias, for instance by picking a different model, or by enriching the linear model with extra features, like we will do in the next lecture.<br></p><p    >We can summarize the business of machine learning and data science as follows. The business of the machine learning researcher is create a variety of models with helpful inductive biases. The business of the data scientist is to figure out which of the available inductive biases is helpful for any given problem.</p><p    ></p>
+            <p    >Whether or not the NFL theorem means anything for us in practice, it has also given rise to a general <strong>principle</strong>, commonly followed in machine learning practice. The principle is that we should choose our method to deal with the task at hand, and not look for a universally best method.<br></p><p    >Note that this is distinct from the NFL theorem, because everybody still uses data splitting universally to evaluate <em>which of these many methods</em> is the best. And by the NFL theorem, model selection by data splitting is also not a universal algorithm. So the NFL theorem and the NFL principle are really two very different things.<br></p><p    >In practice, the NFL theorem shouldn't keep you awake at night. It's an interesting thought to return to occasionally, and a reminder that by choosing a model, we are making assumptions about the source of our data.<br></p><p    >The NFL <em>principle</em> is an important concept to keep in mind when selecting models. Don't just run gradient boosted decision trees by default, just because somebody somewhere dais it was the best approach. Investigate your task. Figure out what makes it special, try different approaches and tailor your approach to the problem at hand.<br></p><p    ></p>
             </figcaption>
        </section>
 
