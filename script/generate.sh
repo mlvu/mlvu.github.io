@@ -1,11 +1,11 @@
 #!/bin/bash
 
-python generate.py \
-  --title "Lecture 1: Introduction" \
-  --dst ../lecture01 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
-  --base-url "https://mlvu.github.io/lecture01" \
-  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 1: Introduction" \
+#  --dst ../lecture01 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
+#  --base-url "https://mlvu.github.io/lecture01" \
+#  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
 
 python generate.py \
   --title "Lecture 2: Linear Models and Search" \
