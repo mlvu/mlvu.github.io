@@ -126,7 +126,7 @@ slides: true
 
        <section id="slide-010">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-010" title="Link to this slide.">link here</a>
-            <img src="21.Methodology1.key-stage-0010.png" class="slide-image" />
+            <img src="21.Methodology1.key-stage-0010.svg" class="slide-image" />
 
             <figcaption>
             <p    >We will use the data from the first lecture as an example. We will take a small subsample of the dataset, so that the effects that we want to illustrate become exaggerated.</p><p    ></p>
@@ -136,10 +136,10 @@ slides: true
 
        <section id="slide-010" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-011" title="Link to this slide.">link here</a>
-            <img src="21.Methodology1.key-stage-0011anim0.svg" data-images="21.Methodology1.key-stage-0011anim0.svg,21.Methodology1.key-stage-0011anim1.svg,21.Methodology1.key-stage-0011anim2.png,21.Methodology1.key-stage-0011anim3.png" class="slide-image" />
+            <img src="21.Methodology1.key-stage-0011anim0.svg" data-images="21.Methodology1.key-stage-0011anim0.svg,21.Methodology1.key-stage-0011anim1.png,21.Methodology1.key-stage-0011anim2.png" class="slide-image" />
 
             <figcaption>
-            <p    >Here we’ve tested 25 different values of k on the same <span class="blue">test data</span> (using quite a small test set to illustrate the idea). We can see that for k=23, we get the best performance.</p><p    ></p>
+            <p    >Here we’ve tested 12 different values of k on the same <span class="blue">test data</span> (using quite a small test set to illustrate the idea). We can see that for k=1, we get the best performance.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -158,10 +158,10 @@ slides: true
 
        <section id="slide-012" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-013" title="Link to this slide.">link here</a>
-            <img src="21.Methodology1.key-stage-0013anim0.png" data-images="21.Methodology1.key-stage-0013anim0.png,21.Methodology1.key-stage-0013anim1.png" class="slide-image" />
+            <img src="21.Methodology1.key-stage-0013anim0.png" data-images="21.Methodology1.key-stage-0013anim0.png,21.Methodology1.key-stage-0013anim1.png,21.Methodology1.key-stage-0013anim2.png,21.Methodology1.key-stage-0013anim3.png" class="slide-image" />
 
             <figcaption>
-            <p    >In this case, we have some more data from the same source, so we can do the whole experiment again on fresh data. This is a luxury we don't normally have (we normally use all the data we are given). <br></p><p    >What we see is that k=23 no longer gives us the best performance. In fact, we get a quite radically different best value of k.</p><p    ></p>
+            <p    >In this case, we have some more data from the same source, so we can evaluate the classifiers again on <strong>a fresh test set</strong>. This is a luxury we don't normally have (we normally use all the data we are given). <br></p><p    >What we see is that k=23 no longer gives us the best performance. In fact, we get a radically different best value of k.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -183,7 +183,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0015.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The same source of data, the exact same procedure, and these are the results. We were diligent in splitting our dataset and evaluating only on withheld data, and yet if we had done only one run on one dataset, as we normally would, we would have concluded that k=23 is the best setting and that an error of 0.08 can be expected with that value. <br></p><p    >This conclusion, as we can see, is entirely false. This also suggests that if we were to take this k=23 classifier for the last run and try it on a new test dataset (again from the same source), it's error would probably be much higher than the 0.08 we got on the test set. <br></p><p    >So what's happening here?<br></p><p    ></p>
+            <p    >The same models, different test sets and the conclusions are entirely different. We were diligent in splitting our dataset and evaluating only on withheld data, and yet if we had done only one run on one dataset, as we normally would, we would have concluded that k=1 is the best setting and that an error of 0.16 can be expected with that value. <br></p><p    >If we look at the k=1 model from the second run (the one we chose), we will see that the performance on the new test set is terrible. If we select a model in this way and take it into production, we will find that it performs terribly.<br></p><p    >So what's happening here?<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -193,7 +193,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is essentially the overfitting problem again. Our method of choosing the hyperparameter <strong>k</strong> is just another learning algorithm. By testing so many values of k on the test data, we are overfitting our choice of k on the test data.<br></p><p    >This is an instance of the<em> multiple testing</em> problem in statistics. We’re testing so many things, that the likelihood of a noticeable effect popping up by chance increases. We are in danger of ascribing meaning to random fluctuations. <br></p><p    >Specifically, in our case, the k=23 classifier <strong>got lucky</strong> on a few examples, that just happened to fall on the right side of the decision boundary. If we draw some new data, the same classifier won't be lucky again. The more different values of k we try, the more we are in danger of this kind of random luck determining which hyperparameters come out as good.<br></p><p    >The simple answer to the problem of multiple testing is<strong> not to test multiple times</strong>.<br></p><p    >see also: <a href="https://www.explainxkcd.com/wiki/index.php/882:_Significant"><strong class="blue">https://www.explainxkcd.com/wiki/index.php/882:_Significant</strong></a><br></p><p    ></p>
+            <p    >This is essentially the overfitting problem again. Our method of choosing the hyperparameter k is just another learning algorithm. By testing so many values of k on the test data, we are overfitting our choice of k on the test data.<br></p><p    >This is an instance of the<em> multiple testing</em> problem in statistics. We’re testing so many things, that the likelihood of a noticeable effect popping up by chance increases. We are in danger of ascribing meaning to random fluctuations. <br></p><p    >Specifically, in our case, the k=1 classifier <strong>got lucky</strong> on a few examples, that just happened to fall on the right side of the decision boundary. If we draw some new data, the same classifier won't be lucky again. The more different values of k we try, the more we are in danger of this kind of random luck determining which hyperparameters come out as good.<br></p><p    >The simple answer to the problem of multiple testing is<strong> not to test multiple times</strong>.<br></p><p    >see also: <a href="https://www.explainxkcd.com/wiki/index.php/882:_Significant"><strong class="blue">https://www.explainxkcd.com/wiki/index.php/882:_Significant</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -233,7 +233,7 @@ slides: true
             <img src="21.Methodology1.key-stage-0020anim0.svg" data-images="21.Methodology1.key-stage-0020anim0.svg,21.Methodology1.key-stage-0020anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This means that you need to test which model to use, which hyperparameters to give it, and how to extract your features <strong>only on the training data</strong>. In order not to evaluate on the training data for these evaluations, you usually split the training data <strong>again</strong>: into a (new) <strong class="green">training set</strong> and<strong class="orange"> a validation set</strong>.<br></p><p    >Ideally, your <span class="orange">validation data</span> is the same size as your <span class="blue">test set</span>, but you can make it a little smaller to get some more <span class="green">training data</span>.<br></p><p    >This means that you need to <strong>carefully plan your research process</strong>. If you start out with just a single split and keep testing on the same <span class="blue">test data</span>, there’s no going back (you can’t unsee your<span class="blue"> test data</span>). And usually, you don’t have the means to gather some new dataset.<br></p><p    >It’s usually fine in the final run to append the validation data to your training data. This is not always the case however, so if you use a standard benchmark you should check if this is allowed, and if you use new data you should describe carefully whether you do this.<br></p><p    >Note that this approach by itself doesn't in itself <em>prevent</em> multiple testing. It just provides for a final failsafe to detect it. Before you make the decision to try your model on the test data, you should first convince yourself that the results you see are not down to multiple testing. You can do this by not testing too many hyperparameter values, or if you fear that have, by rerunning your experiment on a different train/validation split to double check.<br></p><p    >There's always a bit of a tense moment when you run the experiment on the test data, and you get to find out how close the real numbers you'll get to report are to the numbers you've seen for the validation. However, if your datasets are large, and you haven't done anything strange in the hyperparameter tuning phase, they will usually be very close together.</p><p    ></p>
+            <p    >This means that you need to test which model to use, which hyperparameters to give it, and how to extract your features <strong>only on the training data</strong>. In order not to evaluate on the training data for these evaluations, you usually split the training data <strong>again</strong>: into a (new) <strong class="green">training set</strong> and<strong class="orange"> a validation set</strong>.<br></p><p    >Ideally, your <span class="orange">validation data</span> is the same size as your <span class="blue">test set</span>, but you can make it a little smaller to get some more <span class="green">training data</span>.<br></p><p    >This means that you need to <strong>carefully plan your research process</strong>. If you start out with just a single split and keep testing on the same <span class="blue">test data</span>, there’s no going back (you can’t unsee your<span class="blue"> test data</span>). And usually, you don’t have the means to gather some new dataset.<br></p><p    >It’s usually fine in the final run to append the validation data to your training data. This is not always the case however, so if you use a standard benchmark you should check if this is allowed, and if you use new data you should describe carefully whether you do this.<br></p><p    >Note that this approach by itself doesn't in itself <em>prevent</em> multiple testing. It just provides for a final failsafe to <em>detect</em> it. Before you make the decision to try your model on the test data, you should first convince yourself that the results you see are not down to multiple testing. You can do this by not testing too many hyperparameter values, or if you fear that have, by rerunning your experiment on a different train/validation split to double-check.<br></p><p    >There's always a bit of a tense moment when you run the experiment on the test data, and you get to find out how close the real numbers you'll get to report are to the numbers you've seen for the validation. However, if your datasets are large, and you haven't done anything strange in the hyperparameter tuning phase, they will usually be very close together.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
