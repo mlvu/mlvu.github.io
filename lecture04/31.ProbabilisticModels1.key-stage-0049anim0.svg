@@ -79,7 +79,7 @@
 </symbol>
 </g>
 <clipPath id="clip1">
-  <path d="M 658 486 L 713.617188 486 L 713.617188 588 L 658 588 Z M 658 486 "/>
+  <path d="M 658 566 L 713.617188 566 L 713.617188 668 L 658 668 Z M 658 566 "/>
 </clipPath>
 </defs>
 <g id="surface1">
@@ -115,24 +115,24 @@
   <use xlink:href="#glyph1-2" x="1892.26" y="1055.99997"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph2-1" x="386.448514" y="566.570755"/>
+  <use xlink:href="#glyph2-1" x="386.448514" y="646.570755"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph3-1" x="450.640388" y="566.570755"/>
+  <use xlink:href="#glyph3-1" x="450.640388" y="646.570755"/>
 </g>
 <g style="fill:rgb(1.176453%,39.607239%,75.294495%);fill-opacity:1;">
-  <use xlink:href="#glyph2-2" x="492.969021" y="566.570755"/>
+  <use xlink:href="#glyph2-2" x="492.969021" y="646.570755"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph4-1" x="553.240365" y="566.570755"/>
+  <use xlink:href="#glyph4-1" x="553.240365" y="646.570755"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph2-3" x="576.41409" y="566.570755"/>
+  <use xlink:href="#glyph2-3" x="576.41409" y="646.570755"/>
 </g>
 <g clip-path="url(#clip1)" clip-rule="nonzero">
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph3-2" x="648.872935" y="566.570755"/>
-  <use xlink:href="#glyph3-3" x="721.398059" y="566.570755"/>
+  <use xlink:href="#glyph3-2" x="648.872935" y="646.570755"/>
+  <use xlink:href="#glyph3-3" x="721.398059" y="646.570755"/>
 </g>
 </g>
 </g>
