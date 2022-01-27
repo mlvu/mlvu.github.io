@@ -14,19 +14,19 @@
 #  --base-url "http://mlvu.github.io/lecture02" \
 #  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 3: Model evaluation" \
-#  --dst ../lecture03 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
-#  --base-url "https://mlvu.github.io/lecture03" \
-#  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
-
 python generate.py \
-  --title "Lecture 4: Probabilistic models" \
-  --dst ../lecture04 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
-  --base-url "https://mlvu.github.io/lecture04" \
-  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
+  --title "Lecture 3: Model evaluation" \
+  --dst ../lecture03 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
+  --base-url "https://mlvu.github.io/lecture03" \
+  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
+
+#python generate.py \
+#  --title "Lecture 4: Probabilistic models" \
+#  --dst ../lecture04 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
+#  --base-url "https://mlvu.github.io/lecture04" \
+#  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 5: Data Pre-processing" \
