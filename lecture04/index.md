@@ -887,16 +887,14 @@ slides: true
        </section>
 
 
-       <section id="slide-079" class="anim">
+       <section id="slide-080">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-080" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0080anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0080anim0.svg,31.ProbabilisticModels1.key-stage-0080anim1.svg" class="slide-image" />
+            <img src="31.ProbabilisticModels1.key-stage-0080.svg" class="slide-image" />
 
             <figcaption>
             <p    >For this purpose, we will use the <strong>logistic sigmoid</strong> function shown here. A sigmoid function is a function that makes an s-shape like this: its domain is the entire real number line, its range is between two finite values, 0 and 1 in this case, and it increases monotonically. Informally, it squeezes the whole real number line into a finite interval in a smooth way. The<em> logistic</em> sigmoid shown here is just one of many sigmoid functions.<br></p><aside    >The second definition, in grey, is equal to the first. You can show this easily by multiplying both the numerator and the denominator by e<sup class="orange red">t</sup> in the first definition.<br></aside><p    >source: By Qef (talk) - Created from scratch with gnuplot, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4310325"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=4310325</strong></a><br></p><p    ></p>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
-
 
 
        <section id="slide-081">
@@ -904,7 +902,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0081.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We'll see a lot more of the logistic sigmoid as the course progresses, so make sure to remember it. The reason we like to use this specific sigmoid in machine learning settings is that it has a few nice properties that make analysis easier.<br></p><p    >The first is its <strong>symmetry</strong>: if you flip it upside down, or left to right, you get the same function, which is the sigmoid running in the opposite direction σ(-t). Basically the remainder between σ(t) and 1, is itself a sigmoid. We'll use this property later in this video.<br></p><p    >The second property is that the<strong> derivative</strong> of the sigmoid has a particularly simple form: it's equal to the sigmoid itself times one of these flipped sigmoids.<br></p><aside    >Both of these properties are easy enough to work out from the definition on the previous slide. We'll save you this to keep the lecture simple, but it's a good exercise if have the time to try. If not, take a minute to burn them into your memory, so you'll be able to follow along later when they pop up.<br></aside><aside    ></aside>
+            <p    >We'll see a lot more of the logistic sigmoid as the course progresses, so make sure to remember it. The reason we like to use this specific sigmoid in machine learning settings is that it has a few nice properties that make analysis easier.<br></p><p    >The first is its <strong>symmetry</strong>: if you flip it upside down, or left to right, you get the same function, which is the sigmoid running in the opposite direction σ(-t). Basically the remainder between σ(t) and 1, is itself a sigmoid. We'll use this property later in this video.<br></p><p    >The second property is that the<strong> derivative</strong> of the sigmoid has a particularly simple form: it's equal to the sigmoid itself times one of these flipped sigmoids.<br></p><aside    >Both of these properties are easy enough to work out from the definition on the previous slide. We'll save you this to keep the lecture simple, but it's a good exercise if you have the time to try. If not, take a minute to burn them into your memory, so you'll be able to follow along later when they pop up.<br></aside><aside    ></aside>
             </figcaption>
        </section>
 
