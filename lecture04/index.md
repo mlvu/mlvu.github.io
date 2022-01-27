@@ -899,16 +899,14 @@ slides: true
 
 
 
-       <section id="slide-080" class="anim">
+       <section id="slide-081">
             <a class="slide-link" href="https://mlvu.github.io/lecture04#slide-081" title="Link to this slide.">link here</a>
-            <img src="31.ProbabilisticModels1.key-stage-0081anim0.svg" data-images="31.ProbabilisticModels1.key-stage-0081anim0.svg,31.ProbabilisticModels1.key-stage-0081anim1.svg" class="slide-image" />
+            <img src="31.ProbabilisticModels1.key-stage-0081.svg" class="slide-image" />
 
             <figcaption>
             <p    >We'll see a lot more of the logistic sigmoid as the course progresses, so make sure to remember it. The reason we like to use this specific sigmoid in machine learning settings is that it has a few nice properties that make analysis easier.<br></p><p    >The first is its <strong>symmetry</strong>: if you flip it upside down, or left to right, you get the same function, which is the sigmoid running in the opposite direction σ(-t). Basically the remainder between σ(t) and 1, is itself a sigmoid. We'll use this property later in this video.<br></p><p    >The second property is that the<strong> derivative</strong> of the sigmoid has a particularly simple form: it's equal to the sigmoid itself times one of these flipped sigmoids.<br></p><aside    >Both of these properties are easy enough to work out from the definition on the previous slide. We'll save you this to keep the lecture simple, but it's a good exercise if have the time to try. If not, take a minute to burn them into your memory, so you'll be able to follow along later when they pop up.<br></aside><aside    ></aside>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
-
 
 
        <section id="slide-082">
