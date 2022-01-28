@@ -15,6 +15,11 @@ $(document).ready(function()
             idx = 0;
 
         target.attr('src', frames[idx]);
+
+        if (idx == frames.length -1)
+            target.parent().addClass('done');
+        else
+            target.parent().removeClass('done');
     });
 
 });

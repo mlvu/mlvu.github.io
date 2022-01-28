@@ -43,6 +43,6 @@
 #  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/
+git add lecture* style.css index.md script/ mlvu.script.js
 git commit -m "Auto-update."
 git push
