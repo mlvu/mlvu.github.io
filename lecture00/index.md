@@ -253,7 +253,7 @@ slides: true
             <img src="CourseDetails.2021.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Those are the main points to understand going into the course. <br></p><p    >If you have any questions, you can ask me any question you like but only after you’ve read this page from top to bottom. There is an FAQ section.</p><p    ></p>
+            <p    >Those are the main points to understand going into the course. <br></p><p    >If you have any questions, you can ask me any question you like but only after you’ve read <a href="https://canvas.vu.nl/courses/60015/assignments/syllabus"><span>this page</span></a> from top to bottom. <strong>There is an FAQ section.</strong></p><p    ><strong></strong></p>
             </figcaption>
        </section>
 
