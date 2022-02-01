@@ -1,5 +1,16 @@
 #!/bin/bash
 
+
+
+
+python generate.py \
+  --title "Course details" \
+  --dst ../lecture00 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Course details/Course details.2021.key" \
+  --base-url "https://mlvu.github.io/lecture00" \
+  --pdf-link "https://mlvu.github.io/lectures/Course details.2021.pdf"
+
+
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
 #  --dst ../lecture01 \

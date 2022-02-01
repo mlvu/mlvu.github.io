@@ -981,8 +981,9 @@ article.slides {
     border-radius: 50%;
 }
 
-.slides section.anim.done::before {
-    color: #000000ff;
+.slides section.anim.done::before,
+.slides section:hover.anim.done::before {
+    color: #00000000;
 }
 
 .slides section:hover.anim::before {
