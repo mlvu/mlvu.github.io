@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-
-
 python generate.py \
   --title "Course details" \
   --dst ../lecture00 \
