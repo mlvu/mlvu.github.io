@@ -297,7 +297,7 @@ slides: true
             <img src="12.Linear1.key-stage-0025.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Let’s start with a very simple example:<strong> random search</strong>. We simply make a small step to a nearby point. If the loss goes up, we move back to our previous point. If it goes down we stay in the new point. Then we repeat the process.<br></p><p    >We usually stop the loop when the loss gets to a pre-defined level, or we just run it for a fixed number of iterations, and we how well we've done.<br></p><p    ></p>
+            <p    >Let’s start with a very simple example:<strong> random search</strong>. We simply make a small step to a nearby point. If the loss goes up, we move back to our previous point. If it goes down we stay in the new point. Then we repeat the process.<br></p><p    >We usually stop the loop when the loss gets to a pre-defined level, or we just run it for a fixed number of iterations, and we see how well we've done.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1008,16 +1008,6 @@ slides: true
 
        <section id="slide-092">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-092" title="Link to this slide.">link here</a>
-            <img src="12.Linear1.key-stage-0092.svg" class="slide-image" />
-
-            <figcaption>
-            <p    ></p>
-            </figcaption>
-       </section>
-
-
-       <section id="slide-093">
-            <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-093" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
