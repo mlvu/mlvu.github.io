@@ -270,16 +270,14 @@ slides: true
 
 
 
-       <section id="slide-022" class="anim">
+       <section id="slide-023">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-023" title="Link to this slide.">link here</a>
-            <img src="12.Linear1.key-stage-0023anim0.svg" data-images="12.Linear1.key-stage-0023anim0.svg,12.Linear1.key-stage-0023anim1.svg" class="slide-image" />
+            <img src="12.Linear1.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
             <p    >The mathematical name for this sort of search is <strong>optimization</strong>. That is, we are trying to find the input (<strong class="orange red">p</strong>, the<span class="orange red"> model parameters</span>) for  which a particular function (the loss) is at its optimum (a maximum or minimum, in this case a minimum). Failing that, we’d like to find as low a value as possible.<br></p><p    >We’ll start by looking at some very simple approaches.</p><p    ></p>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
-
 
 
        <section id="slide-024">
@@ -651,7 +649,7 @@ slides: true
             <img src="12.Linear1.key-stage-0058anim0.svg" data-images="12.Linear1.key-stage-0058anim0.svg,12.Linear1.key-stage-0058anim1.svg,12.Linear1.key-stage-0058anim2.svg,12.Linear1.key-stage-0058anim3.svg,12.Linear1.key-stage-0058anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >So, now that we have a local linear approximation g to our function f, which is the direction of steepest ascent on the approximation g?<br></p><p    >Since g is linear, many details don’t matter: we can set <span class="blue">b</span> to zero, since that just translates the hyperplane up or down. It doesn’t matter <em>how big </em>a step we take in any direction, so we’ll take a step of size 1. Finally, it doesn’t matter where we start from, so we will just start from the origin. So the question becomes: for which input <strong class="green">x</strong> of magnitude 1 (which unit vector) does g(<strong class="green">x</strong>) provide the biggest output?<br></p><p    >To see the answer, we need to use the geometric interpretation of the dot product. Since we required that ||<strong class="green">x</strong>||= 1<strong>,</strong> this disappears from the equation, and we only need to maximise the quantity ||<strong>w</strong>|| cos(α) (where only α depends on our choice of <strong class="green">x</strong>, and <strong>w</strong> is the gradient we computed). cos(α) is maximal when α is zero: that is, when <strong>x</strong> and <strong>w</strong> are pointing in the same direction.<br></p><p    >In short: <span>w</span>, the gradient,<span> </span> <em>is</em> the direction of steepest ascent. <span>This means that -</span><span>w</span><span> is the direction of steepest </span><em>descent</em><span>.<br></span></p><p    ><span></span></p>
+            <p    >So, now that we have a local linear approximation g to our function f, which is the direction of steepest ascent on the approximation g?<br></p><p    >Since g is linear, many details don’t matter: we can set <span class="blue">b</span> to zero, since that just translates the hyperplane up or down. It doesn’t matter <em>how big </em>a step we take in any direction, so we’ll take a step of size 1. Finally, it doesn’t matter where we start from, so we will just start from the origin. So the question becomes: for which input <strong class="green">x</strong> of magnitude 1 (which unit vector) does g(<strong class="green">x</strong>) provide the biggest output?<br></p><p    >To see the answer, we need to use the geometric definition of the dot product. Since we required that ||<strong class="green">x</strong>||= 1<strong>,</strong> this disappears from the equation, and we only need to maximise the quantity ||<strong>w</strong>|| cos(α) (where only α depends on our choice of <strong class="green">x</strong>, and <strong>w</strong> is the gradient we computed). cos(α) is maximal when α is zero: that is, when <strong>x</strong> and <strong>w</strong> are pointing in the same direction.<br></p><p    >In short: <span>w</span>, the gradient,<span> </span> <em>is</em> the direction of steepest ascent. <span>This means that -</span><span>w</span><span> is the direction of steepest </span><em>descent</em><span>.<br></span></p><p    ><span></span></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
