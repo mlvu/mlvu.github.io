@@ -42,7 +42,7 @@ def inner(node):
 def generate(
         dst="/Users/peter/Dropbox/gits/git-sakhmet/mlvu.github.io/lecture01",
         workdir="/Users/peter/Desktop/mlvu-export",
-        source='/Users/peter/Desktop/test.key',
+        source=None,
         title='Lecture 1: Introduction',
         base_url='mlvu.github.io/lecture01/',
         pdf_link='...'):
@@ -55,6 +55,8 @@ def generate(
     :param source: The original keynote file.
     :return:
     """
+
+    assert source is not None
 
     # clear the working directory
     if os.path.exists(workdir):
