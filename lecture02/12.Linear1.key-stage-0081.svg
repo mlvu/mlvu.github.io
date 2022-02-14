@@ -1143,6 +1143,6 @@
   <use xlink:href="#glyph1-1" x="1373.549" y="395.8572"/>
 </g>
 <path style="fill:none;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(87.059021%,41.567993%,6.274414%);stroke-opacity:1;stroke-miterlimit:4;" d="M -0.0000674432 -0.00174357 L 81.019227 0.00027821 L 85.517144 -0.00142133 " transform="matrix(-0.216746,-0.976228,0.976228,-0.216746,1349.447,438.9019)"/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(87.059021%,41.567993%,6.274414%);fill-opacity:1;" d="M 1348.871094 356.039062 L 1324.34375 325.835938 L 1314.902344 363.582031 Z M 1348.871094 356.039062 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(87.059021%,41.567993%,6.274414%);fill-opacity:1;" d="M 1348.871094 356.039062 L 1324.34375 325.835938 L 1314.898438 363.582031 Z M 1348.871094 356.039062 "/>
 </g>
 </svg>
