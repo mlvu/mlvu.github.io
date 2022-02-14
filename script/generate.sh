@@ -22,7 +22,7 @@
 #  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
 python generate.py \
-  --title "Lecture 3: Model evaluation" \cd scrip
+  --title "Lecture 3: Model evaluation"
   --dst ../lecture03 \
   --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
   --base-url "https://mlvu.github.io/lecture03" \
