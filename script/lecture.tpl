@@ -64,7 +64,7 @@ slides: true
 
     % else:
 
-       <section id="slide-${f'{i:03}'}" class="anim">
+       <section id="slide-${f'{i+1:03}'}" class="anim">
             <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <img src="${slide['image'][0]}" data-images="${','.join(slide['image'])}" class="slide-image" />
 
