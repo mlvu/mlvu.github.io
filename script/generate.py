@@ -369,6 +369,14 @@ def generate(
 
                         anno = re.sub('\\|section\\|([^\\|]*)\\|', '', anno)
 
+                    match = re.search('\\|section-nv\\|([^\\|]*)\\|', anno)
+
+                    if match is not None:
+                        stitle = match.group(1)
+                        menu.append((id, 'nv:' + stitle))
+
+                        anno = re.sub('\\|section-nv\\|([^\\|]*)\\|', '', anno)
+
                     annotations.append(anno)
 
     print('Rendering HTML')

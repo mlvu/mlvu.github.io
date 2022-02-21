@@ -7,7 +7,11 @@ slides: true
         <li class="home"><a href="/">Home</a></li>
         <li class="name">${title}</li>
         % for (id, stitle) in menu:
-            <li><a href="#video-${f'{id-1:03}'}">${stitle}</a></li>
+            % if stitle.startswith('nv:'):
+                <li><a href="#slide-${f'{id:03}'}">${stitle[3:]}</a></li>
+            % else:
+                <li><a href="#video-${f'{id-1:03}'}">${stitle}</a></li>
+            % endif
         % endfor
         <li class="pdf"><a href="${pdf_link}">PDF</a></li>
     </ul>
@@ -15,7 +19,9 @@ slides: true
 
 <article class="slides">
 % for i, slide in enumerate(content):
+
     % if slide['video'] is not None and not slide['video'].startswith('inline:'):
+
        <section class="video" id="video-${f'{i:03}'}">
            <a class="slide-link" href="${base_url}#video-${i}">link here</a>
            <iframe
@@ -26,9 +32,11 @@ slides: true
            </iframe>
 
        </section>
+
     % endif
 
     % if slide['video'] is not None and slide['video'].startswith('inline:'):
+
        <section id="slide-${f'{i+1:03}'}">
             <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <iframe
@@ -42,7 +50,9 @@ slides: true
             ${slide['annotation']}
             </figcaption>
        </section>
+
     % elif len(slide['image']) == 1:
+
        <section id="slide-${f'{i+1:03}'}">
             <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <img src="${slide['image'][0]}" class="slide-image" />
@@ -51,7 +61,9 @@ slides: true
             ${slide['annotation']}
             </figcaption>
        </section>
+
     % else:
+
        <section id="slide-${f'{i:03}'}" class="anim">
             <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <img src="${slide['image'][0]}" data-images="${','.join(slide['image'])}" class="slide-image" />
