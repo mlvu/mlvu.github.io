@@ -37,7 +37,7 @@ title: Machine Learning @ VU
 </div>
 
 <div class="l7"><a href="/lecture07">
- <h3 class="orange"><span>7.</span>Deep learning</h3>
+ <h3 class="red"><span>7.</span>Deep learning</h3>
 </a>
 </div>
 
