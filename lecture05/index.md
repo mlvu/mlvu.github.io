@@ -893,7 +893,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we choose <em>different</em><strong> basis vectors</strong>, we get a different <strong>coordinate system </strong>to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span>one vector</span>, plus a number of copies of <span class="orange">the other</span>.<br></p><p    >The blue point, which was at coordinates (3, 2) in our standard basis, is at coordinates () in this new basis.</p><p    ></p>
+            <p    >If we choose <em>different</em><strong> basis vectors</strong>, we get a different <strong>coordinate system </strong>to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span class="purple">one vector</span>, plus a number of copies of <span class="orange">the other</span>.<br></p><p    >The blue point, which was at coordinates (3, 2) in our standard basis, is at coordinates (<span class="purple">1.6</span>, <span class="orange">0.4</span>) in this new basis.</p><p    ></p>
             </figcaption>
        </section>
 

@@ -176,6 +176,7 @@ def generate(
     blue   = set()
     green  = set()
     red    = set()
+    purple = set()
 
     videos = []
 
@@ -209,6 +210,8 @@ def generate(
             green.add(id)
         if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote:
             red.add(id)
+        if 'sfa:r="0.385772705078125" sfa:g="0.16069561243057251" sfa:b="0.53932785987854004"' in strnote:
+            purple.add(id)
 
     # check paragraph styles for italics
     # -- these are taked to be asides
@@ -273,6 +276,8 @@ def generate(
                     classes.append('green')
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in red:
                     classes.append('red')
+                if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in purple:
+                    classes.append('purple')
 
             # replace node tag with html equivalent
             if node.tag == 'link':
