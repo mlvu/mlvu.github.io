@@ -6,15 +6,17 @@ slides: true
     <ul>
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 5: Data Pre-processing</li>
-            <li><a href="#video-000">Missing values and outliers</a></li>
-            <li><a href="#video-030">Class imbalance and feature design</a></li>
-            <li><a href="#video-052">Normalization</a></li>
-            <li><a href="#video-074">Principal Component Analysis</a></li>
+                <li><a href="#video-000">Missing values and outliers</a></li>
+                <li><a href="#video-030">Class imbalance and feature design</a></li>
+                <li><a href="#video-052">Normalization</a></li>
+                <li><a href="#video-074">Principal Component Analysis</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
 
 <article class="slides">
+
+
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-0">link here</a>
            <iframe
@@ -26,6 +28,8 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-001">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-001" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0001.svg" class="slide-image" />
@@ -34,6 +38,9 @@ slides: true
             <p    ><lnbr></lnbr><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-002">
@@ -46,6 +53,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-003">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-003" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0003.svg" class="slide-image" />
@@ -54,6 +64,9 @@ slides: true
             <p    >The initial instinct was to reinforce those places that registered the most hits.<br></p><p    >However, it was soon pointed out (by a man called Abraham Wald) that this ignores a crucial aspect of the <em>source</em> of the data. They weren’t tallying where planes were most likely to be hit, they were tallying where planes were most likely to be hit <em>and come back</em>.<br></p><p    >The places where they weren’t seeing <em>any</em> hits were exactly the places that should be reinforced, since the planes that were hit there didn’t make it back.<br></p><p    >This specific effect is called <a href="https://en.wikipedia.org/wiki/Survivorship_bias"><strong class="blue">survivorship bias</strong></a>, and it’s worth keeping in mind, but the more general lesson for today, is that you should <strong>not take your data at face value</strong>. <br></p><p    >Don’t just load your data into an ML model and check the predictive performance: consider what you’re ultimately trying to achieve, and consider how the source of your data will affect that goal.<br></p><p    >By McGeddon - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=53081927"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=53081927</strong></a></p><p    ><a href="https://commons.wikimedia.org/w/index.php?curid=53081927"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-004">
@@ -66,6 +79,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-005">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-005" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0005.svg" class="slide-image" />
@@ -74,6 +90,9 @@ slides: true
             <p    >One important aspect of not taking the data at face value is to <em>look</em> at it. <br></p><p    >These are the four datasets from the previous slide. They are a common example, called Anscombe’s quartet. Only when we look at the datasets, do we see how different they are. <br></p><p    >More importantly, only when we look at the data, do we see the patterns that define them. These are the patterns we want to get at if we want to understand the data. And none of them are revealed by the descriptive statistics of the previous slide.<br></p><p    >source: By Schutz: Avenue - Anscombe.svg, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=9838454"><strong class="blue">https://commons.wikimedia.org/w/index.php?curid=9838454</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-006">
@@ -86,7 +105,10 @@ slides: true
        </section>
 
 
-       <section id="slide-006" class="anim">
+
+
+
+       <section id="slide-007" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-007" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0007anim0.svg" data-images="22.Methodology2.key-stage-0007anim0.svg,22.Methodology2.key-stage-0007anim1.png" class="slide-image" />
 
@@ -95,6 +117,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -108,6 +132,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-009">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-009" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0009.svg" class="slide-image" />
@@ -116,6 +143,9 @@ slides: true
             <p    >We’ll start with missing data. Quite often, your data will look like this. <br></p><p    >You will need to do something about those gaps, before any machine learning algorithm will accept this data.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-010">
@@ -128,6 +158,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-011">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-011" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0011.svg" class="slide-image" />
@@ -136,6 +169,9 @@ slides: true
             <p    >If you have missing values in one of your features, the simplest way to get rid of them is to just remove the feature(s) for which there are values missing. If you’re lucky, the feature is not important anyway.<br></p><p    >You can also remove the instances with missing data. Here you have to be careful. If the data was not corrupted uniformly, removing rows with missing values will change your data distribution.<br></p><p    >For example, you might have data gathered by volunteers in the street using some electronic equipment. If the volunteer in Amsterdam had problems with their hardware, then their data will contain missing values, and the collected data will not be representative of Amsterdam.<br></p><p    >Another way you might get non-uniformly distributed missing data is if your data comes from a questionnaire , where people sometimes refuse to answer certain questions. For instance, if only rich people refuse to answer questions about their taxes, removing these instances will remove a lot of rich people from your data and give you a different distribution.<br></p><p    ><strong>How can you tell if data is missing uniformly?</strong> There’s no surefire way, but usually you can get a good idea by plotting a histogram of how much data is missing against some other feature. For instance if the number of instance with missing features against income is very different from the regular histogram over income, you can assume that your data was not corrupted uniformly. <br></p><p    >Of course it also helps if you can work out why your data has missing values. Again, don't take the data at face value, look into where it came from, and what the details of that process can tell you.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-012">
@@ -148,6 +184,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-013">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-013" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0013.svg" class="slide-image" />
@@ -156,6 +195,9 @@ slides: true
             <p    ><br></p><p    >If you expect to see missing in production, then your model needs to be able to consume missing values, and you should keep them in the test set. For categorical features, the easiest way to do this is to add a category for missing values. For numerical features, we’ll see some options in the next slide.<br></p><p    >If your production setting won’t have missing values, then that’s the setting you want to simulate. If at all possible, you should get a test set without missing values, even if the training set has them. You can then freely test what method of dealing with the missing training values gives the best performance on the test set.<br></p><p    >If you cannot get a test set without missing values, one thing you can do is to report performance on both the data that has the instances with missing values removed and the data that has the missing values filled in by some mechanism. Neither are ideal simulations of the production setting, but the combination of both numbers hopefully gives you some idea.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-014">
@@ -168,6 +210,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-015">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-015" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0015.svg" class="slide-image" />
@@ -176,6 +221,9 @@ slides: true
             <p    >If your target label has missing values, the story is a little different. In the <span class="green">training set</span> you are free to do whatever you think is best. You can remove instances, or impute the missing labels. If you have a lot of missing labels, this essentially becomes a semi-supervised learning setting as we saw in the first lecture.<br></p><p    >On <span class="blue">the test</span> set however, you shouldn’t impute or ignore the missing values, since that changes the task, and most likely makes it easier, which will give you false confidence in the performance of your model. Instead, you should <strong>report the uncertainty</strong> created by the missing values.<br></p><p    >In classification, this is easy: you compute the accuracy under the assumption that your classifier gets all missing values correct and under the assumption that it gets all missing values wrong: this gives you a <span>best case</span><span class="blue"> </span>and a <span>worst case</span> scenario, respectively. Your true accuracy on the test set is somewhere in between.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-016">
@@ -188,6 +236,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-017">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-017" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0017.png" class="slide-image" />
@@ -196,6 +247,9 @@ slides: true
             <p    >In other cases, however, the “outlier” is very much part of the distribution. This is what we call a <strong>natural outlier</strong>. Bill Gates may have a million times the net worth of anybody you are likely to meet in the street, but that doesn’t mean he isn’t part of the distribution of income. <br></p><p    >If we fit a normal distribution to this data, the outlier would ruin our fit, but that’s because the data <em>isn’t normally distributed</em>. What we should do is recognize that fact, and adapt our model, for instance by removing assumptions of normally distributed data.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-018">
@@ -208,6 +262,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-019">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-019" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0019.svg" class="slide-image" />
@@ -218,7 +275,10 @@ slides: true
        </section>
 
 
-       <section id="slide-019" class="anim">
+
+
+
+       <section id="slide-020" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-020" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0020anim0.svg" data-images="22.Methodology2.key-stage-0020anim0.svg,22.Methodology2.key-stage-0020anim1.svg" class="slide-image" />
 
@@ -230,7 +290,9 @@ slides: true
 
 
 
-       <section id="slide-020" class="anim">
+
+
+       <section id="slide-021" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-021" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0021anim0.svg" data-images="22.Methodology2.key-stage-0021anim0.svg,22.Methodology2.key-stage-0021anim1.svg,22.Methodology2.key-stage-0021anim2.svg,22.Methodology2.key-stage-0021anim3.svg,22.Methodology2.key-stage-0021anim4.svg,22.Methodology2.key-stage-0021anim5.svg" class="slide-image" />
 
@@ -239,6 +301,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -252,6 +316,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-023">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-023" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0023.svg" class="slide-image" />
@@ -262,7 +329,10 @@ slides: true
        </section>
 
 
-       <section id="slide-023" class="anim">
+
+
+
+       <section id="slide-024" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-024" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0024anim0.svg" data-images="22.Methodology2.key-stage-0024anim0.svg,22.Methodology2.key-stage-0024anim1.svg,22.Methodology2.key-stage-0024anim2.svg,22.Methodology2.key-stage-0024anim3.svg,22.Methodology2.key-stage-0024anim4.svg,22.Methodology2.key-stage-0024anim5.svg,22.Methodology2.key-stage-0024anim6.svg" class="slide-image" />
 
@@ -271,6 +341,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -284,6 +356,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-026">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-026" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0026.svg" class="slide-image" />
@@ -292,6 +367,9 @@ slides: true
             <p    >If we use the median, Bill Gates still has a strong pull on the our representative value <span class="blue">m</span>, but it's proportional to his distance to <span class="blue">m</span>, not to the square of the distance. </p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-027">
@@ -304,7 +382,10 @@ slides: true
        </section>
 
 
-       <section id="slide-027" class="anim">
+
+
+
+       <section id="slide-028" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-028" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0028anim0.svg" data-images="22.Methodology2.key-stage-0028anim0.svg,22.Methodology2.key-stage-0028anim1.svg" class="slide-image" />
 
@@ -313,6 +394,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -326,6 +409,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-030">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-030" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0030.svg" class="slide-image" />
@@ -334,6 +420,9 @@ slides: true
             <p    >If you want to adapt your model to deal with natural outliers, beware of hidden assumptions of normality. We saw a hint last lecture already that assuming normality leads to squared error objectives. We'll look at this in detail in a later lecture. For now, keep this link in mind when you look at the distribution of your outliers.<br></p><p    >Consider modelling your noise with a heavy-tailed distribution instead, in other words, one which makes outliers more likely. Using the median instead of the mean is one way to do this. <br></p><p    >If you are doing regression and your target label is non-normally distributed then you can use the sum of absolute errors as a loss function instead of the sum of squared errors. This will also implicitly assume a more heavy-tailed distribution than the normal, but even more heavy tailed distributions are available. We'll look a little bit more at modeling data with different distributions in later lectures.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
        <section class="video" id="video-030">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-30">link here</a>
@@ -346,6 +435,8 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-031">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-031" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0031.svg" class="slide-image" />
@@ -354,6 +445,9 @@ slides: true
             <p    ><lnbr></lnbr><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-032">
@@ -366,6 +460,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-033">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-033" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0033.svg" class="slide-image" />
@@ -374,6 +471,9 @@ slides: true
             <p    >We will assume that the class imbalance will happen in production as well as in your experiments. That means your <span class="blue">test set </span>needs to have the class imbalance in it, to be a fair simulation of the production setting. You can fiddle around with the training data all you like, but the <span class="blue">test</span> data (and by extension the <span class="orange">validation</span> data) needs to represent the natural class distribution.<br></p><p    >As a result, you'll need to focus on getting a large test set even more than normal: your problem is essentially that of detecting instances of the minority class. If you only have 25 of them in your test set, you won't get a very good idea of how good your classifier can detect them, even if you have 10000 majority class instances. <br></p><p    >This is usually a painful step, since withholding a lot of test data leaves you with very little training data. However, since you  are allowed to manipulate the training data however you like, you should prioritize the test data. There may be clever tricks to get more mileage out of the imbalanced training data, but without a proper test data, you won't be able to tell if these tricks work.<br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-034">
@@ -386,6 +486,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-035">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-035" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0035.svg" class="slide-image" />
@@ -394,6 +497,9 @@ slides: true
             <p    >You can also <strong>undersample</strong> your majority class. This doesn’t lead to duplicates, but it does mean you’re throwing away data.<br></p><p    >If you have use an algorithm that makes multiple passes over the dataset (like gradient descent) it can help to resample the dataset fresh for every pass.<br></p><p    >Whether you oversample or undersample, you should be aware that you are changing the class distribution in the data. If you increase the proportion of one class, the classifier will be more likely to classify things by the minority class. This will be a tradeoff: you want to oversample to the point where the classifier begins to pick up on the features that indicate the minority class, but not so much that the classifier begins seeing the minority class when the features do not indicate it. <br></p><p    >The simplest way to achieve this is to treat the amount of resampling as a hyperparameter, and to optimize for precision/recall or ROC curves.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-036">
@@ -406,6 +512,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-037">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-037" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0037.svg" class="slide-image" />
@@ -414,6 +523,9 @@ slides: true
             <p    >Next, let's look at what we should to with the features in our dataset.<br></p><p    >Even if your data comes in a table, that doesn’t necessary mean that every column can be used as a feature right away (or that this would be a good approach). We'll need to look at the data provided and come up with a good way to translate it to a form in which the machine learning model is likely to learn from it. This depends both on what the data gives you, and on how your chosen model works. <br></p><p    >Translating your raw data into features is more an art than a science, and the ultimate test is the <span class="blue">test set</span> performance. We'll look at a few simple examples, to give you an idea of the general way of thinking you should adopt.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-038">
@@ -426,6 +538,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-039">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-039" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0039.svg" class="slide-image" />
@@ -434,6 +549,9 @@ slides: true
             <p    >This particular age column is integer valued, while numeric features are usually real-valued. In this case, we can just interpret the age as a real-valued number, and most algorithms won’t be affected.<br></p><p    >If our algorithm only accepts categoric features, we’ll have to group the data into bins. For instance, you can turn the data into a two-category feature with the categories “below the median” and “above the median”.<br></p><p    >We’ll lose information this way, which is unavoidable, but if you have a classifier that only consumes categorical features which works really well on the rest of your features it may be worth it.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-040">
@@ -446,7 +564,10 @@ slides: true
        </section>
 
 
-       <section id="slide-040" class="anim">
+
+
+
+       <section id="slide-041" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-041" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0041anim0.svg" data-images="22.Methodology2.key-stage-0041anim0.svg,22.Methodology2.key-stage-0041anim1.svg,22.Methodology2.key-stage-0041anim2.svg" class="slide-image" />
 
@@ -455,6 +576,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -468,6 +591,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-043">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-043" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0043.svg" class="slide-image" />
@@ -476,6 +602,9 @@ slides: true
             <p    >We can switch to a more powerful model, but we can also add power to the linear classifier by <strong>adding extra features derived from the existing features</strong>. <br></p><p    >Here, we’ve added the cross-product of d and p (one value multplied by the other). Note the XOR relationship of the signs: two negatives or two positives both make positive, a negative and a positive make a negative. <br></p><p    >If we feed this three-feature dataset to a linear classifier, it can easily solve the problem. All it needs to do is to look at the sign of the third feature, and ignore the rest. We still have a simple linear classifier, which can easily and efficiently be optimally solved, but now it can learn non-linear relations in the original 2D feature space.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-044">
@@ -488,7 +617,10 @@ slides: true
        </section>
 
 
-       <section id="slide-044" class="anim">
+
+
+
+       <section id="slide-045" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-045" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0045anim0.png" data-images="22.Methodology2.key-stage-0045anim0.png,22.Methodology2.key-stage-0045anim1.png" class="slide-image" />
 
@@ -497,6 +629,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -510,6 +644,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-047">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-047" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0047.svg" class="slide-image" />
@@ -518,6 +655,9 @@ slides: true
             <p    >You can try this yourself at <a href="http://playground.tensorflow.org/#activation=linear&amp;regularization=L1&amp;batchSize=10&amp;dataset=xor&amp;regDataset=reg-plane&amp;learningRate=0.03&amp;regularizationRate=0.01&amp;noise=20&amp;networkShape=&amp;seed=0.64177&amp;showTestData=false&amp;discretize=true&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false&amp;numHiddenLayers_hide=true&amp;percTrainData_hide=true&amp;regularizationRate_hide=true&amp;learningRate_hide=false&amp;playButton_hide=false&amp;discretize_hide=false&amp;resetButton_hide=false&amp;regularization_hide=true&amp;dataset_hide=false&amp;batchSize_hide=true&amp;noise_hide=true&amp;problem_hide=false&amp;activation_hide=true&amp;stepButton_hide=false&amp;showTestData_hide=true"><strong class="blue">playground.tensorflow.org</strong></a>. The column labeled features contains some extra features derived from the original two by various functions (including the cross product).<br></p><p    >Note that both the XOR and Circle dataset are present.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-048">
@@ -530,6 +670,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-049">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-049" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0049.svg" class="slide-image" />
@@ -538,6 +681,9 @@ slides: true
             <p    >A <span class="green">purely linear classifier</span> does a terrible job.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-050">
@@ -550,7 +696,10 @@ slides: true
        </section>
 
 
-       <section id="slide-050" class="anim">
+
+
+
+       <section id="slide-051" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-051" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0051anim0.svg" data-images="22.Methodology2.key-stage-0051anim0.svg,22.Methodology2.key-stage-0051anim1.svg,22.Methodology2.key-stage-0051anim2.svg,22.Methodology2.key-stage-0051anim3.svg" class="slide-image" />
 
@@ -559,6 +708,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -571,6 +722,9 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-052">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-52">link here</a>
            <iframe
@@ -582,6 +736,8 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-053">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-053" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0053.svg" class="slide-image" />
@@ -590,6 +746,9 @@ slides: true
             <p    ><lnbr></lnbr><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-054">
@@ -602,7 +761,10 @@ slides: true
        </section>
 
 
-       <section id="slide-054" class="anim">
+
+
+
+       <section id="slide-055" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-055" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0055anim0.svg" data-images="22.Methodology2.key-stage-0055anim0.svg,22.Methodology2.key-stage-0055anim1.svg" class="slide-image" />
 
@@ -611,6 +773,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -624,7 +788,10 @@ slides: true
        </section>
 
 
-       <section id="slide-056" class="anim">
+
+
+
+       <section id="slide-057" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-057" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0057anim0.svg" data-images="22.Methodology2.key-stage-0057anim0.svg,22.Methodology2.key-stage-0057anim1.svg" class="slide-image" />
 
@@ -636,7 +803,9 @@ slides: true
 
 
 
-       <section id="slide-057" class="anim">
+
+
+       <section id="slide-058" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-058" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0058anim0.svg" data-images="22.Methodology2.key-stage-0058anim0.svg,22.Methodology2.key-stage-0058anim1.svg" class="slide-image" />
 
@@ -648,7 +817,9 @@ slides: true
 
 
 
-       <section id="slide-058" class="anim">
+
+
+       <section id="slide-059" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-059" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0059anim0.svg" data-images="22.Methodology2.key-stage-0059anim0.svg,22.Methodology2.key-stage-0059anim1.svg" class="slide-image" />
 
@@ -660,7 +831,9 @@ slides: true
 
 
 
-       <section id="slide-059" class="anim">
+
+
+       <section id="slide-060" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-060" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0060anim0.svg" data-images="22.Methodology2.key-stage-0060anim0.svg,22.Methodology2.key-stage-0060anim1.svg,22.Methodology2.key-stage-0060anim2.svg,22.Methodology2.key-stage-0060anim3.png,22.Methodology2.key-stage-0060anim4.png,22.Methodology2.key-stage-0060anim5.png" class="slide-image" />
 
@@ -672,7 +845,9 @@ slides: true
 
 
 
-       <section id="slide-060" class="anim">
+
+
+       <section id="slide-061" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-061" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0061anim0.svg" data-images="22.Methodology2.key-stage-0061anim0.svg,22.Methodology2.key-stage-0061anim1.png,22.Methodology2.key-stage-0061anim2.svg" class="slide-image" />
 
@@ -684,7 +859,9 @@ slides: true
 
 
 
-       <section id="slide-061" class="anim">
+
+
+       <section id="slide-062" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-062" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0062anim0.svg" data-images="22.Methodology2.key-stage-0062anim0.svg,22.Methodology2.key-stage-0062anim1.svg,22.Methodology2.key-stage-0062anim2.svg,22.Methodology2.key-stage-0062anim3.svg,22.Methodology2.key-stage-0062anim4.svg" class="slide-image" />
 
@@ -693,6 +870,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -706,37 +885,46 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-064">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-064" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we choose <em>different</em><strong> basis vectors</strong>, we get a different coordinate system to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span>one vector</span>, plus a number of copies of <span class="orange">the other</span>.</p><p    ></p>
+            <p    >If we choose <em>different</em><strong> basis vectors</strong>, we get a different <strong>coordinate system </strong>to  express our data in. But (excepting some rare choice of basis vectors), we can still express all the same points as a number of copies of <span>one vector</span>, plus a number of copies of <span class="orange">the other</span>.<br></p><p    >The blue point, which was at coordinates (3, 2) in our standard basis, is at coordinates () in this new basis.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-064" class="anim">
+
+
+
+       <section id="slide-065">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-065" title="Link to this slide.">link here</a>
-            <img src="22.Methodology2.key-stage-0065anim0.svg" data-images="22.Methodology2.key-stage-0065anim0.svg,22.Methodology2.key-stage-0065anim1.svg,22.Methodology2.key-stage-0065anim2.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0065.svg" class="slide-image" />
 
             <figcaption>
             <p    >If we know the coordinates <strong>x</strong><sub>b</sub> in our non-standard coordinate system, it’s easy to find the coordinates <strong class="blue">x</strong><sub class="blue">s</sub> in the standard basis. We just multiply the first coordinate of x<sub>b</sub> with the first basis vector, the second coordinate with the second basis vector and sum the result.</p><p    ></p>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-065" class="anim">
+
+
+       <section id="slide-066" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-066" title="Link to this slide.">link here</a>
-            <img src="22.Methodology2.key-stage-0066anim0.svg" data-images="22.Methodology2.key-stage-0066anim0.svg,22.Methodology2.key-stage-0066anim1.svg,22.Methodology2.key-stage-0066anim2.svg,22.Methodology2.key-stage-0066anim3.svg,22.Methodology2.key-stage-0066anim4.svg" class="slide-image" />
+            <img src="22.Methodology2.key-stage-0066anim0.svg" data-images="22.Methodology2.key-stage-0066anim0.svg,22.Methodology2.key-stage-0066anim1.svg,22.Methodology2.key-stage-0066anim2.svg,22.Methodology2.key-stage-0066anim3.svg" class="slide-image" />
 
             <figcaption>
             <p    >The basis vectors are usually expressed as the columns of a matrix <strong>B</strong>. That way, transforming a coordinate <strong>x</strong> in basis B to the standard coordinates can be done simply by matrix multiplying <strong>B</strong> by <strong>x</strong>. It also tells us that to go the other way, to transform a standard coordinate to the basis, you multiply by the <em>inverse</em> of <strong>B</strong>.<br></p><p    >Since inverting a matrix is an expensive and numerically unstable business, it’s good to focus (if possible) on <strong>orthonormal bases</strong>. That is, bases for which the basis vectors are <strong>orthogonal</strong> (the angle between any two of them is 90 degrees) and <strong>normal</strong> (all vectors have length 1). In that case the matrix transpose (which is simple to compute without loss of precision) is equal to the matrix inverse, so we can switch back and forth between bases quickly, without losing information.<br></p><p    >Here [<strong>a</strong>,<strong>b</strong>] represents the matrix created by concatenating the vectors <strong>a</strong> and <strong>b</strong>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -750,6 +938,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-068">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-068" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0068.svg" class="slide-image" />
@@ -758,6 +949,9 @@ slides: true
             <p    >To figure out how to find this basis, we will follow the same principle as we did with standardisation: we will assume that the data was generated by a standard multivariate normal distribution (MVN), followed by a translation and a change of basis (with the change of basis causing some features to become correlated). We will attempt to reverse the process by:<br></p><p     class="list-item">fitting a (nonstandard) MVN to the data<br></p><p     class="list-item">figuring out the transformation that transforms the standard MVN to this MVN<br></p><p     class="list-item">applying the inverse of this transformation to the observed data<br></p><p    >A multivariate normal distribution is a generalisation of a one-dimensional normal distribution.<span> </span><span>Its mean is a single point</span>, <span>and its variance is determined by a symmetric matrix called a </span><strong>covariance matrix</strong>.<span> </span>The values on the diagonal indicate how much variance there is along each dimension. The off-diagonal elements indicate how much co-variance there is between dimensions.<br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-069">
@@ -770,6 +964,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-070">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-070" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0070.svg" class="slide-image" />
@@ -778,6 +975,9 @@ slides: true
             <p    >The maximum likelihood estimators for the <strong class="orange">sample mean</strong><span class="orange"> </span><strong class="orange">m</strong><span class="orange"> </span>and <strong class="blue">sample covariance S</strong> look like this. Computing these values lets you fit an MVN to your data.<br></p><aside    >You can derive these by starting with the probability density function we saw in the last slide, applying the maximum likelihood objective, setting the derivative equal to zro an solving for the mean and for the covariance. You don't have to be able to do this (it gets a bit technical), but you do have to understand the idea.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-071">
@@ -790,7 +990,10 @@ slides: true
        </section>
 
 
-       <section id="slide-071" class="anim">
+
+
+
+       <section id="slide-072" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-072" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0073anim0.png" data-images="22.Methodology2.key-stage-0073anim0.png,22.Methodology2.key-stage-0073anim1.png,22.Methodology2.key-stage-0073anim2.png" class="slide-image" />
 
@@ -799,6 +1002,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -812,6 +1017,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-074">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-074" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0075.svg" class="slide-image" />
@@ -820,6 +1028,9 @@ slides: true
             <p    ></p>
             </figcaption>
        </section>
+
+
+
 
        <section class="video" id="video-074">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-74">link here</a>
@@ -832,6 +1043,8 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-075">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-075" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0076.svg" class="slide-image" />
@@ -840,6 +1053,9 @@ slides: true
             <p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-076">
@@ -852,6 +1068,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-077">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-077" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0078.svg" class="slide-image" />
@@ -862,7 +1081,10 @@ slides: true
        </section>
 
 
-       <section id="slide-077" class="anim">
+
+
+
+       <section id="slide-078" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-078" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0079anim0.svg" data-images="22.Methodology2.key-stage-0079anim0.svg,22.Methodology2.key-stage-0079anim1.svg,22.Methodology2.key-stage-0079anim2.svg" class="slide-image" />
 
@@ -874,7 +1096,9 @@ slides: true
 
 
 
-       <section id="slide-078" class="anim">
+
+
+       <section id="slide-079" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-079" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0080anim0.svg" data-images="22.Methodology2.key-stage-0080anim0.svg,22.Methodology2.key-stage-0080anim1.svg,22.Methodology2.key-stage-0080anim2.svg" class="slide-image" />
 
@@ -886,7 +1110,9 @@ slides: true
 
 
 
-       <section id="slide-079" class="anim">
+
+
+       <section id="slide-080" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-080" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0081anim0.svg" data-images="22.Methodology2.key-stage-0081anim0.svg,22.Methodology2.key-stage-0081anim1.svg,22.Methodology2.key-stage-0081anim2.svg" class="slide-image" />
 
@@ -898,7 +1124,9 @@ slides: true
 
 
 
-       <section id="slide-080" class="anim">
+
+
+       <section id="slide-081" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-081" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0082anim0.svg" data-images="22.Methodology2.key-stage-0082anim0.svg,22.Methodology2.key-stage-0082anim1.svg,22.Methodology2.key-stage-0082anim2.svg,22.Methodology2.key-stage-0082anim3.svg,22.Methodology2.key-stage-0082anim4.svg,22.Methodology2.key-stage-0082anim5.svg" class="slide-image" />
 
@@ -910,7 +1138,9 @@ slides: true
 
 
 
-       <section id="slide-081" class="anim">
+
+
+       <section id="slide-082" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-082" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0083anim0.svg" data-images="22.Methodology2.key-stage-0083anim0.svg,22.Methodology2.key-stage-0083anim1.svg" class="slide-image" />
 
@@ -922,7 +1152,9 @@ slides: true
 
 
 
-       <section id="slide-082" class="anim">
+
+
+       <section id="slide-083" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-083" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0084anim0.svg" data-images="22.Methodology2.key-stage-0084anim0.svg,22.Methodology2.key-stage-0084anim1.svg,22.Methodology2.key-stage-0084anim2.svg" class="slide-image" />
 
@@ -934,7 +1166,9 @@ slides: true
 
 
 
-       <section id="slide-083" class="anim">
+
+
+       <section id="slide-084" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-084" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0085anim0.svg" data-images="22.Methodology2.key-stage-0085anim0.svg,22.Methodology2.key-stage-0085anim1.svg,22.Methodology2.key-stage-0085anim2.svg" class="slide-image" />
 
@@ -943,6 +1177,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -956,6 +1192,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-086">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-086" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0087.svg" class="slide-image" />
@@ -966,7 +1205,10 @@ slides: true
        </section>
 
 
-       <section id="slide-086" class="anim">
+
+
+
+       <section id="slide-087" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-087" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0088anim0.svg" data-images="22.Methodology2.key-stage-0088anim0.svg,22.Methodology2.key-stage-0088anim1.svg" class="slide-image" />
 
@@ -978,7 +1220,9 @@ slides: true
 
 
 
-       <section id="slide-087" class="anim">
+
+
+       <section id="slide-088" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-088" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0089anim0.svg" data-images="22.Methodology2.key-stage-0089anim0.svg,22.Methodology2.key-stage-0089anim1.svg,22.Methodology2.key-stage-0089anim2.svg,22.Methodology2.key-stage-0089anim3.svg,22.Methodology2.key-stage-0089anim4.svg,22.Methodology2.key-stage-0089anim5.svg" class="slide-image" />
 
@@ -987,6 +1231,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1000,6 +1246,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-090">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-090" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0091.svg" class="slide-image" />
@@ -1008,6 +1257,9 @@ slides: true
             <p    >If we want to reduce the dimensionality to more than one dimension, we repeat the process. Keeping the first principal component fixed, the second principal component is the one orthogonal to the first that minimizes the reconstruction loss. This gives us two directions, orthogonal to one another, to project onto. Our reduced dataset then has two features.<br></p><p    >Each next principal component is the direction orthogonal to all the previous ones, that minimizes the loss, when the data is reconstructed <em>using all of them</em>.<br></p><aside    >This works well as a definition, but in practice we don't need to compute the principal components one by one. We just tell some algorithm to give us the first k principal components, and it spits them all out right away. How this works exactly, is out of scope for this course. The results are the same as solving this optimization problem one by one, just quicker. <a href="http://peterbloem.nl/blog/pca"><strong class="blue">The blog post in the required reading</strong></a> has some (non-required) follow ups that go into more detail about this.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-091">
@@ -1020,6 +1272,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-092">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-092" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0093.svg" class="slide-image" />
@@ -1028,6 +1283,9 @@ slides: true
             <p    >Let’s look at the one dimensional reduction again to show why.<br></p><p    >The variance of a one-dimensional dataset is defined as the average of the squares of all the distances to the data-mean. In our case, both the data and the reduction are mean-centered, so the variance is just the sum of all the squares of the z’s; our reduced representations. In this picture, the length of the orange vector.<br></p><p    >Thus, maximising the variance, means choosing c so that the (squared) length of the orange vector is maximized<br></p><p    >This arrangement into a right-angled triangle means that the<span class="blue"> magnitude of the original data</span> (<span class="blue">p</span>, the squared distance to the mean) is related to the <span class="orange">variance of the projected data</span> (<span class="orange">q</span>) and the reconstruction error (r, in black)<span class="blue"> </span>by the Pythagorean theorem. <br></p><p    >Since <span class="blue">p</span>, the magnitude of the original data, is a constant,  <span class="orange">q</span><sup>2</sup> + r<sup>2</sup> is constant,  and minimizing the squared reconstruction error r<sup>2 </sup>is equivalent to maximising the variance of the projected data <span class="orange">q</span><sup>2</sup>.<br></p><p    >In the variance maximization view of PCA, we often talk about how much variance the reduced data <em>retains</em>, seeing the variance as a kind of “information content” in a representation of the data. A perfect reconstruction has the same total variance as the data.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-093">
@@ -1040,6 +1298,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-094">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-094" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0095.svg" class="slide-image" />
@@ -1048,6 +1309,9 @@ slides: true
             <p    >If we do that, we get perfect reconstructions, but our z’s are still different from the original coordinates. We end up expressing the data in <em>another basis, </em>called the <strong>PCA basis</strong>. It turns out, that this actually gives us a <strong>whitening</strong> of the data: in the new basis, the data is uncorrelated, with variance 1 along each axis.<br></p><p    >The different principal components <strong class="orange">c</strong> are unit vectors, which are by definition all mutually orthogonal. This means that the vectors <span class="orange">c</span> form an orthonormal basis. If we multiply each with the standard deviation of the data projected onto <strong class="orange">c</strong>, we end up with a whitening basis.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-095">
@@ -1060,6 +1324,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-096">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-096" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0097.svg" class="slide-image" />
@@ -1068,6 +1335,9 @@ slides: true
             <p    >If you’ve heard about PCA before, you may be wondering why I haven’t discussed eigenvectors, or the singular value decomposition. These topics are only necessary if you want to know the deeper workings of PCA, and if you want to compute it efficiently. <br></p><p    >For a basic understanding of what it does, all you need is a reconstruction loss, and gradient descent.<br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-097">
@@ -1080,6 +1350,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-098">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-098" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0099.svg" class="slide-image" />
@@ -1088,6 +1361,9 @@ slides: true
             <p    >This may seem like a lot of math and complexity for something so simple as reducing the dimensionality of a dataset. <br></p><p    >But it turns out that these principal components are actually extremely versatile, and can give us a lot of insight into our data.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-099">
@@ -1100,6 +1376,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-100">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-100" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0101.svg" class="slide-image" />
@@ -1110,7 +1389,10 @@ slides: true
        </section>
 
 
-       <section id="slide-100" class="anim">
+
+
+
+       <section id="slide-101" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-101" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0102anim0.png" data-images="22.Methodology2.key-stage-0102anim0.png,22.Methodology2.key-stage-0102anim1.png" class="slide-image" />
 
@@ -1119,6 +1401,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1132,6 +1416,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-103">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-103" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0104.svg" class="slide-image" />
@@ -1140,6 +1427,9 @@ slides: true
             <p    >Here is the sample mean of our data, re-arranged back into an image.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-104">
@@ -1152,6 +1442,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-105">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-105" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0106.svg" class="slide-image" />
@@ -1162,7 +1455,10 @@ slides: true
        </section>
 
 
-       <section id="slide-105" class="anim">
+
+
+
+       <section id="slide-106" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-106" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0107anim0.svg" data-images="22.Methodology2.key-stage-0107anim0.svg,22.Methodology2.key-stage-0107anim1.svg,22.Methodology2.key-stage-0107anim2.svg,22.Methodology2.key-stage-0107anim3.svg,22.Methodology2.key-stage-0107anim4.svg" class="slide-image" />
 
@@ -1171,6 +1467,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1184,7 +1482,10 @@ slides: true
        </section>
 
 
-       <section id="slide-107" class="anim">
+
+
+
+       <section id="slide-108" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-108" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0109anim0.svg" data-images="22.Methodology2.key-stage-0109anim0.svg,22.Methodology2.key-stage-0109anim1.svg,22.Methodology2.key-stage-0109anim2.svg,22.Methodology2.key-stage-0109anim3.svg,22.Methodology2.key-stage-0109anim4.svg" class="slide-image" />
 
@@ -1196,7 +1497,9 @@ slides: true
 
 
 
-       <section id="slide-108" class="anim">
+
+
+       <section id="slide-109" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-109" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0110anim0.png" data-images="22.Methodology2.key-stage-0110anim0.png,22.Methodology2.key-stage-0110anim1.png,22.Methodology2.key-stage-0110anim2.png,22.Methodology2.key-stage-0110anim3.png,22.Methodology2.key-stage-0110anim4.png" class="slide-image" />
 
@@ -1205,6 +1508,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1218,6 +1523,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-111">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-111" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0112.svg" class="slide-image" />
@@ -1226,6 +1534,9 @@ slides: true
             <p    >After 60 principal components out of a possible 4096, the image starts to look pretty recognizable. We’ve reduced our data from 4096 dimensions to just 60 dimensions, and still retained enough information to tell people apart.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-112">
@@ -1238,6 +1549,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-113">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-113" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0114.svg" class="slide-image" />
@@ -1248,6 +1562,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-114">
             <a class="slide-link" href="https://mlvu.github.io/lecture05#slide-114" title="Link to this slide.">link here</a>
             <img src="22.Methodology2.key-stage-0115.svg" class="slide-image" />
@@ -1256,5 +1573,6 @@ slides: true
             <p    >In short, don't think of all the learning coming from the modelling and searching part. A skilled machine learning practitioner can get a lot of mileage out of a plain linear model, and a large amount of clever data preparation. <br></p><p    >And the first thing they will do, is to <strong>look at their data</strong>.</p><p    ></p>
             </figcaption>
        </section>
+
 
 </article>
