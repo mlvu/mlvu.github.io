@@ -6,11 +6,28 @@ slides: true
     <ul>
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 8: Density estimation</li>
+                <li><a href="#video-000">Normal distributions</a></li>
+                <li><a href="#video-031">Maximum likelihood estimators</a></li>
+                <li><a href="#video-044">Expectation-maximization</a></li>
+                <li><a href="#video-071">A formal analysis of EM</a></li>
+                <li><a href="#video-089">Social impact 3</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
 
 <article class="slides">
+
+
+       <section class="video" id="video-000">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-0">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/VZfAJzXu1hM?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
 
 
 
@@ -19,7 +36,7 @@ slides: true
             <img src="42.ProbabilisticModels2.3.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In a few videos so far, we made use of the Normal distribution, assuming that you’d seen it before, and that you know more or less what its properties are.<br></p><p    >In this  video, we’ll take a step back and look at the normal distribution from first principles. It’s an important tool in what is coming up in this lecture and the next, so we need to make ourselves eminently comfortable with the ins and outs.</p><p    ></p>
+            <p    >In a few videos so far, we made use of the Normal distribution, assuming that you’d seen it before, and that you know more or less what its properties are.<br></p><p    >In this  video, we’ll take a step back and look at the normal distribution from first principles. It’s an important tool in what is coming up in this lecture and the next, so we need to make ourselves eminently comfortable with the ins and outs.<br></p><p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -427,13 +444,25 @@ slides: true
 
 
 
+       <section class="video" id="video-031">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-31">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/RuiHSxtb1w?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-032">
             <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-032" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.3.key-stage-0034.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Now that we have a better understanding of why the normal distribution looks the way it does, let’s have another look at fitting one to our data.<br></p><p    >For all the examples in this video, we will use the principle of <strong>maximum likelihood</strong>. We will aim to find the parameters (mean and variance) for whih the probability of the observed data is maximal.<br></p><aside    >This lecture is a little heavy in algebraic derivations, and a little light in intuition and examples. This is unavoidable. You should have the intuition for what a maximum likelihood estimator is already, and the rest is really nothing more but calculus and algebra. If you have trouble making it through this one, go back to the lecture on <a href="https://mlvu.github.io/lecture04/"><strong class="blue">probabilistic models</strong></a> and make sure you understand what maximum likelihood estimation is. Then, try to pick one of the derivations, and go through it slowly, step by step.</aside><aside    ></aside>
+            <p    >Now that we have a better understanding of why the normal distribution looks the way it does, let’s have another look at fitting one to our data.<br></p><p    >For all the examples in this video, we will use the principle of <strong>maximum likelihood</strong>. We will aim to find the parameters (mean and variance) for whih the probability of the observed data is maximal.<br></p><aside    >This lecture is a little heavy in algebraic derivations, and a little light in intuition and examples. This is unavoidable. You should have the intuition for what a maximum likelihood estimator is already, and the rest is really nothing more but calculus and algebra. If you have trouble making it through this one, go back to the lecture on <a href="https://mlvu.github.io/lecture04/"><strong class="blue">probabilistic models</strong></a> and make sure you understand what maximum likelihood estimation is. Then, try to pick one of the derivations, and go through it slowly, step by step.<br></aside><p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -601,13 +630,25 @@ slides: true
 
 
 
+       <section class="video" id="video-044">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-44">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/Co3xlK2d_oI?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-045">
             <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-045" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.3.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -961,13 +1002,25 @@ slides: true
 
 
 
+       <section class="video" id="video-071">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-71">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/MFQdNuVCk4A?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-072">
             <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-072" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.3.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In the last video, we explained how EM works to fit a GMM model. We took a pretty informal approach, and appealed to intuition for most of the decisions we made. This is most helpful to get a comfortable understanding of the algorithm, but as it happens, we can derive all of these steps formally, as approximations to the maximum likelhood estimator fo the GMM model.</p><p    ></p>
+            <p    >In the last video, we explained how EM works to fit a GMM model. We took a pretty informal approach, and appealed to intuition for most of the decisions we made. This is most helpful to get a comfortable understanding of the algorithm, but as it happens, we can derive all of these steps formally, as approximations to the maximum likelhood estimator fo the GMM model.<br></p><p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1204,13 +1257,25 @@ slides: true
 
 
 
+       <section class="video" id="video-089">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-89">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/r4DYGXmbk_E?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-090">
             <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-090" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.3.key-stage-0100.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This week and the last, we’ve discussed a lot of probability theory. With these tools in hand, we can go back to our discussion on social impact, and try to make it more precise. We can now talk a lot more precisely about how to<strong> reason probabilistically</strong> and what kind of mistakes people tend to make. Unsurprisingly, such mistakes have a strong impact on the way machine learning algorithms are used and abused in society.<br></p><p    ></p>
+            <p    >This week and the last, we’ve discussed a lot of probability theory. With these tools in hand, we can go back to our discussion on social impact, and try to make it more precise. We can now talk a lot more precisely about how to<strong> reason probabilistically</strong> and what kind of mistakes people tend to make. Unsurprisingly, such mistakes have a strong impact on the way machine learning algorithms are used and abused in society.<br></p><p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
