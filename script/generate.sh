@@ -35,12 +35,12 @@
 #  --base-url "https://mlvu.github.io/lecture04" \
 #  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 5: Data Pre-processing" \
-  --dst ../lecture05 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/22 Methodology 2/22.Methodology2.key" \
-  --base-url "https://mlvu.github.io/lecture05" \
-  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 5: Data Pre-processing" \
+#  --dst ../lecture05 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/22 Methodology 2/22.Methodology2.key" \
+#  --base-url "https://mlvu.github.io/lecture05" \
+#  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 6: Beyond linear models" \
@@ -55,6 +55,13 @@ python generate.py \
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/41 Deep Learning 1/32.DeepLearning1.key" \
 #  --base-url "https://mlvu.github.io/lecture07" \
 #  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
+
+python generate.py \
+  --title "Lecture 8: Density estimation" \
+  --dst ../lecture08 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/42 Probabilistic Models 2/42.ProbabilisticModels2.3.key" \
+  --base-url "https://mlvu.github.io/lecture08" \
+  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js

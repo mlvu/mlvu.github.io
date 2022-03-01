@@ -41,7 +41,10 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-
+<div class="l8"><a href="/lecture08">
+ <h3 class="blue"><span>8.</span>Density estimation</h3>
+</a>
+</div>
 
 </nav>
 {:/nomarkdown}
