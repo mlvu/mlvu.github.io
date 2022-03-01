@@ -1167,9 +1167,8 @@ nav.lectures div.l7::before {
     background-size: 200%;
 }
 
-
 nav.lectures div.l8::before {
-    background-image: url('/lecture08/32.DeepLearning1.key-stage-0116.svg');
-    background-position: -1em 1em;
-    background-size: 200%;
+    background-image: url('/lecture08/42.ProbabilisticModels2.3.key-stage-0005anim0.png');
+    background-position: -24em -2.2em;
+    background-size: 300%;
 }

@@ -56,12 +56,12 @@
 #  --base-url "https://mlvu.github.io/lecture07" \
 #  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 8: Density estimation" \
-  --dst ../lecture08 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/42 Probabilistic Models 2/42.ProbabilisticModels2.3.key" \
-  --base-url "https://mlvu.github.io/lecture08" \
-  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 8: Density estimation" \
+#  --dst ../lecture08 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/42 Probabilistic Models 2/42.ProbabilisticModels2.3.key" \
+#  --base-url "https://mlvu.github.io/lecture08" \
+#  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
