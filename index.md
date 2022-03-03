@@ -46,6 +46,12 @@ title: Machine Learning @ VU
 </a>
 </div>
 
+<div class="l9"><a href="/lecture09">
+ <h3 class="red"><span>9.</span>Deep generative modeling</h3>
+</a>
+</div>
+
+
 </nav>
 {:/nomarkdown}
 

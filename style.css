@@ -1172,3 +1172,10 @@ nav.lectures div.l8::before {
     background-position: -24em -2.2em;
     background-size: 300%;
 }
+
+nav.lectures div.l9::before {
+    background-image: url('/lecture09/51.Deep Learning 2.key-stage-0019.png');
+    background-position: -6em -1em;
+    background-size: 225%;
+}
+
