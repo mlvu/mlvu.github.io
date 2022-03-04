@@ -51,6 +51,12 @@ title: Machine Learning @ VU
 </a>
 </div>
 
+<div class="l10"><a href="/lecture10">
+ <h3 class="purple"><span>10.</span>Trees and ensembles</h3>
+</a>
+</div>
+
+
 
 </nav>
 {:/nomarkdown}
