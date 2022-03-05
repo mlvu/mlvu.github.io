@@ -1326,7 +1326,7 @@ slides: true
             </iframe>
 
             <figcaption>
-            <p    ><br></p><p    >source: <a href="https://magenta.tensorflow.org/music-vae"><strong class="blue">https://magenta.tensorflow.org/music-vae</strong></a></p><p    ><a href="https://magenta.tensorflow.org/music-vae"><strong class="blue"></strong></a></p>
+            <p    >Here's an example of such a sequence VAE trained on small snippets of MIDI music. The starting and end snippets (A and B) are two very different styles of music. The video shows an interpolation between the two. It shows that at each step, a realistic sample of music is produced. If we do this interpolation in the data space rather than the latent space (see the link below for an example), most of the intermediate samples are much less musical.<br></p><p    ><br></p><p    >source: <a href="https://magenta.tensorflow.org/music-vae"><strong class="blue">https://magenta.tensorflow.org/music-vae</strong></a></p><p    ><a href="https://magenta.tensorflow.org/music-vae"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
 
@@ -1339,7 +1339,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0108anim0.svg" data-images="61.SequentialData.1.key-stage-0108anim0.svg,61.SequentialData.1.key-stage-0108anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This works well for music but we’ve lost the fine touch of the sequential sampling, where we could build up a sentence character by character, finetuning the details one at a time. <br></p><p    >Instead a single small latent vector needs to represent all information in the sequence: this is great to capture the global pattern, but not for deciding on the finer details. This is similar to what we saw with images: the VAE reconstructions we recognizable people but the finer details of the image had been washed out.<br></p><p    >Here, we can combine the best of both worlds. Since we’d left the input sequence blank, we can feed the decoder a character-shifted version of the input as well as the latent vector. This way, we are training a decoder that gets global information from the latent vector, and generates the finer details by autoregressive sampling.</p><p    ></p>
+            <p    >This works well for music but we’ve lost the fine touch of the sequential/autoregressive sampling, where we could build up a sentence character by character, finetuning the details one at a time. <br></p><p    >Instead a single small latent vector now needs to represent all information in the sequence: this is great to capture the global pattern, but not for deciding on the finer details. This is similar to what we saw with images: the VAE reconstructions we recognizable people but the finer details of the image had been washed out.<br></p><p    >Here, we can combine the best of both worlds, in a method called <strong>teacher forcing</strong>. Since we’d left the input sequence to the decoder blank, we can feed the decoder a character-shifted version of the input <strong>as well as the latent vector</strong>. This way, we are training a decoder that gets global information from the latent vector, and generates the finer details by autoregressive sampling.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>

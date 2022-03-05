@@ -76,13 +76,13 @@
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
 #  --base-url "https://mlvu.github.io/lecture10" \
 #  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
-#
-#python generate.py \
-#  --title "Lecture 11: Sequences" \
-#  --dst ../lecture11 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/61 Sequences/61.SequentialData.1.key" \
-#  --base-url "https://mlvu.github.io/lecture11" \
-#  --pdf-link "https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf"
+
+python generate.py \
+  --title "Lecture 11: Sequences" \
+  --dst ../lecture11 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/61 Sequences/61.SequentialData.1.key" \
+  --base-url "https://mlvu.github.io/lecture11" \
+  --pdf-link "https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 12: Embedding models" \
