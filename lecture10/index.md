@@ -1,11 +1,11 @@
 ---
-title: "Lecture 10: Trees and ensemblesi"
+title: "Lecture 10: Trees and ensembles"
 slides: true
 ---
 <nav class="menu">
     <ul>
         <li class="home"><a href="/">Home</a></li>
-        <li class="name">Lecture 10: Trees and ensemblesi</li>
+        <li class="name">Lecture 10: Trees and ensembles</li>
                 <li><a href="#video-000">Decision trees</a></li>
                 <li><a href="#video-021">Numeric features and targets</a></li>
                 <li><a href="#video-037">Ensembling</a></li>

@@ -1,11 +1,14 @@
 ---
-title: "Lecture 11: Sequence"
+title: "Lecture 11: Sequences"
 slides: true
 ---
 <nav class="menu">
     <ul>
         <li class="home"><a href="/">Home</a></li>
-        <li class="name">Lecture 11: Sequence</li>
+        <li class="name">Lecture 11: Sequences</li>
+                <li><a href="#video-000">Markov models</a></li>
+                <li><a href="#video-031">Deep learning on sequences</a></li>
+                <li><a href="#video-060">Recurrent neural networks and LSTMs</a></li>
                 <li><a href="#slide-101">Transformers*</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf">PDF</a></li>
     </ul>
@@ -14,13 +17,25 @@ slides: true
 <article class="slides">
 
 
+       <section class="video" id="video-000">
+           <a class="slide-link" href="https://mlvu.github.io/lecture11#video-0">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/wf8D0QWe0hg?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-001">
             <a class="slide-link" href="https://mlvu.github.io/lecture11#slide-001" title="Link to this slide.">link here</a>
             <img src="61.SequentialData.1.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this lecture we’ll look at data that naturally forms a sequence. Language, music, stock prices. All of these can be modelled most naturally as a sequence of tokens of information coming in one after the other. <br></p><p    >Before we look at how to model sequences, we’ll look at some basic things to take into account when interpreting such data.</p><p    ></p>
+            <p    >In this lecture we’ll look at data that naturally forms a sequence. Language, music, stock prices. All of these can be modelled most naturally as a sequence of tokens of information coming in one after the other. <br></p><p    >Before we look at how to model sequences, we’ll look at some basic things to take into account when interpreting such data.<br></p><p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -429,13 +444,25 @@ slides: true
 
 
 
+       <section class="video" id="video-031">
+           <a class="slide-link" href="https://mlvu.github.io/lecture11#video-31">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/mnkJSiS3ooc?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-032">
             <a class="slide-link" href="https://mlvu.github.io/lecture11#slide-032" title="Link to this slide.">link here</a>
             <img src="61.SequentialData.1.key-stage-0037.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we’ll look at </p><p    ></p>
+            <p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
@@ -817,13 +844,25 @@ slides: true
 
 
 
+       <section class="video" id="video-060">
+           <a class="slide-link" href="https://mlvu.github.io/lecture11#video-60">link here</a>
+           <iframe
+                src="https://www.youtube.com/embed/KUjsy7Hp8fE?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+           </iframe>
+
+       </section>
+
+
 
        <section id="slide-061">
             <a class="slide-link" href="https://mlvu.github.io/lecture11#slide-061" title="Link to this slide.">link here</a>
             <img src="61.SequentialData.1.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    ><lnbr></lnbr></p><p    ></p>
             </figcaption>
        </section>
 
