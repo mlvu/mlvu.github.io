@@ -1185,3 +1185,8 @@ nav.lectures div.l10::before {
     background-size: 200%;
 }
 
+nav.lectures div.l11::before {
+    background-image: url('/lecture11/');
+    background-position: 0 -1em;
+    background-size: 200%;
+}

@@ -56,7 +56,10 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-
+<div class="l11"><a href="/lecture11">
+ <h3 class="blue"><span>11.</span>Sequences</h3>
+</a>
+</div>
 
 </nav>
 {:/nomarkdown}
