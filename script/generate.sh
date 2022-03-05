@@ -70,12 +70,12 @@
 #  --base-url "https://mlvu.github.io/lecture09" \
 #  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 10: Trees and ensemblesi" \
-  --dst ../lecture10 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
-  --base-url "https://mlvu.github.io/lecture10" \
-  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 10: Trees and ensemblesi" \
+#  --dst ../lecture10 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
+#  --base-url "https://mlvu.github.io/lecture10" \
+#  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
