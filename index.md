@@ -61,6 +61,11 @@ title: Machine Learning @ VU
 </a>
 </div>
 
+<div class="l12"><a href="/lecture12">
+ <h3 class="purple"><span>12.</span>Embedding models</h3>
+</a>
+</div>
+
 </nav>
 {:/nomarkdown}
 
