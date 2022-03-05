@@ -84,12 +84,12 @@
 #  --base-url "https://mlvu.github.io/lecture11" \
 #  --pdf-link "https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 12: Embedding models" \
-  --dst ../lecture12 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/62 Matrices/62.Matrices.key" \
-  --base-url "https://mlvu.github.io/lecture12" \
-  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 12: Embedding models" \
+#  --dst ../lecture12 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/62 Matrices/62.Matrices.key" \
+#  --base-url "https://mlvu.github.io/lecture12" \
+#  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
