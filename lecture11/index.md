@@ -1112,7 +1112,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
-            <p    >in the next step, we pass the</p><p    ></p>
+            <p    >in the next step, we pass the current input into two transformations that yield two vectors one sigmoid activated (between 0 and 1) and one <span class="purple">tanh</span> activated (between -1 and 1). There are element-wise multiplied and added to the conveyor belt.<br></p><p    >This is called a <strong>gating mechanism</strong>, and it essentially decides for each dimension what is should contain (the tanh-ed vector) and how much of it should be added (the sigmoided vector). You can think of the sigmoided vector as a kind of "soft mask" over the tanh-ed vector.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1125,7 +1125,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The gating mechanism a single input vector, projects it to two different vectors, one using a sigmoid and one using a  a tanh activation. <br></p><p    >The gate is best understand as producing an additive value: we want to figure out how much of the input to add to some other vector, in this case the one on the converyor belt. If the current input is important  we want to add most of it, at the risk of forgetting what we have in memory, and it the current input is unimportant, we want to ignore it.<br></p><p    >The tanh should be though of as a mapping of the input to the range [-1, 1]. This is the value we will add to the conveyor belt. <br></p><p    >The sigmoid acts as a selection or attention vector. For elements of the input that are important, it outputs 1,  retaining all the input in the addition vector. For elements of the input that are not important, it outputs 0, so that they are zeroed out. The sigmoid and tanh vectors are element-wise multiplied.<br></p><p    ></p>
+            <p    >The gating mechanism takes a single input vector, projects it to two different vectors, one using a sigmoid and one using a  a tanh activation. <br></p><p    >The gate is best understand as producing an additive value: we want to figure out how much of the input to add to some other vector, in this case the one on the converyor belt. If the current input is important  we want to add most of it, at the risk of forgetting what we have in memory, and it the current input is unimportant, we want to ignore it.<br></p><p    >The tanh should be though of as a mapping of the input to the range [-1, 1]. This is the value we will add to the conveyor belt. <br></p><p    >The sigmoid acts as a selection or attention vector. For elements of the input that are important, it outputs 1,  retaining all the input in the addition vector. For elements of the input that are not important, it outputs 0, so that they are zeroed out. The sigmoid and tanh vectors are element-wise multiplied.<br></p><p    ></p>
             </figcaption>
        </section>
 
