@@ -94,7 +94,7 @@
 python generate.py \
   --title "Lecture 13: Reinforcement learning" \
   --dst ../lecture13 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.Reinforcement Learning.key" \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
   --base-url "https://mlvu.github.io/lecture13" \
   --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 
