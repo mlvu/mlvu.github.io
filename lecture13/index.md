@@ -1537,10 +1537,15 @@ slides: true
 
        <section id="slide-109">
             <a class="slide-link" href="https://mlvu.github.io/lecture13#slide-109" title="Link to this slide.">link here</a>
-            <img src="71.ReinforcementLearning.key-stage-0109.png" class="slide-image" />
+            <iframe
+                src="https://www.youtube.com/embed/lYcDR8z-rRY?start=4559?modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
 
             <figcaption>
-            <p    >By contrast, here is Neil Hunt chief strategy officer at Netflix, in 2014 giving a keynote about the content strategy at Netflix. <br></p><p    >source: <a href="https://youtu.be/lYcDR8z-rRY?t=4559"><strong class="blue">https://youtu.be/lYcDR8z-rRY?t=4559</strong></a><br></p><p    ><br></p><p    ></p>
+            <p    >By contrast, here is Neil Hunt chief strategy officer at Netflix, in 2014 giving a keynote about the content strategy at Netflix. <br></p><p    >source: <a href="https://youtu.be/lYcDR8z-rRY?t=4559"><strong class="blue">https://youtu.be/lYcDR8z-rRY?t=4559</strong></a><br></p><p    ><br></p><p    ><br></p><p    ><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
