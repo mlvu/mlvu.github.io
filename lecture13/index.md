@@ -9,7 +9,7 @@ slides: true
                 <li><a href="#video-000">The abstract task</a></li>
                 <li><a href="#video-021">Random search and policy gradients</a></li>
                 <li><a href="#video-043">Deep Q learning</a></li>
-                <li><a href="#video-061">Tree Search</a></li>
+                <li><a href="#video-061">Tree search</a></li>
                 <li><a href="#video-092">Social Impact 4</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf">PDF</a></li>
     </ul>
@@ -21,7 +21,7 @@ slides: true
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture13#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/EEqO13EKuFg?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/EEqO13EKuFg"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -320,7 +320,7 @@ slides: true
        <section class="video" id="video-021">
            <a class="slide-link" href="https://mlvu.github.io/lecture13#video-21">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/tbV2udJmssM?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/tbV2udJmssM"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -632,7 +632,7 @@ slides: true
        <section class="video" id="video-043">
            <a class="slide-link" href="https://mlvu.github.io/lecture13#video-43">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/xf_MHXxzf1Y?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/xf_MHXxzf1Y"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -887,7 +887,7 @@ slides: true
        <section class="video" id="video-061">
            <a class="slide-link" href="https://mlvu.github.io/lecture13#video-61">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/R4souHAdRP4?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/R4souHAdRP4"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1311,7 +1311,7 @@ slides: true
        <section class="video" id="video-092">
            <a class="slide-link" href="https://mlvu.github.io/lecture13#video-92">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/fh2aozmj2F4?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/fh2aozmj2F4"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
