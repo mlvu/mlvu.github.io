@@ -40,7 +40,7 @@ slides: true
        <section id="slide-${f'{i+1:03}'}">
             <a class="slide-link" href="${base_url}#slide-${f'{i+1:03}'}" title="Link to this slide.">link here</a>
             <iframe
-                src="${slide['video'][7:]}?modestbranding=1&showinfo=0&rel=0"
+                src="${slide['video'][7:]}"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>

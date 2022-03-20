@@ -115,7 +115,7 @@ slides: true
        <section id="slide-007">
             <a class="slide-link" href="https://mlvu.github.io/lecture13#slide-007" title="Link to this slide.">link here</a>
             <iframe
-                src="https://www.youtube.com/embed/VCdxqn0fcnE?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/VCdxqn0fcnE"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -133,7 +133,7 @@ slides: true
        <section id="slide-008">
             <a class="slide-link" href="https://mlvu.github.io/lecture13#slide-008" title="Link to this slide.">link here</a>
             <iframe
-                src="https://www.youtube.com/embed/V1eYniJ0Rnk?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/V1eYniJ0Rnk"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -415,7 +415,7 @@ slides: true
        <section id="slide-028">
             <a class="slide-link" href="https://mlvu.github.io/lecture13#slide-028" title="Link to this slide.">link here</a>
             <iframe
-                src="https://www.youtube.com/embed/CGHgENV1hII?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/CGHgENV1hII"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1538,7 +1538,7 @@ slides: true
        <section id="slide-109">
             <a class="slide-link" href="https://mlvu.github.io/lecture13#slide-109" title="Link to this slide.">link here</a>
             <iframe
-                src="https://www.youtube.com/embed/lYcDR8z-rRY?start=4559?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/lYcDR8z-rRY?start=4559"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1558,7 +1558,7 @@ slides: true
             <img src="71.ReinforcementLearning.key-stage-0110.png" class="slide-image" />
 
             <figcaption>
-            <p    >Note that he explictly talks about:<br></p><p     class="list-item">The tradeoff between optimizing for new customers and keeping your existing customers happy<br></p><p     class="list-item">The importance of non-measurable metrics like word-of-mouth.<br></p><p     class="list-item">That Netflix doesn’t optimize for total hours viewed. Since this is proportional to the average, optimizing for it means paying disproportionate attention to outliers: the people who are already spending hours and hours on your service. Optimizing for the mean focuses your attention on those customers who are spending a moderate amount.<br></p><p     class="list-item">The fact that the recommender system doesn’t know the difference between <em>addictive</em> and <em>compelling</em> content. One hour of  of content may be a life changing experience, while six hours of bingeing 1990s sit coms may leave you feeling empty and ready to cancel your subscription<br></p><p     class="list-item">Making your users addicted to your product makes them unhappy in the long term. For a service like Netflix, that is ultimately counterproductive.<br></p><p    >These two very different strategies were followed by Netflix and Youtube more or less at the same time. The picture of Youtube is one of a single-metric strategy being pushed top-down by management, and shaping the corporate culture as well as the algorithms that it produces.<br></p><p    >The Netflix picture is one of  a management that actively thinks about the limitations of its algorithms. About the things it cares about that are difficult, or hard to measure, and even about how its technology is affecting the lives of their customers beyond engagement.<br></p><p    >Of course, Netflix has the luxury position that it’s not driven by advertisements, but then the combination of advertising and recommender systems may itself be part of the problem.</p><p    ></p>
+            <p    >Note that he explictly talks about:<br></p><p     class="list-item">The tradeoff between optimizing for new customers and keeping your existing customers happy<br></p><p     class="list-item">The importance of non-measurable metrics like word-of-mouth.<br></p><p     class="list-item">That Netflix doesn’t optimize for total hours viewed. Since this is proportional to the average, optimizing for it means paying disproportionate attention to outliers: the people who are already spending hours and hours on your service. Optimizing for the median instead focuses your attention on those customers who are spending a moderate amount.<br></p><p     class="list-item">The fact that the recommender system doesn’t know the difference between <em>addictive</em> and <em>compelling</em> content. One hour of  of content may be a life changing experience, while six hours of bingeing 1990s sit coms may leave you feeling empty and ready to cancel your subscription<br></p><p     class="list-item">Making your users addicted to your product makes them unhappy in the long term. For a service like Netflix, that is ultimately counterproductive.<br></p><p    >These two very different strategies were followed by Netflix and Youtube more or less at the same time. The picture of Youtube is one of a single-metric strategy being pushed top-down by management, and shaping the corporate culture as well as the algorithms that it produces.<br></p><p    >The Netflix picture is one of  a management that actively thinks about the limitations of its algorithms. About the things it cares about that are difficult, or hard to measure, and even about how its technology is affecting the lives of their customers beyond engagement.<br></p><p    >Of course, Netflix has the luxury position that it’s not driven by advertisements, but then the combination of advertising and recommender systems may itself be part of the problem.</p><p    ></p>
             </figcaption>
        </section>
 
