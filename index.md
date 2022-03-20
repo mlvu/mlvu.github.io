@@ -66,6 +66,11 @@ title: Machine Learning @ VU
 </a>
 </div>
 
+<div class="l13"><a href="/lecture13">
+ <h3 class="blue"><span>13.</span>Reinforcement learning</h3>
+</a>
+</div>
+
 </nav>
 {:/nomarkdown}
 
