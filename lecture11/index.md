@@ -20,7 +20,7 @@ slides: true
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture11#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/wf8D0QWe0hg?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/wf8D0QWe0hg"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -447,7 +447,7 @@ slides: true
        <section class="video" id="video-031">
            <a class="slide-link" href="https://mlvu.github.io/lecture11#video-31">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/mnkJSiS3ooc?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/mnkJSiS3ooc"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -847,7 +847,7 @@ slides: true
        <section class="video" id="video-060">
            <a class="slide-link" href="https://mlvu.github.io/lecture11#video-60">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/KUjsy7Hp8fE?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/KUjsy7Hp8fE"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1112,7 +1112,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
-            <p    >in the next step, we pass the current input into two transformations that yield two vectors one sigmoid activated (between 0 and 1) and one <span class="purple">tanh</span> activated (between -1 and 1). There are element-wise multiplied and added to the conveyor belt.<br></p><p    >This is called a <strong>gating mechanism</strong>, and it essentially decides for each dimension what is should contain (the tanh-ed vector) and how much of it should be added (the sigmoided vector). You can think of the sigmoided vector as a kind of "soft mask" over the tanh-ed vector.<br></p><p    ></p>
+            <p    >in the next step, we pass the current input into two transformations that yield two vectors one sigmoid activated (between 0 and 1) and one <span class="purple">tanh</span> activated (between -1 and 1). There are element-wise multiplied and added to the conveyor belt.<br></p><p    >This is called a <strong>gating mechanism</strong>, and it essentially decides for each dimension what should be added to the conveyor belt (the tanh-ed vector) and <em>how much</em> of it should be added (the sigmoided vector). You can think of the sigmoided vector as a kind of "soft mask" over the tanh-ed vector.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1319,7 +1319,7 @@ slides: true
        <section id="slide-096">
             <a class="slide-link" href="https://mlvu.github.io/lecture11#slide-096" title="Link to this slide.">link here</a>
             <iframe
-                src="https://www.youtube.com/embed/G5JT16flZwM?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/G5JT16flZwM"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>

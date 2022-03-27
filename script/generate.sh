@@ -76,13 +76,13 @@
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
 #  --base-url "https://mlvu.github.io/lecture10" \
 #  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
-#
-#python generate.py \
-#  --title "Lecture 11: Sequences" \
-#  --dst ../lecture11 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/61 Sequences/61.SequentialData.1.key" \
-#  --base-url "https://mlvu.github.io/lecture11" \
-#  --pdf-link "https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf"
+
+python generate.py \
+  --title "Lecture 11: Sequences" \
+  --dst ../lecture11 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/61 Sequences/61.SequentialData.1.key" \
+  --base-url "https://mlvu.github.io/lecture11" \
+  --pdf-link "https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 12: Embedding models" \
@@ -91,12 +91,12 @@
 #  --base-url "https://mlvu.github.io/lecture12" \
 #  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 13: Reinforcement learning" \
-  --dst ../lecture13 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
-  --base-url "https://mlvu.github.io/lecture13" \
-  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 13: Reinforcement learning" \
+#  --dst ../lecture13 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
+#  --base-url "https://mlvu.github.io/lecture13" \
+#  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
