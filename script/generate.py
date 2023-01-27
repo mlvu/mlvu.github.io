@@ -14,7 +14,7 @@ import shutil
 import subprocess
 from subprocess import PIPE
 
-from PyPDF2 import PdfFileReader, PdfFileWriter
+from PyPDF2 import PdfReader, PdfWriter
 
 from lxml import etree, html
 
@@ -78,11 +78,11 @@ def generate(
     print('Splitting PDFs')
     for file in glob.glob(workdir + os.sep + '*stage*.pdf'):
 
-        pdf = PdfFileReader(file)
-        if pdf.getNumPages() > 1:
-            for p in range(pdf.getNumPages()):
-                pdfr = PdfFileWriter()
-                pdfr.addPage(pdf.getPage(p))
+        pdf = PdfReader(file)
+        if  len(pdf.pages)  > 1:
+            for p in range(len(pdf.pages)):
+                pdfr = PdfWriter()
+                pdfr.add_page(pdf.pages[p])
 
                 sp = file.rsplit('.',  1)
                 newfile = f'{sp[0]}anim{p}.{sp[1]}'
@@ -92,7 +92,7 @@ def generate(
             os.remove(file)
 
     ## Loop through the pages of the main PDF and assign the name of the stage file
-    pdf = PdfFileReader(workdir + S + docId + '.pdf')
+    pdf = PdfReader(workdir + S + docId + '.pdf')
     # assert pdf.getNumPages() == len(glob.glob(workdir + os.sep + '*stage*.pdf')), f'number of pages in main pdf {pdf.getNumPages()}, number of stage files {len(glob.glob(workdir + os.sep + "*stage*.pdf"))}'
     # should be true for the final run
 
@@ -101,8 +101,8 @@ def generate(
 
         os.remove(file)
 
-        pdfr = PdfFileWriter()
-        pdfr.addPage(pdf.getPage(p))
+        pdfr = PdfWriter()
+        pdfr.add_page(pdf.pages[p])
 
         with open(file, 'wb') as outfile:
             pdfr.write(outfile)

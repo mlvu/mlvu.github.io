@@ -6,7 +6,7 @@ title: Machine Learning @ VU
 <nav class="lectures">
 
 <div class="l0"><a href="/preliminaries">
- <h3 class="red"><span>0.</span> Preliminaries</h3>
+ <h3 class="black"><span>0.</span> Preliminaries</h3>
 </a>
 </div>
 

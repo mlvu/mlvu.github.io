@@ -8,12 +8,12 @@
 #  --base-url "https://mlvu.github.io/lecture00" \
 #  --pdf-link "https://mlvu.github.io/lectures/Course details.2021.pdf"
 #
-python generate.py \
-  --title "Lecture 0: Preliminaries" \
-  --dst ../lecture01 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
-  --base-url "https://mlvu.github.io/preliminaries" \
-  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 0: Preliminaries" \
+#  --dst ../preliminaries \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
+#  --base-url "https://mlvu.github.io/preliminaries" \
+#  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
@@ -105,7 +105,7 @@ python generate.py \
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
 #  --base-url "https://mlvu.github.io/lecture13" \
 #  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
-
+#
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
 git commit -m "Auto-update."

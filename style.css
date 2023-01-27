@@ -1125,7 +1125,7 @@ nav.lectures div:hover::before {
     mix-blend-mode: normal;
 }
 
-nav.lectures div.l1::before {
+nav.lectures div.l0::before {
     background-image: url('/preliminaries/00.Preliminaries.key-stage-0003.svg');
     background-position: -0.1em -1.6em;
     background-size: 210%;
