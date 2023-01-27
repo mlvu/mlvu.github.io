@@ -5,6 +5,11 @@ title: Machine Learning @ VU
 {::nomarkdown}
 <nav class="lectures">
 
+<div class="l0"><a href="/preliminaries">
+ <h3 class="red"><span>0.</span> Preliminaries</h3>
+</a>
+</div>
+
 <div class="l1"><a href="/lecture01">
  <h3 class="red"><span>1.</span> Introduction</h3>
 </a>

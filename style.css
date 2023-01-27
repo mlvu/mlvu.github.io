@@ -1126,6 +1126,12 @@ nav.lectures div:hover::before {
 }
 
 nav.lectures div.l1::before {
+    background-image: url('/preliminaries/00.Preliminaries.key-stage-0003.svg');
+    background-position: -0.1em -1.6em;
+    background-size: 210%;
+}
+
+nav.lectures div.l1::before {
     background-image: url('/lecture01/11.Introduction.0.key-stage-0003.svg');
     background-position: -0.1em -1.6em;
     background-size: 210%;
