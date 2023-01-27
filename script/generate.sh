@@ -17,7 +17,7 @@
 
 python generate.py \
   --title "Lecture 1: Introduction" \
-  --dst ../lecture01 \
+  --dst ../introduction \
   --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
   --base-url "https://mlvu.github.io/introduction" \
   --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
