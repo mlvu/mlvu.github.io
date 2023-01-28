@@ -106,6 +106,7 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/lecture13" \
 #  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 #
+
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
 git commit -m "Auto-update."
