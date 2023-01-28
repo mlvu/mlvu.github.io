@@ -270,6 +270,7 @@ def generate(
         attribs = {}
 
         if node.tag.startswith(sf_namespace):
+            print(node.tag)
 
             node.tag = node.tag.replace(sf_namespace, '')
 
