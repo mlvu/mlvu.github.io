@@ -286,7 +286,7 @@ def generate(
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in purple:
                     classes.append('purple')
 
-            print(node.tag, end='')
+            # print(node.tag, end='')
 
             # replace node tag with html equivalent
             if node.tag == 'link':
@@ -295,7 +295,7 @@ def generate(
             elif node.tag == 'text-body':
                 node.tag = 'div'
             elif node.tag == 'lnbr':
-                note.tag = 'br'
+                node.tag = 'br'
             elif node.tag == 'span':
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in bold:
                     node.tag = 'strong'
@@ -316,7 +316,7 @@ def generate(
                 #pass
                 node.tag = etree.QName(node).localname
 
-            print(' ', node.tag)
+            # print('_', node.tag)
 
         for child in node.getchildren():
             replace_node(child)
