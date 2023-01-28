@@ -1138,7 +1138,7 @@ nav.lectures div.l0::before {
 }
 
 nav.lectures div.l1::before {
-    background-image: url('/lecture01/11.Introduction.0.key-stage-0003.svg');
+    background-image: url('/introduction/11.Introduction.0.key-stage-0003.svg');
     background-position: -0.1em -1.6em;
     background-size: 210%;
 }
