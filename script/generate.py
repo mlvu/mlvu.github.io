@@ -292,6 +292,8 @@ def generate(
                 attribs['href'] = node.attrib['href']
             elif node.tag == 'text-body':
                 node.tag = 'div'
+            elif node.tag == 'lnbr':
+                note.tag = 'br'
             elif node.tag == 'span':
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in bold:
                     node.tag = 'strong'
