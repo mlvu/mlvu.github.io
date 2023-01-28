@@ -304,7 +304,6 @@ def generate(
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in sub:
                     node.tag = 'sub'
             elif node.tag == 'p':
-                print(str(node))
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in li:
                     classes.append('list-item')
                 elif node.attrib['{http://developer.apple.com/namespaces/sf}style'] in itpar:
