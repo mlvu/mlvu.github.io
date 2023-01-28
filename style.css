@@ -1212,3 +1212,15 @@ nav.lectures div.l13::before {
     background-position: -7em -0em;
     background-size: 200%;
 }
+
+nav.lectures div.si::before {
+    background-image: url('/social-impact/dossier.key-stage-0025anim0.svg');
+    background-position: -6.25em -7.8em;
+    background-size: 400%;
+}
+
+nav.lectures div.svms::before {
+    background-image: url('/support-vector-machines/...');
+    background-position: -7em -0em;
+    background-size: 200%;
+}

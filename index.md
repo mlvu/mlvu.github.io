@@ -25,7 +25,6 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-
 <div class="l4"><a href="/lecture04">
  <h3 class="blue"><span>4.</span>Probabilistic models</h3>
 </a>
@@ -77,6 +76,23 @@ title: Machine Learning @ VU
 </div>
 
 </nav>
+
+<h2>Extra lectures and information</h2>
+
+<nav class="lectures">
+
+<div class="si"><a href="/social-impact">
+ <h3 class="black">Social impact dossier</h3>
+</a>
+</div>
+
+<div class="svms"><a href="/support-vector-machines">
+ <h3 class="orange">Support vector machines</h3>
+</a>
+</div>
+
+</nav>
+
 {:/nomarkdown}
 
 This page contains all public information about the course _Machine Learning_ at the VU University Amsterdam. We provide the following materials:
