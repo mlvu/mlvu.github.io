@@ -1000,12 +1000,14 @@ article.slides {
 
 p.list-item {
     padding-left: 1em;
+    position: relative;
 }
 
 p.list-item::before {
+    position: absolute;
+    left: 0;
     content: '·';
     color: #0365C0;
-    padding-right: 1em;
 }
 
 .slides nav.menu {
