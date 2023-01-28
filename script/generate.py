@@ -286,8 +286,6 @@ def generate(
                 if node.attrib['{http://developer.apple.com/namespaces/sf}style'] in purple:
                     classes.append('purple')
 
-            # print(node.tag, end='')
-
             # replace node tag with html equivalent
             if node.tag == 'link':
                 node.tag = 'a'
@@ -316,8 +314,6 @@ def generate(
                 #pass
                 node.tag = etree.QName(node).localname
 
-            # print('_', node.tag)
-
         for child in node.getchildren():
             replace_node(child)
 
@@ -345,6 +341,8 @@ def generate(
 
             if len(notes) > 0:
                 pnote = notes[0]
+
+                print(pnote)
 
                 replace_node(pnote)
                 etree.cleanup_namespaces(pnote)
