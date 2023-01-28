@@ -201,17 +201,24 @@ def generate(
         if 'sf:subscript' in strnote:
             sub.add(id)
 
-        if 'sfa:r="0.041535880416631699" sfa:g="0.30631634593009949" sfa:b="0.70056915283203125"' in strnote:
+        if 'sfa:r="0.041535880416631699" sfa:g="0.30631634593009949" sfa:b="0.70056915283203125"' in strnote or \
+           'sfa:r="0.041512727737426758" sfa:g="0.30632448196411133" sfa:b="0.7005760669708252"'  in strnote:
             blue.add(id)
         if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote or \
-            'sfa:r="0.83242297172546387" sfa:g="0.33357393741607666" sfa:b="0.061638608574867249"' in strnote:
+           'sfa:r="0.83242297172546387" sfa:g="0.33357393741607666" sfa:b="0.061638608574867249"'  in strnote or \
+           'sfa:r="0.83242636919021606" sfa:g="0.33358773589134216" sfa:b="0.061635121703147888"'  in strnote:
             orange.add(id)
-        if 'sfa:r="0.061777830123901367" sfa:g="0.47138708829879761" sfa:b="0.12690891325473785"' in strnote:
+        if 'sfa:r="0.061777830123901367" sfa:g="0.47138708829879761" sfa:b="0.12690891325473785"' in strnote or \
+           'sfa:r="0.06175743043422699" sfa:g="0.47139668464660645" sfa:b="0.1269087940454483"'   in strnote:
             green.add(id)
-        if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote:
+        if 'sfa:r="0.72908496856689453" sfa:g="0.069717332720756531" sfa:b="0.037668853998184204"' in strnote or \
+           'sfa:r="0.8235318660736084" sfa:g="0.19600051641464233" sfa:b="0.021032797172665596"'   in strnote:
             red.add(id)
-        if 'sfa:r="0.385772705078125" sfa:g="0.16069561243057251" sfa:b="0.53932785987854004"' in strnote:
+        if 'sfa:r="0.385772705078125" sfa:g="0.16069561243057251" sfa:b="0.53932785987854004"' in strnote or \
+           'sfa:r="0.3857731819152832" sfa:g="0.16070403158664703" sfa:b="0.53933310508728027"' in strnote:
             purple.add(id)
+
+        # TODO: Actually parse these rgb values (regexp), and check which color they are closest to
 
     # check paragraph styles for italics
     # -- these are taked to be asides
