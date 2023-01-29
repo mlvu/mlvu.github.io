@@ -77,7 +77,7 @@ title: Machine Learning @ VU
 
 </nav>
 
-<h2>Extra lectures and information</h2>
+<h2>Extra resources</h2>
 
 <nav class="lectures">
 
