@@ -7,13 +7,13 @@
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Course details/CourseDetails.2023.key" \
 #  --base-url "https://mlvu.github.io/details" \
 #  --pdf-link "https://mlvu.github.io/lectures/Course details.2023.pdf"
-#
-#python generate.py \
-#  --title "Lecture 0: Preliminaries" \
-#  --dst ../preliminaries \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
-#  --base-url "https://mlvu.github.io/preliminaries" \
-#  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
+
+python generate.py \
+  --title "Lecture 0: Preliminaries" \
+  --dst ../preliminaries \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
+  --base-url "https://mlvu.github.io/preliminaries" \
+  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
@@ -106,13 +106,13 @@
 #  --base-url "https://mlvu.github.io/lecture13" \
 #  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 #
-#
-#python generate.py \
-#  --title "Social impact dossier" \
-#  --dst ../social-impact \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/Dossier/dossier.key" \
-#  --base-url "https://mlvu.github.io/social-impact" \
-#  --pdf-link "https://mlvu.github.io/lectures/social-impact-dossier.pdf"
+
+python generate.py \
+  --title "Social impact dossier" \
+  --dst ../social-impact \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/Dossier/dossier.key" \
+  --base-url "https://mlvu.github.io/social-impact" \
+  --pdf-link "https://mlvu.github.io/lectures/social-impact-dossier.pdf"
 
 cd ..
 git add lecture* style.css index.md script/ mlvu.script.js
