@@ -147,7 +147,7 @@
 </defs>
 <g id="surface1">
 <rect x="0" y="0" width="1920" height="1080" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(87.059021%,41.567993%,6.274414%);fill-opacity:1;" d="M -0.207031 119.53125 L 1920.207031 119.53125 L 1920.207031 0 L -0.207031 0 Z M -0.207031 119.53125 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(32.548523%,34.509277%,37.254333%);fill-opacity:1;" d="M -0.207031 119.53125 L 1920.207031 119.53125 L 1920.207031 0 L -0.207031 0 Z M -0.207031 119.53125 "/>
 <g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="842.579" y="74.9"/>
   <use xlink:href="#glyph0-2" x="857.427" y="74.9"/>

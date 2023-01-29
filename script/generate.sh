@@ -115,6 +115,6 @@
 #  --pdf-link "https://mlvu.github.io/lectures/social-impact-dossier.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact
 git commit -m "Auto-update."
 git push
