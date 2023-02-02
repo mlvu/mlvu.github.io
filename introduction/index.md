@@ -7,7 +7,6 @@ slides: true
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 1: Introduction</li>
                 <li><a href="#video-000">What is machine learning?</a></li>
-                <li><a href="#video-021">Classification</a></li>
                 <li><a href="#video-049">Other abstract tasks</a></li>
                 <li><a href="#video-076">Social impact 1</a></li>
                 <li><a href="#video-107">Generalization</a></li>
@@ -312,7 +311,7 @@ slides: true
        <section class="video" id="video-021">
            <a class="slide-link" href="https://mlvu.github.io/introduction#video-21">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/NPqYy-OuNEA"
+                src="https://www.youtube.com/embed/o7-_Q9hhNSI"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -327,7 +326,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0022.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><br></p><p    ></p>
+            <p    ><br>|section|Classification<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -380,7 +379,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0026.png" class="slide-image" />
 
             <figcaption>
-            <p    >Let’s look at some examples of how we can reduce real-world problems to classification. We’ll start with <strong>handwriting recognition</strong>. Specifically, reading a ZIP code on an envelope. This involves many difficult problems: aligning the envelope, finding the address, finding the ZIP code within the address, segmenting the address into digits, etc. <br></p><p    >Our first step is to reduce the problem to a simple classification problem: we will assume that we are given an image of a <em>single digit</em>, and the task is to predict what the digit is. This is a much simpler problem, but still a challenging one. We’ll leave all the other problems to other people to solve (either using traditional approaches, or with more machine learning).<br></p><p    >The next step is to gather some training data we can learn from.<br></p><p    >image source: <a href="https://rafalab.github.io/dsbook/introduction-to-machine-learning.html"><strong>https://rafalab.github.io/dsbook/introduction-to-machine-learning.html</strong></a><br></p><p    ></p>
+            <p    >Let’s look at some examples of how we can reduce real-world problems to classification. We’ll start with <strong>handwriting recognition</strong>. Specifically, reading a ZIP code on an envelope. This involves many difficult problems: aligning the envelope, finding the address, finding the ZIP code within the address, segmenting the address into digits, etc. <br></p><p    >Our first step is to reduce the problem to a simple classification problem: we will assume that we are given an image of a <em>single digit</em>, and the task is to predict what the digit is. This is a much simpler problem, but still a challenging one. We’ll leave all the other problems to other people to solve (either using traditional approaches, or with more machine learning).<br></p><p    >The next step is to gather some training data that we can learn from.<br></p><p    >image source: <a href="https://rafalab.github.io/dsbook/introduction-to-machine-learning.html"><strong>https://rafalab.github.io/dsbook/introduction-to-machine-learning.html</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -406,7 +405,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0028anim0.svg" data-images="11.Introduction.0.key-stage-0028anim0.svg,11.Introduction.0.key-stage-0028anim1.svg,11.Introduction.0.key-stage-0028anim2.svg,11.Introduction.0.key-stage-0028anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >A simple way of attacking this problem is to make each pixel a feature. Here’s what that looks like. For each instance, we translate each pixel to a value between 0 (black) and 1 (white). This gives us instance with 784 features each, labeled with a digit from 0 to 9. We lose the information about how these features are arranged in a grid, the whole image is flattened into a long string of numbers, but with a bit of luck a good classifier can still make some sense out of it.<br></p><p    >We feed these instances to the learning algorithm, which produces a classifier. We then get a new example, and ask the classifier what it thinks. Once we have a classifier that does well, we can use it in a larger system, for recognizing digits.<br></p><p    >The current  best performing classifier for this task has a <a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#4d4e495354"><strong>probability of 0.21% </strong></a>of getting an unseen example wrong.<br></p><p    >Note that we haven’t fully solved the problem of character recognition. We still need to cut a sequence of digits into individual digits, feed those digits to the classifier and process the results. This all the work we have to to to translate our<strong> real problem </strong>to the <strong>abstract problem</strong> of classification. This is often the situation: machine learning solves part of the problem for us, but there is still a lot of engineering required to turn this solution into a working production system.</p><p    ></p>
+            <p    >A simple way of attacking this problem is to make each pixel a feature. Here’s what that looks like. For each instance, we translate each pixel to a value between 0 (black) and 1 (white). This gives us instances with 784 features each, labeled with a digit from 0 to 9. We lose the information about how these features are arranged in a grid, the whole image is flattened into a long string of numbers, but with a bit of luck a good classifier can still make some sense out of it.<br></p><p    >We feed these instances to the learning algorithm, which produces a classifier. We then get a new example, and ask the classifier what it thinks. Once we have a classifier that does well, we can use it in a larger system, for recognizing digits.<br></p><p    >The current  best performing classifier for this task has a <a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#4d4e495354"><strong>probability of 0.21% </strong></a>of getting an unseen example wrong.<br></p><p    >Note that we haven’t fully solved the problem of character recognition. We still need to cut a sequence of digits into individual digits, feed those digits to the classifier and process the results. This all the work we have to do to translate our<strong> real problem </strong>to the <strong>abstract problem</strong> of classification. This is often the situation: machine learning solves part of the problem for us, but there is still a lot of engineering required to turn this solution into a working production system.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -591,7 +590,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0042anim0.svg" data-images="11.Introduction.0.key-stage-0042anim0.svg,11.Introduction.0.key-stage-0042anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is one such approach: <strong>a decision tree</strong>. This classifier consists of a tree, which studies one feature in isolation at every node. In this case, it moves left if the feature is lower than some threshold value, and right if the feature is higher.<br></p><p    >We won't go into the training algorithm in detail. Often, decision trees are “grown” by adding nodes from the root until a particular criterion is reached. We’ll discuss how to train decision trees in detail in week 5. The algorithm is pretty simple, but all we want to show you here is that there are other ways to "carve up" your feature space, beyond drawing a line.<br></p><p    >Note that the model space for decision trees is a little more abstract than that for linear classifiers. We can just pick n numbers to represent a model, we have to think about the space of all possible trees, labeled with inequalities on the features. In such cases, it may be better to forget about the model space, and to come up with a training algorithm using a different perspective.<br></p><p    >The shape that he classifier draws in feature space to segment the two classes is called the<strong> decision boundary</strong>.</p><p    ></p>
+            <p    >Here is one such approach: <strong>a decision tree</strong>. This classifier consists of a tree, which studies one feature in isolation at every node. In this case, it moves left if the feature is lower than some threshold value, and right if the feature is higher.<br></p><p    >We won't go into the training algorithm in detail. Often, decision trees are “grown” by adding nodes from the root until a particular criterion is reached. We’ll discuss how to train decision trees in detail in week 5. The algorithm is pretty simple, but all we want to show you here is that there are other ways to "carve up" your feature space, beyond drawing a line.<br></p><p    >Note that the model space for decision trees is a little more abstract than that for linear classifiers. We can’t just pick n numbers to represent a model, we have to think about the space of all possible trees, labeled with inequalities on the features. In such cases, it may be better to forget about the model space, and to come up with a training algorithm using a different perspective.<br></p><p    >The shape that he classifier draws in feature space to segment the two classes is called the<strong> decision boundary</strong>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -693,7 +692,7 @@ slides: true
        <section class="video" id="video-049">
            <a class="slide-link" href="https://mlvu.github.io/introduction#video-49">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/pJIrdzhsWRM"
+                src="https://www.youtube.com/embed/e1M4cLfjSvQ"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -708,7 +707,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0050.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><br></p><p    ></p>
+            <p    ><br><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -802,7 +801,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0057.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can also use the<strong> decision tree</strong> principle to perform regression, giving us a <strong>regression tree</strong>. <br></p><p    >We simply segment the feature space into blocks, using a tree as before, and instead of assigning each a<em> class</em>, we assign each a <em>number</em>. This model covers the data very better than the linear regression does, for many points, it predicts exactly the right value. Does this make it a better model? Do we really expect that it's possible to predict body mass in such detail, from just one physical measurement?n We'll look at this question in the last video in this lecture.</p><p    ></p>
+            <p    >We can also use the<strong> decision tree</strong> principle to perform regression, giving us a <strong>regression tree</strong>. <br></p><p    >We simply segment the feature space into blocks, using a tree as before, and instead of assigning each a<em> class</em>, we assign each a <em>number</em>. This model covers the data much better than the linear regression does, for many points, it predicts exactly the right value. Does this make it a better model? Do we really expect that it's possible to predict body mass in such detail, from just one physical measurement?n We'll look at this question in the last video in this lecture.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1063,7 +1062,7 @@ slides: true
        <section class="video" id="video-076">
            <a class="slide-link" href="https://mlvu.github.io/introduction#video-76">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/uWmbIQHtjhk"
+                src="https://www.youtube.com/embed/sOfAUSLp2eQ"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1078,7 +1077,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0077.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Throughout the course, we’ll occasionally stop and look at the impact that this kind of technology has on society. This is rapidly becoming more important as machine learning is being rolled out at national and international scales.<br></p><p    >Sometimes we’ll do this as part of the regular lectures, and sometimes, we’ll create a separate video to focus on some important aspects. In this video we’ll look at some of the questions it’s important to ask of machine learning systems and machine learning research.<br></p><p    ><br></p><p    ></p>
+            <p    >Throughout the course, we’ll occasionally stop and look at the impact that this kind of technology has on society. This is rapidly becoming more important as machine learning is being rolled out at national and international scales.<br></p><p    >Sometimes we’ll do this as part of the regular lectures, and sometimes, we’ll create a separate video to focus on some important aspects. In this video we’ll look at some of the questions it’s important to ask of machine learning systems and machine learning research.<br></p><p    ><br><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1091,7 +1090,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0078.png" class="slide-image" />
 
             <figcaption>
-            <p    >In the first video, we saw one of the earliest examples of machine learning: a model being used to classify the sex or gender of a person by their photograph. <br></p><p    >This may seem like a harmless example, and indeed for a long time the exercise was pretty academic. Machine learning simply didn’t work very well yet, and we needed difficult tasks that were easy to evaluate. Gender classification makes is a great example: it's simple binary classification, it's perfectly balanced, and we know that in principle it can be solved, because we ourselves can do it.<br></p><p    >In short, it was a good benchmark with which to study our models. Since the models being developend didn't perform well enough to be used anywhere anyway, the social impact was a non-issue.</p><p    ></p>
+            <p    >In the first video, we saw one of the earliest examples of machine learning: a model being used to classify the sex or gender of a person by their photograph. <br></p><p    >This may seem like a harmless example, and indeed for a long time the exercise was pretty academic. Machine learning simply didn’t work very well yet, and we needed difficult tasks that were easy to evaluate. Gender classification makes is a great example: it's simple binary classification, it's perfectly balanced, and we know that in principle it can be solved, because we ourselves can do it.<br></p><p    >In short, it was a good benchmark with which to study our models. Since the models being developed didn't perform well enough to be used anywhere anyway, the social impact was a non-issue.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1117,7 +1116,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0080.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Before we start, some quick disclaimers that will hold for all social impact material in the course.<br></p><p    >The question of social impact is difficult to divorce entirely from one’s personal values. I am a secular, left-wing progressive on most issues, which will no doubt come through in these videos. I have done my best to present the discussion rather than the conclusions, and to present mostly facts that are difficult to dismiss if you believe in basic academic investigation. You are entirely free to form your own opinion, of course, and we will not test your position on these questions, only your knowledge of them.<br></p><p    >We will deal with various real-world use case. Since these are matters of <em>social</em> impact, it's often necessary for us to delve in to actions taken and systems built in or by different countries. If you are from one of the countries we discuss, it may be difficult to hear what we have to say. The first thing to note is that we carefully consider whether such topics are necessary include at all. If not, we will choose a different example. We spell out criteria we use for this at the end of the lecture notes (see <a href="http://mlvu.github.io/lecture01"><strong>mlvu.github.io/lecture01</strong></a>).<br></p><p    >Second, please understand that highlighting one action of a country's government is<strong> not intended as a criticism of that country, its culture, or its people</strong>. If you feel that anything we discuss puts you in the spotlight or makes you feel like you have to defend yourself, please know that that is not our intention. You also do not have to agree with what is said in these videos, and you should not take my word as gospel, just because I am a teacher.<br></p><aside    >If your are not from one of these countries, remember that expatriate students often have a difficult time feeling welcome already, and discussing subjects like these can make that substantially worse. Please do your best to ensure that students do not feel that these issues are held against them personally, or that they have to agree with any position in order to be accepted.<br></aside><p    >Finally, note that<strong> </strong>establishing <em>fact</em> in social science is a complicated business. As scientists and mathematicians, we are used to providing evidence through proof or through controlled experimentation. In social matters, such rigorous methods are simply not available. Since we are dealing with controversial issues, however, there is a strong burden of proof. That means that for these videos, we will make an extra effort to carefully reference and substantiate what we claim as true.</p><p    ></p>
+            <p    >Before we start, some quick disclaimers that will hold for all social impact material in the course.<br></p><p    >The question of social impact is difficult to divorce entirely from one’s personal values. I am a secular, left-wing progressive on most issues, which will no doubt come through in these videos. I have done my best to present the discussion rather than the conclusions, and to present mostly facts that are difficult to dismiss if you believe in basic academic investigation. You are entirely free to form your own opinion, of course, and we will not test your position on these questions, only your knowledge of them.<br></p><p    >We will deal with various real-world use case. Since these are matters of <em>social</em> impact, it's often necessary for us to delve in to actions taken and systems built in or by different countries. If you are from one of the countries we discuss, it may be difficult to hear what we have to say. The first thing to note is that we carefully consider whether such topics are necessary include at all. If not, we will choose a different example.<br></p><p    >Second, please understand that highlighting one action of a country's government is<strong> not intended as a criticism of that country, its culture, or its people</strong>. If you feel that anything we discuss puts you in the spotlight or makes you feel like you have to defend yourself, please know that that is not our intention. You also do not have to agree with what is said in these videos, and you should not take my word as gospel, just because I am a teacher.<br></p><aside    >If your are not from one of these countries, remember that expatriate students often have a difficult time feeling welcome already, and discussing subjects like these can make that substantially worse. Please do your best to ensure that students do not feel that these issues are held against them personally, or that they have to agree with any position in order to be accepted.<br></aside><p    >Finally, note that<strong> </strong>establishing <em>fact</em> in social science is a complicated business. As scientists and mathematicians, we are used to providing evidence through proof or through controlled experimentation. In social matters, such rigorous methods are simply not available. Since we are dealing with controversial issues, however, there is a strong burden of proof. That means that for these videos, we will make an extra effort to carefully reference and substantiate what we claim as true.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1127,7 +1126,7 @@ slides: true
 
        <section id="slide-081">
             <a class="slide-link" href="https://mlvu.github.io/introduction#slide-081" title="Link to this slide.">link here</a>
-            <img src="11.Introduction.0.key-stage-0081.svg" class="slide-image" />
+            <img src="11.Introduction.0.key-stage-0081.png" class="slide-image" />
 
             <figcaption>
             <p    >These references can be found in the lecture notes online. Sometimes simply alongside the slides, but for cases where a more extensive treatment is necessary, we've added a <a href="http://mlvu.github.io"><strong>social impact dossier on the website</strong></a>. This will allow us to dig a little deeper into the references required to substantiate some of the claims we make.<br></p><p    >If you’re upset about anything we say in the social impact parts of the lectures,  or you think we’ve made a mistake, please have a look at this resource. It contains a detailed explanation of our methods, and extensive references to back up any claim we make that might be controversial.</p><p    ></p>
@@ -1143,7 +1142,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0082.svg" class="slide-image" />
 
             <figcaption>
-            <p    >One particularly important aspect of the social impact dossier is our <strong>inclusion policy</strong>. In other words, the rules that we follow to decide whether a particular subject is worth discussing in the course.<br></p><p    >This is what stops us from arbitrarily discussing whatever political topics we’re personally most worked up about. If any particular topic seems arbitrarily chosen, or its inclusion politically motivated, check if we followed these four rules. If not, you may take us to task.<br></p><p    >The social impact dossier explicitly tests some of the more controversial topics against there rules.<br></p><p    >For a more detailed explanation of the policy and how we apply it, see: <a href="https://mlvu.github.io/social-impact/#slide-003"><strong>https://mlvu.github.io/social-impact/#slide-003</strong></a><br></p><p    ></p>
+            <p    >One particularly important aspect of the social impact dossier is our <strong>inclusion policy</strong>. In other words, the rules that we follow to decide whether a particular subject is worth discussing in the course.<br></p><p    >This is what stops us from arbitrarily discussing whatever political topics we’re personally most worked up about. If any particular topic seems arbitrarily chosen, or its inclusion politically motivated, check if we followed these four rules. If not, you may take us to task.<br></p><p    >The social impact dossier explicitly tests some of the more controversial topics against these rules.<br></p><p    >For a more detailed explanation of the policy and how we apply it, see: <a href="https://mlvu.github.io/social-impact/#slide-003"><strong>https://mlvu.github.io/social-impact/#slide-003</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1498,7 +1497,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0108.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this last video, we’ll look a little deeper into the problem that is at the heart of what we are actually trying to achieve in machine learning. You may think the aim of machine learning model is to find a model that fits the training data as precisely as possible. You would be mistaken. The aim is to find a model that <strong>generalizes</strong>.<br></p><p    ><br></p><p    ></p>
+            <p    >In this last video, we’ll look a little deeper into the problem that is at the heart of what we are actually trying to achieve in machine learning. You may think the aim of machine learning is to find a model that fits the training data as precisely as possible. You would be mistaken. The aim is to find a model that <strong>generalizes</strong>.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1524,7 +1523,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0110.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Let's zoom in on one of the spikes: here, the model seems to be convinced that penguins with a flipper length of exactly 218 mm have a much higher body mass than those with flipper lengths of 217 mm or 219 mm. This isn’t true, of course. There's nothing special about having flippers of exactly 219 mm long. It just happens to be the case that in this area, there was only one penguin in the data and they had a slightly higher body mass. The model is fitting details of the dataset that are <em>random noise</em>. We call this <strong>overfitting</strong>.<br></p><p    >When a model overfits, we sometimes say that it is <strong>memorizing</strong> the data, when it should be <strong>generalizing</strong>.</p><p    ></p>
+            <p    >Let's zoom in on one of the spikes: here, the model seems to be convinced that penguins with a flipper length of exactly 218 mm have a much higher body mass than those with flipper lengths of 217 mm or 219 mm. This isn’t true, of course. There's nothing special about having flippers of exactly 218 mm long. It just happens to be the case that in this area, there was only one penguin in the data and they had a slightly higher body mass. The model is fitting details of the dataset that are <em>random noise</em>. We call this <strong>overfitting</strong>.<br></p><p    >When a model overfits, we sometimes say that it is <strong>memorizing</strong> the data, when it should be <strong>generalizing</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1563,7 +1562,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0113.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Now we see that the regression tree is a terrible model. The training data may show a spike in body mass at a flipper length of 219mm, but the test data will just follow the linear pattern. The next penguin we see with flippers of 219 mm, is likely to have a much lower body mass than the one we saw in the training data.</p><p    ></p>
+            <p    >Now we see that the regression tree is a terrible model. The training data may show a spike in body mass at a flipper length of 218mm, but the test data will just follow the linear pattern. The next penguin we see with flippers of 218 mm, is likely to have a much lower body mass than the one we saw in the training data.</p><p    ></p>
             </figcaption>
        </section>
 
