@@ -1062,7 +1062,7 @@ slides: true
        <section class="video" id="video-076">
            <a class="slide-link" href="https://mlvu.github.io/introduction#video-76">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/sOfAUSLp2eQ"
+                src="https://www.youtube.com/embed/T2WzGHefu-g"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1077,7 +1077,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0077.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Throughout the course, we’ll occasionally stop and look at the impact that this kind of technology has on society. This is rapidly becoming more important as machine learning is being rolled out at national and international scales.<br></p><p    >Sometimes we’ll do this as part of the regular lectures, and sometimes, we’ll create a separate video to focus on some important aspects. In this video we’ll look at some of the questions it’s important to ask of machine learning systems and machine learning research.<br></p><p    ><br><br></p><p    ><br></p><p    ></p>
+            <p    >Throughout the course, we’ll occasionally stop and look at the impact that this kind of technology has on society. This is rapidly becoming more important as machine learning is being rolled out at national and international scales.<br></p><p    >Sometimes we’ll do this as part of the regular lectures, and sometimes, we’ll create a separate video to focus on some important aspects. In this video we’ll look at some of the questions it’s important to ask of machine learning systems and machine learning research.<br></p><p    ><br><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1482,7 +1482,7 @@ slides: true
        <section class="video" id="video-107">
            <a class="slide-link" href="https://mlvu.github.io/introduction#video-107">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/24fPK3CM-8E"
+                src="https://www.youtube.com/embed/LzYsrG__QoI"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1497,7 +1497,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0108.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this last video, we’ll look a little deeper into the problem that is at the heart of what we are actually trying to achieve in machine learning. You may think the aim of machine learning is to find a model that fits the training data as precisely as possible. You would be mistaken. The aim is to find a model that <strong>generalizes</strong>.<br></p><p    ><br></p><p    ></p>
+            <p    >In this last video, we’ll look a little deeper into the problem that is at the heart of what we are actually trying to achieve in machine learning. You may think the aim of machine learning is to find a model that fits the training data as precisely as possible. You would be mistaken. The aim is to find a model that <strong>generalizes</strong>.<br></p><p    ><br><br></p><p    ></p>
             </figcaption>
        </section>
 
