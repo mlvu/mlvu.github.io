@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 
-#python generate.py \
-#  --title "Course details" \
-#  --dst ../details \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2023.key" \
-#  --base-url "https://mlvu.github.io/details" \
-#  --pdf-link "https://mlvu.github.io/lectures/Course_details.2023.pdf"
-#
+python generate.py \
+  --title "Course details" \
+  --dst ../details \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2023.key" \
+  --base-url "https://mlvu.github.io/details" \
+  --pdf-link "https://mlvu.github.io/lectures/Course_details.2023.pdf"
+
 #python generate.py \
 #  --title "Lecture 0: Preliminaries" \
 #  --dst ../preliminaries \
@@ -15,12 +15,12 @@
 #  --base-url "https://mlvu.github.io/preliminaries" \
 #  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 1: Introduction" \
-  --dst ../introduction \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
-  --base-url "https://mlvu.github.io/introduction" \
-  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 1: Introduction" \
+#  --dst ../introduction \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
+#  --base-url "https://mlvu.github.io/introduction" \
+#  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 2: Linear Models and Search" \

@@ -7,7 +7,7 @@ slides: true
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Course details</li>
                 <li><a href="#video-000">Course details</a></li>
-        <li class="pdf"><a href="https://mlvu.github.io/lectures/Course details.2023.pdf">PDF</a></li>
+        <li class="pdf"><a href="https://mlvu.github.io/lectures/Course_details.2023.pdf">PDF</a></li>
     </ul>
 </nav>
 
