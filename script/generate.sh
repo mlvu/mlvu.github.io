@@ -50,12 +50,12 @@
 #  --base-url "https://mlvu.github.io/lecture05" \
 #  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 6: Beyond linear models" \
-  --dst ../lecture06 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
-  --base-url "https://mlvu.github.io/lecture06" \
-  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 6: Beyond linear models" \
+#  --dst ../lecture06 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
+#  --base-url "https://mlvu.github.io/lecture06" \
+#  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 7: Deep learning" \
@@ -114,12 +114,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/social-impact" \
 #  --pdf-link "https://mlvu.github.io/lectures/social-impact-dossier.pdf"
 
-python generate.py \
-  --title "Support vector machines" \
-  --dst ../svms \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/SVMs/SVMs.key" \
-  --base-url "https://mlvu.github.io/svms" \
-  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
+#python generate.py \
+#  --title "Support vector machines" \
+#  --dst ../svms \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/SVMs/SVMs.key" \
+#  --base-url "https://mlvu.github.io/svms" \
+#  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 
 cd ..

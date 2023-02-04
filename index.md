@@ -86,7 +86,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="svms"><a href="/support-vector-machines">
+<div class="svms"><a href="/svms">
  <h3 class="orange">Support vector machines</h3>
 </a>
 </div>
