@@ -6,21 +6,23 @@ slides: true
     <ul>
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 3: Model evaluation</li>
-            <li><a href="#video-000">Experiments</a></li>
-            <li><a href="#video-028">Statistical Testing</a></li>
-            <li><a href="#video-051">Evaluation</a></li>
-            <li><a href="#video-080">PR, ROC and AUC</a></li>
-            <li><a href="#video-101">Social Impact 2</a></li>
-            <li><a href="#video-120">No Free Lunch</a></li>
+                <li><a href="#video-000">Experiments</a></li>
+                <li><a href="#video-028">Statistical Testing</a></li>
+                <li><a href="#video-051">Evaluation</a></li>
+                <li><a href="#video-080">PR, ROC and AUC</a></li>
+                <li><a href="#video-101">Social Impact 2</a></li>
+                <li><a href="#video-120">No Free Lunch</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
 
 <article class="slides">
+
+
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture03#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/hHLDDJJl2v4?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/hHLDDJJl2v4"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -28,17 +30,22 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-001">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-001" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-001" class="anim">
+
+
+
+       <section id="slide-002" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-002" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0002anim0.svg" data-images="21.Methodology1.key-stage-0002anim0.svg,21.Methodology1.key-stage-0002anim1.svg,21.Methodology1.key-stage-0002anim2.svg" class="slide-image" />
 
@@ -47,6 +54,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -60,7 +69,10 @@ slides: true
        </section>
 
 
-       <section id="slide-003" class="anim">
+
+
+
+       <section id="slide-004" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-004" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0004anim0.svg" data-images="21.Methodology1.key-stage-0004anim0.svg,21.Methodology1.key-stage-0004anim1.png" class="slide-image" />
 
@@ -72,15 +84,19 @@ slides: true
 
 
 
-       <section id="slide-004" class="anim">
+
+
+       <section id="slide-005" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-005" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0005anim0.svg" data-images="21.Methodology1.key-stage-0005anim0.svg,21.Methodology1.key-stage-0005anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is the simplest, most straightforward way to compare two classifiers. You just train them both, so see how many examples they get wrong, and pick the one that made fewest mistakes. This is a very simple approach, but it’s basically what we do. <br></p><p    >We just need to consider<strong class="orange red"> a few questions</strong>, to make sure that we can trust our results.</p><p    ></p>
+            <p    >Here is the simplest, most straightforward way to compare two classifiers. You just train them both, so see how many examples they get wrong, and pick the one that made fewest mistakes. This is a very simple approach, but it’s basically what we do. <br></p><p    >We just need to consider<strong class="red"> a few questions</strong>, to make sure that we can trust our results.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -94,6 +110,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-007">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-007" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0007.svg" class="slide-image" />
@@ -102,6 +121,9 @@ slides: true
             <p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-008">
@@ -114,6 +136,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-009">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-009" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0009.svg" class="slide-image" />
@@ -122,6 +147,9 @@ slides: true
             <p    >But even if we withhold some test data, we can still go wrong. We’ll use k nearest neighbours (kNN) as a running example. Remember, kNN assigns the class of the k nearest points. <br></p><p    >k is what is called a <strong>hyperparameter</strong>. We need to choose its value in some way before we run the algorithm. The algorithm doesn't specify how it should be chosen. One way of choosing k is to try a few values, and to see for which k we get the best performance.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-010">
@@ -134,7 +162,10 @@ slides: true
        </section>
 
 
-       <section id="slide-010" class="anim">
+
+
+
+       <section id="slide-011" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-011" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0011anim0.png" data-images="21.Methodology1.key-stage-0011anim0.png,21.Methodology1.key-stage-0011anim1.png" class="slide-image" />
 
@@ -143,6 +174,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -156,7 +189,10 @@ slides: true
        </section>
 
 
-       <section id="slide-012" class="anim">
+
+
+
+       <section id="slide-013" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-013" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0013anim0.png" data-images="21.Methodology1.key-stage-0013anim0.png,21.Methodology1.key-stage-0013anim1.png" class="slide-image" />
 
@@ -165,6 +201,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -178,6 +216,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-015">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-015" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0015.svg" class="slide-image" />
@@ -186,6 +227,9 @@ slides: true
             <p    >The same models, different test sets and the conclusions are entirely different. We were diligent in splitting our dataset and evaluating only on withheld data, and yet if we had done only one run on one dataset, as we normally would, we would have concluded that k=1 is the best setting and that an error of 0.16 can be expected with that value. <br></p><p    >If we look at the k=1 model from the second run (the one we chose), we will see that the performance on the new test set is terrible. If we select a model in this way and take it into production, we will find that it performs terribly.<br></p><p    >So what's happening here?<br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-016">
@@ -198,6 +242,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-017">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-017" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0017.svg" class="slide-image" />
@@ -206,6 +253,9 @@ slides: true
             <p    >There are many different approaches to machine learning experimentation, and not every paper you see will follow this approach, but this is the most common one. <br></p><p    >It’s important to mention in your paper that you followed this approach, since the reader can’t usually see it from the presented results.<br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-018">
@@ -218,6 +268,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-019">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-019" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0019.svg" class="slide-image" />
@@ -228,7 +281,10 @@ slides: true
        </section>
 
 
-       <section id="slide-019" class="anim">
+
+
+
+       <section id="slide-020" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-020" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0020anim0.svg" data-images="21.Methodology1.key-stage-0020anim0.svg,21.Methodology1.key-stage-0020anim1.svg" class="slide-image" />
 
@@ -237,6 +293,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -250,6 +308,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-022">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-022" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0022.svg" class="slide-image" />
@@ -258,6 +319,9 @@ slides: true
             <p    >Here is what we should do instead. We should use the training data (with validation withheld) to select our hyperparameters, make a single choice for k for each different dataset, and then estimate the accuracy of only that model. <br></p><p    >Note that the numbers have changed, because in the previous example the authors gave themselves an advantage by multiple testing. With a proper validation split, that advantage disappears. These numbers are worse, but more accurate. (I made these numbers up, but this is the sort of thing you might see)<br></p><p    >Now, we can actually draw the conclusions that the table implies:<br></p><p     class="list-item">On dataset 3, the new method is the best.<br></p><p     class="list-item">If we want to use the method on dataset 3 (or similar data) we should use k=2<br></p><p     class="list-item">If our data is similar to that of dataset 3, we could expect a performance around 0.24<br></p><p    >Even though most people now use this approach, you should still mention exactly what you did in your report (so people don’t assume you got it wrong).</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-023">
@@ -270,6 +334,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-024">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-024" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0024.svg" class="slide-image" />
@@ -280,7 +347,10 @@ slides: true
        </section>
 
 
-       <section id="slide-024" class="anim">
+
+
+
+       <section id="slide-025" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-025" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0025anim0.svg" data-images="21.Methodology1.key-stage-0025anim0.svg,21.Methodology1.key-stage-0025anim1.svg,21.Methodology1.key-stage-0025anim2.svg,21.Methodology1.key-stage-0025anim3.svg,21.Methodology1.key-stage-0025anim4.svg" class="slide-image" />
 
@@ -289,6 +359,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -302,6 +374,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-027">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-027" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0027.svg" class="slide-image" />
@@ -310,6 +385,9 @@ slides: true
             <p    >So, now that we know how to experiment, what experiments should we run? Which values should we try for the hyperparameters? So long as we make sure not to look at our test set, we can do what we like. We can try a few values, we can search a grid of values exhaustively, or we can even use methods like random search, or simulated annealing. <br></p><aside    >We should only. be cautious not to try to many different hyperparameter values if our test and validation sets are small.<br></aside><p    >It’s important to mention: <strong>trail and error is fine, and it’s the approach that is most often used</strong>. It’s usually the most effective, because you (hopefully) have an intuitive understanding of what your hyperparameters mean. You can use this understanding to guide your search in a way that automated methods can't.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-028">
@@ -321,10 +399,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-028">
            <a class="slide-link" href="https://mlvu.github.io/lecture03#video-28">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/BfoeXjX2v0Q?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/BfoeXjX2v0Q"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -332,14 +413,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-029">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-029" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0029.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-030">
@@ -347,9 +433,12 @@ slides: true
             <img src="21.Methodology1.key-stage-0030.svg" class="slide-image" />
 
             <figcaption>
-            <p    >As noted in the first lecture, statistics an ML are very closely related. It’s surprising, then that when we perform ML experiments, we use relatively little of the statistics toolkit. We don’t often do <strong>significance tests</strong>, for instance.</p><p    ></p>
+            <p    >As noted in the first lecture, statistics and ML are very closely related. It’s surprising, then that when we perform ML experiments, we use relatively little of the statistics toolkit. We don’t often do <strong>significance tests</strong>, for instance.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-031">
@@ -357,20 +446,25 @@ slides: true
             <img src="21.Methodology1.key-stage-0031.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Note everybody agrees. Hypothesis testing comes with a lot of downsides. Given that we usually have very big sample sizes (10000 instances in the test set), our efforts may be better spent elsewhere.<br></p><p    >Another consideration is that the ultimate validation of research is replication, not statistical significance. Somebody else should repeat your research and get the same results. Because all of our experimentation is computer code, a basic replication could be as simple as downloading and running a docker image. After that it’s easy to try the same on new data, or check the model for bugs.<br></p><p    >Since the community is so divided on the question, we won’t emphasise statistical testing too much in this course. However, there are a few important statistical concepts to be aware of, even if we don't use the whole statistical toolbox to interrogate them rigorously.</p><p    ></p>
+            <p    >Should we be doing more statistics on our own experiments?<br></p><p    >There is a lot of disagreement. Hypothesis testing comes with a lot of downsides. Given that we usually have very big sample sizes (10 000 instances in the test set), our efforts may be better spent elsewhere.<br></p><p    >Another consideration is that the ultimate validation of research is <em>replication</em>, not statistical significance. Somebody else should repeat your research and get the same results. Because all of our experimentation is computer code, a basic replication could be as simple as downloading and running a docker image. After that it’s easy to try the same on new data, or check the model for bugs.<br></p><aside    >In practice, replication can be a real nightmare, even in our field.<br></aside><p    >Since the community is so divided on the question, we won’t emphasise statistical testing too much in this course. However, there are a few important statistical concepts to be aware of, even if we don't use the whole statistical toolbox to interrogate them rigorously.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-031" class="anim">
+
+
+
+       <section id="slide-032" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-032" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0032anim0.svg" data-images="21.Methodology1.key-stage-0032anim0.svg,21.Methodology1.key-stage-0032anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The first is the difference between the true metric of a problem or task, and the value you measure. Let's take classification accuracy as an example.<br></p><p    >We usually imagine that the data is <strong>sampled</strong> from some distribution p(x). In this view we're not really interested in training a classifier that does well on the dataset we have, even on the test data. What we really want is a classifier that does well on any data sampled from p(x). <br></p><p    >Imagine sampling one instance from the data distribution and classifying it with some classifier <span class="orange">C</span>. If you do this, there is a certain probability that <span class="orange">C</span> will be correct. This is called the<strong> true accuracy</strong>. It is not something we can ever know or compute (except in very specific cases). The only thing we can do is take a large number of samples from p(x), classifiy them with <span class="orange">C</span>, and approximate the true accuracy with the relative frequency of correct classifications in our sample. This is what we are doing when we compute the accuracy of a classifier on the test set of the validation set: <strong>we are estimating the true accuracy</strong>. To explicitly distinguish this estimate from the true accuracy, we sometimes call this the<strong> sample accuracy</strong>.<br></p><p    >The accuracy is just the simplest example. We can apply the same idea to any metric, like the MSE loss of a regression model, or the many metrics for classifiers we will see in the following videos. They all have a <strong>true value</strong> defined on the data distribution, which we can't observe, and an estimate which we can compute from the test set.<br></p><aside    >This is a probabilistic view of machine learning. It's not strictly necessary to view your problem this way, but it's almost always the most fruitful.</aside><aside    ></aside>
+            <p    >The first is the difference between the <strong>true metric</strong> of a problem or task, and the <em>value you measure</em>. Let's take classification accuracy as an example.<br></p><p    >We usually imagine that the data is <strong>sampled</strong> from some distribution p(x). In this view, we're not really interested in training a classifier that does well on the dataset we have, even on the test data. What we really want is a classifier that does well on any data sampled from p(x). <br></p><p    >Imagine sampling one instance from the data distribution and classifying it with some classifier <span class="orange">C</span>. If you do this, there is a certain probability that <span class="orange">C</span> will be correct. This is called the<strong> true accuracy</strong>. It is not something we can ever know or compute (except in very specific cases). The only thing we can do is take a large number of samples from p(x), classifiy them with <span class="orange">C</span>, and approximate the true accuracy with the relative frequency of correct classifications in our sample. This is what we are doing when we compute the accuracy of a classifier on the test set of the validation set: <strong>we are estimating the true accuracy</strong>. To explicitly distinguish this estimate from the true accuracy, we sometimes call this the<strong> sample accuracy</strong>.<br></p><p    >The accuracy is just the simplest example. We can apply the same idea to any metric, like the MSE loss of a regression model, or the many metrics for classifiers we will see in the following videos. They all have a <strong>true value</strong> defined on the data distribution, which we can't observe, and an estimate which we can compute from the test set.<br></p><aside    >This is a probabilistic view of machine learning. It's not strictly necessary to view your problem this way, but it's almost always the most fruitful.</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -384,15 +478,20 @@ slides: true
        </section>
 
 
-       <section id="slide-033" class="anim">
+
+
+
+       <section id="slide-034" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-034" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0034anim0.svg" data-images="21.Methodology1.key-stage-0034anim0.svg,21.Methodology1.key-stage-0034anim1.svg,21.Methodology1.key-stage-0034anim2.svg,21.Methodology1.key-stage-0034anim3.svg,21.Methodology1.key-stage-0034anim4.svg,21.Methodology1.key-stage-0034anim5.svg,21.Methodology1.key-stage-0034anim6.svg,21.Methodology1.key-stage-0034anim7.svg,21.Methodology1.key-stage-0034anim8.svg,21.Methodology1.key-stage-0034anim9.svg" class="slide-image" />
 
             <figcaption>
-            <p    >One way of doing this is to compute a <strong>confidence interval</strong>. Here we see the process of computing a sample accuracy in a simple animation: we start with the true accuracy (for some given classifier, on the data distribution) which is somewhere between 0 and 1. We sample a bunch of points from the data distribution (our test set), and take the relative frequency of correctly classified instances as the <strong>sample accuracy</strong>.<br></p><p    >Here, in the top half of the slide we model the process of taking one instance of our test set and seeing whether the classifier classifies it correctly as a single random draw resulting in the outcome<span class="orange red"> </span><span class="green">correct</span> or <span class="orange red">incorrect</span>. <em>We'll see in the next lecture that this type of distribution is called a Bernoulli distribution.</em><br></p><p    >The whole process of sampling the entire test set and computing the sample accuracy is also a random process. If we were to repeat it, sampling a new test set, we'd get a different value for the sample accuracy. To simplify this, we can look at the total number of instances in our sample that the classifier classified correctly (so we don't divide by N). In that case, it turns out we can work out the distribution of this process as well: the number of "<span class="green">correct</span>"s we get in N samples of from a Bernoulli distribution forms what is known as a Binomial distribution.<br></p><p    >The technical details aren't important. The main message is that we can define precisely what distribution we can expect on the value of the sample accuracy of we keep the classifier and the true accuracy fixed, but resample the test data. In this case, we see that for a true accuracy of 0.8, and a test set of N=10 instances, we are most likely to see that the classifier correct classifies 7 instances in our sample (as we did in the top half of the slide). However, it's also perfectly possible to see 5, 6, or 8 instances classified correctly.<br></p><aside    >This is a complicated picture with multiple random processes going on. Take a little time to wrap your head around this before moving on.<br></aside><p    >Imagine that if we have two classifiers, and we compute sample accuracies for both on a test set of 10 instances. We get 5/10 correct for one classifier and 8/10 correct for the other. can we conclude that the first is definitely worse than the second? What we see here is that if they both have a true accuracy of 0.8, it would we perfectly likely to see these numbers. In short, with such little test data, we have much uncertainty around our estimate of the true accuracy.<br></p><p    >One way to quantify this uncertainty is to draw a <strong>confidence interval</strong>. This is simply any interval on the values of our sample accuracy that captures a given proportion of the probability mass, usually 95%. You can draw the confidence interval anywhere you like so long as you decide how to draw it before seeing the data. The most common approach is symmetrically around the mean, but you can also start at the mean and extend it to the right as far as possible or to the left as far as possible.<br></p><p    >The condfidence interval captures our uncertainty. We don't know the true value of the accuracy, and we can't estimate it very accurately, but we know it's most likely one of these values.<br></p><p    ></p>
+            <p    >One way of doing this is to compute a <strong>confidence interval</strong>. Here we see the process of computing a sample accuracy in a simple animation: we start with the true accuracy (for some given classifier, on the data distribution) which is somewhere between 0 and 1. We sample a bunch of points from the data distribution (our test set), and take the relative frequency of correctly classified instances as the <strong>sample accuracy</strong>.<br></p><p    >Here, in the top half of the slide we model the process of taking one instance of our test set and seeing whether the classifier classifies it correctly as a single random draw resulting in the outcome<span class="red"> </span><span class="green">correct</span> or <span class="red">incorrect</span>. <em>We'll see in the next lecture that this type of distribution is called a Bernoulli distribution.</em><br></p><p    >The whole process of sampling the entire test set and computing the sample accuracy is also a random process. If we were to repeat it, sampling a new test set, we'd get a different value for the sample accuracy. To simplify this, we can look at the total number of instances in our sample that the classifier classified correctly (so we don't divide by N). In that case, it turns out we can work out the distribution of this process as well: the number of "<span class="green">correct</span>"s we get in N samples of from a Bernoulli distribution forms what is known as a Binomial distribution.<br></p><p    >The technical details aren't important. The main message is that we can define precisely what distribution we can expect on the value of the sample accuracy of we keep the classifier and the true accuracy fixed, but resample the test data. In this case, we see that for a true accuracy of 0.8, and a test set of N=10 instances, we are most likely to see that the classifier correct classifies 7 instances in our sample (as we did in the top half of the slide). However, it's also perfectly possible to see 5, 6, or 8 instances classified correctly.<br></p><aside    >This is a complicated picture with multiple random processes going on. Take a little time to wrap your head around this before moving on.<br></aside><p    >Imagine that if we have two classifiers, and we compute sample accuracies for both on a test set of 10 instances. We get 5/10 correct for one classifier and 8/10 correct for the other. can we conclude that the first is definitely worse than the second? What we see here is that if they both have a true accuracy of 0.8, it would we perfectly likely to see these numbers. In short, with such little test data, we have much uncertainty around our estimate of the true accuracy.<br></p><p    >One way to quantify this uncertainty is to draw a <strong>confidence interval</strong>. This is simply any interval on the values of our sample accuracy that captures a given proportion of the probability mass, usually 95%. You can draw the confidence interval anywhere you like so long as you decide how to draw it before seeing the data. The most common approach is symmetrically around the mean, but you can also start at the mean and extend it to the right as far as possible or to the left as far as possible.<br></p><p    >The condfidence interval captures our uncertainty. We don't know the true value of the accuracy, and we can't estimate it very accurately, but we know it's most likely one of these values.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -406,6 +505,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-036">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-036" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0036.svg" class="slide-image" />
@@ -414,6 +516,9 @@ slides: true
             <p    >Here are the full curves, in case you every need to look it up.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-037">
@@ -426,15 +531,20 @@ slides: true
        </section>
 
 
-       <section id="slide-037" class="anim">
+
+
+
+       <section id="slide-038" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-038" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0038anim0.svg" data-images="21.Methodology1.key-stage-0038anim0.svg,21.Methodology1.key-stage-0038anim1.svg,21.Methodology1.key-stage-0038anim2.svg,21.Methodology1.key-stage-0038anim3.svg,21.Methodology1.key-stage-0038anim4.svg,21.Methodology1.key-stage-0038anim5.svg,21.Methodology1.key-stage-0038anim6.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we are computing a continuous value, like the mean squared error loss of a regression model, the same principle applies. For now, let's forget about the details and assume that we are computing some number representing the difference between the true regression value of an instances and the predicted regression value. We'll call this number <strong>m</strong>. <br></p><p    ><em>In this case m is the error of a model, but it could be any measurement of any phenomenon.</em> <br></p><p    >We can often assume that m, computed for a single randomly sampled instance, is normally distributed. The likely values are clustered around a mean value, or expectation of m. This is the distribution drawn in the top half of the slide.<br></p><p    >If we sample a test set and compute the mean of m for all instances in the test data, we get an estimate for the true expectation of m. This is an estimate of the mean of the distribution at the top. Note that the estimated mean is slightly different from the true mean.<br></p><p    >This, again, is a random process. If we sample another test set, keeping the model and the true mean fixed, we get a slightly different estimate for the mean. The distribution on the values we get for the <strong>sample mean </strong>is drawn at the bottom. Note that its mean is the same as the true mean, but its peak is more narrow. <br></p><aside    >This is not a normal distribution, but a so called Student's t distribution. For test sets larger than ~30 instances, the difference becomes negligable. <br></aside><p    >The standard deviation of the distribution at the bottom is the variance of the one at the top, divided by the square of the number of instances in our test set. The more instances, the narrower the peak becomes, and the less uncertainty we have around our estimate. This standard deviation is called the <strong>standard error of the mean (sem)</strong>. </p><p    ></p>
+            <p    >If we are computing a continuous value, like the mean squared error loss of a regression model, the same principle applies. For now, let's forget about the details and assume that we are computing some number representing the difference between the true regression value of an instance and the predicted regression value. We'll call this number <strong>m</strong>. <br></p><p    ><em>In this case m is the error of a model, but it could be any measurement of any phenomenon.</em> <br></p><p    >We can often assume that m, computed for a single randomly sampled instance, is normally distributed. The likely values are clustered around a mean value, or expectation of m. This is the distribution drawn in the top half of the slide.<br></p><p    >If we sample a test set and compute the mean of m for all instances in the test data, we get an estimate for the true expectation of m. This is an estimate of the mean of the distribution at the top. Note that the estimated mean is slightly different from the true mean.<br></p><p    >This, again, is a random process. If we sample another test set, keeping the model and the true mean fixed, we get a slightly different estimate for the mean. The distribution on the values we get for the <strong>sample mean </strong>is drawn at the bottom. Note that its mean is the same as the true mean, but its peak is more narrow. <br></p><aside    >This is not a normal distribution, but a so called Student's t distribution. For test sets larger than ~30 instances, the difference becomes negligable. <br></aside><p    >The standard deviation of the distribution at the bottom is the variance of the one at the top, divided by the square of the number of instances in our test set. The more instances, the narrower the peak becomes, and the less uncertainty we have around our estimate. This standard deviation is called the <strong>standard error of the mean (sem)</strong>. </p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -443,9 +553,12 @@ slides: true
             <img src="21.Methodology1.key-stage-0039.svg" class="slide-image" />
 
             <figcaption>
-            <p    >As you may know, the region of four standard deviations around the mean of a normal distribution contains roughly 95% of the probability mass. This means that the interval from two standard error to the left of your mean to two standard errors to the right of your mean is a 95% confidence interval.</p><p    ></p>
+            <p    >As you may know, the region of four standard deviations around the mean of a normal distribution contains roughly 95% of the probability mass. This means that the interval from two standard errors to the left of your mean to two standard errors to the right of your mean is a 95% confidence interval.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-040">
@@ -458,14 +571,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-041">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-041" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0041.svg" class="slide-image" />
 
             <figcaption>
-            <p    >When we use the phrase confidence interval to refer to this kind of estimate, it's important to speak about it correctly. <br></p><p    >There is no probability associated with the true mean at all. It is simply an objective, determined value (which we don’t know). The probability comes from sampling, and from computing the interval from a sample.<br></p><p    >So instead of having a fixed interval, with the true mean jumping around probabilistically, we have a fixed true mean around which we get an interval that jumps around if we resample the data The probability of it jumping so much that it no longer contains the true mean is 5%.</p><p    ></p>
+            <p    >When we use the phrase confidence interval to refer to this kind of estimate, it's important to speak about it correctly. <br></p><p    >There is no probability associated with the true mean at all. It is simply an objective, determined value (which we don’t know). The probability comes from sampling, and from computing the interval from a sample.<br></p><p    >So instead of having a fixed interval, with the true mean jumping around probabilistically, we have a fixed true mean around which we get an interval that jumps around if we resample the data The probability of it jumping so much that it no longer contains the true mean is 5%.<br></p><aside    >This is typical frequentist agonizing over what the phrase “probability” means. Confidence intervals are a uniquely frequentist tool. If the distinction on the slide doesn’t make sense to you, look back to the pobability video in the preliminaries.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-042">
@@ -473,20 +592,25 @@ slides: true
             <img src="21.Methodology1.key-stage-0042.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If you see a picture like this, showing the mean runtime of an experiment, measured for three models, and averaged over a number of runs, what would you imagine the error bars denote? We've seen standard deviations, standard errors and confidence intervals. What do error bars represent?</p><p    ></p>
+            <p    >A very relevant question is how do you interpret <strong>error bars</strong>?<br></p><p    >If you see a picture like this, showing the mean runtime of an experiment, measured for three models, and averaged over a number of runs, what would you imagine the error bars denote? We've seen standard deviations, standard errors and confidence intervals. What do error bars represent?</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-042" class="anim">
+
+
+
+       <section id="slide-043" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-043" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0043anim0.svg" data-images="21.Methodology1.key-stage-0043anim0.svg,21.Methodology1.key-stage-0043anim1.svg,21.Methodology1.key-stage-0043anim2.svg,21.Methodology1.key-stage-0043anim3.svg,21.Methodology1.key-stage-0043anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The truth is, that there is no standard definition for what error bars denote, and if the authors didn’t specify what their error bars indicate, the authors messed up.<br></p><p    >These are the three most common options. If you didn't quite get all the details of the previous slides, this slide illustrates the most important distinction: If we sample more data, the estimate of our<strong> standard deviation </strong>becomes <em>more accurate</em>. It’s an estimate of a property of our data distribution. The error bars don't get smaller, the just get closer to their correct size (which may be very wide around the head of the bar).<br></p><p    >The standard error and the confidence interval are indicators of how confident we are about our estimate of the value the bar represents. for these, the more data we have,<em> the smaller they get</em>. As we saw earlier, <em>under the right assumptions</em>, the confidence interval is just twice the standard error.</p><p    ></p>
+            <p    >The truth is, that there is no standard definition for what error bars denote, and if the authors didn’t specify what their error bars indicate, the authors messed up.<br></p><p    >These are the three most common options. If you didn't quite get all the details of the previous slides, this slide illustrates the most important distinction: If we sample more data, the estimate of our<strong> standard deviation </strong>becomes <em>more accurate</em>. It’s an estimate of a property of our data distribution. The error bars don't get smaller, they just get closer to their correct size (which may be very wide around the head of the bar).<br></p><p    >The standard error and the confidence interval are indicators of how confident we are about our estimate <em>of the mean of our data</em>.<em> </em>For these, the more data we have,<em> the smaller they get</em>. As we saw earlier, <em>under the right assumptions</em>, the 95% confidence interval is roughly twice the standard error.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -500,14 +624,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-045">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-045" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0045.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Under certain assumptions, the standard error of two estimates can tell you whether a Student's t test allow you to reject the null hypothesis that the two distributions are the same. This would allow you to say, for instance, that there is a statistically significant difference between the accuracy estimates on two classifiers. As we said before, such testing is not very popular in machine learning, so we won't go into it in detail, but this can offer an additional perspective on error bars.<br></p><p    >Say you plot the mean squared error for regression models <strong class="orange red">A</strong> and <strong class="blue">B</strong>, together with some error bars. Does the the fact that the error bars overlap or not tell you whether the measured difference between the two models is statistically significant? That is, does it indicate whether we can conclude that <strong class="orange red">A</strong> is a better model than <strong class="blue">B</strong>?<br></p><p    >Yes, for standard error bars, the existence of overlap implies that there is no significant difference between the two effects (i.e. the possibility that the difference is due to random chance is high, and a repeat of the experiment on new data may show a different result). If you plot confidence interval error bars, and there is no overlap, you may conclude that the difference between the models is significant. If you repeat the experiment on fresh data, it is very likely that model <strong class="orange red">A</strong> would beat model <strong class="blue">B</strong> again.<br></p><p    >In both cases, the converse does not hold. If the SEM  error bars do not overlap, there may or may not be a significant difference. If the confidence interval error bars do overlap, there may still be a significant difference, depending on how much they overlap.<br></p><aside    >All of this requires the assumption that the original values for which the bar indicates the mean are normally distributed and that there are more than 30, so that the Student's t distribution looks enough like a normal distribution.</aside><aside    ></aside>
+            <p    >Under certain assumptions, the standard error of two estimates can tell you whether a Student's t test allows you to reject the null hypothesis <strong>that the two distributions are the same</strong>. This would allow you to say, for instance, that there is a statistically significant difference between the accuracy estimates on two classifiers. As we said before, such testing is not very popular in machine learning, so we won't go into it in detail, but this can offer an additional perspective on error bars.<br></p><aside    >We won’t discuss the Student’s t test in detail, but it’s a common test for comparing to normally distributed values.<br></aside><p    >Say you plot the mean squared error for regression models <strong class="red">A</strong> and <strong class="blue">B</strong>, together with some error bars. Does the the fact that the error bars overlap or not tell you whether the measured difference between the two models is statistically significant? That is, does it indicate whether we can conclude that <strong class="red">A</strong> is a better model than <strong class="blue">B</strong>?<br></p><p    >Yes, but we have to be careful. For standard error bars, the existence of overlap implies that there is no significant difference between the two effects. That is, the possibility that the difference is due to random chance is high, and a repeat of the experiment on new data may show a different result. If you plot confidence interval error bars, and there is <em>no</em> overlap, you may conclude that the difference between the models is significant. If you repeat the experiment on fresh data, it is very likely that model <strong class="red">A</strong> would beat model <strong class="blue">B</strong> again.<br></p><p    >In both cases, the converse does not hold. If the SEM error bars do not overlap, there may or may not be a significant difference. If the confidence interval error bars do overlap, there may still be a significant difference, depending on how much they overlap.<br></p><aside    >All of this requires the assumption that the original values for which the bar indicates the mean are normally distributed.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-046">
@@ -515,9 +645,12 @@ slides: true
             <img src="21.Methodology1.key-stage-0046.svg" class="slide-image" />
 
             <figcaption>
-            <p    >All of this was about <strong>showing confidence</strong>: showing how reliable our numbers are.<br></p><p    ><strong>Showing spread</strong> is more about providing insight to the reader. Say I train a classifier by gradient descent. If I have a big <span class="blue">test set</span>, I can very <em>confidently</em> measure and report the accuracy of this particular classifier. However, gradient descent uses <em>random </em>initialization. If I repeat the training process, I may end up in a different local minimum, and get a different classification performance. It’s likely that I also want to communicate how much the measured performance is dependent on<em> this</em> randomness. In short, how lucky did we get in our choice of classifier?</p><p    ></p>
+            <p    >All of this was about <strong>showing confidence</strong>: showing how <em>reliable</em> our numbers are as estimates of the true values that we can’t observe.<br></p><p    ><strong>Showing spread</strong> is more about providing insight to the reader. Say I train a classifier by gradient descent. If I have a big <span class="blue">test set</span>, I can very <em>confidently</em> measure and report the accuracy of this particular classifier. However, gradient descent uses <em>random </em>initialization. If I repeat the training process, I may end up in a different local minimum, and get a different classification performance. It’s likely that I also want to communicate how much the measured performance is dependent on<em> this</em> randomness. In short, how lucky did we get in our choice of classifier?</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-047">
@@ -525,9 +658,12 @@ slides: true
             <img src="21.Methodology1.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we have a large enough test set, we know that the confidence interval is small enough. But we do want to know how much the randomness in our process affects the result. What is the probability that repeating the process (on the same data, or on new data) produces wildly different results?<br></p><p    >For factors like the initialisation of gradient descent, this is easy to test: you just rerun a few times on the same data. But how do you test how robust the result are against sampling a new dataset?</p><p    ></p>
+            <p    >If we have a large enough test set, we know that the confidence interval for our measurement of the performance is small enough. But we also want to know how much the randomness in our process affects the result. What is the probability that repeating the process (on the same data, or on new data) produces wildly different results?<br></p><p    >For factors like the initialisation of gradient descent, this is easy to test: you just rerun a few times on the same data. But how do you test how robust the result are against <strong>sampling a new dataset</strong>?</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-048">
@@ -540,6 +676,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-049">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-049" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0049.svg" class="slide-image" />
@@ -548,6 +687,9 @@ slides: true
             <p    >A different approach is bootstrapping. Here, we resample the data<strong> with replacement</strong>. This allows us to sample a dataset that is exactly the same size as the original data. We can also resample as often as we'd like, without affecting the size of the test data or the amount of overlap between the datasets.<br></p><p    >We will see in a later lecture that bootstrapping approximates the data distribution in a very precisely defined way.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-050">
@@ -560,6 +702,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-051">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-051" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0051.svg" class="slide-image" />
@@ -569,10 +714,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-051">
            <a class="slide-link" href="https://mlvu.github.io/lecture03#video-51">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/oZdWt_Mrg_8?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/oZdWt_Mrg_8"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -580,14 +728,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-052">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-052" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0052.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this video we'll look at how to evaluate regression and classification experiments. There will be a few pointers on regression, but the main topic will be classification experiments.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    >In this video we'll look at how to evaluate regression and classification experiments. There will be a few pointers on regression, but the main topic will be classification experiments.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-053">
@@ -600,7 +753,10 @@ slides: true
        </section>
 
 
-       <section id="slide-053" class="anim">
+
+
+
+       <section id="slide-054" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-054" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0054anim0.svg" data-images="21.Methodology1.key-stage-0054anim0.svg,21.Methodology1.key-stage-0054anim1.svg,21.Methodology1.key-stage-0054anim2.svg,21.Methodology1.key-stage-0054anim3.svg,21.Methodology1.key-stage-0054anim4.svg,21.Methodology1.key-stage-0054anim5.svg" class="slide-image" />
 
@@ -612,7 +768,9 @@ slides: true
 
 
 
-       <section id="slide-054" class="anim">
+
+
+       <section id="slide-055" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-055" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0055anim0.svg" data-images="21.Methodology1.key-stage-0055anim0.svg,21.Methodology1.key-stage-0055anim1.svg,21.Methodology1.key-stage-0055anim2.svg" class="slide-image" />
 
@@ -621,6 +779,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -634,6 +794,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-057">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-057" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0057.svg" class="slide-image" />
@@ -642,6 +805,9 @@ slides: true
             <p    >High bias tends to happen when the model is too simple to follow the true "shape" of the data. Linear models in low-dimensional spaces often have this problem. Here, we see that the data has a slight curve, which is clearly part of its natural pattern, and something the model should learn. Since it's restricted to a line, however, it cannot make this shape.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-058">
@@ -654,6 +820,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-059">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-059" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0059.svg" class="slide-image" />
@@ -662,6 +831,9 @@ slides: true
             <p    >We will see techniques for all of these in the coming weeks. Note that often, it really is a tradeoff: reducing the bias, increases the variance and vice versa.<br></p><p    >For some algorithms, there is a single parameter that allows us to make the bias/variance tradeoff. kNN is one example: low k values give us high variance, high k values give us high bias. <br></p><aside    >In the strictest definition of bias and variance, these concepts only apply to the mean squared error, where they explictly appear as terms if you rewrite the error in a certain way. However, in general machine learning parlance, the terms are applied to any regression error, and they are roughly synonymous with under- and overfitting.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-060">
@@ -674,6 +846,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-061">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-061" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0061.svg" class="slide-image" />
@@ -684,14 +859,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-062">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-062" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0062.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here's one example domain: breast cancer screening<br></p><p    >A recurring discussion in the Dutch media is the question whether all women over 50 be screened for breast cancer. This is an analogy for classification: the instances are people and the target label is “<span class="blue">has cancer</span>” or “<span class="orange red">has no cancer</span>.” You may think that this is a no-brainer: the more tests we do, the more lives saved. But we need to take into account how good the classifier is, and how bad the consequences are of it making a mistake.<br></p><p    >The first problem this example illustrates is <strong>class imbalance</strong>. Unlike the classifiers we've seen so far, this example has, thankfully, far more <span class="orange red">negatives</span> than <span class="blue">positives</span>. In a given year the people in this age group for whom breast cancer will manifest is about half a percent. This includes men, for whom breast cancer is rare (but not impossible), so when we talk about screening for women over 50, we should probably assume about 1% positives.<br></p><p    >This means that we need to be very careful when interpreting the reported performance of any breast cancer detection method. We may think that an accuracy of 99% sounds impressive, but this is the accuracy we would get if we just called everything negative: that is, if we just diagnosed all women with no cancer.<br></p><p    >source: <a href="https://www.volkskrant.nl/wetenschap/redt-preventieve-screening-op-borstkanker-levens~a3761451/"><strong class="blue">https://www.volkskrant.nl/wetenschap/redt-preventieve-screening-op-borstkanker-levens~a3761451/</strong></a><br></p><p    ></p>
+            <p    >Here's one example domain: breast cancer screening<br></p><p    >A recurring discussion in the Dutch media is the question whether all women over 50 be screened for breast cancer. This is an analogy for classification: the instances are people and the target label is “<span class="blue">has cancer</span>” or “<span class="red">has no cancer</span>.” You may think that this is a no-brainer: the more tests we do, the more lives saved. But we need to take into account how good the classifier is, and how bad the consequences are of it making a mistake.<br></p><p    >The first problem this example illustrates is <strong>class imbalance</strong>. Unlike the classifiers we've seen so far, this example has, thankfully, far more <span class="red">negatives</span> than <span class="blue">positives</span>. In a given year the people in this age group for whom breast cancer will manifest is about half a percent. This includes men, for whom breast cancer is rare (but not impossible), so when we talk about screening for women over 50, we should probably assume about 1% positives.<br></p><p    >This means that we need to be very careful when interpreting the reported performance of any breast cancer detection method. We may think that an accuracy of 99% sounds impressive, but this is the accuracy we would get if we just called everything negative: that is, if we just diagnosed all women with no cancer.<br></p><p    >source: <a href="https://www.volkskrant.nl/wetenschap/redt-preventieve-screening-op-borstkanker-levens~a3761451/"><strong class="blue">https://www.volkskrant.nl/wetenschap/redt-preventieve-screening-op-borstkanker-levens~a3761451/</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-063">
@@ -704,14 +885,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-064">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-064" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0064.png" class="slide-image" />
 
             <figcaption>
-            <p    >So the next time you see a headline like this, your first question should be: what was the class distribution in the training data? If 90% of the cases in the training data are acquittals, this is not a very impressive result.<br></p><aside    >As it happens, in this case the classes were balanced 50/50, so 80 percent is at least notable. However, now we have a classifier trained on artificially balanced data. In a production environment (whatever that means here), the classes are likely not balanced 50/50, so this specific classifier will be of no further use.<br></aside><p    >Here is the original paper: <a href="https://peerj.com/articles/cs-93/#fn-6"><strong class="blue">https://peerj.com/articles/cs-93/#fn-6</strong></a> There are some issues with this  research beyond the class balance. </p><p    ></p>
+            <p    >So the next time you see a headline like this, your first question should be: what was the class distribution in the training data? If 90% of the cases in the training data are acquittals, this is not a very impressive result.<br></p><p    >As it happens, in this case the classes were balanced 50/50, so 80 percent is at least notable. However, now we have a classifier trained on artificially balanced data. In a production environment (whatever that means here), the classes are likely not balanced 50/50, so this specific classifier will be of no further use.<br></p><p    >Here is the original paper: <a href="https://peerj.com/articles/cs-93/#fn-6"><strong class="blue">https://peerj.com/articles/cs-93/#fn-6</strong></a> There are some issues with this  research beyond the class balance. </p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-065">
@@ -724,6 +911,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-066">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-066" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0067.svg" class="slide-image" />
@@ -732,6 +922,9 @@ slides: true
             <p    >Here are some examples of problems with cost imbalance<br></p><p    >In all these cases, one misclassification one way costs much more than a misclassification the other way. But both cost <em>something</em>. The time of an expert reviewer is not free, even though five minutes of his time may be much cheaper than the cost of letting a single fraud go unchecked. In such a case, you may decide that missing one fraud is as costly as having an expert review 500 harmless transactions. This is then the general balance you are hoping for: one false negative for every 500 false positives.<br></p><p    >If you’re lucky, both types of misclassification have the same unit, and you can turn your error (an estimate of the number of misclassifications) into a domain specific evaluation function (like estimated dollars lost, or time saved). <strong>You simply assign a cost to each type if misclassification, and multiply it by how often that misclassification occurs in the test set. </strong>The total is the evaluation function you want to minimize.<strong><br></strong></p><p    >If the units are not the same (money saved vs. lives saved) making such a choice can seem very unethical if you're literally equating a human life with an amount of money. On the other hand, any classifier you decide to deploy will <em>implicity </em>make such a choice even if you don't do the sums yourselves. Even if you decide not to use machine learning, the alternative (a doctor using their own judgement) is also a “classifier”, with its own cost balance.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-067">
@@ -744,6 +937,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-068">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-068" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0069.svg" class="slide-image" />
@@ -752,6 +948,9 @@ slides: true
             <p    >Here is a pretty imbalanced dataset (though still not as imbalanced as the cancer/not cancer problem). It looks pretty difficult. What would be a good performance on this task?</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-069">
@@ -764,14 +963,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-070">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-070" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0071.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is another way that class imbalance can screw things up for you. You might think you have a pretty decent amount of data with 10 000 instances. However if you split off a test set of 1 000 instances, you'd be left with just 50 instances of the<span class="orange red"> </span><span class="blue">positive</span> class in your data. Practically, your final evaluation will just be a question of how many of these 50 <span class="blue">positives</span> you detect. This means that you can really only have 50 “levels of performance” that you can distinguish between.<br></p><p    >You can make a bigger test set of course (and you probably should) but that leads to problems in your training data. Since you’re essentially building a detector for <span class="blue">positives</span>, it doesn’t help if you can only give it 100 examples of what a<span class="blue"> positive</span> looks like.<br></p><p    >In the next lecture, we’ll look at some tricks we can use to boost performance on such imbalanced data.</p><p    ></p>
+            <p    >Here is another way that class imbalance can screw things up for you. You might think you have a pretty decent amount of data with 10 000 instances. However if you split off a test set of 1 000 instances, you'd be left with just 50 instances of the<span class="red"> </span><span class="blue">positive</span> class in your data. Practically, your final evaluation will just be a question of how many of these 50 <span class="blue">positives</span> you detect. This means that you can really only have 50 “levels of performance” that you can distinguish between.<br></p><p    >You can make a bigger test set of course (and you probably should) but that leads to problems in your training data. Since you’re essentially building a detector for <span class="blue">positives</span>, it doesn’t help if you can only give it 100 examples of what a<span class="blue"> positive</span> looks like.<br></p><p    >In the next lecture, we’ll look at some tricks we can use to boost performance on such imbalanced data.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-071">
@@ -784,7 +989,10 @@ slides: true
        </section>
 
 
-       <section id="slide-071" class="anim">
+
+
+
+       <section id="slide-072" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-072" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0074anim0.svg" data-images="21.Methodology1.key-stage-0074anim0.svg,21.Methodology1.key-stage-0074anim1.svg,21.Methodology1.key-stage-0074anim2.svg" class="slide-image" />
 
@@ -796,15 +1004,19 @@ slides: true
 
 
 
-       <section id="slide-072" class="anim">
+
+
+       <section id="slide-073" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-073" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0075anim0.svg" data-images="21.Methodology1.key-stage-0075anim0.svg,21.Methodology1.key-stage-0075anim1.svg,21.Methodology1.key-stage-0075anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We  call accurately classified instances <strong class="blue">true positives</strong> and<strong> </strong><strong class="orange red">true negatives</strong>. Misclassifications are called <strong>false positives</strong> and <strong class="green">false negatives</strong>.<br></p><p    ></p>
+            <p    >We  call accurately classified instances <strong class="blue">true positives</strong> and<strong> </strong><strong class="red">true negatives</strong>. Misclassifications are called <strong>false positives</strong> and <strong class="green">false negatives</strong>.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -818,6 +1030,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-075">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-075" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0077.svg" class="slide-image" />
@@ -826,6 +1041,9 @@ slides: true
             <p    >Precision and recall are two metrics that express a tradeoff between the two types of mistakes.<br></p><p    ><strong>Precision</strong>: what proportion of the returned positives are actually positive?<br></p><p    ><strong>Recall</strong>: what proportion of the existing positives did we find?<br></p><p    >The idea is that we usually want to find as many positives as possible, so we should be eager to label things positive, increasing the recall, but if we are too eager, we will label lots of negatives as positive as well, which will hurt our precision. Our main challenge in designing a classifier in the face of cost and class imbalance, is to find the right tradeoff between precision and recall.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-076">
@@ -838,6 +1056,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-077">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-077" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0079.svg" class="slide-image" />
@@ -846,6 +1067,9 @@ slides: true
             <p    >There are many more metrics which you can derive from the confusion matrix. Wikipedia provides a helpful table, in case you ever come across them. For most purposes, <strong>precision</strong>, <strong>recall</strong>, <strong>accuracy</strong> and <strong>balanced accuracy</strong> are sufficient.<br></p><p    >Note that some terms, like recall, go by<em> many</em> different names.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-078">
@@ -858,7 +1082,10 @@ slides: true
        </section>
 
 
-       <section id="slide-078" class="anim">
+
+
+
+       <section id="slide-079" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-079" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0081anim0.svg" data-images="21.Methodology1.key-stage-0081anim0.svg,21.Methodology1.key-stage-0081anim1.svg,21.Methodology1.key-stage-0081anim2.svg,21.Methodology1.key-stage-0081anim3.svg,21.Methodology1.key-stage-0081anim4.svg" class="slide-image" />
 
@@ -867,6 +1094,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -879,10 +1108,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-080">
            <a class="slide-link" href="https://mlvu.github.io/lecture03#video-80">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/UrqPyE4H2bI?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/UrqPyE4H2bI"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -890,14 +1122,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-081">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-081" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0083.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-082">
@@ -910,6 +1147,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-083">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-083" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0085.svg" class="slide-image" />
@@ -920,7 +1160,10 @@ slides: true
        </section>
 
 
-       <section id="slide-083" class="anim">
+
+
+
+       <section id="slide-084" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-084" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0086anim0.svg" data-images="21.Methodology1.key-stage-0086anim0.svg,21.Methodology1.key-stage-0086anim1.svg" class="slide-image" />
 
@@ -929,6 +1172,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -942,6 +1187,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-086">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-086" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0088.svg" class="slide-image" />
@@ -950,6 +1198,9 @@ slides: true
             <p    >So far we’ve tough of FRP/TPR and precision/recall as a way to analyze a given set of models.<br></p><p    >However, what if we had a <em>single</em> classifier, but we could control how eager it was to call things <span class="blue">positive</span>? If we made it entirely timid, it would classify nothing as positive and start in the bottom left corner. As it grew more brave, it would start classifying some things as positive, but only if it was really sure, and its true positive rate would go up. If we made it even more daring, it would start getting some things wrong and both the tpr and the fpr would increase. Finally, it would end up classifying everything as positive, and end up on the top right corner. <br></p><p    >The curve this classifier would trace out, would give us an indication of its performance, <em>independent </em>of how brave or how timid we make it. How can we build such a classifier?</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-087">
@@ -962,14 +1213,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-088">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-088" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Now, we can’t test a ranking on our test data, because we don’t know what the correct ranking is. We don’t get a correct ranking, just a correct<em> labeling</em>. <br></p><p    >However, we can indicate for specific pairs that they are ranked the wrong way around: all pairs of different labels. For instance, <strong class="blue">t</strong> and <strong class="orange red">f</strong> form a ranking error: <strong class="blue">t</strong> is ranked as <span class="orange red">more negative</span> than <strong class="orange red">f</strong>, even though <strong class="blue">t</strong> is <span class="blue">positive</span> and <strong class="orange red">f</strong> is <span class="orange red">negative</span>.<br></p><p    >Note: a ranking error is a <em>pair </em>of instances that is ranked the wrong way around. A single instance can be part of multiple ranking errors.</p><p    ></p>
+            <p    >Now, we can’t test a ranking on our test data, because we don’t know what the correct ranking is. We don’t get a correct ranking, just a correct<em> labeling</em>. <br></p><p    >However, we can indicate for specific pairs that they are ranked the wrong way around: all pairs of different labels. For instance, <strong class="blue">t</strong> and <strong class="red">f</strong> form a ranking error: <strong class="blue">t</strong> is ranked as <span class="red">more negative</span> than <strong class="red">f</strong>, even though <strong class="blue">t</strong> is <span class="blue">positive</span> and <strong class="red">f</strong> is <span class="red">negative</span>.<br></p><p    >Note: a ranking error is a <em>pair </em>of instances that is ranked the wrong way around. A single instance can be part of multiple ranking errors.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-089">
@@ -977,12 +1234,15 @@ slides: true
             <img src="21.Methodology1.key-stage-0091.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can make a big matrix of all the pairs for which we know how they should be ranked: <span>negative </span>points on the horizontal axis, <span>positive</span> on the vertical. The more sure we are that a point is positive, the closer we put it to the bottom left corner. This is called a <strong>coverage matrix</strong>. We color a cell <span class="green">green</span> if the corresponding points are ranked the right way round, and<span class="orange red"> red</span> if they are ranked the wrong way round.<br></p><p    >Note that the proportion of this table that is <span class="orange red">red</span>, is the probability of making a ranking error.</p><p    ></p>
+            <p    >We can make a big matrix of all the pairs for which we know how they should be ranked: <span>negative </span>points on the horizontal axis, <span>positive</span> on the vertical. The more sure we are that a point is positive, the closer we put it to the bottom left corner. This is called a <strong>coverage matrix</strong>. We color a cell <span class="green">green</span> if the corresponding points are ranked the right way round, and<span class="red"> red</span> if they are ranked the wrong way round.<br></p><p    >Note that the proportion of this table that is <span class="red">red</span>, is the probability of making a ranking error.</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-089" class="anim">
+
+
+
+       <section id="slide-090" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-090" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0092anim0.svg" data-images="21.Methodology1.key-stage-0092anim0.svg,21.Methodology1.key-stage-0092anim1.svg,21.Methodology1.key-stage-0092anim2.svg,21.Methodology1.key-stage-0092anim3.svg,21.Methodology1.key-stage-0092anim4.svg,21.Methodology1.key-stage-0092anim5.svg,21.Methodology1.key-stage-0092anim6.svg" class="slide-image" />
 
@@ -991,6 +1251,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1004,6 +1266,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-092">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-092" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0094.svg" class="slide-image" />
@@ -1012,6 +1277,9 @@ slides: true
             <p    ><br></p><p    >If we draw a line between two classifiers we know we can create, we can also create a classifier for every point on that line simply by picking the output of one of the classifiers at random. If we pick with 50/50 probability we end up precisely halfway between the two.<br></p><p    >If we vary the probability we can get closer to either classifier.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-093">
@@ -1024,6 +1292,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-094">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-094" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0096.svg" class="slide-image" />
@@ -1034,7 +1305,10 @@ slides: true
        </section>
 
 
-       <section id="slide-094" class="anim">
+
+
+
+       <section id="slide-095" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-095" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0097anim0.svg" data-images="21.Methodology1.key-stage-0097anim0.svg,21.Methodology1.key-stage-0097anim1.svg" class="slide-image" />
 
@@ -1046,14 +1320,19 @@ slides: true
 
 
 
+
+
        <section id="slide-096">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-096" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0098.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this example we have an instance space that has been split into four segments by a decision tree. We rank the segments by the proportion of positive points. We then put all points in one region on the same level in the ranking.<br></p><p    >In this example, <strong class="orange red">b</strong> is more <span class="orange red">negative</span> than <strong class="orange red">a</strong>, because <strong class="orange red">b</strong>’s segment contains only negative examples, whereas <strong class="orange red">a</strong>’s segment contains a mix of<span class="blue"> positive </span>and <span class="orange red">negative</span> examples.</p><p    ></p>
+            <p    >In this example we have an instance space that has been split into four segments by a decision tree. We rank the segments by the proportion of positive points. We then put all points in one region on the same level in the ranking.<br></p><p    >In this example, <strong class="red">b</strong> is more <span class="red">negative</span> than <strong class="red">a</strong>, because <strong class="red">b</strong>’s segment contains only negative examples, whereas <strong class="red">a</strong>’s segment contains a mix of<span class="blue"> positive </span>and <span class="red">negative</span> examples.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-097">
@@ -1061,9 +1340,12 @@ slides: true
             <img src="21.Methodology1.key-stage-0099.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This means that for some pairs (like <strong class="orange red">f</strong>,<strong class="blue">z</strong>), the classifier ranks them as “the same”. We’ll color these cells <strong class="orange">orange</strong> in the coverage matrix. <br></p><p    >For large datasets, these regions will not contribute much to the  total area under the curve.</p><p    ></p>
+            <p    >This means that for some pairs (like <strong class="red">f</strong>,<strong class="blue">z</strong>), the classifier ranks them as “the same”. We’ll color these cells <strong class="orange">orange</strong> in the coverage matrix. <br></p><p    >For large datasets, these regions will not contribute much to the  total area under the curve.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-098">
@@ -1076,6 +1358,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-099">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-099" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0101.png" class="slide-image" />
@@ -1084,6 +1369,9 @@ slides: true
             <p    >An alternative to the ROC is the <strong>precision/recall curve</strong>. It works in exactly the same way, but has precision and recall on the axes.<br></p><p    >As you can see in this tweet, in many settings the PR curve can be much more informative, especially when you’re a plotting the curves. Practically, it’s little effort to just plot both, and judge which one is more informative. <br></p><p    >ROC has the benefit of an intuitive interpretation for the AUC (the probability of ordering a random pair the right way round). I haven’t yet found a similar interpretation for the PR-AUC.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-100">
@@ -1096,6 +1384,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-101">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-101" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0103.svg" class="slide-image" />
@@ -1105,10 +1396,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-101">
            <a class="slide-link" href="https://mlvu.github.io/lecture03#video-101">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/XJ_StAFefUk?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/XJ_StAFefUk"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1116,14 +1410,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-102">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-102" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0104.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr><br></p><p    >Model evaluation is not just about showing how well your model works. It’s also about working out what it <em>means</em> to get a certain performance. And more importantly, what it doesn’t mean.</p><p    ></p>
+            <p    ><br><br></p><p    >Model evaluation is not just about showing how well your model works. It’s also about working out what it <em>means</em> to get a certain performance. And more importantly, what it doesn’t mean.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-103">
@@ -1136,6 +1435,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-104">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-104" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0106.svg" class="slide-image" />
@@ -1144,6 +1446,9 @@ slides: true
             <p    >Like in the previous video, we’ll look at some important questions to ask yourself when you come up against a topic like this. Let’s ask the same questions again (with some new ones thrown in for good measure).</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-105">
@@ -1156,6 +1461,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-106">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-106" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0108.png" class="slide-image" />
@@ -1164,6 +1472,9 @@ slides: true
             <p    >The first thing to be aware of is what you’re looking at. This is especially important with modern systems that can look at raw image data without extracting specific, interpretable features.<br></p><p    >Here a visualization of a classifier looking at a chest x-ray and making a prediction of whether the patient has Cardiomegaly (an enlarged heart). The positive values in the heat map indicate that those regions are important for the current classification. The largest values are near the heart, which is what we expect. <br></p><p    >However, the classifier is also getting a positive contribution from the “PORTABLE” label in the top right corner and the marker on the right. These indicate that the x-ray was taken with a portable scanner. Such scanners are only used when a patient’s condition has progressed so far that they can’t leave their house. In such cases it’s a safe bet that they have Cardiomegaly.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-107">
@@ -1176,15 +1487,20 @@ slides: true
        </section>
 
 
-       <section id="slide-107" class="anim">
+
+
+
+       <section id="slide-108" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-108" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0110anim0.svg" data-images="21.Methodology1.key-stage-0110anim0.svg,21.Methodology1.key-stage-0110anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >A related question you should ask when you find that you can successfully predict X from Y is <strong>which causes which</strong>?<br></p><p    >The image on the left shows a feature that researchers found when attempting to predict criminality based on a dataset of faces of criminals and non-criminals. One of their  findings is that the angle made by the corners of the mouth and the tip of the nose is a highly predictive feature. The authors suggest that such facial features are indicative of criminality<br></p><p    >However, when we look at the dataset we see that it’s not the features of the face, so much as the expression that differs. In the “non-criminal” photographs, the subjects hold a light smile, as is common, whereas in the criminal set the expressions have a more explicitly relaxed jaw. What we’re seeing here are not facial <em>features</em>, so much as facial <em>expressions</em>.<br></p><p    >This is important, because it changes the interpretation of the results completely. The physiognomical interpretation is that there is a biological mechanism that causes both criminality and a particular wideness of the mouth, and that this is determined at birth. The alternative explanation is that when people with a criminal background have their photographs taken, they are more likely to prefer a menacing expression than the average person is.<br></p><p    >Note, incidentally, that the photos of criminals are not mugshots. The are described as “normal ID photos” by the authors.<br></p><p    >Further discussion: <a href="https://www.callingbullshit.org/case_studies/case_study_criminal_machine_learning.html"><strong>https://www.callingbullshit.org/case_studies/case_study_criminal_machine_learning.html</strong></a><br></p><p    ><br></p><p    ></p>
+            <p    >A related question you should ask when you find that you can successfully predict X from Y is <strong>which causes which</strong>?<br></p><p    >The image on the left, from [1], shows a feature that researchers found when attempting to predict criminality based on a dataset of faces of criminals and non-criminals. One of their  findings is that the angle made by the corners of the mouth and the tip of the nose is a highly predictive feature. The authors suggest that such facial features are indicative of criminality<br></p><p    >However, when we look at the dataset we see that it’s not the features of the face, so much as the expression that differs. In the “non-criminal” photographs, the subjects hold a light smile, as is common, whereas in the criminal set the expressions have a more explicitly relaxed jaw. What we’re seeing here are not facial <em>features</em>, so much as facial <em>expressions</em>.<br></p><p    >This is important, because it changes the interpretation of the results completely. The physiognomical interpretation is that there is a biological mechanism that causes both criminality and a particular wideness of the mouth, and that this is determined at birth. The alternative explanation is that when people with a criminal background have their photographs taken, they are more likely to prefer a menacing expression than the average person is.<br></p><aside    >Note, incidentally, that the photos of criminals are not mugshots. The are described as “normal ID photos” by the authors.<br></aside><p    >Further discussion: <a href="https://www.callingbullshit.org/case_studies/case_study_criminal_machine_learning.html"><strong>https://www.callingbullshit.org/case_studies/case_study_criminal_machine_learning.html</strong></a><br></p><p    >[1] Wu, X., &amp; Zhang, X. (2016). Automated inference on criminality using face images. arXiv preprint arXiv:1611.04135, 4038-4052.<br></p><p    ><br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1198,6 +1514,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-110">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-110" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0112.svg" class="slide-image" />
@@ -1208,15 +1527,20 @@ slides: true
        </section>
 
 
-       <section id="slide-110" class="anim">
+
+
+
+       <section id="slide-111" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-111" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0113anim0.svg" data-images="21.Methodology1.key-stage-0113anim0.svg,21.Methodology1.key-stage-0113anim1.svg,21.Methodology1.key-stage-0113anim2.svg,21.Methodology1.key-stage-0113anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >So, what kind of hypotheses can we think of for what is causing the performance of the classifier?<br></p><p    >The authors observe that in their dataset the heterosexual men are more likely have facial hair. That’s most likely to be a grooming choice, based on the differences in gay and heterosexual subcultures. <br></p><p    >For other correlations, such as that between sexuality and nose length, the authors suggest the prenatal hormone theory, a theory that relates prenatal hormone levels in the mother with the sexuality of the subject. In short, a biological mechanism that is responsible for both the (slight) variation in facial features and the variation in sexual preference.<br></p><p    >But that’s not the only possibility. In the previous slide, we saw that it’s difficult to separate facial features from facial expressions. However, even if we somehow eliminate the expression, that doesn’t mean that every facial feature we see is determined at birth. For instance, the roundness of the jaw is also influenced by body weight, which is strongly influenced by social class (for instance, whether somebody grows up poor or rich). And while there’s no evidence that social class influences the probability of <em>being gay</em>, it most likely does influence how likely a gay person is to end up setting up a dating profile.<br></p><p    >Note that these are purely hypotheses, intended to show which kinds of causalities can cause these correlations. I’m not in the least bit qualified to say which is more likely to be true.<br></p><p    ></p>
+            <p    >So, what kind of hypotheses can we think of for what is causing the performance of the classifier?<br></p><p    >The authors observe that in their dataset the heterosexual men are more likely have facial hair. That’s most likely to be a grooming choice, based on the differences in gay and heterosexual subcultures. <br></p><p    >For other correlations, such as that between sexuality and nose length, the authors suggest the prenatal hormone theory, a theory that relates prenatal hormone levels in the mother with the sexuality of the subject. In short, a biological mechanism that is responsible for both the (slight) variation in facial features and the variation in sexual preference.<br></p><p    >But that’s not the only possibility. In the previous slide, we saw that it’s difficult to separate facial features from facial expressions. However, even if we somehow eliminate the expression, that doesn’t mean that every facial feature we see is determined at birth. For instance, the roundness of the jaw is also influenced by body weight, which is strongly influenced by social class (for instance, whether somebody grows up poor or rich). And while there’s no evidence that social class influences the probability of <em>being gay</em>, it most likely does influence how likely a gay person is to end up setting up a dating profile.<br></p><aside    >Note that these are purely hypotheses, intended to show which kinds of causalities can cause these correlations. I’m not in the least bit qualified to say which is more likely to be true.<br></aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1230,6 +1554,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-113">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-113" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0115.png" class="slide-image" />
@@ -1240,7 +1567,10 @@ slides: true
        </section>
 
 
-       <section id="slide-113" class="anim">
+
+
+
+       <section id="slide-114" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-114" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0116anim0.svg" data-images="21.Methodology1.key-stage-0116anim0.svg,21.Methodology1.key-stage-0116anim1.svg,21.Methodology1.key-stage-0116anim2.svg,21.Methodology1.key-stage-0116anim3.svg,21.Methodology1.key-stage-0116anim4.svg,21.Methodology1.key-stage-0116anim5.svg" class="slide-image" />
 
@@ -1249,6 +1579,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1262,6 +1594,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-116">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-116" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0118.svg" class="slide-image" />
@@ -1270,6 +1605,9 @@ slides: true
             <p    >Here are the histograms per sex or gender for the ANSUR data. There is a big discrepancy, but notice also how big the area of overlap is. <br></p><p    >This is always what we should imagine when people say that property A is predictive for attribute B. Just because there’s some difference between the populations doesn’t mean that there are no short men or tall women. And most importantly it doesn’t mean that being short makes you in some way more feminine or being tall makes you in some way more masculine.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-117">
@@ -1282,6 +1620,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-118">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-118" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0120.svg" class="slide-image" />
@@ -1292,7 +1633,10 @@ slides: true
        </section>
 
 
-       <section id="slide-118" class="anim">
+
+
+
+       <section id="slide-119" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-119" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0121anim0.svg" data-images="21.Methodology1.key-stage-0121anim0.svg,21.Methodology1.key-stage-0121anim1.svg" class="slide-image" />
 
@@ -1301,6 +1645,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -1313,10 +1659,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-120">
            <a class="slide-link" href="https://mlvu.github.io/lecture03#video-120">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/gnmCkRYrlEA?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/gnmCkRYrlEA"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1324,14 +1673,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-121">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-121" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0123.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-122">
@@ -1344,6 +1698,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-123">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-123" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0125.svg" class="slide-image" />
@@ -1352,6 +1709,9 @@ slides: true
             <p    >In the 90s two researchers, named Wolpert and MacReady published a proof of an important theorem. The details are technical, but it basically stated that if we look at optimization algorithms (of which machine learning algorithms are a specific instance), by averaging their performance over all possible tasks, they all perform exactly the same.  That is, if we want to know which algorithm is the best independent of the task, we canot tel them apart by their performance.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-124">
@@ -1364,6 +1724,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-125">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-125" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0127.svg" class="slide-image" />
@@ -1372,6 +1735,9 @@ slides: true
             <p    >Here is another example, that should show you what a strange result the no free lunch theorem is. The common practice of dataset splitting and choosing a model by its test set performance is also an algorithm. We do it manually, but we could also program it into a computer. Let's say we want to choose between two methods A and B. We can follow the normal approach: split the data, apply both and choose whichever performs best. Call this method <span class="orange">C</span>.<br></p><p    >We can also do a ridiculous, counter-intuitive thing and choose the method that performs <em>worst</em>. Call this method <span class="blue">D</span>.<br></p><p    >The no free lunch theorem says that method <span class="blue">D</span> should outperform method <span class="orange">C</span> just as often as the other way around. <br></p><p    >The kind of datasets where this happens are the ones where the test set happens to behave very differently from the training set. Since we usually make the split randomly, these would be very unusual or unlikely datasets, and we feel justified in using method <span class="orange">C</span>. Still, this only works because we are able to make certain <em>assumptions</em> about our data.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-126">
@@ -1384,6 +1750,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-127">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-127" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0129.svg" class="slide-image" />
@@ -1392,6 +1761,9 @@ slides: true
             <p    >This is an increasingly important phrase in machine learning. The inductive bias of a method or model are those assumptions about the domain that are, explicitly or implicitly, hardcoded into the model.<br></p><p    >For instance, in a linear regression model, the assumption is that all instances lie on a line (or the higher-dimensional equivalent). If this assumption isn't violated too much, the model is a good fit for the data. If the assumption is violated very badly,  we need to look for ways to change the inductive bias, for instance by picking a different model, or by enriching the linear model with extra features, like we will do in the next lecture.<br></p><p    >We can summarize the business of machine learning and data science as follows. The business of the machine learning researcher is create a variety of models with helpful inductive biases. The business of the data scientist is to figure out which of the available inductive biases is helpful for any given problem.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-128">
@@ -1404,6 +1776,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-129">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-129" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0131.svg" class="slide-image" />
@@ -1412,6 +1787,9 @@ slides: true
             <p    >We don't have too many practical ideas about the properties of such a universal distribution, but one thing that crops up a lot is that<strong> simple data</strong> is necessarily more likely than complex data.<br></p><p    >This suggests that in learning we should have a <strong>simplicity bias</strong>. If there are two models that both fit the data, one very simple, like a linear model, and one very complex, like a very big decision tree, then it's more likely that the simple model generated the data.<br></p><p    >Such simplicity biases can be implemented in many different ways, and we'll see some concrete examples as the course progresses.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-130">
@@ -1424,6 +1802,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-131">
             <a class="slide-link" href="https://mlvu.github.io/lecture03#slide-131" title="Link to this slide.">link here</a>
             <img src="21.Methodology1.key-stage-0133.svg" class="slide-image" />
@@ -1432,5 +1813,6 @@ slides: true
             <p    ></p>
             </figcaption>
        </section>
+
 
 </article>

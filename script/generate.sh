@@ -1,12 +1,12 @@
 #!/bin/bash
 #
 
-python generate.py \
-  --title "Course details" \
-  --dst ../details \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2023.key" \
-  --base-url "https://mlvu.github.io/details" \
-  --pdf-link "https://mlvu.github.io/lectures/Course_details.2023.pdf"
+#python generate.py \
+#  --title "Course details" \
+#  --dst ../details \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2023.key" \
+#  --base-url "https://mlvu.github.io/details" \
+#  --pdf-link "https://mlvu.github.io/lectures/Course_details.2023.pdf"
 
 #python generate.py \
 #  --title "Lecture 0: Preliminaries" \
@@ -29,12 +29,12 @@ python generate.py \
 #  --base-url "http://mlvu.github.io/lecture02" \
 #  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 3: Model evaluation" \
-#  --dst ../lecture03 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
-#  --base-url "https://mlvu.github.io/lecture03" \
-#  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
+python generate.py \
+  --title "Lecture 3: Model evaluation" \
+  --dst ../lecture03 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
+  --base-url "https://mlvu.github.io/lecture03" \
+  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 4: Probabilistic models" \
