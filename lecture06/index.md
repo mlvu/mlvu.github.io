@@ -8,7 +8,7 @@ slides: true
         <li class="name">Lecture 6: Beyond linear models</li>
                 <li><a href="#video-000">Neural networks</a></li>
                 <li><a href="#video-016">Backpropagation</a></li>
-                <li><a href="#video-038">Support vector machines</a></li>
+                <li><a href="#video-038">Maximum margin loss</a></li>
                 <li><a href="#slide-074">Support vector machines*<br></a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf">PDF</a></li>
     </ul>

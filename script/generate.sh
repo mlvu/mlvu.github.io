@@ -114,7 +114,15 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/social-impact" \
 #  --pdf-link "https://mlvu.github.io/lectures/social-impact-dossier.pdf"
 
+python generate.py \
+  --title "Support vector machines" \
+  --dst ../svms \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/SVMs/SVMs.key" \
+  --base-url "https://mlvu.github.io/svms" \
+  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
+
+
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction details
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction details svms
 git commit -m "Auto-update."
 git push
