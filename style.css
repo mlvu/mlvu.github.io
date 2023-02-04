@@ -1156,9 +1156,9 @@ nav.lectures div.l3::before {
 }
 
 nav.lectures div.l4::before {
-    background-image: url('/lecture04/31.ProbabilisticModels1.key-stage-0027.svg');
-    background-position: -24em -12.5em;
-    background-size: 370%;
+    background-image: url('/lecture04/31.ProbabilisticModels1.key-stage-0005.svg');
+    background-position: -25em -4em;
+    background-size: 530%;
 }
 
 nav.lectures div.l5::before {
@@ -1222,7 +1222,7 @@ nav.lectures div.si::before {
 }
 
 nav.lectures div.svms::before {
-    background-image: url('/support-vector-machines/...');
-    background-position: -7em -0em;
-    background-size: 200%;
+    background-image: url('/svms/SVMs.key-stage-0060.png');
+    background-position: -24em -13em;
+    background-size: 500%;
 }
