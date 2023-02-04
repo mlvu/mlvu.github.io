@@ -20,7 +20,7 @@ slides: true
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/H7Ew_u4z40g?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/H7Ew_u4z40g"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -35,7 +35,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr><br></p><p    ></p>
+            <p    ><br><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -427,7 +427,7 @@ slides: true
        <section class="video" id="video-030">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-30">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/KiJ1f5Lyh5s?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/KiJ1f5Lyh5s"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -442,7 +442,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0031.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr><br></p><p    ><br></p><p    ></p>
+            <p    ><br><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -625,7 +625,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0045anim0.png" data-images="22.Methodology2.key-stage-0045anim0.png,22.Methodology2.key-stage-0045anim1.png" class="slide-image" />
 
             <figcaption>
-            <p    >One more example. In this dataset points are colored red if the distance to the origin is less than 0.7. Again, this problem is not at all linearly separable. <br></p><p    >Using Pythagoras, however, we can express how the classes are decided: if x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> &lt; 0.7<sup>2 </sup>then we classify as<span class="orange red"> red</span>, otherwise as <span class="blue">blue</span>. This is a linear decision boundary for the features x<sub>1</sub><sup>2</sup> and x<sub>2</sub><sup>2</sup>. </p><p    ></p>
+            <p    >One more example. In this dataset points are colored red if the distance to the origin is less than 0.7. Again, this problem is not at all linearly separable. <br></p><p    >Using Pythagoras, however, we can express how the classes are decided: if x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> &lt; 0.7<sup>2 </sup>then we classify as<span class="red"> red</span>, otherwise as <span class="blue">blue</span>. This is a linear decision boundary for the features x<sub>1</sub><sup>2</sup> and x<sub>2</sub><sup>2</sup>. </p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -728,7 +728,7 @@ slides: true
        <section class="video" id="video-052">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-52">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/Q0F13NPcoaU?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/Q0F13NPcoaU"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -743,7 +743,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0053.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr><br></p><p    ><br></p><p    ></p>
+            <p    ><br><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -838,7 +838,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0060anim0.svg" data-images="22.Methodology2.key-stage-0060anim0.svg,22.Methodology2.key-stage-0060anim1.svg,22.Methodology2.key-stage-0060anim2.svg,22.Methodology2.key-stage-0060anim3.png,22.Methodology2.key-stage-0060anim4.png,22.Methodology2.key-stage-0060anim5.png" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what standardization looks like if we apply it to data with two features. If the data is <em>uncorrelated</em>, we are reducing it to a nice spherical distribution, centered on the origin, with the same variance in each direction. Exactly what data from a <strong>multivariate standard normal distribution</strong> looks like.<br></p><p    >If, however, our data is <span class="orange red">correlated</span>, that is; knowing the value of one feature helps us predict the value of the other, we get a different result. This is because we standardize each feature <em>independently</em>, and the features are not independent. Is there a way to achieve the same effect with the correlated data? Can we transform the features somehow so that it looks like they came from a distribution like the one top right? This is what <strong>whitening</strong> can do for us.<br></p><p    >Note that this is not usually necessary in practice. Normalizing or standardizing each feature independently is usually fine, <span>especially if your model is powerful enough to learn correlations</span>. <span>However, whitening, normalizing across features, can sometimes give you a little boost. It will also help us understand the PCA method, which we will discuss in the next video.</span></p><p    ><span></span></p>
+            <p    >Here’s what standardization looks like if we apply it to data with two features. If the data is <em>uncorrelated</em>, we are reducing it to a nice spherical distribution, centered on the origin, with the same variance in each direction. Exactly what data from a <strong>multivariate standard normal distribution</strong> looks like.<br></p><p    >If, however, our data is <span class="red">correlated</span>, that is; knowing the value of one feature helps us predict the value of the other, we get a different result. This is because we standardize each feature <em>independently</em>, and the features are not independent. Is there a way to achieve the same effect with the correlated data? Can we transform the features somehow so that it looks like they came from a distribution like the one top right? This is what <strong>whitening</strong> can do for us.<br></p><p    >Note that this is not usually necessary in practice. Normalizing or standardizing each feature independently is usually fine, <span>especially if your model is powerful enough to learn correlations</span>. <span>However, whitening, normalizing across features, can sometimes give you a little boost. It will also help us understand the PCA method, which we will discuss in the next video.</span></p><p    ><span></span></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -866,7 +866,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0062anim0.svg" data-images="22.Methodology2.key-stage-0062anim0.svg,22.Methodology2.key-stage-0062anim1.svg,22.Methodology2.key-stage-0062anim2.svg,22.Methodology2.key-stage-0062anim3.svg,22.Methodology2.key-stage-0062anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >First, a quick reminder of how summing vectors works. We stick the tail of vector <strong>b</strong> onto the head of vector <strong>a</strong> and draw a line from the tail of <strong>a</strong> to the head of <strong>b</strong>. The point where we end up is the tip of the vector <strong class="orange red">a</strong> + <strong class="green">b</strong>.</p><p    ></p>
+            <p    >First, a quick reminder of how summing vectors works. We stick the tail of vector <strong>b</strong> onto the head of vector <strong>a</strong> and draw a line from the tail of <strong>a</strong> to the head of <strong>b</strong>. The point where we end up is the tip of the vector <strong class="red">a</strong> + <strong class="green">b</strong>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -880,7 +880,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0063.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can see our basic Cartesian coordinate system as made up entirely of the two vectors (1 0) and (0 1). To describe a point in the place, we just sum a number of copies of these vectors.<br></p><p    >Every point in the plane is just a linear combination of these two. A coordinate like (3, 2) means: “sum three copies of<span class="orange red"> </span><strong class="orange red">a</strong> and add them to two copies of <strong class="green">b</strong>.” We call these <strong>basis vectors</strong>: vectors that allow us to describe all points in a space in terms of a multiple of each of the basis vectors. The set of points that can be described in this way is the space <strong>spanned</strong> by the basis vectors.</p><p    ></p>
+            <p    >We can see our basic Cartesian coordinate system as made up entirely of the two vectors (1 0) and (0 1). To describe a point in the place, we just sum a number of copies of these vectors.<br></p><p    >Every point in the plane is just a linear combination of these two. A coordinate like (3, 2) means: “sum three copies of<span class="red"> </span><strong class="red">a</strong> and add them to two copies of <strong class="green">b</strong>.” We call these <strong>basis vectors</strong>: vectors that allow us to describe all points in a space in terms of a multiple of each of the basis vectors. The set of points that can be described in this way is the space <strong>spanned</strong> by the basis vectors.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1035,7 +1035,7 @@ slides: true
        <section class="video" id="video-074">
            <a class="slide-link" href="https://mlvu.github.io/lecture05#video-74">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/JC5rb5FmTjk?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/JC5rb5FmTjk"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -1050,7 +1050,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1131,7 +1131,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0082anim0.svg" data-images="22.Methodology2.key-stage-0082anim0.svg,22.Methodology2.key-stage-0082anim1.svg,22.Methodology2.key-stage-0082anim2.svg,22.Methodology2.key-stage-0082anim3.svg,22.Methodology2.key-stage-0082anim4.svg,22.Methodology2.key-stage-0082anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Since we're focusing on a single feature for now, we'll drop the subscript and call this feature "z". This is a single scalar value representing our entire instance <strong class="blue">x</strong>.<br></p><p    >The way we’ll find the parameters <strong class="orange">c'</strong> for our reduction is by optimizing the <strong>reconstruction error</strong>. We’ll come up with some function that reconstructs our data from the reduced point z. The closer this reconstruction is to the original point, the better. It hopefully makes some intuitive sense that the better we can reconstruct <strong class="blue">x</strong> from z, the more information from <strong class="blue">x</strong> has been retained in z.<br></p><p    >To keep things simple,<em> both</em> the function that reduces the data and the function that reconstructs the data should be <strong>linear</strong>. This means that our reconstruction is just some second vector c, which we also get to choose, multiplied by the reduced feature z. We’ll also assume that the data is <strong>mean-centered</strong>, so that we won’t need to apply any translations: the mean of the original data, the reduced data, and the reconstructed data is zero or the zero vector.<br></p><aside    >If the data isn't meand-centered, we just subtract the mean from each insatance before we start the principal component analysis.<br></aside><p    >To recap, under these constraints, the reduction function consist of taking the dot product of our vector with some parameter vector <strong class="orange">c’</strong>, and the reconstruction function consists of multiplying our reduced representation with some other parameter vector <strong class="orange">c</strong>.<br></p><p    >We will try to choose our parameters <strong class="orange">c'</strong> and <strong class="orange">c</strong> in such a way that <strong class="blue">x</strong> is as close as possible to <strong class="blue">x'</strong>. Before we figure out how to do this, however, we can simplify our problem. We can show that for the optimal solution, <strong>the vectors </strong><strong class="orange">c'</strong><strong> and </strong><strong class="orange">c</strong><strong> must be the same</strong>. We'll show that first.<br></p><p    ></p>
+            <p    >Since we're focusing on a single feature for now, we'll drop the subscript and call this feature "z". This is a single scalar value representing our entire instance <strong class="blue">x</strong>.<br></p><p    >The way we’ll find the parameters <strong class="orange">c'</strong> for our reduction is by optimizing the <strong>reconstruction error</strong>. We’ll come up with some function that reconstructs our data from the reduced point z. The closer this reconstruction is to the original point, the better. It hopefully makes some intuitive sense that the better we can reconstruct <strong class="blue">x</strong> from z, the more information from <strong class="blue">x</strong> has been retained in z.<br></p><p    >To keep things simple,<em> both</em> the function that reduces the data and the function that reconstructs the data should be <strong>linear</strong>. This means that our reconstruction is just some second vector c, which we also get to choose, multiplied by the reduced feature z. We’ll also assume that the data is <strong>mean-centered</strong>, so that we won’t need to apply any translations: the mean of the original data, the reduced data, and the reconstructed data is zero or the zero vector.<br></p><aside    >If the data isn't mean-centered, we just subtract the mean from each instance before we start the principal component analysis.<br></aside><p    >To recap, under these constraints, the reduction function consist of taking the dot product of our vector with some parameter vector <strong class="orange">c’</strong>, and the reconstruction function consists of multiplying our reduced representation with some other parameter vector <strong class="orange">c</strong>.<br></p><p    >We will try to choose our parameters <strong class="orange">c'</strong> and <strong class="orange">c</strong> in such a way that <strong class="blue">x</strong> is as close as possible to <strong class="blue">x'</strong>. Before we figure out how to do this, however, we can simplify our problem. We can show that for the optimal solution, <strong>the vectors </strong><strong class="orange">c'</strong><strong> and </strong><strong class="orange">c</strong><strong> must be the same</strong>. We'll show that first.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -1173,7 +1173,7 @@ slides: true
             <img src="22.Methodology2.key-stage-0085anim0.svg" data-images="22.Methodology2.key-stage-0085anim0.svg,22.Methodology2.key-stage-0085anim1.svg,22.Methodology2.key-stage-0085anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >What this tells us, is that the orthogonal projection of <strong class="blue">x</strong> onto <strong class="orange">c</strong> is found by taking the dot product of <strong class="blue">x</strong> and <strong class="orange">c</strong>. Since <strong class="orange">c</strong> has length one, this is the value that we want to multiply <strong>c</strong> by to get to <strong>x’</strong>.<br></p><p    >When we started we assumed that we had two parameter vectors: <strong class="orange">c</strong> for the reconstruction, and <strong class="orange">c'</strong> for the reduction. Now we find that whatever we choose for <strong class="orange">c</strong>, setting <strong class="orange">c'</strong> = <strong class="orange">c</strong> provides the optimal value of z.<br></p><p    ></p>
+            <p    >What this tells us, is that the orthogonal projection of <strong class="blue">x</strong> onto <strong class="orange">c</strong> is found by taking the dot product of <strong class="blue">x</strong> and <strong class="orange">c</strong>. Since <strong class="orange">c</strong> has length one, this is the value that we want to multiply <strong>c</strong> by to get to <strong>x’</strong>.<br></p><p    >When we started, we assumed that we had two parameter vectors: <strong class="orange">c</strong> for the reconstruction, and <strong class="orange">c'</strong> for the reduction. Now we find that whatever we choose for <strong class="orange">c</strong>, setting <strong class="orange">c'</strong> = <strong class="orange">c</strong> provides the optimal value of z.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
