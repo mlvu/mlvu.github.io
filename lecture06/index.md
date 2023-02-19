@@ -7,7 +7,7 @@ slides: true
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 6: Beyond linear models</li>
                 <li><a href="#video-000">Neural networks</a></li>
-                <li><a href="#video-017">Backpropagation</a></li>
+                <li><a href="#video-017">Local and global derivatives</a></li>
                 <li><a href="#video-030">Backpropagation</a></li>
                 <li><a href="#video-041">Maximum margin loss</a></li>
                 <li><a href="#slide-077">Support vector machines*<br></a></li>
