@@ -507,7 +507,7 @@ slides: true
             <img src="32.Linear.key-stage-0035.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here are the computations represented by the diamond nodes.</p><p    ></p>
+            <p    >Here are the computations represented by the diamond nodes. We’ve </p><p    ></p>
             </figcaption>
        </section>
 
@@ -586,7 +586,7 @@ slides: true
 
        <section id="slide-040" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture06#slide-040" title="Link to this slide.">link here</a>
-            <img src="32.Linear.key-stage-0041anim0.svg" data-images="32.Linear.key-stage-0041anim0.svg,32.Linear.key-stage-0041anim1.svg,32.Linear.key-stage-0041anim10.svg,32.Linear.key-stage-0041anim11.svg,32.Linear.key-stage-0041anim12.svg,32.Linear.key-stage-0041anim13.svg,32.Linear.key-stage-0041anim14.svg,32.Linear.key-stage-0041anim2.svg,32.Linear.key-stage-0041anim3.svg,32.Linear.key-stage-0041anim4.svg,32.Linear.key-stage-0041anim5.svg,32.Linear.key-stage-0041anim6.svg,32.Linear.key-stage-0041anim7.svg,32.Linear.key-stage-0041anim8.svg,32.Linear.key-stage-0041anim9.svg" class="slide-image" />
+            <img src="32.Linear.key-stage-0041anim0.svg" data-images="32.Linear.key-stage-0041anim0.svg,32.Linear.key-stage-0041anim1.svg,32.Linear.key-stage-0041anim10.svg,32.Linear.key-stage-0041anim11.svg,32.Linear.key-stage-0041anim12.svg,32.Linear.key-stage-0041anim13.svg,32.Linear.key-stage-0041anim14.svg,32.Linear.key-stage-0041anim15.svg,32.Linear.key-stage-0041anim2.svg,32.Linear.key-stage-0041anim3.svg,32.Linear.key-stage-0041anim4.svg,32.Linear.key-stage-0041anim5.svg,32.Linear.key-stage-0041anim6.svg,32.Linear.key-stage-0041anim7.svg,32.Linear.key-stage-0041anim8.svg,32.Linear.key-stage-0041anim9.svg" class="slide-image" />
 
             <figcaption>
             <p    >For example, here is how backpropagation looks in pseudocode for our neural network (the diagram only shows part of the computation graph, but the algorithm is for the whole thing). In the algorithm dq is always the derivative of the loss with respect to the value q.<br></p><p    >We start at the top, with <span class="red">dy</span>. Then, we move down to the inputs of the computation that resulted in y. For each we compute their derivative by multiplying the derivative for the loss wrt the output by the local derivative of the computation.<br></p><p    >Once we’ve made our way down to the bottom of the graph, we’ve computed the derivatives for every node in the graph.<br></p><p    ></p>
