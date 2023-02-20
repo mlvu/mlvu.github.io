@@ -8,12 +8,12 @@
 #  --base-url "https://mlvu.github.io/details" \
 #  --pdf-link "https://mlvu.github.io/lectures/Course_details.2023.pdf"
 
-#python generate.py \
-#  --title "Lecture 0: Preliminaries" \
-#  --dst ../preliminaries \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
-#  --base-url "https://mlvu.github.io/preliminaries" \
-#  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
+python generate.py \
+  --title "Lecture 0: Preliminaries" \
+  --dst ../preliminaries \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
+  --base-url "https://mlvu.github.io/preliminaries" \
+  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
@@ -50,12 +50,12 @@
 #  --base-url "https://mlvu.github.io/lecture05" \
 #  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 6: Beyond linear models" \
-  --dst ../lecture06 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
-  --base-url "https://mlvu.github.io/lecture06" \
-  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 6: Beyond linear models" \
+#  --dst ../lecture06 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
+#  --base-url "https://mlvu.github.io/lecture06" \
+#  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 7: Deep learning" \
