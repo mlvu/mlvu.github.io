@@ -259,7 +259,7 @@ slides: true
        <section class="video" id="video-017">
            <a class="slide-link" href="https://mlvu.github.io/lecture06#video-17">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/IZ4w-aG50nU"
+                src="https://www.youtube.com/embed/qERQttAL-nE"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -274,7 +274,7 @@ slides: true
             <img src="32.Linear.key-stage-0018.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><br><br></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -451,7 +451,7 @@ slides: true
        <section class="video" id="video-030">
            <a class="slide-link" href="https://mlvu.github.io/lecture06#video-30">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/IZ4w-aG50nU"
+                src="https://www.youtube.com/embed/TwHVP7FAT6I"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
