@@ -1,7 +1,5 @@
-theme: jekyll-theme-cayman
-
-title:            MLVU
-description:      Machine Learning at Vrije Universiteit Amsterdam
+title:            Learning and Reasoning
+description:      The Learning and reasoning group at Vrije Universiteit Amsterdam
 
 defaults:
   -
@@ -9,3 +7,5 @@ defaults:
         path: ""
     values:
         article: true
+        maps: false
+        front: false
