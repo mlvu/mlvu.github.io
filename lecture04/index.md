@@ -1149,7 +1149,7 @@ slides: true
             <img src="31.ProbabilisticModels1.key-stage-0084.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For probability distributions on continuous spaces, we can also define entropy and KL divergence. We lose the interpretation of prefix-free codes, and there are some technical hurdles here, but the long and short of it is that we replace the summation by an integration.<br></p><p    >To avoid this complexity, in the rest of the course we will often write the entropy and the KL divergence using the expectation notation. This automatically implies that we are summing for discrete sample spaces and integrating for continuous ones, and if we know the basic properties of the expectation (see homework 1), then we'll never need to open the expectation operator up anyway.</p><p    ></p>
+            <p    >For probability distributions on continuous spaces, we can also define entropy, known as the<strong> differential entropy</strong>, and KL divergence. We lose the interpretation of prefix-free codes, and there are some technical hurdles here, but the long and short of it is that we replace the summation by an integration.<br></p><p    >To avoid this complexity, in the rest of the course we will often write the entropy and the KL divergence using the expectation notation. This automatically implies that we are summing for discrete sample spaces and integrating for continuous ones, and if we know the basic properties of the expectation (see homework 1), then we'll never need to open the expectation operator up anyway.</p><p    ></p>
             </figcaption>
        </section>
 
