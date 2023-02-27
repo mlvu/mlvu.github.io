@@ -56,13 +56,13 @@
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
 #  --base-url "https://mlvu.github.io/lecture06" \
 #  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
-#
-#python generate.py \
-#  --title "Lecture 7: Deep learning" \
-#  --dst ../lecture07 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/41 Deep Learning 1/32.DeepLearning1.key" \
-#  --base-url "https://mlvu.github.io/lecture07" \
-#  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
+
+python generate.py \
+  --title "Lecture 7: Deep learning" \
+  --dst ../lecture07 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/41 Deep Learning 1/32.DeepLearning1.key" \
+  --base-url "https://mlvu.github.io/lecture07" \
+  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 8: Density estimation" \

@@ -310,14 +310,13 @@ slides: true
 
 
 
-       <section id="slide-021" class="anim">
+       <section id="slide-021">
             <a class="slide-link" href="https://mlvu.github.io/lecture07#slide-021" title="Link to this slide.">link here</a>
-            <img src="32.DeepLearning1.key-stage-0021anim0.svg" data-images="32.DeepLearning1.key-stage-0021anim0.svg,32.DeepLearning1.key-stage-0021anim1.svg,32.DeepLearning1.key-stage-0021anim2.svg" class="slide-image" />
+            <img src="32.DeepLearning1.key-stage-0021.svg" class="slide-image" />
 
             <figcaption>
             <p    >In the previous video we explained how deep learning systems like Pytorch and Tensorflow allow us to build up a computation graph in code. Once we have this computation graph, we can use it to implement backpropagation.</p><p    ></p>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -419,13 +418,14 @@ slides: true
 
 
 
-       <section id="slide-029">
+       <section id="slide-029" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture07#slide-029" title="Link to this slide.">link here</a>
-            <img src="32.DeepLearning1.key-stage-0029.svg" class="slide-image" />
+            <img src="32.DeepLearning1.key-stage-0029anim0.svg" data-images="32.DeepLearning1.key-stage-0029anim0.svg,32.DeepLearning1.key-stage-0029anim1.svg" class="slide-image" />
 
             <figcaption>
             <p    >If c has more than two inputs, the multivariate chain tells us to sum over all of them.<br></p><aside    >We won't try to give you any intuition for why the multivariate chain rule works this way. You'll just have to accept it as one of the rules of differentiation. If you want more insight, there is some explanation in the second <a href="http://dlvu.github.io"><strong class="blue">DLVU</strong></a> lecture.</aside><aside    ></aside>
             </figcaption>
+            <span class="hint">click image for animation</span>
        </section>
 
 
