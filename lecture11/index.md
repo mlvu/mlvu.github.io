@@ -35,7 +35,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this lecture we’ll look at data that naturally forms a sequence. Language, music, stock prices. All of these can be modelled most naturally as a sequence of tokens of information coming in one after the other. <br></p><p    >Before we look at how to model sequences, we’ll look at some basic things to take into account when interpreting such data.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    >In this lecture we’ll look at data that naturally forms a sequence. Language, music, stock prices. All of these can be modelled most naturally as a sequence of tokens of information coming in one after the other. <br></p><p    >Before we look at how to model sequences, we’ll look at some basic things to take into account when interpreting such data.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -220,7 +220,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0019anim0.svg" data-images="61.SequentialData.1.key-stage-0019anim0.svg,61.SequentialData.1.key-stage-0019anim1.svg,61.SequentialData.1.key-stage-0019anim2.svg,61.SequentialData.1.key-stage-0019anim3.svg,61.SequentialData.1.key-stage-0019anim4.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This gives us the<strong> chain rule of probability</strong> (which has nothing to do with the the chain rule of  calculus). <br></p><p    >The chain rule allows us to break a joint distribution on many variables into a product of conditional distributions. In sequences, we often apply it so that each word becomes conditioned on the words before it. We could apply it in any order we like but it makes most sense to condition each word on its preceding tokens.<br></p><p    >This tells us that if we build a model that can estimate the probability p(<span class="blue">x</span>|<span class="green">y</span>, <span class="orange red">z</span>) of a word <span class="blue">x</span> based on the words <span class="green">y</span>, <span class="orange red">z</span> that precede it, we can then <em>chain</em> this estimator to give us the joint probability of the whole sentence <span class="blue">x</span>, <span class="green">y</span>, <span class="orange red">z</span>.</p><p    ></p>
+            <p    >This gives us the<strong> chain rule of probability</strong> (which has nothing to do with the the chain rule of  calculus). <br></p><p    >The chain rule allows us to break a joint distribution on many variables into a product of conditional distributions. In sequences, we often apply it so that each word becomes conditioned on the words before it. We could apply it in any order we like but it makes most sense to condition each word on its preceding tokens.<br></p><p    >This tells us that if we build a model that can estimate the probability p(<span class="blue">x</span>|<span class="green">y</span>, <span class="red">z</span>) of a word <span class="blue">x</span> based on the words <span class="green">y</span>, <span class="red">z</span> that precede it, we can then <em>chain</em> this estimator to give us the joint probability of the whole sentence <span class="blue">x</span>, <span class="green">y</span>, <span class="red">z</span>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -275,7 +275,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0023anim0.svg" data-images="61.SequentialData.1.key-stage-0023anim0.svg,61.SequentialData.1.key-stage-0023anim1.svg,61.SequentialData.1.key-stage-0023anim2.svg,61.SequentialData.1.key-stage-0023anim3.svg,61.SequentialData.1.key-stage-0023anim4.svg,61.SequentialData.1.key-stage-0023anim5.svg,61.SequentialData.1.key-stage-0023anim6.svg,61.SequentialData.1.key-stage-0023anim7.svg,61.SequentialData.1.key-stage-0023anim8.svg,61.SequentialData.1.key-stage-0023anim9.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Using the Markov assumption and the chain rule together, we can model a sequence as limited-memory conditional probabilities. These probabilities can then be very simply estimated from a large dataset of text (called <strong>a corpus</strong>). <br></p><p    >To estimate the probability of <span class="orange red">prize</span> given “<span class="orange">won</span><span class="green"> a</span>” we just count how often “won a prize” occurs as a proportion of the times “<span class="orange">won</span> <span class="green">a</span>” occurs. In other words, how often “<span class="orange">won</span><span class="green"> a</span>” is followed by <span class="orange red">prize</span>.<br></p><p    >These n-word snippets are called <strong>n-grams</strong>. “<span class="orange">won</span> <span class="green">a</span> <span class="orange red">prize</span>” is a <strong>trigram</strong>, and “<span class="orange">won</span> <span class="green">a</span>” is a <strong>bigram</strong>.<br></p><p    >This type of language model is often called a <strong>Markov model</strong>, because of the Markov assumption of limited memory. The size of the memory is referred to as the <strong>order</strong> of the Markov model. The higher the order of your model, the more you can model, but the more data you’ll need, to make sure that you’ve seen all the n-grams you’re interested in often enough.<br></p><p    ></p>
+            <p    >Using the Markov assumption and the chain rule together, we can model a sequence as limited-memory conditional probabilities. These probabilities can then be very simply estimated from a large dataset of text (called <strong>a corpus</strong>). <br></p><p    >To estimate the probability of <span class="red">prize</span> given “<span class="orange">won</span><span class="green"> a</span>” we just count how often “won a prize” occurs as a proportion of the times “<span class="orange">won</span> <span class="green">a</span>” occurs. In other words, how often “<span class="orange">won</span><span class="green"> a</span>” is followed by <span class="red">prize</span>.<br></p><p    >These n-word snippets are called <strong>n-grams</strong>. “<span class="orange">won</span> <span class="green">a</span> <span class="red">prize</span>” is a <strong>trigram</strong>, and “<span class="orange">won</span> <span class="green">a</span>” is a <strong>bigram</strong>.<br></p><p    >This type of language model is often called a <strong>Markov model</strong>, because of the Markov assumption of limited memory. The size of the memory is referred to as the <strong>order</strong> of the Markov model. The higher the order of your model, the more you can model, but the more data you’ll need, to make sure that you’ve seen all the n-grams you’re interested in often enough.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -329,7 +329,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0028.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We’ll train a generative classifier. First, we’ll use Bayes rule to flip around the probabilties. <br></p><p    >The marignal probability p(<span class="orange red">spam</span>) we can estimate as as the proportion of spam emails in our data set. For the probability of the message given the class, we’ll use our language model.</p><p    ></p>
+            <p    >We’ll train a generative classifier. First, we’ll use Bayes rule to flip around the probabilties. <br></p><p    >The marignal probability p(<span class="red">spam</span>) we can estimate as as the proportion of spam emails in our data set. For the probability of the message given the class, we’ll use our language model.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -342,7 +342,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0029anim0.svg" data-images="61.SequentialData.1.key-stage-0029anim0.svg,61.SequentialData.1.key-stage-0029anim1.svg,61.SequentialData.1.key-stage-0029anim2.svg,61.SequentialData.1.key-stage-0029anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We use the chain rule and the Markov assumption to define the probability that a message occurs. This is exactly as before, except that now, everything is also conditioned on the class <span class="orange red">spam</span>.<br></p><p    >We then estimate the different conditional probabilities by computing the relative frequencies of bigrams and trigrams, as before, but we compute them only over the <strong class="orange red">spam</strong> part of our data.</p><p    ></p>
+            <p    >We use the chain rule and the Markov assumption to define the probability that a message occurs. This is exactly as before, except that now, everything is also conditioned on the class <span class="red">spam</span>.<br></p><p    >We then estimate the different conditional probabilities by computing the relative frequencies of bigrams and trigrams, as before, but we compute them only over the <strong class="red">spam</strong> part of our data.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -462,7 +462,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0037.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -862,7 +862,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1392,7 +1392,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0112.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In this part, we will discuss one of the more exciting developments of the last few years: transformer models.<br></p><aside    >This section is not exam material this year (2022), but these models are becoming prevalent, so if you plan to do more machine learning in the future, you should definitely give it a skim.<br></aside><p    ><lnbr></lnbr></p><p    ></p>
+            <p    >In this part, we will discuss one of the more exciting developments of the last few years: transformer models.<br></p><aside    >This section is not exam material this year (2022), but these models are becoming prevalent, so if you plan to do more machine learning in the future, you should definitely give it a skim.<br></aside><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1551,7 +1551,7 @@ slides: true
             <img src="61.SequentialData.1.key-stage-0127.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In each self attention computation, every input vector occurs in three distinct roles:<br></p><p     class="list-item"><strong class="purple">the value</strong>: the vector that is used in the weighted sum that ultimately provides the output<br></p><p     class="list-item"><strong class="green">the query</strong>: the input vector that corresponds to the current output, matched against every other input vector.<br></p><p     class="list-item"><strong class="orange red">the key</strong>: the input vector that the query is matched against to determine the weight.<br></p><p    >This is where we'll add some parameters. We will slightly manipulate the input vector, based on which role it appears in.</p><p    ></p>
+            <p    >In each self attention computation, every input vector occurs in three distinct roles:<br></p><p     class="list-item"><strong class="purple">the value</strong>: the vector that is used in the weighted sum that ultimately provides the output<br></p><p     class="list-item"><strong class="green">the query</strong>: the input vector that corresponds to the current output, matched against every other input vector.<br></p><p     class="list-item"><strong class="red">the key</strong>: the input vector that the query is matched against to determine the weight.<br></p><p    >This is where we'll add some parameters. We will slightly manipulate the input vector, based on which role it appears in.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1612,14 +1612,13 @@ slides: true
 
 
 
-       <section id="slide-118" class="anim">
+       <section id="slide-118">
             <a class="slide-link" href="https://mlvu.github.io/lecture11#slide-118" title="Link to this slide.">link here</a>
-            <img src="61.SequentialData.1.key-stage-0132anim0.svg" data-images="61.SequentialData.1.key-stage-0132anim0.svg,61.SequentialData.1.key-stage-0132anim1.svg,61.SequentialData.1.key-stage-0132anim2.svg,61.SequentialData.1.key-stage-0132anim3.svg" class="slide-image" />
+            <img src="61.SequentialData.1.key-stage-0132.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The idea of multi-head attention, is that we apply several self attentions (with different K, Q, V matrices and biases) <strong>in parallel</strong>. This is usually don in a way that requires roughly the same number of parameters are a one single-head self-attention on the same input. To achieve this, the data is projected down to a n separate vectores of dimensionality of k/n, where k is the orignal input dimension. Each of these smaller inputs is fed to a separate self-attention and the results are concatenated.<br></p><aside    >If you implement this cleverly (see <a href="http://dlvu.github.io"><strong class="blue">DLVU lecture 12</strong></a> for details), you will end up with exactly the same number of parameters as the original single-head self attention, except for the additional W<sub>0</sub> matrix at the end.</aside><aside    ></aside>
+            <p    >The idea of multi-head attention, is that we apply h self attentions (with different K, Q, V matrices and biases) <strong>in parallel</strong>. This is usually done in a way that requires roughly the same number of parameters are a one single-head self-attention on the same input. To achieve this, the data is projected down to separate keys, queries and values of dimensionality of k/h, where k is the original input dimension. Each of these smaller inputs is fed to a separate self-attention and the results are concatenated.<br></p><aside    >If you implement this cleverly (see <a href="http://dlvu.github.io"><strong class="blue">DLVU lecture 12</strong></a> for details), you will end up with exactly the same number of parameters as the original single-head self attention, except for the additional W<sub>0</sub> matrix at the end.</aside><aside    ></aside>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
 
 
