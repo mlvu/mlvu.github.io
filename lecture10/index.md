@@ -20,7 +20,7 @@ slides: true
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/lecture10#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/1JxBgetslSY?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/1JxBgetslSY"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -35,7 +35,7 @@ slides: true
             <img src="52.Trees.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We saw decision trees for the first time in the very first lectures, and we’ve seen them a few more times since. But we never actually discussed how to train them. In this lecture, we’ll look at the details of that.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    >We saw decision trees for the first time in the very first lectures, and we’ve seen them a few more times since. But we never actually discussed how to train them. In this lecture, we’ll look at the details of that.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -61,7 +61,7 @@ slides: true
             <img src="52.Trees.key-stage-0003.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Decision trees in their simplest form work on data with <em>categorical</em> features. We’ll use this dataset as a running example: each instance (row) is a movie, and the target class is to predict whether a movie <strong class="blue">won</strong><strong> </strong>an oscar, was merely<span class="orange"> </span><strong class="orange">nominated</strong>, or<span class="orange red"> </span><strong class="orange red">overlooked</strong>.</p><p    ></p>
+            <p    >Decision trees in their simplest form work on data with <em>categorical</em> features. We’ll use this dataset as a running example: each instance (row) is a movie, and the target class is to predict whether a movie <strong class="blue">won</strong><strong> </strong>an oscar, was merely<span class="orange"> </span><strong class="orange">nominated</strong>, or<span class="red"> </span><strong class="red">overlooked</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -205,7 +205,7 @@ slides: true
             <img src="52.Trees.key-stage-0014.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In order to make this into a proper algorithm we need to make this more precise. The best feature to split on is the one that creates (averaged over all child nodes) the most non-uniform class distribution in the resulting segment. <br></p><p    >How do we measure the non-uniformity of a distribution? It’s straightforward for two classes (the further from 50/50 the less uniform), but for more than two classes, it’s not so clear cut. Here we see two distributions. In the first, the proportion of the <span class="orange red">red class</span> is bigger than in the second, but in the second the remainder is divided up between <span class="blue">blue</span> and <span class="orange">orange</span> in a more non uniform way. Which of these two distributions is less uniform?</p><p    ></p>
+            <p    >In order to make this into a proper algorithm we need to make this more precise. The best feature to split on is the one that creates (averaged over all child nodes) the most non-uniform class distribution in the resulting segment. <br></p><p    >How do we measure the non-uniformity of a distribution? It’s straightforward for two classes (the further from 50/50 the less uniform), but for more than two classes, it’s not so clear cut. Here we see two distributions. In the first, the proportion of the <span class="red">red class</span> is bigger than in the second, but in the second the remainder is divided up between <span class="blue">blue</span> and <span class="orange">orange</span> in a more non uniform way. Which of these two distributions is less uniform?</p><p    ></p>
             </figcaption>
        </section>
 
@@ -284,7 +284,7 @@ slides: true
             <img src="52.Trees.key-stage-0020anim0.svg" data-images="52.Trees.key-stage-0020anim0.svg,52.Trees.key-stage-0020anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In practice that gives us this formula, for the information gain of a split. If the set of instances before the split is S, and the split gives us subsets S<sub>i</sub>, the information gain is the entropy of S minus the sum of the entropies of the split sets, each weighted by the proportion of instances of S contained in S<sub>i</sub>.<br></p><p    >When we compute the entropy of a set like S, we just use the relative frequencies to estimate the probabilities. For instance, we estimate the probability of the<strong> </strong><strong class="orange red">red class</strong><strong> </strong>in S as <strong class="orange red">23</strong>/(<strong class="orange red">23</strong>+<strong class="orange">12</strong>+<strong class="blue">11</strong>).</p><p    ></p>
+            <p    >In practice that gives us this formula, for the information gain of a split. If the set of instances before the split is S, and the split gives us subsets S<sub>i</sub>, the information gain is the entropy of S minus the sum of the entropies of the split sets, each weighted by the proportion of instances of S contained in S<sub>i</sub>.<br></p><p    >When we compute the entropy of a set like S, we just use the relative frequencies to estimate the probabilities. For instance, we estimate the probability of the<strong> </strong><strong class="red">red class</strong><strong> </strong>in S as <strong class="red">23</strong>/(<strong class="red">23</strong>+<strong class="orange">12</strong>+<strong class="blue">11</strong>).</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -308,7 +308,7 @@ slides: true
        <section class="video" id="video-021">
            <a class="slide-link" href="https://mlvu.github.io/lecture10#video-21">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/y6pHc1iB6a0?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/y6pHc1iB6a0"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -323,7 +323,7 @@ slides: true
             <img src="52.Trees.key-stage-0022.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -530,7 +530,7 @@ slides: true
        <section class="video" id="video-037">
            <a class="slide-link" href="https://mlvu.github.io/lecture10#video-37">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/9ikKZYxsfbg?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/9ikKZYxsfbg"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -545,7 +545,7 @@ slides: true
             <img src="52.Trees.key-stage-0038.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><strong>Ensembling </strong>is the business of combining multiple models into one. The hope is that this gives you a model that is more than the sum of its parts.<br></p><p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><strong>Ensembling </strong>is the business of combining multiple models into one. The hope is that this gives you a model that is more than the sum of its parts.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -753,7 +753,7 @@ slides: true
        <section class="video" id="video-053">
            <a class="slide-link" href="https://mlvu.github.io/lecture10#video-53">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/mSLRpkynW9Y?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/mSLRpkynW9Y"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -768,7 +768,7 @@ slides: true
             <img src="52.Trees.key-stage-0054.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -781,7 +781,7 @@ slides: true
             <img src="52.Trees.key-stage-0055anim0.svg" data-images="52.Trees.key-stage-0055anim0.svg,52.Trees.key-stage-0055anim1.svg,52.Trees.key-stage-0055anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In the previous video, we saw the ensembling method of bagging in action.<br></p><p    >Bagging helps for models with high variance and low bias. If we have the opposite, a learner with high bias and low variance, can we achieve the same? This is the <strong>hypothesis boosting</strong> question , where hypothesis is a synonym for a learner or model. Is there an ensembling method that allows us to create a series of models from a family with high bias, like linear models or decision stumps, and to create an ensemble that together has low bias (possibly at the expense of a higher variance).<br></p><p    >In other words, can we turn an underfitting model into an ovefitting model by ensembling. Can we, for instance, put lots of linear classifiers together to draw complex, highly nonlinear shapes.</p><p    ></p>
+            <p    >In the previous video, we saw the ensembling method of bagging in action.<br></p><p    >Bagging helps for models with high variance and low bias (models that tend to overfit). If we have the opposite, a learner with high bias and low variance, can we achieve the same? This is the <strong>hypothesis boosting</strong> question , where hypothesis is a synonym for a learner or model. Is there an ensembling method that allows us to create a series of models from a family with high bias, like linear models or decision stumps, and to create an ensemble that together has low bias (possibly at the expense of a higher variance).<br></p><p    >In other words, <strong>can we turn an underfitting model into an overfitting model by ensembling?</strong> Can we, for instance, put lots of linear classifiers together to draw complex, highly nonlinear shapes.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -795,7 +795,7 @@ slides: true
             <img src="52.Trees.key-stage-0056.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Most boosting methods work by adding a <strong class="purple">weight</strong> to each instance in the data. <br></p><p    >For each new model, we lower the weights of the points that the previous models got right, and increase the weight of the points that the previous models got wrong. We then train the next model to focus on this reweighed version of the data.</p><p    ></p>
+            <p    >The key to achieve this is to train <em>a series </em><strong>of models</strong>, one after the other. Contrast this with bagging, where the models could be trained in parallel. The idea of boosting is that in each subsequent model, we look at what the previous models did to change what our next model is going to do. Specifically, we look at which instances the previous models got wrong.<br></p><p    >Most boosting methods work by adding a <strong class="purple">weight</strong> to each instance in the data.<br></p><p    >For each new model, we<em> lower </em>the weights of the points that the previous models got right, and <em>increase</em> the weight of the points that the previous models got wrong. We then train the next model to focus on this reweighed version of the data.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -808,7 +808,7 @@ slides: true
             <img src="52.Trees.key-stage-0057.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <p    >Here is a generic boosting algorithm. The idea is that we train an ensemble of k classifiers. We start with a single model m<sub>0</sub>,  and we add a classifier to the ensemble one at a time. At each step, we see how the current ensemble does, check which instances it gets wrong, and train the next model to focus on those (by increasing their weight). We then assign the new classifier m<sub class="purple">t</sub> a weight at which determined how big a role it plays in the ensemble, and we add it. At each step <span class="purple">t</span> the classification the ensemble makes is a weighted sum over all the classifiers we’ve trained so far.<br></p><p    >To turn this idea into a proper algorithm, we need to make a few choices. For instance:<br></p><p     class="list-item">How do we assign the weights to the dataset based on the current ensemble performance? We know that mistakes should lead to higher weights, but what function exactly should we use?<br></p><p     class="list-item">How do we train a model on weighted data?<br></p><p     class="list-item">Once we’ve trained a model, how much should its weight a<sub class="purple">t</sub> in the ensemble be? It makes sens to make the weight higher if the model performs better, but what exactly should the function be?</p><p     class="list-item"></p>
             </figcaption>
        </section>
 
@@ -821,7 +821,7 @@ slides: true
             <img src="52.Trees.key-stage-0058.svg" class="slide-image" />
 
             <figcaption>
-            <p    >How do we train on a weighted dataset? If we have a loss function, we can just make the sum over the loss of each instance a weighted sum. We saw examples of weighted maximum likelihood loss in the lecture on density estimation.<br></p><p    >If our model isn’t trained by an explicit loss function, like for instance the tree models in the first two videos, we can resample the dataset, and make the instance with higher weights more likely to be sampled. Think of this as a kind of weighted bootstrapping.</p><p    ></p>
+            <p    >Let’s start with this question: how do we train on a weighted dataset? If we have a loss function, we can just make the sum over the loss of each instance a weighted sum. We saw examples of weighted maximum likelihood loss in the lecture on density estimation.<br></p><p    >If our model isn’t trained by an explicit loss function, like for instance the tree models we saw in the first two parts of this lecture, we can instead <strong>resample</strong> the dataset, and make the instance with higher weights more likely to be sampled. <br></p><aside    >You can think of this as a kind of weighted bootstrapping.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -834,7 +834,7 @@ slides: true
             <img src="52.Trees.key-stage-0059.svg" class="slide-image" />
 
             <figcaption>
-            <p    >There are a few ways to instantiate this general idea of boosting.<br></p><p    >We’ll first take a look at <strong>AdaBoost</strong> (which stands for <em>adaptive</em> boosting), which is a principled derivation for how to set the weights <span class="purple">w</span><sub class="purple">i</sub>, and and the model weight a<sub class="purple">t</sub>.<br></p><p    >We assume we’ve already trained the ensemble up to model m<sub class="purple">t</sub><sub>-1</sub>, giving us ensemble model M<sub class="purple">t</sub><sub>-1</sub>. We now need to make two choices: which model m<sub class="purple">t</sub> to choose (or what loss to minimize when training this model) and which model weight a<sub class="purple">t</sub> to assign it. <br></p><p    >To do so, we first define the<span> error </span>(aka the loss) for the ensemble at step t, and then choose m<sub class="purple">t</sub> and a<sub class="purple">t</sub> to minimize this loss.</p><p    ></p>
+            <p    >Next, we need to decide how to set the instance weights <span class="purple">w</span>i and how to set the model weights a<sub class="purple">t</sub>.<br></p><p    >We’ll first take a look at <strong>AdaBoost</strong> (which stands for <em>adaptive</em> boosting), which is a principled derivation for how to set these.<br></p><p    >We assume we’ve already trained the ensemble up to model m<sub class="purple">t</sub><sub>-1</sub>, giving us ensemble model M<sub class="purple">t</sub><sub>-1</sub>. We now need to make two choices: which model m<sub class="purple">t</sub> to choose (or what loss to minimize when training this model) and which model weight a<sub class="purple">t</sub> to assign it. <br></p><p    >To do so, we first define the<span> error </span>(aka the loss) for the ensemble at step t, and then choose m<sub class="purple">t</sub> and a<sub class="purple">t</sub> to minimize this loss. This is a slightly unusual loss, compared to what we’ve seen so far. We assume that the ensemble produces a real value (anywhere between negative and positive infinity) and that its sign corresponds to the predicted class. <br></p><p    >We then multiply this by the true sign y<sub>i</sub> to get a value that is large and positive if the model assign the correct sign and a value that is large in magnitude. The loss is the exponential of the negative of this value. If the ensemble gets the class right, it ends up to the left in the above graph, and if it gets it wrong it end up to the right. We sum this loss over all instances to get the total loss at time <span class="purple">t</span>.<br></p><p    >From this loss we can derive an analytical answer to our questions of what the new instance weights should be and what the model weight should be.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -858,10 +858,10 @@ slides: true
 
        <section id="slide-061" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture10#slide-061" title="Link to this slide.">link here</a>
-            <img src="52.Trees.key-stage-0061anim0.svg" data-images="52.Trees.key-stage-0061anim0.svg,52.Trees.key-stage-0061anim1.svg,52.Trees.key-stage-0061anim2.svg,52.Trees.key-stage-0061anim3.svg,52.Trees.key-stage-0061anim4.svg,52.Trees.key-stage-0061anim5.svg" class="slide-image" />
+            <img src="52.Trees.key-stage-0061anim0.svg" data-images="52.Trees.key-stage-0061anim0.svg,52.Trees.key-stage-0061anim1.svg,52.Trees.key-stage-0061anim2.svg,52.Trees.key-stage-0061anim3.svg,52.Trees.key-stage-0061anim4.svg,52.Trees.key-stage-0061anim5.svg,52.Trees.key-stage-0061anim6.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For the total loss, we can split the sum into the instance that are correctly classified and the instances that are incorrectly classified. This means the exponents become constants in the sum and can be move to the front. Line five is not an equal function, but minimising line four is the same as minimising line 5. In the last line, all the greyed out parts are constant with respect to m<sub class="purple">t</sub>: W<sub>c</sub> and W<sub>i</sub> each depend on which classifier we choose, but their sum is just the sum of all the weights provided by the ensemble so far.<br></p><p    >The take-away here is that choosing m<sub class="purple">t</sub> to minimize the error <span>E</span><sub>t</sub>, consists of just minimising the sum of the weights of the instances misclassified by m<sub class="purple">t</sub>.</p><p    ></p>
+            <p    >For the total loss, we can split the sum into the instance that are correctly classified and the instances that are incorrectly classified <strong>by the new classifier m</strong><sub>t</sub>. This means the exponents become constants in the sum and can be move to the front. <br></p><p    >Line five is not an equal function, but minimising line four is the same as minimising line 5. This follows by multiplying the whole quantity to be minimized by the constant exp(-a<sub class="purple">t</sub>). The result is that the multiplier of the first term becomes 1 and the multiplier of the second term becomes exp(2a<sub class="purple">t</sub>)<br></p><p    >In the last line, all the greyed out parts are constant with respect to m<sub class="purple">t</sub>: W<sub>c</sub> and W<sub>i</sub> each depend on which classifier we choose, but their sum is just the sum of all the weights provided by the ensemble so far.<br></p><p    >In the last line, we add <span class="purple">W</span><sub class="purple">i</sub> to the first term and subtract it from the second. <br></p><p    >The take-away here is that choosing m<sub class="purple">t</sub> to minimize the error <span>E</span><sub>t</sub>, consists of just minimising the sum of the weights of the instances misclassified by m<sub class="purple">t</sub>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -875,7 +875,7 @@ slides: true
             <img src="52.Trees.key-stage-0062anim0.svg" data-images="52.Trees.key-stage-0062anim0.svg,52.Trees.key-stage-0062anim1.svg,52.Trees.key-stage-0062anim2.svg,52.Trees.key-stage-0062anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To choose a<sub class="purple">t</sub>, we just compute the derivative of the error with respect to to a<sub class="purple">t</sub>, set it to zero and solve for a<sub class="purple">t</sub>.<br></p><p    >Intuitively, the formula for a<sub class="purple">t</sub> states that the better the proportion of correct to incorrect labelings, the more model <span>t</span> should weigh in the ensemble. The logarithm ensures  a kind of diminishing return of weight: getting 11 instances correct instead of 10 had much more impact on the weight than getting 101 instances correct instead of 100.</p><p    ></p>
+            <p    >To choose a<sub class="purple">t</sub>, we just compute the derivative of the error with respect to to a<sub class="purple">t</sub>, set it to zero and solve for a<sub class="purple">t</sub>.<br></p><p    >Intuitively, the formula for a<sub class="purple">t</sub> states that the better the proportion of correct to incorrect labelings, the more model <span>t</span> should weigh in the ensemble. The logarithm ensures  a kind of diminishing return of weight: getting 11 instances correct instead of 10 has much more impact on the weight than getting 101 instances correct instead of 100.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
