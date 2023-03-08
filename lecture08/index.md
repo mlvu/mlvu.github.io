@@ -8,9 +8,9 @@ slides: true
         <li class="name">Lecture 8: Density estimation</li>
                 <li><a href="#video-000">Normal distributions</a></li>
                 <li><a href="#video-026">Maximum likelihood estimators</a></li>
-                <li><a href="#video-039">Expectation-maximization</a></li>
-                <li><a href="#video-066">A formal analysis of EM</a></li>
-                <li><a href="#video-090">Social impact 3</a></li>
+                <li><a href="#video-042">Expectation-maximization</a></li>
+                <li><a href="#video-069">A formal analysis of EM</a></li>
+                <li><a href="#video-093">Social impact 3</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
@@ -562,8 +562,48 @@ slides: true
 
 
 
-       <section class="video" id="video-039">
-           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-39">link here</a>
+
+       <section id="slide-040" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-040" title="Link to this slide.">link here</a>
+            <img src="42.ProbabilisticModels2.majid.key-stage-0054anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0054anim0.svg,42.ProbabilisticModels2.majid.key-stage-0054anim1.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >For the multivariate normal distribution, these are the maximum likelihood estimators.<br></p><p    >The same things we said for the univariate case hold here. The estimator for the covariance requires a correction if you need unbiased estimates.<br></p><p    >For weighted data, the sum again becomes a weighted sum, and the normalization is by the sum of the weights.</p><p    ></p>
+            </figcaption>
+            <span class="hint">click image for animation</span>
+       </section>
+
+
+
+
+
+       <section id="slide-041">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-041" title="Link to this slide.">link here</a>
+            <img src="42.ProbabilisticModels2.majid.key-stage-0055.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Finally, let’s look at the last of our modelsfrom the previous video: the Gaussian mixture model. What happens when we try to define the maximum likelhood objective for this model?</p><p    ></p>
+            </figcaption>
+       </section>
+
+
+
+
+
+       <section id="slide-042">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-042" title="Link to this slide.">link here</a>
+            <img src="42.ProbabilisticModels2.majid.key-stage-0056.svg" class="slide-image" />
+
+            <figcaption>
+            <p    >Here we face a problem: there’s a sum inside a logarithm. We can’t work the sum out of the logarithm, which means we won’t get a nice formulation of the derivative. We can do it anyway, and solve by gradient descent, we can even use backpropagation, so we only have to work out local derivatives, but what we’ll never get,is a functional form for the derivative that we can set equal to zero and solve analytically.<br></p><p    >After the break we’ll discuss the <strong>EM algorithm</strong>, which does’t give us an analytical solution, but it does allow us to use the tricks we’ve seen in this video, to help us fit a model. </p><p    ></p>
+            </figcaption>
+       </section>
+
+
+
+
+       <section class="video" id="video-042">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-42">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/Co3xlK2d_oI"
                 title="YouTube video player"
@@ -575,8 +615,8 @@ slides: true
 
 
 
-       <section id="slide-040">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-040" title="Link to this slide.">link here</a>
+       <section id="slide-043">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-043" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0057.svg" class="slide-image" />
 
             <figcaption>
@@ -588,8 +628,8 @@ slides: true
 
 
 
-       <section id="slide-041">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-041" title="Link to this slide.">link here</a>
+       <section id="slide-044">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-044" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
@@ -601,8 +641,8 @@ slides: true
 
 
 
-       <section id="slide-042">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-042" title="Link to this slide.">link here</a>
+       <section id="slide-045">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-045" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0065.svg" class="slide-image" />
 
             <figcaption>
@@ -614,8 +654,8 @@ slides: true
 
 
 
-       <section id="slide-043">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-043" title="Link to this slide.">link here</a>
+       <section id="slide-046">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-046" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0066.png" class="slide-image" />
 
             <figcaption>
@@ -627,8 +667,8 @@ slides: true
 
 
 
-       <section id="slide-044">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-044" title="Link to this slide.">link here</a>
+       <section id="slide-047">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-047" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0067.svg" class="slide-image" />
 
             <figcaption>
@@ -640,8 +680,8 @@ slides: true
 
 
 
-       <section id="slide-045" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-045" title="Link to this slide.">link here</a>
+       <section id="slide-048" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-048" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0068anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0068anim0.svg,42.ProbabilisticModels2.majid.key-stage-0068anim1.svg,42.ProbabilisticModels2.majid.key-stage-0068anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -654,8 +694,8 @@ slides: true
 
 
 
-       <section id="slide-046">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-046" title="Link to this slide.">link here</a>
+       <section id="slide-049">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-049" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
@@ -667,8 +707,8 @@ slides: true
 
 
 
-       <section id="slide-047">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-047" title="Link to this slide.">link here</a>
+       <section id="slide-050">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-050" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0071.svg" class="slide-image" />
 
             <figcaption>
@@ -680,8 +720,8 @@ slides: true
 
 
 
-       <section id="slide-048" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-048" title="Link to this slide.">link here</a>
+       <section id="slide-051" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-051" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0072anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0072anim0.svg,42.ProbabilisticModels2.majid.key-stage-0072anim1.svg,42.ProbabilisticModels2.majid.key-stage-0072anim2.svg,42.ProbabilisticModels2.majid.key-stage-0072anim3.svg" class="slide-image" />
 
             <figcaption>
@@ -694,8 +734,8 @@ slides: true
 
 
 
-       <section id="slide-049">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-049" title="Link to this slide.">link here</a>
+       <section id="slide-052">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-052" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0073.svg" class="slide-image" />
 
             <figcaption>
@@ -707,8 +747,8 @@ slides: true
 
 
 
-       <section id="slide-050">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-050" title="Link to this slide.">link here</a>
+       <section id="slide-053">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-053" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0074.svg" class="slide-image" />
 
             <figcaption>
@@ -720,8 +760,8 @@ slides: true
 
 
 
-       <section id="slide-051">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-051" title="Link to this slide.">link here</a>
+       <section id="slide-054">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-054" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
@@ -733,8 +773,8 @@ slides: true
 
 
 
-       <section id="slide-052">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-052" title="Link to this slide.">link here</a>
+       <section id="slide-055">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-055" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0077.svg" class="slide-image" />
 
             <figcaption>
@@ -746,8 +786,8 @@ slides: true
 
 
 
-       <section id="slide-053" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-053" title="Link to this slide.">link here</a>
+       <section id="slide-056" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-056" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0078anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0078anim0.svg,42.ProbabilisticModels2.majid.key-stage-0078anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -760,8 +800,8 @@ slides: true
 
 
 
-       <section id="slide-054">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-054" title="Link to this slide.">link here</a>
+       <section id="slide-057">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-057" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
@@ -773,8 +813,8 @@ slides: true
 
 
 
-       <section id="slide-055">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-055" title="Link to this slide.">link here</a>
+       <section id="slide-058">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-058" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0080.svg" class="slide-image" />
 
             <figcaption>
@@ -786,8 +826,8 @@ slides: true
 
 
 
-       <section id="slide-056" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-056" title="Link to this slide.">link here</a>
+       <section id="slide-059" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-059" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0081anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0081anim0.svg,42.ProbabilisticModels2.majid.key-stage-0081anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -800,8 +840,8 @@ slides: true
 
 
 
-       <section id="slide-057" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-057" title="Link to this slide.">link here</a>
+       <section id="slide-060" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-060" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0082anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0082anim0.svg,42.ProbabilisticModels2.majid.key-stage-0082anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -814,8 +854,8 @@ slides: true
 
 
 
-       <section id="slide-058" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-058" title="Link to this slide.">link here</a>
+       <section id="slide-061" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-061" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0083anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0083anim0.svg,42.ProbabilisticModels2.majid.key-stage-0083anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -828,8 +868,8 @@ slides: true
 
 
 
-       <section id="slide-059" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-059" title="Link to this slide.">link here</a>
+       <section id="slide-062" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-062" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0084anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0084anim0.svg,42.ProbabilisticModels2.majid.key-stage-0084anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -842,8 +882,8 @@ slides: true
 
 
 
-       <section id="slide-060" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-060" title="Link to this slide.">link here</a>
+       <section id="slide-063" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-063" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0085anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0085anim0.svg,42.ProbabilisticModels2.majid.key-stage-0085anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -856,8 +896,8 @@ slides: true
 
 
 
-       <section id="slide-061" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-061" title="Link to this slide.">link here</a>
+       <section id="slide-064" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-064" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0088anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0088anim0.svg,42.ProbabilisticModels2.majid.key-stage-0088anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -870,8 +910,8 @@ slides: true
 
 
 
-       <section id="slide-062">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-062" title="Link to this slide.">link here</a>
+       <section id="slide-065">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-065" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0089.svg" class="slide-image" />
 
             <figcaption>
@@ -883,8 +923,8 @@ slides: true
 
 
 
-       <section id="slide-063">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-063" title="Link to this slide.">link here</a>
+       <section id="slide-066">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-066" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0090.svg" class="slide-image" />
 
             <figcaption>
@@ -896,8 +936,8 @@ slides: true
 
 
 
-       <section id="slide-064">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-064" title="Link to this slide.">link here</a>
+       <section id="slide-067">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-067" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0091.svg" class="slide-image" />
 
             <figcaption>
@@ -909,8 +949,8 @@ slides: true
 
 
 
-       <section id="slide-065">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-065" title="Link to this slide.">link here</a>
+       <section id="slide-068">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-068" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0092.svg" class="slide-image" />
 
             <figcaption>
@@ -922,8 +962,8 @@ slides: true
 
 
 
-       <section id="slide-066">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-066" title="Link to this slide.">link here</a>
+       <section id="slide-069">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-069" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0093.svg" class="slide-image" />
 
             <figcaption>
@@ -934,8 +974,8 @@ slides: true
 
 
 
-       <section class="video" id="video-066">
-           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-66">link here</a>
+       <section class="video" id="video-069">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-69">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/MFQdNuVCk4A"
                 title="YouTube video player"
@@ -947,8 +987,8 @@ slides: true
 
 
 
-       <section id="slide-067">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-067" title="Link to this slide.">link here</a>
+       <section id="slide-070">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-070" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0095.svg" class="slide-image" />
 
             <figcaption>
@@ -960,8 +1000,8 @@ slides: true
 
 
 
-       <section id="slide-068">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-068" title="Link to this slide.">link here</a>
+       <section id="slide-071">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-071" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0096.svg" class="slide-image" />
 
             <figcaption>
@@ -973,8 +1013,8 @@ slides: true
 
 
 
-       <section id="slide-069">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-069" title="Link to this slide.">link here</a>
+       <section id="slide-072">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-072" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0097.svg" class="slide-image" />
 
             <figcaption>
@@ -986,8 +1026,8 @@ slides: true
 
 
 
-       <section id="slide-070">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-070" title="Link to this slide.">link here</a>
+       <section id="slide-073">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-073" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0098.svg" class="slide-image" />
 
             <figcaption>
@@ -999,8 +1039,8 @@ slides: true
 
 
 
-       <section id="slide-071" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-071" title="Link to this slide.">link here</a>
+       <section id="slide-074" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-074" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0099anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0099anim0.svg,42.ProbabilisticModels2.majid.key-stage-0099anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1013,8 +1053,8 @@ slides: true
 
 
 
-       <section id="slide-072" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-072" title="Link to this slide.">link here</a>
+       <section id="slide-075" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-075" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0100anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0100anim0.svg,42.ProbabilisticModels2.majid.key-stage-0100anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1027,8 +1067,8 @@ slides: true
 
 
 
-       <section id="slide-073">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-073" title="Link to this slide.">link here</a>
+       <section id="slide-076">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-076" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0101.svg" class="slide-image" />
 
             <figcaption>
@@ -1040,8 +1080,8 @@ slides: true
 
 
 
-       <section id="slide-074">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-074" title="Link to this slide.">link here</a>
+       <section id="slide-077">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-077" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0102.svg" class="slide-image" />
 
             <figcaption>
@@ -1053,8 +1093,8 @@ slides: true
 
 
 
-       <section id="slide-075">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-075" title="Link to this slide.">link here</a>
+       <section id="slide-078">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-078" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
@@ -1066,8 +1106,8 @@ slides: true
 
 
 
-       <section id="slide-076" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-076" title="Link to this slide.">link here</a>
+       <section id="slide-079" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-079" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0104anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0104anim0.svg,42.ProbabilisticModels2.majid.key-stage-0104anim1.svg,42.ProbabilisticModels2.majid.key-stage-0104anim2.svg,42.ProbabilisticModels2.majid.key-stage-0104anim3.svg" class="slide-image" />
 
             <figcaption>
@@ -1080,8 +1120,8 @@ slides: true
 
 
 
-       <section id="slide-077" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-077" title="Link to this slide.">link here</a>
+       <section id="slide-080" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-080" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0105anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0105anim0.svg,42.ProbabilisticModels2.majid.key-stage-0105anim1.svg,42.ProbabilisticModels2.majid.key-stage-0105anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -1094,8 +1134,8 @@ slides: true
 
 
 
-       <section id="slide-078" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-078" title="Link to this slide.">link here</a>
+       <section id="slide-081" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-081" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0106anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0106anim0.svg,42.ProbabilisticModels2.majid.key-stage-0106anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1108,8 +1148,8 @@ slides: true
 
 
 
-       <section id="slide-079" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-079" title="Link to this slide.">link here</a>
+       <section id="slide-082" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-082" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0107anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0107anim0.svg,42.ProbabilisticModels2.majid.key-stage-0107anim1.svg,42.ProbabilisticModels2.majid.key-stage-0107anim2.svg,42.ProbabilisticModels2.majid.key-stage-0107anim3.svg,42.ProbabilisticModels2.majid.key-stage-0107anim4.svg,42.ProbabilisticModels2.majid.key-stage-0107anim5.svg" class="slide-image" />
 
             <figcaption>
@@ -1122,8 +1162,8 @@ slides: true
 
 
 
-       <section id="slide-080" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-080" title="Link to this slide.">link here</a>
+       <section id="slide-083" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-083" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0109anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0109anim0.svg,42.ProbabilisticModels2.majid.key-stage-0109anim1.svg,42.ProbabilisticModels2.majid.key-stage-0109anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -1136,8 +1176,8 @@ slides: true
 
 
 
-       <section id="slide-081">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-081" title="Link to this slide.">link here</a>
+       <section id="slide-084">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-084" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0110.svg" class="slide-image" />
 
             <figcaption>
@@ -1149,8 +1189,8 @@ slides: true
 
 
 
-       <section id="slide-082">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-082" title="Link to this slide.">link here</a>
+       <section id="slide-085">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-085" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0111.svg" class="slide-image" />
 
             <figcaption>
@@ -1162,8 +1202,8 @@ slides: true
 
 
 
-       <section id="slide-083" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-083" title="Link to this slide.">link here</a>
+       <section id="slide-086" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-086" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0112anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0112anim0.svg,42.ProbabilisticModels2.majid.key-stage-0112anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1176,8 +1216,8 @@ slides: true
 
 
 
-       <section id="slide-084">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-084" title="Link to this slide.">link here</a>
+       <section id="slide-087">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-087" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0113.svg" class="slide-image" />
 
             <figcaption>
@@ -1189,8 +1229,8 @@ slides: true
 
 
 
-       <section id="slide-085" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-085" title="Link to this slide.">link here</a>
+       <section id="slide-088" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-088" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0114anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0114anim0.svg,42.ProbabilisticModels2.majid.key-stage-0114anim1.svg,42.ProbabilisticModels2.majid.key-stage-0114anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -1203,8 +1243,8 @@ slides: true
 
 
 
-       <section id="slide-086" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-086" title="Link to this slide.">link here</a>
+       <section id="slide-089" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-089" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0115anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0115anim0.svg,42.ProbabilisticModels2.majid.key-stage-0115anim1.svg,42.ProbabilisticModels2.majid.key-stage-0115anim2.svg,42.ProbabilisticModels2.majid.key-stage-0115anim3.svg" class="slide-image" />
 
             <figcaption>
@@ -1217,8 +1257,8 @@ slides: true
 
 
 
-       <section id="slide-087" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-087" title="Link to this slide.">link here</a>
+       <section id="slide-090" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-090" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0116anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0116anim0.svg,42.ProbabilisticModels2.majid.key-stage-0116anim1.svg,42.ProbabilisticModels2.majid.key-stage-0116anim10.svg,42.ProbabilisticModels2.majid.key-stage-0116anim2.svg,42.ProbabilisticModels2.majid.key-stage-0116anim3.svg,42.ProbabilisticModels2.majid.key-stage-0116anim4.svg,42.ProbabilisticModels2.majid.key-stage-0116anim5.svg,42.ProbabilisticModels2.majid.key-stage-0116anim6.svg,42.ProbabilisticModels2.majid.key-stage-0116anim7.svg,42.ProbabilisticModels2.majid.key-stage-0116anim8.svg,42.ProbabilisticModels2.majid.key-stage-0116anim9.svg" class="slide-image" />
 
             <figcaption>
@@ -1231,8 +1271,8 @@ slides: true
 
 
 
-       <section id="slide-088" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-088" title="Link to this slide.">link here</a>
+       <section id="slide-091" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-091" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0117anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0117anim0.svg,42.ProbabilisticModels2.majid.key-stage-0117anim1.svg,42.ProbabilisticModels2.majid.key-stage-0117anim10.svg,42.ProbabilisticModels2.majid.key-stage-0117anim2.svg,42.ProbabilisticModels2.majid.key-stage-0117anim3.svg,42.ProbabilisticModels2.majid.key-stage-0117anim4.svg,42.ProbabilisticModels2.majid.key-stage-0117anim5.svg,42.ProbabilisticModels2.majid.key-stage-0117anim6.svg,42.ProbabilisticModels2.majid.key-stage-0117anim7.svg,42.ProbabilisticModels2.majid.key-stage-0117anim8.svg,42.ProbabilisticModels2.majid.key-stage-0117anim9.svg" class="slide-image" />
 
             <figcaption>
@@ -1245,8 +1285,8 @@ slides: true
 
 
 
-       <section id="slide-089" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-089" title="Link to this slide.">link here</a>
+       <section id="slide-092" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-092" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0118anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0118anim0.svg,42.ProbabilisticModels2.majid.key-stage-0118anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1259,8 +1299,8 @@ slides: true
 
 
 
-       <section id="slide-090">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-090" title="Link to this slide.">link here</a>
+       <section id="slide-093">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-093" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0119.svg" class="slide-image" />
 
             <figcaption>
@@ -1271,8 +1311,8 @@ slides: true
 
 
 
-       <section class="video" id="video-090">
-           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-90">link here</a>
+       <section class="video" id="video-093">
+           <a class="slide-link" href="https://mlvu.github.io/lecture08#video-93">link here</a>
            <iframe
                 src="https://www.youtube.com/embed/r4DYGXmbk_E"
                 title="YouTube video player"
@@ -1284,8 +1324,8 @@ slides: true
 
 
 
-       <section id="slide-091">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-091" title="Link to this slide.">link here</a>
+       <section id="slide-094">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-094" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0121.svg" class="slide-image" />
 
             <figcaption>
@@ -1297,8 +1337,8 @@ slides: true
 
 
 
-       <section id="slide-092">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-092" title="Link to this slide.">link here</a>
+       <section id="slide-095">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-095" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0122.svg" class="slide-image" />
 
             <figcaption>
@@ -1310,8 +1350,8 @@ slides: true
 
 
 
-       <section id="slide-093">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-093" title="Link to this slide.">link here</a>
+       <section id="slide-096">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-096" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0123.png" class="slide-image" />
 
             <figcaption>
@@ -1323,8 +1363,8 @@ slides: true
 
 
 
-       <section id="slide-094">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-094" title="Link to this slide.">link here</a>
+       <section id="slide-097">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-097" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0124.png" class="slide-image" />
 
             <figcaption>
@@ -1336,8 +1376,8 @@ slides: true
 
 
 
-       <section id="slide-095">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-095" title="Link to this slide.">link here</a>
+       <section id="slide-098">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-098" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0125.png" class="slide-image" />
 
             <figcaption>
@@ -1349,8 +1389,8 @@ slides: true
 
 
 
-       <section id="slide-096">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-096" title="Link to this slide.">link here</a>
+       <section id="slide-099">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-099" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0126.svg" class="slide-image" />
 
             <figcaption>
@@ -1362,8 +1402,8 @@ slides: true
 
 
 
-       <section id="slide-097" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-097" title="Link to this slide.">link here</a>
+       <section id="slide-100" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-100" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0127anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0127anim0.svg,42.ProbabilisticModels2.majid.key-stage-0127anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1376,8 +1416,8 @@ slides: true
 
 
 
-       <section id="slide-098" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-098" title="Link to this slide.">link here</a>
+       <section id="slide-101" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-101" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0128anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0128anim0.svg,42.ProbabilisticModels2.majid.key-stage-0128anim1.svg" class="slide-image" />
 
             <figcaption>
@@ -1390,8 +1430,8 @@ slides: true
 
 
 
-       <section id="slide-099">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-099" title="Link to this slide.">link here</a>
+       <section id="slide-102">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-102" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0129.svg" class="slide-image" />
 
             <figcaption>
@@ -1403,8 +1443,8 @@ slides: true
 
 
 
-       <section id="slide-100">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-100" title="Link to this slide.">link here</a>
+       <section id="slide-103">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-103" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0131.svg" class="slide-image" />
 
             <figcaption>
@@ -1416,8 +1456,8 @@ slides: true
 
 
 
-       <section id="slide-101">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-101" title="Link to this slide.">link here</a>
+       <section id="slide-104">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-104" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0132.svg" class="slide-image" />
 
             <figcaption>
@@ -1429,8 +1469,8 @@ slides: true
 
 
 
-       <section id="slide-102">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-102" title="Link to this slide.">link here</a>
+       <section id="slide-105">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-105" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0133.svg" class="slide-image" />
 
             <figcaption>
@@ -1442,8 +1482,8 @@ slides: true
 
 
 
-       <section id="slide-103">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-103" title="Link to this slide.">link here</a>
+       <section id="slide-106">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-106" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0134.svg" class="slide-image" />
 
             <figcaption>
@@ -1455,8 +1495,8 @@ slides: true
 
 
 
-       <section id="slide-104">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-104" title="Link to this slide.">link here</a>
+       <section id="slide-107">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-107" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0135.png" class="slide-image" />
 
             <figcaption>
@@ -1468,8 +1508,8 @@ slides: true
 
 
 
-       <section id="slide-105">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-105" title="Link to this slide.">link here</a>
+       <section id="slide-108">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-108" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0136.svg" class="slide-image" />
 
             <figcaption>
@@ -1481,8 +1521,8 @@ slides: true
 
 
 
-       <section id="slide-106">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-106" title="Link to this slide.">link here</a>
+       <section id="slide-109">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-109" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0137.svg" class="slide-image" />
 
             <figcaption>
@@ -1494,8 +1534,8 @@ slides: true
 
 
 
-       <section id="slide-107">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-107" title="Link to this slide.">link here</a>
+       <section id="slide-110">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-110" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0138.svg" class="slide-image" />
 
             <figcaption>
@@ -1507,8 +1547,8 @@ slides: true
 
 
 
-       <section id="slide-108">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-108" title="Link to this slide.">link here</a>
+       <section id="slide-111">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-111" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0139.svg" class="slide-image" />
 
             <figcaption>
@@ -1520,8 +1560,8 @@ slides: true
 
 
 
-       <section id="slide-109">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-109" title="Link to this slide.">link here</a>
+       <section id="slide-112">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-112" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0140.svg" class="slide-image" />
 
             <figcaption>
@@ -1533,8 +1573,8 @@ slides: true
 
 
 
-       <section id="slide-110" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-110" title="Link to this slide.">link here</a>
+       <section id="slide-113" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-113" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0141anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0141anim0.svg,42.ProbabilisticModels2.majid.key-stage-0141anim1.svg,42.ProbabilisticModels2.majid.key-stage-0141anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -1547,8 +1587,8 @@ slides: true
 
 
 
-       <section id="slide-111" class="anim">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-111" title="Link to this slide.">link here</a>
+       <section id="slide-114" class="anim">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-114" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0144anim0.svg" data-images="42.ProbabilisticModels2.majid.key-stage-0144anim0.svg,42.ProbabilisticModels2.majid.key-stage-0144anim1.svg,42.ProbabilisticModels2.majid.key-stage-0144anim2.svg" class="slide-image" />
 
             <figcaption>
@@ -1561,8 +1601,8 @@ slides: true
 
 
 
-       <section id="slide-112">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-112" title="Link to this slide.">link here</a>
+       <section id="slide-115">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-115" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0145.svg" class="slide-image" />
 
             <figcaption>
@@ -1574,8 +1614,8 @@ slides: true
 
 
 
-       <section id="slide-113">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-113" title="Link to this slide.">link here</a>
+       <section id="slide-116">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-116" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0146.svg" class="slide-image" />
 
             <figcaption>
@@ -1587,8 +1627,8 @@ slides: true
 
 
 
-       <section id="slide-114">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-114" title="Link to this slide.">link here</a>
+       <section id="slide-117">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-117" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0147.svg" class="slide-image" />
 
             <figcaption>
@@ -1600,8 +1640,8 @@ slides: true
 
 
 
-       <section id="slide-115">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-115" title="Link to this slide.">link here</a>
+       <section id="slide-118">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-118" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0148.svg" class="slide-image" />
 
             <figcaption>
@@ -1613,8 +1653,8 @@ slides: true
 
 
 
-       <section id="slide-116">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-116" title="Link to this slide.">link here</a>
+       <section id="slide-119">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-119" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0149.png" class="slide-image" />
 
             <figcaption>
@@ -1626,8 +1666,8 @@ slides: true
 
 
 
-       <section id="slide-117">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-117" title="Link to this slide.">link here</a>
+       <section id="slide-120">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-120" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0150.svg" class="slide-image" />
 
             <figcaption>
@@ -1639,8 +1679,8 @@ slides: true
 
 
 
-       <section id="slide-118">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-118" title="Link to this slide.">link here</a>
+       <section id="slide-121">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-121" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0151.svg" class="slide-image" />
 
             <figcaption>
@@ -1652,8 +1692,8 @@ slides: true
 
 
 
-       <section id="slide-119">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-119" title="Link to this slide.">link here</a>
+       <section id="slide-122">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-122" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0152.svg" class="slide-image" />
 
             <figcaption>
@@ -1665,8 +1705,8 @@ slides: true
 
 
 
-       <section id="slide-120">
-            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-120" title="Link to this slide.">link here</a>
+       <section id="slide-123">
+            <a class="slide-link" href="https://mlvu.github.io/lecture08#slide-123" title="Link to this slide.">link here</a>
             <img src="42.ProbabilisticModels2.majid.key-stage-0153.svg" class="slide-image" />
 
             <figcaption>
