@@ -7,13 +7,13 @@
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2023.key" \
 #  --base-url "https://mlvu.github.io/details" \
 #  --pdf-link "https://mlvu.github.io/lectures/Course_details.2023.pdf"
-
-python generate.py \
-  --title "Lecture 0: Preliminaries" \
-  --dst ../preliminaries \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
-  --base-url "https://mlvu.github.io/preliminaries" \
-  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
+#
+#python generate.py \
+#  --title "Lecture 0: Preliminaries" \
+#  --dst ../preliminaries \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
+#  --base-url "https://mlvu.github.io/preliminaries" \
+#  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
@@ -99,13 +99,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/lecture12" \
 #  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 13: Reinforcement learning" \
-#  --dst ../lecture13 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
-#  --base-url "https://mlvu.github.io/lecture13" \
-#  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
-#
+python generate.py \
+  --title "Lecture 13: Reinforcement learning" \
+  --dst ../lecture13 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
+  --base-url "https://mlvu.github.io/lecture13" \
+  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 
 #python generate.py \
 #  --title "Social impact dossier" \
