@@ -36,12 +36,12 @@
 #  --base-url "https://mlvu.github.io/lecture03" \
 #  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 4: Probabilistic models" \
-#  --dst ../lecture04 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
-#  --base-url "https://mlvu.github.io/lecture04" \
-#  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
+python generate.py \
+  --title "Lecture 4: Probabilistic models" \
+  --dst ../lecture04 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
+  --base-url "https://mlvu.github.io/lecture04" \
+  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 5: Data Pre-processing" \
@@ -99,12 +99,12 @@
 #  --base-url "https://mlvu.github.io/lecture12" \
 #  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 13: Reinforcement learning" \
-  --dst ../lecture13 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
-  --base-url "https://mlvu.github.io/lecture13" \
-  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 13: Reinforcement learning" \
+#  --dst ../lecture13 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
+#  --base-url "https://mlvu.github.io/lecture13" \
+#  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 
 #python generate.py \
 #  --title "Social impact dossier" \
