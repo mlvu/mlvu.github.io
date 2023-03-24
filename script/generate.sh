@@ -36,12 +36,12 @@
 #  --base-url "https://mlvu.github.io/lecture03" \
 #  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 4: Probabilistic models" \
-  --dst ../lecture04 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
-  --base-url "https://mlvu.github.io/lecture04" \
-  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 4: Probabilistic models" \
+#  --dst ../lecture04 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
+#  --base-url "https://mlvu.github.io/lecture04" \
+#  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 5: Data Pre-processing" \
@@ -77,13 +77,13 @@ python generate.py \
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
 #  --base-url "https://mlvu.github.io/lecture09" \
 #  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
-#
-#python generate.py \
-#  --title "Lecture 10: Trees and ensembles" \
-#  --dst ../lecture10 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
-#  --base-url "https://mlvu.github.io/lecture10" \
-#  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
+
+python generate.py \
+  --title "Lecture 10: Trees and ensembles" \
+  --dst ../lecture10 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
+  --base-url "https://mlvu.github.io/lecture10" \
+  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 11: Sequences" \
