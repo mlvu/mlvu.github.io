@@ -74,7 +74,7 @@ slides: true
             <img src="52.Trees.key-stage-0004anim0.svg" data-images="52.Trees.key-stage-0004anim0.svg,52.Trees.key-stage-0004anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is what a trained decision tree might look like. Each internal node asks the value of a particular feature, and sends the instance to one of its children dependending on the value of that feature.</p><p    ></p>
+            <p    >This is what a trained decision tree might look like. Each internal node asks the value of a particular feature, and sends the instance to one of its children depending on the value of that feature.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -127,7 +127,7 @@ slides: true
             <img src="52.Trees.key-stage-0008.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we split by rating, we get three segments (the three rows on the right). Tallying up the proportions of each class, we see that the proportions of the segments are not that different from the proportions in the whole. In other words, knowing the value of the rating doesn’t doesn;doesn’t change the information we have about the class very much.</p><p    ></p>
+            <p    >If we split by rating, we get three segments (the three rows on the right). Tallying up the proportions of each class, we see that the proportions of the segments are not that different from the proportions in the whole. In other words, knowing the value of the rating doesn’t change the information we have about the class very much.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -140,7 +140,7 @@ slides: true
             <img src="52.Trees.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
-            <p    >On the other hand, if we split by genre we see that the resulting distributions are much more different: knowing that a movie has the genre <strong class="purple">scifi</strong>, allows us to say with near certainty that it won’t win an oscar.</p><p    ></p>
+            <p    >On the other hand, if we split by genre we see that the resulting distributions are much more different: knowing that a movie has the genre <strong class="purple">scifi</strong>, allows us to say with near certainty that it <strong class="red">won’t win an oscar</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -213,13 +213,14 @@ slides: true
 
 
 
-       <section id="slide-015">
+       <section id="slide-015" class="anim">
             <a class="slide-link" href="https://mlvu.github.io/lecture10#slide-015" title="Link to this slide.">link here</a>
-            <img src="52.Trees.key-stage-0015.svg" class="slide-image" />
+            <img src="52.Trees.key-stage-0015anim0.svg" data-images="52.Trees.key-stage-0015anim0.svg,52.Trees.key-stage-0015anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To answer this, we need to look back to the first probability lecture, where we encountered <em>Entropy</em>.</p><p    ></p>
+            <p    >To answer this, we need to look back to the first probability lecture, where we encountered <strong>entropy</strong>.</p><p    ></p>
             </figcaption>
+            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -401,7 +402,7 @@ slides: true
             <img src="52.Trees.key-stage-0028.svg" class="slide-image" />
 
             <figcaption>
-            <p    ></p>
+            <aside    >Note that we remove node-by-node. We don’t remove all the nodes on one layer of the tree, we check for each node individually.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -414,7 +415,7 @@ slides: true
             <img src="52.Trees.key-stage-0029.svg" class="slide-image" />
 
             <figcaption>
-            <p    >It’s important to note that when we use a validation set to guide search, that we are using validation data to select our model. This means that if we are also using a validation set, for instance to select whether we’ll use a kNN classifier or a decision tree, the pruning should happen on a withheld part of the training data, and not on the same validation data that we use to do our hyperparameter selection. <br></p><p    >To see why, imagine what happens when we train our final model (supposing that we’ve selected a decision tree). During training, we can’t use the <span class="blue">test set</span> to do our pruning. We can only see the <span class="blue">test set</span> when we’ve decided what our final model is going to be. The first <span class="green">train</span>/<span class="orange">validation </span>split should simulate this,situation, so we can’t use the orange validation set for controlling search. <br></p><aside    >This also goes for early stopping in neural networks.</aside><aside    ></aside>
+            <p    >It’s important to note that when we use a validation set to guide search, that we are using validation data to select our model. This means that if we are also using a validation set, for instance to select whether we’ll use a kNN classifier or a decision tree, the pruning should happen on a withheld part of the training data, and not on the same validation data that we use to do our hyperparameter selection. <br></p><p    >To see why, imagine what happens when we train our final model (supposing that we’ve selected a decision tree). During training, we can’t use the <span class="blue">test set</span> to do our pruning. We can only see the <span class="blue">test set</span> when we’ve decided what our final model is going to be. The first <span class="green">train</span>/<span class="orange">validation </span>split should simulate this situation, so we can’t use the orange validation set for controlling search. <br></p><aside    >This also goes for early stopping in neural networks.</aside><aside    ></aside>
             </figcaption>
        </section>
 
