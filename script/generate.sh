@@ -22,12 +22,12 @@
 #  --base-url "https://mlvu.github.io/introduction" \
 #  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 2: Linear Models and Search" \
-#  --dst ../lecture02 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/12 Linear Models 1/12.Linear1.key" \
-#  --base-url "http://mlvu.github.io/lecture02" \
-#  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
+python generate.py \
+  --title "Lecture 2: Linear Models and Search" \
+  --dst ../lecture02 \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/12 Linear Models 1/12.Linear1.key" \
+  --base-url "http://mlvu.github.io/lecture02" \
+  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 3: Model evaluation" \
@@ -64,12 +64,12 @@
 #  --base-url "https://mlvu.github.io/lecture07" \
 #  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 8: Density estimation" \
-  --dst ../lecture08 \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/42 Probabilistic Models 2/42.ProbabilisticModels2.majid.key" \
-  --base-url "https://mlvu.github.io/lecture08" \
-  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 8: Density estimation" \
+#  --dst ../lecture08 \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/42 Probabilistic Models 2/42.ProbabilisticModels2.majid.key" \
+#  --base-url "https://mlvu.github.io/lecture08" \
+#  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 9: Deep generative models" \

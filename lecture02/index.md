@@ -6,19 +6,21 @@ slides: true
     <ul>
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 2: Linear Models and Search</li>
-            <li><a href="#video-000">Linear regression</a></li>
-            <li><a href="#video-019">Searching for a good model</a></li>
-            <li><a href="#video-046">Gradient descent</a></li>
-            <li><a href="#video-075">Gradient Descent and Classification</a></li>
+                <li><a href="#video-000">Linear regression</a></li>
+                <li><a href="#video-019">Searching for a good model</a></li>
+                <li><a href="#video-046">Gradient descent</a></li>
+                <li><a href="#video-075">Gradient Descent and Classification</a></li>
         <li class="pdf"><a href="https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf">PDF</a></li>
     </ul>
 </nav>
 
 <article class="slides">
+
+
        <section class="video" id="video-000">
            <a class="slide-link" href="http://mlvu.github.io/lecture02#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/YGBZE6RA7aU?modestbranding=1&showinfo=0&rel=0"
+                src="https://www.youtube.com/embed/YGBZE6RA7aU"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -26,14 +28,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-001">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-001" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0001.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-002">
@@ -46,7 +53,10 @@ slides: true
        </section>
 
 
-       <section id="slide-002" class="anim">
+
+
+
+       <section id="slide-003" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-003" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0003anim0.svg" data-images="12.Linear1.key-stage-0003anim0.svg,12.Linear1.key-stage-0003anim1.svg,12.Linear1.key-stage-0003anim2.svg,12.Linear1.key-stage-0003anim3.svg,12.Linear1.key-stage-0003anim4.svg" class="slide-image" />
 
@@ -55,6 +65,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -68,6 +80,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-005">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-005" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0005.svg" class="slide-image" />
@@ -76,6 +91,9 @@ slides: true
             <p    >As we saw, the <strong>linear regression model</strong> is simply a linear function that maps the feature(s) to the target value. In the case of one feature, such a function looks like a line. The only decision we have to make is <em>which line fits the data best</em>.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-006">
@@ -88,7 +106,10 @@ slides: true
        </section>
 
 
-       <section id="slide-006" class="anim">
+
+
+
+       <section id="slide-007" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-007" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0007anim0.svg" data-images="12.Linear1.key-stage-0007anim0.svg,12.Linear1.key-stage-0007anim1.svg" class="slide-image" />
 
@@ -100,7 +121,9 @@ slides: true
 
 
 
-       <section id="slide-007" class="anim">
+
+
+       <section id="slide-008" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-008" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0008anim0.svg" data-images="12.Linear1.key-stage-0008anim0.svg,12.Linear1.key-stage-0008anim1.svg,12.Linear1.key-stage-0008anim2.svg,12.Linear1.key-stage-0008anim3.svg" class="slide-image" />
 
@@ -112,14 +135,19 @@ slides: true
 
 
 
+
+
        <section id="slide-009">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-009" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we have one feature (as in this example) a standard linear regression model has two <em>parameters </em>(the numbers that determine which line we fit through our data): <span class="orange red">w</span> the <strong>weight</strong> and <span class="blue">b</span><strong>, </strong>the <strong>bias</strong>. The the weight is also sometimes called the<em> slope </em>and the bias is also sometimes called the <em>intercept</em>.<br></p><p    ><span class="blue">b</span> determines where the line crosses the vertical axis. That is, what value f takes when x = 0.<br></p><p    ><span class="orange red">w</span> determines how much the line rises if we move one step to the right (i.e. increase x by 1)<br></p><p    >For the line drawn here, we have <span class="blue">b</span>=3 and <span class="orange red">w</span>=0.5. <br></p><p    >Note that this isn’t a very good fit for the data. Our job is to find better numbers <span class="orange">w</span> and <span class="blue">b</span>.</p><p    ></p>
+            <p    >If we have one feature (as in this example) a standard linear regression model has two <em>parameters </em>(the numbers that determine which line we fit through our data): <span class="red">w</span> the <strong>weight</strong> and <span class="blue">b</span><strong>, </strong>the <strong>bias</strong>. The the weight is also sometimes called the<em> slope </em>and the bias is also sometimes called the <em>intercept</em>.<br></p><p    ><span class="blue">b</span> determines where the line crosses the vertical axis. That is, what value f takes when x = 0.<br></p><p    ><span class="red">w</span> determines how much the line rises if we move one step to the right (i.e. increase x by 1)<br></p><p    >For the line drawn here, we have <span class="blue">b</span>=3 and <span class="red">w</span>=0.5. <br></p><p    >Note that this isn’t a very good fit for the data. Our job is to find better numbers <span class="orange">w</span> and <span class="blue">b</span>.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-010">
@@ -132,6 +160,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-011">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-011" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0011.svg" class="slide-image" />
@@ -142,19 +173,24 @@ slides: true
        </section>
 
 
-       <section id="slide-011" class="anim">
+
+
+
+       <section id="slide-012" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-012" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0012anim0.svg" data-images="12.Linear1.key-stage-0012anim0.svg,12.Linear1.key-stage-0012anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For an arbitrary number of features, the pattern continues as you’d expect. We summarize the <span class="orange red">w</span>’s in a vector <strong class="orange">w</strong> with the same number of elements as <strong>x</strong>.<br></p><p    >We call the <span class="orange">w</span>’s the <span class="orange">weights</span>, and <span class="blue">b</span> the <span class="blue">bias</span>. The weights and the bias are the <em>parameters </em>of the model. We need to choose these to fit the model to our data.<br></p><p    >The operation of multiplying elements of <strong class="orange">w</strong> by the corresponding elements of <strong>x</strong> and summing them is the <strong>dot product</strong> of <strong class="orange">w</strong> and <strong>x</strong>.</p><p    ></p>
+            <p    >For an arbitrary number of features, the pattern continues as you’d expect. We summarize the <span class="red">w</span>’s in a vector <strong class="orange">w</strong> with the same number of elements as <strong>x</strong>.<br></p><p    >We call the <span class="orange">w</span>’s the <span class="orange">weights</span>, and <span class="blue">b</span> the <span class="blue">bias</span>. The weights and the bias are the <em>parameters </em>of the model. We need to choose these to fit the model to our data.<br></p><p    >The operation of multiplying elements of <strong class="orange">w</strong> by the corresponding elements of <strong>x</strong> and summing them is the <strong>dot product</strong> of <strong class="orange">w</strong> and <strong>x</strong>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-012" class="anim">
+
+
+       <section id="slide-013" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-013" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0013anim0.svg" data-images="12.Linear1.key-stage-0013anim0.svg,12.Linear1.key-stage-0013anim1.svg" class="slide-image" />
 
@@ -163,6 +199,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -176,6 +214,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-015">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-015" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0015.svg" class="slide-image" />
@@ -186,17 +227,23 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-016">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-016" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
-            <p    >So, that's our model defined in detail. But we still don't know <em>which</em> model to choose for a given dataset. Given some data, which values should we choose for the parameters <strong class="orange red">w</strong> and <span class="blue">b</span>?<br></p><p    >In order to answer this question, we need two more ingredients. First, we need a<strong> loss function</strong>, which tells us how well a particular choice of model does (for the given data) and second, we need a way to <strong>search</strong> the space of all models for a particular model that results in a low loss (a model for which the loss function returns a low value).</p><p    ></p>
+            <p    >So, that's our model defined in detail. But we still don't know <em>which</em> model to choose for a given dataset. Given some data, which values should we choose for the parameters <strong class="red">w</strong> and <span class="blue">b</span>?<br></p><p    >In order to answer this question, we need two more ingredients. First, we need a<strong> loss function</strong>, which tells us how well a particular choice of model does (for the given data) and second, we need a way to <strong>search</strong> the space of all models for a particular model that results in a low loss (a model for which the loss function returns a low value).</p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-016" class="anim">
+
+
+
+       <section id="slide-017" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-017" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0017anim0.svg" data-images="12.Linear1.key-stage-0017anim0.svg,12.Linear1.key-stage-0017anim1.svg" class="slide-image" />
 
@@ -205,6 +252,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -218,6 +267,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-019">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-019" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0019.svg" class="slide-image" />
@@ -227,10 +279,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-019">
            <a class="slide-link" href="http://mlvu.github.io/lecture02#video-19">link here</a>
            <iframe
-                src="https://youtube.com/embed/q97nOAYfpHg?modestbranding=1&showinfo=0&rel=0"
+                src="https://youtube.com/embed/q97nOAYfpHg"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -238,14 +293,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-020">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-020" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0020.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-021">
@@ -258,15 +318,20 @@ slides: true
        </section>
 
 
-       <section id="slide-021" class="anim">
+
+
+
+       <section id="slide-022" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-022" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0022anim0.svg" data-images="12.Linear1.key-stage-0022anim0.svg,12.Linear1.key-stage-0022anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >As we saw in the previous lecture, we can plot the loss for every point in our model space. This is called the <strong>loss surface</strong> or sometimes the <strong>loss landscape</strong>. If you imagine a 2D model space, you can think of the loss surface as a landscape of rolling hills (or sometimes of jagged cliffs).<br></p><p    >Here is what that actually looks like for the two parameters of the one-feature linear regression. Note that this is specific to the data we saw earlier. For a different dataset, we get a different loss landscape.<br></p><p    >To minimize the loss, we need to search this space to find the brightest point in this picture. Or, the lowest point in the loss landscape. Remember that, normally, we may have hundreds of parameters so it isn’t as easy as it looks. Any method we come up with, needs to work in any number of dimensions.<br></p><aside    >We’ve plotted the logarithm of the loss as a trick to make this image visually easier to understand (it maps the values that are easy to tell apart to the values we care about). The logarithm is a monotonic function so log(loss(<strong class="orange red">w</strong>, <span class="blue">b</span>)) has its minimum at the same place as loss(<strong class="orange red">w</strong>, <span class="blue">b</span>).</aside><aside    ></aside>
+            <p    >As we saw in the previous lecture, we can plot the loss for every point in our model space. This is called the <strong>loss surface</strong> or sometimes the <strong>loss landscape</strong>. If you imagine a 2D model space, you can think of the loss surface as a landscape of rolling hills (or sometimes of jagged cliffs).<br></p><p    >Here is what that actually looks like for the two parameters of the one-feature linear regression. Note that this is specific to the data we saw earlier. For a different dataset, we get a different loss landscape.<br></p><p    >To minimize the loss, we need to search this space to find the brightest point in this picture. Or, the lowest point in the loss landscape. Remember that, normally, we may have hundreds of parameters so it isn’t as easy as it looks. Any method we come up with, needs to work in any number of dimensions.<br></p><aside    >We’ve plotted the logarithm of the loss as a trick to make this image visually easier to understand (it maps the values that are easy to tell apart to the values we care about). The logarithm is a monotonic function so log(loss(<strong class="red">w</strong>, <span class="blue">b</span>)) has its minimum at the same place as loss(<strong class="red">w</strong>, <span class="blue">b</span>).</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -275,9 +340,12 @@ slides: true
             <img src="12.Linear1.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The mathematical name for this sort of search is <strong>optimization</strong>. That is, we are trying to find the input (<strong class="orange red">p</strong>, the<span class="orange red"> model parameters</span>) for  which a particular function (the loss) is at its optimum (a maximum or minimum, in this case a minimum). Failing that, we’d like to find as low a value as possible.<br></p><p    >We’ll start by looking at some very simple approaches.</p><p    ></p>
+            <p    >The mathematical name for this sort of search is <strong>optimization</strong>. That is, we are trying to find the input (<strong class="red">p</strong>, the<span class="red"> model parameters</span>) for  which a particular function (the loss) is at its optimum (a maximum or minimum, in this case a minimum). Failing that, we’d like to find as low a value as possible.<br></p><p    >We’ll start by looking at some very simple approaches.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-024">
@@ -290,6 +358,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-025">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-025" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0025.svg" class="slide-image" />
@@ -298,6 +369,9 @@ slides: true
             <p    >Let’s start with a very simple example:<strong> random search</strong>. We simply make a small step to a nearby point. If the loss goes up, we move back to our previous point. If it goes down we stay in the new point. Then we repeat the process.<br></p><p    >We usually stop the loop when the loss gets to a pre-defined level, or we just run it for a fixed number of iterations, and we see how well we've done.<br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-026">
@@ -310,7 +384,10 @@ slides: true
        </section>
 
 
-       <section id="slide-026" class="anim">
+
+
+
+       <section id="slide-027" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-027" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0027anim0.svg" data-images="12.Linear1.key-stage-0027anim0.svg,12.Linear1.key-stage-0027anim1.svg,12.Linear1.key-stage-0027anim2.svg,12.Linear1.key-stage-0027anim3.svg,12.Linear1.key-stage-0027anim4.svg,12.Linear1.key-stage-0027anim5.svg,12.Linear1.key-stage-0027anim6.svg" class="slide-image" />
 
@@ -319,6 +396,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -332,6 +411,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-029">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-029" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0029.svg" class="slide-image" />
@@ -342,7 +424,10 @@ slides: true
        </section>
 
 
-       <section id="slide-029" class="anim">
+
+
+
+       <section id="slide-030" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-030" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0030anim0.svg" data-images="12.Linear1.key-stage-0030anim0.svg,12.Linear1.key-stage-0030anim1.svg,12.Linear1.key-stage-0030anim2.svg" class="slide-image" />
 
@@ -354,7 +439,9 @@ slides: true
 
 
 
-       <section id="slide-030" class="anim">
+
+
+       <section id="slide-031" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-031" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0031anim0.png" data-images="12.Linear1.key-stage-0031anim0.png,12.Linear1.key-stage-0031anim1.png,12.Linear1.key-stage-0031anim2.png" class="slide-image" />
 
@@ -363,6 +450,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -376,6 +465,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-033">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-033" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0033.svg" class="slide-image" />
@@ -384,6 +476,9 @@ slides: true
             <p    >There are a few tricks that can help us to escape local minima. Here’s a popular one, called <strong>simulated annealing</strong>: if the next point chosen isn’t better than the current one, we still pick it, but only with some small probability. In other words, we allow the algorithm to<em> occasionally </em>travel uphill. <br></p><p    >This means that whenever it gets stuck in a local minimum, it still has some probability of escaping, and finding the global minimum.<br></p><aside    >The name "simulated annealing" is a bit of a historical accident, so don't read too much in to it. It comes from the fact that this algorithm can be used to simulate the cooling of a material like metal. The carefully controlled cooling of a material to promote the growth of particular kinds of crystals is called annealing. In physical terms this is like looking for the minimum in an energy landscape, which is mathematically similar to our loss landscape. </aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-034">
@@ -396,6 +491,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-035">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-035" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0035.svg" class="slide-image" />
@@ -404,6 +502,9 @@ slides: true
             <p    >All this talk about global minima may suggest that the local minima are always terrible. Remember, however that if we have a complex model, the global minimum will probably overfit. In such cases, we may actually be more interested in finding a good local minimum.<br></p><p    >In short, we want to think carefully about whether our algorithm can escape <em>bad</em> local minima, but that doesn't mean that local minima are always bad solutions.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-036">
@@ -416,6 +517,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-037">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-037" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0037.svg" class="slide-image" />
@@ -424,6 +528,9 @@ slides: true
             <p    >Here is what random search looks when the steps are sampled from a normal distribution. Note that the “failed” steps all have different sizes.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-038">
@@ -436,6 +543,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-039">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-039" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0039.svg" class="slide-image" />
@@ -444,6 +554,9 @@ slides: true
             <p    >Another thing you can do is just to run random search a couple of times independently (one after the other, or in parallel). If you’re lucky one of these runs may start you off close enough to the global minimum.<br></p><p    >For simulated annealing, doing multiple runs makes less sense. We can show that there’s not much difference between 10 runs of 100 iterations and one run of 1000. The only reason to do multiple runs of simulated annealing is because it’s easier to parallelize over multiple cores or machines.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-040">
@@ -456,6 +569,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-041">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-041" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0041.svg" class="slide-image" />
@@ -466,15 +582,20 @@ slides: true
        </section>
 
 
-       <section id="slide-041" class="anim">
+
+
+
+       <section id="slide-042" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-042" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0042anim0.svg" data-images="12.Linear1.key-stage-0042anim0.svg,12.Linear1.key-stage-0042anim1.svg,12.Linear1.key-stage-0042anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what a very basic evolutionary search looks like on our non-convex loss surface. We start with a population of 50 models, and compute the loss for each. We kill the worst 50% (<span class="orange red">the red dots</span>) and keep the best 50% (<span class="green">the green dots</span>). <br></p><p    >We then create a new population (<span class="blue">the blue crosses</span>), by randomly pairing up parents from the green population, and taking the point halfway between the two parents, with a little noise added. Finally, we take the blue crosses as the new population and repeat the process.</p><p    ></p>
+            <p    >Here’s what a very basic evolutionary search looks like on our non-convex loss surface. We start with a population of 50 models, and compute the loss for each. We kill the worst 50% (<span class="red">the red dots</span>) and keep the best 50% (<span class="green">the green dots</span>). <br></p><p    >We then create a new population (<span class="blue">the blue crosses</span>), by randomly pairing up parents from the green population, and taking the point halfway between the two parents, with a little noise added. Finally, we take the blue crosses as the new population and repeat the process.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -488,6 +609,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-044">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-044" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0044.svg" class="slide-image" />
@@ -496,6 +620,9 @@ slides: true
             <p    >Population methods are very powerful, but computing the loss for so many different models is often expensive. They can also come with a lot of different parameters to control the search, each of which you will need to carefully tune.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-045">
@@ -508,6 +635,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-046">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-046" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0046.svg" class="slide-image" />
@@ -517,10 +647,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-046">
            <a class="slide-link" href="http://mlvu.github.io/lecture02#video-46">link here</a>
            <iframe
-                src="https://youtube.com/embed/DlMKkPrKg5c?modestbranding=1&showinfo=0&rel=0"
+                src="https://youtube.com/embed/DlMKkPrKg5c"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -528,14 +661,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-047">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-047" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0047.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-048">
@@ -548,6 +686,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-049">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-049" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0049.svg" class="slide-image" />
@@ -556,6 +697,9 @@ slides: true
             <p    >Here's what that looks like for a few values of <span class="green">k</span>.<br></p><p    >As you can see, the more samples we take, the more directly we head for the region of  low loss. The more closely we inspect our local neighbourhood, to determine in which direction the function decreases quickest, the faster we converge.<br></p><p    >The lesson here is that the better we know in which direction the loss decreases, the faster our search converges. In this case we pay a steep price: we have to evaluate our function 15 times to work out a better direction.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-050">
@@ -568,6 +712,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-051">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-051" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0051.svg" class="slide-image" />
@@ -578,17 +725,23 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-052">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-052" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0052.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Before we dig in to the gradient descent algorithm, let’s review some basic principles from calculus. First up, <strong>slope</strong>. The slope of a linear function is simply <strong>how much it moves up</strong> if we move one step to the right. In the case of <span class="green">f(x) </span>in this picture, the slope is <em>negative</em>, because the line moves down.<br></p><aside    >In our 1D regression model, the parameter <span class="orange red">w</span> was the slope. In this case, however we will investigate the slope of a linear function approximation the loss landscape, not of the model (be sure not to confuse these two).</aside><aside    ></aside>
+            <p    >Before we dig in to the gradient descent algorithm, let’s review some basic principles from calculus. First up, <strong>slope</strong>. The slope of a linear function is simply <strong>how much it moves up</strong> if we move one step to the right. In the case of <span class="green">f(x) </span>in this picture, the slope is <em>negative</em>, because the line moves down.<br></p><aside    >In our 1D regression model, the parameter <span class="red">w</span> was the slope. In this case, however we will investigate the slope of a linear function approximation the loss landscape, not of the model (be sure not to confuse these two).</aside><aside    ></aside>
             </figcaption>
        </section>
 
 
-       <section id="slide-052" class="anim">
+
+
+
+       <section id="slide-053" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-053" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0053anim0.svg" data-images="12.Linear1.key-stage-0053anim0.svg,12.Linear1.key-stage-0053anim1.svg,12.Linear1.key-stage-0053anim2.svg,12.Linear1.key-stage-0053anim3.svg,12.Linear1.key-stage-0053anim4.svg,12.Linear1.key-stage-0053anim5.svg" class="slide-image" />
 
@@ -600,17 +753,22 @@ slides: true
 
 
 
+
+
        <section id="slide-054">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-054" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0054.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To apply this principle in machine learning, we’ll need to generalise it for loss functions with multiple inputs (i.e. for models with <span class="orange red">multiple parameters</span>). We do this by generalising the<em> derivative</em> to the<strong> gradient</strong>. The tangent line then becomes a tangent (hyper)plane. <br></p><p    >Once we have this hyperplane, we can use it to work out in which direction the function grows and shrinks the quickest. One way of thinking about this is that the tangent hyperplane is a <strong>local approximation of the function</strong>. Zoomed out like this, the hyperplane and the function look nothing alike, but if we zoom in close enough on the point where they touch, they behave almost exactly the same. <br></p><p    >This is useful, because in a hyperplane it's very easy to see in which direction it goes down the quickest. Much easier than it is for a complicated beast like our loss function itself. Since the hyperplane approximates the loss function, this is also the direction in which the loss decreases the quickest. At least, so long as we don't move away too far from the neighborhood where the hyperplane is a good approximation of the loss function.<br></p><p    >image source: <a href="https://nl.mathworks.com/help/matlab/math/calculate-tangent-plane-to-surface.html?requestedDomain=true"><strong class="blue">https://nl.mathworks.com/help/matlab/math/calculate-tangent-plane-to-surface.html?requestedDomain=true</strong></a></p><p    ><a href="https://nl.mathworks.com/help/matlab/math/calculate-tangent-plane-to-surface.html?requestedDomain=true"><strong class="blue"></strong></a></p>
+            <p    >To apply this principle in machine learning, we’ll need to generalise it for loss functions with multiple inputs (i.e. for models with <span class="red">multiple parameters</span>). We do this by generalising the<em> derivative</em> to the<strong> gradient</strong>. The tangent line then becomes a tangent (hyper)plane. <br></p><p    >Once we have this hyperplane, we can use it to work out in which direction the function grows and shrinks the quickest. One way of thinking about this is that the tangent hyperplane is a <strong>local approximation of the function</strong>. Zoomed out like this, the hyperplane and the function look nothing alike, but if we zoom in close enough on the point where they touch, they behave almost exactly the same. <br></p><p    >This is useful, because in a hyperplane it's very easy to see in which direction it goes down the quickest. Much easier than it is for a complicated beast like our loss function itself. Since the hyperplane approximates the loss function, this is also the direction in which the loss decreases the quickest. At least, so long as we don't move away too far from the neighborhood where the hyperplane is a good approximation of the loss function.<br></p><p    >image source: <a href="https://nl.mathworks.com/help/matlab/math/calculate-tangent-plane-to-surface.html?requestedDomain=true"><strong class="blue">https://nl.mathworks.com/help/matlab/math/calculate-tangent-plane-to-surface.html?requestedDomain=true</strong></a></p><p    ><a href="https://nl.mathworks.com/help/matlab/math/calculate-tangent-plane-to-surface.html?requestedDomain=true"><strong class="blue"></strong></a></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-054" class="anim">
+
+
+
+       <section id="slide-055" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-055" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0055anim0.svg" data-images="12.Linear1.key-stage-0055anim0.svg,12.Linear1.key-stage-0055anim1.svg,12.Linear1.key-stage-0055anim2.svg" class="slide-image" />
 
@@ -622,17 +780,22 @@ slides: true
 
 
 
+
+
        <section id="slide-056">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-056" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0056.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Remember, that this is how we express a linear function in n dimensions: we assign each dimension a slope, and add a single <span class="blue">bias (c)</span>.<br></p><p    >In this image, the two weights of a linear 2D function (<span class="orange red">a</span> and <span class="green">b</span>) representing a hyperplane, are just one slope per dimension. If we move<span> one step</span> in the direction of  x<sub>1</sub>, we move<span class="green"> </span>up by <span class="green">a</span>, and if we move<span> one step</span> in the direction of  x<sub>2</sub>, we move up by <span class="green">b</span>.<br></p><p    >This is the same picture we saw earlier for the linear function, but we're using it in a different way. Earlier, it represented a model with<em> two features</em>. Here, it serves as an approximation for a loss landscape for a model with <em>two parameters</em>.<br></p><p    ><br></p><p    ></p>
+            <p    >Remember, that this is how we express a linear function in n dimensions: we assign each dimension a slope, and add a single <span class="blue">bias (c)</span>.<br></p><p    >In this image, the two weights of a linear 2D function (<span class="red">a</span> and <span class="green">b</span>) representing a hyperplane, are just one slope per dimension. If we move<span> one step</span> in the direction of  x<sub>1</sub>, we move<span class="green"> </span>up by <span class="green">a</span>, and if we move<span> one step</span> in the direction of  x<sub>2</sub>, we move up by <span class="green">b</span>.<br></p><p    >This is the same picture we saw earlier for the linear function, but we're using it in a different way. Earlier, it represented a model with<em> two features</em>. Here, it serves as an approximation for a loss landscape for a model with <em>two parameters</em>.<br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
 
-       <section id="slide-056" class="anim">
+
+
+
+       <section id="slide-057" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-057" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0057anim0.svg" data-images="12.Linear1.key-stage-0057anim0.svg,12.Linear1.key-stage-0057anim1.svg,12.Linear1.key-stage-0057anim2.svg,12.Linear1.key-stage-0057anim3.svg" class="slide-image" />
 
@@ -644,7 +807,9 @@ slides: true
 
 
 
-       <section id="slide-057" class="anim">
+
+
+       <section id="slide-058" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-058" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0058anim0.svg" data-images="12.Linear1.key-stage-0058anim0.svg,12.Linear1.key-stage-0058anim1.svg,12.Linear1.key-stage-0058anim2.svg,12.Linear1.key-stage-0058anim3.svg,12.Linear1.key-stage-0058anim4.svg" class="slide-image" />
 
@@ -653,6 +818,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -666,6 +833,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-060">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-060" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0060.svg" class="slide-image" />
@@ -676,14 +846,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-061">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-061" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0061.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is the <strong>gradient descent algorithm</strong>. Starting from some candidate <strong>p</strong>, we simply compute the gradient at <strong>p</strong>, subtract it from the current choice, and iterate this process:<br></p><p     class="list-item">We<em> subtract</em>, because the gradient points <em>uphill</em>. Since the gradient is the direction of steepest ascent, the negative gradient is the direction of steepest <em>de</em>scent.<br></p><p     class="list-item">Since the gradient is only a<em> local approximation </em>to our loss function, the bigger our step, the more we go wrong because the approximation is incorrect. Usually, we scale down the step size indicated by the gradient by multiplying it by a value <span class="green">η </span>(eta),  called the<strong> learning rate</strong>. This value is chosen by trial and error, and remains constant throughout the search (at least in the simplest version of the algorithm).<br></p><p    ><strong>Note again a potential point of confusion:</strong> we have two linear functions here.  One is the <em>model</em>, whose parameters are indicated by <strong class="orange red">w</strong> and <span class="blue">b</span>. The other is the tangent hyperplane to the loss function, whose slope is indicated by ∇loss(<strong class="orange">p</strong>) here. These are different functions on different spaces.<br></p><p    >We can iterate for a fixed number of iterations, until the loss gets low enough, or until the gradient gets close enough to the zero vector, which implies we've reached a local minimum.</p><p    ></p>
+            <p    >Here is the <strong>gradient descent algorithm</strong>. Starting from some candidate <strong>p</strong>, we simply compute the gradient at <strong>p</strong>, subtract it from the current choice, and iterate this process:<br></p><p     class="list-item">We<em> subtract</em>, because the gradient points <em>uphill</em>. Since the gradient is the direction of steepest ascent, the negative gradient is the direction of steepest <em>de</em>scent.<br></p><p     class="list-item">Since the gradient is only a<em> local approximation </em>to our loss function, the bigger our step, the more we go wrong because the approximation is incorrect. Usually, we scale down the step size indicated by the gradient by multiplying it by a value <span class="green">η </span>(eta),  called the<strong> learning rate</strong>. This value is chosen by trial and error, and remains constant throughout the search (at least in the simplest version of the algorithm).<br></p><p    ><strong>Note again a potential point of confusion:</strong> we have two linear functions here.  One is the <em>model</em>, whose parameters are indicated by <strong class="red">w</strong> and <span class="blue">b</span>. The other is the tangent hyperplane to the loss function, whose slope is indicated by ∇loss(<strong class="orange">p</strong>) here. These are different functions on different spaces.<br></p><p    >We can iterate for a fixed number of iterations, until the loss gets low enough, or until the gradient gets close enough to the zero vector, which implies we've reached a local minimum.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-062">
@@ -696,6 +872,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-063">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-063" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0063.svg" class="slide-image" />
@@ -704,6 +883,9 @@ slides: true
             <p    >Let’s go back to our example problem, and see how we can apply gradient descent here.<br></p><p    >Unlike random search, it’s not enough to just compute the loss for a given model,<strong> we need the gradient of the loss</strong>. We'll start by working this out.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-064">
@@ -716,9 +898,12 @@ slides: true
        </section>
 
 
-       <section id="slide-064" class="anim">
+
+
+
+       <section id="slide-065" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-065" title="Link to this slide.">link here</a>
-            <img src="12.Linear1.key-stage-0065anim0.svg" data-images="12.Linear1.key-stage-0065anim0.svg,12.Linear1.key-stage-0065anim1.svg,12.Linear1.key-stage-0065anim2.svg,12.Linear1.key-stage-0065anim3.svg,12.Linear1.key-stage-0065anim4.svg,12.Linear1.key-stage-0065anim5.svg,12.Linear1.key-stage-0065anim6.svg" class="slide-image" />
+            <img src="12.Linear1.key-stage-0065anim0.svg" data-images="12.Linear1.key-stage-0065anim0.svg,12.Linear1.key-stage-0065anim1.svg,12.Linear1.key-stage-0065anim2.svg,12.Linear1.key-stage-0065anim3.svg,12.Linear1.key-stage-0065anim4.svg,12.Linear1.key-stage-0065anim5.svg" class="slide-image" />
 
             <figcaption>
             <p    >Here are the derivations of the two partial derivatives:<br></p><p     class="list-item">first we use the <em>sum rule</em>, moving the derivative inside the sum symbol<br></p><p     class="list-item">then we use the <em>chain rule</em>, to split the function into the composition of computing the residual and squaring, computing the derivative of each with respect to its argument.<br></p><p    >The second homework exercise, and the formula sheet both provide a list of the most common rules for derivatives.<br></p><aside    >On your first pass through the slides, it's ok to take my word for it that these are the derivatives and to skip the derivation. However, there are a lot more derivations like these coming up, so you should work through every step before moving on to the next lecture, or you'll struggle in the later parts of the course.</aside><aside    ></aside>
@@ -728,7 +913,9 @@ slides: true
 
 
 
-       <section id="slide-065" class="anim">
+
+
+       <section id="slide-066" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-066" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0066anim0.svg" data-images="12.Linear1.key-stage-0066anim0.svg,12.Linear1.key-stage-0066anim1.svg" class="slide-image" />
 
@@ -737,6 +924,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -750,6 +939,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-068">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-068" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0068.svg" class="slide-image" />
@@ -758,6 +950,9 @@ slides: true
             <p    >Here is what it looks like in feature space.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-069">
@@ -770,6 +965,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-070">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-070" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0070.png" class="slide-image" />
@@ -778,6 +976,9 @@ slides: true
             <p    >If our function is non-convex, gradient descent doesn’t help us with the problem of local minima. As we see here, it heads straight for the nearest minimum and stays there. To make the algorithm more robust against this type of thing, we need to add a little randomness back in, preferably without destroying the behaviour of moving so cleanly to a minimum once one is found.<br></p><p    >We can also try multiple runs from different starts. Later we will see <em>stochastic</em> gradient descent, which computes the gradient only over subsets of the data (making the algorithm more efficient, and adding a little randomness at the same time).</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-071">
@@ -790,6 +991,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-072">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-072" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0072.png" class="slide-image" />
@@ -798,6 +1002,9 @@ slides: true
             <p    >Here, we see the effect of the learning rate. If we set if too high, the gradient descent jumps outof the first minimum it finds. A little lower and it stays in the neighborhood of the first minimum, but it sort of bounces from side to side, only very slowly moving towards the actual minimum.<br></p><p    >At 0.01, we find a sweet spot where it finds the local minimum pretty quickly. At 0.005 we see the same behavior, but we need to wait much longer, because the step sizes are so small.<br></p><p    >The best value of the learning rate is different for each dataset and each model. You'll usually have to find it by trial and error. We'll talk a little more about how this looks in practice in the next lecture.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-073">
@@ -810,6 +1017,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-074">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-074" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0074.svg" class="slide-image" />
@@ -818,6 +1028,9 @@ slides: true
             <p    >It’s worth saying that for <strong>linear regression</strong>, although it makes a nice, simple illustration, none of this searching is actually necessary. For linear regression, we can set the derivatives equal to zero and solve explicitly for <strong class="orange">w</strong> and for <span class="blue">b</span>. This would give us the optimal solution directly without searching.<br></p><aside    >However, this trick requires more advanced linear algebra to work out than we want to introduce here. You should learn about this in most linear algebra courses, where the problem is called ordinary least squares, and is solved by computing the pseudo-inverse of the data matrix. We won't go down this route in this course because it'll stop working very quickly once we start looking at more complicated models.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-075">
@@ -829,10 +1042,13 @@ slides: true
             </figcaption>
        </section>
 
+
+
+
        <section class="video" id="video-075">
            <a class="slide-link" href="http://mlvu.github.io/lecture02#video-75">link here</a>
            <iframe
-                src="https://youtube.com/embed/LjhzJUy-wfk?modestbranding=1&showinfo=0&rel=0"
+                src="https://youtube.com/embed/LjhzJUy-wfk"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
@@ -840,14 +1056,19 @@ slides: true
 
        </section>
 
+
+
        <section id="slide-076">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-076" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0076.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><lnbr></lnbr></p><p    ></p>
+            <p    ><br></p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-077">
@@ -860,14 +1081,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-078">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-078" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0078.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To define a linear decision boundary, we take the same functional form we used for the linear regression: some weight vector <strong class="orange">w</strong>, and a bias <span class="blue">b</span>. <br></p><p    >The way we define the decision boundary is a little different than the way we defined the regression line. Here, we say that if <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> is larger than 0, we call <strong>x </strong><span class="blue">one class</span>, if  it is smaller than 0, we call it<span class="orange red"> the other</span> (we’ll stick to binary classification for now).<br></p><aside    >Note that we are drawing a line again, but in a different space: in the regression example we draw a line in the combined feature and output space (a function from the feature to the output). Here, we have two features, and we are drawing a line in only the feature space.</aside><aside    ></aside>
+            <p    >To define a linear decision boundary, we take the same functional form we used for the linear regression: some weight vector <strong class="orange">w</strong>, and a bias <span class="blue">b</span>. <br></p><p    >The way we define the decision boundary is a little different than the way we defined the regression line. Here, we say that if <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> is larger than 0, we call <strong>x </strong><span class="blue">one class</span>, if  it is smaller than 0, we call it<span class="red"> the other</span> (we’ll stick to binary classification for now).<br></p><aside    >Note that we are drawing a line again, but in a different space: in the regression example we draw a line in the combined feature and output space (a function from the feature to the output). Here, we have two features, and we are drawing a line in only the feature space.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-079">
@@ -875,9 +1102,12 @@ slides: true
             <img src="12.Linear1.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The actual hyperplane this function y = <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b </span>defines can be thought of as lying above and below the feature space. <br></p><p    >Here it is visualized for the case of one feature. We are defining a linear function from the feature to some output y. Wherever this line lies above the feature space (i.e. is positive), we classify things as the<span class="blue"> blue/disc class</span>, and wherever the line lies below the feature space (i.e. is negative) we classify them as the<span class="orange red"> red/diamond class</span>.</p><p    ></p>
+            <p    >The actual hyperplane this function y = <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b </span>defines can be thought of as lying above and below the feature space. <br></p><p    >Here it is visualized for the case of one feature. We are defining a linear function from the feature to some output y. Wherever this line lies above the feature space (i.e. is positive), we classify things as the<span class="blue"> blue/disc class</span>, and wherever the line lies below the feature space (i.e. is negative) we classify them as the<span class="red"> red/diamond class</span>.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-080">
@@ -890,6 +1120,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-081">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-081" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0081.svg" class="slide-image" />
@@ -898,6 +1131,9 @@ slides: true
             <p    >This also shows us another interpretation of <strong class="orange">w</strong>. Since it is the direction of steepest ascent on this hyperplane, it is the vector <strong>perpendicular to the decision boundary</strong>, pointing to the class we assigned to the case where  <strong class="orange">w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> is larger than 0 (the<span> blue</span> class in this case).<br></p><aside    >We never want to "ascend" this plane like we do with the hyperplane approximating the loss landscape, but it's useful for our geometric intuition to know where <strong class="orange">w</strong> points, relative to our decision boundary. We will use this fact at different points in the future.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-082">
@@ -910,6 +1146,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-083">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-083" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0083.svg" class="slide-image" />
@@ -920,14 +1159,20 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-084">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-084" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0084.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is what our loss surface looks like for the error function on our simple dataset. Note that it consists almost entirely of flat regions. This is because changing a model a tiny bit will usually not change the number of misclassified examples. And if it does, the loss function will suddenly jump a lot.<br></p><p    >In these flat regions, random search would have to do a random walk, stumbling around until it finds a ridge by accident. <br></p><p    >Gradient descent would fare even worse: the gradient is zero everywhere in this picture, except exactly on the ridges, where it is undefined. Gradient descent would either crash, or simply never move.<br></p><aside    >Note that our model now has three parameters <span class="orange">w</span><sub class="orange">1</sub>, <span class="orange">w</span><sub class="orange">2</sub> and <span class="blue">b</span>, so the loss surface is a function on a 3d space (a 4d "surface"). In order to plot it in two dimensions, we have fixed <span class="orange red">w</span><sub class="orange red">2</sub>=1.</aside><aside    ></aside>
+            <p    >This is what our loss surface looks like for the error function on our simple dataset. Note that it consists almost entirely of flat regions. This is because changing a model a tiny bit will usually not change the number of misclassified examples. And if it does, the loss function will suddenly jump a lot.<br></p><p    >In these flat regions, random search would have to do a random walk, stumbling around until it finds a ridge by accident. <br></p><p    >Gradient descent would fare even worse: the gradient is zero everywhere in this picture, except exactly on the ridges, where it is undefined. Gradient descent would either crash, or simply never move.<br></p><aside    >Note that our model now has three parameters <span class="orange">w</span><sub class="orange">1</sub>, <span class="orange">w</span><sub class="orange">2</sub> and <span class="blue">b</span>, so the loss surface is a function on a 3d space (a 4d "surface"). In order to plot it in two dimensions, we have fixed <span class="red">w</span><sub class="red">2</sub>=1.</aside><aside    ></aside>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-085">
@@ -940,6 +1185,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-086">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-086" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0086.svg" class="slide-image" />
@@ -950,19 +1198,24 @@ slides: true
        </section>
 
 
-       <section id="slide-086" class="anim">
+
+
+
+       <section id="slide-087" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-087" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0087anim0.svg" data-images="12.Linear1.key-stage-0087anim0.svg,12.Linear1.key-stage-0087anim1.svg,12.Linear1.key-stage-0087anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The least squares classifier essentially turns the classification problem into a regression problem: it assigns points in <span class="blue">one clas</span>s the numeric value +1 and points in the <span class="orange red">other class</span> the value -1, we then use a basic MSE loss that we saw before the break to train a regression model to predict these numeric values. <br></p><p    >Performing gradient descent with this loss function will result in a line that minimises the green residuals. Hopefully the points are far enough apart that the decision boundary (the <strong class="green">single point </strong>where the orange line crosses the x axis) separates the two classes.<br></p><p    >As you can see, we always get very big residuals whatever we do. That is because the points simply do not lie on a single line, so the linear model is not appropriate. Still, with a little luck, the best fitting line will be positive for the +1 class and negative for the -1 class. If so the classifier will make the right predictions, even if the model is way off as a regression model for the numeric labels we introduced.</p><p    ></p>
+            <p    >The least squares classifier essentially turns the classification problem into a regression problem: it assigns points in <span class="blue">one clas</span>s the numeric value +1 and points in the <span class="red">other class</span> the value -1, we then use a basic MSE loss that we saw before the break to train a regression model to predict these numeric values. <br></p><p    >Performing gradient descent with this loss function will result in a line that minimises the green residuals. Hopefully the points are far enough apart that the decision boundary (the <strong class="green">single point </strong>where the orange line crosses the x axis) separates the two classes.<br></p><p    >As you can see, we always get very big residuals whatever we do. That is because the points simply do not lie on a single line, so the linear model is not appropriate. Still, with a little luck, the best fitting line will be positive for the +1 class and negative for the -1 class. If so the classifier will make the right predictions, even if the model is way off as a regression model for the numeric labels we introduced.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
 
 
 
-       <section id="slide-087" class="anim">
+
+
+       <section id="slide-088" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-088" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0088anim0.svg" data-images="12.Linear1.key-stage-0088anim0.svg,12.Linear1.key-stage-0088anim1.svg" class="slide-image" />
 
@@ -971,6 +1224,8 @@ slides: true
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
+
+
 
 
 
@@ -984,6 +1239,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-090">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-090" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0090.svg" class="slide-image" />
@@ -992,6 +1250,9 @@ slides: true
             <p    >Here is the result in feature space, with the final decision boundary in orange.</p><p    ></p>
             </figcaption>
        </section>
+
+
+
 
 
        <section id="slide-091">
@@ -1004,6 +1265,9 @@ slides: true
        </section>
 
 
+
+
+
        <section id="slide-092">
             <a class="slide-link" href="http://mlvu.github.io/lecture02#slide-092" title="Link to this slide.">link here</a>
             <img src="12.Linear1.key-stage-0093.svg" class="slide-image" />
@@ -1012,5 +1276,6 @@ slides: true
             <p    ></p>
             </figcaption>
        </section>
+
 
 </article>
