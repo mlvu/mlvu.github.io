@@ -17,7 +17,7 @@ slides: true
        <section class="video" id="video-000">
            <a class="slide-link" href="https://mlvu.github.io/details#video-0">link here</a>
            <iframe
-                src="https://www.youtube.com/embed/csxk_bWkUQc?si=RxR-4zj0-ObIxqwv"
+                src="https://www.youtube.com/embed/csxk_bWkUQc?si=INnGgwd-1zni127g"
                 title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
