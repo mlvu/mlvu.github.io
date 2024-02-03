@@ -22,16 +22,23 @@ slides: true
 
     % if slide['video'] is not None and not slide['video'].startswith('inline:'):
 
-       <section class="video" id="video-${f'{i:03}'}">
-           <a class="slide-link" href="${base_url}#video-${i}">link here</a>
-           <iframe
-                src="${slide['video']}"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
+        % if slide['video'].startswith('https://www.youtube'):
+           <section class="video" id="video-${f'{i:03}'}">
+               <a class="slide-link" href="${base_url}#video-${i}">link here</a>
+               <iframe
+                    src="${slide['video']}"
+                    title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+               </iframe>
+           </section>
+        % else:
+           <video controls width="250">
+                <source src="${slide['video']}" type="video/mp4" />
 
-       </section>
+                Download the <a href="${slide['video']}">video</a>.
+           </video>
+        % endif
 
     % endif
 

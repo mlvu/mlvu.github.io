@@ -357,7 +357,7 @@ def generate(
                     # hack to get rid of namespace crap
                     anno = re.sub('xmlns:[^\\s]*="[^\\s]*"', '', anno)
 
-                    # check for youtube video link
+                    # check for youtube/surfdrive video link
                     vmatch1 = re.search('\\|video\\|([^\\|^\\s]*)\\|', anno)
                     # -- video should replace slide
                     vmatch2 = re.search('\\|video-slide\\|([^\\|^\\s]*)\\|', anno)

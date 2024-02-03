@@ -14,16 +14,11 @@ slides: true
 <article class="slides">
 
 
-       <section class="video" id="video-000">
-           <a class="slide-link" href="https://mlvu.github.io/details#video-0">link here</a>
-           <iframe
-                src="https://www.youtube.com/embed/csxk_bWkUQc?si=INnGgwd-1zni127g"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
+           <video controls width="250">
+                <source src="https://surfdrive.surf.nl/files/index.php/s/wRB6yG70gt3PEiu/download" type="video/mp4" />
 
-       </section>
+                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/wRB6yG70gt3PEiu/download">video</a>.
+           </video>
 
 
 
