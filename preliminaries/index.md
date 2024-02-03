@@ -6,7 +6,7 @@ slides: true
     <ul>
         <li class="home"><a href="/">Home</a></li>
         <li class="name">Lecture 0: Preliminaries</li>
-                <li><a href="#slide-001">Logs, sums and expectations </a></li>
+                <li><a href="#slide-001">Logs, sums and argmax</a></li>
                 <li><a href="#slide-029">Linear Algebra</a></li>
                 <li><a href="#slide-063">Calculus</a></li>
                 <li><a href="#video-096">Probability</a></li>
