@@ -1,12 +1,12 @@
 #!/bin/bash
 #
 
-python generate.py \
-  --title "Course details" \
-  --dst ../details \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2024.key" \
-  --base-url "https://mlvu.github.io/details" \
-  --pdf-link "https://mlvu.github.io/lectures/Course_details.2024.pdf"
+#python generate.py \
+#  --title "Course details" \
+#  --dst ../details \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.2024.key" \
+#  --base-url "https://mlvu.github.io/details" \
+#  --pdf-link "https://mlvu.github.io/lectures/Course_details.2024.pdf"
 
 #python generate.py \
 #  --title "Lecture 0: Preliminaries" \
