@@ -860,6 +860,16 @@ article.slides {
     margin-right: 1em;
 }
 
+.slides section video {
+    width: 50%;
+    aspect-ratio: 16/9;
+    flex-grow: 0;
+
+    box-shadow: 0px 3px 6px #eee;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
 .slides section img {
     width: 50%;
     flex-grow: 0;

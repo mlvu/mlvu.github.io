@@ -13,13 +13,14 @@ slides: true
 
 <article class="slides">
 
-
-           <video controls width="250">
+        <section class="video" id="video-000">
+            <a class="slide-link" href="https://mlvu.github.io/details#video-0">link here</a>
+           <video controls>
                 <source src="https://surfdrive.surf.nl/files/index.php/s/wRB6yG70gt3PEiu/download" type="video/mp4" />
 
                 Download the <a href="https://surfdrive.surf.nl/files/index.php/s/wRB6yG70gt3PEiu/download">video</a>.
            </video>
-
+        </section>
 
 
        <section id="slide-001">
