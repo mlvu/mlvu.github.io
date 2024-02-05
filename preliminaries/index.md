@@ -453,7 +453,7 @@ slides: true
             <img src="00.Preliminaries.key-stage-0033anim0.svg" data-images="00.Preliminaries.key-stage-0033anim0.svg,00.Preliminaries.key-stage-0033anim1.svg,00.Preliminaries.key-stage-0033anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The simplest way to compute with vectors is to use <strong>element-wise operations</strong>. Whenever two vectors have the same dimension, we can make a third vector by, for instance, adding every element from the first to the corresponding element of the second. Or by multiplying, subtracting or dividing these elements.<br></p><p    >This is called element-wise addition, element-wise multiplication, and so on. For every operation that takes to numbers and produces a third, we can also apply it element-wise to two vectors of the same length.</p><p    ></p>
+            <p    >The simplest way to compute with vectors is to use <strong>element-wise operations</strong>. Whenever two vectors have the same dimension, we can make a third vector by, for instance, adding every element from the first to the corresponding element of the second. Or by multiplying, subtracting or dividing these elements.<br></p><p    >This is called element-wise addition, element-wise multiplication, and so on. For every operation that takes two numbers and produces a third, we can also apply it element-wise to two vectors of the same length.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
