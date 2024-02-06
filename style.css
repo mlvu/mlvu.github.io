@@ -1236,3 +1236,13 @@ nav.lectures div.svms::before {
     background-position: -14.5em -20em;
     background-size: 600%;
 }
+
+
+.answer {
+    background: black;
+}
+
+.answer.shown {
+    background: white;
+    transition: background-color 500ms linear;
+}

@@ -27,6 +27,22 @@ $(document).ready(function()
 $(window).on('load', function()
 {
 
+    // hide answers
+    $('.answer').each(function(){
+        current = $(this)
+
+//        clickable = $('<button>').addClass('answer');
+//        clickable.innerHTML = current.innerHTML;
+
+        current.on('click',
+            function(){$(this).toggleClass('shown');}
+        );
+
+//        current.after(clickable);
+//        clickable.remove();
+    });
+
+
     // work out the positions of all targets in the menu
     let previous = null;
     let first = true;
