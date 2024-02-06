@@ -383,12 +383,18 @@ def generate(
                         anno = re.sub('\\|section\\|([^\\|]*)\\|', '', anno)
 
                     match = re.search('\\|section-nv\\|([^\\|]*)\\|', anno)
-
                     if match is not None:
                         stitle = match.group(1)
                         menu.append((id, 'nv:' + stitle))
 
                         anno = re.sub('\\|section-nv\\|([^\\|]*)\\|', '', anno)
+
+                    match = re.search('\\|hide\\|([^\\|]*)\\|', anno)
+                    if match is not None:
+                        hide_content = match.group(1)
+
+                        anno = re.sub('\\|hide\\|([^\\|]*)\\|', f'<span class="answer">{hide_content}</span>', anno)
+
 
                     annotations.append(anno)
 

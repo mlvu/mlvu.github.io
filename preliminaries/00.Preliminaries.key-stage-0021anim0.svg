@@ -180,7 +180,7 @@
 </defs>
 <g id="surface1">
 <rect x="0" y="0" width="1920" height="1080" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(78.431702%,14.509583%,2.352905%);fill-opacity:1;" d="M 0.0429688 119.53125 L 1919.957031 119.53125 L 1919.957031 0 L 0.0429688 0 Z M 0.0429688 119.53125 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(32.548523%,34.509277%,37.254333%);fill-opacity:1;" d="M 0.0429688 119.53125 L 1919.957031 119.53125 L 1919.957031 0 L 0.0429688 0 Z M 0.0429688 119.53125 "/>
 <g style="fill:rgb(92.549133%,36.470032%,34.117126%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="652.542" y="74.9"/>
   <use xlink:href="#glyph0-2" x="682.006" y="74.9"/>
