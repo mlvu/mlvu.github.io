@@ -31,15 +31,15 @@ $(window).on('load', function()
     $('.answer').each(function(){
         current = $(this)
 
-        clickable = $('<button>').addClass('answer');
-        clickable.innerHTML = current.innerHTML;
+//        clickable = $('<button>').addClass('answer');
+//        clickable.innerHTML = current.innerHTML;
 
-        clickable.click(
+        current.on('click',
             function(){$(this).toggleClass('shown');}
         );
 
-        current.after(clickable);
-        clickable.remove();
+//        current.after(clickable);
+//        clickable.remove();
     });
 
 

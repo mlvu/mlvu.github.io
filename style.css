@@ -1241,3 +1241,8 @@ nav.lectures div.svms::before {
 .answer {
     background: black;
 }
+
+.answer.shown {
+    background: white;
+    transition: background-color 500ms linear;
+}
