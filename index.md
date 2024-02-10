@@ -15,7 +15,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l2"><a href="/lecture02">
+<div class="l2"><a href="/linear">
  <h3 class="orange"><span>2.</span> Linear models and search</h3>
 </a>
 </div>

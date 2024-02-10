@@ -15,18 +15,18 @@
 #  --base-url "https://mlvu.github.io/preliminaries" \
 #  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 1: Introduction" \
-  --dst ../introduction \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
-  --base-url "https://mlvu.github.io/introduction" \
-  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 1: Introduction" \
+#  --dst ../introduction \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
+#  --base-url "https://mlvu.github.io/introduction" \
+#  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 2: Linear Models and Search" \
-#  --dst ../lecture02 \
+#  --dst ../linear \
 #  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/12 Linear Models 1/12.Linear1.key" \
-#  --base-url "http://mlvu.github.io/lecture02" \
+#  --base-url "http://mlvu.github.io/linear" \
 #  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
 #python generate.py \
@@ -121,7 +121,7 @@ python generate.py \
 #  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction details svms
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction linear details svms
 git commit -m "Auto-update."
 git push
 

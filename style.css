@@ -1154,7 +1154,7 @@ nav.lectures div.l1::before {
 }
 
 nav.lectures div.l2::before {
-    background-image: url('/lecture02/12.Linear1.key-stage-0026.svg');
+    background-image: url('/linear/12.Linear1.key-stage-0026.svg');
     background-position: -5em -3.5em;
     background-size: 300%;
 }
