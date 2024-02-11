@@ -29,12 +29,12 @@
 #  --base-url "http://mlvu.github.io/linear" \
 #  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 3: Model evaluation" \
-  --dst ../evaluation \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
-  --base-url "https://mlvu.github.io/evaluation" \
-  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 3: Model evaluation" \
+#  --dst ../evaluation \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/21 Methodology 1/21.Methodology1.key" \
+#  --base-url "https://mlvu.github.io/evaluation" \
+#  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 4: Probabilistic models" \

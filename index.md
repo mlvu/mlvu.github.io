@@ -20,7 +20,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l3"><a href="/lecture03">
+<div class="l3"><a href="/evaluation">
  <h3 class="green"><span>3.</span> Evaluation</h3>
 </a>
 </div>
