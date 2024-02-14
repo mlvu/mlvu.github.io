@@ -25,7 +25,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l4"><a href="/lecture04">
+<div class="l4"><a href="/probability">
  <h3 class="blue"><span>4.</span>Probabilistic models</h3>
 </a>
 </div>
