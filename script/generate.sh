@@ -8,12 +8,12 @@
 #  --base-url "https://mlvu.github.io/details" \
 #  --pdf-link "https://mlvu.github.io/lectures/Course_details.2024.pdf"
 
-python generate.py \
-  --title "Lecture 0: Preliminaries" \
-  --dst ../preliminaries \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
-  --base-url "https://mlvu.github.io/preliminaries" \
-  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 0: Preliminaries" \
+#  --dst ../preliminaries \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
+#  --base-url "https://mlvu.github.io/preliminaries" \
+#  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
@@ -36,12 +36,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/evaluation" \
 #  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 4: Probabilistic models" \
-#  --dst ../lecture04 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
-#  --base-url "https://mlvu.github.io/lecture04" \
-#  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
+python generate.py \
+  --title "Lecture 4: Probabilistic models" \
+  --dst ../probability \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
+  --base-url "https://mlvu.github.io/probability" \
+  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 5: Data Pre-processing" \
@@ -121,7 +121,7 @@ python generate.py \
 #  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction linear evaluation details svms
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction linear evaluation probability details svms
 git commit -m "Auto-update."
 git push
 
