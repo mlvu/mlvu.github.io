@@ -30,7 +30,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l5"><a href="/lecture05">
+<div class="l5"><a href="/preprocessing">
  <h3 class="green"><span>5.</span>Data pre-processing</h3>
 </a>
 </div>
