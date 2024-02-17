@@ -43,12 +43,12 @@
 #  --base-url "https://mlvu.github.io/probability" \
 #  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 5: Data Pre-processing" \
-  --dst ../preprocessing \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/22 Methodology 2/22.Methodology2.key" \
-  --base-url "https://mlvu.github.io/preprocessing" \
-  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 5: Data Pre-processing" \
+#  --dst ../preprocessing \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/22 Methodology 2/22.Methodology2.key" \
+#  --base-url "https://mlvu.github.io/preprocessing" \
+#  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 6: Beyond linear models" \
@@ -121,7 +121,7 @@ python generate.py \
 #  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction linear evaluation probability details svms
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries social-impact introduction preprocessing linear evaluation probability details svms
 git commit -m "Auto-update."
 git push
 
