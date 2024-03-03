@@ -45,23 +45,23 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l8"><a href="/lecture08">
- <h3 class="blue"><span>8.</span>Density estimation</h3>
-</a>
-</div>
-
-<div class="l9"><a href="/lecture09">
- <h3 class="red"><span>9.</span>Deep generative modeling</h3>
+<div class="l11"><a href="/lecture11">
+ <h3 class="blue"><span>8.</span>Sequences</h3>
 </a>
 </div>
 
 <div class="l10"><a href="/lecture10">
- <h3 class="purple"><span>10.</span>Trees and ensembles</h3>
+ <h3 class="purple"><span>9.</span>Trees and ensembles</h3>
 </a>
 </div>
 
-<div class="l11"><a href="/lecture11">
- <h3 class="blue"><span>11.</span>Sequences</h3>
+<div class="l8"><a href="/transformers">
+ <h3 class="blue"><span>10.</span>Transformers</h3>
+</a>
+</div>
+
+<div class="l9"><a href="/lecture09">
+ <h3 class="red"><span>11.</span>Deep generative modeling</h3>
 </a>
 </div>
 
@@ -88,6 +88,11 @@ title: Machine Learning @ VU
 
 <div class="svms"><a href="/svms">
  <h3 class="orange">Support vector machines</h3>
+</a>
+</div>
+
+<div class="em"><a href="/lecture08">
+ <h3 class="blue">Expectation Maximization</h3>
 </a>
 </div>
 

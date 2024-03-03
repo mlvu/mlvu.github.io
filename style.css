@@ -1237,6 +1237,12 @@ nav.lectures div.svms::before {
     background-size: 600%;
 }
 
+nav.lectures div.em::before {
+    background-image: url('https://mlvu.github.io/lecture08/42.ProbabilisticModels2.majid.key-stage-0019.png');
+    background-position: -17.4em -4em;
+    background-size: 380%;
+}
+
 
 .answer {
     background: black;
