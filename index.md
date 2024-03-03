@@ -55,7 +55,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l8"><a href="/transformers">
+<div class="ltrans"><a href="/transformers">
  <h3 class="blue"><span>10.</span>Transformers</h3>
 </a>
 </div>

@@ -1207,6 +1207,12 @@ nav.lectures div.l10::before {
     background-size: 200%;
 }
 
+nav.lectures div.ltrans::before {
+    background-image: url('/transformers/Transformers.key-stage-0015.svg');
+    background-position: -1469px -39em;
+    background-size: 400%;
+}
+
 nav.lectures div.l11::before {
     background-image: url('/lecture11/61.SequentialData.1.key-stage-0006anim1.svg');
     background-position: -3.5em -8.5em;

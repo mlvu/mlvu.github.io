@@ -1,11 +1,11 @@
 ---
-title: "Lecture 8: Transformers"
+title: "Lecture 10: Transformers"
 slides: true
 ---
 <nav class="menu">
     <ul>
         <li class="home"><a href="/">Home</a></li>
-        <li class="name">Lecture 8: Transformers</li>
+        <li class="name">Lecture 10: Transformers</li>
                 <li><a href="#slide-001">Self-attention</a></li>
                 <li><a href="#slide-022">Building transformers</a></li>
                 <li><a href="#slide-056">Building chatbots</a></li>

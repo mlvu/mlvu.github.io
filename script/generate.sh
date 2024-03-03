@@ -65,7 +65,7 @@
 #  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
 
 python generate.py \
-  --title "Lecture 8: Transformers" \
+  --title "Lecture 10: Transformers" \
   --dst ../transformers \
   --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/Transformers/Transformers.key" \
   --base-url "https://mlvu.github.io/transformers" \
