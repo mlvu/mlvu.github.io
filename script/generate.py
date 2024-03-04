@@ -390,14 +390,16 @@ def generate(
                         anno = re.sub('\\|section-nv\\|([^\\|]*)\\|', '', anno)
 
                     pt = re.compile(r'\|hide\|([^\|]*?)\|')
+
+                    al = []
+                    lastidx = 0
                     for match in re.finditer(pt, anno):
-                        annonew = anno[:match.start()] + \
-                                  f'<span class="answer">{match.group(1)}</span>' + \
-                                  anno[match.end():]
-                        anno = annonew
+                        al.append(anno[lastidx: match.start()])
+                        al.append(f'<span class="answer">{match.group(1)}</span>')
+                        lastidx = match.end()
+                    al.append(anno[lastidx:])
 
-
-                    annotations.append(anno)
+                    annotations.append(''.join(al))
 
     print('Rendering HTML')
     lecture_tpl = Template(filename='lecture.tpl')
