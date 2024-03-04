@@ -389,7 +389,7 @@ def generate(
 
                         anno = re.sub('\\|section-nv\\|([^\\|]*)\\|', '', anno)
 
-                    pt = re.compile(r'\|hide\|([^\|]*)\|')
+                    pt = re.compile(r'\|hide\|([^\|]*?)\|')
                     for match in re.finditer(pt, anno):
                         annonew = anno[:match.start()] + \
                                   f'<span class="answer">{match.group(1)}</span>' + \
