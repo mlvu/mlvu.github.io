@@ -389,11 +389,12 @@ def generate(
 
                         anno = re.sub('\\|section-nv\\|([^\\|]*)\\|', '', anno)
 
-                    match = re.search('\\|hide\\|([^\\|]*)\\|', anno)
-                    if match is not None:
-                        hide_content = match.group(1)
-
-                        anno = re.sub('\\|hide\\|([^\\|]*)\\|', f'<span class="answer">{hide_content}</span>', anno)
+                    pt = re.compile(r'\|hide\|([^\|]*)\|')
+                    for match in re.finditer(pt, anno):
+                        annonew = anno[:match.start()] + \
+                                  f'<span class="answer">{match.group(1)}</span>' + \
+                                  anno[match.end():]
+                        anno = annonew
 
 
                     annotations.append(anno)
