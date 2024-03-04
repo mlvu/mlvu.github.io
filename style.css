@@ -12,23 +12,23 @@ body {
 	margin:0
 }
 
-.blue {
+.blue, .answer.shown .blue {
     color: #0365c0;
 }
 
-.orange {
+.orange, .answer.shown .orange {
     color: #de6a10;
 }
 
-.green {
+.green, .answer.shown .green {
     color: #00882b;
 }
 
-.red {
+.red, .answer.shown .red {
     color: #c82506;
 }
 
-.purple {
+.purple, .answer.shown .purple {
     color: #773f9b;
 }
 
@@ -1252,9 +1252,19 @@ nav.lectures div.em::before {
 
 .answer {
     background: black;
+
+}
+
+.answer .blue,
+.answer .green,
+.answer .red,
+.answer .orange,
+.answer .purple {
+    color: black;
 }
 
 .answer.shown {
     background: white;
     transition: background-color 500ms linear;
+    color: inherit;
 }
