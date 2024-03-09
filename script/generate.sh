@@ -78,12 +78,12 @@
 #  --base-url "https://mlvu.github.io/lecture08" \
 #  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 9: Deep generative models" \
-#  --dst ../lecture09 \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
-#  --base-url "https://mlvu.github.io/lecture09" \
-#  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
+python generate.py \
+  --title "Lecture 9: Deep generative models" \
+  --dst ../generative \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
+  --base-url "https://mlvu.github.io/generative" \
+  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 10: Trees and ensembles" \
