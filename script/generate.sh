@@ -8,12 +8,12 @@
 #  --base-url "https://mlvu.github.io/details" \
 #  --pdf-link "https://mlvu.github.io/lectures/Course_details.2024.pdf"
 
-python generate.py \
-  --title "Lecture 0: Preliminaries" \
-  --dst ../preliminaries \
-  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
-  --base-url "https://mlvu.github.io/preliminaries" \
-  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 0: Preliminaries" \
+#  --dst ../preliminaries \
+#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/00 Preliminaries/00.Preliminaries.key" \
+#  --base-url "https://mlvu.github.io/preliminaries" \
+#  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 1: Introduction" \
@@ -64,12 +64,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/lecture07" \
 #  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 10: Transformers" \
-#  --dst ../transformers \
-#  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/Transformers/Transformers.key" \
-#  --base-url "https://mlvu.github.io/transformers" \
-#  --pdf-link "https://mlvu.github.io/lectures/Transformers.annotated.pdf"
+python generate.py \
+  --title "Lecture 10: Transformers" \
+  --dst ../transformers \
+  --source "/Users/peter/Dropbox/onderwijs/Machine Learning/Lectures/Transformers/Transformers.key" \
+  --base-url "https://mlvu.github.io/transformers" \
+  --pdf-link "https://mlvu.github.io/lectures/Transformers.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 8: Density estimation" \
