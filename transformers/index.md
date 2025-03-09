@@ -777,9 +777,9 @@ slides: true
         <section class="video" id="video-056">
             <a class="slide-link" href="https://mlvu.github.io/transformers#video-56">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/MgHdleudoea2rVm" type="video/mp4" />
+                <source src="https://surfdrive.surf.nl/files/index.php/s/MgHdleudoea2rVm/download" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/MgHdleudoea2rVm">video</a>.
+                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/MgHdleudoea2rVm/download">video</a>.
            </video>
         </section>
 
