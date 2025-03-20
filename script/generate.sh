@@ -128,7 +128,7 @@ python generate.py \
 #  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries transformers social-impact introduction generative preprocessing linear beyondlinear evaluation probability details svms
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries transformers social-impact introduction generative preprocessing linear beyondlinear evaluation probability details svms sequences
 git commit -m "Auto-update."
 git push
 
