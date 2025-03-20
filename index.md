@@ -45,7 +45,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l11"><a href="/lecture11">
+<div class="l11"><a href="/sequences">
  <h3 class="blue"><span>8.</span>Sequences</h3>
 </a>
 </div>
