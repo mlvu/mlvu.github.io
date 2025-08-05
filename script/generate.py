@@ -113,13 +113,17 @@ def generate(
     for file in sorted(glob.glob(workdir + S + '*stage*.pdf')):
         sp = file.rsplit('.', 1)
 
-        process = subprocess.check_call(['/usr/local/bin/pdf2svg', file, sp[0]+'.svg'])
+        # process = subprocess.check_call(['/usr/local/bin/pdf2svg', file, sp[0]+'.svg'])
+        process = subprocess.check_call(['/opt/homebrew/bin/pdf2svg', file, sp[0]+'.svg'])
 
         os.remove(file)
 
         # Convert any svg larger than 1mb to a png instead
         if os.path.getsize(sp[0]+'.svg') > 1_000_000:
-            process = subprocess.check_call(['/usr/local/bin/inkscape',
+            # process = subprocess.check_call(['/usr/local/bin/inkscape',
+            #                                  '--export-type=png',
+            #                                  sp[0] + '.svg'])
+            process = subprocess.check_call(['/opt/homebrew/bin/inkscape',
                                              '--export-type=png',
                                              sp[0] + '.svg'])
             os.remove(sp[0] + '.svg')
