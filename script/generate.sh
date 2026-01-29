@@ -1,12 +1,12 @@
 #!/bin/bash
 #
 
-#python generate.py \
-#  --title "Course details" \
-#  --dst ../details \
-#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.generic.key" \
-#  --base-url "https://mlvu.github.io/details" \
-#  --pdf-link "https://mlvu.github.io/lectures/Course_details.2024.pdf"
+python generate.py \
+  --title "Course details" \
+  --dst ../details \
+  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/01 Course details/CourseDetails.generic.key" \
+  --base-url "https://mlvu.github.io/details" \
+  --pdf-link "https://mlvu.github.io/lectures/Course_details.2024.pdf"
 
 #python generate.py \
 #  --title "Lecture 0: Preliminaries" \
@@ -78,12 +78,12 @@
 #  --base-url "https://mlvu.github.io/lecture08" \
 #  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 9: Deep generative models" \
-  --dst ../generative \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
-  --base-url "https://mlvu.github.io/generative" \
-  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 9: Deep generative models" \
+#  --dst ../generative \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
+#  --base-url "https://mlvu.github.io/generative" \
+#  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 10: Trees and ensembles" \
