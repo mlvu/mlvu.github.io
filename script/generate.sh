@@ -15,19 +15,19 @@
 #  --base-url "https://mlvu.github.io/preliminaries" \
 #  --pdf-link "https://mlvu.github.io/lectures/00.Preliminaries.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 1: Introduction" \
-#  --dst ../introduction \
-#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
-#  --base-url "https://mlvu.github.io/introduction" \
-#  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
+python generate.py \
+  --title "Lecture 1: Introduction" \
+  --dst ../introduction \
+  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/11 Introduction/11.Introduction.0.key" \
+  --base-url "https://mlvu.github.io/introduction" \
+  --pdf-link "https://mlvu.github.io/lectures/11.Introduction.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 2: Linear Models and Search" \
-#  --dst ../linear \
-#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/12 Linear Models 1/12.Linear1.key" \
-#  --base-url "http://mlvu.github.io/linear" \
-#  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
+python generate.py \
+  --title "Lecture 2: Linear Models and Search" \
+  --dst ../linear \
+  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/12 Linear Models 1/12.Linear1.key" \
+  --base-url "http://mlvu.github.io/linear" \
+  --pdf-link "https://mlvu.github.io/lectures/12.LinearModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 3: Model evaluation" \

@@ -20,9 +20,9 @@ slides: true
         <section class="video" id="video-000">
             <a class="slide-link" href="https://mlvu.github.io/introduction#video-0">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/KFdMJwW0UrlwVBw/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/z8Cc5J3GKfHN6Ya/download/MLVU%201.1%20What%20is%20machine%20learning%20.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/KFdMJwW0UrlwVBw/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/z8Cc5J3GKfHN6Ya/download/MLVU%201.1%20What%20is%20machine%20learning%20.mp4">video</a>.
            </video>
         </section>
 
@@ -68,7 +68,7 @@ slides: true
 
        <section id="slide-004">
             <a class="slide-link" href="https://mlvu.github.io/introduction#slide-004" title="Link to this slide.">link here</a>
-            <img src="11.Introduction.0.key-stage-0004.svg" class="slide-image" />
+            <img src="11.Introduction.0.key-stage-0004.png" class="slide-image" />
 
             <figcaption>
             <p    >Here is another problem that can be attacked with machine learning: playing chess. In this case, we don’t necessarily <em>need</em> machine learning. We understand chess well enough that we can actually design a chess playing program that learns nothing; it simply follows instructions, but that is still good enough to beat the best grandmaster. In this picture, for example, we see Garry Kasparov, the world chess champion in 1997, playing a game against chess computer Deep Blue, a game he would lose. The Deep Blue system contained no learning parts, it just followed explicit instructions.<br></p><p    >However, just because it's possible without learning, doesn't mean we can't also do it <em>with</em> learning. In fact, the current best chess playing computer program, AlphaChess, uses a lot of machine learning. <br></p><p    >We can do this in different ways. Some chess computers that use learning look at databases of what good human players have done in different positions and try to generalize that knowledge. This is a bit like the digits: we select a large collection of examples for the computer, and the computer looks through them.<br></p><p    >Other systems learn in a more interactive way. They simply start playing, against humans, against other chess computers, or against a copy of themselves, and they remember everything they do. Then,<strong> they learn from these experiences </strong>to get better. In a sense, they are generating their own examples to learn from, by interacting with the world.</p><p    ></p>
@@ -307,9 +307,9 @@ slides: true
         <section class="video" id="video-021">
             <a class="slide-link" href="https://mlvu.github.io/introduction#video-21">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/RetahLEBxbRDPd8/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/KMbe5EtHi8Lam5H/download/MLVU%201.2%20Classification.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/RetahLEBxbRDPd8/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/KMbe5EtHi8Lam5H/download/MLVU%201.2%20Classification.mp4">video</a>.
            </video>
         </section>
 
@@ -358,7 +358,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0025anim0.svg" data-images="11.Introduction.0.key-stage-0025anim0.svg,11.Introduction.0.key-stage-0025anim1.svg,11.Introduction.0.key-stage-0025anim2.svg,11.Introduction.0.key-stage-0025anim3.svg,11.Introduction.0.key-stage-0025anim4.svg,11.Introduction.0.key-stage-0025anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is the basic framework of classification. The data that we provide our system with consists of examples, called <strong>instances</strong>, of the things we are trying to learn something about. In this example, our instances are e-mails.<br></p><p    >We must then make a series of measurements about each instance. In the case of e-mails, we may measure how often a specific word occurs. The things we measure are called the<strong> features</strong> of the instance. We can measure numeric features (like age or speed), but they can also be categoric (like gender or color). What we measure is up to us. Picking the right features is a big part of the art of building machine learning systems.<br></p><p    >Finally we have the <strong>target value</strong>: the thing we are trying to learn. In classification, this is always a categoric value, or a <em>class</em>: one of a handful of possible values. In this case, is the e-mail <span class="red">spam</span> (an unwanted advertising e-mail), or<span> ham</span> (a genuine e-mail).<br></p><p    >This dataset is then fed to a <strong>learning algorithm</strong>. This can be anything, but it has to produce a<strong> classifier</strong>. A classifier is a small “machine” that makes the required class predictions. That is, it takes a new instance, one that wasn’t in the original dataset, and for which we don’t know the target class, and it makes a guess at what the correct class is.. <br></p><p    >Note that the model in this example predicts "<span class="red">spam</span>" for the instance, even though it has seen the same instance in its data with the label "<span>ham</span>" (in the eighth row). This is perfectly possible: the job of the model is not to memorize the data but to learn from it. Often the model needs to discard specific details it has seen in order to do its job well.<br></p><p    ><br></p><p    ><br></p><p    ></p>
+            <p    >This is the basic framework of classification. The data that we provide our system with consists of examples, called <strong>instances</strong>, of the things we are trying to learn something about. In this example, our instances are e-mails.<br></p><p    >We must then make a series of measurements about each instance. In the case of e-mails, we may measure how often a specific word occurs. The things we measure are called the<strong> features</strong> of the instance. We can measure numeric features (like age or speed), but they can also be categoric (like gender or color). What we measure is up to us. Picking the right features is a big part of the art of building machine learning systems.<br></p><p    >Finally we have the <strong>target value</strong>: the thing we are trying to learn. In classification, this is always a categoric value, or a <em>class</em>: one of a handful of possible values. In this case, is the e-mail <span>spam</span> (an unwanted advertising e-mail), or<span> ham</span> (a genuine e-mail).<br></p><p    >This dataset is then fed to a <strong>learning algorithm</strong>. This can be anything, but it has to produce a<strong> classifier</strong>. A classifier is a small “machine” that makes the required class predictions. That is, it takes a new instance, one that wasn’t in the original dataset, and for which we don’t know the target class, and it makes a guess at what the correct class is.. <br></p><p    >Note that the model in this example predicts "<span>spam</span>" for the instance, even though it has seen the same instance in its data with the label "<span>ham</span>" (in the eighth row). This is perfectly possible: the job of the model is not to memorize the data but to learn from it. Often the model needs to discard specific details it has seen in order to do its job well.<br></p><p    ><br></p><p    ><br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -409,7 +409,7 @@ slides: true
 
        <section id="slide-029">
             <a class="slide-link" href="https://mlvu.github.io/introduction#slide-029" title="Link to this slide.">link here</a>
-            <img src="11.Introduction.0.key-stage-0029.svg" class="slide-image" />
+            <img src="11.Introduction.0.key-stage-0029.png" class="slide-image" />
 
             <figcaption>
             <p    >Let’s look a problem that requires a little more work to abstract into classification: playing chess. The trick again is to make things easy for ourselves by only abstracting <em>part of the problem</em>. We won’t solve the whole thing with machine learning, but we’ll learn a function that’ll be useful in a larger chess-playing system.<br></p><p    ></p>
@@ -478,7 +478,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0034.png" class="slide-image" />
 
             <figcaption>
-            <p    >We'll use this dataset to illustrate each algorithm. Its <strong>instances</strong> are penguins, the two<strong> features</strong> are the flipper length (in dm) and the body mass (in kg). The class is their biological sex, restricted to <span class="blue">male</span> or <span class="red">female</span>. Are these two features enough to guess a penguin's sex?<br></p><p    >data source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a>, <a href="https://github.com/mcnakhaee/palmerpenguins"><strong>https://github.com/mcnakhaee/palmerpenguins</strong></a> (python package)<br></p><p    >image source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a></p><p    ><a href="https://allisonhorst.github.io/palmerpenguins/"><strong></strong></a></p>
+            <p    >We'll use this dataset to illustrate each algorithm. Its <strong>instances</strong> are penguins, the two<strong> features</strong> are the flipper length (in dm) and the body mass (in kg). The class is their biological sex, restricted to <span>male</span> or <span>female</span>. Are these two features enough to guess a penguin's sex?<br></p><p    >data source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a>, <a href="https://github.com/mcnakhaee/palmerpenguins"><strong>https://github.com/mcnakhaee/palmerpenguins</strong></a> (python package)<br></p><p    >image source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a></p><p    ><a href="https://allisonhorst.github.io/palmerpenguins/"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -504,7 +504,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0036anim0.svg" data-images="11.Introduction.0.key-stage-0036anim0.svg,11.Introduction.0.key-stage-0036anim1.svg,11.Introduction.0.key-stage-0036anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a simple idea for a classifier: <em>draw a line</em>. We just draw a line somewhere through our space, and call everything above the line <strong class="blue">male</strong>, and below it<span> </span><strong class="red">female</strong>. If we draw a good line, we may get most of the examples right.<br></p><p    >This is the line returned by one algorithm for fitting such lines. As you can see many examples end up misclassified, but some points are on the correct side of the line. Our classifier might just do a little better than one that would simply guess at random.<br></p><p    >Once we have a line we are happy with, then if we see a new penguin, all we need to do is measure them, and see whether they end up above or below the line.<br></p><p    ></p>
+            <p    >Here is a simple idea for a classifier: <em>draw a line</em>. We just draw a line somewhere through our space, and call everything above the line <strong>male</strong>, and below it<span> </span><strong>female</strong>. If we draw a good line, we may get most of the examples right.<br></p><p    >This is the line returned by one algorithm for fitting such lines. As you can see many examples end up misclassified, but some points are on the correct side of the line. Our classifier might just do a little better than one that would simply guess at random.<br></p><p    >Once we have a line we are happy with, then if we see a new penguin, all we need to do is measure them, and see whether they end up above or below the line.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -518,7 +518,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0037.svg" class="slide-image" />
 
             <figcaption>
-            <p    >An important thing to note is that “drawing a line” is a technique that only works in two dimensions (i.e. if we have two features). Our methods need to work, at least in principle, for whatever number of features we decide to use. The more generic version of the idea to “draw a line” is to cut the feature space in two using a line-like shape.<br></p><p    >In 1D, the equivalent structure is a point. Anything above the point we guess is <span class="blue">male</span>, anything below it, <span class="red">female</span>.<br></p><p    >In 3D, we can cut the feature space in two with a <em>plane</em>.<br></p><aside    >We've drawn only a segment of the plane here, but you should imagine it extending infinitely in all directions.<br></aside><p    >In four or more dimensions, the shape that cuts the space in two is called a <strong>hyperplane</strong>. We can no longer draw it intuitively, but luckily the mathematics are very simple. We’ll see how to define this in the next lecture.</p><p    ></p>
+            <p    >An important thing to note is that “drawing a line” is a technique that only works in two dimensions (i.e. if we have two features). Our methods need to work, at least in principle, for whatever number of features we decide to use. The more generic version of the idea to “draw a line” is to cut the feature space in two using a line-like shape.<br></p><p    >In 1D, the equivalent structure is a point. Anything above the point we guess is <span>male</span>, anything below it, <span>female</span>.<br></p><p    >In 3D, we can cut the feature space in two with a <em>plane</em>.<br></p><aside    >We've drawn only a segment of the plane here, but you should imagine it extending infinitely in all directions.<br></aside><p    >In four or more dimensions, the shape that cuts the space in two is called a <strong>hyperplane</strong>. We can no longer draw it intuitively, but luckily the mathematics are very simple. We’ll see how to define this in the next lecture.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -611,7 +611,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0044.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Finally, here is an example of a l<em>azy </em>classifier.<strong> k-Nearest neighbours.</strong> It doesn’t do any learning. It just<em> remembers</em> the data. <br></p><p    >For a new point (indicated by the question mark), it just looks at the <em>k</em> points that are closest (k=7 in this picture), and assigns the class that is most frequent in that set (<span class="red">female</span> in this case).<br></p><p    >k is what we call a <strong>hyperparameter</strong>: you have to choose it yourself before you use the algorithm. We’ll discuss how to choose hyperparameters in lecture 4.</p><p    ></p>
+            <p    >Finally, here is an example of a l<em>azy </em>classifier.<strong> k-Nearest neighbours.</strong> It doesn’t do any learning. It just<em> remembers</em> the data. <br></p><p    >For a new point (indicated by the question mark), it just looks at the <em>k</em> points that are closest (k=7 in this picture), and assigns the class that is most frequent in that set (<span>female</span> in this case).<br></p><p    >k is what we call a <strong>hyperparameter</strong>: you have to choose it yourself before you use the algorithm. We’ll discuss how to choose hyperparameters in lecture 4.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -685,9 +685,9 @@ slides: true
         <section class="video" id="video-049">
             <a class="slide-link" href="https://mlvu.github.io/introduction#video-49">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/IFEyh65AiOMqs8s/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/nPdx5GFt67qqk9q/download/MLVU%201.3%20Other%20abstract%20tasks%20regression,%20clustering,%20density%20estimation.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/IFEyh65AiOMqs8s/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/nPdx5GFt67qqk9q/download/MLVU%201.3%20Other%20abstract%20tasks%20regression,%20clustering,%20density%20estimation.mp4">video</a>.
            </video>
         </section>
 
@@ -750,7 +750,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0054anim0.svg" data-images="11.Introduction.0.key-stage-0054anim0.svg,11.Introduction.0.key-stage-0054anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what our data looks like. Note that though it looks the same as in the classification example, this time we’re plotting both the <span>targets</span> and the<span> feature space</span> in the same figure.<br></p><p    >We can use a <strong class="blue">linear model</strong> again. But note how differently we’re using the model. Previously, we wanted to segment the feature space into two classes. Now we’re trying to model the relation between the feature(s) and the target. The model has the same shape, but we’re using it very differently.<br></p><p    >The line I’ve drawn here isn’t very good. It predicts much too high a body mass for this flipper length. To determine how good a model is, we must again choose a <strong>loss function</strong>.</p><p    ></p>
+            <p    >Here’s what our data looks like. Note that though it looks the same as in the classification example, this time we’re plotting both the <span>targets</span> and the<span> feature space</span> in the same figure.<br></p><p    >We can use a <strong>linear model</strong> again. But note how differently we’re using the model. Previously, we wanted to segment the feature space into two classes. Now we’re trying to model the relation between the feature(s) and the target. The model has the same shape, but we’re using it very differently.<br></p><p    >The line I’ve drawn here isn’t very good. It predicts much too high a body mass for this flipper length. To determine how good a model is, we must again choose a <strong>loss function</strong>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -857,7 +857,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0062.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We'll show one quick example of a simple clustering algorithm, just to give you an impression of how something like this might work.<br></p><p    >This algorithm is called<strong> k-means </strong>(not to be confused with kNN). In the example we will separate the dataset into three clusters. <br></p><p    >We start by choosing three random points in the feature space (the <span class="red">red</span>, <span>green</span> and<span> </span><span class="blue">blue</span> points), called the “means”. Each of these represents one of our clusters.</p><p    ></p>
+            <p    >We'll show one quick example of a simple clustering algorithm, just to give you an impression of how something like this might work.<br></p><p    >This algorithm is called<strong> k-means </strong>(not to be confused with kNN). In the example we will separate the dataset into three clusters. <br></p><p    >We start by choosing three random points in the feature space (the <span>red</span>, <span>green</span> and<span> </span><span>blue</span> points), called the “means”. Each of these represents one of our clusters.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -883,7 +883,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0064.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Next, we re-compute the means. Each new mean is the mean of all the points that now belong to its cluster. That is, the new <span class="red">red</span> mean is the mean of all the points we colored <span class="red">red</span> in the previous slide..<br></p><aside    >Taking the mean of a series of points work just the same as taking the mean of single numbers, you sum up all the coordinates and then divide by the number of terms in the sum.</aside><aside    ></aside>
+            <p    >Next, we re-compute the means. Each new mean is the mean of all the points that now belong to its cluster. That is, the new <span>red</span> mean is the mean of all the points we colored <span>red</span> in the previous slide..<br></p><aside    >Taking the mean of a series of points work just the same as taking the mean of single numbers, you sum up all the coordinates and then divide by the number of terms in the sum.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -896,7 +896,7 @@ slides: true
             <img src="11.Introduction.0.key-stage-0065.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Then, we repeat the procedure, we re-assign each point to the mean they are now closest to. Highlighted here are the points that have changed from one cluster to another. For instance the highlighted<span class="red"> red </span>points were all <span class="blue">blue</span> before, because they were closest to the <span class="blue">blue</span> mean, but now that we've recomputed the means and the <span class="blue">blue </span>mean has moved over to the left, they are closer to the <span class="red">red</span> mean.</p><p    ></p>
+            <p    >Then, we repeat the procedure, we re-assign each point to the mean they are now closest to. Highlighted here are the points that have changed from one cluster to another. For instance the highlighted<span> red </span>points were all <span>blue</span> before, because they were closest to the <span>blue</span> mean, but now that we've recomputed the means and the <span>blue </span>mean has moved over to the left, they are closer to the <span>red</span> mean.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1051,9 +1051,9 @@ slides: true
         <section class="video" id="video-076">
             <a class="slide-link" href="https://mlvu.github.io/introduction#video-76">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/xl6IXEGldW3pXza/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/xgAkYnwdCdzdZsG/download/MLVU%201.4%20Social%20impact%201.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/xl6IXEGldW3pXza/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/xgAkYnwdCdzdZsG/download/MLVU%201.4%20Social%20impact%201.mp4">video</a>.
            </video>
         </section>
 
@@ -1467,9 +1467,9 @@ slides: true
         <section class="video" id="video-107">
             <a class="slide-link" href="https://mlvu.github.io/introduction#video-107">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/4o04CxLVE5qSJRG/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/H24ZgJmNS3AxDSp/download/MLVU%201.5%20Generalization%20in%20machine%20learning.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/4o04CxLVE5qSJRG/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/H24ZgJmNS3AxDSp/download/MLVU%201.5%20Generalization%20in%20machine%20learning.mp4">video</a>.
            </video>
         </section>
 

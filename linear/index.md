@@ -19,9 +19,9 @@ slides: true
         <section class="video" id="video-000">
             <a class="slide-link" href="http://mlvu.github.io/linear#video-0">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/WFvDwltABNZVm60/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/wX5DYwzRWsyiK3f/download/MLVU%202.1%20Linear%20regression.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/WFvDwltABNZVm60/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/wX5DYwzRWsyiK3f/download/MLVU%202.1%20Linear%20regression.mp4">video</a>.
            </video>
         </section>
 
@@ -138,7 +138,7 @@ slides: true
             <img src="12.Linear1.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If we have one feature (as in this example) a standard linear regression model has two <em>parameters </em>(the numbers that determine which line we fit through our data): <span class="red">w</span> the <strong>weight</strong> and <span class="blue">b</span><strong>, </strong>the <strong>bias</strong>. The the weight is also sometimes called the<em> slope </em>and the bias is also sometimes called the <em>intercept</em>.<br></p><p    ><span class="blue">b</span> determines where the line crosses the vertical axis. That is, what value f takes when x = 0.<br></p><p    ><span class="red">w</span> determines how much the line rises if we move one step to the right (i.e. increase x by 1)<br></p><p    >For the line drawn here, we have <span class="blue">b</span>=3 and <span class="red">w</span>=0.5. <br></p><p    >Note that this isn’t a very good fit for the data. Our job is to find better numbers <span>w</span> and <span class="blue">b</span>.</p><p    ></p>
+            <p    >If we have one feature (as in this example) a standard linear regression model has two <em>parameters </em>(the numbers that determine which line we fit through our data): <span>w</span> the <strong>weight</strong> and <span>b</span><strong>, </strong>the <strong>bias</strong>. The the weight is also sometimes called the<em> slope </em>and the bias is also sometimes called the <em>intercept</em>.<br></p><p    ><span>b</span> determines where the line crosses the vertical axis. That is, what value f takes when x = 0.<br></p><p    ><span>w</span> determines how much the line rises if we move one step to the right (i.e. increase x by 1)<br></p><p    >For the line drawn here, we have <span>b</span>=3 and <span>w</span>=0.5. <br></p><p    >Note that this isn’t a very good fit for the data. Our job is to find better numbers <span>w</span> and <span>b</span>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -164,7 +164,7 @@ slides: true
             <img src="12.Linear1.key-stage-0011.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what that looks like. The thick orange lines together indicate a plane (which rises in the x<sub>2</sub> direction, and declines in the x<sub>1</sub> direction). The parameter<strong> </strong><span class="blue">b</span> describes how high above the origin this plane lies (what the value of f is if <em>both features</em> are 0). The value <span>w</span><sub>1</sub> indicates how much f increases if we take a step of 1 along the x<sub>1</sub> axis, and the value <span>w</span><sub>2</sub> indicates how much f increases if we take a step of size 1 along the x<sub>2</sub> axis. </p><p    ></p>
+            <p    >Here’s what that looks like. The thick orange lines together indicate a plane (which rises in the x<sub>2</sub> direction, and declines in the x<sub>1</sub> direction). The parameter<strong> </strong><span>b</span> describes how high above the origin this plane lies (what the value of f is if <em>both features</em> are 0). The value <span>w</span><sub>1</sub> indicates how much f increases if we take a step of 1 along the x<sub>1</sub> axis, and the value <span>w</span><sub>2</sub> indicates how much f increases if we take a step of size 1 along the x<sub>2</sub> axis. </p><p    ></p>
             </figcaption>
        </section>
 
@@ -177,7 +177,7 @@ slides: true
             <img src="12.Linear1.key-stage-0012anim0.svg" data-images="12.Linear1.key-stage-0012anim0.svg,12.Linear1.key-stage-0012anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For an arbitrary number of features, the pattern continues as you’d expect. We summarize the <span class="red">w</span>’s in a vector <strong>w</strong> with the same number of elements as <strong>x</strong>.<br></p><p    >We call the <span>w</span>’s the <span>weights</span>, and <span class="blue">b</span> the <span class="blue">bias</span>. The weights and the bias are the <em>parameters </em>of the model. We need to choose these to fit the model to our data.<br></p><p    >The operation of multiplying elements of <strong>w</strong> by the corresponding elements of <strong>x</strong> and summing them is the <strong>dot product</strong> of <strong>w</strong> and <strong>x</strong>.</p><p    ></p>
+            <p    >For an arbitrary number of features, the pattern continues as you’d expect. We summarize the <span>w</span>’s in a vector <strong>w</strong> with the same number of elements as <strong>x</strong>.<br></p><p    >We call the <span>w</span>’s the <span>weights</span>, and <span>b</span> the <span>bias</span>. The weights and the bias are the <em>parameters </em>of the model. We need to choose these to fit the model to our data.<br></p><p    >The operation of multiplying elements of <strong>w</strong> by the corresponding elements of <strong>x</strong> and summing them is the <strong>dot product</strong> of <strong>w</strong> and <strong>x</strong>.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -191,7 +191,7 @@ slides: true
             <img src="12.Linear1.key-stage-0013anim0.svg" data-images="12.Linear1.key-stage-0013anim0.svg,12.Linear1.key-stage-0013anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The <strong>dot product</strong> of two vectors is simply the sum of the products of their elements. If we place the features into a vector and the weights, then a linear function is simply their dot product (plus the <span class="blue">b</span> parameter).<br></p><p    >The transpose (superscript T) notation arises from the fact that if we make one vector a row vector and one a column vector, and matrix-multiply them, the result is the dot product (try it).<br></p><p    >The dot product also has a geometric interpretation: the dot product is equal to the lengths of the two vectors, multiplied by the cosine of the angle between them. We won't give you a proof, but we'll occasionally make use of this form of the dot product, so make sure you remember this. <br></p><aside    >The proof that the two definitions are equivalent is given in the preliminaries lecture.<br></aside><p    >The dot product will come back <em>a lot </em>in the rest of the course. We don't have time to discuss it in depth, but if your memory is hazy, we strongly recommend that you take a minute to go back to your linear algebra book and look up the various interpretations of what the dot product means.</p><p    ></p>
+            <p    >The <strong>dot product</strong> of two vectors is simply the sum of the products of their elements. If we place the features into a vector and the weights, then a linear function is simply their dot product (plus the <span>b</span> parameter).<br></p><p    >The transpose (superscript T) notation arises from the fact that if we make one vector a row vector and one a column vector, and matrix-multiply them, the result is the dot product (try it).<br></p><p    >The dot product also has a geometric interpretation: the dot product is equal to the lengths of the two vectors, multiplied by the cosine of the angle between them. We won't give you a proof, but we'll occasionally make use of this form of the dot product, so make sure you remember this. <br></p><aside    >The proof that the two definitions are equivalent is given in the preliminaries lecture.<br></aside><p    >The dot product will come back <em>a lot </em>in the rest of the course. We don't have time to discuss it in depth, but if your memory is hazy, we strongly recommend that you take a minute to go back to your linear algebra book and look up the various interpretations of what the dot product means.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -231,7 +231,7 @@ slides: true
             <img src="12.Linear1.key-stage-0016.svg" class="slide-image" />
 
             <figcaption>
-            <p    >So, that's our model defined in detail. But we still don't know <em>which</em> model to choose for a given dataset. Given some data, which values should we choose for the parameters <strong class="red">w</strong> and <span class="blue">b</span>?<br></p><p    >In order to answer this question, we need two more ingredients. First, we need a<strong> loss function</strong>, which tells us how well a particular choice of model does (for the given data) and second, we need a way to <strong>search</strong> the space of all models for a particular model that results in a low loss (a model for which the loss function returns a low value).</p><p    ></p>
+            <p    >So, that's our model defined in detail. But we still don't know <em>which</em> model to choose for a given dataset. Given some data, which values should we choose for the parameters <strong>w</strong> and <span>b</span>?<br></p><p    >In order to answer this question, we need two more ingredients. First, we need a<strong> loss function</strong>, which tells us how well a particular choice of model does (for the given data) and second, we need a way to <strong>search</strong> the space of all models for a particular model that results in a low loss (a model for which the loss function returns a low value).</p><p    ></p>
             </figcaption>
        </section>
 
@@ -258,7 +258,7 @@ slides: true
             <img src="12.Linear1.key-stage-0018.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The squares also ensure that big errors affect the loss more heavily than small errors. You can visualise this as shown here: the mean squared error is the mean of the areas of the green squares (it’s also called <em>sum-of-squares loss</em>).<br></p><p    >When we search for a well-fitting model, the search will try to reduce the big squares much more than the small squares.<br></p><p    >If we think of the residuals as rubber bands, pulling on the regression line to pull it closer to the points, the rubber band on the bottom left pulls much harder than all the other ones. Therefore, any search algorithm trying to minimize this loss will be much more interested in moving the left of the line down than in moving the right of the line up.<br></p><p    >It's not guaranteed that this is a good thing. Sometimes this behavior is desirable and sometimes it isn't. For now, this is just a simple loss function to get us started.<br></p><p    >In later lectures, we will say more about when this kind of loss is appropriate and when it isn't. We will also see that this loss function follows from the assumption  that our data contains noise coming from a <em>normal distribution</em>.<br></p><p    >visualization stolen from <a href="https://machinelearningflashcards.com/"><strong class="blue">https://machinelearningflashcards.com/</strong></a><br></p><p    ><br></p><p    ></p>
+            <p    >The squares also ensure that big errors affect the loss more heavily than small errors. You can visualise this as shown here: the mean squared error is the mean of the areas of the green squares (it’s also called <em>sum-of-squares loss</em>).<br></p><p    >When we search for a well-fitting model, the search will try to reduce the big squares much more than the small squares.<br></p><p    >If we think of the residuals as rubber bands, pulling on the regression line to pull it closer to the points, the rubber band on the bottom left pulls much harder than all the other ones. Therefore, any search algorithm trying to minimize this loss will be much more interested in moving the left of the line down than in moving the right of the line up.<br></p><p    >It's not guaranteed that this is a good thing. Sometimes this behavior is desirable and sometimes it isn't. For now, this is just a simple loss function to get us started.<br></p><p    >In later lectures, we will say more about when this kind of loss is appropriate and when it isn't. We will also see that this loss function follows from the assumption  that our data contains noise coming from a <em>normal distribution</em>.<br></p><p    >visualization stolen from <a href="https://machinelearningflashcards.com/"><strong>https://machinelearningflashcards.com/</strong></a><br></p><p    ><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -280,9 +280,9 @@ slides: true
         <section class="video" id="video-019">
             <a class="slide-link" href="http://mlvu.github.io/linear#video-19">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/wOMpuP3y06K5hc3/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/DAxJcAtCZsHNWgj/download/MLVU%202.2%20Searching%20for%20a%20good%20model.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/wOMpuP3y06K5hc3/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/DAxJcAtCZsHNWgj/download/MLVU%202.2%20Searching%20for%20a%20good%20model.mp4">video</a>.
            </video>
         </section>
 
@@ -318,7 +318,7 @@ slides: true
             <img src="12.Linear1.key-stage-0022anim0.svg" data-images="12.Linear1.key-stage-0022anim0.svg,12.Linear1.key-stage-0022anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >As we saw in the previous lecture, we can plot the loss for every point in our model space. This is called the <strong>loss surface</strong> or sometimes the <strong>loss landscape</strong>. If you imagine a 2D model space, you can think of the loss surface as a landscape of rolling hills (or sometimes of jagged cliffs).<br></p><p    >Here is what that actually looks like for the two parameters of the one-feature linear regression. Note that this is specific to the data we saw earlier. For a different dataset, we get a different loss landscape.<br></p><p    >To minimize the loss, we need to search this space to find the brightest point in this picture. Or, the lowest point in the loss landscape. Remember that, normally, we may have hundreds of parameters so it isn’t as easy as it looks. Any method we come up with, needs to work in any number of dimensions.<br></p><aside    >We’ve plotted the logarithm of the loss as a trick to make this image visually easier to understand (it maps the values that are easy to tell apart to the values we care about). The logarithm is a monotonic function so log(loss(<strong class="red">w</strong>, <span class="blue">b</span>)) has its minimum at the same place as loss(<strong class="red">w</strong>, <span class="blue">b</span>).</aside><aside    ></aside>
+            <p    >As we saw in the previous lecture, we can plot the loss for every point in our model space. This is called the <strong>loss surface</strong> or sometimes the <strong>loss landscape</strong>. If you imagine a 2D model space, you can think of the loss surface as a landscape of rolling hills (or sometimes of jagged cliffs).<br></p><p    >Here is what that actually looks like for the two parameters of the one-feature linear regression. Note that this is specific to the data we saw earlier. For a different dataset, we get a different loss landscape.<br></p><p    >To minimize the loss, we need to search this space to find the brightest point in this picture. Or, the lowest point in the loss landscape. Remember that, normally, we may have hundreds of parameters so it isn’t as easy as it looks. Any method we come up with, needs to work in any number of dimensions.<br></p><aside    >We’ve plotted the logarithm of the loss as a trick to make this image visually easier to understand (it maps the values that are easy to tell apart to the values we care about). The logarithm is a monotonic function so log(loss(<strong>w</strong>, <span>b</span>)) has its minimum at the same place as loss(<strong>w</strong>, <span>b</span>).</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -332,7 +332,7 @@ slides: true
             <img src="12.Linear1.key-stage-0023.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The mathematical name for this sort of search is <strong>optimization</strong>. That is, we are trying to find the input (<strong class="red">p</strong>, the<span class="red"> model parameters</span>) for  which a particular function (the loss) is at its optimum (a maximum or minimum, in this case a minimum). Failing that, we’d like to find as low a value as possible.<br></p><p    >We’ll start by looking at some very simple approaches.</p><p    ></p>
+            <p    >The mathematical name for this sort of search is <strong>optimization</strong>. That is, we are trying to find the input (<strong>p</strong>, the<span> model parameters</span>) for  which a particular function (the loss) is at its optimum (a maximum or minimum, in this case a minimum). Failing that, we’d like to find as low a value as possible.<br></p><p    >We’ll start by looking at some very simple approaches.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -582,7 +582,7 @@ slides: true
             <img src="12.Linear1.key-stage-0042anim0.svg" data-images="12.Linear1.key-stage-0042anim0.svg,12.Linear1.key-stage-0042anim1.svg,12.Linear1.key-stage-0042anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what a very basic evolutionary search looks like on our non-convex loss surface. We start with a population of 50 models, and compute the loss for each. We kill the worst 50% (<span class="red">the red dots</span>) and keep the best 50% (<span>the green dots</span>). <br></p><p    >We then create a new population (<span class="blue">the blue crosses</span>), by randomly pairing up parents from the green population, and taking the point halfway between the two parents, with a little noise added. Finally, we take the blue crosses as the new population and repeat the process.</p><p    ></p>
+            <p    >Here’s what a very basic evolutionary search looks like on our non-convex loss surface. We start with a population of 50 models, and compute the loss for each. We kill the worst 50% (<span>the red dots</span>) and keep the best 50% (<span>the green dots</span>). <br></p><p    >We then create a new population (<span>the blue crosses</span>), by randomly pairing up parents from the green population, and taking the point halfway between the two parents, with a little noise added. Finally, we take the blue crosses as the new population and repeat the process.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -644,9 +644,9 @@ slides: true
         <section class="video" id="video-046">
             <a class="slide-link" href="http://mlvu.github.io/linear#video-46">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/0WVzpZvce6RqVl4/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/skzyG3ZAmHGCBeT/download/MLVU%202.3%20Gradient%20descent.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/0WVzpZvce6RqVl4/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/skzyG3ZAmHGCBeT/download/MLVU%202.3%20Gradient%20descent.mp4">video</a>.
            </video>
         </section>
 
@@ -695,7 +695,7 @@ slides: true
             <img src="12.Linear1.key-stage-0050.svg" class="slide-image" />
 
             <figcaption>
-            <p    >However, if our model space is continuous, and if our loss function is smooth, we don’t<em> need </em>to take multiple samples to guess the direction of fastest descent: <em>we can simply derive it, using calculus</em>. This is the basis of the <strong>gradient descent algorithm</strong>.<br></p><p    >image source: <a href="http://charlesfranzen.com/posts/multiple-regression-in-python-gradient-descent/"><strong class="blue">http://charlesfranzen.com/posts/multiple-regression-in-python-gradient-descent/</strong></a></p><p    ><a href="http://charlesfranzen.com/posts/multiple-regression-in-python-gradient-descent/"><strong class="blue"></strong></a></p>
+            <p    >However, if our model space is continuous, and if our loss function is smooth, we don’t<em> need </em>to take multiple samples to guess the direction of fastest descent: <em>we can simply derive it, using calculus</em>. This is the basis of the <strong>gradient descent algorithm</strong>.<br></p><p    >image source: <a href="http://charlesfranzen.com/posts/multiple-regression-in-python-gradient-descent/"><strong>http://charlesfranzen.com/posts/multiple-regression-in-python-gradient-descent/</strong></a></p><p    ><a href="http://charlesfranzen.com/posts/multiple-regression-in-python-gradient-descent/"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -721,7 +721,7 @@ slides: true
             <img src="12.Linear1.key-stage-0052.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Before we dig in to the gradient descent algorithm, let’s review some basic principles from calculus. First up, <strong>slope</strong>. The slope of a linear function is simply <strong>how much it moves up</strong> if we move one step to the right. In the case of <span>f(x) </span>in this picture, the slope is <em>negative</em>, because the line moves down.<br></p><aside    >In our 1D regression model, the parameter <span class="red">w</span> was the slope. In this case, however we will investigate the slope of a linear function approximation the loss landscape, not of the model (be sure not to confuse these two).</aside><aside    ></aside>
+            <p    >Before we dig in to the gradient descent algorithm, let’s review some basic principles from calculus. First up, <strong>slope</strong>. The slope of a linear function is simply <strong>how much it moves up</strong> if we move one step to the right. In the case of <span>f(x) </span>in this picture, the slope is <em>negative</em>, because the line moves down.<br></p><aside    >In our 1D regression model, the parameter <span>w</span> was the slope. In this case, however we will investigate the slope of a linear function approximation the loss landscape, not of the model (be sure not to confuse these two).</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -743,14 +743,13 @@ slides: true
 
 
 
-       <section id="slide-054" class="anim">
+       <section id="slide-054">
             <a class="slide-link" href="http://mlvu.github.io/linear#slide-054" title="Link to this slide.">link here</a>
-            <img src="12.Linear1.key-stage-0054anim0.svg" data-images="12.Linear1.key-stage-0054anim0.svg,12.Linear1.key-stage-0054anim1.png" class="slide-image" />
+            <img src="12.Linear1.key-stage-0054.png" class="slide-image" />
 
             <figcaption>
-            <p    >To apply this principle in machine learning, we’ll need to generalize it for loss functions with multiple inputs (i.e. for models with multiple parameters). We do this by generalizing the tangent line to a <span class="blue">tangent (hyper)plane</span>. The derivative then becomes a <strong>gradient</strong> vector that describes the way this hyperplane is angled.<br></p><p    >Once we have this hyperplane, we can use it to work out in which direction the function grows and shrinks the quickest. As in the one-dimensional case, the tangent hyperplane is a <strong>local approximation of the function</strong>. Zoomed out like this, the hyperplane and the function look nothing alike, but if we zoom in close enough on the point where they touch, they behave almost exactly the same. <br></p><p    >This is useful, because in a hyperplane it's very easy to see in which direction it goes down the quickest. Much easier than it is for a complicated beast like our loss function itself. Since the hyperplane approximates the loss function, this is also the direction in which the loss decreases the quickest. At least, so long as we don't move away too far from the neighborhood where the hyperplane is a good approximation of the loss function.<br></p><p    ></p>
+            <p    >To apply this principle in machine learning, we’ll need to generalize it for loss functions with multiple inputs (i.e. for models with multiple parameters). We do this by generalizing the tangent line to a <span>tangent (hyper)plane</span>. The derivative then becomes a <strong>gradient</strong> vector that describes the way this hyperplane is angled.<br></p><p    >Once we have this hyperplane, we can use it to work out in which direction the function grows and shrinks the quickest. As in the one-dimensional case, the tangent hyperplane is a <strong>local approximation of the function</strong>. Zoomed out like this, the hyperplane and the function look nothing alike, but if we zoom in close enough on the point where they touch, they behave almost exactly the same. <br></p><p    >This is useful, because in a hyperplane it's very easy to see in which direction it goes down the quickest. Much easier than it is for a complicated beast like our loss function itself. Since the hyperplane approximates the loss function, this is also the direction in which the loss decreases the quickest. At least, so long as we don't move away too far from the neighborhood where the hyperplane is a good approximation of the loss function.<br></p><p    ></p>
             </figcaption>
-            <span class="hint">click image for animation</span>
        </section>
 
 
@@ -762,7 +761,7 @@ slides: true
             <img src="12.Linear1.key-stage-0055anim0.svg" data-images="12.Linear1.key-stage-0055anim0.svg,12.Linear1.key-stage-0055anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Remember, that this is how we express a linear function in n dimensions: we assign each dimension a slope, and add a single bias (<span>c</span>).<br></p><p    >In this image, the two weights of the linear function (<span class="red">a</span> and <span>b</span>) are just one slope per dimension. If we move<span> </span><span class="red">one step</span> in the direction of  x<sub>1</sub>, we move<span> </span>up by <span class="red">a</span>, and if we move<span> </span><span>one step</span> in the direction of  x<sub>2</sub>, we move up by <span>b</span>.<br></p><aside    >This is the same picture we saw earlier for the linear function, but we're using it in a different way. Earlier, it represented a model with two features and three parameters. Here, it will serve as a linear approximation for a loss surface for a model with two parameters. That is, the plane x1, x2 is our model space, not our feature space, and the hyperplane is not a single model, but a stand-in for our loss function.<br></aside><p    ><br></p><p    ></p>
+            <p    >Remember, that this is how we express a linear function in n dimensions: we assign each dimension a slope, and add a single bias (<span>c</span>).<br></p><p    >In this image, the two weights of the linear function (<span>a</span> and <span>b</span>) are just one slope per dimension. If we move<span> </span><span>one step</span> in the direction of  x<sub>1</sub>, we move<span> </span>up by <span>a</span>, and if we move<span> </span><span>one step</span> in the direction of  x<sub>2</sub>, we move up by <span>b</span>.<br></p><aside    >This is the same picture we saw earlier for the linear function, but we're using it in a different way. Earlier, it represented a model with two features and three parameters. Here, it will serve as a linear approximation for a loss surface for a model with two parameters. That is, the plane x1, x2 is our model space, not our feature space, and the hyperplane is not a single model, but a stand-in for our loss function.<br></aside><p    ><br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -773,10 +772,10 @@ slides: true
 
        <section id="slide-056" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/linear#slide-056" title="Link to this slide.">link here</a>
-            <img src="12.Linear1.key-stage-0057anim0.svg" data-images="12.Linear1.key-stage-0057anim0.svg,12.Linear1.key-stage-0057anim1.svg,12.Linear1.key-stage-0057anim2.svg,12.Linear1.key-stage-0057anim3.svg,12.Linear1.key-stage-0057anim4.png" class="slide-image" />
+            <img src="12.Linear1.key-stage-0057anim0.png" data-images="12.Linear1.key-stage-0057anim0.png,12.Linear1.key-stage-0057anim1.png,12.Linear1.key-stage-0057anim2.png,12.Linear1.key-stage-0057anim3.png" class="slide-image" />
 
             <figcaption>
-            <p    >We are now ready to show haw the gradient can be worked out. Any function from n inputs to one output has n variables for which we can take the derivative. These are called <strong>partial derivatives</strong>: they work the same way as regular derivatives, except that you when you take the derivative with respect to one variable <span>x</span>, you treat the other variables (<span class="red">y</span>) as constants.<br></p><p    >One thing that is sometimes a little confusing is that the gradient of a function f(·) is often written as another function ∇f(·). This ∇f(·) tells us not what the gradient is at a specific point but for all points. This is the same with the derivative: at a particular point, the derivative is some numerical value, but over all points, the derivative of f(x) is another function f’(x). If we take the gradient to be a function like this, then the tangent hyperplane of f(<strong>x</strong>) <em>at point </em><em>p</em> is the function g(<strong>x</strong>) = ∇f(<strong>p</strong>)<sup>T</sup><strong>x</strong> + c.<br></p><p    >It is on this linear function, g(<strong>x</strong>) that we want to work out the direction of steepest ascent. The answer will be that the gradient ∇f(<strong>p</strong>) points exactly in that direction.<br></p><aside    >The gradient is sometimes defined as a row vector, and sometimes as a column vector. In machine learning contexts, the latter usually makes most sense.</aside><aside    ></aside>
+            <p    >We are now ready to show haw the gradient can be worked out. Any function from n inputs to one output has n variables for which we can take the derivative. These are called <strong>partial derivatives</strong>: they work the same way as regular derivatives, except that you when you take the derivative with respect to one variable <span>x</span>, you treat the other variables (<span>y</span>) as constants.<br></p><p    >One thing that is sometimes a little confusing is that the gradient of a function f(·) is often written as another function ∇f(·). This ∇f(·) tells us not what the gradient is at a specific point but for all points. This is the same with the derivative: at a particular point, the derivative is some numerical value, but over all points, the derivative of f(x) is another function f’(x). If we take the gradient to be a function like this, then the tangent hyperplane of f(<strong>x</strong>) <em>at point </em><em>p</em> is the function g(<strong>x</strong>) = ∇f(<strong>p</strong>)<sup>T</sup><strong>x</strong> + c.<br></p><p    >It is on this linear function, g(<strong>x</strong>) that we want to work out the direction of steepest ascent. The answer will be that the gradient ∇f(<strong>p</strong>) points exactly in that direction.<br></p><aside    >The gradient is sometimes defined as a row vector, and sometimes as a column vector. In machine learning contexts, the latter usually makes most sense.</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -787,7 +786,7 @@ slides: true
 
        <section id="slide-057" class="anim">
             <a class="slide-link" href="http://mlvu.github.io/linear#slide-057" title="Link to this slide.">link here</a>
-            <img src="12.Linear1.key-stage-0058anim0.svg" data-images="12.Linear1.key-stage-0058anim0.svg,12.Linear1.key-stage-0058anim1.svg,12.Linear1.key-stage-0058anim2.svg,12.Linear1.key-stage-0058anim3.svg,12.Linear1.key-stage-0058anim4.svg,12.Linear1.key-stage-0058anim5.png" class="slide-image" />
+            <img src="12.Linear1.key-stage-0058anim0.png" data-images="12.Linear1.key-stage-0058anim0.png,12.Linear1.key-stage-0058anim1.png,12.Linear1.key-stage-0058anim2.png,12.Linear1.key-stage-0058anim3.png,12.Linear1.key-stage-0058anim4.png" class="slide-image" />
 
             <figcaption>
             <p    >To make this clear, we will write <strong>w</strong> = ∇f(<strong>p</strong>), so that g(<strong>x</strong>) looks like a plain old linear function. All we want to show is that w is the direction in which this function grows the quickest.<br></p><p    >Since g(<strong>x</strong>) is linear, many details don’t matter: we can set the bias<span> b </span>to zero, since that just translates the hyperplane up or down. Next, It doesn’t matter <em>how big </em>a step we take in any direction, so we’ll take a step of size 1. Finally, it doesn’t matter where we start from, so we will just start from the origin. So the question becomes: for which input <strong>x</strong> of magnitude 1 (which unit vector) does g(<strong>x</strong>) provide the biggest output?<br></p><p    >To see the answer, we need to use the geometric definition of the dot product. Since we required that ||<strong>x</strong>||= 1<strong>,</strong> this disappears from the equation, and we only need to maximize the quantity ||<strong>w</strong>|| cos(α) (where only α depends on our choice of <strong>x</strong>, and <strong>w</strong> is the gradient we computed). cos(α) is maximal when α is zero: that is, when <strong>x</strong> and <strong>w</strong> are pointing in the same direction.<br></p><p    >In short: <span>w</span>, the gradient,<span> </span> <em>is</em> the direction of steepest ascent. <span>This means that -</span><span>w</span><span> is the direction of steepest </span><em>descent</em><span>.<br></span></p><p    ><span></span></p>
@@ -817,7 +816,7 @@ slides: true
             <img src="12.Linear1.key-stage-0061.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is the <strong>gradient descent algorithm</strong>. Starting from some candidate <strong>p</strong>, we simply compute the gradient at <strong>p</strong>, subtract it from the current choice, and iterate this process:<br></p><p     class="list-item">We<em> subtract</em>, because the gradient points <em>uphill</em>. Since the gradient is the direction of steepest ascent, the negative gradient is the direction of steepest <em>de</em>scent.<br></p><p     class="list-item">Since the gradient is only a<em> local approximation </em>to our loss function, the bigger our step, the more we go wrong because the approximation is incorrect. Usually, we scale down the step size indicated by the gradient by multiplying it by a value <span>η </span>(eta),  called the<strong> learning rate</strong>. This value is chosen by trial and error, and remains constant throughout the search (at least in the simplest version of the algorithm).<br></p><p    ><strong>Note again a potential point of confusion:</strong> we have two linear functions here.  One is the <em>model</em>, whose parameters are indicated by <strong class="red">w</strong> and <span class="blue">b</span>. The other is the tangent hyperplane to the loss function, whose slope is indicated by ∇loss(<strong>p</strong>) here. These are different functions on different spaces.<br></p><p    >We can iterate for a fixed number of iterations, until the loss gets low enough, or until the gradient gets close enough to the zero vector, which implies we've reached a local minimum.</p><p    ></p>
+            <p    >Here is the <strong>gradient descent algorithm</strong>. Starting from some candidate <strong>p</strong>, we simply compute the gradient at <strong>p</strong>, subtract it from the current choice, and iterate this process:<br></p><p     class="list-item">We<em> subtract</em>, because the gradient points <em>uphill</em>. Since the gradient is the direction of steepest ascent, the negative gradient is the direction of steepest <em>de</em>scent.<br></p><p     class="list-item">Since the gradient is only a<em> local approximation </em>to our loss function, the bigger our step, the more we go wrong because the approximation is incorrect. Usually, we scale down the step size indicated by the gradient by multiplying it by a value <span>η </span>(eta),  called the<strong> learning rate</strong>. This value is chosen by trial and error, and remains constant throughout the search (at least in the simplest version of the algorithm).<br></p><p    ><strong>Note again a potential point of confusion:</strong> we have two linear functions here.  One is the <em>model</em>, whose parameters are indicated by <strong>w</strong> and <span>b</span>. The other is the tangent hyperplane to the loss function, whose slope is indicated by ∇loss(<strong>p</strong>) here. These are different functions on different spaces.<br></p><p    >We can iterate for a fixed number of iterations, until the loss gets low enough, or until the gradient gets close enough to the zero vector, which implies we've reached a local minimum.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -856,7 +855,7 @@ slides: true
             <img src="12.Linear1.key-stage-0064anim0.svg" data-images="12.Linear1.key-stage-0064anim0.svg,12.Linear1.key-stage-0064anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is our loss function again. The gradient is just a vector of all the partial derivatives we can take for it: one for the parameter <span>w</span> and one for the parameter <span class="blue">b</span>.<br></p><aside    >To simplify the notation we’ve let x<sub>i</sub> refer to the only feature of instance i.</aside><aside    ></aside>
+            <p    >Here is our loss function again. The gradient is just a vector of all the partial derivatives we can take for it: one for the parameter <span>w</span> and one for the parameter <span>b</span>.<br></p><aside    >To simplify the notation we’ve let x<sub>i</sub> refer to the only feature of instance i.</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -924,7 +923,7 @@ slides: true
             <img src="12.Linear1.key-stage-0069.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a very helpful little browser app that we’ll return to a few times during the course. It contains a few things that that we haven't discussed yet, but if you remove all hidden layers, and set the target to regression, you'll get a linear classifier of the kind that we've been discussing. Click the following link to see a version with only the currently relevant features: <a href="http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=circle&amp;regDataset=reg-plane&amp;learningRate=0.001&amp;regularizationRate=0&amp;noise=0&amp;networkShape=&amp;seed=0.16598&amp;showTestData=false&amp;discretize=false&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=regression&amp;initZero=false&amp;hideText=false&amp;showTestData_hide=false&amp;activation_hide=true&amp;numHiddenLayers_hide=true&amp;batchSize_hide=true&amp;stepButton_hide=false&amp;problem_hide=true&amp;noise_hide=false&amp;discretize_hide=false&amp;regularization_hide=true&amp;regularizationRate_hide=true&amp;percTrainData_hide=false"><strong class="blue">playground.tensorflow.com</strong></a> We will enable different additional features as we discuss them in the course.<br></p><p    >The output for the data is indicated by the color of the points, the output of the model is indicated by the colouring of the plane.<br></p><aside    >Note that the page calls this model a neural network (which we won’t discuss for a few more weeks). Linear models are just a very simple neural network.</aside><aside    ></aside>
+            <p    >Here is a very helpful little browser app that we’ll return to a few times during the course. It contains a few things that that we haven't discussed yet, but if you remove all hidden layers, and set the target to regression, you'll get a linear classifier of the kind that we've been discussing. Click the following link to see a version with only the currently relevant features: <a href="http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=circle&amp;regDataset=reg-plane&amp;learningRate=0.001&amp;regularizationRate=0&amp;noise=0&amp;networkShape=&amp;seed=0.16598&amp;showTestData=false&amp;discretize=false&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=regression&amp;initZero=false&amp;hideText=false&amp;showTestData_hide=false&amp;activation_hide=true&amp;numHiddenLayers_hide=true&amp;batchSize_hide=true&amp;stepButton_hide=false&amp;problem_hide=true&amp;noise_hide=false&amp;discretize_hide=false&amp;regularization_hide=true&amp;regularizationRate_hide=true&amp;percTrainData_hide=false"><strong>playground.tensorflow.com</strong></a> We will enable different additional features as we discuss them in the course.<br></p><p    >The output for the data is indicated by the color of the points, the output of the model is indicated by the colouring of the plane.<br></p><aside    >Note that the page calls this model a neural network (which we won’t discuss for a few more weeks). Linear models are just a very simple neural network.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -950,7 +949,7 @@ slides: true
             <img src="12.Linear1.key-stage-0071.png" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a run with a more fortunate starting point.<br></p><aside    >The point of convergence seems a little off in these images. The partial derivatives for this function are very complex (I used<a href="https://goo.gl/zbeidi"><strong class="blue"> Wolfram Alpha</strong></a> to find them), so most likely, the implementation has some numerical instability.</aside><aside    ></aside>
+            <p    >Here is a run with a more fortunate starting point.<br></p><aside    >The point of convergence seems a little off in these images. The partial derivatives for this function are very complex (I used<a href="https://goo.gl/zbeidi"><strong> Wolfram Alpha</strong></a> to find them), so most likely, the implementation has some numerical instability.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -989,7 +988,7 @@ slides: true
             <img src="12.Linear1.key-stage-0074.svg" class="slide-image" />
 
             <figcaption>
-            <p    >It’s worth saying that for <strong>linear regression</strong>, although it makes a nice, simple illustration, none of this <em>searching</em> is actually necessary. For linear regression, we can set the derivatives equal to zero and solve explicitly for <strong>w</strong> and for <span class="blue">b</span>. This would give us the optimal solution directly without searching.<br></p><aside    >However, this trick requires more advanced linear algebra to work out than we want to introduce here. You should learn about this in most linear algebra courses, where the problem is called <span>ordinary least squares</span>, and is solved by computing the pseudo-inverse of the data matrix. We won't go down this route in this course because it'll stop working very quickly once we start looking at more complicated models.</aside><aside    ></aside>
+            <p    >It’s worth saying that for <strong>linear regression</strong>, although it makes a nice, simple illustration, none of this <em>searching</em> is actually necessary. For linear regression, we can set the derivatives equal to zero and solve explicitly for <strong>w</strong> and for <span>b</span>. This would give us the optimal solution directly without searching.<br></p><aside    >However, this trick requires more advanced linear algebra to work out than we want to introduce here. You should learn about this in most linear algebra courses, where the problem is called <span>ordinary least squares</span>, and is solved by computing the pseudo-inverse of the data matrix. We won't go down this route in this course because it'll stop working very quickly once we start looking at more complicated models.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1011,9 +1010,9 @@ slides: true
         <section class="video" id="video-073">
             <a class="slide-link" href="http://mlvu.github.io/linear#video-73">link here</a>
            <video controls>
-                <source src="https://surfdrive.surf.nl/files/index.php/s/xpcqJFUDWMy4E3N/download" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/fdmTqRbMyDi54Jq/download/MLVU%202.4%20Linear%20Classification.mp4" type="video/mp4" />
 
-                Download the <a href="https://surfdrive.surf.nl/files/index.php/s/xpcqJFUDWMy4E3N/download">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/fdmTqRbMyDi54Jq/download/MLVU%202.4%20Linear%20Classification.mp4">video</a>.
            </video>
         </section>
 
@@ -1049,7 +1048,7 @@ slides: true
             <img src="12.Linear1.key-stage-0078.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To define a linear decision boundary, we take the same functional form we used for the linear regression: some weight vector <strong>w</strong>, and a bias <span class="blue">b</span>. <br></p><p    >The way we define the decision boundary is a little different than the way we defined the regression line. Here, we say that if <strong>w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> is larger than 0, we call <strong>x </strong><span class="blue">one class</span>, if  it is smaller than 0, we call it<span class="red"> the other</span> (we’ll stick to binary classification for now).<br></p><aside    >Note that we are drawing a line again, but in a different space: in the regression example we draw a line in the combined feature and output space (a function from the feature to the output). Here, we have two features, and we are drawing a line in only the feature space.</aside><aside    ></aside>
+            <p    >To define a linear decision boundary, we take the same functional form we used for the linear regression: some weight vector <strong>w</strong>, and a bias <span>b</span>. <br></p><p    >The way we define the decision boundary is a little different than the way we defined the regression line. Here, we say that if <strong>w</strong><sup>T</sup><strong>x</strong> + <span>b</span> is larger than 0, we call <strong>x </strong><span>one class</span>, if  it is smaller than 0, we call it<span> the other</span> (we’ll stick to binary classification for now).<br></p><aside    >Note that we are drawing a line again, but in a different space: in the regression example we draw a line in the combined feature and output space (a function from the feature to the output). Here, we have two features, and we are drawing a line in only the feature space.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1062,7 +1061,7 @@ slides: true
             <img src="12.Linear1.key-stage-0079.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The actual hyperplane this function y = <strong>w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b </span>defines can be thought of as lying above and below the feature space. <br></p><p    >Here it is visualized for the case of one feature. We are defining a linear function from the feature to some output y. Wherever this line lies above the feature space (i.e. is positive), we classify things as the<span class="blue"> blue/disc class</span>, and wherever the line lies below the feature space (i.e. is negative) we classify them as the<span class="red"> red/diamond class</span>.</p><p    ></p>
+            <p    >The actual hyperplane this function y = <strong>w</strong><sup>T</sup><strong>x</strong> + <span>b </span>defines can be thought of as lying above and below the feature space. <br></p><p    >Here it is visualized for the case of one feature. We are defining a linear function from the feature to some output y. Wherever this line lies above the feature space (i.e. is positive), we classify things as the<span> blue/disc class</span>, and wherever the line lies below the feature space (i.e. is negative) we classify them as the<span> red/diamond class</span>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1075,7 +1074,7 @@ slides: true
             <img src="12.Linear1.key-stage-0080.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here it is in 2D: <strong>w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b </span>describes a plane that<strong> intersects</strong> the feature space. The line of intersection is our decision boundary.</p><p    ></p>
+            <p    >Here it is in 2D: <strong>w</strong><sup>T</sup><strong>x</strong> + <span>b </span>describes a plane that<strong> intersects</strong> the feature space. The line of intersection is our decision boundary.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -1088,7 +1087,7 @@ slides: true
             <img src="12.Linear1.key-stage-0081.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This also shows us another interpretation of <strong>w</strong>. Since it is the direction of steepest ascent on this hyperplane, it is the vector <strong>perpendicular to the decision boundary</strong>, pointing to the class we assigned to the case where  <strong>w</strong><sup>T</sup><strong>x</strong> + <span class="blue">b</span> is larger than 0 (the<span> blue</span> class in this case).<br></p><aside    >We never want to "ascend" this plane like we do with the hyperplane approximating the loss landscape, but it's useful for our geometric intuition to know where <strong>w</strong> points, relative to our decision boundary. We will use this fact at different points in the future.</aside><aside    ></aside>
+            <p    >This also shows us another interpretation of <strong>w</strong>. Since it is the direction of steepest ascent on this hyperplane, it is the vector <strong>perpendicular to the decision boundary</strong>, pointing to the class we assigned to the case where  <strong>w</strong><sup>T</sup><strong>x</strong> + <span>b</span> is larger than 0 (the<span> blue</span> class in this case).<br></p><aside    >We never want to "ascend" this plane like we do with the hyperplane approximating the loss landscape, but it's useful for our geometric intuition to know where <strong>w</strong> points, relative to our decision boundary. We will use this fact at different points in the future.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1127,7 +1126,7 @@ slides: true
             <img src="12.Linear1.key-stage-0084.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is what our loss surface looks like for the error function on our simple dataset. Note that it consists almost entirely of flat regions. This is because changing a model a tiny bit will usually not change the number of misclassified examples. And if it does, the loss function will suddenly jump a lot.<br></p><p    >In these flat regions, random search would have to do a random walk, stumbling around until it finds a ridge by accident. <br></p><p    >Gradient descent would fare even worse: the gradient is zero everywhere in this picture, except exactly on the ridges, where it is undefined. Gradient descent would either crash, or simply never move.<br></p><aside    >Note that our model now has three parameters <span>w</span><sub>1</sub>, <span>w</span><sub>2</sub> and <span class="blue">b</span>, so the loss surface is a function on a 3d space (a 4d "surface"). In order to plot it in two dimensions, we have fixed <span>w</span><sub>2</sub>=1.</aside><aside    ></aside>
+            <p    >This is what our loss surface looks like for the error function on our simple dataset. Note that it consists almost entirely of flat regions. This is because changing a model a tiny bit will usually not change the number of misclassified examples. And if it does, the loss function will suddenly jump a lot.<br></p><p    >In these flat regions, random search would have to do a random walk, stumbling around until it finds a ridge by accident. <br></p><p    >Gradient descent would fare even worse: the gradient is zero everywhere in this picture, except exactly on the ridges, where it is undefined. Gradient descent would either crash, or simply never move.<br></p><aside    >Note that our model now has three parameters <span>w</span><sub>1</sub>, <span>w</span><sub>2</sub> and <span>b</span>, so the loss surface is a function on a 3d space (a 4d "surface"). In order to plot it in two dimensions, we have fixed <span>w</span><sub>2</sub>=1.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1166,7 +1165,7 @@ slides: true
             <img src="12.Linear1.key-stage-0087anim0.svg" data-images="12.Linear1.key-stage-0087anim0.svg,12.Linear1.key-stage-0087anim1.svg,12.Linear1.key-stage-0087anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The least squares classifier essentially turns the classification problem into a regression problem: it assigns points in <span class="blue">one class</span> the numeric value +1 and points in the <span class="red">other class</span> the value -1. We then use a basic MSE loss that we saw before the break to train a regression model to predict these numeric values. <br></p><p    >Performing gradient descent with this loss function will result in a line that minimizes <span>the green residuals</span>. Hopefully the points are far enough apart that the decision boundary (the <strong>single point </strong>where the orange line crosses the x axis) separates the two classes.<br></p><p    >As you can see, we always get very big residuals whatever we do. That is because the points simply do not lie on a single line, so the linear model is not appropriate. Still, with a little luck, the best fitting line will be positive for <span class="blue">the +1 class</span> and negative for <span class="red">the -1 class</span>. If so the classifier will make the right predictions, even if the model is way off as a regression model for the numeric labels we introduced.</p><p    ></p>
+            <p    >The least squares classifier essentially turns the classification problem into a regression problem: it assigns points in <span>one class</span> the numeric value +1 and points in the <span>other class</span> the value -1. We then use a basic MSE loss that we saw before the break to train a regression model to predict these numeric values. <br></p><p    >Performing gradient descent with this loss function will result in a line that minimizes <span>the green residuals</span>. Hopefully the points are far enough apart that the decision boundary (the <strong>single point </strong>where the orange line crosses the x axis) separates the two classes.<br></p><p    >As you can see, we always get very big residuals whatever we do. That is because the points simply do not lie on a single line, so the linear model is not appropriate. Still, with a little luck, the best fitting line will be positive for <span>the +1 class</span> and negative for <span>the -1 class</span>. If so the classifier will make the right predictions, even if the model is way off as a regression model for the numeric labels we introduced.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -1220,7 +1219,7 @@ slides: true
             <img src="12.Linear1.key-stage-0091.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The tensorflow playground also allows us to play around with linear classifiers. Note that only for one of the two datasets, the linear decision boundary is appropriate.<br></p><p    >Here is <a href="http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=gauss&amp;regDataset=reg-plane&amp;learningRate=0.001&amp;regularizationRate=0&amp;noise=35&amp;networkShape=&amp;seed=0.21248&amp;showTestData=false&amp;discretize=true&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false&amp;showTestData_hide=false&amp;activation_hide=true&amp;numHiddenLayers_hide=true&amp;batchSize_hide=true&amp;stepButton_hide=false&amp;problem_hide=false&amp;noise_hide=false&amp;discretize_hide=true&amp;regularization_hide=true&amp;regularizationRate_hide=true&amp;percTrainData_hide=false"><strong class="blue">a link with the relevant features enabled</strong></a>.<br></p><aside    >This example actually uses a logarithmic loss, rather than a least squares loss, but it should still be intructive to play around with it. We’ll discuss the logarithmic loss in the first probability lecture.</aside><aside    ></aside>
+            <p    >The tensorflow playground also allows us to play around with linear classifiers. Note that only for one of the two datasets, the linear decision boundary is appropriate.<br></p><p    >Here is <a href="http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=gauss&amp;regDataset=reg-plane&amp;learningRate=0.001&amp;regularizationRate=0&amp;noise=35&amp;networkShape=&amp;seed=0.21248&amp;showTestData=false&amp;discretize=true&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false&amp;showTestData_hide=false&amp;activation_hide=true&amp;numHiddenLayers_hide=true&amp;batchSize_hide=true&amp;stepButton_hide=false&amp;problem_hide=false&amp;noise_hide=false&amp;discretize_hide=true&amp;regularization_hide=true&amp;regularizationRate_hide=true&amp;percTrainData_hide=false"><strong>a link with the relevant features enabled</strong></a>.<br></p><aside    >This example actually uses a logarithmic loss, rather than a least squares loss, but it should still be intructive to play around with it. We’ll discuss the logarithmic loss in the first probability lecture.</aside><aside    ></aside>
             </figcaption>
        </section>
 
