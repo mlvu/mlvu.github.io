@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -309,7 +309,7 @@
 <use xlink:href="#glyph-2-1" x="1721.488583" y="794.0695"/>
 </g>
 <g mask="url(#mask-0)">
-<use xlink:href="#source-9" transform="matrix(1, 0, 0.000000000000000028, 1, -0.000000000000014211, 0.000000000000113687)"/>
+<use xlink:href="#source-9" transform="matrix(1, -0.000000000000000013, 0.000000000000000017, 1, -0.000000000000014211, 0.000000000000113687)"/>
 </g>
 <use xlink:href="#source-14" transform="matrix(0.69039, 0.103125, -0.103125, 0.69039, 14.96873, 514.0983)"/>
 </svg>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -21,7 +21,7 @@
 </g>
 </mask>
 <clipPath id="clip-0">
-<path clip-rule="nonzero" d="M 0 0 L 933 0 L 933 691 L 0 691 Z M 0 0 "/>
+<path clip-rule="nonzero" d="M 0.8125 0 L 932.546875 0 L 932.546875 690.75 L 0.8125 690.75 Z M 0.8125 0 "/>
 </clipPath>
 <clipPath id="clip-1">
 <path clip-rule="nonzero" d="M 0.8125 323.476562 L 780.09375 0 L 932.546875 367.273438 L 153.265625 690.75 Z M 0.8125 323.476562 "/>
@@ -10587,11 +10587,16 @@
 </g>
 </mask>
 <clipPath id="clip-2042">
+<path clip-rule="nonzero" d="M 237 109 L 247.746094 109 L 247.746094 119.929688 L 237 119.929688 Z M 237 109 "/>
+</clipPath>
+<clipPath id="clip-2043">
 <rect x="0" y="0" width="248" height="120"/>
 </clipPath>
-<g id="source-94" clip-path="url(#clip-2042)">
+<g id="source-94" clip-path="url(#clip-2043)">
 <path fill="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-dasharray="2 4" stroke-miterlimit="4" d="M 238.918437 111.657087 L 238.195781 110.965681 C 170.180156 47.325056 90.781719 10.336775 0.00046875 0.0008375 " transform="matrix(1, 0, 0, 1, 2.605, 2.3351)"/>
+<g clip-path="url(#clip-2042)">
 <path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 237.484375 116.773438 L 247.746094 119.929688 L 244.113281 109.828125 Z M 237.484375 116.773438 "/>
+</g>
 </g>
 </defs>
 <rect x="-192" y="-108" width="2304" height="1296" fill="rgb(100%, 100%, 100%)" fill-opacity="1"/>

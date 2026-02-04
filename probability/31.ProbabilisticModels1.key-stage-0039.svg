@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -283,10 +283,15 @@
 </g>
 </mask>
 <clipPath id="clip-31">
+<path clip-rule="nonzero" d="M 0.328125 0.34375 L 774.234375 0.34375 L 774.234375 682.246094 L 0.328125 682.246094 Z M 0.328125 0.34375 "/>
+</clipPath>
+<clipPath id="clip-32">
 <rect x="0" y="0" width="775" height="683"/>
 </clipPath>
-<g id="source-5" clip-path="url(#clip-31)">
+<g id="source-5" clip-path="url(#clip-32)">
+<g clip-path="url(#clip-31)">
 <path fill-rule="nonzero" fill="rgb(100%, 100%, 100%)" fill-opacity="1" d="M 0.328125 682.246094 L 774.234375 682.246094 L 774.234375 0.34375 L 0.328125 0.34375 Z M 0.328125 682.246094 "/>
+</g>
 </g>
 </defs>
 <rect x="-192" y="-108" width="2304" height="1296" fill="rgb(100%, 100%, 100%)" fill-opacity="1"/>

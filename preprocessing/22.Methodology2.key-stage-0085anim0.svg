@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -395,7 +395,7 @@
 </g>
 <path fill="none" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(1.176453%, 39.607239%, 75.294495%)" stroke-opacity="1" stroke-miterlimit="4" d="M 0.00129998 -0.00155858 L 326.375559 -0.000312086 L 329.878359 0.000925505 " transform="matrix(0.416756, -0.909018, 0.909018, 0.416756, 931.204, 694.2948)"/>
 <path fill-rule="nonzero" fill="rgb(1.176453%, 39.607239%, 75.294495%)" fill-opacity="1" d="M 1079.769531 403.363281 L 1078.726562 372.523438 L 1054.679688 391.859375 Z M 1079.769531 403.363281 "/>
-<path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(87.059021%, 41.567993%, 6.274414%)" stroke-opacity="1" stroke-dasharray="0.007 21" stroke-dashoffset="0.5" stroke-miterlimit="4" d="M 0.000468679 0.000319955 L 894.546473 -0.00132254 " transform="matrix(0.89317, -0.44972, 0.44972, 0.89317, 721.351, 800.9218)"/>
+<path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(87.059021%, 41.567993%, 6.274414%)" stroke-opacity="1" stroke-dasharray="0.007 21" stroke-dashoffset="0.5" stroke-miterlimit="4" d="M 0.000468679 0.000319955 L 894.546473 -0.00132254 " transform="matrix(0.893169, -0.44972, 0.44972, 0.893169, 721.351, 800.9218)"/>
 <g fill="rgb(4.31366%, 36.470032%, 9.411621%)" fill-opacity="1">
 <use xlink:href="#glyph-1-0" x="1885.754" y="1058.38273"/>
 <use xlink:href="#glyph-1-1" x="1894.994" y="1058.38273"/>
