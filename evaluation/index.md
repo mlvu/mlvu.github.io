@@ -1101,9 +1101,9 @@ slides: true
         <section class="video" id="video-080">
             <a class="slide-link" href="https://mlvu.github.io/evaluation#video-80">link here</a>
            <video controls>
-                <source src="https://pbm.thegood.cloud/s/SWq5zYDQgnfd7tX" type="video/mp4" />
+                <source src="https://pbm.thegood.cloud/s/SWq5zYDQgnfd7tX/download/MLVU%203.3%20ROC%20Curves,%20Area%20Under%20the%20Curve.mp4" type="video/mp4" />
 
-                Download the <a href="https://pbm.thegood.cloud/s/SWq5zYDQgnfd7tX">video</a>.
+                Download the <a href="https://pbm.thegood.cloud/s/SWq5zYDQgnfd7tX/download/MLVU%203.3%20ROC%20Curves,%20Area%20Under%20the%20Curve.mp4">video</a>.
            </video>
         </section>
 
