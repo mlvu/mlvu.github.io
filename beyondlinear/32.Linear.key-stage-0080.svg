@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -345,7 +345,7 @@
 </g>
 </mask>
 <clipPath id="clip-50">
-<path clip-rule="nonzero" d="M 0 0 L 270 0 L 270 253 L 0 253 Z M 0 0 "/>
+<path clip-rule="nonzero" d="M 0 0.640625 L 270 0.640625 L 270 252.667969 L 0 252.667969 Z M 0 0.640625 "/>
 </clipPath>
 <clipPath id="clip-51">
 <path clip-rule="nonzero" d="M 269.140625 8.4375 L 10.332031 255.292969 L 0.390625 244.871094 L 259.199219 -1.984375 Z M 269.140625 8.4375 "/>

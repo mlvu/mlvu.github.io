@@ -36,12 +36,12 @@
 #  --base-url "https://mlvu.github.io/evaluation" \
 #  --pdf-link "https://mlvu.github.io/lectures/21.Methodology1.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 4: Probabilistic models" \
-  --dst ../probability \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
-  --base-url "https://mlvu.github.io/probability" \
-  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 4: Probabilistic models" \
+#  --dst ../probability \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/31 Probabilistic Models 1/31.ProbabilisticModels1.key" \
+#  --base-url "https://mlvu.github.io/probability" \
+#  --pdf-link "https://mlvu.github.io/lectures/31.ProbabilisticModels1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 5: Data Pre-processing" \
@@ -50,12 +50,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/preprocessing" \
 #  --pdf-link "https://mlvu.github.io/lectures/22.Methodology2.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 6: Beyond linear models" \
-#  --dst ../beyondlinear \
-#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
-#  --base-url "https://mlvu.github.io/beyondlinear" \
-#  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
+python generate.py \
+  --title "Lecture 6: Beyond linear models" \
+  --dst ../beyondlinear \
+  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/32 Linear Models 2/32.Linear.key" \
+  --base-url "https://mlvu.github.io/beyondlinear" \
+  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 7: Deep learning" \

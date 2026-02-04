@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -219,7 +219,7 @@
 <path fill="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(87.059021%, 41.567993%, 6.274414%)" stroke-opacity="1" stroke-miterlimit="4" d="M 0.00061875 169.023169 L 1.375619 -0.00026875 " transform="matrix(1, 0, 0, 1, 512.2611, 542.7073)"/>
 </g>
 <g clip-path="url(#clip-4)">
-<path fill="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(1.176453%, 39.607239%, 75.294495%)" stroke-opacity="1" stroke-miterlimit="4" d="M 121.828331 175.596844 L 0.00020625 -0.0008125 " transform="matrix(1, 0, 0, 1, 526.8787, 539.993)"/>
+<path fill="none" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(1.176453%, 39.607239%, 75.294495%)" stroke-opacity="1" stroke-miterlimit="4" d="M 121.828331 175.593037 L 0.00020625 -0.0007125 " transform="matrix(1, 0, 0, 1, 526.8787, 539.9929)"/>
 </g>
 <path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 675 719.496094 C 682.6875 727.183594 682.6875 739.648438 675 747.339844 C 667.3125 755.027344 654.847656 755.027344 647.15625 747.339844 C 639.46875 739.648438 639.46875 727.183594 647.15625 719.496094 C 654.847656 711.808594 667.3125 711.808594 675 719.496094 Z M 675 719.496094 "/>
 <g clip-path="url(#clip-5)">
