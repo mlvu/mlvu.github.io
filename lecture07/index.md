@@ -16,18 +16,14 @@ slides: true
 
 <article class="slides">
 
+        <section class="video" id="video-000">
+            <a class="slide-link" href="https://mlvu.github.io/lecture07#video-0">link here</a>
+           <video controls>
+                <source src="https://pbm.thegood.cloud/s/FHqn4ox5FrezJCd/download/MLVU%207.1%20Deep%20learning%20and%20automatic%20differentiation.mp4" type="video/mp4" />
 
-       <section class="video" id="video-000">
-           <a class="slide-link" href="https://mlvu.github.io/lecture07#video-0">link here</a>
-           <iframe
-                src="https://www.youtube.com/embed/ufvd0DC2_EI"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
-
-       </section>
-
+                Download the <a href="https://pbm.thegood.cloud/s/FHqn4ox5FrezJCd/download/MLVU%207.1%20Deep%20learning%20and%20automatic%20differentiation.mp4">video</a>.
+           </video>
+        </section>
 
 
        <section id="slide-001">
@@ -48,7 +44,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0002.svg" class="slide-image" />
 
             <figcaption>
-            <p    >For now, we’ll pick up the discussion about neural networks from the last lecture, and develop the idea further.<br></p><p    >Here’s how we defined a neural network last time around. A neural network is a model described by a graph: each node represents a scalar value. The value of each node is computed from the incoming edges by multiplying the weight on the edge by the value of the node it connects to.<br></p><p    >We train the model by tuning the weights. Every <span class="orange">orange</span> and <span class="blue">blue</span> line in this picture represents one of those weights. The feedforward network, seen here,  is the simplest way of wiring up a neural net, but we will see other possibilities later.<br></p><p    ></p>
+            <p    >For now, we’ll pick up the discussion about neural networks from the last lecture, and develop the idea further.<br></p><p    >Here’s how we defined a neural network last time around. A neural network is a model described by a graph: each node represents a scalar value. The value of each node is computed from the incoming edges by multiplying the weight on the edge by the value of the node it connects to.<br></p><p    >We train the model by tuning the weights. Every <span>orange</span> and <span>blue</span> line in this picture represents one of those weights. The feedforward network, seen here,  is the simplest way of wiring up a neural net, but we will see other possibilities later.<br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -88,7 +84,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0005anim0.svg" data-images="32.DeepLearning1.key-stage-0005anim0.svg,32.DeepLearning1.key-stage-0005anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In <span class="red">this video</span>, we’ll look at the general layout of deep learning frameworks. Specifcally, how these systems allow us to define complex models in such a way that they can be efficiently computed and that we don’t have to implement backpropagation ourselves. A large part of this, is expressing everything we do in the language of <em>tensors</em>.<br></p><p    >In the <span class="red">second video</span>, we’ll look specifically at how we can implement backpropagation in such tensor settings. We’ve seen a scalar version of the algorithm already, where we work out the derivatives of the parameters one by one, but when we want to implement this efficiently, using tensor operations, we need to take a few more things into account.<br></p><p    >Deep learning works best when we don’t use fully connected layers, but when we tailor the architecture of our network to our task. In the <span class="red">third video</span>, we’ll look at the first type of layer that allows us to do this: the convolution. This layer is particularly suited to image data.<br></p><p    >And finally, to do deep learning efficiently, we need to know a number of tricks and tools. We’ll run through the most important ones briefly in the <span class="red">last video</span>.<br></p><p    >We don’t have time in this lecture to go into all the details. If you are doing your project on a deep learning topic, and you need to know more, you can have a look at the materials for <a href="http://dlvu.github.io"><strong class="blue">our Deep Learning course in the master</strong></a>. They discuss the same subjects, but in more detail, with more examples (in particular lectures 2, 3, and 4).</p><p    ></p>
+            <p    >In <span>this video</span>, we’ll look at the general layout of deep learning frameworks. Specifcally, how these systems allow us to define complex models in such a way that they can be efficiently computed and that we don’t have to implement backpropagation ourselves. A large part of this, is expressing everything we do in the language of <em>tensors</em>.<br></p><p    >In the <span>second video</span>, we’ll look specifically at how we can implement backpropagation in such tensor settings. We’ve seen a scalar version of the algorithm already, where we work out the derivatives of the parameters one by one, but when we want to implement this efficiently, using tensor operations, we need to take a few more things into account.<br></p><p    >Deep learning works best when we don’t use fully connected layers, but when we tailor the architecture of our network to our task. In the <span>third video</span>, we’ll look at the first type of layer that allows us to do this: the convolution. This layer is particularly suited to image data.<br></p><p    >And finally, to do deep learning efficiently, we need to know a number of tricks and tools. We’ll run through the most important ones briefly in the <span>last video</span>.<br></p><p    >We don’t have time in this lecture to go into all the details. If you are doing your project on a deep learning topic, and you need to know more, you can have a look at the materials for <a href="http://dlvu.github.io"><strong>our Deep Learning course in the master</strong></a>. They discuss the same subjects, but in more detail, with more examples (in particular lectures 2, 3, and 4).</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -129,7 +125,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0008.png" class="slide-image" />
 
             <figcaption>
-            <p    >A simple dataset with numeric features can simply be represented as a matrix (with a corresponding vector for the labels).<br></p><p    >Tensors can only contain numbers, so any categoric features or labels should be converted to numeric features. This is normally by one-hot coding, as discussed in lecture 5.<br></p><p    >image source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong class="blue">https://allisonhorst.github.io/palmerpenguins/</strong></a><br></p><p    ></p>
+            <p    >A simple dataset with numeric features can simply be represented as a matrix (with a corresponding vector for the labels).<br></p><p    >Tensors can only contain numbers, so any categoric features or labels should be converted to numeric features. This is normally by one-hot coding, as discussed in lecture 5.<br></p><p    >image source: <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>https://allisonhorst.github.io/palmerpenguins/</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -142,7 +138,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0009.svg" class="slide-image" />
 
             <figcaption>
-            <p    >But the real benefit in deep learning is not just in representing our standard abstract tasks as features matrices. We want to find ways to represent the <strong>raw data</strong>, or at least something closer to the raw data, as tensors.<br></p><p    >One example is image data. A single image can be represented a a 3-tensor. In an RGB image, the color of a single pixel is represented using three values between 0 and 1 (how <span>red</span> it is, how <span>green</span> it is and how <span>blue</span> it is). This means that an RGB image can be thought of as a stack of three matrices, each representing one of the color channels as a grayscale image. This stack is a 3-tensor.<br></p><aside    ><br></aside><aside    >source: <a href="http://www.adsell.com/scanning101.html"><strong class="blue">http://www.adsell.com/scanning101.html</strong></a></aside><aside    ><a href="http://www.adsell.com/scanning101.html"><strong class="blue"></strong></a></aside>
+            <p    >But the real benefit in deep learning is not just in representing our standard abstract tasks as features matrices. We want to find ways to represent the <strong>raw data</strong>, or at least something closer to the raw data, as tensors.<br></p><p    >One example is image data. A single image can be represented a a 3-tensor. In an RGB image, the color of a single pixel is represented using three values between 0 and 1 (how <span>red</span> it is, how <span>green</span> it is and how <span>blue</span> it is). This means that an RGB image can be thought of as a stack of three matrices, each representing one of the color channels as a grayscale image. This stack is a 3-tensor.<br></p><aside    ><br></aside><aside    >source: <a href="http://www.adsell.com/scanning101.html"><strong>http://www.adsell.com/scanning101.html</strong></a></aside><aside    ><a href="http://www.adsell.com/scanning101.html"><strong></strong></a></aside>
             </figcaption>
        </section>
 
@@ -182,7 +178,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0012.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To build our computation graph, and to do it with tensors, we’ll need <strong>functions</strong> that consume tensors, and spit our new tensors. A function can have multiple inputs and multiple outputs, and all of them are tensors. Non-tensor inputs are sometimes allowed, but when we start computing gradients, we’ll only get gradients over the tensor inputs.<br></p><p    >Functions exist in many programming environments. All we usually have to do to specify a function is to define how to compute the output given the inputs. In deep learning parlance this is called the <strong>forward</strong> of the function. For a deep learning function, we need to specify one additional thing: a <strong>backward</strong> function. The backward receives the gradients for the<span class="orange"> outputs </span>and computes the gradients for the<span class="blue"> inputs.</span> We’ll see some examples of this in the second video.<br></p><p    >Putting  these two ingredients, tensors and functions, together,  we can build a model. We define some functions and we then chain them together into a <strong>computation graph</strong>.</p><p    ></p>
+            <p    >To build our computation graph, and to do it with tensors, we’ll need <strong>functions</strong> that consume tensors, and spit our new tensors. A function can have multiple inputs and multiple outputs, and all of them are tensors. Non-tensor inputs are sometimes allowed, but when we start computing gradients, we’ll only get gradients over the tensor inputs.<br></p><p    >Functions exist in many programming environments. All we usually have to do to specify a function is to define how to compute the output given the inputs. In deep learning parlance this is called the <strong>forward</strong> of the function. For a deep learning function, we need to specify one additional thing: a <strong>backward</strong> function. The backward receives the gradients for the<span> outputs </span>and computes the gradients for the<span> inputs.</span> We’ll see some examples of this in the second video.<br></p><p    >Putting  these two ingredients, tensors and functions, together,  we can build a model. We define some functions and we then chain them together into a <strong>computation graph</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -195,7 +191,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0013anim0.svg" data-images="32.DeepLearning1.key-stage-0013anim0.svg,32.DeepLearning1.key-stage-0013anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a simple example of a <strong>computation graph</strong>, a directed acyclic graph that shows the data (scalars <span class="red">a</span>, <span class="green">b</span>, <span class="blue">c</span>, x) flowing through the functions.<br></p><p    >A deep learning system uses a computation graph to execute a given computation (<strong>the forward pass</strong>) and then uses the backpropagation algorithm to compute the gradients for the data nodes with respect to the output (<strong>the backward pass</strong>).<br></p><p    >If we are not interested in the specifics of the function being applied, we will omit the circle (as we did in the previous lecture).</p><p    ></p>
+            <p    >Here is a simple example of a <strong>computation graph</strong>, a directed acyclic graph that shows the data (scalars <span>a</span>, <span>b</span>, <span>c</span>, x) flowing through the functions.<br></p><p    >A deep learning system uses a computation graph to execute a given computation (<strong>the forward pass</strong>) and then uses the backpropagation algorithm to compute the gradients for the data nodes with respect to the output (<strong>the backward pass</strong>).<br></p><p    >If we are not interested in the specifics of the function being applied, we will omit the circle (as we did in the previous lecture).</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -248,7 +244,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0017anim0.svg" data-images="32.DeepLearning1.key-stage-0017anim0.svg,32.DeepLearning1.key-stage-0017anim1.svg,32.DeepLearning1.key-stage-0017anim10.svg,32.DeepLearning1.key-stage-0017anim2.svg,32.DeepLearning1.key-stage-0017anim3.svg,32.DeepLearning1.key-stage-0017anim4.svg,32.DeepLearning1.key-stage-0017anim5.svg,32.DeepLearning1.key-stage-0017anim6.svg,32.DeepLearning1.key-stage-0017anim7.svg,32.DeepLearning1.key-stage-0017anim8.svg,32.DeepLearning1.key-stage-0017anim9.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In eager mode deep learning systems, we create a node in our computation graph (called a Tensor here) by specifying what data it should contain. The result is a tensor object that stores <em>both </em>the data, and the gradient over that data (which will be filled later).<br></p><p    >Here we create the variables <span class="red">a</span> and <span class="green">b</span>. If we now apply a function to these, for instance to multiply their values, we can immediately compute the result: <span class="red">1</span> * <span class="green">2</span> = <span class="blue">2</span>. We take this result and put it in another Tensor object called <span class="blue">c</span>. We also store references to the variables that were used to create <span class="blue">c</span>, and the module that created it: we perform a computation, but we also keep a history of which computation we performed in the form of a graph.<br></p><aside    >Note that when we want to illustrate what a value node contains, we represent it as a rectangle, rather than a circle.<br></aside><p    >Using this graph, we can perform the backpropagation from a given starting node. Here, we compute the partial derivatives of <span class="blue">c</span> with respect to every node in the graph (including <span class="blue">c</span> itself).<br></p><aside    >These names and this syntax are loosely inspired by those of PyTorch, but the concepts are similar for all deep learning frameworks.</aside><aside    ></aside>
+            <p    >In eager mode deep learning systems, we create a node in our computation graph (called a Tensor here) by specifying what data it should contain. The result is a tensor object that stores <em>both </em>the data, and the gradient over that data (which will be filled later).<br></p><p    >Here we create the variables <span>a</span> and <span>b</span>. If we now apply a function to these, for instance to multiply their values, we can immediately compute the result: <span>1</span> * <span>2</span> = <span>2</span>. We take this result and put it in another Tensor object called <span>c</span>. We also store references to the variables that were used to create <span>c</span>, and the module that created it: we perform a computation, but we also keep a history of which computation we performed in the form of a graph.<br></p><aside    >Note that when we want to illustrate what a value node contains, we represent it as a rectangle, rather than a circle.<br></aside><p    >Using this graph, we can perform the backpropagation from a given starting node. Here, we compute the partial derivatives of <span>c</span> with respect to every node in the graph (including <span>c</span> itself).<br></p><aside    >These names and this syntax are loosely inspired by those of PyTorch, but the concepts are similar for all deep learning frameworks.</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -262,7 +258,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0018anim0.svg" data-images="32.DeepLearning1.key-stage-0018anim0.svg,32.DeepLearning1.key-stage-0018anim1.svg,32.DeepLearning1.key-stage-0018anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here’s what a training loop would look like for a simple two-layer feedforward network. The computation graph shown below is rebuilt from scratch for every iteration of the training loop, and cleared at the end. The variables <span class="orange">W</span>, <span class="orange">V</span>, <span class="blue">b</span> and<span class="blue"> c</span>,  that define our neural network contain tensor data that is saved between iterations, and updated at every step of gradient descent. Each value node contains a <em>tensor</em> (specifically, a matrix or a vector).<br></p><p    >Note that the output of every module is also a Tensor, with its own data and its own gradient. Note that the multiplications are now matrix multiplications<br></p><p    >Once we have our computation graph in place, we have everything we need to start the backpropagation algorithm. To translate what we learned in the last video to this setting we’ll need some extra insights. We’ll go over those in the next video.</p><p    ></p>
+            <p    >Here’s what a training loop would look like for a simple two-layer feedforward network. The computation graph shown below is rebuilt from scratch for every iteration of the training loop, and cleared at the end. The variables <span>W</span>, <span>V</span>, <span>b</span> and<span> c</span>,  that define our neural network contain tensor data that is saved between iterations, and updated at every step of gradient descent. Each value node contains a <em>tensor</em> (specifically, a matrix or a vector).<br></p><p    >Note that the output of every module is also a Tensor, with its own data and its own gradient. Note that the multiplications are now matrix multiplications<br></p><p    >Once we have our computation graph in place, we have everything we need to start the backpropagation algorithm. To translate what we learned in the last video to this setting we’ll need some extra insights. We’ll go over those in the next video.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -276,25 +272,21 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0019anim0.svg" data-images="32.DeepLearning1.key-stage-0019anim0.svg,32.DeepLearning1.key-stage-0019anim1.svg,32.DeepLearning1.key-stage-0019anim2.svg,32.DeepLearning1.key-stage-0019anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >With a computation graph like this,<em> if all the data are scalars</em>, it’s very easy to implement backpropagation. Say we’re interested in the derivative of <span class="blue">c</span> over <span class="red">a</span>. The chain rule tells us this is the derivative of <span class="green">b</span> over <span class="red">a</span> times that of <span class="blue">c</span> over <span class="green">b</span>. <span class="blue">c</span> over <span class="green">b</span> is the local derivative for function g, and <span class="green">b</span> over <span class="red">a</span> is the local derivative for function f. <br></p><p    >Starting at the output we can walk backward, and multiply all the local derivatives we encounter. At each step, we multiply the derivative of the output over the input. <br></p><p    >This is what we did manually in the last lecture: we walked backward down the computation graph, and at each computation, for each input, we multiply the derivative of the loss wrt the output by the derivative of the output wrt the input.<br></p><p    >Next video, we’ll see what we need to do when the computation graph has a more complicated structure, and when the data nodes can contain tensors instead of scalars.</p><p    ></p>
+            <p    >With a computation graph like this,<em> if all the data are scalars</em>, it’s very easy to implement backpropagation. Say we’re interested in the derivative of <span>c</span> over <span>a</span>. The chain rule tells us this is the derivative of <span>b</span> over <span>a</span> times that of <span>c</span> over <span>b</span>. <span>c</span> over <span>b</span> is the local derivative for function g, and <span>b</span> over <span>a</span> is the local derivative for function f. <br></p><p    >Starting at the output we can walk backward, and multiply all the local derivatives we encounter. At each step, we multiply the derivative of the output over the input. <br></p><p    >This is what we did manually in the last lecture: we walked backward down the computation graph, and at each computation, for each input, we multiply the derivative of the loss wrt the output by the derivative of the output wrt the input.<br></p><p    >Next video, we’ll see what we need to do when the computation graph has a more complicated structure, and when the data nodes can contain tensors instead of scalars.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
 
 
 
+        <section class="video" id="video-019">
+            <a class="slide-link" href="https://mlvu.github.io/lecture07#video-19">link here</a>
+           <video controls>
+                <source src="https://pbm.thegood.cloud/s/DNCAReyxc2oSC42/download/MLVU%207.2%20Tensor%20backpropagation.mp4" type="video/mp4" />
 
-       <section class="video" id="video-019">
-           <a class="slide-link" href="https://mlvu.github.io/lecture07#video-19">link here</a>
-           <iframe
-                src="https://www.youtube.com/embed/S1_EBqA0pio"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
-
-       </section>
-
+                Download the <a href="https://pbm.thegood.cloud/s/DNCAReyxc2oSC42/download/MLVU%207.2%20Tensor%20backpropagation.mp4">video</a>.
+           </video>
+        </section>
 
 
        <section id="slide-020">
@@ -382,7 +374,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0026anim0.svg" data-images="32.DeepLearning1.key-stage-0026anim0.svg,32.DeepLearning1.key-stage-0026anim1.svg,32.DeepLearning1.key-stage-0026anim2.svg" class="slide-image" />
 
             <figcaption>
-            <p    >But what if <span>c</span> has two inputs,<strong> both </strong>depending on <span>x</span>?<br></p><p    >How do we apply the chain rule here?  Over <span class="green">a</span> or over <span>b</span>?</p><p    ></p>
+            <p    >But what if <span>c</span> has two inputs,<strong> both </strong>depending on <span>x</span>?<br></p><p    >How do we apply the chain rule here?  Over <span>a</span> or over <span>b</span>?</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -409,7 +401,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0028anim0.svg" data-images="32.DeepLearning1.key-stage-0028anim0.svg,32.DeepLearning1.key-stage-0028anim1.svg,32.DeepLearning1.key-stage-0028anim2.svg,32.DeepLearning1.key-stage-0028anim3.svg,32.DeepLearning1.key-stage-0028anim4.svg,32.DeepLearning1.key-stage-0028anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The multivariate chain rule can be used to derive many rules for derivatives you should already know. For instance, if we make <span class="orange">c</span> the product of <span class="green">a</span> and <span>b</span>,<span> </span>applying the multivariate chain rule gives us the product rule.</p><p    ></p>
+            <p    >The multivariate chain rule can be used to derive many rules for derivatives you should already know. For instance, if we make <span>c</span> the product of <span>a</span> and <span>b</span>,<span> </span>applying the multivariate chain rule gives us the product rule.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -423,7 +415,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0029anim0.svg" data-images="32.DeepLearning1.key-stage-0029anim0.svg,32.DeepLearning1.key-stage-0029anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >If c has more than two inputs, the multivariate chain tells us to sum over all of them.<br></p><aside    >We won't try to give you any intuition for why the multivariate chain rule works this way. You'll just have to accept it as one of the rules of differentiation. If you want more insight, there is some explanation in the second <a href="http://dlvu.github.io"><strong class="blue">DLVU</strong></a> lecture.</aside><aside    ></aside>
+            <p    >If c has more than two inputs, the multivariate chain tells us to sum over all of them.<br></p><aside    >We won't try to give you any intuition for why the multivariate chain rule works this way. You'll just have to accept it as one of the rules of differentiation. If you want more insight, there is some explanation in the second <a href="http://dlvu.github.io"><strong>DLVU</strong></a> lecture.</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -533,7 +525,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0040anim0.svg" data-images="32.DeepLearning1.key-stage-0040anim0.svg,32.DeepLearning1.key-stage-0040anim1.svg,32.DeepLearning1.key-stage-0040anim2.svg,32.DeepLearning1.key-stage-0040anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To simplify this picture we will introduce some new notation. This is specific to this course (and the DLVU course), so don't expect to see it anywhere else, but it should hopefully simplify things a little bit.<br></p><p    >We know that we are always computing the gradient with respect to the loss, so we remove that from the notation. The thing we're most interested in is the tensor that we're computing the gradient <em>for</em>. In this case <strong class="red">A</strong>. We'll put that front and center (instead of in a asubscript) and put the nabla in the superscript (a bit like a transposition or inverse operator). The idea is that for any tensor <strong class="red">A</strong>, the notation <strong class="red">A</strong><sup>∇</sup> refers to a tensor of the same shape as <strong class="red">A</strong>, such that each element contains the partial derivative of the loss with respect to the corresponding element in <strong class="red">A</strong>.<br></p><p    ></p>
+            <p    >To simplify this picture we will introduce some new notation. This is specific to this course (and the DLVU course), so don't expect to see it anywhere else, but it should hopefully simplify things a little bit.<br></p><p    >We know that we are always computing the gradient with respect to the loss, so we remove that from the notation. The thing we're most interested in is the tensor that we're computing the gradient <em>for</em>. In this case <strong>A</strong>. We'll put that front and center (instead of in a asubscript) and put the nabla in the superscript (a bit like a transposition or inverse operator). The idea is that for any tensor <strong>A</strong>, the notation <strong>A</strong><sup>∇</sup> refers to a tensor of the same shape as <strong>A</strong>, such that each element contains the partial derivative of the loss with respect to the corresponding element in <strong>A</strong>.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -547,7 +539,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0041.svg" class="slide-image" />
 
             <figcaption>
-            <p    >With these principles in place, we can apply backpropagation in a tensor-friendly way. Instead of computing the local derivatives first, and then multiplying to compute the global derivatives, we accumulate the product of the local derivatives directly.<br></p><p    >This is the first layer of our feedforward network. It has three inputs <strong class="orange">W</strong>, <strong>x</strong>, and <strong class="blue">b</strong>, and one output <strong class="green">k</strong>. As we saw earlier, the local derivative, consists of a 3-tensor of scalar derivatives, so it's not practical to compute. Instead we compute the gradients of the inputs directly from the gradients of the outputs.<br></p><p    >The <strong>forward function</strong> computes the unactivated values of the first layer, given the inputs <strong>x</strong>, weights <strong class="orange">W </strong>and bias <strong class="blue">b</strong>.<br></p><p    >The <strong>backward function</strong> is given the derivative of the loss for <strong class="green">k</strong>, and should output the derivatives of the loss for  <strong class="orange">W</strong>, <strong>x</strong>, and <strong class="blue">b</strong>.</p><p    ></p>
+            <p    >With these principles in place, we can apply backpropagation in a tensor-friendly way. Instead of computing the local derivatives first, and then multiplying to compute the global derivatives, we accumulate the product of the local derivatives directly.<br></p><p    >This is the first layer of our feedforward network. It has three inputs <strong>W</strong>, <strong>x</strong>, and <strong>b</strong>, and one output <strong>k</strong>. As we saw earlier, the local derivative, consists of a 3-tensor of scalar derivatives, so it's not practical to compute. Instead we compute the gradients of the inputs directly from the gradients of the outputs.<br></p><p    >The <strong>forward function</strong> computes the unactivated values of the first layer, given the inputs <strong>x</strong>, weights <strong>W </strong>and bias <strong>b</strong>.<br></p><p    >The <strong>backward function</strong> is given the derivative of the loss for <strong>k</strong>, and should output the derivatives of the loss for  <strong>W</strong>, <strong>x</strong>, and <strong>b</strong>.</p><p    ></p>
             </figcaption>
        </section>
 
@@ -560,7 +552,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0042anim0.svg" data-images="32.DeepLearning1.key-stage-0042anim0.svg,32.DeepLearning1.key-stage-0042anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Once we have the computation graph, and we know all the backwards for all the functions functions, the rest of backpropagation is a breeze. <br></p><p    >We compute a forward pass, remembering the intermediates and then we walk <span class="purple">backwards</span> down the graph. At each module we call its backward() function with the gradients for its outputs and receive the gradients for its inputs. So long as we do this in the right order, we can be sure that we will compute all gradients for all nodes in the graph.<br></p><p    >Note that we are using the same property we used in the previous lecture. So <br></p><p    >The only thing we need to do now is work out how to compute these backward functions, and how to make this computation efficient.</p><p    ></p>
+            <p    >Once we have the computation graph, and we know all the backwards for all the functions functions, the rest of backpropagation is a breeze. <br></p><p    >We compute a forward pass, remembering the intermediates and then we walk <span>backwards</span> down the graph. At each module we call its backward() function with the gradients for its outputs and receive the gradients for its inputs. So long as we do this in the right order, we can be sure that we will compute all gradients for all nodes in the graph.<br></p><p    >Note that we are using the same property we used in the previous lecture. So <br></p><p    >The only thing we need to do now is work out how to compute these backward functions, and how to make this computation efficient.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -587,7 +579,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0044anim0.svg" data-images="32.DeepLearning1.key-stage-0044anim0.svg,32.DeepLearning1.key-stage-0044anim1.svg,32.DeepLearning1.key-stage-0044anim2.svg,32.DeepLearning1.key-stage-0044anim3.svg,32.DeepLearning1.key-stage-0044anim4.svg,32.DeepLearning1.key-stage-0044anim5.svg,32.DeepLearning1.key-stage-0044anim6.svg,32.DeepLearning1.key-stage-0044anim7.svg" class="slide-image" />
 
             <figcaption>
-            <p    >To work out a scalar derivative we pick an arbitrary element of <strong class="orange">W</strong>, say <span class="orange">W</span><sub class="orange">32</sub>, and work out the derivative for that. Note that since we are using matrix notation <span class="orange">W</span><sub class="orange">32</sub> is the weight from input 2 to output 3. In the previous videos the subscripts were the other way around.<br></p><p    >If we think of this as a computation graph with scalar nodes, <strong class="green">k</strong> just represents different inputs to the function that ultimately computes l. That means that the derivative of l over <span class="orange">W</span><sub class="orange">32</sub> is just the sum of the derivatives through each element of k. This works whatever the rank and shape of<strong class="green"> k</strong>; it could be a huge 9-tensor, and all we have to do is flatten it, and sum over its derivatives. Note that these are the derivatives that we are given.<br></p><p    >At the end, we see that the scalar derivative we’re interested in is the second element of the vector that we are given, times the third element of the input x.</p><p    ></p>
+            <p    >To work out a scalar derivative we pick an arbitrary element of <strong>W</strong>, say <span>W</span><sub>32</sub>, and work out the derivative for that. Note that since we are using matrix notation <span>W</span><sub>32</sub> is the weight from input 2 to output 3. In the previous videos the subscripts were the other way around.<br></p><p    >If we think of this as a computation graph with scalar nodes, <strong>k</strong> just represents different inputs to the function that ultimately computes l. That means that the derivative of l over <span>W</span><sub>32</sub> is just the sum of the derivatives through each element of k. This works whatever the rank and shape of<strong> k</strong>; it could be a huge 9-tensor, and all we have to do is flatten it, and sum over its derivatives. Note that these are the derivatives that we are given.<br></p><p    >At the end, we see that the scalar derivative we’re interested in is the second element of the vector that we are given, times the third element of the input x.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -601,7 +593,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0045anim0.svg" data-images="32.DeepLearning1.key-stage-0045anim0.svg,32.DeepLearning1.key-stage-0045anim1.svg,32.DeepLearning1.key-stage-0045anim2.svg,32.DeepLearning1.key-stage-0045anim3.svg,32.DeepLearning1.key-stage-0045anim4.svg,32.DeepLearning1.key-stage-0045anim5.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We don’t actually want to compute the scalar derivatives one by one like this, but at least now we know what is expected of us. We can write down what all the elements of the matrix <strong>W</strong><sup>∇</sup> look like, and see if we can find some clever way to figure out how to compute this matrix using simple linear algebra operations, instead of filling the elements of the matrix one by one. This is called <strong>vectorizing</strong>: expressing an algorithm in single matrix operations rather than a series of loops. <br></p><p    >In this case, we can note that the matrix <strong>W</strong><sup>∇</sup> is simply the outer product of the vector <strong class="green">k</strong><sup>∇</sup> which we were given and the input vector <strong>x</strong>. Multiplying these two will give us all the derivatives we’re interested in, in a single operation.<br></p><p    ></p>
+            <p    >We don’t actually want to compute the scalar derivatives one by one like this, but at least now we know what is expected of us. We can write down what all the elements of the matrix <strong>W</strong><sup>∇</sup> look like, and see if we can find some clever way to figure out how to compute this matrix using simple linear algebra operations, instead of filling the elements of the matrix one by one. This is called <strong>vectorizing</strong>: expressing an algorithm in single matrix operations rather than a series of loops. <br></p><p    >In this case, we can note that the matrix <strong>W</strong><sup>∇</sup> is simply the outer product of the vector <strong>k</strong><sup>∇</sup> which we were given and the input vector <strong>x</strong>. Multiplying these two will give us all the derivatives we’re interested in, in a single operation.<br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -615,7 +607,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0046anim0.svg" data-images="32.DeepLearning1.key-stage-0046anim0.svg,32.DeepLearning1.key-stage-0046anim1.svg,32.DeepLearning1.key-stage-0046anim2.svg,32.DeepLearning1.key-stage-0046anim3.svg" class="slide-image" />
 
             <figcaption>
-            <p    >The gradients for <strong>x</strong> and <strong class="blue">b</strong> can be worked out in the same way.</p><p    ></p>
+            <p    >The gradients for <strong>x</strong> and <strong>b</strong> can be worked out in the same way.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -695,24 +687,20 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0052.svg" class="slide-image" />
 
             <figcaption>
-            <p    >And with that, we have all the ingredients for a modern deep learning framework.<br></p><p    >If you’d like to see what this looks like in practice, <a href="https://github.com/dlvu/vugrad"><strong class="blue">click this link to see a very minimal implementation of such a deep learning system</strong></a>, in about 300 lines of code. If you’d like to get your hands dirty and start training neural networks, check out the fourth and fifth worksheets. <br></p><p    >In the next videos, we see what we can build in systems like this besides simple feedforward networks. Specifically, we’ll look at convolutional neural networks.</p><p    ></p>
+            <p    >And with that, we have all the ingredients for a modern deep learning framework.<br></p><p    >If you’d like to see what this looks like in practice, <a href="https://github.com/dlvu/vugrad"><strong>click this link to see a very minimal implementation of such a deep learning system</strong></a>, in about 300 lines of code. If you’d like to get your hands dirty and start training neural networks, check out the fourth and fifth worksheets. <br></p><p    >In the next videos, we see what we can build in systems like this besides simple feedforward networks. Specifically, we’ll look at convolutional neural networks.</p><p    ></p>
             </figcaption>
        </section>
 
 
 
+        <section class="video" id="video-049">
+            <a class="slide-link" href="https://mlvu.github.io/lecture07#video-49">link here</a>
+           <video controls>
+                <source src="https://pbm.thegood.cloud/s/eXbWbkg5cLbFGzf/download/MLVU%207.3%20Convolutions.mp4" type="video/mp4" />
 
-       <section class="video" id="video-049">
-           <a class="slide-link" href="https://mlvu.github.io/lecture07#video-49">link here</a>
-           <iframe
-                src="https://www.youtube.com/embed/5PywqjN1hh0"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
-
-       </section>
-
+                Download the <a href="https://pbm.thegood.cloud/s/eXbWbkg5cLbFGzf/download/MLVU%207.3%20Convolutions.mp4">video</a>.
+           </video>
+        </section>
 
 
        <section id="slide-050">
@@ -904,7 +892,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0067.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Here are the results of a real convolutional network trained to detect faces. The small grayscale images shows a typical image that each node in one of the layers responds to. Those for the first layers can be thought of as edge detectors: if there is a strong edge in a particular part of the image, the node lights up. The second combine these into detectors for parts of images: eyes noses, mouths, etc. The third combine these into detectors for complete faces.<br></p><p    ><br></p><aside    >source: <a href="https://devblogs.nvidia.com/parallelforall/deep-learning-nutshell-core-concepts/"><strong class="blue">https://devblogs.nvidia.com/parallelforall/deep-learning-nutshell-core-concepts/</strong></a><br></aside><aside    ></aside>
+            <p    >Here are the results of a real convolutional network trained to detect faces. The small grayscale images shows a typical image that each node in one of the layers responds to. Those for the first layers can be thought of as edge detectors: if there is a strong edge in a particular part of the image, the node lights up. The second combine these into detectors for parts of images: eyes noses, mouths, etc. The third combine these into detectors for complete faces.<br></p><p    ><br></p><aside    >source: <a href="https://devblogs.nvidia.com/parallelforall/deep-learning-nutshell-core-concepts/"><strong>https://devblogs.nvidia.com/parallelforall/deep-learning-nutshell-core-concepts/</strong></a><br></aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -917,7 +905,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0068.png" class="slide-image" />
 
             <figcaption>
-            <p    >Here is a feature visualisation example for a more recent network trained on imagenet, a collection of 14 million images with diverse subjects.<br></p><p    >To find the image on the right, the authors took one node high up in the network, and instead of optimising the weights to minimise the loss, they optimised the input to maximise the activation of that node.<br></p><p    >They also searched the dataset for natural  images that caused a high activation in that particular node.<br></p><p    >You can look through these visualizations yourself at  <a href="https://distill.pub/2017/feature-visualization/"><strong class="blue">https://distill.pub/2017/feature-visualization/</strong></a></p><p    ><a href="https://distill.pub/2017/feature-visualization/"><strong class="blue"></strong></a></p>
+            <p    >Here is a feature visualisation example for a more recent network trained on imagenet, a collection of 14 million images with diverse subjects.<br></p><p    >To find the image on the right, the authors took one node high up in the network, and instead of optimising the weights to minimise the loss, they optimised the input to maximise the activation of that node.<br></p><p    >They also searched the dataset for natural  images that caused a high activation in that particular node.<br></p><p    >You can look through these visualizations yourself at  <a href="https://distill.pub/2017/feature-visualization/"><strong>https://distill.pub/2017/feature-visualization/</strong></a></p><p    ><a href="https://distill.pub/2017/feature-visualization/"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -930,7 +918,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0069.png" class="slide-image" />
 
             <figcaption>
-            <p    >The opposite is also possible: searching for an input that cause minimal activation.<br></p><p    ><a href="https://distill.pub/2017/feature-visualization/"><strong class="blue">https://distill.pub/2017/feature-visualization/</strong></a></p><p    ><a href="https://distill.pub/2017/feature-visualization/"><strong class="blue"></strong></a></p>
+            <p    >The opposite is also possible: searching for an input that cause minimal activation.<br></p><p    ><a href="https://distill.pub/2017/feature-visualization/"><strong>https://distill.pub/2017/feature-visualization/</strong></a></p><p    ><a href="https://distill.pub/2017/feature-visualization/"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -949,18 +937,14 @@ slides: true
 
 
 
+        <section class="video" id="video-067">
+            <a class="slide-link" href="https://mlvu.github.io/lecture07#video-67">link here</a>
+           <video controls>
+                <source src="https://pbm.thegood.cloud/s/WN5FGRGwjELmbtA/download/MLVU%207.4%20Making%20it%20work.mp4" type="video/mp4" />
 
-       <section class="video" id="video-067">
-           <a class="slide-link" href="https://mlvu.github.io/lecture07#video-67">link here</a>
-           <iframe
-                src="https://www.youtube.com/embed/3UJjSRIKn10"
-                title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-           </iframe>
-
-       </section>
-
+                Download the <a href="https://pbm.thegood.cloud/s/WN5FGRGwjELmbtA/download/MLVU%207.4%20Making%20it%20work.mp4">video</a>.
+           </video>
+        </section>
 
 
        <section id="slide-068">
@@ -1113,7 +1097,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0084anim0.svg" data-images="32.DeepLearning1.key-stage-0084anim0.svg,32.DeepLearning1.key-stage-0084anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><strong>Nesterov momentum</strong> is a slight tweak. In regular momentum, the actual step taken is the sum of two vectors, the momentum step (representing the history of steps taken so far) and a gradient step (a step in the direction of steepest descent at the current point).<br></p><p    >Since we know that we are taking the momentum step anyway, we might as well take this step first, and then evaluate the gradient<em> after</em> the momentum step. This will make the gradient slightly more accurate.<br></p><aside    >See <a href="http://dlvu.github.io"><strong class="blue">DLVU lecture 4</strong></a> for a more detailed explanation.</aside><aside    ></aside>
+            <p    ><strong>Nesterov momentum</strong> is a slight tweak. In regular momentum, the actual step taken is the sum of two vectors, the momentum step (representing the history of steps taken so far) and a gradient step (a step in the direction of steepest descent at the current point).<br></p><p    >Since we know that we are taking the momentum step anyway, we might as well take this step first, and then evaluate the gradient<em> after</em> the momentum step. This will make the gradient slightly more accurate.<br></p><aside    >See <a href="http://dlvu.github.io"><strong>DLVU lecture 4</strong></a> for a more detailed explanation.</aside><aside    ></aside>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -1127,7 +1111,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0085.svg" class="slide-image" />
 
             <figcaption>
-            <p    >One way of thinking about momentum is that in large, complex networks each weight should have its own learning rate. Different weights perform very different functions, so ideally we want to look at the properties of the loss landscape for each weight (the sizes of recent gradients) and scale the “global learning rate” by these. In some ways, this is what the momentum vector is doing for us: is gives every weight a separate momentum scalar that changes how much that weight will changes separate from all the other weights.<br></p><p    >Adam is a method that takes this idea and adds another per-weight tuning on top of this: a scaling by the standard deviation of recent gradient values.<br></p><p    >The bigger the recent gradients, the bigger we want the learning rate to be (this is what momentum does for us). However, if there is a lot of variance in the recent gradients, we want to reduce the learning rate because the landscape is unpredictable. Thus, if we scale the learning rate by the mean <strong class="blue">m</strong> over the recent gradients (similar to momentum), and divide that by the square root of the variance <strong class="blue">v</strong> (plus some small epsilon to avoid division by zero), we end up with a direction that uses recent information about the loss landscape to adapt the gradient.<br></p><p    ><strong class="blue">m</strong> and <strong>v</strong> are computed as an exponential moving average. This means that the current gradient weights the most, and the influence of recent gradients decays exponentially (but all play <em>some </em>part in the total sum).<br></p><aside    >It may not be immediately obvious that the <strong class="blue">m</strong> vector is doing roughly the same thing here as the momentum <strong class="blue">m</strong> is, but with a little rewriting, you can show that they are very similar. You can think of Adam as doing "momentum plus scaling by the standard deviation".</aside><aside    ></aside>
+            <p    >One way of thinking about momentum is that in large, complex networks each weight should have its own learning rate. Different weights perform very different functions, so ideally we want to look at the properties of the loss landscape for each weight (the sizes of recent gradients) and scale the “global learning rate” by these. In some ways, this is what the momentum vector is doing for us: is gives every weight a separate momentum scalar that changes how much that weight will changes separate from all the other weights.<br></p><p    >Adam is a method that takes this idea and adds another per-weight tuning on top of this: a scaling by the standard deviation of recent gradient values.<br></p><p    >The bigger the recent gradients, the bigger we want the learning rate to be (this is what momentum does for us). However, if there is a lot of variance in the recent gradients, we want to reduce the learning rate because the landscape is unpredictable. Thus, if we scale the learning rate by the mean <strong>m</strong> over the recent gradients (similar to momentum), and divide that by the square root of the variance <strong>v</strong> (plus some small epsilon to avoid division by zero), we end up with a direction that uses recent information about the loss landscape to adapt the gradient.<br></p><p    ><strong>m</strong> and <strong>v</strong> are computed as an exponential moving average. This means that the current gradient weights the most, and the influence of recent gradients decays exponentially (but all play <em>some </em>part in the total sum).<br></p><aside    >It may not be immediately obvious that the <strong>m</strong> vector is doing roughly the same thing here as the momentum <strong>m</strong> is, but with a little rewriting, you can show that they are very similar. You can think of Adam as doing "momentum plus scaling by the standard deviation".</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1166,7 +1150,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0088anim0.svg" data-images="32.DeepLearning1.key-stage-0088anim0.svg,32.DeepLearning1.key-stage-0088anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >A simple example is the L2 regularizer. This regularizer considers models with small parameters to be simpler (and therefore preferable). It adds a  a penalty to the loss for models with larger weights.<br></p><p    >To implement the regularizer we simply compute the L2 norm of all the weights of the model (flattened into a vector). This is essentially the distance in model space from the origin to the model.<br></p><p    >With L2 loss in particular, it's common to compute the square of the norm rather than the norm itself. This works out as the dot product of the parameter vector with itself. This is easier to compute, and has some beneficial properties in analysing the resulting model mathematically. <br></p><aside    >The behavior of these two approaches is slightly different (the second is more sensitive to larger values), but in practice there isn't a big difference.<br></aside><p    >We then add this to the loss multiplied by hyper parameter<span class="red"> lambda</span>. Thus, models with bigger weights get a higher loss, but if it’s worth it (the original loss goes down enough), they can still beat the simpler models. Theta is a vector containing all parameters of the model.</p><p    ></p>
+            <p    >A simple example is the L2 regularizer. This regularizer considers models with small parameters to be simpler (and therefore preferable). It adds a  a penalty to the loss for models with larger weights.<br></p><p    >To implement the regularizer we simply compute the L2 norm of all the weights of the model (flattened into a vector). This is essentially the distance in model space from the origin to the model.<br></p><p    >With L2 loss in particular, it's common to compute the square of the norm rather than the norm itself. This works out as the dot product of the parameter vector with itself. This is easier to compute, and has some beneficial properties in analysing the resulting model mathematically. <br></p><aside    >The behavior of these two approaches is slightly different (the second is more sensitive to larger values), but in practice there isn't a big difference.<br></aside><p    >We then add this to the loss multiplied by hyper parameter<span> lambda</span>. Thus, models with bigger weights get a higher loss, but if it’s worth it (the original loss goes down enough), they can still beat the simpler models. Theta is a vector containing all parameters of the model.</p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -1311,7 +1295,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0100.svg" class="slide-image" />
 
             <figcaption>
-            <p    >We can try this in tensor flow playground. For this example (a simple logistic regression) we know that the derived features x<sub>1</sub><sup>2</sup> and x<sub>2</sub><sup>2</sup> contain everything we need to a linear fit. However, when we with with regularly, or with L2 regularization, we see that the weights for the other features never quite go to zero. However, with L1 regularization, we see that they become precisely zero.<br></p><p    ><a href="https://bit.ly/32lc6cQ"><strong class="blue">https://bit.ly/32lc6cQ</strong></a><br></p><p    ></p>
+            <p    >We can try this in tensor flow playground. For this example (a simple logistic regression) we know that the derived features x<sub>1</sub><sup>2</sup> and x<sub>2</sub><sup>2</sup> contain everything we need to a linear fit. However, when we with with regularly, or with L2 regularization, we see that the weights for the other features never quite go to zero. However, with L1 regularization, we see that they become precisely zero.<br></p><p    ><a href="https://bit.ly/32lc6cQ"><strong>https://bit.ly/32lc6cQ</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
@@ -1324,7 +1308,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0101.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Sometimes a regularization term is something that you tack onto your model in an ad-hoc fashion: you see that it is overfitting, so you add a little regularization.<br></p><p    >Other times, it appears naturally. We saw this in the last lecture, where we rewrote the SVM soft margin loss to an error term and a regularization term.<br></p><aside    >Here the penalty hyperparameter <span class="red">C</span> is on the error term, and not on the regularization term, but practically it doesn’t make much of a difference which term you control.</aside><aside    ></aside>
+            <p    >Sometimes a regularization term is something that you tack onto your model in an ad-hoc fashion: you see that it is overfitting, so you add a little regularization.<br></p><p    >Other times, it appears naturally. We saw this in the last lecture, where we rewrote the SVM soft margin loss to an error term and a regularization term.<br></p><aside    >Here the penalty hyperparameter <span>C</span> is on the error term, and not on the regularization term, but practically it doesn’t make much of a difference which term you control.</aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1337,7 +1321,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0103.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><strong>Dropout</strong> is a very different regularization technique for large neural nets. During training, we simply remove hidden and input nodes (each with probability <em>p</em>) by setting their values to zero.<br></p><p    >Memorization (aka overfitting) often depends on multiple neurons firing together in specific combinations. Dropout prevents this by randomly turning them of.<br></p><p    >image source: <a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong class="blue">http://jmlr.org/papers/v15/srivastava14a.html</strong></a></p><p    ><a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong class="blue"></strong></a></p>
+            <p    ><strong>Dropout</strong> is a very different regularization technique for large neural nets. During training, we simply remove hidden and input nodes (each with probability <em>p</em>) by setting their values to zero.<br></p><p    >Memorization (aka overfitting) often depends on multiple neurons firing together in specific combinations. Dropout prevents this by randomly turning them of.<br></p><p    >image source: <a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong>http://jmlr.org/papers/v15/srivastava14a.html</strong></a></p><p    ><a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -1350,7 +1334,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0104.svg" class="slide-image" />
 
             <figcaption>
-            <p    >Once you’ve finished training and you starting using the model, you turn off dropout. Since this increases the size of the activations, you should correct by a factor of p.<br></p><aside    >Frameworks like Keras know when you’re using the model to train and when you’re using it to predict, and turn dropout on and off automatically. In other frameworks like Pytorch, you need to be little bit more careful to tell the network whether you're training or evaluating.<br></aside><p    >image source: <a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong class="blue">http://jmlr.org/papers/v15/srivastava14a.html</strong></a></p><p    ><a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong class="blue"></strong></a></p>
+            <p    >Once you’ve finished training and you starting using the model, you turn off dropout. Since this increases the size of the activations, you should correct by a factor of p.<br></p><aside    >Frameworks like Keras know when you’re using the model to train and when you’re using it to predict, and turn dropout on and off automatically. In other frameworks like Pytorch, you need to be little bit more careful to tell the network whether you're training or evaluating.<br></aside><p    >image source: <a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong>http://jmlr.org/papers/v15/srivastava14a.html</strong></a></p><p    ><a href="http://jmlr.org/papers/v15/srivastava14a.html"><strong></strong></a></p>
             </figcaption>
        </section>
 
@@ -1402,7 +1386,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0109.svg" class="slide-image" />
 
             <figcaption>
-            <p    >This is an end-to-end system for producing natural language descriptions of photographs. The system is not provided with any knowledge of the way language works, it just learns to produce captions from examples using a single neural network that consumes images and produces text, trained end-to-end.<br></p><p    ><br></p><aside    >source: <a href="https://www.engadget.com/2014/11/18/google-natural-language-image-description/"><strong class="blue">https://www.engadget.com/2014/11/18/google-natural-language-image-description/</strong></a><br></aside><aside    >recommended: <a href="https://twitter.com/picdescbot"><strong class="blue">https://twitter.com/picdescbot</strong></a><br></aside><aside    ></aside>
+            <p    >This is an end-to-end system for producing natural language descriptions of photographs. The system is not provided with any knowledge of the way language works, it just learns to produce captions from examples using a single neural network that consumes images and produces text, trained end-to-end.<br></p><p    ><br></p><aside    >source: <a href="https://www.engadget.com/2014/11/18/google-natural-language-image-description/"><strong>https://www.engadget.com/2014/11/18/google-natural-language-image-description/</strong></a><br></aside><aside    >recommended: <a href="https://twitter.com/picdescbot"><strong>https://twitter.com/picdescbot</strong></a><br></aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1415,7 +1399,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0110.png" class="slide-image" />
 
             <figcaption>
-            <p    >This example uses a convolutional network to transfer the style of one image onto another. Interestingly, this work was done with a general purpose network, trained on a general classification task (such networks are available for download). The authors took this network, and didn’t change the weights. They just built the style transfer architecture around the existing network.<br></p><p    ><br></p><aside    >source: <a href="https://research.googleblog.com/2016/10/supercharging-style-transfer.html"><strong class="blue">https://research.googleblog.com/2016/10/supercharging-style-transfer.html</strong></a><br></aside><aside    >try it yourself: <a href="http://demos.algorithmia.com/deep-style/"><strong class="blue">http://demos.algorithmia.com/deep-style/</strong></a><br></aside><aside    ></aside>
+            <p    >This example uses a convolutional network to transfer the style of one image onto another. Interestingly, this work was done with a general purpose network, trained on a general classification task (such networks are available for download). The authors took this network, and didn’t change the weights. They just built the style transfer architecture around the existing network.<br></p><p    ><br></p><aside    >source: <a href="https://research.googleblog.com/2016/10/supercharging-style-transfer.html"><strong>https://research.googleblog.com/2016/10/supercharging-style-transfer.html</strong></a><br></aside><aside    >try it yourself: <a href="http://demos.algorithmia.com/deep-style/"><strong>http://demos.algorithmia.com/deep-style/</strong></a><br></aside><aside    ></aside>
             </figcaption>
        </section>
 
@@ -1441,7 +1425,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0112anim0.svg" data-images="32.DeepLearning1.key-stage-0112anim0.svg,32.DeepLearning1.key-stage-0112anim1.svg" class="slide-image" />
 
             <figcaption>
-            <p    >In some cases, we don’t have neatly paired images: like the task of transforming a horse into a zebra. We can get a big bag of pictures of horses, and a big bag of pictures of zebras, but we don’t know what a specific horse should look like as a zebra. The CycleGAN, published in 2017, could learn in this setting.<br></p><p    ><a href="http://gntech.ae/news/cyclegan-ai-can-turn-classic-paintings-photos/"><strong class="blue">http://gntech.ae/news/cyclegan-ai-can-turn-classic-paintings-photos/</strong></a><br></p><p    ></p>
+            <p    >In some cases, we don’t have neatly paired images: like the task of transforming a horse into a zebra. We can get a big bag of pictures of horses, and a big bag of pictures of zebras, but we don’t know what a specific horse should look like as a zebra. The CycleGAN, published in 2017, could learn in this setting.<br></p><p    ><a href="http://gntech.ae/news/cyclegan-ai-can-turn-classic-paintings-photos/"><strong>http://gntech.ae/news/cyclegan-ai-can-turn-classic-paintings-photos/</strong></a><br></p><p    ></p>
             </figcaption>
             <span class="hint">click image for animation</span>
        </section>
@@ -1455,7 +1439,7 @@ slides: true
             <img src="32.DeepLearning1.key-stage-0113.svg" class="slide-image" />
 
             <figcaption>
-            <p    ><a href="https://twitter.com/goodfellow_ian/status/1084973596236144640"><strong class="blue">https://twitter.com/goodfellow_ian/status/1084973596236144640</strong></a><br></p><p    ></p>
+            <p    ><a href="https://twitter.com/goodfellow_ian/status/1084973596236144640"><strong>https://twitter.com/goodfellow_ian/status/1084973596236144640</strong></a><br></p><p    ></p>
             </figcaption>
        </section>
 
