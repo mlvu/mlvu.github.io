@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920pt" height="1080pt" viewBox="0 0 1920 1080">
 <defs>
 <filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
 <feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
@@ -436,7 +436,7 @@
 </g>
 </mask>
 <clipPath id="clip-26">
-<path clip-rule="nonzero" d="M 4 4 L 79 4 L 79 79 L 4 79 Z M 4 4 "/>
+<path clip-rule="nonzero" d="M 4 4 L 78.511719 4 L 78.511719 78.234375 L 4 78.234375 Z M 4 4 "/>
 </clipPath>
 <clipPath id="clip-27">
 <rect x="0" y="0" width="79" height="79"/>
@@ -453,7 +453,7 @@
 </g>
 </mask>
 <clipPath id="clip-28">
-<path clip-rule="nonzero" d="M 5 4 L 79 4 L 79 79 L 5 79 Z M 5 4 "/>
+<path clip-rule="nonzero" d="M 5 4 L 78.792969 4 L 78.792969 78.234375 L 5 78.234375 Z M 5 4 "/>
 </clipPath>
 <clipPath id="clip-29">
 <rect x="0" y="0" width="79" height="79"/>
@@ -470,7 +470,7 @@
 </g>
 </mask>
 <clipPath id="clip-30">
-<path clip-rule="nonzero" d="M 4 4 L 79 4 L 79 79 L 4 79 Z M 4 4 "/>
+<path clip-rule="nonzero" d="M 4 4 L 78.078125 4 L 78.078125 78.234375 L 4 78.234375 Z M 4 4 "/>
 </clipPath>
 <clipPath id="clip-31">
 <rect x="0" y="0" width="79" height="79"/>
@@ -487,7 +487,7 @@
 </g>
 </mask>
 <clipPath id="clip-32">
-<path clip-rule="nonzero" d="M 4 4 L 79 4 L 79 79 L 4 79 Z M 4 4 "/>
+<path clip-rule="nonzero" d="M 4 4 L 78.082031 4 L 78.082031 78.234375 L 4 78.234375 Z M 4 4 "/>
 </clipPath>
 <clipPath id="clip-33">
 <rect x="0" y="0" width="79" height="79"/>
@@ -504,7 +504,7 @@
 </g>
 </mask>
 <clipPath id="clip-34">
-<path clip-rule="nonzero" d="M 5 4 L 79 4 L 79 79 L 5 79 Z M 5 4 "/>
+<path clip-rule="nonzero" d="M 5 4 L 78.921875 4 L 78.921875 78.234375 L 5 78.234375 Z M 5 4 "/>
 </clipPath>
 <clipPath id="clip-35">
 <rect x="0" y="0" width="79" height="79"/>
