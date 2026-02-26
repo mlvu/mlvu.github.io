@@ -40,7 +40,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l7"><a href="/lecture07">
+<div class="l7"><a href="/deeplearning">
  <h3 class="red"><span>7.</span>Deep learning</h3>
 </a>
 </div>
@@ -50,7 +50,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l10"><a href="/lecture10">
+<div class="l10"><a href="/trees">
  <h3 class="purple"><span>9.</span>Trees and ensembles</h3>
 </a>
 </div>

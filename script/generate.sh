@@ -57,12 +57,12 @@
 #  --base-url "https://mlvu.github.io/beyondlinear" \
 #  --pdf-link "https://mlvu.github.io/lectures/32.LinearModels2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 7: Deep learning" \
-  --dst ../deeplearning \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/41 Deep Learning 1/32.DeepLearning1.key" \
-  --base-url "https://mlvu.github.io/lecture07" \
-  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 7: Deep learning" \
+#  --dst ../deeplearning \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/41 Deep Learning 1/32.DeepLearning1.key" \
+#  --base-url "https://mlvu.github.io/lecture07" \
+#  --pdf-link "https://mlvu.github.io/lectures/41.DeepLearning1.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 8: Sequences" \
@@ -71,12 +71,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/sequences" \
 #  --pdf-link "https://mlvu.github.io/lectures/61.SequentialModels.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 10: Transformers" \
-  --dst ../transformers \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/Transformers/Transformers.key" \
-  --base-url "https://mlvu.github.io/transformers" \
-  --pdf-link "https://mlvu.github.io/lectures/Transformers.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 10: Transformers" \
+#  --dst ../transformers \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/Transformers/Transformers.key" \
+#  --base-url "https://mlvu.github.io/transformers" \
+#  --pdf-link "https://mlvu.github.io/lectures/Transformers.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 8: Density estimation" \
@@ -92,12 +92,12 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/generative" \
 #  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 10: Trees and ensembles" \
-  --dst ../trees \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
-  --base-url "https://mlvu.github.io/trees" \
-  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 10: Trees and ensembles" \
+#  --dst ../trees \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/52 Tree Models/52.Trees.key" \
+#  --base-url "https://mlvu.github.io/trees" \
+#  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 12: Embedding models" \
@@ -128,7 +128,7 @@ python generate.py \
 #  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries transformers social-impact introduction generative preprocessing linear beyondlinear evaluation probability details svms sequences
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries transformers social-impact introduction generative preprocessing linear beyondlinear evaluation probability details svms sequences lecture07 lecture10 deeplearning trees
 git commit -m "Auto-update."
 git push
 
