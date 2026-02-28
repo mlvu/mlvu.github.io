@@ -170,10 +170,10 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   <tr>
   	<td><h3>2. Linear models and search </h3>
   	<ul class="videos">
-		 <li><a href="https://youtu.be/YGBZE6RA7aU">2.1 Linear regression</a></li>
-		 <li><a href="https://youtu.be/q97nOAYfpHg">2.2 Searching for a good model</a></li>
-		 <li><a href="https://youtu.be/DlMKkPrKg5c">2.3 Gradient descent</a></li>
-		 <li><a href="https://youtu.be/LjhzJUy-wfk">2.4 Linear classification</a></li>
+		 <li><a href="/linear/#video-000">2.1 Linear regression</a></li>
+		 <li><a href="/linear/#video-019">2.2 Searching for a good model</a></li>
+		 <li><a href="/linear/#video-046">2.3 Gradient descent</a></li>
+		 <li><a href="/linear/#video-073">2.4 Linear classification</a></li>
 	   </ul>
   	</td>
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQguePOyoKenR5LWOlCWCkCsM">playlist</a> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a> </td>
@@ -184,12 +184,12 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td rowspan="2"> w2</td>
     <td><h3>3. Model evaluation</h3>
     <ul class="videos">
-		 <li><a href="https://youtu.be/hHLDDJJl2v4">3.1 Machine learning experiments</a></li>
-		 <li><a href="https://youtu.be/oZdWt_Mrg_8">3.2 Model evaluation</a></li>
-		 <li><a href="https://youtu.be/UrqPyE4H2bI">3.3 ROC curves, area under the curve</a></li>
-		 <li><a href="https://youtu.be/XJ_StAFefUk">3.4 Social impact 2</a></li>  
-		 <li><a href="https://youtu.be/BfoeXjX2v0Q">3.5 Statistics for ML experiments</a></li>
-		 <li><a href="https://youtu.be/gnmCkRYrlEA">3.6 No free lunch</a></li>  		   
+		 <li><a href="/evaluation/#video-000">3.1 Machine learning experiments</a></li>
+		 <li><a href="/evaluation/#video-028">3.2 Model evaluation</a></li>
+		 <li><a href="/evaluation/#video-051">3.3 ROC curves, area under the curve</a></li>
+		 <li><a href="/evaluation/#video-080">3.4 Social impact 2</a></li>  
+		 <li><a href="/evaluation/#video-101">3.5 Statistics for ML experiments</a></li>
+		 <li><a href="/evaluation/#video-120">3.6 No free lunch</a></li>  		   
     </ul>
     
     </td>
@@ -198,28 +198,15 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
     <td><a href="https://youtu.be/GaoNNaRjauU">2020</a> <a href="https://youtu.be/wbUE6X_B8B4">2019</a> <a href="https://youtu.be/okxskT6ben4">2018</a></td>
   </tr>
-  <tr>
-    <td><h3>4. Data pre-processing</h3>
-    <ul class="videos">
-		 <li><a href="https://youtu.be/hHLDDJJl2v4">4.1 Missing values and outliers</a></li>
-		 <li><a href="https://youtu.be/oZdWt_Mrg_8">4.2 Class imbalance and feature design</a></li>
-		 <li><a href="https://youtu.be/UrqPyE4H2bI">4.3 Normalization</a></li>
-		 <li><a href="https://youtu.be/XJ_StAFefUk">4.4 Principal component analysis</a></li>  		   
-    </ul>    
-    
-    </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsJDHLYb0dxn5xr2-pjmV08">playlist</a> <a href="./lectures/22.Methodology2.annotated.pdf">slides</a> </td> 
-	<td><a href="https://youtu.be/Aad5UDrdHPg">2020</a> <a href="https://youtu.be/H4c4qpHdGq8">2019</a> <a href="https://youtu.be/csk2HSWS5r8">2018</a></td>
-  </tr>
+
   <tr>
     <td rowspan="2"> w3</td>
-    <td><h3> 5. Probabilistic Models</h3>
+    <td><h3> 4. Probabilistic Models</h3>
 	<ul class="videos">
-		 <li><a href="https://youtu.be/9rWoBVnVuLQ">5.1 Introduction to probability</a></li>
-		 <li><a href="https://youtu.be/IubHHpzM32Y">5.2 Learning with probability</a></li>
-		 <li><a href="https://youtu.be/fK6dQYkeVqA">5.3 The (naive) Bayes classifier</a></li>
-		 <li><a href="https://youtu.be/EYhxR22Ta88">5.4 Logistic regression</a></li>  		   
-		 <li><a href="https://youtu.be/mSneVjDvzNQ">5.5 Information theory</a></li>  		   
+		 <li><a href="/probability/#video-000">4.1 Learning with probability</a></li>
+		 <li><a href="/probability/#video-021">4.2 The (naive) Bayes classifier</a></li>
+		 <li><a href="/probability/#video-042">4.3 Logistic regression</a></li>  		   
+		 <li><a href="/probability/#video-070">4.4 Information theory</a></li>  		   
     </ul>      
     </td>
 
@@ -228,6 +215,21 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
 	<td><a href="https://youtu.be/k0_56JyYaOM">2020</a> <a href="https://youtu.be/f2HIW37Ohho">2019</a> <a href="https://youtu.be/DM1APCpqF8g">2018</a></td>
   </tr>
+
+  <tr>
+    <td><h3>5. Data pre-processing</h3>
+    <ul class="videos">
+		 <li><a href="/preprocessing/#video-000">5.1 Missing values and outliers</a></li>
+		 <li><a href="/preprocessing/#video-030">5.2 Class imbalance and feature design</a></li>
+		 <li><a href="/preprocessing/#video-053">5.3 Normalization</a></li>
+		 <li><a href="/preprocessing/#video-075">5.4 Principal component analysis</a></li>  		   
+    </ul>    
+    
+    </td>
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsJDHLYb0dxn5xr2-pjmV08">playlist</a> <a href="./lectures/22.Methodology2.annotated.pdf">slides</a> </td> 
+	<td><a href="https://youtu.be/Aad5UDrdHPg">2020</a> <a href="https://youtu.be/H4c4qpHdGq8">2019</a> <a href="https://youtu.be/csk2HSWS5r8">2018</a></td>
+  </tr>
+
   <tr>
     <td><h3>6. Beyond Linear models</h3>
 	<ul class="videos">
@@ -361,7 +363,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 
 Feel free to open a [github issue](https://github.com/mlvu/mlvu.github.io/issues) if you're 
 working through the material and you spot a mistake, run into a problem or have any other
- kind of question. We also try to answer questions on youtube.
+ kind of question. 
 
 ## Required reading
 
