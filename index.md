@@ -133,6 +133,24 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   <tr>
    <td rowspan="2">w1</td> 
    <td>
+	   <h3>0. Preliminaries</h3>
+	   <ul class="videos">
+		 <li><a href="/preliminaries/#slide-004">0.1 Logs, sums, argmax</a></li>
+		 <li><a href="/preliminaries/#slide-030">0.2 Linear Algebra</a></li>
+		 <li><a href="/preliminaries/#slide-064">0.3 Calculus</a></li>
+		 <li><a href="/preliminaries/#slide-097">0.4 Probability</a></li>
+	   </ul>
+   </td>
+   
+   <td></td>
+   <td rowspan="2"></td> 
+   <td rowspan="2"></td> 
+   <td></td>
+</tr>
+
+  <tr>
+   <td rowspan="2">w1</td> 
+   <td>
 	   <h3>1. Introduction </h3>
 	   <ul class="videos">
 		 <li><a href="https://youtu.be/G5vMe_A5OTo">1.1 What is machine learning?</a></li>
