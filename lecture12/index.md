@@ -1,6 +1,6 @@
 ---
 layout: redirect
 sitemap: false
-permalink: /lecture10/
+permalink: /lecture12/
 redirect_to:  /embeddingmodels/
 ---
