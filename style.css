@@ -1184,13 +1184,13 @@ nav.lectures div.l6::before {
 }
 
 nav.lectures div.l7::before {
-    background-image: url('/lecture07/32.DeepLearning1.key-stage-0118.svg');
+    background-image: url('/deeplearning/32.DeepLearning1.key-stage-0118.svg');
     background-position: -1em 1em;
     background-size: 200%;
 }
 
 nav.lectures div.l8::before {
-    background-image: url('https://mlvu.github.io/lecture08/42.ProbabilisticModels2.majid.key-stage-0019.png');
+    background-image: url('https://mlvu.github.io/em/42.ProbabilisticModels2.majid.key-stage-0019.png');
     background-position: -17.4em -4em;
     background-size: 380%;
 }
@@ -1202,7 +1202,7 @@ nav.lectures div.l9::before {
 }
 
 nav.lectures div.l10::before {
-    background-image: url('/lecture10/52.Trees.key-stage-0036.svg');
+    background-image: url('/trees/52.Trees.key-stage-0036.svg');
     background-position: 0 -1em;
     background-size: 200%;
 }
@@ -1220,19 +1220,19 @@ nav.lectures div.l11::before {
 }
 
 nav.lectures div.l12::before {
-    background-image: url('/lecture12/62.Matrices.key-stage-0036.svg');
+    background-image: url('/embeddingmodels/62.Matrices.key-stage-0036.svg');
     background-position: -9.1em -5em;
     background-size: 375%;
 }
 
 nav.lectures div.l13::before {
-    background-image: url('/lecture13/71.ReinforcementLearning.key-stage-0064.svg');
+    background-image: url('/rl/71.ReinforcementLearning.key-stage-0064.svg');
     background-position: -7em -0em;
     background-size: 200%;
 }
 
 nav.lectures div.si::before {
-    background-image: url('https://mlvu.github.io/lecture08/42.ProbabilisticModels2.majid.key-stage-0129.svg');
+    background-image: url('/lecture08/42.ProbabilisticModels2.majid.key-stage-0129.svg');
     background-position: -12em -1.5em;
     background-size: 200%;
 }

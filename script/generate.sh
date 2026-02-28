@@ -78,19 +78,19 @@
 #  --base-url "https://mlvu.github.io/transformers" \
 #  --pdf-link "https://mlvu.github.io/lectures/Transformers.annotated.pdf"
 
-#python generate.py \
-#  --title "Lecture 8: Density estimation" \
-#  --dst ../lecture08 \
-#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/42 Probabilistic Models 2/42.ProbabilisticModels2.majid.key" \
-#  --base-url "https://mlvu.github.io/lecture08" \
-#  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
-
 python generate.py \
-  --title "Lecture 9: Deep generative models" \
-  --dst ../generative \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
-  --base-url "https://mlvu.github.io/generative" \
-  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
+  --title "Lecture 8: Density estimation" \
+  --dst ../em \
+  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/em/42.ProbabilisticModels2.majid.key" \
+  --base-url "https://mlvu.github.io/em" \
+  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
+
+#python generate.py \
+#  --title "Lecture 9: Deep generative models" \
+#  --dst ../generative \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/51 Deep Learning 2/51.DeepLearning2.key" \
+#  --base-url "https://mlvu.github.io/generative" \
+#  --pdf-link "https://mlvu.github.io/lectures/51.Deep%20Learning2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 10: Trees and ensembles" \
@@ -99,19 +99,19 @@ python generate.py \
 #  --base-url "https://mlvu.github.io/trees" \
 #  --pdf-link "https://mlvu.github.io/lectures/52.Trees.annotated.pdf"
 
-python generate.py \
-  --title "Lecture 12: Embedding models" \
-  --dst ../embeddingmodels \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/62 Matrices/62.Matrices.key" \
-  --base-url "https://mlvu.github.io/embeddingmodels" \
-  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
-
-python generate.py \
-  --title "Lecture 13: Reinforcement learning" \
-  --dst ../rl \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
-  --base-url "https://mlvu.github.io/rl" \
-  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
+#python generate.py \
+#  --title "Lecture 12: Embedding models" \
+#  --dst ../embeddingmodels \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/62 Matrices/62.Matrices.key" \
+#  --base-url "https://mlvu.github.io/embeddingmodels" \
+#  --pdf-link "https://mlvu.github.io/lectures/62.Matrices.annotated.pdf"
+#
+#python generate.py \
+#  --title "Lecture 13: Reinforcement learning" \
+#  --dst ../rl \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/71 Reinforcement Learning/71.ReinforcementLearning.key" \
+#  --base-url "https://mlvu.github.io/rl" \
+#  --pdf-link "https://mlvu.github.io/lectures/71.Reinforcement%20Learning.annotated.pdf"
 
 #python generate.py \
 #  --title "Social impact dossier" \
