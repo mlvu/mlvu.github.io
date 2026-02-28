@@ -130,7 +130,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <th>previous</th>
   </tr>
   
-  <tr>
+   <tr>
    <td rowspan="2">w1</td> 
    <td>
 	   <h3>0. Preliminaries</h3>
@@ -146,7 +146,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
    <td rowspan="2"></td> 
    <td rowspan="2"></td> 
    <td></td>
-</tr>
+   </tr>
 
   <tr>
    <td rowspan="2">w1</td> 
@@ -190,9 +190,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/evaluation/#video-080">3.4 Social impact 2</a></li>  
 		 <li><a href="/evaluation/#video-101">3.5 Statistics for ML experiments</a></li>
 		 <li><a href="/evaluation/#video-120">3.6 No free lunch</a></li>  		   
-    </ul>
-    
-    </td>
+    </ul></td>
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt6iSJnt8ABPhMNiU2hmZiK">playlist</a> <a href="./lectures/21.Methodology1.annotated.pdf">slides</a></td>
     <td rowspan="2"><a href="./homework/week2.noanswers.pdf">plain</a>, <a href="./homework/week2.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
@@ -209,7 +207,6 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/probability/#video-070">4.4 Information theory</a></li>  		   
     </ul>      
     </td>
-
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgs6gGKPUDURn6aoV6gCIUPa">playlist</a> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>  </td>
     <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
@@ -222,9 +219,8 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/preprocessing/#video-000">5.1 Missing values and outliers</a></li>
 		 <li><a href="/preprocessing/#video-030">5.2 Class imbalance and feature design</a></li>
 		 <li><a href="/preprocessing/#video-053">5.3 Normalization</a></li>
-		 <li><a href="/preprocessing/#video-075">5.4 Principal component analysis</a></li>  		   
-    </ul>    
-    
+		 <li><a href="/preprocessing/#video-075">5.4 Principal component analysis</a></li>
+    </ul>
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsJDHLYb0dxn5xr2-pjmV08">playlist</a> <a href="./lectures/22.Methodology2.annotated.pdf">slides</a> </td> 
 	<td><a href="https://youtu.be/Aad5UDrdHPg">2020</a> <a href="https://youtu.be/H4c4qpHdGq8">2019</a> <a href="https://youtu.be/csk2HSWS5r8">2018</a></td>
@@ -240,7 +236,6 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="https://youtu.be/rILXgY0IHxA">6.5 The kernel trick</a></li>  		 		   
     </ul>           
     </td>
-    
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgs-MP4aQQ-2teemZANWKBjh">playlist</a> <a href="./lectures/32.LinearModels2.annotated.pdf">slides</a></td>
 	<td><a href="https://youtu.be/1NVgspM98W0">2020</a> <a href="https://youtu.be/g2lziWxf_9Q">2019</a> <a href="https://youtu.be/F6gFYAwXmAs">2018</a></td>
  </tr>  
@@ -254,7 +249,6 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="">7.3 Convolutions</a></li>
 		 <li><a href="">7.4 Making it work</a></li>  		   
     </ul>
-    
     </td>
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgvCGzTPoRXPEYUWvFl8Cj71">playlist</a> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a></td> 
     <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
@@ -263,15 +257,13 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   <tr>
     <td><h3>8. Density estimation</h3>
-    
     <ul class="videos">
          <li><a href="https://youtu.be/VZfAJzXu1hM">8.1 Normal distributions</a></li>
 		 <li><a href="https://youtu.be/lRuiHSxtb1w">8.2 Maximum likelihood estimators</a></li>
 		 <li><a href="https://youtu.be/Co3xlK2d_oI">8.3 Expectation-maximization</a></li>
 		 <li><a href="https://youtu.be/MFQdNuVCk4A">8.4 Expectation-maximization from first principles</a></li>  		   
 		 <li><a href="https://youtu.be/r4DYGXmbk_E">8.5 Social impact 3</a></li>
-	</ul>     
-
+	</ul>
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt9mF2CMt3NI1SZQQ_NYe28">playlist</a> <a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a> </td>
 	<td><a href="https://youtu.be/ZIX7PZgz4qs">2020</a> <a href="https://youtu.be/f2HIW37Ohho">2019</a> <a href="https://youtu.be/-7UJqvjNIjk">2018</a></td>
@@ -279,14 +271,12 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <tr>
     <td rowspan="2"> w5</td>
     <td><h3>9. Deep generative models</h3>
-    
 	<ul class="videos">
          <li><a href="https://youtu.be/jAxUolSXGtg">9.1 Generator networks</a></li>
 		 <li><a href="https://youtu.be/eaWxDebDDo8">9.2 Generative adversarial networks</a></li>
 		 <li><a href="https://youtu.be/t6GxDo1fSt0">9.3 Autoencoders</a></li>
 		 <li><a href="https://youtu.be/inUJd7f931g">9.4 Variational autoencoders</a></li>  		   
-	</ul>    
-	
+	</ul>
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQguK56djSLj2C4LHNfLVZGjg">playlist</a> <a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a> </td> 
     <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td> 
@@ -300,8 +290,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="https://youtu.be/y6pHc1iB6a0">10.2 Regression trees and numeric features</a></li>
 		 <li><a href="https://youtu.be/9ikKZYxsfbg">10.3 Ensembling</a></li>
 		 <li><a href="https://youtu.be/mSLRpkynW9Y">10.4 Boosting</a></li>  		   
-	</ul>    
-    
+	</ul>
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv5bPKEn7F1AEMyojCgTibW">playlist</a> <a href="./lectures/52.Trees.annotated.pdf">slides</a> </td> 
 	<td><a href="https://youtu.be/3pkOMubnwA8">2020</a> <a href="https://youtu.be/m-at5l3F_ig">2019</a> <a href="https://youtu.be/PGITM1E2CLk">2018</a></td>
