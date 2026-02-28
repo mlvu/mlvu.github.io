@@ -77,13 +77,13 @@
 #  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/Transformers/Transformers.key" \
 #  --base-url "https://mlvu.github.io/transformers" \
 #  --pdf-link "https://mlvu.github.io/lectures/Transformers.annotated.pdf"
-
-python generate.py \
-  --title "Lecture 8: Density estimation" \
-  --dst ../em \
-  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/em/42.ProbabilisticModels2.majid.key" \
-  --base-url "https://mlvu.github.io/em" \
-  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
+#
+#python generate.py \
+#  --title "Lecture 8: Density estimation" \
+#  --dst ../em \
+#  --source "/Users/peter/Nextcloud/onderwijs/Machine Learning/Lectures/em/42.ProbabilisticModels2.majid.key" \
+#  --base-url "https://mlvu.github.io/em" \
+#  --pdf-link "https://mlvu.github.io/lectures/42.ProbabilisticModels2.annotated.pdf"
 
 #python generate.py \
 #  --title "Lecture 9: Deep generative models" \
@@ -128,7 +128,7 @@ python generate.py \
 #  --pdf-link "https://mlvu.github.io/lectures/SVMs.annotated.pdf"
 
 cd ..
-git add lecture* style.css index.md script/ mlvu.script.js preliminaries transformers social-impact introduction generative preprocessing linear beyondlinear evaluation probability details svms sequences lecture07 lecture10 deeplearning trees
+git add lecture* style.css index.md script/ mlvu.script.js preliminaries transformers social-impact introduction generative preprocessing linear beyondlinear evaluation probability details svms sequences lecture07 lecture10 deeplearning trees em rl embeddingmodels
 git commit -m "Auto-update."
 git push
 
