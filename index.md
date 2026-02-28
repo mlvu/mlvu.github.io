@@ -65,12 +65,12 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="l12"><a href="/lecture12">
+<div class="l12"><a href="/embeddingmodels">
  <h3 class="purple"><span>12.</span>Embedding models</h3>
 </a>
 </div>
 
-<div class="l13"><a href="/lecture13">
+<div class="l13"><a href="/rl">
  <h3 class="blue"><span>13.</span>Reinforcement learning</h3>
 </a>
 </div>
@@ -91,7 +91,7 @@ title: Machine Learning @ VU
 </a>
 </div>
 
-<div class="em"><a href="/lecture08">
+<div class="em"><a href="/em">
  <h3 class="blue">Expectation Maximization</h3>
 </a>
 </div>
