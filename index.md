@@ -234,11 +234,11 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   <tr>
     <td><h3>6. Beyond Linear models</h3>
 	<ul class="videos">
-         <li><a href="https://youtu.be/DeQ4STHYT3g">6.1 Neural networks</a></li>
-		 <li><a href="https://youtu.be/IZ4w-aG50nU">6.2 Backpropagation</a></li>
-		 <li><a href="https://youtu.be/-PvsRdlISls">6.3 Support vector machines</a></li>
-		 <li><a href="https://youtu.be/cPbsqPg-s2Y">6.4 Lagrange multipliers</a></li>  		   
-		 <li><a href="https://youtu.be/rILXgY0IHxA">6.5 The kernel trick</a></li>  		 		   
+         <li><a href="/beyondlinear/#video-000">6.1 Neural networks</a></li>
+		 <li><a href="/beyondlinear/#video-017">6.2 Backpropagation</a></li>
+		 <li><a href="/beyondlinear/#video-030">6.3 Support vector machines</a></li>
+		 <li><a href="/beyondlinear/#video-044">6.4 Lagrange multipliers</a></li>  		   
+		 <li><a href="/beyondlinear/#video-080">6.5 The kernel trick*</a></li>  		 		   
     </ul>           
     </td>
 
@@ -251,10 +251,10 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td rowspan="2"> w4</td>
     <td><h3>7. Deep Learning</h3>
     <ul class="videos">
-         <li><a href="">7.1 Deep learning and automatic differentiation</a></li>
-		 <li><a href="">7.2 Tensor backpropagation</a></li>
-		 <li><a href="">7.3 Convolutions</a></li>
-		 <li><a href="">7.4 Making it work</a></li>  		   
+         <li><a href="/deeplearning/#video-000">7.1 Deep learning and automatic differentiation</a></li>
+		 <li><a href="/deeplearning/#video-019">7.2 Tensor backpropagation</a></li>
+		 <li><a href="/deeplearning/#video-049">7.3 Convolutions</a></li>
+		 <li><a href="/deeplearning/#video-067">7.4 Making it work</a></li>  		   
     </ul></td>
 
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgvCGzTPoRXPEYUWvFl8Cj71">playlist</a> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a></td> 
@@ -262,98 +262,151 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Keras.ipynb">keras</a></td> 
 	<td><a href="https://youtu.be/DidHjsp_OV0">2020</a> <a href="https://youtu.be/VZwrbIBNzzA">2019</a> <a href="https://youtu.be/jOrYBnEPpYU">2018</a></td>
   </tr>
-  <tr>
-    <td><h3>8. Density estimation</h3>
+
+ <tr>
+    <td><h3>8. Sequences</h3>
     <ul class="videos">
-         <li><a href="https://youtu.be/VZfAJzXu1hM">8.1 Normal distributions</a></li>
-		 <li><a href="https://youtu.be/lRuiHSxtb1w">8.2 Maximum likelihood estimators</a></li>
-		 <li><a href="https://youtu.be/Co3xlK2d_oI">8.3 Expectation-maximization</a></li>
-		 <li><a href="https://youtu.be/MFQdNuVCk4A">8.4 Expectation-maximization from first principles</a></li>  		   
-		 <li><a href="https://youtu.be/r4DYGXmbk_E">8.5 Social impact 3</a></li>
+    	 <li><a href="/sequences/#video-000">8.1 Markov models</a></li>
+		 <li><a href="/sequences/#video-035">8.2 Deep learning on sequences</a></li>
+		 <li><a href="/sequences/#video-067">8.3 Recurrent neural nets and LSTMs</a></li>
 	</ul>
     </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt9mF2CMt3NI1SZQQ_NYe28">playlist</a> <a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a> </td>
-	<td><a href="https://youtu.be/ZIX7PZgz4qs">2020</a> <a href="https://youtu.be/f2HIW37Ohho">2019</a> <a href="https://youtu.be/-7UJqvjNIjk">2018</a></td>
+    <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgtsKcp3029eKm6mzwxNbzxV">youtube</a> <a href="./lectures/61.SequentialModels.annotated.pdf">pdf</a> </td>
+	<td><a href="https://youtu.be/T2txIYwRPDo">2020</a>  <a href="https://youtu.be/h6j9wgHGnOk">2019</a> <a href="https://youtu.be/HNOHLvD6_gs">2018</a></td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">w5</td>
+    <td><h3>9. Tree Model and Ensembles</h3>
+  	<ul class="videos">
+         <li><a href="/trees/#video-000">9.1 Decision trees</a></li>
+		 <li><a href="/trees/#video-021">9.2 Regression trees and numeric features</a></li>
+		 <li><a href="/trees/#video-037">9.3 Ensembling</a></li>
+		 <li><a href="/trees/#video-053">9.4 Boosting</a></li>  		   
+	</ul>
+    </td>
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv5bPKEn7F1AEMyojCgTibW">youtube</a> <a href="./lectures/52.Trees.annotated.pdf">pdf</a> </td> 
+    <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td>
+    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%205%2C%20Pytorch.ipynb">pytorch</a></td>
+    <td><a href="https://youtu.be/3pkOMubnwA8">2020</a> <a href="https://youtu.be/m-at5l3F_ig">2019</a> <a href="https://youtu.be/PGITM1E2CLk">2018</a></td>
+  </tr>
+  <tr>
+    <td><h3>10. Transformers</h3>
+  	<ul class="videos">
+         <li><a href="/transformers/#video-000">10.1 Self-attention</a></li>
+		 <li><a href="/transformers/#video-021">10.2 Building transformers</a></li>
+		 <li><a href="/transformers/#video-056">10.3 Building chatbots</a></li>
+	</ul></td>
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt6qTHnvilrIqBfT3cJEDkH">youtube</a> <a href="./lectures/Transformers.annotated.pdf">pdf</a> </td> 
+    <td></td>
   </tr>
     <tr>
-    <td rowspan="2"> w5</td>
-    <td><h3>9. Deep generative models</h3>
+    <td rowspan="2"> w6</td>
+    <td><h3>11. Deep generative models</h3>
 	<ul class="videos">
-         <li><a href="https://youtu.be/jAxUolSXGtg">9.1 Generator networks</a></li>
-		 <li><a href="https://youtu.be/eaWxDebDDo8">9.2 Generative adversarial networks</a></li>
-		 <li><a href="https://youtu.be/t6GxDo1fSt0">9.3 Autoencoders</a></li>
-		 <li><a href="https://youtu.be/inUJd7f931g">9.4 Variational autoencoders</a></li>  		   
+         <li><a href="/generative/#video-000">11.1 Generator networks</a></li>
+		 <li><a href="/generative/#video-021">11.2 Generative adversarial networks</a></li>
+		 <li><a href="/generative/#video-042">11.3 Autoencoders</a></li>
+		 <li><a href="/generative/#video-064">11.4 Variational autoencoders</a></li> 
+		 <li><a href="/generative/#video-102">11.5 Social impact 3</a></li>
 	</ul>
     </td>
     <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQguK56djSLj2C4LHNfLVZGjg">playlist</a> <a href="./lectures/51.Deep Learning2.annotated.pdf">slides</a> </td> 
-    <td rowspan="2"><a href="./homework/week5.noanswers.pdf">plain</a>, <a href="./homework/week5.answers.pdf">answers</a></td> 
-    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%205%2C%20Pytorch.ipynb">pytorch</a></td> 
-	<td><a href="https://youtu.be/0zTkHTk_-6s">2020</a> <a href="https://youtu.be/6N4zIx0ATME">2019</a> <a href="https://youtu.be/APuP9SkESGA">2018</a></td>
-  </tr>
-  <tr>
-    <td><h3>10. Tree Model and Ensembles</h3>
-  	<ul class="videos">
-         <li><a href="https://youtu.be/1JxBgetslSY">10.1 Decision trees</a></li>
-		 <li><a href="https://youtu.be/y6pHc1iB6a0">10.2 Regression trees and numeric features</a></li>
-		 <li><a href="https://youtu.be/9ikKZYxsfbg">10.3 Ensembling</a></li>
-		 <li><a href="https://youtu.be/mSLRpkynW9Y">10.4 Boosting</a></li>  		   
-	</ul>
-    </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv5bPKEn7F1AEMyojCgTibW">playlist</a> <a href="./lectures/52.Trees.annotated.pdf">slides</a> </td> 
-	<td><a href="https://youtu.be/3pkOMubnwA8">2020</a> <a href="https://youtu.be/m-at5l3F_ig">2019</a> <a href="https://youtu.be/PGITM1E2CLk">2018</a></td>
-  </tr>
-  <tr>
-    <td rowspan="2"> w6</td>
-    <td><h3>11. Models for Sequential Data</h3>
-    <ul class="videos">
-    	 <li><a href="https://youtu.be/wf8D0QWe0hg">11.1 Markov models</a></li>
-		 <li><a href="https://youtu.be/mnkJSiS3ooc">11.2 Deep learning on sequences</a></li>
-		 <li><a href="https://youtu.be/KUjsy7Hp8fE">11.3 Recurrent neural nets and LSTMs</a></li>
-	</ul>
-    </td>
-    <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgtsKcp3029eKm6mzwxNbzxV">playlist</a> <a href="./lectures/61.SequentialModels.annotated.pdf">slides</a> </td> 
     <td rowspan="2"><a href="./homework/week6.noanswers.pdf">plain</a> <a href="./homework/week6.answers.pdf">answers</a></td> 
     <td rowspan="2"></td> 
-	<td><a href="https://youtu.be/T2txIYwRPDo">2020</a>  <a href="https://youtu.be/h6j9wgHGnOk">2019</a> <a href="https://youtu.be/HNOHLvD6_gs">2018</a></td>
+	<td><a href="https://youtu.be/0zTkHTk_-6s">2020</a> <a href="https://youtu.be/6N4zIx0ATME">2019</a> <a href="https://youtu.be/APuP9SkESGA">2018</a></td>
   </tr>
   <tr>
     <td><h3>12. Embedding models</h3>
     <ul class="videos">
-    	 <li><a href="https://youtu.be/q_s2DLcV284">12.1 Recommender systems</a></li>
-		 <li><a href="https://youtu.be/q_s2DLcV284">12.2 Improving recommender systems</a></li>
-		 <li><a href="https://youtu.be/ww6bYts4yOs">12.3 PCA revisited</a></li>
- 		 <li><a href="https://youtu.be/2mh3sAo9iC0">12.4 Graph models</a></li>
- 		 <li><a href="https://youtu.be/1ALoFBlAaUk">12.5 Validation of embedding models</a></li>
+    	 <li><a href="/embeddingmodels/#video-000">12.1 Recommender systems</a></li>
+		 <li><a href="/embeddingmodels/#video-031">12.2 Improving recommender systems</a></li>
+		 <li><a href="/embeddingmodels/#video-053">12.3 PCA revisited</a></li>
+ 		 <li><a href="/embeddingmodels/#video-067">12.4 Graph models</a></li>
+ 		 <li><a href="/embeddingmodels/#video-082">12.5 Validation of embedding models</a></li>
 	</ul>    
     </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv8gcTly0uC7gXiHjPR_c1_">playlist</a> <a href="./lectures/62.Matrices.annotated.pdf">slides</a></td>
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv8gcTly0uC7gXiHjPR_c1_">youtube</a> <a href="./lectures/62.Matrices.annotated.pdf">pdf</a></td>
     <td> <a href="https://youtu.be/TwCYexIpqUU">2020</a> <a href="https://youtu.be/L2mJ4o7F434">2019</a> <a href="https://youtu.be/RByePOW2b1c">2018</a></td>
   </tr>
+
+
   <tr>
     <td rowspan="2"> w7</td>
     <td><h3>13. Reinforcement Learning</h3>
     <ul class="videos">
-    	 <li><a href="https://youtu.be/EEqO13EKuFg">13.1 Reinforcement learning</a></li>
-		 <li><a href="https://youtu.be/tbV2udJmssM">13.2 Policy gradients and random search</a></li>
-		 <li><a href="https://youtu.be/xf_MHXxzf1Y">13.3 (Deep) Q earning</a></li>
- 		 <li><a href="https://youtu.be/R4souHAdRP4">13.4 AlphaGo</a></li>
-		 <li><a href="https://youtu.be/fh2aozmj2F4">13.5 social impact 4</a></li>
+    	 <li><a href="/rl/#video-000">13.1 The abstract task</a></li>
+		 <li><a href="/rl/#video-021">13.2 Policy gradients and random search</a></li>
+		 <li><a href="/rl/#video-044">13.3 (Deep) Q learning</a></li>
+ 		 <li><a href="/rl/#video-062">13.4 AlphaGo</a></li>
+		 <li><a href="/rl/#video-093">13.5 Social impact 4</a></li>
 	</ul>        
     </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsfoBHwl0df2o5RXeKAcYPd">playlist</a> <a href="./lectures/71.Reinforcement Learning.annotated.pdf">slides</a> </td> 
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsfoBHwl0df2o5RXeKAcYPd">youtube</a> <a href="./lectures/71.Reinforcement Learning.annotated.pdf">pdf</a> </td> 
     <td rowspan="2"></td> 
     <td rowspan="2"></td>
 	<td> <a href="https://youtu.be/2ruGrJb8Glk">2019</a> <a href="https://youtu.be/RByePOW2b1c">2018</a></td>
   </tr>
   <tr>
-    <td><h3>14. Review <h3></td>
+    <td><h3>14. Review </h3></td>
     <td><a href="https://youtu.be/xMNc8T_W0Ks">video</a> <a href="./lectures/72.Review.annotated.pdf">slides</a> </td>    
 	<td><a href="https://youtu.be/xMNc8T_W0Ks">2019</a> <a href="https://youtu.be/sMd9ReLSSYU">2018</a></td>
   </tr>
   <tr>
     <td> w8</td><td colspan="6">Exam. See below for practice exams.</td>
   </tr>
-  
+
+</table>
+<h2>Additional content</h2>
+
+<table class="overview">
+
+	<colgroup>
+		<col class="week">
+		<col class="lecture">
+		<col class="links">
+		<col class="homework">
+		<col class="worksheets">
+		<col class="previous">
+	</colgroup>
+
+<tr>
+    <td><h3>Expectation-maximization</h3>
+    <ul class="videos">
+         <li><a href="/em/#video-000">Normal distributions</a></li>
+		 <li><a href="/em/#video-026">Maximum likelihood estimators</a></li>
+		 <li><a href="/em/#video-042">Expectation-maximization</a></li>
+		 <li><a href="/em/#video-069">A formal analysis of EM</a></li>  		   
+	</ul>
+    </td>
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt9mF2CMt3NI1SZQQ_NYe28">playlist</a> <a href="./lectures/42.ProbabilisticModels2.annotated.pdf">slides</a> </td>
+	<td><a href="https://youtu.be/ZIX7PZgz4qs">2020</a> <a href="https://youtu.be/f2HIW37Ohho">2019</a> <a href="https://youtu.be/-7UJqvjNIjk">2018</a></td>
+</tr>
+<tr>
+    <td><h3>Support Vector Machines</h3>
+    <ul class="videos">
+         <li><a href="/svms/#video-000">Lagrange multipliers</a></li>
+         <li><a href="/svms/#video-032">The kernel trick</a></li>
+         <li><a href="/svms/#video-058">KKT conditions and the SVM dual</a></li>
+	</ul>
+    </td>
+    <td></td>
+	<td></td>
+</tr>
+<tr>
+    <td><h3>Social Impact Dossier</h3>
+    <ul class="videos">
+         <li><a href="/social-impact/#slide-001">Why and how</a></li>
+         <li><a href="/social-impact/#slide-007">1. Xinjiang, COMPAS and Gender classification</a></li>
+         <li><a href="/social-impact/#slide-025">2. Physiognomy and sexuality</a></li>
+         <li><a href="/social-impact/#slide-032">3. Profiling</a></li>
+	</ul>
+    </td>
+    <td></td>
+	<td></td>
+  </tr>
+<tr></tr>
+<tr></tr>
 </table>
 {:/nomarkdown}
 
