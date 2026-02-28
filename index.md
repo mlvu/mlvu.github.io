@@ -131,7 +131,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
   </tr>
   
    <tr>
-   <td rowspan="2">w1</td> 
+   <td> w0</td> 
    <td>
 	   <h3>0. Preliminaries</h3>
 	   <ul class="videos">
@@ -142,9 +142,9 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 	   </ul>
    </td>
    
-   <td></td>
-   <td rowspan="2"></td> 
-   <td rowspan="2"></td> 
+   <td> <a href="/lectures/00.Preliminaries.annotated.pdf">pdf</a> </td>
+   <td></td> 
+   <td></td> 
    <td></td>
    </tr>
 
@@ -161,7 +161,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 	   </ul>
    </td>
    
-   <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv6tP8gfDUGqpkBn8u5c5PY">playlist</a> <a href="./lectures/11.Introduction.annotated.pdf">slides</a> 
+   <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgv6tP8gfDUGqpkBn8u5c5PY">youtube</a> <a href="./lectures/11.Introduction.annotated.pdf">pdf</a> 
    <td rowspan="2"><a href="./homework/week1.noanswers.pdf">plain</a>, <a href="./homework/week1.answers.pdf">answers</a></td> 
    <td rowspan="2"><a href="https://docs.google.com/document/d/1-LXG5Lb76xQy70W2ZdannnYMEXRLt0CsoiaK0gTkmfY/edit">getting set up</a>, <a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%201%2C%20Numpy%20and%20Matplotlib.ipynb">numpy</a></td> 
    <td><a href="https://youtu.be/excCZSTJEPs">2020</a> <a href="https://youtu.be/-pve3oIvxa8">2019</a> <a href="https://youtu.be/547GyRCr8TM">2018</a></td>
@@ -176,7 +176,7 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/linear/#video-073">2.4 Linear classification</a></li>
 	   </ul>
   	</td>
-    <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQguePOyoKenR5LWOlCWCkCsM">playlist</a> <a href="./lectures/12.LinearModels1.annotated.pdf">slides</a> </td>
+    <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQguePOyoKenR5LWOlCWCkCsM">youtube</a> <a href="./lectures/12.LinearModels1.annotated.pdf">pdf</a> </td>
 	<td> <a href="https://youtu.be/1lqaD0AsMfY">2020</a> <a href="https://youtu.be/3K4pNmQbGx8">2019</a> <a href="https://youtu.be/sSykYt7H8oE">2018</a></td>
   </tr>
   
@@ -191,14 +191,13 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/evaluation/#video-101">3.5 Statistics for ML experiments</a></li>
 		 <li><a href="/evaluation/#video-120">3.6 No free lunch</a></li>  		   
     </ul></td>
-    <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt6iSJnt8ABPhMNiU2hmZiK">playlist</a> <a href="./lectures/21.Methodology1.annotated.pdf">slides</a></td>
+    <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgt6iSJnt8ABPhMNiU2hmZiK">youtube</a> <a href="./lectures/21.Methodology1.annotated.pdf">pdf</a></td>
     <td rowspan="2"><a href="./homework/week2.noanswers.pdf">plain</a>, <a href="./homework/week2.answers.pdf">answers</a></td>
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%202%2C%20Sklearn.ipynb">sklearn</a></td>
     <td><a href="https://youtu.be/GaoNNaRjauU">2020</a> <a href="https://youtu.be/wbUE6X_B8B4">2019</a> <a href="https://youtu.be/okxskT6ben4">2018</a></td>
   </tr>
 
   <tr>
-    <td rowspan="2"> w3</td>
     <td><h3> 4. Probabilistic Models</h3>
 	<ul class="videos">
 		 <li><a href="/probability/#video-000">4.1 Learning with probability</a></li>
@@ -207,14 +206,16 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/probability/#video-070">4.4 Information theory</a></li>  		   
     </ul>      
     </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgs6gGKPUDURn6aoV6gCIUPa">playlist</a> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">slides</a>  </td>
-    <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
-    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
+
+   <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgs6gGKPUDURn6aoV6gCIUPa">youtube</a> <a href="./lectures/31.ProbabilisticModels1.annotated.pdf">pdf</a>  </td>
+
 	<td><a href="https://youtu.be/k0_56JyYaOM">2020</a> <a href="https://youtu.be/f2HIW37Ohho">2019</a> <a href="https://youtu.be/DM1APCpqF8g">2018</a></td>
+
   </tr>
 
   <tr>
-    <td><h3>5. Data pre-processing</h3>
+    <td rowspan="2">w3</td>
+    <td ><h3>5. Data pre-processing</h3>
     <ul class="videos">
 		 <li><a href="/preprocessing/#video-000">5.1 Missing values and outliers</a></li>
 		 <li><a href="/preprocessing/#video-030">5.2 Class imbalance and feature design</a></li>
@@ -222,7 +223,11 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="/preprocessing/#video-075">5.4 Principal component analysis</a></li>
     </ul>
     </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsJDHLYb0dxn5xr2-pjmV08">playlist</a> <a href="./lectures/22.Methodology2.annotated.pdf">slides</a> </td> 
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgsJDHLYb0dxn5xr2-pjmV08">youtube</a> <a href="./lectures/22.Methodology2.annotated.pdf">pdf</a> </td> 
+
+    <td rowspan="2"><a href="./homework/week3.noanswers.pdf">plain</a>, <a href="./homework/week3.answers.pdf">answers</a></td>
+    <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%203%2C%20Pandas.ipynb">pandas</a></td>
+
 	<td><a href="https://youtu.be/Aad5UDrdHPg">2020</a> <a href="https://youtu.be/H4c4qpHdGq8">2019</a> <a href="https://youtu.be/csk2HSWS5r8">2018</a></td>
   </tr>
 
@@ -236,7 +241,9 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="https://youtu.be/rILXgY0IHxA">6.5 The kernel trick</a></li>  		 		   
     </ul>           
     </td>
-    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgs-MP4aQQ-2teemZANWKBjh">playlist</a> <a href="./lectures/32.LinearModels2.annotated.pdf">slides</a></td>
+
+    <td><a href="https://www.youtube.com/playlist?list=PLCof9EqayQgs-MP4aQQ-2teemZANWKBjh">youtube</a> <a href="./lectures/32.LinearModels2.annotated.pdf">pdf</a></td>
+
 	<td><a href="https://youtu.be/1NVgspM98W0">2020</a> <a href="https://youtu.be/g2lziWxf_9Q">2019</a> <a href="https://youtu.be/F6gFYAwXmAs">2018</a></td>
  </tr>  
  
@@ -248,8 +255,8 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
 		 <li><a href="">7.2 Tensor backpropagation</a></li>
 		 <li><a href="">7.3 Convolutions</a></li>
 		 <li><a href="">7.4 Making it work</a></li>  		   
-    </ul>
-    </td>
+    </ul></td>
+
     <td> <a href="https://www.youtube.com/playlist?list=PLCof9EqayQgvCGzTPoRXPEYUWvFl8Cj71">playlist</a> <a href="./lectures/41.DeepLearning1.annotated.pdf">slides</a></td> 
     <td rowspan="2"><a href="./homework/week4.noanswers.pdf">plain</a>, <a href="./homework/week4.answers.pdf">answers</a></td> 
     <td rowspan="2"><a href="https://github.com/mlvu/worksheets/blob/master/Worksheet%204%2C%20Keras.ipynb">keras</a></td> 
