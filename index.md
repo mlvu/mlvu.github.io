@@ -153,11 +153,11 @@ Reuse is allowed under a creative commons license, [details below](#keynote-file
    <td>
 	   <h3>1. Introduction </h3>
 	   <ul class="videos">
-		 <li><a href="https://youtu.be/G5vMe_A5OTo">1.1 What is machine learning?</a></li>
-		 <li><a href="https://youtu.be/NPqYy-OuNEA">1.2 Classification</a></li>
-		 <li><a href="https://youtu.be/pJIrdzhsWRM">1.3 Other abstract tasks</a></li>
-		 <li><a href="https://youtu.be/uWmbIQHtjhk">1.4 Social impact 1</a></li>
-		 <li><a href="https://youtu.be/24fPK3CM-8E">1.5 Generalization</a></li>
+		 <li><a href="/introduction/#video-000">1.1 What is machine learning?</a></li>
+		 <li><a href="/introduction/#video-021">1.2 Classification</a></li>
+		 <li><a href="/introduction/#video-049">1.3 Other abstract tasks</a></li>
+		 <li><a href="/introduction/#video-076">1.4 Social impact 1</a></li>
+		 <li><a href="/introduction/#video-107">1.5 Generalization</a></li>
 	   </ul>
    </td>
    
